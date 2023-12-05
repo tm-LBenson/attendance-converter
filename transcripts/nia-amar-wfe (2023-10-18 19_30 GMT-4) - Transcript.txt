@@ -1,0 +1,442 @@
+﻿nia-amar-wfe (2023-10-18 19:30 GMT-4) - Transcript
+Attendees
++1 337-***-**65, Bankroll Ky, Chantrice L, Daniel Perez, Dianca Griffin, Elgin Sharper, Gregory Robertson Jr, Hannah Richards, Ike Steoger, Justice Miller, Krystal Jefferson, Lewis Benson, Lewis Benson's Presentation, Ryan Arnold, Ryan Arnold's Presentation, shaista umar, TRACY JOINER, Umar Z
+Transcript
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.
+Lewis Benson: Okay, so welcome to day three. Of HTML. Today, we're going to be covering lists and tables.
+Lewis Benson: Anyone have any idea? What a list would be used for in HTML.
+Ryan Arnold: For making a bullet point list or something like that.
+Lewis Benson: Yeah, so a bullet point list that would be an unordered list. That's one type of element that you'll see And we also have ordered lists, which will have a numbered lists. And those can use different types of symbols to indicate the type of lists. For example, with your bullets, you could have a solid circle, an open circle, you could put a square triangle, anything for a bullet to represent a bullet. You can also remove the bullet point altogether, and just have them as a indented list. And then for numbering, you can use your Roman numerals numbers or again, you could just take all of that numbering system off and just have things listed. Let me go ahead and present my screen.
+Lewis Benson: Okay, so let me bring up the MDM documentation. We'll see what it has to say about lists. I'm just going to search for lists. And this has shown me CSS. I'm gonna try a Google Search HTML lists
+Lewis Benson: So here's another resource I see the Mozilla down here but I just want to show you this w3 schools. This is also a good resource to use. I prefer the Mozilla just because it has the darker background color mainly but there's still just as good of information and w3 and here, it actually shows two examples with the bullet points and with the numbers So we have our unordered list and our ordered list. So if you wasn't sure how to make a list, this is something that you would commonly do is just check out Google and see what you can find about it. and once you see this, and how it works, you'll be able to refresh your memory in the future if you forget how to actually put one of these together, They can start to look a little bit complex when you start to put a list inside of a list and I'll show that to you once we get started with some code.
+Lewis Benson: Let me go to MDM and see what they have to say on the topic. And here they're actually. putting a list inside of a list, like I mentioned, it talks about the different attributes that the list can have.
+Lewis Benson: This one has one called compact that if you add this attribute to the list, it'll render it in a compact style. There's another attribute called type. And this is a common practice when you're using an element, you're not a hundred percent sure on what you can do with it. Come to MDN or W3. And look at the attribute list. They can give you lots of different information. there's an attribute here called type and it sets it from circle to disk to square. and not all browser support it, but you can also use the triangle for The list bullet point.
+Lewis Benson: And that is something to keep in mind too. Whenever you're working with elements, you may want to be careful about maybe using newly released elements. If you start to see some of that stuff come up because it might not be supported in every browser. So something that works in Google Chrome might not work in Safari And there are resources, which I'll introduce to you later on how you can actually check what the usage is A lot of the stuff so that you could make sure you have full compatibility across all the browsers.
+Lewis Benson: Okay, so I'm going to open up my VS code and I'll just demo out how to build out a list. So I'm going to go to my desktop and I got my Projects folder opened already. So I'm in here, I'm going to create a new folder.
+Lewis Benson: And this is going to be demo. Pen. Dash 18. So, it differentiates between that and 10 - 17. And let me open up my VS code.
+Lewis Benson: And I'm going to open up that folder specifically because I got all my folders opened at the moment, so I'm going to go to Desktop projects. And I'm going to pick that new folder and hit select older. so now I'm in the new folder. I got my little. Welcome it's given me the option right here in the Welcome screen to create a Open folder. I'm actually not going to use that just because not, everyone gets the welcome, every time they open their VS code. So I'll show you what you would do. If you don't have that, then you got these buttons over here on the left. To create files in case you need to be remembered about that. So I'm going to create an Index.html again, we use the index as the home page for any web page. We're making, it's the entry point for our web applications. So Index.html.
+00:05:00
+Lewis Benson: And we're going to use our shortcut to generate the boilerplate code. And The exclamation point. And I have my image abbreviation, I click that and I get my boilerplate. So nice little review of that. because we're doing lists, I'll call this list.
+Lewis Benson: Demo.
+Lewis Benson: And And within my header element, I'm going to create an H1. And I'll put list demo in my H1 and this will be what shows me that everything's working when I go live. So I'll go live now.
+Lewis Benson: Okay, so there's my list demo. I'll Check my console for errors. Look at my elements, make sure everything looks the way that I expect. See if my header my H1. And that was all the content that I put on the page. So everything is working good. so, the next I'm going to create a list, So in order to create a list, every list requires a container. And the container defines what type of list it's going to be and this case I'm going to start with an unordered list. So the element tag name is going to be u L. And I get my Emin abbreviation, so I'll autocomplete that. So this is the list container everything that goes in here. Should be a list item and there's an element for that as well. I could put a paragraph in here. Let me do that real quick and just share with this looks like
+Lewis Benson: and I'll go to my browser. And we see this, this is an item here. And I can see that it's inside of my UL and there's that P tag. And we can see that it's actually over a little bit and that's because it's inside of the container this comes with some styles or replaced on it. So if we look down here at the styles, let me hide that We can see we have some margin placed on it. It looks like we have some adding inline start at 40 pixels and I can see that displayed inside of my box model as well. So that's why this isn't lined up with the list demo. Is because the UL comes with these styles already applied to it. so, Putting a paragraph element inside of your UL. Wouldn't be best practice because it doesn't Describe What this actually is, is a list item. So let me delete this and put Li for list item.
+Lewis Benson: And I'm going to hit the end abbreviation.
+Lewis Benson: And say this is an item. Okay, so we have one item and our ul. Let's see what that looks like. You can see I already got this bullet here placed in and it's still indented by the 40 pixels. Let me inspect the item itself. So here we can see. It has the type set to disk by default. And we have display list item. We have some other default styles added on here. This is for the marker.
+Lewis Benson: And it doesn't seem to be anything on the box model. So it's a good idea to just look and see what styles are coming with your elements. That way whenever you do start applying styles, you won't be surprised whenever things are maybe not lined up. Exactly where you thought. For example, if you were trying to center something in this UL, and you expect the disc to go to the center would actually be 40 pixels more to the right than what you would see.
+Lewis Benson: Okay, so we have one item in here. Let's add a couple more.
+Lewis Benson: New item two. And item. Three.
+Lewis Benson: Okay, so we have our three items inside of our list and notice the UL doesn't actually show up as any sort of content or anything. You can't see a border around it or anything like that. It's just kind of there. The only way we'd even know that it existed is by going into the body and inspecting and actually have this inside the header, let me move that out of the header because that's not a good place for my list. The header should contain just the heading items. There we go. because I didn't actually affect any of the content on the page is just a little bit more, correct. There we go. So the header is its own element in the UL is its own element. Okay, and then we have our three list items within the UL. And we can see this marker shows up here too. That's just your bullet point. And that's actually coming from the pre-styled CSS here. It has this.
+00:10:00
+Lewis Benson: They call it. Pseudo marker element.
+Lewis Benson: Okay, so that is the UL. And I'm gonna now put a UL inside of this UL. This would be like a sub list. So if you wanted to have information about an item and then there's some sub information about that item, maybe you're building out some sort of rubric or some sort of template that explains how to do something. A lot of times you have a step and then you have a sub step. So to do that, Someone coming in on the phone. I'm sick. There we go. To do that, you'll just create another list container. So, we'll do ul. And then within there, you'll put your list items.
+Lewis Benson: And I'm just going to copy that a couple times. And let's take a look and see what that looks like.
+Lewis Benson: And it knew that it was a sub list, so it gave it the Opened bullet points. So, I didn't even have to change anything in the styles. It automatically indented it in another 40 pixels because I'm using that container and it just comes with that 40 pixel indentation built in.
+Lewis Benson: we can see that if I open up, My inspect tools. Here's the UL. It's the second item in my list.
+Lewis Benson: And we do have a couple things crossed out here because it has its own styles applied to it, they're being overridden. And then we have our 40 pixel indentation there. And we can also see that on our box model.
+Lewis Benson: Does anyone have any questions about the UL so far?
+Lewis Benson: Okay, so next will be the ordered list. And can anyone take a guess on what the elements going to be for that?
+Ryan Arnold: .
+Daniel Perez: .
+Lewis Benson: exactly. It's nice whenever they make. These actually have some sort of almost like an acronym, something that makes sense. Occasionally, you'll run into some obscure elements that you might forget what they're called. And I'm actually going to go over a couple of those today, just touch on some of the more advanced elements so with it's gonna work exactly like to ul. Each OL will have list items placed in it. And we're going to play some text inside of here.
+Lewis Benson: And I'm going to place three of these in
+Lewis Benson: and we can see that these are numbered text here. And we have some there. From the UL and you can see the difference in The indentation is the same, but We just have the numbering here. That's different. So, what's gonna happen when I make a sub list? How can we differentiate between The sub list and I'm going to do an OL.
+Lewis Benson: we'll place an L, I
+Lewis Benson: This is a sub list item makes more sense.
+Lewis Benson: And we'll just do three of those as well. And look at that there have the exact same numbering system. So that might not be ideal. Maybe you wanted to do the Roman numerals. So if that's the case, you would have to change the attributes on that. So if we look at The list here. Let's find the. Attribute. So this one has an attribute called type.
+Lewis Benson: I believe, I'm still in The UL. Let me scroll down to the OL. I'll have to search for it.
+00:15:00
+Lewis Benson: And we'll find the attributes here.
+Lewis Benson: So, here's our different types of A numbering types. So I'm going to change the numbering type on my sub list so that it looks A little bit better and I'm going to use the uppercase Roman numeral. So, we have our type and then we have our value.
+Lewis Benson: So in order to add an attribute, we put our cursor inside of the element. And in this case, it's going to be the OL element, and I'm going to do it in the sub list. So within this element next to the closing bracket, next to the letter, I press space. I'm going to say type and it's giving me some auto complete here. I want to click the eye to show it to be the Roman numeral. when I minimize this, And we check out our demo and now we have a little bit of variety here to make it more clear, which of these is the outer list. which of these is the inner lists. And I'd also gives us a little refresher on attributes and how to place an attribute on an element.
+Lewis Benson: Yes. Ryan
+Ryan Arnold: I was just gonna ask if you could go back and show what the code looks like real quick, one more time.
+Lewis Benson: Yeah, absolutely.
+Lewis Benson: So, this was the piece that I just did. Is this where your question was?
+Ryan Arnold: Yeah, I just wanted to see where you put the type. I
+Lewis Benson: if I put it inside of the OL container, And just to mix it up. I'll put a type here as well. And I'm going to do the capital letter a. We'll see what that looks like. So now we have Roman numerals on the inside and we have capital letters lettering these out elements. We have that on the outside. And we can do the same thing using what I seen inside of the documentation for the unordered list as well. We can add a tight attribute to that and change these two different symbols. Do we have any other questions? About these lists.
+Lewis Benson: Okay, let's do a little bit more here. So this is pretty straightforward. We have our unordered lists and then we have a unordered list. I'm gonna put another list inside of this nested list. And instead of doing an order list, I'm going to do an onward list so you can nest an unordered list within an ordered list. and there might be some use case for that perhaps you are working on a site that has a certain number of steps like Step two, do that. And then step three, let's say it's a recipe. Step three, You might have to add three different ingredients. All at the same time, you wouldn't necessarily number those. Then you would just list them with bullet points, add the pepper and whatever other ingredient you're adding. So, let's put our li in here.
+Lewis Benson: I'll put this as a sub list. I don't think that's a real thing. It's just what I wanted to put. Just for some filler content. And I'm gonna put a couple of these in here. We'll do five. Take a look at that. because this was the third. List in there, it went to the square type by default because the first one's gonna get the circle that's darkened, the second one gets to hollow and then the third gets to square. So even though this is the first unordered list, By default, it's going to use the third list. It doesn't differentiate between where it's a nest of that. Does that make sense? How that works? Right there?
+Lewis Benson: I want to bring up just show, and this is my favorite website for demonstrating HTML, because there's very little styling on this webpage. It's all just plain HTML. And here's an example of a list. We can see that it's just an unordered list. And it has a lot of information in it. I'm going to give an inspect and they may put paragraph elements within here. This time they didn't. Sometimes you'll see that. Because that's the interesting thing about these lists. Let me look at this navigation over here. but It's a list of links. So we can see there's a UL here.
+Lewis Benson: Here's the li So, This is an unordered list of links. And within this li, we have an anchor tag. And this is a really common practice, whenever you have a navbar across the top, or a nav bar down the side. It's very common to use. An unordered list to put all your links but notice it doesn't have the bullet points. They removed the bullet points. And if we look at, The CSS styling. We might even see that listed in here. That'll be on the UL.
+00:20:00
+Lewis Benson: list style. And as an image. Here we go. This is crossed out.
+Lewis Benson: I don't see it being applied here.
+Lewis Benson: All right, here, list style. None. Let me uncheck that. And it's probably still being overridden somewhere else since that didn't pop up.
+Lewis Benson: okay,
+Lewis Benson: we can see that. it's removed here. I'm not sure where it's actually else removed There's probably another style on one of these other elements that it's inheriting, that property. I could add it manually in, but that kind of defeats what I wanted to show here. I could check some other pages if I just click on some random links we will find other lists on here. They're commonly used all over the place for lots of different things. So here's another unordered lists. There's a table and then how here we have a ordered list. And it just gives you all of the different references here in order. So I just wanted to show you some real world examples of where these are used. But I think the most common is with navigation. So for example here There's actually another unordered list within this honored list, so we have our nested unordered list.
+Lewis Benson: And it's just good to see this stuff sometimes where people are actually using it. Then we have a div and then a span. So yeah, they have a lot of stuff listed or nested inside of the list items and that's perfectly fine. the list item doesn't have to be the stopping point. And what I mean by that is You can have a list item. You could put an entire article in here. If you wanted to, you'd have to have a list of articles and in that case, and that would be a really long document but that would be valid and it would be semantic. So keep that in mind, you don't have to just stop with text. You can keep putting more elements within your list items, if you prefer.
+Lewis Benson: Does anyone have any questions about the list items?
+Krystal Jefferson: The zest, specifically, stand for something. I didn't catch it.
+Lewis Benson: Yes, the OL stands for ordered list.
+Krystal Jefferson: Yeah, I didn't get you the first
+Lewis Benson: Yeah, good question. And this is what gives you the numbering system on your pages. so, when I look at this Wikipedia page here at the bottom,…
+Krystal Jefferson: Okay.
+Lewis Benson: All these are numbered because they're using an OL and I'll actually inspect that and prove it. Here's the OL.
+Krystal Jefferson: Okay.
+Lewis Benson: And there it is. And then they have each list item and you can see that the list item doesn't include the number. So highlighting when I have this selected, you can see that it's highlighted on the left. But it doesn't actually highlight the number. That's because the number is added separately. It's its own piece of content. So if I click on that specifically, that comes up as marker. So it's own element, it's a ement. We'll get into pseudo elements more next week, but it's because it has these two colons. That it is called a pseudo element. It's something that you add on to another CSS element.
+Lewis Benson: I'm sorry if that's a little confusing.
+Lewis Benson: But yes, there is the OL. And here is a ul down below it.
+Lewis Benson: With two list items in it. And then this list item has a lot of stuff in it. So, you can put as many elements into these list items as you want.
+00:25:00
+Lewis Benson: Okay, so has everyone tried this as anyone having any issues generating list items?
+Krystal Jefferson: Could you go back over the sub list really quickly?
+Lewis Benson: Yeah. Absolutely. Let me create a second file so that this doesn't look so confusing. And I'll just call this list.html and inside of my new file, I'm going to press Exclamation Point and I'm going to click the Em at abbreviation, to get my demo code. And I'll give this a title. Let's demo will work. And then in my body, I'm going to create a UL. This is my container. It is indicating that anything within this UL is going to be a list.
+Lewis Benson: So, if I have a list, Here, this list is gonna need some list items.
+Krystal Jefferson: Think.
+Lewis Benson: And the list item is going to be your content. Focused call this item one.
+Lewis Benson: put that back on one line because a formatted it. And we'll do another list item.
+Lewis Benson: You have a question?
+Dianca Griffin: No, I was just trying to get set up over here.
+Lewis Benson: Okay, so I have a list with two. List items within it. And I'm gonna put a second list underneath of this list item. It'll actually nest it under this list item. So actually, I'm gonna name this
+Lewis Benson: Step one. And step two just so it's a little more clear. And then now I'm going to put another ul right here. And this is another container. Saying that I want to have another list. And notice that this UL Is inside of this ul. So, if I click on this ul, it puts that square around it, and I have the square around this ul, You can see that, it is contained within that inside of here, I can create another list item. and we'll call this step A
+Lewis Benson: Li. Step B. And then I'll go back to the browser. And go back to my demo. And let me switch to Demo.html. I called it something else. Let's start HTML, I think. There is. And there it We have a list with a sub list and you see how We complete step one. We go to step two, and then step two has two parts. So it has these sub bullets. Which makes it a sub list.
+Lewis Benson: Does that answer your question?
+Krystal Jefferson: Yes.
+Lewis Benson: Perfect.
+Lewis Benson: all right, so at this time, let's have everyone actually create a Unordered list and make A shopping list and then also create an ordered list and make that a top movie list. And I'd like you to do that for the next 20 minutes or so, I'm just to make sure that everything's working the way you would expect. And that we're not having any hiccups or anything while generating these lists. So we'll create a shopping list with five items in it and a top five movie list and then use the unordered list in the ordered list.
+Lewis Benson: And then if anyone is having any difficulties, you can also share and I can help you if you're stuck on something in particular.
+Lewis Benson: And I'll do the same.
+Lewis Benson: And if you have that completed already, if you were following along and making these lists prior to sublists, make sure that's working for you. And you understand how the hierarchy works.
+Lewis Benson: mess around without a little bit. Create a UL. I'm going to create. $5. I'm going to use that emit shortcut that I showed you yesterday. I'll do l I times. Five.
+00:30:00
+Lewis Benson: I'll click that. I got my five items. So it can do milk.
+Lewis Benson: Eggs. I guess we're doing breakfast stuff.
+Lewis Benson: Okay, so there is an unordered list.
+Lewis Benson: And then we can do our ordered list.
+Lewis Benson: Get a different variety of. Types here.
+Lewis Benson: And then I'll take a look at the browser. And see those two lists. Was everyone able to get that?
+Krystal Jefferson: almost, I'm just making this second with
+Lewis Benson: Perfect.
+Lewis Benson: And it should look something like this, where you have your five items and your five items. Maybe five bullets and if you want to experiment with the nested list, go ahead and do that.
+Lewis Benson: Just a couple more minutes and we'll move on with the
+Lewis Benson: the lecture here.
+Lewis Benson: Everyone's very quiet today.
+Lewis Benson: I do too. It's all right.
+Lewis Benson: All right, I'm going to start moving on here with this. Does everyone understand what with what the hierarchy works, How the nested lists work. Does anyone have any questions about that before I start to move on?
+00:35:00
+Lewis Benson: Okay, looks good. So I'm gonna create another file. We're gonna have three files now.
+Lewis Benson: I'm going to call it another file. HTML. This is just to show you that you can literally name these anything. Other than your first file is called index.html, that one's important. All right, so I'll create my boilerplate. Exclamation point auto complete
+Lewis Benson: make our title list demo again. And for this one, I'm actually going to show you how to create Navigation using a list, and it's similar to what we've seen. On that Wikipedia page. It's just kind of what you would normally do. If you were creating a navigation bar, So, I'm going to create a header. and my navigation would be in my head or that's why I'm starting with that and I'm not going to put an H1 and the H1 could go underneath of this header since This is going to be for just our nav and then within the header, we'll have our nav.
+Lewis Benson: And then within the NAV, I'm going to put my list, and this is going to be an unordered list of links. So what are UL?
+Lewis Benson: And our first list item. And you can see how already we're nesting, deeper and deeper, and deeper here with this indentation, that's pretty normal. Whenever you're laying out a web page, I'm just gives you more control over your layout, having things in different containers. You can select different things and style them, different ways. So that's a pretty common practice. So this list item is going to contain an anchor tag. and I'm gonna hit the top one. And we only have an href. And that is the hypertext reference. Somebody asked that yesterday, I did find the definition of that. And it's just a reference to an external file or site. And this one is going to go to List.html.
+Lewis Benson: And this is just the file name. Something I want to just kind of touch on now if this was in a folder I'm actually going to do this real quick for this demonstration if I had a folder called Files. And I put this inside of there. We hit move, this won't work now because it doesn't know that where lists.tml exists. So in order to do that, I'd have to say slash list.html like that so that it looks inside of the folder. And then it finds that file. And then the rest of them, I'll leave outside of the folder. Let me open it up, so that's visible. And then we'll have another list item.
+Lewis Benson: And we'll put another anchor tag.
+Lewis Benson: And we'll have our index.html.
+Lewis Benson: And then we'll have Another anchor tag. And this one's going to be the file we're currently in. So I'm just going to put a hashtag there and that was just indicated, it's our current file. So we're not going to see anything on the screen yet because I don't actually have any text in here, and let's take a look at that. And it can't find that because I moved it to a different folder.
+Lewis Benson: I'll go to another file to HTML. I guess we do get some empty bullets.
+Lewis Benson: It's not all that interesting yet. We don't actually have any way to click on the links. So let's go back into here the content is actually going to go inside of If I put it here outside of the anchor tag, I'll show you what this looks like. We'll just put the word. Hello. And you can see, it doesn't have that blue, it doesn't have the underline. So if you're creating links inside of your list items and it doesn't have the underline or the blue color, check to make sure that you wrote the text in the correct spot and this can get really confusing whenever you're trying to read all these nested elements. so, sometimes you want to click the A And it will surround the element with where you're actually working at. Or if I click the lie, it's showing me what's inside of that lie. It's not really an easy way to do it because I could also write text here.
+Lewis Benson: if I wrote again and we look at that, we can see it's actually pushed right up against hello, it's not part of the link but the hello is there and if I click on it, it takes me to the hashtag which At the moment is nowhere. but I did want to show you that, that's an easy bug to run into Typing your text in the wrong spot. one way to prevent that would be to open this up. So if we did Li on one line, we did our eight anchor tag on another line and we nested it like that. It makes it a little bit easier to type it out without getting stuck. But as soon as I format, It moves some things back. But it looks like it's letting me keep the anchor tag on its own line. So I'll put this one on its own line too. And then this one will be home.
+00:40:00
+Lewis Benson: And I'll move this anchor tag to its own line for readability. And this one will be. List.
+Lewis Benson: And let me minimize that and now we have our three links here. This is the start of a navbar. it doesn't have the horizontal look at order to make this horizontal. We'd actually have to change a little bit more stuff on that so in order to make this look a little bit more, like what we see over here, we also have to get rid of The. List style.
+Lewis Benson: So I think I seen something inside of the documentation With the type.
+Lewis Benson: I don't see where it says Type none.
+Lewis Benson: So, it looks like we'd have to do that with the style element. So, if I go to another file,
+Lewis Benson: And in my UL, it's hit I do List. Style. And I got none. It autofills, the semicolon for me. And I go back to the demo and we can now got rid of those bullet points. And the next thing, if you were creating a legitimate navbar that goes across the top of the page, you would have to make these horizontal. I'm not going to do that yet because that's a little bit out of our scope, but that would be the next logical step for that style. But if we're using this style navigation on the left here, we're off to a good start for that. Where this one is vertical. And then it'd be the difference between this one up here, and let me give this an inspectus to show you. They have the UL here.
+Lewis Benson: And they have the Allies. And then within these allies, it looks like they use buttons and anchor tags both
+Lewis Benson: Does anyone have any questions about how I laid out this little navigation? If you were falling along, did anyone have any issues with this at all?
+Krystal Jefferson: I did have one with The files list I'm trying to see. I was falling on. I kind of got hung up there.
+Lewis Benson: So the reason I did files slash list is because I wanted to show you if you look at my Explorer here, I have this folder called files. And inside of that folder, that's where the list.html is located. because that is Inside of my href. I have to include that folder and the file name. Whenever this href is looking for a file, it only looks inside of the demo folder, so this folders called Demo 10 dash 18. So eight refs. Okay, let me look in Demo 10 dash 18, It's not here and then it just gives up so you have to tell it it's in the Files folder. And that's what I named this one. Look, I keep clicking on that. Sorry, that's what I named this file here. And then it'll find the file from there.
+Lewis Benson: And you don't have to create the folder. I just wanted to show you what happens when you do have a folder?
+Lewis Benson: so with that, I'm actually going to duplicate this whole thing.
+Lewis Benson: So I got the header, the UL. And I'm gonna place it inside of this one list.html, which is currently in that folder. And this is going to add a little bit of complexity to this make things a little bit more. Interesting. I know this isn't the most exciting topic right now but it is important.
+Lewis Benson: So, Now, So the href is going to start inside of the Files folder. So it's going to look for Inside of this folder. So let me show you what I mean. Im See, this is inside a list so I'm going to go back into the demo. I'm going to click on list. so, here we are inside of The list. If I click, hello. That's not going to do anything because it just added that hashtag there. It's telling you to just go to the first index in this file or go to two that's own file. You would do this for whenever you're already in a link and you want to include that link within your navigation bar. Let me go back to MDM here and close there.
+00:45:00
+Lewis Benson: Documentation. So if I click on their references, you can see that reference is still here. It's in their navbar, they just make Refresh the page on that would mean that this is probably controlled by a server somewhere rather than The link being controlled by the browser like how we're setting ours up, but you could just put a hashtag in there, so that it doesn't refresh the page. Every time I click it refreshes, If you didn't want that behavior, you just put a hashtag So, that's what we did here, but that's not the behavior we currently want. Because Isn't the file we're in, we're actually enlist if I click on list. Look what happens. It says Cannot get slash list. That energy look at my URL. I tried to go into the Files folder twice. And the reason for that is because we're starting inside of the Files older. So if we're starting in the Files folder already,
+Lewis Benson: On this link here, we're saying We're go into the Files folder and grab the list.html. And that doesn't work because we're already in that folder. So what we need to do here, Is either make this, list.html. Or just make this a hashtag. Either way is fine. I'm going to put it to list on HTML. I'm going to get rid of the hashtag for this part of the demo. And our hello is Outside of this folder. So that means we need to exit the Files folder and go up one level. Does anyone know how to do that? Does anyone ever done any sort of bash scripting or any having experience with that type of thing?
+Lewis Benson: It's okay, if you don't. I'm gonna show you real quick. So in order to go up a folder, whenever you're typing in a folder name, you put Dot whenever you see two dots next to each other, That means it's the folder above the one you're currently in. It's just two dots. And then, if we put a slash, You can see that. It's giving me the hints. It's showing me. What's in the folder above us here? And this one should be. Another file. So, dot dot slash another file.
+Lewis Benson: Does anyone have any questions about that as that make sense?
+Lewis Benson: And I understand this does add a little bit of complexity, but when you're dealing with anchor tags, this is something you're going to see in the real world and you're gonna have to figure out how to navigate your file structure to get to your files. That's why I wanted to show this. m so someone tell me how to navigate this anchor, tag to the Index.html.
+Ryan Arnold: this would be the same as doing the one to another file. You just dot slash index.
+Lewis Benson: So we'll do Dot slash and I got my autocomplete here. if I click on this, I think it's going to duplicate the Index.html. Nope, it actually overwrote it sometimes. I've had that happen before where I click it and it just adds it in it would do this. And then I have to delete one of them. They may have patched that. So that's not an issue now. But yeah, so we're in the Files folder. So I use dot slash to go up to This folder here. And it can find the Index.html.
+Lewis Benson: Okay, so let's try everything. Make sure it's all working format. Minimize. All right, so I'm in the files slash list.html. There's delete that hashtag. So if I click list which is the one I'm currently in, remember I set it to go to itself, it just refreshes the page just like how MDM refreshes our page if I click home, It takes me to index. I'm going to hit the back button to go back and then if I click Hello, it takes me to another file. And then in another file, I have all of my links again.
+Lewis Benson: Okay, so I'm going to go to my index.html. And let's set up the navigation for that one as Just so that it's on all three pages. So, if I go to another file, And I copy it from here. The reason I went to this one is because it's already in the same folder as Index.html. So it'll be a little bit less change. And I'm going to. Place it here. Oops, I copied the file name, not the
+00:50:00
+Lewis Benson: There this. So now I have two headers here. That's probably not idea Search engines wouldn't know what to do with that. Screen readers would be very confused as well. So I'm going to delete this header and just have it as a nav and that's actually perfectly acceptable. You may have a header for ing. And a NAV for your NAV, but you may also want to put your nav inside of your header. It all depends on how you're laying out the page and how you want the search engine to find your page. So there isn't one right way.
+Lewis Benson: okay, so we got to update our links because we're now Inside of Index.html. So this link Should actually be.
+Lewis Benson: Another file.
+Lewis Benson: And indehtml can be a hashtag if we want, or we can just keep it Index.html. And this one is going to look inside a files and then list. So this one is correct as well. So, let me go back in and make sure our links are working between all three pages. So I'll click list. Home. And hello and we get all three pages that way.
+Lewis Benson: Does anyone have any questions?
+Lewis Benson: Yes, Elgin.
+Elgin Sharper: How did you say? If you put it in the header or the body, which one red it, it finds in the web search.
+Lewis Benson: So when it does a web search or some sort of search engine, it's trying to make a hit on your page, it's looking for certain things, so it all depends on how you lay out your page. If you have information, let me actually go to MDM here and show you their page. So, if you look at their top of their page, I want to see if they actually have this in a header first. They do. So they have their top navigation inside of a header. but within that header, they also have their logo and they have information about their page, on this right here, as well as a link. You can see this is an SVG when I inspect it. And it has their logo as an ID. So, they put theirs inside of a header. This isn't necessarily requirement.
+Lewis Benson: If this isn't at the top of your page, or if I look at it, Wikipedia see how their links are on the side of their page. This wouldn't be a header…
+Elgin Sharper: MMM.
+Lewis Benson: then this would just be a side navigation and that's similar to what we have on ours as well. Ours would be kind of like side navigation. Rather than at the top of the page, I started putting it in a header because I was showing how you would make a regular nav bar. But MDM, they have their navigation inside of a header. Because I guess it's a very top of their page and it includes their logo so that would make Cert sense for search engines to find their logo. they put their title in here which is unusual.
+Lewis Benson: That should be in the head.
+Lewis Benson: That's interesting. Yeah, the title always goes in a head. I'm not sure why they put that in their head or That might have been a mistake actually.
+Lewis Benson: Interesting.
+Lewis Benson: But yeah, the dead answer your question or did you want me to explain that a little differently? Okay. Yeah,…
+Elgin Sharper: That's good. I got you. Thank you.
+Lewis Benson: and the reason I have my header here is because I actually have an H1 as my heading for my page. So if I was gonna have, say an article, I can do article. And then I would have a paragraph. I'm going to put some lorem ipsum in here. And remember, I can type the word lorem. Autocomplete that.
+Lewis Benson: And I scroll back over. And I'm just going to duplicate this.
+Lewis Benson: So now we have an article to paragraphs and actually put this in the wrong spot. I'm sorry. This needs to go under the header like that. So we have our header at the top of our article, but not inside of our article. And this just kind of shows the search engines, that this is what the page is about. We have a header, we have an article and this article has some paragraphs, and here's some of the content. So if you were running a search for this page, this is what it's going to hit on. It's not going to hit on the navigation, but my navigation also doesn't have any sort of identifier on what this page is about. But my H1 does have that. So that's where I definitely want to put My H1 inside of my header.
+00:55:00
+Lewis Benson: And this type of layout and structure is important whenever you're designing these sites because you want your websites that you build to actually be found by users, especially if you're building these for a client and they're expecting this to be like their business.
+Lewis Benson: Is there any other questions about this?
+Lewis Benson: Okay, if there's no questions, let's take a 10 minute break.
+Lewis Benson: And after the 10 minutes, we'll start talking about HTML tables. Okay, let me get the timer up.
+Lewis Benson: And I will see you in 10 minutes.
+01:05:00
+Lewis Benson: Okay, let's pull our focus back to class.
+Lewis Benson: So we're going to talk about tables. does anyone know at a table is and I want to take a guess at this
+Krystal Jefferson: like a chart, or
+Lewis Benson: Yeah, exactly. Let me pull up my handy. Dandy Wikipedia here. I think I actually seen one on this page. Here's a table.
+Lewis Benson: These are this heading here with a few different rows and columns. Ever, Emperor and King. And I actually brought this up earlier because I seen a table on here. And this one's a little different. It has a really long table cell. And then it has a couple short ones around it. But this is also A table. And let me go ahead and inspect this And we can see all kinds of different elements in here. We have a TD.
+Lewis Benson: And there's a lot of trs here.
+Lewis Benson: And they have some anchor tags in there, as well. yeah, this is a really big table. Let me open up the documentation. Because this is the best place to start when you're looking for any information.
+Lewis Benson: And here's the table element.
+Lewis Benson: So the tables they don't come with any styles attached to them. This one has some added to it. So it's just going to be plain text. It's actually not going to have these borders added to it. That's one of the downsides here but we can see we have this table element. This is the overall container. This is what The outside of everything here. Let me just start off with writing some code. I'm going to create another file.
+Lewis Benson: I'm not going to call it another file. I'll call this one table. About HTML. I'll do my boiler plate.
+Lewis Benson: Give it a title.
+Lewis Benson: And I'm going to give I'll use the same heading as index.
+Lewis Benson: Won't be a heading. It'll be in nav. Just so that it has these links already set up in it. And now we need to add this one to the links as well. I just copied and pasted the one above it and I'll change this file. To. Hashtag.
+Lewis Benson: Put table there and I'll have to update the other ones. A little bit later. so, underneath of this, I'm going to put my header An H1 inside of the header and h1 is going to say. Table demo.
+01:10:00
+Lewis Benson: And under my header as well. Actually, put the table now.
+Lewis Benson: We'll just go to quick format, so I have this container called table. And that's not going to bring any content up yet. Let's look at the documentation. So they have this thing called a T head. So the table has a very similar hierarchical setup as the body. So if you think about it, if this was the table was the body. This would be my header. This TR is a table row and then this th would be like my h1 so it has its own elements just for the table. Everything has to be defined in order for it to lay out correctly, though. So we'll follow their example here. We're not going to use this attribute, I'm just going to put it in as a basic table. So they have the tea head. First, this is the defined the top of the table.
+Lewis Benson: And within that T head they have a TR and notice that I'm starting to nest a lot of elements here real quick. And then inside of the TR we have our th and this is for a table heading. Sorry kind of like an H1. Think of a a header. And a t H as an h1, the TR is something else, this is just to create a new row within our table. And it's just something that you'll have to put in every time you want a new row. so, within this, We'll put in. Data. Just some generic text there for that. And let's take a look at our demo analysis. What this looks like. So we'll go to list. I didn't put the links on every page yet but we're getting there.
+Lewis Benson: html and here we have a bold word called table or sorry data. Under our table demo. And if I inspect that, We can see we have a table. A T head. A TR, and a th And remember the T head is the same as a header, but only for a table. And the th is kind of like an H1. Or an H2, whatever, how you want to look at it? It's the row data and notice that is by default are bold text. Let's add another PHM.
+Lewis Benson: And this is in the same row. I have it nested in the same PR, so these should be side by side now. And there we have data, and more data. And this isn't very pretty. It doesn't have the borders that we've seen on Mozilla. It doesn't have any sort of decent spacing that stuff. You have to do with CSS. But we do need to learn the main structure of just how to organize all of the data for our tables first, before we get into styling them, If you want to give them a background color by all means, go ahead and do that. But as far as building this out, I'll just focus more on remembering that you need a row. You need a,
+Lewis Benson: You'll also need more rows whenever you start putting data underneath. So let's do that now. So this won't be inside of our header. This would be inside of our T body.
+Lewis Benson: Do they use the t-body? I don't. Yeah, they did. I've seen some tables where they omit that for some reason, but the tea body will represent the main content of your table. So in this case, they have two columns.
+Lewis Benson: We'll also do. Two columns since we have two headers. And we'll do two rows as well. So we'll first put TR This is the first row. And a cell kind of in Excel A cell for a table in HTML is called a TD. It stands for table data. These are not easy to remember because TD, I don't think is all that intuitive to remember a lot of times. When I'm building out tables, I do reference MDM or I'll find a page that has a table and just inspect it just to refresh on what these are because these elements are a little obscure, you're not going to use tables every day. What you do use them often enough that you'll run into this at some point. so, I'm just going to put in Just a random data.
+01:15:00
+Lewis Benson: Even as a word. Ed. We'll put in. Seven.
+Lewis Benson: So we have two cells on that one row. So let's take a look and see what that looks like.
+Lewis Benson: Everything's Aligned So the m is lined up with the s and the d is lined up with the f. So we have our heading here, we have the first piece of data and then we have the second one and the second piece of data.
+Lewis Benson: Your question is, When will the replays be made available? I submit the video, the recording in the morning after the class usually at about 4 am Central time is when I post that and you can find that inside of slack and the channel called October Cohort, 2 is where I've been posting this videos.
+Lewis Benson: Okay, so let's make another row. So we're still inside of the tea body. I'm going to collapse this row so that it's a little less text. I'm going to collapse this row as well. And then underneath of this one, I'll say TR. So this is our second row. And the second row is going to have two TDs as well. That way, we're matching the row above it. we don't want to have an extra row. Otherwise it'll stick out. And I'll just put another random word in here. We'll put hello. Another TD, I'll put world.
+Lewis Benson: And we'll take a look at that. and there you can see it, it has And our data column, we have 50 and And in more data column we have seven and world. Does anyone have any questions about anything I've done so far?
+Lewis Benson: And I think maybe I'll just add a little bit of color to this, so that it's a little more clear. What's happening here? And I'm going to put those on the rows. We'll do it on.
+Lewis Benson: Every other row. So the heading put Background color. And I'm going to go antique white. and then, on this, Table row. Style Background color.
+Lewis Benson: We'll do aquamarine. and then, Style.
+Lewis Benson: Background color. Antique white.
+Lewis Benson: And let's see what these different colors do to our rose. Now, So that adds a little bit of definition here, so every other row has the same color. I don't know if that helps to the visibility on what we're actually making here at all. If I zoom in, You can actually see the lines now in between of each cell. We can see how this is actually starting to look kind of like a table.
+Lewis Benson: Does anyone have any questions?
+Lewis Benson: Okay, so no questions yet. So far, we went over the table body. Let's add in a footer. So, because we're inside of a table. Ryan, you have a question.
+Ryan Arnold: So I did the style background color aquamarine and antique white like you did. I do, I just want to make sure that I have it in the right spot real quick. Yeah, it's
+Ryan Arnold: it's giving some kind of long string of, error text on my page. When I look at it.
+Lewis Benson: And you have it inside of the element Okay,…
+Ryan Arnold: Yep.
+Lewis Benson: and you got style with the equal sign, the double quotes surrounding everything. A colon in the middle.
+Ryan Arnold: Wait, I think I might have. No, that didn't fix it. quotes Background Color antique, white aquamani
+01:20:00
+Ryan Arnold: I yeah that looks the same as yours.
+Lewis Benson: Let's have you present for a second. Let's take a look at this. Maybe this could be a warm.
+Ryan Arnold: I have two monitors so I don't know how it's gonna Present.
+Lewis Benson: Whenever you hit entire screen, you'll be able to select which monitor you want to present on.
+Ryan Arnold: Okay.
+Ryan Arnold: there we go. Okay.
+Ryan Arnold: There you go.
+Ryan Arnold: Is it working?
+Lewis Benson: And not yet, once you. There goes.
+Ryan Arnold: It's kind of laggy.
+Lewis Benson: okay, so we have Table.
+Lewis Benson: And then we Had body tr style Background color. And where are you getting this air out?
+Ryan Arnold: Right there.
+Lewis Benson: Okay, this is interesting.
+Lewis Benson: Can you do an inspect? I'll see your console. and check the
+Lewis Benson: Check the Console tab to see if anything popped up in there as well.
+Lewis Benson: Those might have something to do with browser extensions or something. I'm not sure what that is.
+Ryan Arnold: 
+Ryan Arnold: Try refreshing. There we go. It's working now So,…
+Lewis Benson: Okay.
+Ryan Arnold: that was just The extension interfering with it, I guess.
+Lewis Benson: Yeah, and sometimes a lot of developers recommend developing in incognito browser at all times. And you can actually configure Live Server to pop up and…
+Ryan Arnold: Okay.
+Lewis Benson: incognito browser as well because the incognito browsers. They don't have any browser extensions. And they don't store cash or anything like that. So if you're working later on we'll learn about local storage and cookies and things like that. and none of that is stored inside of the incognito browser. So, if you ever have an issue too, try it out and then incognito as well as a regular browser.
+Ryan Arnold: I'll go configure that to do that. Right now. Thanks for letting me know that I didn't know that.
+Lewis Benson: Yep, no problem.
+Lewis Benson: Okay, so next, we have our tea body. We have our 2t rows. We haven't talked about the footer So the table has its own version of a footer. And I know this is a little of verbose, there's so many different elements just in this one element and these elements are specific to the table. So again if you ever do forget them, you can just go to MDN. Look up table. And they should all be in here. They're on the left here. all of the different elements you can use inside of a table. So we see this T foot. This is the one we're going to put in this is going to be our footer. And you can see how that looks a little bit different.
+Lewis Benson: They put their th on the left that way they can have. A secondary heading. With their data on the right. And that's perfectly fine, too.
+Lewis Benson: Let's go ahead and put in our T foot. This will go outside of the body.
+Lewis Benson: And we're going to put two TDs.
+Lewis Benson: I'll put one hundred percent, just making up some random data. TV, 100%. I forgot to put in an element. Can anyone tell me what I forgot to put in?
+Daniel Perez: PR.
+Lewis Benson: The TR. Got to put a row in here.
+Lewis Benson: So there's our TR, I'll highlight these. And I can drag them up, but I just wanted to show you this shortcut if you ever need to move your coat around, You don't actually have to highlight it. You can just get the cursor on both of them and highlight one line I'm going to hold the ALT key. And I'm going to press the up arrow and the I can actually move anywhere. I want like that. We're gonna put it in the middle of these trs and I'm going to press Ctrl s to format. And it's right where it should be. I'll make this one ninety percent so it looks a little different. Minimize. And I'm going to go to the demo. And I forgot to put my aquamarine on there. Let me put that background color on my footer.
+01:25:00
+Lewis Benson: I got to put style first equals. Background color. Aquamarine. That way. We're alternating. Our colors on teeth, white marine, antique white aquamarine.
+Lewis Benson: And there we go. Our footer has the aquamarine background color and it's lined up and you notice it doesn't look any different than what's above it.
+Lewis Benson: Anyone have any idea? Why that I even bother with all these different elements.
+Lewis Benson: Anybody want to take a guess at why we have a body t foot? Why do we care?
+Ryan Arnold: so, for organization to make it easier to Read the code to keep everything organized in its own section and…
+TRACY JOINER: Look more.
+Ryan Arnold: to make it easier for search engines and stuff.
+Lewis Benson: Yeah, it's mainly for screen readers For accessibility. But I think search engines probably could play into it. I'm not a hundred percent sure on the Google search algorithm, and how it would affect a table, but it definitely affects screen readers. So, if you're using a screen reader and you want it to read table data. you don't want it to read it like this, it would say, Data 50. Hello. It has to know the order in order to read it in is what I'm trying to say. So, maybe you want to just get all these rows first, you want to read left to And you can set up your screen readers to read a table in a certain way. Maybe you don't want to hear,
+Lewis Benson: the T H's, every single time you're hearing the data as well. So that's mainly for screen readers. But that is an important thing because any client you work for is going on what their websites to be accessible. They're going to want anyone to be able to use their websites.
+Lewis Benson: So we're going to make sure that we use the semantic HTML the T foot. And then the TRS, They're important because it actually defines the row. And as you can see, every time I put in a TR, it created a second line, it's a block element. Except if you look, it's not a block element. Because it doesn't take up the entire width of the screen, right? But if I look at the width of my table, the table only takes up as much space as the data.
+Lewis Benson: So if my TR is a hundred percent of the width of its parent, it didn't actually is a block element even though it doesn't go. The whole way across the screen. It's taking up the entire space, that it's container takes up. And that's one of those weird things you might look at this and be like, that's not a block element. I can see that. It's only taking up this much space, but if you look at the parent element, This element. Is taking up a hundred percent of its parent. And if we look at the header, it's going the whole way across and the body's gone the way across but our table was only taking up as much space as what it needs. So, the table element itself isn't a block element. But the TR inside of the table is a block element. So it looks a little confusing Does anyone have any questions about what I just said? I know I said It'll kind of weird.
+Lewis Benson: I might not have been the best explanation, but
+Lewis Benson: Okay, so if there's no questions. I'm going to go back into the documentation and I'm going to look at a couple more of these. Browsers.
+Lewis Benson: Minimize like I've been doing. so let's look at this, th and I said before, this is kind of like an H1 When we look at this. We have some attributes that can be applied to it. This attribute contains a short abbreviated description of the sales content. So if you had a really long name, you could use this abbr attribute and it would actually shorten the TH down so that it doesn't take up that much space. Call Span This contains negative energy value that indicates, how many columns the cell extends, the default value is 1. So what this means and I'll actually demonstrate this here that this is basically how far Your column will expand and actually they show that they don't show it here.
+01:30:00
+Lewis Benson: It was in the Wikipedia here. That's what this is from. If I inspect that, They have rose span. The column spans the same thing. Let me inspect the one that actually has a column span. So this has a column span of 8, so it's going to take up eight cells worth of space. So if I were to count out the width of one of these cells I'm sure this has a column span of three maybe two. So I should have guessed that because of eight. So, yeah, every cell This takes up two cells because it was a call and span of two. And then this one takes up eight because it has a column span of eight. So there's a really good demonstration already. For how that works.
+Lewis Benson: And we'll go back into the documentation and we'll look at some more attributes. And this is a really important thing. Whenever you're trying to design something like that, you want to be familiar with, what it can have. We have a row span which we've seen that was the vertical version. Scope. This enumerated attribute defines the cells. That the header. element relates to
+Lewis Benson: So this basically assigns the cells to the header. So you can use the scope to assign the Subsells to that. So if we look at here, this row, I can't highlight directly straight down, but this yellow row this yellow column here belongs to this. Tea category. And this column also belongs to that T category, that's what scope means. I don't think they're actually using the scope in here. They probably don't have a reason to but that is where you would use that, and if you needed it to actually show that reference for some reason, and then whenever you see this word deprecated, that means these are things that you don't use anymore. They are no longer best practice.
+Lewis Benson: you may still find them if you're working on an order code base, or if maybe you're working for developers that aren't familiar with the newer practices, You'll see them using depth deprecated elements. And whenever you see this try to avoid using anything that's in the deprecated list, they'll still work, they'll still function. But they're not best practice anymore. So you might see this center attribute and be tempted. I want everything centered, so I'll just put the center attribute on it and everything will go to the middle. You should actually either use the style attribute for that. And then add it. Text Align Center. Or. Use CSS and a CSS file for that. Don't use these if you can avoid it. just know the day exist.
+Lewis Benson: And it actually says right here, do not use the attribute as it is obsolete with the latest standard.
+Lewis Benson: Does anyone have any questions about anything? I've just showed here in the documentation.
+Lewis Benson: Anything about that. Okay, so that was the th
+Lewis Benson: Let's open up the TD and take a look at the documentation for TD, because this one isn't exactly intuitive how it works, just because of its name, mainly, I always forget what the elements called for a table cell. TD. Is the table data. So our attribute it has some of the same as we have our column span We have headers. And I've actually never used this attribute. This is an attribute to contains a list of space separated strings each corresponding to the ID attribute. So, if you put an ID on you can use this header attribute to assign To that cell. That's interesting. And our Looks like abbreviate is deprecated for the TD. Which is actually interesting that it's not deprecated.
+01:35:00
+Lewis Benson: for the So this documentation, it can really help you with a lot of this stuff. I'm assuming that it's abbreviated for TD because they replaced it with something newer or it could be done with CSS in particular.
+Lewis Benson: All right, so has everyone tried to create a table?
+Lewis Benson: And is anyone ran into any issues with their table generation? You got your TR's t, table cells, and all that.
+Lewis Benson: Okay, so I'm gonna make another table and you can do this along with me. If you like this one's gonna be a table that's related to books. So, let me create a new file.
+Lewis Benson: And can anyone tell me the shortcut?
+Lewis Benson: To create the boilerplate.
+Krystal Jefferson: The exclamation point.
+Lewis Benson: Yep, exclamation point. We'll press Tab.
+Lewis Benson: Okay, so let's do this one together. If I wanted to create a book table, what would be the first thing? I need to put in here. What's the first element?
+Daniel Perez: Before you start with the header.
+Lewis Benson: I started with the header last time so that I could have that navigation and the title, we can do that. So, let's put in the header. And then I'll put in an H1.
+Lewis Benson: And we'll give this a title.
+Lewis Benson: so, after the header, we'll element what I want create, to create the actual table,
+Lewis Benson: Yep. Cable.
+Daniel Perez: Okay.
+Lewis Benson: remember the table is the main container everything that goes inside of here. Now is going to be Elements used specifically for tables. You can also use anchor tag. You could actually include lists and things like that within your table if you have really big looking sales. But for now we're just going to stick with the
+Lewis Benson: Hable Specific elements. what's the first element within the table?
+Lewis Benson: Yeah, right. If he had.
+Ryan Arnold: The tea head.
+Lewis Benson: All So inside of my tea head, I think this is going to be for books. So we should probably have three columns title author and we'll do a rating. So, how would I do that using the tea head?
+Lewis Benson: How should I lay out this header?
+Lewis Benson: What will be the next element?
+Ryan Arnold: You have to create a row for the text to go into.
+Lewis Benson: Yep, exactly create a row.
+Lewis Benson: and then, the next element is going to be The th remember is the bold text and it gives us that heading look. And we'll just call this author.
+Lewis Benson: And we want to do the title, so we'll have another th
+Lewis Benson: And another th for the rating.
+Lewis Benson: okay, so we have three headings. We have one row. And we have our T head. Does that look right to everybody?
+01:40:00
+Lewis Benson: Perfect. so what comes after the tea head, then
+Daniel Perez: Body.
+Lewis Benson: yep, the tea body.
+Lewis Benson: And the next element.
+Daniel Perez: If you are,
+Lewis Benson: Yeah. Why would we put the TR in here?
+Daniel Perez: So, we have another row.
+Lewis Benson: Okay, so now we need to decide on some books. And I'm just going to go with some that I've actually been reading recently. So, put TD in here,
+Lewis Benson: And we'll do the author would be Jordan.
+Lewis Benson: format that the title.
+Lewis Benson: would be Of the world.
+Lewis Benson: Has anyone heard of I Have the World by Robert Jordan.
+Lewis Benson: I'll get a thumbs up, nice. How would you rate it? Ryan have you read it?
+Ryan Arnold: I haven't read it but I've heard of it. It's on my long list of things to read.
+Lewis Benson: Nice. I'm gonna rate it a 4.5.
+Lewis Benson: I'm just so we have a number in there. All right, so next we'll do another row.
+Lewis Benson: and for this one, Go with a classic. JK Rowling.
+Lewis Benson: I forgetting something here.
+Lewis Benson: Thanks.
+Ryan Arnold: JK Rowling used to be inside a TD.
+Lewis Benson: Exactly.
+Lewis Benson: Okay, so I have JK Rowling and a TD.
+Lewis Benson: I'll just put in Harry Potter for short. It could be any one of her books.
+Lewis Benson: Anyone want to write that one?
+Lewis Benson: No, I'll give it up. I guess that I was gonna give it to four.
+Lewis Benson: We'll do Brandon Sanderson for the last one here. So we'll need another row.
+Lewis Benson: Another Excel.
+Lewis Benson: So, there's our author. Title. The Way of Kings.
+Lewis Benson: And I'll give this one a four point seven.
+Lewis Benson: Okay, so this should give us. A table and this is called book TABLE.HTML. So, I'll have to change my URL to that. - Table dot HTML. And there is our table. And that is not very pretty at all. But it's there. And we can see that. Now that I have larger Text Museum, a little bit of the text is actually not centered on the author in the title. This is left aligned, but this is not left aligned. And that's just some of the behavior of the default stylings Let me take a look at see what we have here. We have. Vertical line middle. I've never seen. I never actually looked at this one before. what if I make that left, if I can
+Lewis Benson: I guess I gotta actually put it in.
+Lewis Benson: Vertical line. Colon. Left. it doesn't exist. I actually have to look at the documentation to see what that is. I've never seen vertical line before.
+Lewis Benson: Interesting.
+01:45:00
+Lewis Benson: Vertical B line could be using two context.
+Lewis Benson: I guess that makes sense. That left wouldn't work because it's vertical. So, I'd have to make this top.
+Lewis Benson: And I don't see any difference because the line height is so small. but, There it I learned about a new element or new property today. So this is the table.
+Lewis Benson: We've been doing these inline styles. I'm actually going to show Another way to do some of these styles.
+Lewis Benson: this is something you can play around with, we'll get more deep into this, whenever we get to CSS. But I want to show you something called internal styling. So what we've been doing with the I'll throw one on here real style equals background color. And I'll make a gray. I'm just gonna click this one. Get our color picker. And we'll make this a gray.
+Lewis Benson: So, let's see what that looks like. we have our versus inline style. Whenever you're typing in line with your elements, this is called inline styling. But whenever you're typing internally within your file, but not in line with your elements that's called internal styling and the key differential differentiation between the name. Isn't that important just recognize the difference. Whenever you see this element is called style So I'll put the style element in. what's interesting about this element, notice, I'm also doing this inside of the head. Because you're not going to see any content from the style element. What's interesting about it is inside of this element, you don't put content, you put code, and in particular, you're putting CSS code.
+Lewis Benson: So, I'm going to select my table and I'll go more and depth. Next week on how selectors work, but if you want to follow along, you can. So if I type the word table, this is going to actually select this element here because it's name is table. And then I'm going to put the when I say curly brackets, I'm talking about these ones that have the little indentation here, And so you see how it curls around. So that's the curly bracket. I also refer to this as a code block, because anything you type inside of the curly brackets, you're piping inside of a code block.
+Lewis Benson: So if I press enter, we have table and then we have our curly brackets or code block. And now I can just start putting in my styles, like, how we were doing with inline style. So I could say background color. And we'll say, antique white for the entire My format and let's take a look. So you can see this whole thing has a background Of antique white now and that's because I selected the table element. Whoops, that would be the same. As if I were to come down to table. And say style equals. Background color. And I'm gonna change this to Just to demonstrate this. So I just selected my table in line and I said to have about a blue background color. And you can see that one took effect.
+Lewis Benson: so what's interesting is I have two different styles applying to the same element. I'm saying this one to be blue. And I'm saying this one to be antique white. This one got overridden if we look in the browser again, which I keep clicking in the wrong spot, Sorry about that.
+Lewis Benson: I lost my browser.
+Lewis Benson: there it is. I should just look at the picture. If we look at the styles that are applied to the table, currently, we can see that that one's crossed out. And I said this, I believe yesterday, whenever you're using inline styles, they override everything they always win. So if you tell this in line to be blue, it's going to be blue. No matter what you put inside of your internal styles. So if you're applying styles inside of a style tag and again, if I click on the style tag it'll highlight it. And show me that I'm typing inside of the This Whatever I type inside of here will not be applied if I'm overriding it inside of my inline. So I'm going to actually remove the inline style. And we'll get that antique white back.
+01:50:00
+Lewis Benson: And I'm going to put a few common styles on this table. We'll do border collapse. I'm just gonna make this look a little bit better. And we'll put this as collapse. And whenever you're typing styles inside of, CSS notice that I have one selector and inside of this code, block or curly brackets. I was able to put two different styles but I'm still separating them as a semicolon just like I did with inline styling.
+Lewis Benson: The border collapse is something you'll just see commonly used to make it so that the oxygen just show you that empty space disappears in between the cells. And we'll give this a width. Of 100%. See what that did. It goes the whole way across the screen now. Because this wasn't a block element. It was only taking up as much space as it needed.
+Lewis Benson: and then the next style, we'll give it a little bit of margin top just so it moves down a little bit from that heading margin dash top. And these different properties I'm using, I'm not expecting you to memorize these. Today, I'm just throwing some at you right now, just so that as you see them, and as they're coming up, they're not new. So, I'm not expecting you to memorize these today, they're not going to be on the quiz, or even in the assignment. I'm just trying to introduce them a little bit early.
+Lewis Benson: So let's select another element now and this is going to be outside of the curly bracket. So our curly brackets are here. So, outside of the curly, brackets. I'm going to select my th and I'm going to give this a The border is interesting. You can actually put these in any order but you tell it how thick you want your border. We're gonna say we want it to be one pixel thick. Space, we want it to be a solid border. And we're going to go with a black color and I'm going to go more in the detail with how this actually works next week. Again, I'm just trying to introduce these briefly now We're going to add padding. so, we put in padding colon, we'll give this eight pixels. And 12 pixels. And then remember, I'm separating each style with a semicolon. And then we'll text the line.
+Lewis Benson: I believe I showed this one yesterday as well. And let's see what that looks like. So that looks a little bit cleaner. We have a border around our header now. So let's do the same thing for our cells. Something you can do if you selected your one and you want to put the same styles on the other, you can just put a comma and then put in the next selector. So we have comma TD. And that will apply all the same styles to both of those. So let's get a preview of that. And now we actually have the border around that that looks a little bit nicer. How does anyone have any questions about what I just did there?
+Lewis Benson: I know I went through that kind of quick.
+Ryan Arnold: Or can you show the code for the th comma TD real quick?
+Lewis Benson: And it formatted it to two lines. I'll actually move that back up just to show because I normally write them on one line.
+Ryan Arnold: you don't need to separate that with spaces or anything.
+Lewis Benson: No, That's one of the interesting things about this is it doesn't recognize space so I can actually do this. And this is still valid. But you can't really read that just at a glance. so when I format this, and you can remove all the space that you want for the most part, That's still valid as well. I'm just to show you, it doesn't care about the spacing, but when I press save, it just puts it back because I have the four matter set up. But yeah,…
+Ryan Arnold: Okay, thank you.
+Lewis Benson: that won't affected at all. And I believe I can even break these down to multiple lines, too. It doesn't care. I it's similar to how HTML works where I can put all this empty space in here and it's still the same code.
+Lewis Benson: Yep, no problem at all. Does anyone have any questions at all? This style thing it's a new. Concept that we went over a little bit here, so I just wanted to kind of introduce that. before we actually get into the CSS next week, so you can make your stuff a little less bland. you can play around with these if you get a little bit ahead on the assignments, And again, this is internal styling. And this is inline styling.
+01:55:00
+Lewis Benson: Okay, so there's no questions there.
+Lewis Benson: Tracy, you have a question.
+TRACY JOINER: Is there a page for assignments? Or.
+Lewis Benson: Yes, did they not populate yet?
+TRACY JOINER: 
+TRACY JOINER: I haven't and slightly being slack, right? And the Google classroom.
+Lewis Benson: It would be in the Google classroom. Yeah.
+TRACY JOINER: I'm not in there right now, okay?
+Lewis Benson: Yeah, it looks like they're posted. Let me see if They're even in the announcements. Yep. Yeah,…
+TRACY JOINER: Okay, cool. Thank you.
+Lewis Benson: so if we don't have any other questions and your questions could be about things that are unrelated to what, we went over right now too, just any questions at all. We're about to take another 10 minute break and then roll into the assignment. So, at this time, if anyone has anything at all, they want to ask this would be the time to do it.
+Lewis Benson: Okay, so no more questions. We're gonna take a 10 minute break and then I'm going to go over today's assignment. And we can get started on that. Let me open up the timer if I can find my browser again. There we go. Set, and I will see you in 10 minutes.
+02:05:00
+Ryan Arnold: Ike are you at your keyboard right now?
+Lewis Benson: I'm sorry, there's someone to say something.
+Ryan Arnold: I was just asking if Ike was at his keyboard right now, I was gonna let him know that I resubmitted the homework from yesterday.
+Lewis Benson: I was just sitting down when I heard someone talking.
+Ryan Arnold: Yeah, I figured I would just check that while we were on break.
+Lewis Benson: And talking with my commuted. That's not helpful. We're into the last hour, so let's go into our day. Three assignment.
+Lewis Benson: And here are our instructions for day, three. So we want to reinforce the HTML elements. This is mainly in regards to creating the table and adding information, along with the ability to create lists. so, we're going to Open vs code. I got cut off there, for some reason, creating new folder named Day, 3 assignment on your local machine. And inside that folder, you're going to create three files in HTML file. Name index, lists and tables. And here is the structure I want you to use for those files. We're gonna have a header, a NAV, a main, and a footer.
+Lewis Benson: And this is pretty similar to yesterday's assignment. We just keep repeating a lot of the stuff so that it can reinforce the normal workflow of creating a document. So make sure you have your header element with your H1 inside of it and then welcome to A person's passion page. And then we're going to have a NAV and we're going to create links, This will be similar to the demo that you seen earlier today. And we're gonna have anchor tags. Inside of our list items.
+Lewis Benson: And you will just link that from the home to the list and the table. That'll be similar to that navigation. I set up in the demo. Create an unordered list with at least five items that should contain a nested list. And if you're creating an ordered lists ensure you're using the correct UL and LI tags. Otherwise you can generate an unordered list using the UL and Li tags. How does everyone understand? But that means it's a kind of worded, a little weird there. It's basically just saying if it's an ordered list using OL, if it's an unordered list, use a UL and use the ALI in both of those.
+Lewis Benson: And the content can be anything. If you're choosing, but it should be relevant to Something that describes you something about you. It doesn't matter what it is, though, it could be your five, favorite books, whatever you want to pick, And then you're unordered list would be something relevant to you. That would be nonspecific and order. Maybe that you see in the room in front of you, five things on your desk, whatever it is, it doesn't matter. Then you'll create a table with some new information that you're passionate about and this will be such as the books movies. And it should have at least three columns, and three rows. And make sure you utilizing all of the semantic elements that we showed in the demo today. So you should have your table container your tea body.
+02:10:00
+Lewis Benson: the ths and it doesn't show it here but make sure you're also putting in the T head before you put in your THS unless Your header is vertical, then you don't actually need a head in that case. If you have all your bold text on the left, and we've seen an example Inside of the documentation. Let me back up to where that was like this here. these Ths wouldn't be inside of a T head because they're inside of a row or each one of those is the beginning of a row.
+Lewis Benson: Let's go back to the instructions. And you can reference back to lecture notes. I didn't provide any notes, but you can ask questions and I can open up my
+Lewis Benson: My code here if you want to reference this at any point, just let me know. I can come back into my VS code so you can see how we did anything. And then you'll just zip it like we've been doing and submit it the way you've been submitting it. Let me get into the rubric. So we want to make sure that the files are set up and structured correctly. That would mean that we have the number of files that were in the instructions which was I believe, three an index, a table and a list. And we want to make sure that we're using the anchor tag to create a navigation between the different pages. And we're also going to make sure you have the the TR, and the TD.
+Lewis Benson: I don't see anything about the unordered and ordered lists here that's gonna have to be added to the future rubrics, but just make sure you include that because that'll be on The other page you won't be docked if you forget it because it's not in the rubric but just for learning purposes, make sure you include it. Yes, Ryan
+Ryan Arnold: Sorry, I was actually reading the list in the assignment. I didn't hear what we were supposed to include.
+Lewis Benson: So I'm looking at the rubric and it doesn't mention the UL or the OL. So I'm gonna have to Bring that up and make sure that that can be added on a future rubric, but make sure you do include it in your assignment even though it's not listed here in the rubric, just have the UL and the OL. And all the Allies. Yep. Yes, Elgin.
+Ryan Arnold: Okay, thank you.
+Elgin Sharper: So, let me make sure are we making? two different five. Let's unordered. List, five, and a order list five.
+Lewis Benson: Yes, create an unordered list with at least five items and create an ordered list with at least five items.
+Elgin Sharper: And on each page We're doing. The same thing on each page.
+Lewis Benson: You will put html. And you will put your table on the TABLE.HTML. The one thing that will be mostly the same across, all the pages is your navigation. So you'll create a similar navigation. I didn't finish this navigation in here. I'll actually do that while we're working on the assignment. You'll create a similar navigation to this. Where you have? A ul. And within that UL, you'll have your allies and within its Eli, you'll have your anchor tags. Does that make sense? Yeah, and…
+Elgin Sharper: Yes.
+Lewis Benson: that'll be on every page. So I have a list on HTML Here, It doesn't necessarily have to be inside of the header, but your H1 does need to be inside of the header.
+Elgin Sharper: Okay.
+Lewis Benson: And that's the same across there. And if you have extra time, if you finish this say in 30 minutes or so you can play around with the style element. This isn't graded, this would be a stretch goal. If anyone wants to explore styling their tables a little bit, but make sure you finish all of the assignment criteria before diving into the style. And then if anyone has any questions about that, I'll be glad to help. Remember MDM is your friend when it comes to that type of thing and so is Google. You could do a quick search on, How do I center content and a table? How do I add borders on a table? And you'll find a lot of responses, you may find blogs. There's a website called stackoverflow. That's a really good resource where you can ask questions.
+Lewis Benson: And other developers will answer your questions. And the nice thing about it is You can think of it pretty much already been So whenever you type a question into Google, you'll probably find a link to stack overflow at some point. Does anyone have any questions about the assignment before we get started here? Yes, Elgin.
+02:15:00
+Elgin Sharper: Wait, what was the website you said just now?
+Lewis Benson: Stack overflow.
+Lewis Benson: So if I go to Google and I type in how to center a div, I actually put in stock overflow So, here is center a DIV and CSS. This is kind of what the site looks like and other developers come in here and they vote on how to do it. This is the question. And it says, I'm trying to center a div horizontally, I already have text Align center on the Div itself, but it does not work any suggestions. And then the top answer Here, it's giving why that didn't work. And that's explaining what a block element is. And then it's saying that they could try margin zero and auto. So this is just a resource that you can use if you're trying to solve a problem. Or somebody asked a question and other developers give them answers. And there's a lot of different possible ways they can do that here.
+Lewis Benson: For example, this individual Said to use a line center. And then this one said, you could use ID equals my div and then they selected the ID and set the margin to auto. So yeah, you can use this as a resource too to try to find answers if you're Having trouble getting through something.
+Lewis Benson: Okay, so there's no other questions about the assignment. Go ahead and get started on that. I'll be here. Feel free to collaborate communicate with each other, that's perfectly fine. You don't have to raise your hand. You can just start talking during this last hour. The floor is open to everybody.
+Lewis Benson: and as I said earlier, I'm going to finish that navigation, that I promised so, I left out The table link, I believe it was.
+Lewis Benson: Yes, Tracy.
+TRACY JOINER: Yeah, I've tried to do the playback of yesterday's teaching and the one before, but it has anybody else. Tried the playback of it. See if they pay in trouble, getting it to play back.
+Ryan Arnold: I played it back a little bit and it took a while to play, but that's just because the file size is very large. It's like a two and a half hour video. So it'll take a while to load,…
+TRACY JOINER: To load.
+Ryan Arnold: but it should play.
+TRACY JOINER: All right.
+Lewis Benson: with that, I'm going to upload those to YouTube. That'll help with that. And then I'll share those links as well. When I first post these, though because that'll take extra time it'll probably be in the afternoon before I can actually get the YouTube link but I'll be able to get those to you tonight. On that way, you can use those as a resource if you need more bandwidth to watch them. that is a problem if you're not able to see them,
+Lewis Benson: thank you for bringing that up.
+Lewis Benson: Yes, Elgin.
+Elgin Sharper: Yes. when we start
+Elgin Sharper: You do the exclamation mark. Do you have to put in where this is document? We have to change that to list our table.
+02:20:00
+Lewis Benson: So that's the text that shows up in the tab. if you look at my browser here, I think I'm still sharing, you see where it says book and then I have a vertical line that says Table That's the title. That's where that's…
+Elgin Sharper: 
+Lewis Benson: where it shows up So if I change that, that was for the book table. if I change that to just the word table, You can see that reflect up there. Now, it says Table You can make that say whatever you want it to say, usually it's something that describes…
+Elgin Sharper: okay.
+Lewis Benson: what you're doing.
+Elgin Sharper: Okay. All…
+Lewis Benson: Yep.
+Elgin Sharper: Thank you.
+Lewis Benson: My Google meet crashed there for a second. So I didn't realize got dropped out of the call.
+Meeting ended after 02:28:38 👋

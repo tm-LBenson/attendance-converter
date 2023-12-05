@@ -1,0 +1,373 @@
+﻿nia-amar-wfe (2023-10-31 19:30 GMT-4) - Transcript
+Attendees
+Daniel Perez, Elgin Sharper, Gregory Robertson Jr, Iris Coats, Justice Miller, Lewis Benson, Lewis Benson's Presentation, Reece Renninger, Umar Z, Umar Z's Presentation
+Transcript
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.
+Lewis Benson: And I'm going to go ahead and present.
+Lewis Benson: And welcome to week three day two. We're going to be exploring bootstraps grid system and learning how to lay out our web applications using bootstrap. We're going to be moving more away from external style sheets But not to the point where we completely eliminate them. We still want to be able to do some Styles maybe overriding customize our bootstrap Styles, but for the most part we want to just use bootstrap for everything if we can and explore the documentation and try to find a bootstrap solution before resulting to using CSS for our Solutions.
+Lewis Benson: So the grid system on bootstrap actually has three parts. The container is part one. We went over this a little bit yesterday and I showed a very very brief overview of how these different. classes can give you these breakpoints, but I didn't really explain why you would need that or how it works or anything like that. I just showed you that different screen sizes change the size of the container. I actually created a figma. And this is sort of what the grid system looks like and sort of how it works. The bootstrap grid system is broken into 12 columns, and I've laid these out here and there is a little bit of space in between each bootstrap column.
+Lewis Benson: So whenever you're using the bootstrap grid system, you can pick between these different class names and I actually laid some of them all out on here. So if you pick column two, it's going to take up two of the columns on the page. And these columns are laid out within your container. So I'm actually going to throw one of those in there just to show what I mean. You'll have the container element wrapping everything like this. And then within your container you have 12 columns available space. So whenever you're looking at these columns think of these as a fraction. So this would be two twelfths of the available space. This would be three four twelfths whenever you get over 12. If you were to put multiple items in here, it's going to spill down to the next row. It'll actually create a new row.
+Lewis Benson: and I'll show what I mean by this in code. This is a lot like HTML tables. If you remember in tables, you had to create a row first you create your table that would be your container and then you create a row and you put your header in it and this right here could be an example of a header all my column two's if we had six different headings THS. And then perhaps on the next row we put a TR. And within there we have these TDS and these would be the TDS. But the class on these is set the column three, so it takes up three spaces. worth of room within that table and let me actually get some code written to show what this means. I have a
+Lewis Benson: I created my new folder and I actually have two empty files in here So you haven't missed anything I've done so far. This is my normal demo folder with it be demo 10-31 and empty index. I just created this as demo.css instead of css. And the reason I did that was just to show you you don't always have to name it the same thing. I just want to make that clear that You can name this other things if it's related to what you're doing. We just use css because the autocomplete just makes it a little bit quicker to work with. And it's something ly I actually have some starter code and I'm going to paste this into the slack class chat the October cohort 2 and I'm going to paste it into the chat. Let me open a code Block in here.
+Lewis Benson: And this is just a little bit of CSS to help with the demo. It doesn't actually do anything. As far as our layout goes other than give us some labels on the screen to tell us what our current screen size is. So it is in the class chat. And here it is. and the in-call chat
+Lewis Benson: and it looks like the in-call chat cut it off.
+Lewis Benson: Let me put the rest of it in there.
+00:05:00
+Lewis Benson: Ending at 1400 pixels. There we go. So that should be all of it.
+Lewis Benson: Looks complete and again, I'm just going to paste this into my demo now. I don't have the whole thing.
+Lewis Benson: So I'll show this in my slack if you go into the class slack for the day. You can see where I just posted this in here. I'm just going to copy this out of here.
+Lewis Benson: And then I'm going to paste this into my new file this css. And all this does is ADD labels to the top of the browser so we can see what screen size are on I'll show you what that looks like. It's using this content property and before pseudo in order to actually generate things on the page without using any HTML. But first we need to actually link this in so I'm going to go ahead and say link. CSS and I called this demo.css. And I'll put a paragraph in here and say hello world. I haven't added any bootstrap yet. I haven't linked it in this is just to show you how to use this starter code and it's just a tool to help us identify or different screen sizes. Let me give us a refresh. There we go. So we can see it says I'm on an XXL screen size and I can't even highlight this because it's not an actual element.
+Lewis Benson: Just opened up the second. browser tab somehow This is not an actual. Element if I inspect and look at this.
+Lewis Benson: We can see it's a body before element and we don't even see what the text is. But over here we can see what the content of that would be. So that's how we're displaying that and then as I change my screen sizes. We can see that now screen size and Xs screen size. So it just gives us a little indicator as we're going through this and to see what type of screen size. We're on for the actual breakpoints on this grid system.
+Lewis Benson: Is anyone have any questions about that starter code? Is everyone able to get that copied in there? Again, it's just coming right out of the October 2 cohort Channel and then just copy it and paste it into a new CSS file.
+Lewis Benson: And then that's the one I created here. I'm going to create another CSS file for any styles that I actually want to add better external and I'll call this one styles.css. And this would be where I place any styles that I want to override from bootstrap if I want to add any extra background colors, which I'm going to try to do all of this with bootstrap today, including the background colors. But if I did want to override one of those colors to a new color, I would do that inside of here.
+Lewis Benson: But I'll still use the bootstrap classes. Okay, so there is the demo.css.
+Lewis Benson: And here's our index.html. So now I'm gonna Link in the bootstrap. Does somebody want to walk me through how to get the links needed to link in bootstrap?
+Lewis Benson: Yes, Iris
+Iris Coats: They're on the bootstrap home page. Let me go see what they're called. just that you're talking about the activation links, correct?
+Lewis Benson: So yeah the link to Lincoln the CSS file and the link to bring in the Javascript file.
+Iris Coats: Right, and that's the one that says include via CDN on your bootstrap homepage.
+Lewis Benson: Yep, so I'm going to copy the link first and where do I paste that up?
+Iris Coats: in the head
+Lewis Benson: Already, should I paste it right here?
+Iris Coats: That's where I put mine.
+Lewis Benson: Alright, I'm actually gonna move it up one more line so that it's above my demo.css. That way this could override anything if I need it to. And I'm also gonna Link in my style spot CSS just so I usually do forget. So if I do it now while it's on the top of my mind, I won't forget later. So this can override everything above it. And then the last one is the JavaScript and…
+Iris Coats: All right.
+Lewis Benson: where does that one go?
+Iris Coats: bottom of the page
+Lewis Benson: the bottom of the body So it's still inside of the body.
+Iris Coats: right
+Lewis Benson: We don't want to put it inside of our root, which is our HTML and we don't want to put it outside of the root. We want to put it inside of the body. There is something else you can do. If you really wanted to put this in the head you could add a defer attribute to this. And it would still work properly. If it's in the head of your document. I prefer to keep it in the bottom of my body. Because that's where most people are expecting at the base. So if you're working with other developers, they're expecting your scripts to be at the bottom of your body unless whoever you're working with has some sort of system in place where they tell you that all your scripts are going to go in ahead and you're going to defer them. And that attribute just allows all the content on the page to load first and…
+00:10:00
+Iris Coats: Okay.
+Lewis Benson: then it would load your script later. No regardless of where it's located in your file. Does anyone have any questions about that?
+Lewis Benson: Okay, let's see if this worked. I'm expecting to see some font changes some adding My reset to be work, sorry some padding removed actually, and I want to see if that resets working. And there we go. We can see that the font changed and where all the way up against the left. I notice we're not all the way to the top because my Of starter code is pushing this down a little bit. I have this set to fixed positioning. So it'll always be at the top of the page. But we're not really worried about the top of the page. This will just be an extra little bar up here. That just gives us a toll to look at to see what screen size were on.
+Lewis Benson: So the first thing we need to discuss is the container again. We need to make sure we understand fully how this works. So I'm just going to kind of break this down. This is going to be a little bit. Hard to show without actual content. So I'm just gonna walk through it first and then I'll try to add some content to make this more clear how this works. So starting off with a container. This is the default and notice that container and container small have the exact same numbers. We're at a hundred percent on an extra small screen and as we get to a larger screen, it starts to the sizing this implies that Mobile screen sizes all the way up to extra large screen sizes. We have breakpoints the whole way across. so this one is kind of the
+Lewis Benson: do it all Container right out of the box. This may not be what you want. You may need an XXL or an Excel if you're dealing with ultrawide designs. So that it doesn't continue to break. Past this point we want maybe on a large screen size. We just want to go to a hundred percent and we don't want to continue to break it open and open and what this means is if I'm on a container medium. Once I get past small. This 100% means this container is going to take a 100% of the page. It's going to be the same as similar to this container fluid or It's gonna take up a hundred percent of its container. Whatever its parent is it'll take up 100% of the parents. So if the parent is the body.
+Lewis Benson: On a medium screen size. It's going to take up a hundred percent of the body. But as soon as we get to this 768 pixels then it's only going to take up 720 pixels of the parent. Let me show you what that looks like in code what I'm using these starter code. It'll actually create. Some boxes for us to use as reference. So within my body I'm going to create a main And then within that main I'm going to create an article just so we can get some of that experience again. both using semantic elements we'll start with the article and I'm going to put a container.
+Lewis Benson: I got to put class container fluid on my article that way it takes up 100% of the main and by default the main is a block element. So it's taking out 100% of the body. So we don't have to worry about that. I'm going to change this to an H1 just so that it's more semantic. This would be our heading. Okay, so there is our article taking up a hundred percent. And then I'm going to put a section in here.
+Lewis Benson: And I'm going to give this a class of box. This class is coming from The starter code if I look in here we have this class called box and all it does is give it a light blue background with a blue border a height and a font size. And this is just for showing how the bootstrap grid system works. It's nothing as far as the layout goes or the style. It's purely for the demo. So when I give it the class of box. Let's take a look and see what we see.
+00:15:00
+Lewis Benson: So now this is taking up a hundred percent of the container that it's in because I haven't applied anything else to it yet. Let me go ahead and do that. I'm going to put another class on here called container.
+Lewis Benson: We'll just do container for now. So we can see these breakpoints as I shrink the screen. So this is the default size. And this is the XXL and as I shrink this down we can see that it's dynamically changing the size of this component as the screen size changes right before we run out of room here in the large screen size. It just brings that content lower. So whenever you have actual content in there, this can be really useful because notice it's not stretching and growing. So let me put my H1 within that section or I'll put an H2 in the section. So we have another heading in here.
+Lewis Benson: And say this is the title. And we'll look at that. And I'm going to Center that as well.
+Lewis Benson: I forget the actual. I want to look at the bootstrap property for centering. I believe it's text align Center.
+Lewis Benson: Maybe in typography. I'm just going to type. X alignment
+Lewis Benson: and here to let's just text Center. Is the class we're looking for to Center the text? Okay, so we'll put text Center on that. And we'll look at the results and there it is centered. So I'm going to shrink this down again and we can see that that's growing and shrinking with the page. I'll notice when we get to this really large screen size. There's a lot of extra space here. Usually with some sort of title or heading you might not want to have all this extra blue space and this is where we can start using these other. components let me put a container large on this one of the things with bootstrap 2 that makes this easy to remember a lot of these components and how they work is it typically has the name of the property in this case container followed by the breakpoint
+Lewis Benson: and then if you have an alternate sizing for this you would put the number next and I'll show you what I mean by that when we get to the actual grid, so I'm going to put a large on this. And let's watch that as I shrink it down.
+Lewis Benson: And notice it's not breaking anymore. It's stopped there.
+Lewis Benson: So let me put a Xs and we'll see the difference here.
+Lewis Benson: So we're on the large. It's taking up 100% and then when we get to XS, we can't really tell the difference because a kind of out a room, but this would prevent it from shrinking or growing on those screen sizes. And then if we needed to actually set this so that it's smaller. We would have to use the width property on that. And I'll show you that again in the docs. I briefly showed this yesterday. I don't think I actually used it and this would be under sizing. And this is where put If we wanted to use 25% we can put this w25 class on it. And I'll throw that on there as well. And we'll take off the excess.
+Lewis Benson: And now we have a smaller container. And we can see it's still shrinking now. We're starting to wrap to other pieces let me put the excess back on.
+Lewis Benson: And now it grows and shrinks. We still get a little bit of wrap when we get under medium. And that's just because we're using 25% if I were to increase this to 50% we probably wouldn't get that wrap anymore.
+Lewis Benson: Does anyone have any questions about how these work so far? These breakpoints can be a little confusing to work with because it's set up for mobile first rather than desktop first, but when you look at the documentation You just have to ze. the chart that's given here this little table and Azure analyzing this you can kind of figure out how this is going to work. So we can see container fluid is a hundred percent on every screen size. And then as we get above certain screen sizes, it changes the number of pixels that it's going to be taken. so that's
+00:20:00
+Lewis Benson: that's how the container works whenever we're using the grid system. We have to have the grid within the container. So again, this is a three-part system you have Your container which is similar to the table element when you're dealing with HTML. And then we have the row. This would be like the TRS whatever we're building with tables. So let's get into grid I'm going to click on grid. And here's a Very very simple demo and you can see they have a row and then they have a column The Columns would be like your TDS or your th's with the table elements. So I'm gonna go ahead and just start laying out a little bit of a table here. So currently I have my section I'm just going to remove all this extra stuff from it. I'll keep the Box on it. we can see that. And within this box, I'm going to give it a row.
+Lewis Benson: And we'll see what we got. So there is our row and now within that row we're going to need some columns.
+Lewis Benson: And it looks like I have an error here somewhere. I'm missing a quote.
+Lewis Benson: And there's my content back again. Okay, so I would want this to be a column. Let's put the H2 on a column. And the way you do this is you just say column. And by default this is going to be all of the breakpoints. This is and it's going to take up all 12 columns. It's going to go the whole way across the screen, but if I only wanted to take up half of my screen then I would say call them six and it's only going to take up six and apparently I have this in the wrong spot.
+Lewis Benson: I don't have a class is what it is. I apologize for that. And that's an easy mistake to make whenever you're just dropping in these names and just copying and pasting them whenever you have a lot of code already written with classes. You normally just press space and paste it and so it's easy to forget to put in The class as well, so just keep an eye out for that if you make that mistake, it's not working. Make sure you have your class name in. I'll probably make that a hundred more times before this is done. okay, so we still don't have the
+Lewis Benson: I might have messed up to syntax. I'm going to just double check the docs on this. So here's CLL.
+Lewis Benson: And we want to find the ones that show the different. There we go.
+Lewis Benson: So that one's a column two.
+Lewis Benson: Here we have a column for.
+Lewis Benson: And it could be because I'm using an H1. Let me switch this to a div just to make sure that's not affecting it. I don't see why it would but just in case.
+Lewis Benson: And we have our box class and we have our row class. I also want to make sure my demo code isn't interfering with that as well.
+Lewis Benson: So there's nothing in here that would affect it. We just have to be sure of that. Okay, so let's take a look.
+Lewis Benson: and this should be taking up half of the size. I apologize. I'm not 100% sure why that didn't work right? I'm going to copy in their code real quick and see if I get different results. I should see. Eight and eight and four would be 12, so I should see two sections here.
+Lewis Benson: I'll put this underneath of my current code.
+Lewis Benson: And maybe we can use this to debug a little bit. These kind of things Just make sure that actually applies. They are there. And then I should be able to give the Box.
+Lewis Benson: So that we can see them and there we go. So this is taking up eight. This is taking up four. Now I should be able to switch these two six and six and it should take up half now. And I'll just change the title so that they match as about this fast screens swaps there. So I set this one to column six and this one to call them six this one. I believe is set to column three. Above it. Let me check that. It's just set the column. So whenever you set up the column, it does like an auto it figures out how much space it needs and that's how much space it'll give it so I'm gonna look back up here again and see where I went wrong. So we have our container and maybe because I'm using a container fluid instead of the container. And class. We have our row class. And then we have our column six.
+00:25:00
+Lewis Benson: So that seems to be the same.
+Lewis Benson: And it seems to be working. That's still picking up all 12. Perhaps if I add two of them.
+Lewis Benson: Here's the issue. I was looking at the parent. instead of the element
+Lewis Benson: everyone see the bug I found it. And I had my box class on my row. So the whole time I was trying to see these different sizes. I was looking at the parent component instead of the child component. And again these type of things happen.
+Lewis Benson: I'm going to start using the background from bootstrap instead of this box class. Just so that I don't run into that again. That way we can actually see what's going on. So with bootstrap, I'll put a primary here.
+Lewis Benson: And we'll see these results.
+Lewis Benson: Okay, so that one's working. I'm going to give this one a secondary so we can see the difference.
+Lewis Benson: And there we go. So just everyone see how this is working how this layout kind of gives us this Dynamic sizing. And then when we start getting into smaller screen sizes to these will stretch and grow for whatever the screen size is.
+Lewis Benson: And we don't even have to use any media queries or anything like that. Everything just kind of changes on its own. So it's a really really cool system.
+Lewis Benson: Where this can get interesting too is if I wanted my entire page to be using this grid system. if you can see this bootstrap page I'm on right now has three columns so they are probably using their own system on here. But if I inspect this we can see that
+Lewis Benson: I released hope they're using their own system.
+Lewis Benson: They are. So here's the XXL.
+Lewis Benson: and then when I open this up We'll look for the different columns. They have it as a sidebar.
+Lewis Benson: All right, so they're not using the columns to lay this out. They're using other elements now they have a sidebar on one side and let's see what they did for the other side. That's in the main. Looks like they're using CSS grid actually.
+Lewis Benson: And this is also a good way to kind of get an idea of how to lay out your pages is looking at how other people later Pages out and seeing what kind of solutions they want with. Let me lay this out a little bit more just so we have a little bit a better understanding of this and I'm going to go over some more of these grid properties to show how this works. So this eight and column four. This could work pretty good if I wanted my main content to take out. Eight twelfths of the page and this one to take up for 12 so the page. So, let's see that.
+Lewis Benson: so right now I have titles I'm going to remove the code from bootstrap.
+Lewis Benson: See that container text Center. Row, okay.
+Lewis Benson: so this would be instead of a div we could do. If this is a section, the first row could have all of my text in it. So we can make this a paragraph element
+Lewis Benson: and what's cool about this too is we can actually Nest containers rows and columns so that we have a larger layout. So if I have my section as a row. I can also have a column here.
+Lewis Benson: and have My article set of the row And then another section. would be
+00:30:00
+Lewis Benson: another column and this will give me a a side-by-side layout within that layout. So this looks a little bit weird because I have the row here, but that means I need to put a container. on the parent remember this has to have a parent that's a container before you can put the row on. I know I did a lot of that pretty quick. I'll go over this line by line and explain how each of us works.
+Lewis Benson: So we have our two column layout. And if I give this some height this would make a little bit easier to understand but basically what I did was I created two sections. This is this first section and this is the second section and all of this is wrapped inside of an article right now. And if I inspect that we can see that layout right Here's my main and we can see my main is set to a container. And then in here I have an article that is a row.
+Lewis Benson: And then this row has more rows and columns within it and what I would want to do now is I want to give my article a height. So that this looks like it has a lot more content in it. So let's go ahead and do that. Let me look at I want to use the bootstrap sizing for that.
+Lewis Benson: So we'll go down to utilities. We'll go to sizing.
+Lewis Benson: And this is width. We need height.
+Lewis Benson: So here is men view 100. We want to get one view height of 100 this way it takes up the whole height of the page. and I'm only going to use this on my
+Lewis Benson: article I'm actually gonna put it on my main is this will do the same thing. It'll actually inherit these down.
+Lewis Benson: And I'm gonna give this a background. warning just so we can see that.
+Lewis Benson: Okay, so here's my main and we can see how much space that's taking up. So I'm going to fill some content out inside of these sections. so we can see how that lays out.
+Lewis Benson: here's my article.
+Lewis Benson: Here's the first section. So for my first section I want to add.
+Lewis Benson: lorem times five
+Lewis Benson: Loram times three.
+Lewis Benson: loram times four
+Lewis Benson: loram times two. So this isn't kind of resemble like a news article. So I'm also gonna put some headings in here. I'll put an H3.
+Lewis Benson: Put a heading three there.
+Lewis Benson: We'll have another one here.
+Lewis Benson: And let's take a look at our results. And this is kind of giving us that multi-column newspaper type of look.
+Lewis Benson: So we have two primary columns and then within those columns we can see our primary secondary heading. And then we have our two columns there. So I was able to create a four column application this way just using this column and row layout. Does anyone have any questions at all about this? I know I went over this kind of quick. I do want to go over this line by line. But if there are any questions that might help clear up any information that You're having a hard time with understanding.
+Lewis Benson: All So going through this line by line. I have my main here and I'm going to highlight this so we can see where the closing tag is on that to see what everything's contained with on it. And it goes all the way down to Here's the closing tag for it. And we can see that the article is nested within the main so I only have one item within my main. I gave my main a minimum height of 100 VH. And this is really similar to how we were laying out our CSS before just we're using somebody else's styled classes. We use these background colors just so we can see the sizing of everything. And then we have our article.
+00:35:00
+Lewis Benson: And I set my article to a row so that if I wanted to have more than one article, I could place another one underneath of this and it would have more content under this. So maybe we would have an aside as another row as well or our footer could be another row. we could also have I'll say a header here. And within that header I could put an entire navbar in here from bootstrap. I might do that but just for now. I'm going to put some content.
+Lewis Benson: This is a header. And we're going to give this a class of row. and a background
+Lewis Benson: to use a different color
+Lewis Benson: I think secondary should work for that. So there's the header because I set this as a row our article remember is this orangish color. So it's lining up directly underneath of it. And then I'll put a footer at the bottom as Just so we can see that. And that footer will go right underneath of the article.
+Lewis Benson: that's not a photograph an article. Twitter But they class. of row
+Lewis Benson: and I got to give this a background color and some content. I'm going to put copy semicolon 2023 this gives us that Copyright symbol. And I'm going to give this a background color.
+Lewis Benson: of secondary
+Lewis Benson: and here we can see our Footers at the bottom as a row and notice we have this little bit of space here in between when you're dealing with the bootstrap grid system. This space is called Gutter and there's actually a property to change how much we have. And I believe I can place this on the parent. So if this is my footer I want to find the top of this.
+Lewis Benson: Here's my header. So here's the main. So I have to look to see what the actual property is for gutter.
+Lewis Benson: And I can type that in here.
+Lewis Benson: row column gutter
+Lewis Benson: and it's just the letter G and a number. And we can see how it gives it space in between left and right.
+Lewis Benson: So I'll go ahead and add that in. We'll put G. And then whatever the number is the bigger, it will be so I'll do G3 just to see what that looks like.
+Lewis Benson: Let's try G5 just to Looks like we're moving it left and right up and down, but I haven't applied any gutter to these inner rows and columns because remember these are separate items inside of here. So I'll have to add that. here's my container. So if I put G5 on this container?
+Lewis Benson: Then we should see some results in there as well. I was putting it on the bottom. And it's actually pushing that up into there as well. We'll have to fix that.
+Lewis Benson: And put some here.
+Lewis Benson: on the section
+Lewis Benson: and it pushed it up a little bit.
+Lewis Benson: You just double check where I'm putting this.
+Lewis Benson: Yes, Omar.
+Umar Z: Yeah, those before we go any further. Can you please quickly show me again? How you de? These alternate Columns of I mean a gray and blue columns. I think I missed that I was I think working on my screen and I'm just accept some kind of confused.
+Lewis Benson: Yeah, which ones were you confused on Let me show the demo again.
+Umar Z: Yeah, so the blue gray how you do what it into these four columns?
+Lewis Benson: Okay, so I'll show you with the inspection tool first. These two here they have this parent of call section. and then the other side has a parent of section and what I did was I have my article. Can you see these devtools? I can zoom these in a little bit more.
+Umar Z: I just
+Lewis Benson: Yep, so my article is a container. And you can see that has both of these sections in it.
+Umar Z: Yep.
+Lewis Benson: within my section I created two rows. So these two rows right now are side by side, but they're also columns so their columns within the article container. And that's why they're vertical. And then being that I also said they're rows. I can place more columns inside. I actually should say that this is a column. As well this H3, which I haven't done that yet or wrap all of this content and put it in a column.
+00:40:00
+Lewis Benson: And the same here and I think I actually made a mistake with that. That's why I'm having some issues with the spacing.
+Lewis Benson: And we can see that H3 is really tolerate there.
+Lewis Benson: I may have to back up a second here and try to fix some of the stuff I Kind of just going off here and growing on Styles everywhere. Just trying to show everything at once. It's kind of messy looking.
+Lewis Benson: Okay, so let's clean this up a bit. I did that make sense that kind of answer your question how I did that?
+Lewis Benson: I could. Yeah, so again I just have the two sections as columns and as rows I'm gonna remove this row property on these sections to see if that fixes some of this.
+Lewis Benson: And then that made everything vertical.
+Lewis Benson: that makes sense because everything would then be a one column instead of AR rho it's undo that. Let me remove all this Gutter and I'll come back and I'll put the gutter in as soon as I get this stuff lined up correctly.
+Lewis Benson: Okay, so that looks better. Just removing my gutter right now so that I can fix some of my issues. We have this paragraph This is a header. That's perfectly fine this row. I could put this in a container and make a row within that I don't think I need to since there's only one item but one thing I noticed here is with this section. I'm going to make my section a container. And then I'm going to wrap everything in here and it do so that it's all contained.
+Lewis Benson: since this whole thing is using flexbox. Putting things in containers can make it a lot easier to lay out. You can just manipulate things using your justifying aligns which are also available inside of bootstrap. So those are now on top of each other because the row can't be applied to it.
+Lewis Benson: Let me just undo that we go.
+Lewis Benson: All that makes sense. I'm confusing myself with the amount of code. I just wrote here. What I did here was I had these as columns so this needs to be a container.
+Lewis Benson: That way these can be side by side and taking up half of the container.
+Lewis Benson: And then we have our heading above it.
+Lewis Benson: And then for the other one.
+Lewis Benson: It actually didn't seem to fix that because this isn't a row.
+Lewis Benson: I really made a mess of this one.
+Lewis Benson: Okay, so we got our columns back. I have this as a row.
+Lewis Benson: This is the primary color. So that's the blue. I'm going to put a background color on my section just so I can identify this. BG I'm put warning on there. And I hope to remove warning from my main.
+Lewis Benson: There we go. So now I can see where that's actually laid up at.
+Lewis Benson: That makes this a lot easier. Okay, so with that. I can now put a gutter. On this section and that would be G five.
+Lewis Benson: And it placed it around my heading three. but it didn't seem to push these apart and I think that's because these are separate columns, so doesn't there's a different type of gutter for left and right that the G puts it all the way around everything whenever you have it on the parent container, but it doesn't seem to be nesting it down into my columns here. So when I look at the gutter again. There is gutter for columns. horizontal and vertical
+00:45:00
+Lewis Benson: so they put that on the row.
+Lewis Benson: Here we go g y.
+Lewis Benson: And that's for the vertical gutter? And that's on the row.
+Lewis Benson: But I don't see that making any changes. I might have to come back to this. And see what I did wrong here. I probably have a typo in here somewhere that's messing this up. And I know that's not very helpful to everyone right now. But I do want you to understand that this is a lot like an HTML table. That's the main takeaway here. You have a container which would be your table element. You have your row which would be your TR and then your columns would be your TDS. And then you can Nest more inside of each other so that you're able to lay this with different types of patterns, for example if you have A grid of elements you could Nest that inside of your entire article.
+Lewis Benson: Which is what I was trying to demonstrate here and I must have nested something incorrectly because this does not look the way I practiced this earlier. So I'm not sure where I went wrong here. We have our section row column.
+Lewis Benson: So it is showing that it's applying it.
+Lewis Benson: I might just not have enough room for the amount of content.
+Lewis Benson: And that's why it's let me remove some of this text.
+Lewis Benson: Okay, and then on My section I want to remove this container.
+Lewis Benson: I'm gonna simplify this I'm just gonna bring everything back to one piece. I'm just going to apply one thing at a time so that I don't have to fight multiple things at once. I do apologize for that. This is a little bit messy right now these things happen. Whenever you're building things out, you'll run into this quite a bit. So this is actually a pretty good demo of what can go wrong whenever you think everything is going to plan. So as a basic layout, we now have just two straight columns with text on each side. And if I put this gutter on my row, I should see that place that in between. And I'm going to remove this one from here as well.
+Lewis Benson: Okay. G three
+Lewis Benson: And that separates From the paragraphs but it doesn't separate the paragraphs from each other left and right.
+Lewis Benson: Let me wrap those in a div.
+Lewis Benson: That's a class.
+Lewis Benson: My internet blipped there for a second. Can you still see my screen?
+Lewis Benson: Can everyone hear me?
+Umar Z: It's lagging you.
+Lewis Benson: Yeah. Sorry about that. I don't know what happened there. Just my whole slaw Google meet just dropped for a second. Everything's going wrong. equals container
+00:50:00
+Lewis Benson: then we put row. and G 5
+Lewis Benson: I'll have to come back to this. I'm not sure what I did here. That's making these not separate apart. Maybe it's where I have my background. I bet you these are working. Where's my background color at again?
+Lewis Benson: I made the same mistake. I did last time. It's just my background color.
+Lewis Benson: So these are separating the reason you can't see it. I'm sitting here trying to figure out why I didn't working. It actually is working. You just can't see it because the color pushes all the way up to the other element it actually Pushes halfway through the gutter.
+Lewis Benson: So these are separated by extra space.
+Lewis Benson: So does anyone have any questions about that what I mean by that or I do apologize for any confusion there dealing with these background colors makes this a little bit weird whenever you're dealing with. Grid, you're able to get the grid lines to appear on screen by toggling these all I can toggle is the actual Flex containers. I'm not able to get the grid lines up to show you what that would look like. But there are lines here that are separating these out.
+Lewis Benson: Okay, so let me reduce the amount on that because that's actually quite a bit.
+Lewis Benson: Bring that heading down a little closer. There we go. does everyone see how you could lay out a page though using this system?
+Lewis Benson: There's anyone have any questions about it.
+Lewis Benson: Because again this is a lot like a table. and What's nice about it? Is it stretches and grows with your screen sizes? So it can dynamically change based on these different breakpoints. So I'm going to create another. Section again. I'm just going to duplicate this one. We're gonna try this one more time so that we have a multi-section. row here Make sure I grab only the section not the article.
+Lewis Benson: We have them on top of each other. if I want to get these side by side. I have to put the column on these as well in order for them to line up side by side.
+Lewis Benson: So that would go on. the section
+Lewis Benson: I have it on this section. and then our article
+Lewis Benson: I might have to take the row off.
+Lewis Benson: So that they're not underneath of each other.
+Lewis Benson: I think I just don't have enough room to display that much content. All that makes sense because they're both sixes. I'm trying to put 24 across I need to make these smaller.
+Lewis Benson: Actually need to be threes.
+Lewis Benson: clone three column three column three
+Lewis Benson: Okay, and now we have the space over here. We can fit our entire column on that side.
+Lewis Benson: But because we have the row on this it's not going to apply.
+Lewis Benson: And I have to nested inside of that same container.
+Lewis Benson: It's taking up the wrong amount of space. This needs to be a column. six
+Lewis Benson: and this is one of those things that you'll have to mess with whenever you're dealing with Just use your tools here. I got a 16 there. I use your tools here to manipulate these. And try to find that happy Center. Using your Dev tools to quickly manipulate through these class names. A lot of this is going to be trial and error to get this laid out until you find a system. And there's also templates to help you build these out too using these different columns and I will be showing that tomorrow how to use the To make this a little bit easier. But as far as laying out these individual components your easiest thing to do is just use what's here inside of bootstrap. And modify it to your needs. That's one of the easiest ways to make all this work.
+00:55:00
+Lewis Benson: Let's take a look at the columns. So we talked about the gutters we talked about the containers we talked about the grid. So here is the columns. And this is how you lay out your vertical content.
+Lewis Benson: And again, we're just using that column class.
+Lewis Benson: And we have these different alignment properties within here that allow you to maneuver the material within the content. Here they have a bunch of different varieties where they're showing all the different positioning that you can use using justify content. And this is again I said about the Justified content and align you can use this to maneuver all of your content around the page and put things wherever you want and wherever you need. So we have our justify content around this would be equal to your justify content space around. You're Justified content would be your space between here we have evenly so all of this represents normal flexbox properties, except this is a bootstraps way of telling you what it is.
+Lewis Benson: And again, you're not supposed to memorize all the class names. I've used it enough. You'll start to remember a lot of them, but you're not expected to memorize every bootstrap class name. You'll have to check the documentation. Not just because this is hard to remember but because they also change over time they change their names. Probably every couple years. You'll find a whole bunch of new class names in here and they'll get rid of certain ones. I haven't heard anything about it, but they could migrate this over to you CSS grid and a lot of this would change if they did that. So you want to keep an eye on these to make sure that they're still there whenever you go to use it.
+Lewis Benson: So if you start trying to set rows and columns and you notice it ain't working just come into the docks and make sure that nothing changed for you. Does anyone have any questions about any of that?
+Lewis Benson: As well as looking for the column breaks. So the column breaks again, this is what I said with the container. You put in the name of what you're doing. So in this case column. And then you put in the breakpoint. So There's also the MD LG all the different breakpoints and then you put in the number at the end and it will use the same format across all of the bootstrap components that you're going to run into are going to be formatted like this if they have a break point, it's going to go after the name and if they have a size specify with that it goes after the break point and you can always leave the break point off and just use the size and you can also leave the size off. And then that will use all of the defaults. Just one of those things to help you remember if you're using it.
+Lewis Benson: Ordering this right? Here's one of those things where in flexbox you could use column reverse.
+Lewis Benson: This will actually change the order of your columns. So if you needed them in a different order you could use that For example, if you had a table of names and you wanted it to be in a different order to display them by last name or first name first, you could use some solution like this for that.
+Lewis Benson: So if there's no questions about this, After the 10 minute break, we'll dive into some more of these components and practice laying out something a little bit more realistic than just some colored components. So hopefully that'll be helpful to you. Does anyone have any questions before we head to our break?
+01:00:00
+Lewis Benson: Okay, I'll start the 10 minute timer and I'll see you when I get back again. we'll lay out a more realistic looking web page when I get back.
+01:10:00
+Lewis Benson: Okay, welcome back. my browser got moved.
+Lewis Benson: All right, so I'm actually going to start a new file
+Lewis Benson: I'm getting one second here.
+Lewis Benson: And we'll do a portfolio. Just so we can see what something like this might look like, I guess. All right.
+Lewis Benson: Here's my portfolio.html.
+Lewis Benson: Make sure my microphone was working there. So let's bring in.
+Lewis Benson: and what I'm gonna do is
+Lewis Benson: I'm just gonna start from the top and work my way down through the content and explaining each element and component as we go. so let me bring in my bootstrap and I have my links still in this index.html. So I'll grab them out of here. I'm not gonna bring in my demo or my Styles. I don't plan on using any external CSS for this if I needed to I can link it in at that time for now. Just stick with this. And then at the bottom of my body. I'm going to put my JavaScript.
+Lewis Benson: Packed so starting off building a site like this. I'm going to want to put my nav first thing right in the page. I'm just gonna put a navbar here. I'm gonna go right to bootstrap and grab there navbar and then I'll just modify it to make it work for me. Where my browser go?
+Lewis Benson: This will save a little bit of time since they have a the stuff written. That's a lot of stuff.
+Lewis Benson: We can use the one with the logo in it. That would be cool. I'll just grab this.
+Lewis Benson: Paste it right in. All right.
+Lewis Benson: so let's take a look here. We have her now bar. We have this.
+Lewis Benson: We're kind of like a darker theme. So what is a dark now bar
+Lewis Benson: dark as well.
+Lewis Benson: and I'm also going to put the navbar
+Lewis Benson: expand for large screen sizes this way it will collapse into the hamburger when it hits The LG if as I'm shrinking my screen down instead of doing it too soon because I'm not going to have a whole lot of links on it. We ever container fluid.
+Lewis Benson: Navbar brand will keep that there. Then we have this image.
+Lewis Benson: instead of this Image I'm going to actually just put a UL here.
+Lewis Benson: I want to make sure I don't delete my
+Lewis Benson: where's my closing tag? There we go, and we'll just write my portfolio inside of this anchor tag.
+Lewis Benson: That way we have some content. Let's see what this looks like so far.
+Lewis Benson: Okay, so let's just a little bit of text.
+Lewis Benson: So in here, I'm going to create a UL. Let me see. Where's my diva? I'm going to need to create a collapse Point as for some reason this one didn't come with one. So my anchor tag is outside of the anchor tag
+01:15:00
+Lewis Benson: But inside of the container fluid we'll create a do.
+Lewis Benson: And we'll put the class on of collapse and this will allow the hamburger menu to pop up whenever I'm on smaller screen size. these are the ones that are going to be contained within that menu whenever we open it up. I'll show that as soon as I get some content in there.
+Lewis Benson: Again, you could copy a lot more than what I am right now. out of their documentation
+Lewis Benson: and we need a UL for our links. And we'll put three links in here just so we have placeholders. a lot of times three
+Lewis Benson: I believe these get nav item placed on them. Look at their links real quick.
+Lewis Benson: Here we go. Yes nav item.
+Lewis Benson: So each of these will get I'm just gonna redo that with the class name on it lie Dot nav Dash item times 3 and we'll say we'll have a link to the portfolio and a link to contact just kind of making up random content for a portfolio. So we have a collapse section.
+Lewis Benson: so on our UL with the navbar
+Lewis Benson: dash nav auto and let's take a look and see if that's how they had that.
+Lewis Benson: navbar nav They got the margin on the bottom. That should be fine. Let's take a look.
+Lewis Benson: Is it already collapsed?
+Lewis Benson: Hope it's all there just the color is not contrasting.
+Lewis Benson: Let me see where they have the color.
+Lewis Benson: primary with contrast in color
+Lewis Benson: we probably want to use this bright white color. So text VG primary.
+Lewis Benson: What a thought that that would have actually applied a text background color already. with this navbar dark
+Lewis Benson: okay, so that's a little bit of spacing issues. I want to come back to that in a moment. That would be in my margin on those. I'm just gonna move down to my main real quick and I'll come back up to that. And we'll put some spacing on the allies. We have the nav items.
+Lewis Benson: I think it's because I'm missing my anchor tags.
+Lewis Benson: They do have anchor tags on here.
+Lewis Benson: Yeah, they do.
+Lewis Benson: the link let me throw those in there.
+Lewis Benson: a class So this is the most tedious part of this entire process is figuring out where to put your classes which classes to get and which ones you're going to need. Which is copy this one in here. I can't actually able to do a DOT now.
+01:20:00
+Lewis Benson: - link
+Lewis Benson: then we'll paste it on.
+Lewis Benson: It's okay if the attributes aren't the same order. It'll still work the same way.
+Lewis Benson: #and put the contact inside. Should solve that issue and it did there we So got a good looking now bar now for our portfolio. We have our main built, but we don't have any content in it yet. Does anyone have any questions about this now Barbara built here?
+Lewis Benson: Pretty straightforward. It's probably easier if I just want to copy and pasted right out of their docs and then edited the links a little bit, but I just wanted to show you the process of typing in the class names like this because it's One of those things that the more you work with it the more you'll have to do that.
+Lewis Benson: All right, so our main is going to be a container. That way we can set up our grid system.
+Lewis Benson: And I'm going to put a little bit margin top, so it's not directly up against my navbar.
+Lewis Benson: and put An alert in here, I want to show you the alert class or the alert component. This is just a little Side thing that it's good to know these could be really useful whenever start into whenever you Create a new user or if you're working with something that requires you to wait on something. You can have a success message. Let's see if they have. I just clicked on API because I said API. It's a component called an alert and it just says these little messages with a color already on it. So if you were setting up a new user account, Maybe. An account with that username already exists, you could send an alert that looks like this and I'll just pop up at the top of the screen. And then this is the simple code for it here.
+Lewis Benson: And I'm just going to throw one in here just so that we can see that with one of those would look like you could also do it. If you were doing an commerce website where you're selling something. there's a cell today only, check out this product that type of thing. So that's where you would use the alert. Let's go ahead and throw that in code. And I'll put that right at the top of my main so we can see one of those and I'm just gonna put it in a div.
+Lewis Benson: Dot alert Dot we'll make it a green alert.
+Lewis Benson: Since this is a portfolio. Also, I just was able to put two class names at once by chaining the two class names together there. So there's a cop that say This is a simple portfolio.
+Lewis Benson: built with strap something like that.
+Lewis Benson: There's not too many typos in there.
+Lewis Benson: Okay, so under the alert. I'm going to create what's actually make sure that rendered properly. And there It's just like this little splash message that will come up on the page or flashes. Sorry.
+Lewis Benson: Alright, so I'm going to start creating rows and columns for Content. I'm going to start with I'll put the profile picture on the left and I'll put about that person on the right just like a John Doe I'll grab a profile picture off of unsplash. Justice is a placeholder I mentioned for now. And then I can grab one off on Splash later. We'll do a div. dot row
+Lewis Benson: and we're going to A column inside this row. We'll add some space here. So we'll do give Dot. column and we'll do this for medium. That way if we're on a smaller screen, it will push the image on top of the text so that it's not beside the text if we get to a really small screen size. And then we'll put an image and then we grab a placeholder image.
+01:25:00
+Lewis Benson: placeholder.co If I haven't showed this before there's this website. It's called All this does is allow you to grab a link, which is slash a number and it gives you an image that looks like this and then you can change these numbers. so I could use 150
+Lewis Benson: By 150 for a square. That's kind of small. You could do something like that for. The image I believe you can just put just 150 and it does the same thing. Oops, so I'll put that as my image URL for now that way we don't have to worry about going on Splash and digging through trying to find images we can focus more on just the layout because this is just going to be a template anyway. And then this would be profile.
+Lewis Benson: say profile pic for the alt tag
+Lewis Benson: Okay, so next we're going to have another column because this one's four and there's 12 columns across how would I fill up the rest of the content? What column size would I need to use? Does anyone know?
+Lewis Benson: So we're going to use column size 8 because there's 12 columns total. Just to Quick Refresh on figma Here's the 12 columns. And then this is how they lay out. So if we have four on one side, we have eight on the other side. That'll take up the full width of the container. And that's how it'll be but the profile pic will be on the other side. So if I switch these around this will be the layout that we're going for so picture on the left text on the right.
+Lewis Benson: And that's exactly what I did here. So here's my row. And then I have a column with margin and I'm not margin for column medium 4 and then call them medium eight and then we'll just put some text in here. we'll have an H2. With the name I'll just say John Doe. Her names again. It's just a template. and then I am passionate about
+Lewis Benson: web development with expertise and front and loram like that so we have some content there. Let's see what we have so far.
+Lewis Benson: And then we have our profile picture on the left and our text on the right. Let me show that layout again. I also want to share this real quick with the collapsing here so that we can see whenever we get on the mobile size. The image goes on top and the text goes underneath that's what that MD does on my column. So as soon as I get underneath of a medium screen size I get down to small. We go from a row to a column layout It's using Flex wrap. So it's just allows us to come up here.
+Lewis Benson: Does anyone have any questions about this layout so far? We have a give we make this a section?
+Lewis Benson: So this is a little bit better semantically. So we have our section we have our row. And then we have our columns and then we shouldn't have any changes here just because I changed that to a section because we're just we're going from a generic div to a semantic element. I didn't actually change any of the styling or anything with that. Yeah, so we have our row and then our two columns within that container.
+Lewis Benson: And then I remember all of this has to be inside of a container element for the stork properly. Okay, start our here. so we have our kind of about us area. So next thing I like to do on a portfolio is have and the skills section I'm just going to put some margin top on this so that it's not directly up against the text above it. And we'll say 4 for that.
+01:30:00
+Lewis Benson: And in this section, we'll put an H3. And let's say skills. And we'll have a UL. and within the UL we'll put five skills on this.
+Lewis Benson: Is it going to let me format? We'll have to do this. My prettier is Some issues, which means I have a syntax error here somewhere.
+Lewis Benson: if they'll tell me where it's at.
+Lewis Benson: Yeah, so I don't have any prettier support at the moment. Hopefully There's a bug here somewhere. I'm not gonna just directly search for it at the moment. But I'm sure it'll turn up here at some point. Somewhere. I'm probably missing a closing tag. Maybe I'm missing a quote. I might have a class name in the wrong spot. I might be missing a slash. It could be anything like that might be this Dev right here, and I think I found it.
+Lewis Benson: Yes.
+Lewis Benson: This section is not lining up.
+Lewis Benson: I gotta find where that closes I'm missing a div closing tag is what it is. So this is the column. So I believe it should go here.
+Lewis Benson: This one has one.
+Lewis Benson: Doesn't seem to like that it found it. So see how I'm clicking on these to get these to highlight my closing tags. This is showing me where that everything is lined up properly. let's try formatting this again. Still not working.
+Lewis Benson: This is saying Check Line 7 I believe. 159 Southern characters m
+Lewis Benson: So sometimes you can use these tools to try to find your errors. Where is that at line 57?
+Lewis Benson: Or 59 we have Let me delete this div. Okay, it's happy again.
+Lewis Benson: HTML and CSS
+Lewis Benson: bootstrap
+Lewis Benson: it and hit hub.
+Lewis Benson: JavaScript
+Lewis Benson: and we'll throw in node.js. And express.js these are a couple backend.
+Lewis Benson: No, JS is JavaScript for the backend and expressjs is a back-end framework. We'll get into those later but those will be some skills that we'll have later. So I'm going to put them in here now. Okay, let's see what our skills this looks like. Here it is.
+Lewis Benson: So we do have the little bullets. I want to leave those there for now. And we'll just keep working down the page. We might come back in style this a little bit better. I'm just trying to get a quick layout basically built and kind of show you what maybe a real world project would look like with something like this.
+Lewis Benson: Okay, so next section would be like your projects. So let's put that on there now.
+Lewis Benson: so the section will be quite like my work.
+Lewis Benson: so we'll give us some margin top again to separate it from this A little bit class and key. - 4
+Lewis Benson: and we'll put an H2. My work I'll put a spam. And the reason I'm putting a span here is just so that I can use the badge.
+Lewis Benson: component and this is pretty cool. It gives you a little square.
+01:35:00
+Lewis Benson: So it just has this little square outside of the heading here. So this would be like if you had something new added you could use JavaScript to just throw this class on there and say hey, we have a new item added to our projects. And so I'm just going to throw that in here. We don't have the
+Lewis Benson: Style what I miss here, I didn't put the class on it.
+Lewis Benson: And it has a class of badge. And we'll do the BG secondary for the color.
+Lewis Benson: It gives it that kind of darker color.
+Lewis Benson: Okay, that'll work for now. And then after the heading will put in our rows and columns for the next section. This is going to be kind of a grid of projects. So we're going to use the bootstrap grid for this so let me put in a div. That has a row. And I'm also going to put some. gutter on this
+Lewis Benson: so that this applies to all the items within this row. And then next we will have a column and this is going to contain it's going to be kind of like card. But I'm not going to use the card element. I'm just gonna put a column an image a heading and some text so we'll do div.
+Lewis Benson: class is we want this to take up. 50% of the container. So we're going to use a medium six. I remember six represents how many out of the 12 of its container it takes up?
+Lewis Benson: We'll get our placeholder image. We'll just throw that in there. I think I must a letter. Yep.
+Lewis Benson: How does anyone have any questions about this placeholder thing or any questions at all regarding what I'm laying out right now?
+Lewis Benson: Ain't no questions yet. I'm sure we'll have someone we actually start working.
+Daniel Perez: I got a question. What is the mt4 stand for again in the class?
+Lewis Benson: Yeah, what's your question?
+Lewis Benson: margin top Yeah,…
+Daniel Perez: fortunes outline
+Lewis Benson: and I'll show you where that's in the docks. Just so you if you need to use any of the other ones. So you'll get down to utilities. And believe it's spacing so it shows the letter M for margin P for padding. And then these are the different letters so t for top so Mt. And then the number that's how that works. So if you needed margin top you do Mt. And the number you needed padding top you would do pt. Padding bottom or do PB and then here's the rest of them here. for reference if you need those. And again, I just did that to move my content so that this isn't right up against this here.
+Lewis Benson: All right, and again once you start actually working on the assignment. I'm sure you'll have questions. I'm trying to find solutions to how to manipulate things things like that Some of this can be a little bit tricky. So I'll just do two for now. Just so we have time to go over some of the other stuff. And then we'll just say this is a brief. description
+Lewis Benson: about the project
+Lewis Benson: and a lot of times you could put a link here as well if you wanted to and then take that to a more in-depth description. This is something that can be pretty useful when you're building a portfolio. Basically, what you would do is you have a screenshot of your project and it's really small thumbnail. You have a really brief description, but you have a link underneath this maybe a button that says view more. And then when you click on it, it could have a list of things like this is what I learned while I was building this project. These are the tools I used and just any information about it and one of the things that people like to see is what you learned while you are working on something because it shows that you're growing and that's something that they want to see whenever they're looking to hire. Is that you're willing to learn? So I'm just going to duplicate this row. Make sure I grab the correct ending tag yet.
+01:40:00
+Lewis Benson: And then I'll just go to change that project one to a project too.
+Lewis Benson: And let's see what that looks like. There we go. So we have one on the left project two on the right. So we have this little two column layout and it's taking up 50% of the parent container, which is the main. Because that's the one I have set to container. And it's taking up 50% because we're using column six and when we go small screens, we can see that that's shrinking and we go to a single column layout because I use that md6 instead of just call six. That way we get mobile first and we get that responsive design there.
+Lewis Benson: All right, so I'm gonna actually switch some of these over to actual images now just so that this looks a little nicer and then we'll see if we can clean up some more stuff on here. And I might even throw a tape. I might turn this into a table. Just so that we can see how that looks as well in bootstrap. I think that would be pretty nice. Does anyone have any questions so far though about this little template I made?
+Lewis Benson: Okay, so let's go to unsplash grab a couple images.
+Lewis Benson: So normally when you have a profile picture on a portfolio you want something that looks kind of professional typically a full face shot something like this wouldn't be bad. Portfolio picture I'll grab this one. notice that it's not like he's in a t-shirt, but it's still a professional looking picture. It doesn't have him in some sort of graphical t-shirt. And this one appears a pretty good one too this little thumbnail. But yeah, this is a good professional profile picture. And that's something you want to do across all of your front facing social media. That would be like your LinkedIn. If you have a front-facing Instagram, you want to keep your social media professional looking because winter checking into your background and stuff like that. They will look for your social media. So make sure all that stuff is
+Lewis Benson: appropriate for employers so, let's see what that looks like with the Okay, so we need to shrink this down. This is huge. And once we get that shrunk down we can add a couple pictures down here as well. So we just want this to be a hundred and fifty pixels by 150 pixels. I'm going to try to use the W in here. I mentioned this last night. I don't know if everyone was in here, but whenever you're dealing with images, especially your own portfolio, you want to size these images using something like Photoshop or some sort of image editing software so that they're already Set to the correct size so that you don't have to use CSS to adjust them because that can be problemsome later. And that did Stretch that a little weird. Let's try 250. That looks okay.
+Lewis Benson: So We have the text on the right. I might add some more content and here so that this fills up a little more. And I'm going to change the skills over to a table. And I want to add some project images first. And I keep messing up my ALT tab. So project pictures typically, I would just place a screenshot of the application or you can find a lash. Something that kind of represents what you're looking for. So maybe you built a weather app so we can search for weather. And get something like this.
+Lewis Benson: And we'll place that on the weather app that we built. And so instead of project one. I'm just going to say whether application and then we would have a description about whether and then first SRC will place that there. And then our W. I'm gonna make this 250 as well. I wasn't 250. That's 250. And see what that looks like. It looks pretty decent one thing to keep in mind because I'm using unsplash. My Heights might be a little bit different again. This is one of those things where you can use CSS solutions to solve this. If I have to I'll try to go into that.
+Lewis Benson: But it's one of those things where it can get really complex and time consuming to get images to lay correctly just because you're dealing with different heights you're dealing with different resolutions. If I change the height and width illness at the same time. It's going to stretch and crush this image and make it look weird. So you have to be careful about how you modify it. You want it to kind of place itself and crop itself as well. If you're needing to have that sizing so we have our weather app. Another type of application could be a movie application. So we'll just say movies. Here's a wallpaper thing. This will work.
+01:45:00
+Lewis Benson: And we'll place this on our movie applications.
+Lewis Benson: And word my image go. man the wrong. I got this backwards. That's okay. I'll just switch the H Force.
+Lewis Benson: So we'll take the weather application. And we'll put it down here. We'll take movie application and we'll put it up here. And it goes under the image.
+Lewis Benson: And we'll take a look. I believe I need to set the width on that.
+Lewis Benson: 250 I remember this is the W equals that's on changing the unsplash image with. If you can't get that to work, I'll show you a couple things in bootstrap that you can look at. All right, so there's a Little projects there. I'm gonna put these inside of a card.
+Lewis Benson: Just to see if that looks a little nicer. I'll try that with this one. And this one?
+Lewis Benson: That Grew them a little bit too much
+Lewis Benson: maybe if I put the card Sometimes having these on a certain order does matter it doesn't in this case. So I might have to do a wrapper for that to work.
+Lewis Benson: So if I do give
+Lewis Benson: and we'll put a class of card here.
+Lewis Benson: All right, so I'm gonna have to put some sizing on this card once I get it set that does look a little bit better. Let's do that to this one as well.
+Lewis Benson: Okay, so that's not bad. Our Heights are a little different on between the two so I'll have to adjust that and I'm gonna add some margin bottom to
+Meeting ended after 03:00:12 👋

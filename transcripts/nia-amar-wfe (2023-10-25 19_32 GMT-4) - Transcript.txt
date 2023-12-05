@@ -1,0 +1,525 @@
+﻿nia-amar-wfe (2023-10-25 19:32 GMT-4) - Transcript
+Attendees
+• M a t c h a M o c h i i •, Chantrice L, Daniel Perez, Elgin Sharper, Gregory Robertson Jr, Ike Steoger, Iris Coats, Justice Miller, Krystal Jefferson, Lewis Benson, Lewis Benson's Presentation, Reece Renninger, Ryan Arnold, TRACY JOINER, Umar Z
+Transcript
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.
+Lewis Benson: Okay, I'll get my presentation going.
+Lewis Benson: And welcome to day three we're gonna get into some more advanced CSS positioning some more advanced selectors and a introduction to a layout. So the first hour we're going to mainly be talking about positioning and selectors. And I'll also show it's kind of like a game where you can use CSS selectors to work your way through levels and it's like a little memory aid that'll help you remember all the different types of advanced selectors. And then we'll go over that as well this first hour. So first, let's talk about positioning. So I'm going to open up. my folders here again Start a new demo.
+Lewis Benson: We can get this going. demo 10 -25
+Lewis Benson: and I'm going to open up vs code.
+Lewis Benson: climb that folder
+Lewis Benson: and I'm going to create two files. index .html
+Lewis Benson: I will put my boilerplate in here.
+Lewis Benson: Put a title in there and I'll create my second file. Which is Styles dot CSS?
+Lewis Benson: And can someone tell me how to wire the style CSS up to the HTML.
+Daniel Perez: I'll create a link element.
+Lewis Benson: exactly link element and I'm going to click the CSS to get a little bit of the autocomplete done. And I'll just make this plural because my file has a plural name. For some reason they autocomplete it. Without a plural name.
+Lewis Benson: So I'm going to go over some different elements and to do this. I'm not going to really get that semantic with the HTML this time. I'm just gonna show you how a lot of these elements kind of work with each other.
+Lewis Benson: So let me still create a main. So we have a little bit of semantic stuff going on and a heading just to test the content.
+Lewis Benson: And then we'll go live and make sure it works.
+Lewis Benson: And that's tiny let's get that Zoom back into normal, and I'm also going to grab my reset dot CSS. I'm gonna have another file in there. So I'm just going to search reset. CSS I'll take the top link. It's a pretty simple file. And it doesn't really do anything too unexpected.
+Lewis Benson: And I'm gonna create another CSS file.
+Lewis Benson: and paste that in
+Lewis Benson: and I'm even going to format I'm just going to let it have this block here. So it's not as long of a file. And then I'm gonna link that in above my Styles dot CSS. Remember it has to go above it. Otherwise, none of your styles that are being currently reset will actually be applied.
+Lewis Benson: And then let's check the browser and make sure that worked. And there we go. We didn't no longer have that larger font size. And it looks like it also took the font weight off and it got rid of the margin top and margin left. So everything is reset and positioned nicely. It gives us a nice clean slate to work with.
+Umar Z: Can you please repeat the steps for This research, please?
+Lewis Benson: Yeah, absolutely. So I always just start with a search I go reset CSS either way and I take the top link you can take almost any one of these links. They're all going to have their own version of a reset. I just picked the first one because It doesn't do as much. It's a little bit less of aggressive of a reset and then you just copy this code block by highlighting and hitting copy and then you create a second CSS file. I called this one reset dot CSS. I'll just create a new one here. I'll delete this one.
+00:05:00
+Lewis Benson: create a new file called reset dot CSS. And all that code I just copied and pasted copied. I'm gonna paste now. And that's It's still wired up here because it's in the link. And again, the link has to go above the styles.css if I reverse these. and let's say I change my H1 font size I'll change this to 50 pixels. So it's nice and large. And I look at the browser and nothing happens and that's because I have the reset. Under my style. So if I switch these around And I look at my browser now we can see the 50 pixels there. and that's because I'm applying the 50 pixels and then I'm resetting it back to 12 pixels or whatever. This is set at.
+Lewis Benson: 16 pixels, I believe since it's set to 100%
+Lewis Benson: So in this right here, you can see all of the selectors that are being reset. We're just saying and every single one of these elements get rid of any margin padding border. Just get rid of everything. And that way we can start with a clean slate.
+Lewis Benson: Okay, so I'm Gonna Leave the larger font size on the H1, just so we ever heading. And I'm going to create an element here.
+Lewis Benson: And I'm going to use a div a divider here. I just have a container to work in.
+Lewis Benson: And we'll create a key tag. And I'm just going to do a little bit of warm. There's one block of warm. So what I want to do is I want to select this P tag this paragraph. And I'm gonna mess around with some of the positioning just to show you how this works. Let me get a couple of these in here so we can compare them. I'll actually give a background color as well each. So we'll do a class.
+Lewis Benson: first class second class
+Lewis Benson: Third yes, Ryan.
+Ryan Arnold: I was just gonna ask if you could show one more time what you did to the H1 and the reset.
+Lewis Benson: Yeah, did you see where I got the reset from the code?
+Ryan Arnold: I did I already went and got it and everything. I'm just going and setting it up. Now the way you did.
+Lewis Benson: Okay, so I just set a font size on my H1 to be 50 pixels so that it's not the same size as everything else. And what I was demonstrating here was if I put my reset underneath of styles. It doesn't apply you can see that it's the same size of all my paragraphs right now. But if I put the reset up first then my styles were override anything that I had in my reset all this is doing is All this reset is doing is getting rid of the default browser font sizes border and padding so that you have a clean slate to work on. And then you tell it what size is you want everything to be manually?
+Ryan Arnold: Okay, I see. Thank you.
+Lewis Benson: Yeah, and it's really helpful. I mean, it looks like we're creating more work for ourselves because it's already had font weight 700 already had a larger font size but it does create more work later and it can create a lot of bugs that are hard to figure out. So having a reset just solves a lot of those problems. It's like having a clean piece of canvas Rather than trying to paint around a stain. Okay, so we have first second and third these are my class names.
+Lewis Benson: You remember how to select a class name and Anybody at all?
+Ryan Arnold: It's with a DOT, right?
+Lewis Benson: It's with a DOT. So I'm going to do first. I'm just gonna give you some background colors. So we can differentiate between each one on the page. We'll keep it simple. We'll do blue red and yellow.
+Lewis Benson: I know we're gonna have some contrast issues. We're not too worried about the content at the moment. It's more just a demonstration on positioning.
+Lewis Benson: And you'll see what I mean. It's not going to be easy to read the text when we go yellow. And blue is going to be a little. rough as well
+Lewis Benson: Okay, so double check that everything works and there it is. I'm gonna give some Dimensions as well just so we can see this work a little bit. I'm going to give it a height.
+00:10:00
+Lewis Benson: We'll say 50 pixels.
+Lewis Benson: And I'm just going to apply this to all paragraph elements.
+Lewis Benson: And let's take a look at that. So that's a lot taller now. That's nice. And I'm going to give them a width as well.
+Lewis Benson: We'll say 500 pixels for the width.
+Umar Z: Lewis can I stop you here for a bit? He can please open the reset dot CSS file for me the tab.
+Lewis Benson: Yeah, absolutely.
+Umar Z: I mean, I want to see. So you just copy paste it everything from there, or can you please go?
+Lewis Benson: Yeah, I even have the comment.
+Lewis Benson: All right, so you have the css file. And then in your link, you have reset above your styles.css.
+Lewis Benson: Yeah check for typos as well that could if you have missed a DOT there that would break it.
+Lewis Benson: And then in my Styles, I also added this font size to override the reset styles. I'm gonna take a look at my paragraphs and see how they're looking Dimension wise. Okay, so they're spilling into each other a little bit because I set the sizes. To be hard coded so it can't expand the height any further than 50 pixels. So it can't fit the text. So it is spilling down into these ones. So what I'm going to do is create a little bit more height so that it doesn't do that. And then I'm also going to add some margin to separate these a little bit.
+Lewis Benson: We'll do margin. top 50 pixels Okay, and I haven't actually started positioning anything yet. I'm just kind of getting a little bit of a template here to work with I'll give this a little bit of padding too. So things aren't pushed up against each other.
+Lewis Benson: There we go. So I have these three elements and I'm gonna move the positions around a little bit. So the first position I'm going to show you. Is the current position that they're in? By default anytime you have an element on your page. The default positioning is static. So if I put position and I go to static. So the values called Static and now I just applied this to first as I said, this is the default position. So when I look at the browser nothing changes because it's already in a static position. And that just means that it's in the flow of the document. We haven't moved it anywhere yet. So this one's pretty straightforward and you may need to use position static occasionally. If you're toggling the positioning.
+Lewis Benson: So you could have a class that would say we could call it toggle. static and then in here you would just have positions static. And then you could use a script to apply this class. To one of your elements and that's not something we're going to really get into the scope of today. But you could use a programming language like JavaScript to say if this condition is met then give it the position static class and that'll happen behind the scenes whenever you just click a button. So again, that's not like in our scope, but I just wanted you to be aware that it does have a use. Even though it doesn't look very useful at the moment.
+Lewis Benson: You could also use it to override other styles that you may have applied later. Maybe if you wanted to animate the positioning for some reason that would be another time that you could switch it between with a hover. If you remember from yesterday's lesson, we used a hover to change Styles temporarily.
+Lewis Benson: Okay, so position static isn't all that interesting. Let position relative doesn't take it out of the flow of the document either. So when we look we don't see any changes here. But what you can do with position relative is actually start moving this element around now so I will say 100 pixels. And what that does is it'll move it from the top down 100 pixels and notice that it's now overlapping with this other element. We can't even see the text that's behind it because it's overlapping it so much. So it's still in the flow of the document this element didn't slide up the blue slid down. So the red element doesn't know that the blue element is no longer in its static position still thinks it's up here somewhere.
+00:15:00
+Lewis Benson: If it did thought it moved for example, if I take this And I say margin top 100 pixels. It's gonna Force everything down. So this blue element just moved down 100 pixels and I can prove that with the inspector here. You got that big yellow area at the top that's showing that we're pushing it down 100 pixels. And I'll also uncheck it over here.
+Lewis Benson: And we can see everything's moving up because it's in the flow of the document. But as soon as I apply the position top you can see the red element is not moving. with the blue element
+Lewis Benson: It's actually really. I never noticed before when you comment out who did it shows up in the developer tools. That's really handy.
+Lewis Benson: Okay, so we see what position relative does. So there's another position that's kind of related to position relative. And it position It works the same way except for the small difference that it removes it. From the flow of the document and it does it in relation to the first positioned parent that it finds and I'll show you what I mean by that in a second. So what I'm going to do here is say position.
+Lewis Benson: We'll just static at first. We'll change this back to static. And I'll remove this top just serve. Everything's kind of reset back to normal. And I'm going to change this to absolutely and I'm not going to apply anything else yet, and It's actually there and this is another use case where you might want to check your Dev tools because if we look at the elements here we can see it's right above my mouse. So if I highlight that it's showing it right where seconds at they're saying they're in the same spot. What happened? Was it slid up and went underneath of it? Because it's no longer in the flow of the document. So what you can do here I say top. 100 pixels and you can start moving it down now. We'll go 150.
+Lewis Benson: And we can see it's sliding down, but it's not in the flow of the document anymore. It's so these slid up and I mean move it down quite a bit so we can see that. So I haven't weighed down here now. I'm going to go back to This margin top and I'm going to toggle this on and off and we can see those are moving up and But the position absolute element down here is not affected at all. By the rest of the document so that margin isn't pushing this document. This can be really useful if you're trying to put something in a very specific location. But it can also throw you off when you start changing your screen sizes if I could get this to slide up. I have to use mobile view. If I make this slide up.
+Lewis Benson: And now you can actually make things disappear off the page if you push things the wrong way, so you have to be careful with position absolute in that case. But it does go in reference to. The top level positioned element and let me explain that or show that. So currently we don't have anything set on positioning that's a parent but what I'm going to do here is I'm actually going to give this I'll select this div. I don't need to give it an ID or anything. I'll select the div. And I'm going to call that position relative. So now this div is positioned. And I'm also going to give it a background color so we can see exactly where the div lives. We'll give it an aqua. Let's look at that.
+Lewis Benson: So the aqua div is now the positioned parent of the red element. So any of the positions that I push on the red are going to actually be positioned off of this Aqua element instead of the body. And I'll show you that. Let me remove this top 550.
+00:20:00
+Lewis Benson: And I believe under the blue. Now it's still under the red.
+Lewis Benson: So we'll put bottom. 50 pixels this will push it in the other direction. Because I moved it it actually brings it to the front as well. But now we're positioning it based off of this element and what I mean is the bottom of the red element is 50 pixels above the bottom border of this blue or this Aqua element. So that is The absolute position is relative to the first positioned element and I'll show you the documentation if my explanation doesn't seem Just maybe that'll help clear it up a bit. And I'll show another example. I'll move the position relative to the body now instead.
+Lewis Benson: So position relative on the body and I'm going to put On the body as well. So the aqua is now The first positioned element that it can find so that's where it's going to get its reference from and it doesn't look like it moves. So it must be considering that div positioned.
+Lewis Benson: Let me actually inspect It doesn't show that as positioned.
+Lewis Benson: Make sure I didn't make any typos or anything. So the body is set to relative.
+Lewis Benson: Let me remove the static positioning.
+Lewis Benson: interesting for some reason it's actually still applying it to the parent element rather than the body it must be considering that as a
+Lewis Benson: positioned element let me actually add another div here or have this mean I'm gonna put the positioning on the main
+Lewis Benson: I apologize. This isn't going as expected This is one of the pieces of coding here. So we are 50 pixels above that main. Let me set the height of the main now. To be 100 VH. So VH is a sorry unit that we haven't seen yet. This stands for view height. So it's going to be based off of my screen height and there we go. It's working as expected now. So now we're 50 pixels above. the bottom of the page I'm guessing that didn't work because I put the
+Lewis Benson: relative positioning on the body and it doesn't play well with that element in particular, but it seems to be working fine with the main. So in the case where you need to have your position to be relative to a parent you may have to put a wrapper in here so It could be your main and what I mean is. If the body ain't playing, you could always take a div like this.
+Lewis Benson: And put it all the way around everything so that everything's wrapped inside of this div now. And then I'm going to give this an ID and I'll call it wrapper. You can call these whatever you want. I'm just making it clear why I did this this way. And with wrapper I can go to my styles. And if I didn't want to do this to my main, maybe I had specific sizes already on my main then I could do. the same thing to wrapper and I should have the same results and I do this way. I don't affect my main Styles we can see my main is now smaller again. It's up here. You can see the edge of that but my wrapper element goes the whole way down the page and I apologize for that little hiccup there. I didn't expect the body to not play well with the position relative
+Lewis Benson: but those kind of things happen and that's why you just have to keep working with your Dev tools and try to figure out what went wrong whenever things don't go as expected. Okay, so position absolute is anyone have any questions about lative? Any of the manipulation I've been doing here so far. Am I going too fast with this?
+00:25:00
+Lewis Benson: Any questions at all?
+TRACY JOINER: screenshot Yeah,…
+Lewis Benson: a screenshot
+TRACY JOINER: I was trying to control C.
+Lewis Benson: Are you on try pressing your Windows key shift and…
+TRACY JOINER: Yes.
+Lewis Benson: then s
+TRACY JOINER: window keys and F That's okay.
+Lewis Benson: S Windows shift assets three buttons
+TRACY JOINER: When those s***, yes. Okay. I'll try that.
+Lewis Benson: Okay, and if that doesn't work on your keyboard, there should be a button that says prtsc or print screen something along at once.
+TRACY JOINER: Yeah I used to use the print screen and that would do it, but it didn't do it. So.
+Lewis Benson: the window shift s work for you.
+TRACY JOINER: Okay.
+TRACY JOINER: What?
+Lewis Benson: Windows shift s does that take the screenshot for you
+TRACY JOINER: I'm fixing to find out. So I'm just gonna pull something up.
+Lewis Benson: Okay.
+Lewis Benson: And that might open your windows Snipping Tool, which allows you to select a certain area.
+TRACY JOINER: Be all you sniff. We all use snippet.
+Lewis Benson: Was that sorry was that? I use the windows snipper.
+TRACY JOINER: you snip it.
+Lewis Benson: If I hit the S.
+TRACY JOINER: 
+Lewis Benson: I don't know if you can see this right here, but I get this little window that pops up. And then it allows me to take a screenshot on a rectangle window full screen or freeform and then I can select the area that I want to screenshot.
+TRACY JOINER: Guess what?
+TRACY JOINER: grab any other thing All right. Let's see.
+Lewis Benson: And one thing too everything I'm showing you here is available on MDM. Let me show you that real quick, too. I believe I had that page open earlier.
+Lewis Benson: So here's the MDM documentation on this and it will show you pretty much everything. I just showed you so far. There's a couple more element or a couple more here to go over static if we go down to look at what says about static. This is the normal flow of the document, but the ability to offset it.
+Lewis Benson: And then it's removed from the normal flow as I showed with the margin moving it up and down. And no spaces created for the element in the page layout. And the element is relative to its closest position ancestor. If any and this is what I was referring to when I said you might have to create a wrapper and position the wrapper relative in order to get this to respond the way you expect it to let's get into fixed now. The fixed positioning is pretty cool.
+Lewis Benson: you'll see this quite a bit with navbars. I'll put it on my first element since it's closest to the top.
+Lewis Benson: So we'll do position. And it always gives relative as an autocomplete for some reason we're going to do fixed and I'm gonna have to create some more space. So on my third element I'm gonna give this a height of 5,000 pixels something dramatic And let's take a look at.
+Lewis Benson: We crashed there we go. when I scroll down Watch What Happens here? The blue is moving with me.
+Lewis Benson: It's always in the same spot on my screen no matter what and it kind of goes underneath the red there. This is one of those problems. if you needed this to be on top you might have to play with the z-index a bit. Sometimes these positions they don't play well, so if I look at I believe that's the first one. I'm going to try as signing this a z index of 10. And yes that brings it to the front. By default, I believe Z index is set to 1 or 0. I forget which it is. But all you have to do is make it larger. Than the other elements. So this allows you to stack elements on top of each other. So I could set this to 10,000 if I wanted to and it'll work the same. I could set it to negative 5 and it will go behind everything. So now it's behind the yellow element so you can't see it.
+Lewis Benson: And I'm gonna bring that back up I could even set this to two and it should bring it out in front. So as long as it has a higher Z index then the other elements if I set just to one this will tell me if It does default to zero because this brought it to the front.
+00:30:00
+Lewis Benson: anyone have any questions about fixed. And I'll show again to where this could be useful actually make a quick little navbar. We'll set the width here to.
+Lewis Benson: 100% missing a colon
+Lewis Benson: and then we'll set Two zero that'll move this to the top of the page since it's in position fixed. And we have a little bit of space there. So we might have to go a little bit negative with that. We could say negative. Looks like about 60 pixels to me. We'll try that and it slides it up to the top.
+Lewis Benson: And now we have our little floating navbar that follows us down the screen but one thing to keep in mind, this is not in the flow of the document. So you need to have another element taking that space up at the top of the document. Otherwise everything here can slide up and disappear. Because there's nothing pushing this down. One way you could do that as well. We currently have this set the 50 pixels from the bottom. Let me remove that. and when that brings it up to the top I'm going to take this out of position absolute.
+Lewis Benson: And it actually doesn't look bad where it's at. But I believe my H1 is gone right now. So for the H1, I'm gonna say margin top. And I have 70 pixels from the top. So I'll say 70 pixels margin top and it brought it down some but it wasn't enough. Let's do 170. And that was a little bit too much because we have this empty space here. So we'll say 150. 120 and just got to play with it until you find what you like. And then as you scroll now it looks a little bit better. So we have our fixed position at the top. And then we have the So the next one I want to show you is sticky and It has a similar use case to fixed. You'll see this quite a bit with. Navbars as well. So I'm going to put that on the third element.
+Lewis Benson: position sticky so what will happen is as I'm scrolling down it's moving up still but when it reaches the top of the page, which this was a terrible demonstration because you can't even see it moving now. I need to add more content to it.
+Lewis Benson: Let's say lorem.
+Lewis Benson: I can't spell lorem today times three. that's more content so we can actually see that responding now. Still wasn't enough. I'll change the font size.
+Lewis Benson: styles
+Lewis Benson: and this is just so we can see the content within the element as I scroll down and we'll do 25 pixels.
+Lewis Benson: And it doesn't seem to be responding in time. So I'm actually going to move this to the first element again. And I apologize for this little hiccup as well. because this slid down. We can now see that's actually working. It's not quite where I want it to be but we can see as I scroll when I reach this point. It stays with me and keeps on coming. So what I could do now is bring this down. We're negative 60 pixels. That's probably why it's up so high I'm gonna set this back to zero.
+Lewis Benson: And there as I scroll down it grabs it and brings it with me.
+Lewis Benson: So does that make sense how that sticky works and how that's related to fixed. They're very similar. There's use cases for all of them. Sometimes. I see this on blogs as well. They'll have the heading move in the article that you're currently reading which part that you're reading and then when you get past a certain point though actually remove the sticky class by using a little bit of JavaScript that will remove that class as you scroll down and then it'll grab the next sticky element. You could also use Z index to solve that if you didn't have access to JavaScript yet. With Z index you would just make sure that the next element in line is going to be on top. So in this case second, we'll say Z index we'll get this as the index of two. And we'll give this a position of sticky.
+Lewis Benson: And I want to say Will be a semicolon So as I scroll down. The red comes on top and now the red is coming with me as well. And if this red was the full width the blue would look like it disappeared and then as I scroll back up, the red will get dropped off the blue gets dropped off as we go. So you could use this kind of a table of contents type things. So you can see what section of the page you're on. There's a lot of different use for Another use case. I see sometimes is they have a little button at the bottom right of the page. That'll say back to top and when you click it, it actually takes you back to the top of the page. And that's actually a pretty thing easy thing to implement. I'll actually do that real quick. So in my page if I put a footer and I'm just doing this for semantics, I'll do this as a div just so I can add some extra stuff here.
+00:35:00
+Lewis Benson: Just try that again. And this will have a class of BT and that'll stand for back to top. and in here all right back to
+Lewis Benson: pop or I could even get a up arrow emoji. You can actually paste emojis in here. If you have a copy paste version of it. You could put up a barrel. There's a lot of different ways you could do this.
+Lewis Benson: So, let's see what that looks like at the moment. It should just be some plain text somewhere on the page near the bottom. I think my other positions are interfering with it, but that's okay. I'll bring that out front with some styling.
+Lewis Benson: So we'll do back. top and we'll give this a height. of 50 pixels a width
+Lewis Benson: 50 pixels and I got to put my semicolons in or I'll get those errors. And we It gives us something unique. We'll give it a black background color. We'll give a text color of white so that actually has some contrast to it. And I'm gonna give it a border radius. Of 1,000 percent and the reason I'm using 1000% is because this will make it perfectly round. I gonna make sure I put radius there. I could also put just 5,000 PX and it little kind of look perfectly round until you change your screen size and then it could turn it into an oval. But with percentages for some reason it's just always a perfect circle. So now we need to find that. Let me give it a z index.
+Lewis Benson: a 10
+Lewis Benson: not sure where that yet. we're going to give a position of fixed not absolute because we want to scroll with us. And bottom would be zero.
+Lewis Benson: And here it is. So now that's showing up. It's not the prettiest. Let's give this. 150 by 150 it'll be a little larger than normal. That's okay. And then we want to text the line Center.
+Lewis Benson: I don't have a really easy way to bring the text down. So what I could do for that is padding top until we get into flexbox that is and I'll just do 75 pixels.
+Lewis Benson: That kind of threw it into an oval that's good enough for now though just to give you an idea of how this will work.
+Lewis Benson: Because I'm using padding. We'll make these 75 and 75.
+Lewis Benson: Alright good enough I want to have flexbox. I'll show you an easier way where this Will be a lot easier to figure out and have it just be a perfect circle. so next we need to have an anchor tag in here. And this back the top should be inside of the anchor tag. And then all we got to do is put a hashtag.
+Lewis Benson: And it takes me back to the top.
+Lewis Benson: So that's what the hashtag does inside of the link. It just takes you back to the root of the page.
+Lewis Benson: And we'll actually move this over to the right.
+Lewis Benson: Say right and bottom and pixels. That way it's not all the way at the bottom. There we go. We got a little back to top.
+00:40:00
+Lewis Benson: Anyone have any questions about how I did that?
+Lewis Benson: No questions. Okay.
+TRACY JOINER: Are we gonna set up our folders the same way you do?
+Lewis Benson: When you say folders do you mean with an index a reset and…
+TRACY JOINER: Yeah.
+Lewis Benson: a Styles? the reset is optional? It's just something I advise using because it makes things easier. But you definitely need an index and a Styles at minimum. and then you may
+TRACY JOINER: is there a template somewhere that goes one two, three how you do these things like a template somewhere?
+Lewis Benson: a template for how to create the files
+TRACY JOINER: yes how to
+TRACY JOINER: Out of code, like what you got it. What do you need to start with first and so forth? Or is there no problem?
+Lewis Benson: 
+Lewis Benson: This kind of is the template though your previous assignments they should all look the same for the most part you can reference those until this you start to get this memorized the index.html. So there's three things you always need. That's probably why there isn't anything. you could technically build one but it take longer to download your template every time than it would just to create the three files and I'll just do a quick demonstration on that.
+TRACY JOINER: Yeah.
+Lewis Benson: I'm going to create a new folder here. This would be the empty folder. We'll just ignore these three for now. And what I'm going to do is inside of here, I'm going to create an index dot I'm going to create a style dot CSS And then in my index.html, I'm going to do my explanation point press tab. And then in the head, I'm going to press link.
+Lewis Benson: Like CSS and make this plural and that's all there is to setting it up.
+Lewis Benson: and then…
+TRACY JOINER: Okay.
+Lewis Benson: if you wanted to reset then you have to Google search the reset and Right here is the actual link. So let me just show you that real quick. You just hit reset CSS. and Google And the top link is right here. So you scroll down you have this code block and use copy and paste this into that file. So I'll copy highlight it Ctrl C to copy And then I'll create another new file in reset dot CSS So now I have two files. I have a Styles dot CSS on a css and my reset.css I'm going to paste. And the reset is complete. I just need to the link CSS Reset if you were going to create a template you could. Create these three files.
+Lewis Benson: You could even put some predefined CSS in here if you wanted to stuff that you use every single time. For example, if your H1s are always going to be 50 pixels, you could say font size. 50 pixels and then you could save this file somewhere so that you can reuse it in the future. Maybe you could probably build your own template that way.
+Lewis Benson: You just create this right here this little shell and then zip it somewhere on your machine. And then every time you need it just copy that zip file and extract it if that makes sense.
+TRACY JOINER: Yeah.
+Lewis Benson: Yeah, so you could make your own template that way and when we get into JavaScript, that's another file that you'll have to create. So they'll be a total of four files if you're using a reset. But it doesn't have any real setup whenever you create those as well.
+Lewis Benson: Is this Seeming a little bit overwhelming because of how many files I currently have here. Is that what's Your question was regarding.
+TRACY JOINER: Like I said, I'm behind. I haven't gotten any of my assignments done because I was sick for three Big time and so I'm trying to read and then some of the videos were crossing. you could hear two people talking over one another something was weird about that. And so I've been trying to and then the tea asked me say does the teacher know I'm like yeah. I told him I'm behind. I'm like, I have a learning disability and I take a little longer than some do but once I get it and I run with it, but I am definitely behind trying to figure it out.
+00:45:00
+Lewis Benson: Yeah, and that happens if falling behind on the assignments. That's definitely.
+TRACY JOINER: Yeah.
+Lewis Benson: A challenge to overcome there.
+TRACY JOINER: Yeah catch back up.
+Lewis Benson: So yeah. my best advice would be is to follow along the best you can with the current assignment. And then whenever you have extra time or you're with the Tas at that time work on the previous assignments,…
+TRACY JOINER: mmm Yep.
+Lewis Benson: but during the workshop. We'll try to work on the current assignment and That Way. You're still learning the new content.
+TRACY JOINER: Yep.
+Lewis Benson: You're not playing catch up the whole time because I do iterate over a lot of the content from the previous lectures again as I continue. But also don't be afraid to stop me and ask questions too as we're working.
+TRACY JOINER: I know I just don't want to slow everybody else down in there because a lot of people have done this and they seem to understand so
+TRACY JOINER: I've never even seen coding before so.
+Elgin Sharper: Don't feel bad.
+Elgin Sharper: I barely understand too.
+TRACY JOINER: Yeah. I'm like,…
+Lewis Benson: Yeah, and it's
+TRACY JOINER: I'm still looking at once and I got to get a second screen because I can't listen to his video and practice. on the same so I'm gonna get another screen so that'll make that easier for me, but I'm
+Lewis Benson: that can definitely make a big difference, too.
+TRACY JOINER: yeah, yeah.
+TRACY JOINER: And I try to remember shortcuts and stuff, but it's been three years since I even been into a computer because I've been taking care of my 91 year old elderly mom. So I want to do this. I just hoping I'm smart enough to do it.
+Lewis Benson: It's not about how smart you are. It's about the commitment to learning it. That's the biggest thing is just learn a little bit each day,…
+TRACY JOINER: Yeah.
+Lewis Benson: and eventually you'll be working in this industry of guaranteed.
+TRACY JOINER: Yeah, if it's a organized thing. Then I'll definitely be up for that. So I like things organized and
+TRACY JOINER: and lines looking the same and centered and
+Lewis Benson: Yeah, and that's one of the benefits of having the formatter and what not to because this can get pretty messy. If you're not formatting everything.
+Lewis Benson: Let me get back into our selectors now. So I went over all of the positions. Does anyone have any questions about any of these positions? Let me actually share the documentation here for The different types, so we went over static relative absolute. fixed and sticky
+Lewis Benson: and there they are there.
+Lewis Benson: Any questions at all about any of those? I understand this absolute positioning can be a little bit weird concept of grasp. But this documentation here is awesome. It kind of showing you how this works. If I click on this you can see that it took it out of the flow of the document because this one was on this Square here and it slid it over to the left to get out of the way for this. So if I go back to static you can see that move back. So absolute this just puts it right on top and the reason it's moving it up and over a little bit because it's saying 40 pixels here. So it's gonna move it up and over just a little bit. Let me go back to static. And absolute and then with the relative we can see it's leaving that space open because it thinks the element is still in that spot.
+Lewis Benson: So hopefully if you do have any confusion relating to the positioning This right here can help clear it up. Also. I think the best way to really understand it is to try to build something with it. Try to build a navigation menu try to build that little back to top button. And again, I'll show you a better way to make that round whatever so that it doesn't look huge like this and ugly. I didn't want to dive into too many new properties just yet.
+Lewis Benson: Okay, so next I'm going to talk about some more advanced selectors and the first one I'm going to show you is one that we've seen already. So hopefully this is just a little bit of review. What I do an inspect, and I'm going to try this again this failed for me last time. if I hit H1, and I go to copy and I copy selector.
+Lewis Benson: And I should be able to paste in there. That's actually working this time. It gives me the most specific selector and the one I want to show you is this. Greater than sound does anyone remember what this is?
+00:50:00
+Lewis Benson: The greater than sign right here.
+Lewis Benson: So this selector is the direct child, which means It's going to look in the main element and it's going to find an H1 that is a direct child of name. So if I go in here. We can look at Main. And we can look at its children has two children and each one and a div. And we can see that. The H1 is the direct child of Maine now if I go back into my HTML. And I put this inside of a div. It is no longer the direct child of main. an main is an ancestor of H1, but it's not a direct child instead that div is the direct child. So if I Collapse that and I Collapse this we have two children here.
+Lewis Benson: and the second div are the direct children of Maine but 1 is the direct child of this div. So in my Styles this selector won't select anything unless I add in div. and there's another version of this that's similar where you can grab the child of an element and that would be if you were to just put a space. So if I say main space H1, it'll look for any children of the main that is an H1 and it will select that. So this is a similar way to do it and you'll see this quite a bit as well on that way. If you did happen to wrap your H1 and a div maybe you needed to Move some things around using flexbox later. We'll get into creating wrappers.
+Lewis Benson: But you may have created a div around your H1 at some point and now all of the sudden if you had a bunch of styles in here, let's say we had That background color. Is not going to be applied. So we'll take a look at that. And there it is right here. It has the aqua background right now. It does not have the blue background. So if I remove this direct child we get the blue background it did work. But if I put this back in I'll put the div now we can grab the direct child of the div, which is the H1 and we can see we still get that blue background. So does anyone have any questions about the direct child selector?
+Lewis Benson: And I think this will make more sense. Once you start using it. It's a little abstract at the moment. I'm just doing these demos and it's kind of hard to understand until you actually have to think about how do I get to my H1? How do I select that? And you might not want to create a class? Especially whenever you get to the point where you're generating your HTML using JavaScript and you're not actually writing any HTML and that's a more advanced thing. I don't want to dive into but there are times where you don't have access to a class or an ID. You have multiple elements that are the same. So you'll need to start leveraging these and one way to find out a way to get to something again is just inspect go to the element right click on it go to copy.
+Lewis Benson: And hit copy selector and that can give you a way to get to that element. So there we see wrapper main div. We get this little pseudo selector here. It's saying look for the div and grab the first child of the div. That's what and It says, whatever number child I've put in here grab it. and if I wanted to grab let's say I had a paragraph in there as well. I could say grab the second child of the day grab the third child of the div, so that's Another Advanced selector that we'll get into a little bit later. But you could just do that as well. Yes, Ryan.
+Ryan Arnold: Could you grab multiple with that if you did nth child three comma four.
+Lewis Benson: I'm not sure if three comma four works, but you can do odd and it will grab the odd and even elements. but normally when you need to grab more than one what you would do is you'd say give In child two and let me remove this part here in this part here just to make this part clear and then you put a comma and you could do div and child three. Comma and child four now you can grab multiple elements like that by comma separating them. And if we look at our reset file again, we can see all of these selectors are separated. So it just grabs every single element and then it applies these style. So it's similar to that and…
+00:55:00
+Ryan Arnold: Okay, so you can do essentially the same thing.
+Lewis Benson: we're grabbing multiple elements.
+Ryan Arnold: Just you wouldn't be able to do it inside the parentheses. You'd have to write each one up.
+Lewis Benson: I'll check the documentation just to make sure I don't believe so. I've never tried it.
+Lewis Benson: It does look like it has some power here to do that and us. And so this is a really Advanced selector and it's not one that I use all that often outside of just grabbing a specific element or doing odds and So, I don't know every single attribute that is available to it. But it does look like you can do a lot of stuff here.
+Lewis Benson: So this is What is negative I don't even know the negative N means I'd have to read this documentation a lot more in depth.
+Lewis Benson: It looks like you can do a lot of cool stuff though. yeah, yeah that I would say read this on your own…
+Ryan Arnold: Yeah, okay. Thanks for looking.
+Lewis Benson: if you're interested because Right here represents the first three elements so you would do minus n plus three. So it doesn't look like it's comma separated. It's a little different than that. This isn't something I've ever tried just because I would do what I just showed you here. I just calm separate them and make it easier for me to understand what's happening. I don't know if that's the right answer. It probably would be better to learn that more in-depth but there's so many tolls in CSS to learn. It's not something that's feasible to learn every single thing. But if you're really interested in that absolutely have at it. I'm just some other and selectors as well. You can look at Before I get too much off track here. I want to get into the next.
+Lewis Benson: Selector that's similar to the direct child, but this one's going to be a sibling selector. You just put a plus sign in here.
+Lewis Benson: I believe it's just called sibling.
+Lewis Benson: Have to search for Adjacent sibling selector. I think It's in my. Autocomplete next sibling selector. Here we go. This is the one the plus sign. And what this will do is it grabs the element that's immediately after the plus sign. So in this example here they have an image element and they have a paragraph element. This will select the paragraph and only the paragraph that immediately follows an image. So I can show an example of that. We got a little bit of messy stuff going on in here. Let me clean this up a bit. Delete this div. Okay, so I'm going to create another element here just to add something and I'm going to do a section. And put a paragraph in it and I'll just say hello.
+Lewis Benson: And I'm not actually going to select I'm going to select this element here. Using the selector. So this paragraph is a sibling to the section. We can see their side by side the indentations line up. So that's telling me their siblings and we want to grab that one and I'm not going to use the class name. I'll use the sibling selector.
+Lewis Benson: So I would type section. Plus And now I'm grabbing the second paragraph because it immediately follows the section and I will prove that by doing the scale. And setting it to three.
+Lewis Benson: And we can see that that's now big. In comparison to the rest of them. And the reason I didn't do Does anyone know why I couldn't do background color? I'll actually show that real quick.
+Lewis Benson: Change it to Black. And it doesn't work. But we can see the scale works. So why isn't the background color working?
+Lewis Benson: and it's okay if you don't see it, this is a little bit of I think I talked about this for one day. This is going back to space I say now the specificity.
+Lewis Benson: If we look at the specificity of the section plus P. It's two. And my background color with second is 10. So this one's going to win and the background is always going to be read what I'm using the selector. So this one's more specific. So it wins so hopefully that's a little bit of review on. the specificity and then if I needed this to actually turn blue, I would have to get more specific than that. I'd have to use some sort of ID. I could put in. Dot second like this and then it will select the P tag that has a class of second and now we get that black background. And if we look at the specificity, we're 12, so this one's going to win and also we're down lower. then this one so that'll also help it when
+01:00:00
+Lewis Benson: And the last one I want to show is the general sibling selector. It works similarly. To the plus sign but it doesn't have to be immediately following and that's the Tilda. If you don't know where the tilde is on your keyboard, it's right above the Tab Key beside number one. So that's the Tilda and it's the General's sibling selector and we can see now that everything got scaled up. That's a basic sibling to. this first paragraph won't Selected because it has to be after the first element. So this paragraph will get selected in this paragraph. We'll get select That wasn't clear when I said that the first time but yes, it has to be after your first selector.
+Lewis Benson: section General selector P tag, and then I'll select all the paragraphs after Any questions about that?
+Lewis Benson: And we're gonna get some practice with this. I want to take the 10 minute break. I'm gonna take one more minute here just to show A way that you can practice your selectors. And this is actually going to be in today's assignment. So this wouldn't hurt to look into. And let me see if I can reset Open it up in a incognito tab.
+Lewis Benson: So fluke out Dot github.io. And I have the link inside of today's assignment. I'm going to put it in the chat as well. And I'll also throw it in a slack whenever I go over the assignment today. So what this does is it creates these elements over here on the right? We have a div and then we have a plate element and another plate element now on HTML Play Elements aren't real but it is representing a tech an element that could be real. So what you have to do is type in the CSS or to select whatever element is moving on the table and this case it's the plate. So I'm going to type in plate. And it selected to play. I don't have to put in the curly brackets because they're already here. And then it's a Styles would go here. It's explaining how that would work. So in this case if I wanted to select the Bento elements, what would I type in to select just the bentas?
+Lewis Benson: And if this is a little confusing keep in mind, you could think of this the bentos are a section. The plate is like a paragraph element. They're just using words. To represent elements, they're not actual elements, but you would still select them the same way as if they were actual elements if that makes sense.
+Ryan Arnold: you would just type in Bento and it would select the
+Lewis Benson: Yep, just type in Bento and it selects that. And then here we want to select just the fancy plate. That's the only one that's moving. So what I need to do to select that.
+Ryan Arnold: dot fancy I don't know. I'm sorry pound sign fancy.
+Lewis Benson: Pound sign fancy and it selects it exactly. So you just work through the assignment today is to get up to level 16 and then take a screenshot of that get done what you can with that. I'll go and if you have any questions about if you're stuck at any point, just reach out and ask also this over here is really helpful. This explains how this works now. It's showing this with spans. So it's referring to maybe this div as a span or this Bento is a span. It doesn't really matter what element they put here. I'm just think of these elements as placeholders for these elements if that helps. And this is The Descendant selector and I showed this one a little bit ago. This is where you just have two selectors with a space in between them instead of if I said plate and I put in the direct sibling it would be plate Apple.
+Lewis Benson: And I believe that would actually give me credit for this one. Let me try it. Yeah, did. I'll go back to that. That wasn't what it wanted me to do. If we look at The Descendant selector here. It's still gave me to check mark though so long as you get the selection you're good. It wants me to use a descendant selector. That's not a direct descendant. So Bento space plate. that would be plate space Apple because this apple is nested inside of this plate element. Does anyone have any questions about this little game here?
+01:05:00
+Lewis Benson: Let me press enter just make sure that works. Yep.
+Lewis Benson: Okay, no questions. Let's take our 10 minute break. And when we get back, we'll start touching on layouts and I believe some flexbox too. I know it's back up. Yeah, we'll get into a little bit of flexbox in the next hour. So let's get into our 10 minute break. And I'll see you in 10 minutes.
+01:15:00
+Lewis Benson: Hey, welcome back everybody.
+Lewis Benson: So let's talk about the display property. This is something I've brought up a few times. But I haven't really gone under the hood yet.
+Lewis Benson: Does anyone remember what we did with display?
+Lewis Benson: There was two properties we changed.
+Lewis Benson: three if you count the stretch goals
+Lewis Benson: So I'll bring it up on MDM.
+Lewis Benson: So maybe this is looking a little bit familiar now We have None display flex and display grid the main ones that I want to cover right now or block Edline block and none. And when I showed this before this Blue Area this blue border, let me zoom in if I can. it's kind of hard on the eyes that blue little border there would represent the actual element going spanning across the entire page. And when we switch this to inline block it no longer spans the entire page. It only takes up the amount of space needed for its content. So it's still a block element, but it's in line which means another element can stay beside it now if it had enough space for it.
+Lewis Benson: And display none is kind of self-explanatory. It just gets rid of the element. But what it does, it doesn't just get rid of it. It actually removes it from the flow of the document as well. So let me show these in action. I'm going to make simplify this a little bit.
+Lewis Benson: I'm actually gonna remove this BTT thing. Get rid of this really long height.
+Lewis Benson: I'll make these relative again.
+Lewis Benson: And this one? Will be a width of 500 PX like the rest.
+Lewis Benson: So we shouldn't read that anymore.
+Lewis Benson: Actually remove that completely because it's up here.
+Lewis Benson: position relative or remove those as well
+Lewis Benson: So we're just back to the basic background colors for these. So let's take a look at that and make sure everything looks normal. We still have it a little bit of extra content there. Let me fix that. This is the wrong page.
+Lewis Benson: Okay.
+Lewis Benson: And we have that little bit of extra text there for that section. But beyond that everything looks pretty good. So what I'm gonna do now is let me delete that section just so it's not taking up space. What I'm going to do now is I'm gonna set the
+Lewis Benson: let me see what their parent element is. So we have displayed block and we have display inline block. So I want to put display in line block on this deliver here. Since it's wrapping all of the paragraph elements. Can someone tell me how to select this div without selecting this div?
+01:20:00
+Iris Coats: That you just click on it.
+Daniel Perez: repeat
+Lewis Benson: I'm sorry. What was that?
+Iris Coats: We click on it. I'm missing something.
+Lewis Benson: I mean select it with CSS. what I use to select this div, if I don't want to add an ID or class to it. And not select this div only this one.
+Daniel Perez: I think you could use the main and then the greater sign did and that would selected.
+Lewis Benson: And yes, that would be the direct child selector. So, let me put that up here. Maybe give greater sign.
+Lewis Benson: I think I just did it backwards main greater sign there was just threw me away off there and I got to put my code Block in there before I format. There we go. Okay, so I'm now selecting that div. And what I'm going to do is inline block and let's see what happens to that div. I'm going to do an inspect on it and I would expect it to be as wide as the content that's in it.
+Lewis Benson: So here's the div and you can see the width of that is as wide as the or the P elements We don't have a lot of space here to work. But luckily with this tool I could set this to 50% and expand this way out. So now we're on a really wide monitor. I know this is going to be hard to read the content, but we can just look at the colors to get an idea of what's Happening Here. So inline block that div is only using as much space as needed. So let's also apply that to each of these classes and I can actually speed that up just by putting it on the paragraph element. That'll put it to all three at the same time. Does everyone understand why?
+Lewis Benson: I'll show real quick just in case so if I look up my index the three classes or on each paragraph element, so instead of repeating the display inline block on each class. I just selected my paragraph element, which I only have these three paragraph elements. And I was able to apply the style to all three at the same time. What I do want to do though is change this width to be 200 pixels just so we have a little bit more room to work with. And let's take a look at what this looks like now. So each of these are inline block they're still block elements. But they're only taking up as much space as needed. You can see the height there. They're starting to spill out a little bit. That's just because I crushed them down a little more and I didn't give them any more height. I'll fix that real quick. Will change the height to 170 that should fix it. There we go.
+Lewis Benson: But you can see these are right up against each other.
+Lewis Benson: Let me close these. we still have room. So the right up against each other except for a little bit of space there. Let's see what that space is. Close this tool.
+Lewis Benson: And looking over here. I can see we have this padding. And remember the padding is on the inside of the border. So that's not what it is.
+Lewis Benson: And it doesn't appear that there's anything that would actually be creating that so this is called border box. And let me bring that up on the documentation. I'm doing
+Lewis Benson: order Box
+Lewis Benson: Let me just do a Google search for it.
+Lewis Benson: So this is the Box sizing. I was giving you the property name instead of the value name instead of the property name so you'd have to set it to fix that. So box. I'm actually surprised that's not in the CSS reset. That's normally something that gets to prevent that from happening So if I say sizing border box? It's on the wrong element, I think. we lost our height. I'll come back to that.
+Lewis Benson: We'll actually come back to that and fix that in a little bit for now. I want to focus more on this display property.
+Lewis Benson: So with the display property each of these are set to inline blocks. So they're all next to each other the other display property to see here is just display block and that's the default setting for a PE element for a lot of different elements. Some of that are set to inline by default would be an anchor tag the span the strong element all of those are inline elements and they don't take up the full width but by default a div P tag, all those are block elements. So if I switch these back to This one here.
+01:25:00
+Lewis Benson: I'm actually just going to remove this completely. That's actually. Just extra for now. and now we can see they're back on their own lines and when I do the inspect Of the paragraph. It's taking up a hundred percent of its container.
+Lewis Benson: At least it should be. I have a width set to 200 pixels. So if I remove that it's now taking up a hundred percent of its container.
+Lewis Benson: If I set these back to inline.
+Lewis Benson: We can see they go back to being next to each other. even though the width is
+Lewis Benson: but the width is actually going to interfere with that a little bit, but you can see when I have the width or next to each other. So it gives you kind of the general idea of where you could use this display in a nav element you can use it to put your links if you're have allies you could put them on the same line, but now I want to show you how to use flexbox to do that. And when we look in here we can see Display Flex it pushed everything over to the left, but it put everything in the same spot, but it's still keeping this across the whole page. So one thing we'll keep in mind when you're doing layouts is everything is in a box. And when you're using display Flex. It's going to put everything into either a row or a column based on the properties and let me show you what that looks like here. We'll just say display. Lex
+Lewis Benson: And It seems like we don't have enough space What are the I put it on the wrong element. I should be on the Div that wraps them. so do mean give display flex and this display Flex property always goes on the parents and I'm going to actually open up a figma and I'll draw this out and show you why it has to be like that. But here now, they're all next to each other and we actually did get rid of that empty space there. So I thought that was part of the Border box that must have been part of the actual display settings. That's something I'm gonna have to look into to see why we had that empty space there because that was actually unexpected. But with this everything is in a row and everything is pushed to the left. When I look at this div here, you can see the word Flex in my devtools. Let me zoom in on that.
+Lewis Benson: I'll drag this down just a little bit. So we can see that this is a flex container because this is containing these items. And it has the word Flex there that's indicating in our developer tools that it's a flex container. But if you look this Flex container goes the whole way across the page. Flex containers are still block elements. but everything is Justified to the left and when I say justify I want you to think of a word processor when you justify your content to the left when in there it pushes all your text to wherever you say the justification to be a flexbox works the same way and it actually has a similar property name. So let me open up. figma here
+Lewis Benson: And what I want to do is draw how this works just to make it a lot more clear. So I'm going to start with a section actually, so this is going to be our Flex container. So we're just going to right Flex container. This is kind of like that div that we seen. And whenever we have content, I'm going to use triangles to represent content. So there's a piece of content and then here's another one. And another one so we have three pieces of content in here and I actually created a fourth one and do that.
+Lewis Benson: So this would be if I just said display Flex this is what we'll get and I'm going to write that Above This.
+01:30:00
+Lewis Benson: Try that again.
+Lewis Benson: When I write display Flex in my CSS, this is what we get and I'm writing this on the container not on the elements. This would be my paragraph elements. Whatever content is in the container. So what it's doing is it's putting everything Justified to the left and it'll actually be tight to the left whenever it does it. And the reason it's going to the left is because it's doing what it's called putting it at the start of the flex item and let me draw out this we're gonna put an arrow here. This is going to be the main axis of our Flex container whenever you say display Flex. So everything that you do is going to be based on this axis. So if I say justify content Flex start, which is the default for flexbox. I'll show that with the code here.
+Lewis Benson: Keep in mind you can only justify content on a flex container. So if you try to do this property without saying display Flex first, it won't actually do anything. So justify content Flex start when I look at my demo. Let me get this in the same browser. There go. When I look at my demo nothing changed because it's already on Flex start by default. So nothing unexpected there, but what I could do is change my display and I'm going to write that above it here. justify content we're currently in Flex start, but I can switch this to say space between
+Lewis Benson: and what that's going to do is it's going to take all available space and it's going to take this element. It's going to push it all the way along the main axis that's important to remember that it's pushing it along the main axis. And it's going to take extra space and it's gonna put that right in the center. So going to That one's gonna be all the way to the left and this one's gonna be in the center and I'll demonstrate that in here. So instead of flex start we're going to say space between and let me go to the demo and we can see exactly what I said, and I'm actually going to close the dev tools so that we can see these move. So we have the left. This one's all the way to the right and this one's directly in the center. I don't know if you've seen it whenever I popped open my autocomplete. We also had something called space around.
+Lewis Benson: So space around works very similarly to space between but it will also. evenly space these elements like that so that there's equal space and actually be not sure if I can actually get it lined up perfectly, but you'll have equal space between here.
+Lewis Benson: and here and here so everything is spaced evenly with all available space. So let me show that in code now.
+Lewis Benson: space around and we'll look at the demo. And now we see that empty space. this one I told you that this was going to be even between here here and here can anyone take a guess at why this looks like it's further apart from here to here that it is to the edges.
+Ryan Arnold: because it counts the space from that element to the edge. It adds that together. That's my guess.
+Lewis Benson: Yeah, So this one here has some space and it stops here. This one has some space and it stops there. So it's a little misleading in my drawing. This should be more like this. Because it takes this space. And it actually just draw a line there real quick to show.
+Lewis Benson: So this is the space that belongs to this element right here.
+Lewis Benson: And this is the space that belongs to this element. So it's actually going to take even amount of space and it's gonna push it against each other. So it won't be perfect for that. And that's where you could use some margin left and margin right if you needed to bring these in so that they are perfectly even so it's not a perfect solution for every situation, but it's still very powerful to do it like that. All right. So Flex end. It's pretty straightforward what that's going to do. It's going to move everything to the end of the main axis. So I keep bringing up this main axis and I keep saying it's important and that's because we have another property. And that's called Flex Direction. So what I'm going to do is I'm actually going to see if I can just copy all of this.
+01:35:00
+Lewis Benson: And paste it here.
+Lewis Benson: And rotate it. So everything's gonna be sideways.
+Lewis Benson: And it will look something like that when you go to display Flex Direction column. So notice that the main axis is now pointing down so by default if I didn't change these to flex end, all of these are going to end up up here. I know we can't see that container very well. So, let me just draw another one here real quick.
+Lewis Benson: We'll get rid of this line.
+Lewis Benson: And this is going to be Flex column. And I'll show this in a second but notice my main axis is now vertical that's really important because now my justify content is no longer moving things left and right it's moving things up and down. And that can be really confusing. If you're trying to manipulate things to the center or move things around. And where this comes really handy though is because I know that I can move everything down and over. I can Nest Flex containers. And I'm going to show you a drawing of what that could look like. So I'm going to create. This would be my HTML page. This is going to be my body.
+Lewis Benson: So there's my body element and I'm just gonna put each section underneath so that we can see what's nested and what so that's the body inside the body. I'm gonna have a header. We'll have it by itself.
+Lewis Benson: the header is not going to take up full width. So the headers only going to go up to here.
+Lewis Benson: So there's the header. And I'm going to put a main.
+Lewis Benson: Of the main go to here.
+Lewis Benson: And then I'll have a footer. So if I were to put display Flex on my body Does anyone know what would happen?
+Lewis Benson: I have three children in the body.
+Ryan Arnold: They would move instead of being on top of each other.
+Lewis Benson: exactly So this one was going to go to the middle.
+Ryan Arnold: They would move side by side.
+Lewis Benson: The header would end on the left And it's going to take up the full height of its content. And then the footer is going to be on the right. So if I put that on my body, we're gonna have something to look something like this.
+Lewis Benson: They bring that down just a little bit. So these are nested inside of the body the body set the display Flex now we have this going on. How could solve How could I fix this?
+Lewis Benson: Assuming I'm going to use flexbox for this layout.
+Ryan Arnold: You could set the main to take up 100% of the space inside the container. So that would be even with the header in the footer.
+Lewis Benson: I see what you're saying and that would technically work. But I'm gonna do this in code real quick just to show.
+Lewis Benson: Let me look at my HTML and see if I have this similar setup. I'm just do this real quick.
+Lewis Benson: And we'll get rid of this div.
+Lewis Benson: I deleted my paragraph closer. So we have a main. I'll just do this manually.
+Lewis Benson: I'll get rid of this rapper because I'm gonna do this exactly like I'm showing it in the drawing. So we're gonna have a header. And I'll just color these I'll give them a background color and give them some sizes so that we can see what this looks like. And then we have a footer. Okay, so in my styles. I'm going to create a new style sheet for this so I don't lose all of that. I'm gonna call this. A flex demo dot CSS and with CSS, it's similar to HTML your first style sheet. It's usually called Styles after that. You can call them whatever you want.
+Lewis Benson: Similar to how index is always your first CSS is usually Styles. It's not a requirement. It's just something that people do. So instead of taking in Styles dot CSS now, I'm going to take in Flex demo. Just so I don't lose my code there. Okay, so I want to give my body display Flex.
+01:40:00
+Lewis Benson: Just like I did on my drawing. And I'm going to give a background color of blue
+Lewis Benson: the main we'll have it background color red.
+Lewis Benson: And we'll use green this time for the footer.
+Lewis Benson: And see what it looks like without giving it any sort of sizing and we don't have any content. So everything's collapsed so we can't see anything. So With sizing I'm assuming the header should be.
+Lewis Benson: I'm gonna give it 150 pixels of height
+Lewis Benson: And we'll say with. 100%
+Lewis Benson: and this is going to look a little weird with just display Flex. That's perfectly okay.
+Lewis Benson: I'm actually going to use percentages here. I'm sorry to change it up on you. We're gonna say we want Justice to pick up 25% of the top of the page. I did just be easier for me to think of it this way. and then the height will be 50%
+Lewis Benson: and my footer height will be 25%
+Lewis Benson: and let's take a look. I don't have a width so it's still collapsed. actually this one should
+Lewis Benson: Make sure I have this imported correctly.
+Lewis Benson: no typos
+Lewis Benson: just some content in these.
+Lewis Benson: There we go, so we can see where they're at right now. I must be zoomed Present I'm just gonna zoom in. All right, so we're set to display Flex. So everything's in a row. I'm not happy with this height though.
+Lewis Benson: those are paragraphs.
+Lewis Benson: I'm in the wrong file. the height 25% 50% Let me make these VH.
+Lewis Benson: H and that way it's using the screen size. There we go. So this is taking up 50% of my screen height. This is taking up 25% that's taking up 25% but everything is in a row and that's not what we want. So the solution for this is to put it in a column. So we're going to flex Direction column. And there we go. Everything is now vertical again.
+Lewis Benson: So we look at the drawing. We just switched everything. And did everyone see how I did that one little change there? I'll go back here in just a second. I want to move these down. So they're more similar and this is really important to use. These type of wireframes like this. So that you can get an idea of how to lay out your page. Using flexbox because remember everything is in a container. I have another copy of that there.
+Lewis Benson: Okay, so we have inside of my main I want to put some sections in there.
+Lewis Benson: I think we're gonna make this into two columns
+Lewis Benson: and it'll be kind of like three columns, I guess so, let's put
+Lewis Benson: one section here
+Lewis Benson: We'll put another section beside it. Where'd that go? Okay.
+Lewis Benson: So looking at what I'm doing right now, how could I get these sections to be the side each other? using flexbox
+Lewis Benson: So based on this drawing I have section one and I'll make this section 2
+Lewis Benson: nested inside of Maine So, how could I get these to be next to each other side by side using what we know so far of flexbox?
+Daniel Perez: Would you put the place like the box in the main?
+01:45:00
+Lewis Benson: Yes, it would be display flex and then it will put that as a so in my main I would say Flex now, I don't have those sections. So let me throw those in real quick.
+Lewis Benson: Never go here. I'll have a section. I'm just going to write content here again so I can see where they're section content
+Lewis Benson: and we'll give this an ID of
+Lewis Benson: Section 1 and ID of and this is just so I can quickly grab these with CSS. And what I'm going to do is I'm just going to give a background color so we can clearly see them. This background color part is just a little bit of extra just so we can see where they're located.
+Lewis Benson: Okay, so let's take a look at that. and there's our tomato and there's our Violet we can see those are already horizontal because I Put them in display flex, but they're not taking up the right amount of width. Let's fix that with
+Lewis Benson: I'm gonna try 100% on both of these and we'll see if it just kind of autocorrects it I might have to set them the 50%
+Lewis Benson: Yeah, so I have to put these at 50% because this blue violet.
+Lewis Benson: It looks like our main is bleeding through.
+Lewis Benson: Try didn't have any type is there.
+Lewis Benson: I'll do And 50 VW. And that's going to use 50% of my screen size that way. so this element for some reason I think it's because I have content and it
+Lewis Benson: there we go. The content was pushing everything over.
+Lewis Benson: All So those are taking up 50% and 50% So now we have these side by side. But what if I wanted this one to also be to column so I could have text on the left and maybe an image on the right. Let's take a look at our drawing. So this is section one, so I would need to have a div
+Lewis Benson: in order to divide this in half. and a div here
+Lewis Benson: So what would I put into display Flex in order to get these two divs side by side?
+Lewis Benson: Keep in mind these two divs are nested inside of Section 1.
+Lewis Benson: So if section one is in display Flex. Then these two divs will be decided each other instead on top of each other as they would be by default. And we can see that.
+Lewis Benson: Here, so, let me remove this content. So that we don't have that same issue as last time. And I'm going to create a div. or content and it give content yes, Ryan.
+Ryan Arnold: so we put on display Flex in the last step to get those two sections side by side that wouldn't Cascade down into the two divs.
+Lewis Benson: so this section is not a flex container only the main is a flex container. And what I wanted to demonstrate right here is that you can Nest flux containers inside of each other. Yeah, Good question. I'm actually gonna put a little bit more text in here. We'll do lorem time not times anything just loram. And for this one, I want to get a placeholder image and I'll actually show you something real quick for whiteboarding. I believe it's a placeholder.
+Lewis Benson: Dot Co I'm just type placeholder image and she'd come up. placehold.co is the site so you can get these little squares like this. You just copy the URL and you plug that into your image and you can change the size by changing this number. So if I change this to 500 and my URL it'll actually change the size of that to 500 so pretty handy and you can also add colors and everything to it a little bit of a tangent. So let's not go down there but it's just a cool little thing you can use for this. So what I want to do is put an image here. My SRC will be that alt placeholder. And let's take a look at that. CSS demo
+01:50:00
+Lewis Benson: And it looks like my placeholder is. huge
+Lewis Benson: there we go. So I didn't put this into display Flex yet. So this is on top of the image. And then we have that little content there. Let me put this into display flex and we'll take a look at what that does to it. And what I'm going to put into display Flex is This section here because this section has two children. Let me collapse them. So it's make this multi-line so claps it, too.
+Lewis Benson: So we have two children in the section. So when this becomes a flex item These will be horizontal to each other. So we have the text in it and we have a div with an image in it.
+Lewis Benson: So we'll set Section 1 display. Flex
+Lewis Benson: and now we have the text on the left and the image on the right. What direction was our main access going?
+Lewis Benson: For this section right here the purple section.
+Ryan Arnold: It's going from left to right.
+Lewis Benson: It is going from left to right and what about our body?
+Lewis Benson: I'll just show this real quick. So we have that as a column. So the body is going from top to bottom. And the reason I wanted to show this is because I can move this content by using the cross axes and the main axes. So remember the main axis is going from left to right. And if we look everything's pretty good left to right. We're not too close here. I could add a little bit of space in between them. If I want I can actually shrink this image down. I'm gonna shrink that image a little bit. That is a bit much. And I'll just do that in here. I'll make that a 400 by 400 image. There we go.
+Lewis Benson: So this text here I kind of want to bring this down. So it's more centered in the page. And I also want to bring my image down. So it's more centered in the page. I'm gonna put space around on these and just see what happens. we can get this off of this content over here. And then I'm going to bring those down. So first on Section 1 because that's the section. I'm working with. I'm going to say justify content. And we'll give it a space around and see what that does for us. And if you look we don't have any room to work with in here everything is tight because the content if I give this an inspect. It's not stretching or shrinking so I'd actually have to hard set the pixel size on our text in order to get that to work. And I'll show you what I mean.
+Ryan Arnold: During the break. Would you mind leaving that page there that Flex demo CSS up? It's just that I can copy that yeah,…
+Lewis Benson: This code right here. Yeah. Yeah,…
+Ryan Arnold: so I can copy that from my notes.
+Lewis Benson: and I can actually send you any code you want just send me a message in slack and I'll just copy and paste this to you if you need it. Yep, no problem.
+Lewis Benson: So suction one. I want to grab the first div inside of Section 1 and I'm going to do that again using a class.
+Lewis Benson: And we'll just call this text. And I'm going to select that text.
+Lewis Benson: and I'm going to give this a width. of we call it 70% and this percentage is relative to its parent and the parent is the div above it. So, let's see what that does.
+Lewis Benson: Didn't seem to give us the results I expected. Let me take a look at my Selector so I put the class text on the div because this isn't inside of a paragraph.
+Lewis Benson: I might have to hard code those pixels and then
+Lewis Benson: let's say 200 pixels. And there we go now our space around is working. because
+Lewis Benson: have to get a mobile view to get just to look right. So our space around is working you can see We have in a space there. And when I over look at the div, you can see that it's using only 200 pixels of its width. You wouldn't normally hard code to pixels like that unless you needed to in this case. I did it just because it was kind of a hacky layout with this not having a paragraph inside of my dove. So that was the solution I chose to go with was just assigning the pixels to it. So now I need to bring this text down. I want to make it lower. So remember our main axis is left to right. So our cross axis is top to bottom and let me show that on the drawing. So we have some text in here.
+01:55:00
+Lewis Benson: This is text if you couldn't tell and this normally an image is depicted by an X with a square on a wire frame. So I want to bring the text. So it's lower and remember our main axis is running this way. Our cross axis is running. this way
+Lewis Benson: and that will change if I'm in column keep that in mind. So what I'm going to use now is a line items when you see the word cross axes when you see justify think main axes. And then you have to check to see are you in a row or are you in a column? So if I set a items Center I would expect that to move down to the center of the page because it's using the cross axis. And it also did the image and centered it as well because I selected both of those.
+Lewis Benson: Does anyone have any questions about that and how that worked?
+Lewis Benson: So hopefully seeing this wireframe too is helping How you use flexbox and how you can lay things out? And how powerful this can be. So I'm actually going to put a few images in section 2. what we can do here is I can have And an image like this. I mean do that. I'm just copy this one.
+Lewis Benson: So I want to have three images all stacked on top of each other. And then I want to put some text. On the side here. So these are images. I'm gonna put x's in on the dirt images. I'll use the placeholders for that and then it's over here is going to be text. So what I'm going to have to do. Is actually put these inside of a container. So that I can put them into display flex and set them to a column. And this is one of those things that'll have to come with practice to figure out how to make this work. So section 2 will have to be display Flex. So the section I'll call the section 11 still so section 11 And I put another one here. I don't actually need a section here, but I'm just gonna have one. Sectioned 11 and section 12 need to be side by side. So the parent element needs to be in display Flex.
+Lewis Benson: But we can see here that everything inside of section 11 is on top of each other. So it's going to need to be display flex but set as a column. So this is where you can keep nesting and nesting and nesting maybe I have another element in here that I wanted something horizontal. You could another Flex item, have one as a row and then have a column inside of that row and you can lay out your entire Page by pushing things apart. If I wanted all these toward the bottom I could use flexbox to do that. And I know this is a lot of information right now. I'm not expecting to be masters of flexbox in one day. This is something that will take months of practice to figure In a lot of it's just playing around with it.
+Lewis Benson: But again, it's just practice the more you do it the easier it gets so make sure that you are continuing to use these skills. So let me do this part here before that get into that break. I'm going to grab my placeholder text put that in my clipboard already. And again, I need two containers here. So we're going to my index. So this is the second one. I'll put two divs. There's one.
+Lewis Benson: and here's two inside of the second div. I'm going to put a paragraph element. I'm going to put some lorem.
+Lewis Benson: Inside of the first one. I'm going to put three image times three. And they put them all in the same line. That's okay. We'll drop down like that. And then I'm going to paste in my placeholder, but I'm going to make this 200 by 200 so it's a small image. copy paste paste and let's see what we got.
+02:00:00
+Lewis Benson: All right, so I have my three images horizontal right now. Not what we want. We have the text under the image. Also, not what we want, but we haven't manipulated anything yet. So this div here I'm going to call. class rapper and I could have used an ID. I just chose to use a class just to remind you how to select with a class. And then we have our paragraph element down here. And I'm going to give this a class of text. Notice, it's the same class name as up here. So the same width is up here. It should also get all the same Styles as up there, but this is not a paragraph. But it's still a container and the content is still the text. So it shouldn't make any difference as long as they have the same class name and the same number of children.
+Lewis Benson: So image wrapper is going to need to be set to display Flex so that these could be stacked. Let's see what we have right now with that attack so we can see it did give it the sizing. Let me go back into Flex demo. And I'm gonna select. Image wrapper. I believe I called it. I already forgot this happens every time. IMG wrapper
+Lewis Benson: rapper Remember, I used the dot to select a class. I put my code Block in and we're going to say blacks now when I look at this everything just got a little tighter. But we're not in a column yet. So we need to get these images on top of each other. So to do that remember, it's Flex Direction. column
+Lewis Benson: now the images are going to be stacked. It looks like the sizing is going to be a little bit of an issue. But they are on top of each other. Before we fix the sizing issue. Let's take a look at the parent element. And so this section 2 we're going to select that and we're going to set this display Flex so that these two children are beside each other. And then hopefully that'll fix the sizing issue.
+Lewis Benson: so display flex and we'll take a And there are two of the images we can see Looks like we ran out of room. We'll do an inspect. So all three are there. But what I want to smaller screen size. It looks like they're spilling out of the container a little bit. So let me make these a hundred by a hundred so that they don't spill out.
+Lewis Benson: All right. So now they're on top of each other. They're not spilling out and we have our text on the side. How can I make these images be spread out a little bit so that you're not on top of each other?
+Lewis Benson: So Here's the three images. And image wrapper is set to display Flex. How can I make this spread out?
+Lewis Benson: It's a certain Flex property.
+Daniel Perez: is there display Flex starts space between
+Lewis Benson: It's Justified content. Yeah, and…
+Daniel Perez: Justice
+Lewis Benson: then I'll do space between so it pushes it all the way down. We'll see what that looks like. So this is all the way at the bottom. Let me switch it back to space around.
+Lewis Benson: And then we get a little bit of space on the bottom in the top. So now the next thing is remember this is the main axis so justify content works like that. So now we have this Flex box this way too. We have our section Remember this tomato color is the section. And we have two children in there. Let me inspect see if we can bring that up and show you. So here's section two, we have two children. This is currently a flex container. We can see that by the flex item right there. So if I want to space these out now, what could I use?
+Lewis Benson: Keep in mind the main axis is horizontal and the moment because this Flex. Isn't set to a column the section here.
+02:05:00
+Lewis Benson: It'll also be justified content. And I'm going to use space around again for that one. Just so we get the not pushed up against the justify content space around and you can see that pushed it Let me close to devtools so I can zoom in.
+Lewis Benson: Zoom out just a little bit because it's filling. So we have the text at the top of the page. Do you remember last time? How did I move this text to the middle?
+Daniel Perez: It's simply a line.
+Lewis Benson: A line because the cross axis down vertical was the cross axis. So a line items will move things on the cross axis. If we look at these images here because they're in a column. if I were to Want to move these left and right I would use a line items because my cross axis on this column is left and right and I know this is a really confusing concept again. I don't expect you to be masters of this in one day. This is something that will come with practice and we are going to have more practice with this. Don't worry. So our cross access on this column is left and right. the cross axis for this overall tomato color The main axis is left and right and the cross axis is vertical. So it's the opposite of the column. So let me move. The overall container the tomato color.
+Lewis Benson: Which is here, we'll say a line items. And I'm going to align items Center. And let's look at that and now my text is in the center. And my images are now touching each other what happened there?
+Lewis Benson: If I do an inspect. I'm betting we ran out of space. So there's no room to push them apart.
+Lewis Benson: The div is tight around these images right now. You can see that border whenever I highlight it. That's why they're all pushed up against each other. If I look at the section though. There's a lot of room to work in here. All we need to really do is set the height on this div to be a hundred percent of its container and then that should solve that. So let's look at our index.html to see where that div It's this div right image wrapper so I'm going to go down to image wrapper and I'm going to set height. I want to take up a hundred percent of its parent. And there it's slid it back apart. And that's something you'll have to do. Sometimes If it doesn't have enough space to work, you have to look in your Dev tools to figure out what is happening. And this is a really good.
+Lewis Benson: Time to use your Tas whenever you are stuck on something like that. Put something in the slack if somebody is available, we can immediately help you with that as well. Especially if it's something small like that. it might not feel small at the time. But if it's just like I can't get this to put it where I want to put it can somebody please look at my code review my code for me. I can give you a response as soon as I see it. As long as I'm not occupied with anything else at that time, but as soon as I can reply, I will reply. So if you get stock put something on the slack make appointments with Tas use your resources, you need each other too help each other solve these type of bugs. So does anyone have any questions about flexbox before we do our 10 minute break?
+Lewis Benson: I know that was a lot of information. The main takeaways for flexbox is the main axes in the cross axis. Let me see if this is actually in the documentation. I haven't looked at this in a while. We'll just look at Flex.
+Lewis Benson: So this is the flex property. This is a little bit different.
+Lewis Benson: Let's see if I can just flexbox structure. So here is an image that comes up. And this is called the complete guide to flexbox and I seen a really good looking image. Let's see if I can find that again.
+Lewis Benson: I have no idea where that went. So I'm just gonna go back here. if I can zoom in on it or something. There we go this right here. It might be a little blurry for you. We can always copy image address paste it in there.
+Lewis Benson: So again, that's still a little blurry, but it's showing it has a flex container as the overall piece. We have our cross-axis. And it kind of shows you the overall structure of this and then whenever we set it to a column this whole thing rotates. So the main axis also rotates it actually points down. All right, so I want to give you your 10 minute break before we get started on the assignment. So let's get that timer started and I'll see you in 10 minutes.
+02:10:00
+Ryan Arnold: Could you leave the CSS code up?
+Lewis Benson: Yes, let me get you that you want me to just send this to you.
+Ryan Arnold: Yeah if that's easier if you would mind. Thanks.
+Lewis Benson: Yeah, I don't mind at all.
+02:20:00
+Lewis Benson: Okay, welcome back everybody. So let's go over our assignment.
+Lewis Benson: for our little hop So for the workshop today, we're gonna be doing that CSS Diner game. You just have to complete 16 level. You don't have to complete the whole thing. if you want to complete all 32 go for it. I don't think that could be done in a half an hour. Without any prior experience with the selectors because it is a little bit of reading of documentation to get through some of the later levels. Once you have your 16 levels, you'll take a screenshot and you'll submit it just like you did yesterday with the Box model. and then for the Coding part of the assignment you're going to create an index.html inside of your new folder, which is called CSS day 3. And you're going to have nine elements inside of that index.html. This can be div sections whatever you want to use paragraph elements. You can even use spans if you want. It doesn't matter.
+Lewis Benson: Just as long as you have nine elements. And you'll be applying one of the position slash display properties to each element. The goal here isn't to make something that looks good. It's give you an understanding of how these properties work. So if you were following along today, you might already have some of this completed. If not, that's okay. This is a really good opportunity for you to look at the documentation. So if I go to the display and we bring that up and documentation. We actually have inline block display. None. These are the three that you need to use for display. And right there basically as your solution, you'll just have to using the appropriate selectors whether it be class or ID or by the element name. And the goal is to see how those respond with each other.
+Lewis Benson: So once you have your one static one
+Lewis Benson: position relative and one position absolute and one position fix one position sticky once you have all of those Then you'll move on to the displays and you'll have One display inline block and one display none. And again the goal is just to experiment and see how those interact with each other. Try adding distinct borders. This isn't something I did during the demo, but this can help you could also try adding an outline if you want. I'll show you what I mean by that. I'll do it with this section one we can do outline.
+Lewis Benson: We'll do two pixels red solid. And if I look at the results for that. It's kind of hard to see because I'm Zoom boy out. Let me zoom in we get this red line around the element so can kind of show us how things are laid out like that. And the reason I use outline instead of border is because it doesn't affect the size of the Box model. So if I look at my box model for that element
+Lewis Benson: There's no border on it. So it's not pushing it by that amount of pixels. It's not pushing the other elements around. I'm just something though to keep in mind for debugging. That's not the instructions.
+Lewis Benson: And as far as flexbox goes you can experiment with that if you have time. But that's not part of the assignment. We're going to be diving deeper into flexbox tomorrow, but I definitely wanted to give this introduction today so that tomorrow you're not feeling completely overwhelmed because we're also going to be diving into grid. Which is another layout technique similar to flexbox. But again, I don't expect anyone to be masters of Grid or flexbox in a day or even a week for that matter. It takes a long time to get good with them, but you'll be able to leverage them using your documentation and trial and error you'll be able to get results out of them.
+Lewis Benson: So we can go ahead and get started on that. I'll bring up the rubric here real quick. So for the link, it's actually in the rubric and it's in the instructions and I placed it inside of the class chat as well. I'm gonna throw this inside of the slack. Cohort October 2 so that we have it.
+02:25:00
+Lewis Benson: So that's the link to the CSS game. And for implementation of CSS, make sure you have your nine CSS elements and you use all of the required. Display and position properties that were listed in the instructions and that's it for the assignment as those two things. So just to remind you what those were if you look at this bullet here. We have relative one position absolute fixed and sticky. So that's for your positions and then we have the display inline and display inline block and display them. So once you have all of those and the 16 levels of the CSS Diner the assignment will be complete. Does anyone have any questions about the assignment?
+Lewis Benson: And I'll actually go over a few of the CSS Diner levels if anyone was confused earlier. I'll go back to one level one again. So again these plate elements Is mocking HTML it's to try to give you an idea of what this would look like in HTML. And so to select an element and HTML you just use the element selector by typing in the element name. So to select all of the type in plate, I press enter. And that's level one complete. Now I want to select the Bento elements. So in the CSS selector over here. In order to select this element. I'm going to type in Bento. And then normally this is where you'd put in your curly brackets and your code block. Those are already here. They're online two and line four. So I'm just going to press enter.
+Lewis Benson: And then we want to select by ID in order to get this fancy plate. And if you highlight these it also tells you the element and we can see the code viewer over here. So it's the select by ID I could do Sorry I would do fancy So I did a little hashtag. And I type in Fancy.
+Lewis Benson: So does anyone have any questions about how this works?
+Lewis Benson: And again, you can always look on the right over here. You see The Descendant selector. It's giving you some information on how it would expect you to solve it. I'm not worried about if you do exactly what it says. Just as long as you get through the levels and then if you hit the Little hamburger menu here. It'll show you all of the levels you've currently completed.
+Lewis Benson: it gives you the type of selector it would expect you to just make sure that you screenshot this section here. You can screenshot the whole page, but make sure that these check marks show up in the screenshot.
+Lewis Benson: Otherwise you can go to that level. so if we're on level 16 and as long as there's a green check mark on 16, you can take a screenshot of that as well. And that's perfectly fine because you can't skip levels on this so I guess you can just make sure you do take a screenshot of the list here so we can get the proof of that.
+Lewis Benson: mmm
+Lewis Benson: this is a good opportunity for you to collaborate with each other on these. But somebody gets stuck.
+Lewis Benson: feel free to collaborate and help each other
+02:35:00
+Lewis Benson: the only child selector
+Ryan Arnold: Not the first child selector.
+Lewis Benson: that's level 15.
+Ryan Arnold: about
+Ryan Arnold: Sorry, I miss Reddit. I thought I had completed. 15
+Lewis Benson: Okay, so the first child. will select
+Lewis Benson: the first child if you have multiple children. So if you look at that plate it has three children. and we want to select the first child of the plate, right?
+Lewis Benson: But the first you don't actually select the plate itself. You have to select the element. That's the children are the oranges not the plate. So if you want to select the first child,…
+Ryan Arnold: right
+Lewis Benson: you have to select the first orange. So you're going to put in Orange first child.
+Ryan Arnold: 
+Lewis Benson: Because you're not actually selecting. it's not the parent getting the first child. It's the first child, but you have to list the child's name. yeah,…
+Ryan Arnold: Gotcha.
+Lewis Benson: so it's a little different.
+Ryan Arnold: Okay. Thank you.
+Lewis Benson: Yep, and then 16 they're going to try to trick you. so
+Lewis Benson: good luck there. Let me know if you get stuck.
+02:40:00
+Ryan Arnold: Got that one.
+Lewis Benson: Yep, so just open up the little hamburger menu take the screenshot and put that inside of your root folder for your submission.
+02:45:00
+Umar Z: Of Lewis, so Ryan is done with it. I'm not sure about the others, but I'm stuck on number seven. I'm kind of confused here.
+Lewis Benson: Okay, and so number seven is the class selector. But it's also in combination with the elements selector. So what it's telling you to do is put in the element name dot class name.
+Umar Z: I don't know if you could hear me or not aliment is plate and Bento. Or are clear selecting oranges.
+Lewis Benson: Yes.
+Umar Z: That's what I'm confused with.
+Lewis Benson: It would be the orange.
+Umar Z: Arnold dot small again It's not working.
+Lewis Benson: Yes, the class name.
+Umar Z: Let me try again.
+Lewis Benson: Yeah, so there shouldn't be any spaces.
+Lewis Benson: I should just be orange dot small.
+Lewis Benson: Yeah, when you put a space it does the sibling selector,…
+Umar Z: I see. Yeah was it I was flying a space Thank you so much.
+Lewis Benson: so it's looking for a class inside of the orange then.
+Umar Z: Okay. Thank you.
+Lewis Benson: Yep.
+02:50:00
+Iris Coats: Lewis could you give us a hundred number eight?
+Lewis Benson: Number eight let's take a look.
+Iris Coats: Find a small oranges in the Bento.
+Lewis Benson: Yeah, so if you did what you did in the previous one where you do the orange dot small? You'll see that all three small oranges light up, right? But…
+Iris Coats: Yeah.
+Lewis Benson: if you in front of orange dot small place the Ben Element. So to be Bento space orange dot small then it will only select the small oranges that are children of the bentos.
+Iris Coats: okay. I was adding extra stuff. Thanks.
+Lewis Benson: Yep, no problem.
+02:55:00
+Lewis Benson: I'm going to stop the recording there. I forgot to do that earlier. Does anyone have any more questions?
+Meeting ended after 02:57:36 👋

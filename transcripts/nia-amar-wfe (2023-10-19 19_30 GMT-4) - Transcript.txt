@@ -1,0 +1,465 @@
+﻿nia-amar-wfe (2023-10-19 19:30 GMT-4) - Transcript
+Attendees
+• M a t c h a M o c h i i •, +1 337-***-**65, Chantrice L, Daniel Perez, Dianca Griffin, Elgin Sharper, Gregory Robertson Jr, Ike Steoger, Iris Coats, Justice Miller, Krystal Jefferson, Lewis Benson, Lewis Benson's Presentation, Ryan Arnold, shaista umar, shaista umar's Presentation, TRACY JOINER, Umar Z
+Transcript
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.
+Lewis Benson: Welcome to day four. Today, we're going to be Covering advanced HTML structures. And we're going to do a deeper dive into some of the attributes. Some of them would be a little bit more niche. You won't use every day but it's good to be familiar with them because you may need a lot of these in the future. And the structure we're going to be going over. I'll give you kind of a more real-world example of what a page might look like. This will be kind of going on to the theme of how you would write a blog post using HTML Let me get the presentation started.
+Lewis Benson: we got
+Lewis Benson: make a new folder for the day.
+Lewis Benson: And open up vs code.
+Lewis Benson: Everyone getting more comfortable Creating the Folders Files.
+Lewis Benson: Getting that live server to kick off. Okay. So let's
+Lewis Benson: Create, and we'll do this over here. Index.html.
+Lewis Benson: This will be our normal home page. HTML Document.
+Lewis Benson: Just like any other. Day, we'll start it off with the boilerplate.
+Lewis Benson: Okay.
+Lewis Benson: So, here's our boilerplate and I'm going to change this title again. And I'm going to call this blog project. Seems like a fitting name for how we're going to lay this out. so, within this little blog,
+Lewis Benson: Project. We're going to use most of the semantic HTML elements that we've been going over. so, I'm going to start off with an element that you've been seeing inside of the assignments, but I haven't been using during my other demos and that was called the mean. can anyone tell me what the main elements for?
+Ryan Arnold: The main part of Body or the majority of the text would go.
+Lewis Benson: Yeah, exactly. Any of your main content, it's the main purpose of the page. I'm going to open up Mdn and see what it has to say about it.
+Lewis Benson: So this uses the term dominant content of the body, which is essentially what we said. It's the main content area that consists of the content directly related to or expands on the central topic of the document. So if we have a blog post, this is where the article is going to be contained. I'll see what our attributes are.
+Lewis Benson: This element only includes The global attributes are the ones that can be used on pretty much every element. And we're going to go over a couple of those today as well. And here is an example of it in use. we can see they have the main wrapping everything they have two articles in here, And then outside of the articles, they have an H1 and Within the articles, they have an H2. and then they have it set up, it was an actual Article where they have multiple paragraphs.
+Lewis Benson: Okay, so the documentation is pretty straightforward so, within the main element, We're going to want our article.
+Lewis Benson: And this is where we're going to have. All of the content of the blog. And what I like to do, when I'm doing blog posts, I like to actually include my header at the top of my article because this is where the title of the article was going to be. And that makes sense semantically. So this would help the screen reader identify which heading it's reading. You might have a heading one that describes your entire website. Perhaps you have a portfolio and you want your heading one dedicated to Your name, and you being a developer. But if you have a dedicated blog within your Portfolio. Then you're going to want to have a header within that article as well, so that it can identify what the title of the article is. So I'll put my header here.
+00:05:00
+Lewis Benson: And we'll put in each one.
+Lewis Benson: And this would be the title of the blog post. As I was saying,
+Lewis Benson: and again, I'm going to reiterate. This is the title of the actual post of the actual article, not the title of the Web page. Another example, could be the New York Times. You might have an H1 and within that H1, it contains the name of the newspaper. And this case we want to contain the title of the article, not the newspaper itself.
+Lewis Benson: and Let's inside the H1 under the H1, we could put a little bit of what we call metadata. Or. front matter is another term, you might hear and this is just some general information about The blog.
+Lewis Benson: so what I'll put in here, Would be the date, the author. Just some general information about this specific article article. So we'll put posted on and I'm going to put in a new element here. This is a time element. And I'll show you what this looks like in a second. And this actually has a attribute called date time. Or we can put in.
+Lewis Benson: The month and day. And it's a little bit different format than what you're probably used to. You'll see this quite a bit your month With other programming languages as well. So, just kind of bear with me on that.
+Lewis Benson: And then I'm actually going to put in what the user is going to see. And the reason I put in this attribute is so that, oops.
+Lewis Benson: There we go. So that if you were to pull this data from the element, It could be accessed and stored in a database or it could be sent to another user. It's just some data that's attached to the element and that's what I mean by A global attribute as we as mentioned earlier.
+Lewis Benson: But what's in between the time element is actually what the user is going to see. So this October 18 2023.
+Lewis Benson: And we can also put by
+Lewis Benson: And if you wanted to add any special stylings to the author name, maybe Instead of using the italic because maybe we want to change the font size and the color of it as well. We can actually put this inside of a span. We didn't go over this one together in class but it was on one of the quizzes. So you may have seen this in the documentation. If you looked it up the span is an inline element, it's just a generic separator and it would be a way for us just to add styles to this. within this span I could say style equals We'll do. Color. And I could do a light blue.
+Lewis Benson: that might be hard to see. I'll make this a little darker, we'll go down here with it. And then the author name will be late. a lighter blue. Let's take a look and see what this looks like so far. I haven't gone live yet, and I've already written a significant amount of stuff. It's good to always test to make sure everything's appearing. The way you think it is.
+Lewis Benson: And this did open into a different browser. So we can see my Style. Didn't apply. I'm going to give this an inspect and see what's going on there. And we have the color being it is applied. It's just that it's such a close to black that it's hard to see. Let me change it to a different color so that it's
+Lewis Benson: Actually, visible will go a little bit lighter.
+Lewis Benson: Let me refresh this page. It's the same page. I don't know if you can. You see that? But that's a different color now.
+00:10:00
+Lewis Benson: so, I'll even zoom in just to make it more clear this because I put this on a spam. I was able to select just this piece of text even though it's in the same paragraph element as everything else here. This piece. I was able to give a different Using that spam. Let me inspect the time so we can see that Attribute is attached here. Again, this is something we're going to see later whenever you're attaching data to your elements, it's just a way to easily reference it because writing up the word, October 18, comma 2023, this string of text even though it looks good to the user, it's not going to play well in JavaScript. And you'll see why whenever we get into that topic, but I just wanted to introduce this attribute analysis, we're on the subject of HTML rather than surprise. Here's a new attribute when we get into JavaScript.
+Lewis Benson: Okay, let me zoom back out.
+Lewis Benson: But does anyone have any questions so far about what I've been doing here?
+Iris Coats: Not yet.
+Lewis Benson: Yeah, this is still pretty straightforward. Just to recap though, I do have everything nested inside of an article and I have the article nested inside of a main And I'm still working inside of my header. I'm going to move out of the header now and we're gonna start our first section. So we have the header complete. This would be the top of the document. This is just the title of the blog. And within the next section,
+Lewis Benson: we're going to put some paragraphs in here. And this is the main. Content of the blog post.
+Lewis Benson: Where the? Can you of text will? Reside.
+Lewis Benson: And the section element. I'll just put a little bit notes in here. Helps and referee presenting a spell it Representing A standalone. Section of.
+Lewis Benson: Functionality, or content.
+Lewis Benson: And what's nice about these sections is you're able to select all of them at once. Whenever we start getting into the scripting It makes a really nice way. To divide everything up and make it semantic for your accessibility and search engine optimization. Most have one more paragraph.
+Lewis Benson: I'm just trying to get some content in here, that's not Lore Epsom. So that just looks a little nicer can be multiple paragraphs.
+Lewis Benson: Images. Code snippets. We can actually include those. You'll see that quite a bit when you're looking at tech blogs.
+Lewis Benson: Any relevant.
+Lewis Benson: Content.
+Lewis Benson: At the end of that. Can we get our nice little formatting? Going on?
+Lewis Benson: Something I haven't introduced yet. I'm going to show you this now. I probably should have mentioned. This sooner this is called a code comment. so if I hold down the control key and I press forward slash which is on the right side of my keyboard next to Shift, It creates this. Element. It has an opening.
+Lewis Benson: AR what, sorry, an opening for the word. It's not the bracket. It's the less stance on. Let's go that. Sorry, I'm having a brain dump there. And then it has an exclamation point. a little bit of space minus minus. And then you're closing greater than sign. so, anything you type in between this,
+Lewis Benson: this isn't going to show up on the actual page, and the reason you could just type this out manually But the reason I like to actually use the Control Forward slash shortcut is because when you're working in different programming languages, even like CSS JavaScript. It's done differently in every single language has their own syntax. For code comments. And this is completely ignored by the browser. We can't see We can see that as a code injected by Live Server. And if I open up the main, I can see this is a code comment. But it's not showing up actually on the page. the purpose of these comments are for other developers or for your future self, if you write make a page,
+00:15:00
+Lewis Benson: And you're doing some complicated stuff. Maybe you have that data thing going on inside of the date, You can add a comment that explains what that's for. let me go down to that and I could say here,
+Lewis Benson: add date time, attribute to store A pewter Version of the date. so we start another comment there and we can actually comment everything in our code to make things more organized easier to understand and you could actually do this with The sections too. And that's why I wanted to bring this up now because What is this section going to be used for? And I'll say this is the main content of the article.
+Lewis Benson: And when I go back and look at my code, I can quickly find where the main content is because I have this code comment, I can actually search for that directly. So I'm just kind of adding a personal little label to this for organization purpose so this section is looking pretty good. So something else that you might have seen in the quiz, so I'm sure you did was maybe the mention of The assigned element. And it's spelled like this. Can anyone tell me what this is for?
+Lewis Benson: It's a side.
+Krystal Jefferson: I heard you mentioned it last night when I forgot what it meant.
+Lewis Benson: I'll open up the documentation for it. We'll see what MDM has to say on the subject.
+Lewis Benson: So the aside element represents a portion of the document who's contact is only indirectly related to the Documents main content. So what I'm showing here is a way to basically include content within this, nested hierarchical here, where we have our article, we have our header and all that. But maybe this isn't directly related to the article. And this is a very common thing to use. So what we could do here is I'm going to do and we'll have an H2 yet. I don't see one. I don't have an H2, so I'm going to put an H2 here. and in the H2, the aside is going to be related posts.
+Lewis Benson: So this is just give me kind of an escape from the article related post. Isn't my article, it has nothing to do with the actual article, you're reading. This is other posts that you might be interested in, but it's still part of part of the main document, but it's not directly related. So I'll put this in an aside and I've just do a UL here where we have a little review on that and we'll put up a little bit of navigation. Let me actually wrap that in a now too. So, it's very clear what's going on in here? A format. Okay, so we're in our UL. Remember, the UL is an unordered list. So I want to create an ally, so anytime you're in an unordered list, you need list items. and within this list item because we're making navigation, I'm going to put an anchor tag and my
+Lewis Benson: finger fat fingered another key there. And I'm just going to put a hashtag because this is just a demonstration. The hashtag, remember it doesn't go anywhere. It just takes you to where you're currently at. So it'll look like a link, but it doesn't do anything when you click on it.
+Lewis Benson: and what we can do now is put in Topic one.
+Lewis Benson: So it's related yet, it's unrelated And I'll do this again. I'll just copy and paste this ally and say related topic, too. Let's take a look at our page. Now.
+00:20:00
+Lewis Benson: So, we have the title. Remember, this is the header. this is the main content and this is still within the main but it's unrelated to the main so you can see how that kind of Ties together, there you zoom out. So that looks a little more squared up. And it's not a very long blog post. It just has a couple sentences but this is how you would start structuring out your page. If you were writing a blog post, and this is the same structure you'll use on almost every Web page you've ever build. you'll have your article your sections.
+Lewis Benson: And just because you're not writing a blog, doesn't mean, you don't have to use an article if it's content that the users going to be reading, maybe it's a sign up page for a marathon and you have a brief paragraph explaining where the proceeds go for this marathon. You could put that in an article even though it's not technically an article or news or anything. It's just a way for accessibility and search engines, it makes it Work a little bit better. Okay, so we went over the aside.
+Lewis Benson: so, How would we label this? We could call this,
+Lewis Benson: How we're laying this out in a traditional way? I make this like a sidebar. Oops, I'm not open.
+Lewis Benson: Sidebar with related.
+Lewis Benson: Content.
+Lewis Benson: Are directly related to the main. Because everyone understand what I mean with this aside here.
+Lewis Benson: Awesome.
+Lewis Benson: Okay, so we have our side. After the aside.
+Lewis Benson: What do you think? We should put at the bottom of our article? Anyone want to take a guess for the last element?
+Lewis Benson: A footer. Yeah, that'd be perfect for the bottom. This is just kind of ties it all up.
+Krystal Jefferson: Color.
+Lewis Benson: and for a blog, In your footer, you could put a lot of different things. You could have your social media links. you could even like a comment section, I'll put that here. Comments or post. Navigation.
+Lewis Benson: Got two ores and you're one of them.
+Lewis Benson: Or. Social media.
+Lewis Benson: And you probably have seen that navigating the wide Internet, you get down to the bottom of the page, they have a bunch of links. They have their social media. Maybe a way to share a way to add comments, things like that. And that's where these would live is, inside of the footer.
+Lewis Benson: Okay, we'll make sure that comes across nicely. Perfect.
+Lewis Benson: Okay, so I'm going to add another section to the blog. This can go under the first section. And I just wanted to recap on the table again.
+Lewis Benson: So, this is going to be another. Main section.
+Lewis Benson: But it's going to contain a table.
+Lewis Benson: So, there is the section being built.
+Lewis Benson: And I'll put in H. 2 Here, actually.
+Lewis Benson: This would be a subheading of the main article, even though this one doesn't have one. I'll add one here, too, because I just kind of makes sense to have a subheading
+Lewis Benson: So we'll call this content title.
+Lewis Benson: Under the same here.
+Lewis Benson: Just a generic name for this demonstration.
+Lewis Benson: And I'm gonna put a paragraph here.
+Lewis Benson: And say that this is just a related content for the table. Omar,
+00:25:00
+shaista umar: Yeah, I have a good question here so while you're in the second section before above a side. So it's gonna push down aside material,…
+Lewis Benson: Yeah.
+shaista umar: If you have above second section. So we have to add second section underneath the side, right?
+Lewis Benson: I did it above it, just because to me, it made more sense thinking about how it blogs laid out because this aside, Is navigation for other posts. So, I figured once we get the entire post written because these two sections are still the main content. Once They Post is completely written, then we can show the related posts and as I keep writing this section and I make new lines, it automatically pushes things down so I don't have to worry about the formatting or anything. That'll just do all that automatically. We're able to easily inject code into the middle of the document.
+shaista umar: I understand that. Okay, thank you so much.
+Lewis Benson: Yep.
+Lewis Benson: That's a good question Thank you for bringing that up. Somebody want to get me started on the table. What would I start with to build a table?
+Lewis Benson: Yep, the table element.
+Lewis Benson: Okay, so once we have the table element, what's next?
+Daniel Perez: He had.
+Lewis Benson: The T head. The job.
+Lewis Benson: Got this down. And I'm going to put four columns. So, what comes next?
+shaista umar: ER,
+Lewis Benson: Tr for the row. Yep.
+Lewis Benson: And then to create four columns.
+Ryan Arnold: Is it TD?
+Lewis Benson: I'm in the head. So I want to use the header version.
+Ryan Arnold: 
+Lewis Benson: so, for the header, it's th
+Lewis Benson: And because for these, I'm going to do the shortcut times or no spaces. and then, I can autocomplete that in And we'll put some text in here.
+Krystal Jefferson: Ice.
+Lewis Benson: We'll call this category.
+Lewis Benson: Throw in some years like 2019, that's 1019. That's 29, can't type. 2020. And 2021.
+Lewis Benson: That's just formatted That's probably good for the head. So what are we going to do after the head?
+Daniel Perez: Body.
+Lewis Benson: The body.
+Lewis Benson: And we'll do two rows of data for now. So, I'll just do TR. Times 2 autocomplete. And the first row, I'm going to have how many rows or column. Sorry.
+Lewis Benson: How many For Okay, TD times four. Auto complete that. And I'm going to format because this is starting to look a little weird. And it gives me that nice indentation. All right, so I'll do some random data 50. 60. 70.
+Lewis Benson: And let me we'll do 80 here. I'm gonna change this to category 1.
+Lewis Benson: Since we defined it up above, this is going to be a category.
+Lewis Benson: And I'm just going to duplicate this.
+Lewis Benson: And call it Category 2. I'll change up the data a little bit.
+Lewis Benson: And then if we wanted to add any additional rows, they would go here.
+Lewis Benson: Just showing you the code comment again. It's very useful.
+Lewis Benson: And while I'm on the subject of the code comments, an extension you can get. Is called better comments. You can make these colorful based on what you are currently doing. So I made this is a to-do Insert additional rows. And this extension is called better comments. Let me search that If you're interested in having colorful comments, here's an example of what they can all look like. If you put a star it goes Green Exclamation point red, a question mark is The to-do is orange and if you make a param it does this multicolored bluish green thing,
+00:30:00
+Lewis Benson: Pretty useful whenever you're coming back and needed to quickly find where you're to, are You can just say Insert additional rows, and how that is it to do? Yes. Ryan
+Ryan Arnold: How did you make to do again? Is it the same as just a regular comment, or
+Lewis Benson: That's what? It is except you write the word to do right here. And it uses the extension better comments.
+Ryan Arnold: Okay, thank you.
+Krystal Jefferson: just,
+Lewis Benson: And I'll show that extension one more time here. This is what the icon looks like, for the better comments extension.
+Ryan Arnold: Yeah, I had installed it but I didn't see how you actually made it in the code.
+Lewis Benson: Yeah, and if you need to reference when you go into the documentation here, It says details, it can show you each of these in case you forget how to do one of these. So the exclamation point, showing it as red. And has a star. This is actually.
+Lewis Benson: Looks like Python no. That's in Python. What is this? Public method. this is JavaScript. I haven't seen the public methods in JavaScript. But yeah, so this is how you do the multi-line comments so it looks a little different than the HTML comments. But the part that you need to know, is the exclamation point, the question mark to do in the para I think the param only works in JavaScript, though.
+Ryan Arnold: Thank you.
+Lewis Benson: And I'll just show those real quick here if I do. That it turns red.
+Lewis Benson: Question Mark.
+Lewis Benson: These are the only ones I really use.
+Lewis Benson: Yeah, it's very handy to have Okay, so the tea body. I think we're pretty good with that.
+Lewis Benson: So we could do a T foot. I'll put one in.
+Lewis Benson: and then within this T foot,
+Lewis Benson: We could do the total. So we could say, TD.
+Lewis Benson: I don't really have a way to do the Outside of using JavaScript to insert these totals. so, Just for the sake of time. I'm just going to put random numbers in here, and we're going to assume that it's doing some percentages and some complex math to it or something.
+Lewis Benson: And one more.
+Krystal Jefferson: Ice.
+Lewis Benson: 9,000. Okay, so there's our footer
+Lewis Benson: and then underneath of the table. It's not a bad idea. You could put Because this is a blog. You can have an explanation.
+Lewis Benson: Or put a summary.
+Lewis Benson: and I'll add a comment here saying that, this is
+Lewis Benson: And this is something you want to do. Whenever I keep bringing that up. Whenever you're riding anything, you want to label pretty much everything. It makes it so much easier for the next person coming into your code base. Or for your future self, you'll forget where the stuff is whenever you've built 200 blog sites. Where's that summary? And you'll scroll through it, Asmr.
+shaista umar: You can really explain it to me. How did you just pasted this comment command so quickly?
+Lewis Benson: Yeah. The shortcut to make a comment, you hold the left control and…
+shaista umar: Yes, please.
+Lewis Benson: you hit the forward slash. it shares the question On the key. That's control forward, slash.
+00:35:00
+shaista umar: Here, please.
+Lewis Benson: Did you find it?
+shaista umar: I'm sorry. Can you say again? Let me do it.
+Lewis Benson: Yep. It's left control forward slash
+Lewis Benson: Yep. Ryan, did you have a question?
+Ryan Arnold: I noticed sometimes when you're writing code, you're able to duplicate sections or lines rapidly. How do you do that? is that a keyboard shortcut you're using?
+Lewis Benson: 
+Lewis Benson: Control C and Control v. Yeah, there is another shortcut…
+Ryan Arnold: that's it. Okay.
+Lewis Benson: but I can't remember what it is. It might be controlled I can't remember there is a way to do it where you can just press one key press and then Move duplicate this line up a line and duplicate it down a line but I can't remember what it is off the top of my head. Yeah, so I've been just right here on this line.
+Ryan Arnold: Okay, thank you.
+Lewis Benson: I don't have anything highlighted, but if I press C enter Control V, it duplicates, the line, you don't even have to highlight it. As long as you're on that line.
+Ryan Arnold: That's cool.
+Lewis Benson: There was another thing I was going to mention about that. it was about the comments. So, if you have a section of code, let me look at the browser first before I bring this up.
+Lewis Benson: Soar table looks kind of ugly. So this would be a good example for that. Maybe we don't want to display that until it's styled correctly. so, what we can do is actually highlight the entire table, and once it's highlighted, you hold control and press forward, slash And it just doesn't a code. Comment, it stopped here because it already a code comma in the middle of it. So what I'll have to do is actually delete this tail end. And then complete it there like that. So I'm able to toggle my code like this.
+Lewis Benson: and now if I look back at the browser, the tables temporarily gone…
+Krystal Jefferson: E.
+Lewis Benson: then when I'm ready to turn it back on, I'll highlight that section control forward slash Highlight this section, which is going to mess up a little bit because I'll just delete it manually up here. and then, if I were going to talk about highlighter there to there, again, I can't go past this comment when I'm toggling just because it tries to toggle that comment too. But it's just a quick way to remove code without deleting it. It's good for if you're refactoring, and you need to reference your old code, maybe you use divs for everything. And divs aren't good. Maybe you're in an old code base that's using divs and you're ready to start writing new code.
+Lewis Benson: So you can do is just take that section of code, comment it out, and then write the new code underneath of it. That way, you still have reference to the old code. That make sense.
+Lewis Benson: Cool.
+Lewis Benson: Okay, so we've gone over comments. Where's our table at? We have our T foot, our summary.
+Lewis Benson: And our additional rows. And does anyone have any questions about the table at all? has anyone getting stuck with this? All those nesting of data, anyone confused.
+Lewis Benson: Yes, Krystal.
+Krystal Jefferson: I didn't catch to do. How did you make it, orange? I typed it in, but
+Lewis Benson: yes, so if you go to your extensions, I typed in better comments.
+Lewis Benson: And it's this extension here that I have installed that allows it to turn orange.
+Krystal Jefferson: Okay, I see it.
+Lewis Benson: that's a really handy extension to have
+Lewis Benson: Okay, so everyone's feeling pretty comfortable. Then with The table.
+Lewis Benson: Yes, Iris.
+Iris Coats: And far I'm comfortable. But what were the keys for When you want to darken up the code but you don't want to delete it, you just want to hide it.
+Lewis Benson: Yeah, so that is the left control key. You'll hold that down and you'll press the the forward slash is the slash that shares the question mark on your keyboard. So, if I highlight all of this,
+00:40:00
+Lewis Benson: I can comment that out, holding control forward, slash.
+Iris Coats: Okay, thank you.
+Lewis Benson: Yeah, no problem.
+Lewis Benson: Okay, so we have a table. We have some related posts.
+Lewis Benson: I'm gonna add in some styles to this so that it's a little bit better and this will also kind of introduce you to some new Up here again, this is kind of a stretch goal. Still, I'm not expecting you to have all these style properties memorized yet but I do want to show you this again where you place the style element and kind of the general syntax on how it works. I'll do a few different pieces of it this time just to kind of give you the idea of what this workflow looks like. So I'm going to my head and remember that's where the title and the metadata lives. And this can go anywhere in the head. My preference is to go under the title with it. I see other developers go above the metadata with it. It comes down to just wherever you like it, really? It doesn't affect anything, having it down here or up here. So, I'm going to put my style. Element. And
+Lewis Benson: And wants to style elements. In what I like to do is press the Enter key a few times just to widen us Make a nice bit of space here. So lines 9 to 13 on my VS code right now or dedicated to a completely different syntax within these lines. I cannot write any HTML. I can only write the CSS syntax and the CSS stands for Cascading Style Sheets. Let me bring that up on the documentation just to show you that.
+Lewis Benson: And this has a lot of resources on here. And we can actually see this whole CSS basics. If I click on this, it goes into how the syntax works. And now we're going to cover this more next week, but I did want to show this. Just so if you do want to add a few styles, because looking at this, it can be really tedious just to try to read what's going on here and it does make things more interesting. So, the way this works is you have a selector in this case, they're selecting the P elements. And you have a code block, which is these curly brackets. Within the code block, you have a property name and a value and those are separated with a colon on. These are also referred to as a key value pair. The colors. The key, the red is the value. Does anyone have any questions about that?
+Lewis Benson: K. So, inside of the Style. I'm actually going to select my body. One of the first things I like to change is my font family. if we look at the current font family, It has these. If I'm gonna zoom way in, on this t, it has this line that comes down off the tee, it has this little extra base, it has this fancy sea where it has a little hook right there. I'm not a fan of having this font on a blog, where you're going to be reading the text because it can get kind of tedious to read, that these little hooks and stuff and this is called a serif font. Don't worry about the terminology just yet, just one of the introduce it to you a little early Sarah font. So they have these little hooks and those hooks are called serifs.
+Lewis Benson: So, I'm going to switch this to a sans serif font. More specifically. I'm going to change it to Arial.
+Lewis Benson: Font family is the name of the property to do this and nice thing about VS code. If you can't remember a property when you start typing it gives you a lot of different things that you can do. So it might jog your memory whenever you just start to type so font family. And here we already got a whole bunch of stuff that's set up. I'll just actually click on this aerial Helvetica sans serif so what this is going to do is a lot of browsers.
+Lewis Benson: A lot of browsers. In fact, can't read some of these fonts For example, Helvetica might not be available on iOS at all. Whereas Ariel might only be available on Windows. So what this will do is, it'll try to add aerial first on your browser and if it can't find it, then we'll try to add helvetica. If it can't find it, it'll pick any sand serif font that's compatible on your browser. So it goes from left to right and it just decides which one it's going to add. I'm going to add some margin. And this is margin as the space between the elements just to make the body spaced out a little bit already. Got the semicolon. Also every time you put in a key value pair, you have to end that statement with a semicolon. If you forget to put the semicolon, it won't apply the styles. Let's take a look at what we got so far. So now we can see the font.
+00:45:00
+Lewis Benson: No longer has those serifs, everything's a little bit easier to read. It's a little cleaner looking and we have that little bit of margin, so it's not tied up against the edge of the browser now,
+Lewis Benson: Okay, I'm going to add a background color. and the reason I'm going to do this is so that we have something to offset the main content for And what it's going to do, kind of an off-white and my go- for this is F. F4 F4. I just remember that. It's an white. and I just use that every time, basically, when I'm building a generic white webpage, that doesn't have a dark mode. Okay. So now our main I'm gonna make some more space in here. So these are all the styles. I'm gonna apply to the body. So just to recap, I select the body here by typing in the word body. And then I created a code block. And then within that code block, I applied these three styles separated with a semicolon.
+Lewis Benson: So, the next element that I want to style is the main element. And we're going to add a background color of white. And that'll give it that bit of a pop. And I'll show you what I mean by that. You can see the border up here at the top where the main has that white background, but the main body has an off-white. So kind of looks like a card on the page. This is just a styling thing that I see a lot on pages. I'm gonna add a little bit of padding, so it's not tight up against the edges and I'll show you what happens when I do this. The padding. Is the space.
+Lewis Benson: Between the edge of the character, the content, and the edge of the element. So we added space right here. If I would have added margin, it would have actually pushed this edge to the left. Instead, we pushed the content to the edge of this, and this is something that if it doesn't Using margin, try switching the padding. If it doesn't look like reason, padding switch to margin and eventually you'll start to get a hang of which one to use. You could always reference your box model and it will highlight The pattern, this is the margin. Let me select the main and when I highlight this, it shows you exactly where that padding is being applied to So it's pushing where that green is.
+Lewis Benson: And there I'm using my developer tools again to kind of see what's happening here.
+Lewis Benson: And the last thing I'm going to add to my main is a box shadow. This will give it. Kind of a 3D look, it's just something I like to do. And this is going to be a little bit of a shorthand here where I use. And I honestly don't remember what all of these mean. I'm gonna bring up the documentation on this just so we can take a look at it. I know it has to do with the depth, the length and the darkness, but I can never remember which I just follow the same pattern every time and it just comes out, And I'm going to add a little bit of opacity to the shadow, too. So we'll use RGBA. And we don't want any color. So we'll do 0 0 and 0.1. And now let me show you this property on the documentation.
+Lewis Benson: And the cool thing with this is you can try it out in here so you can change these numbers. If I change this to a hundred you can see how that shifts it over. if I change this to 50, To get dramatic and see how shifts it down. So I don't have these memorized what they do. All I do have memorized is I make a 0 0 10 and then it just works. And then this one kind of blurs, it out.
+Lewis Benson: So, you can do some really cool stuff with Box Shadow. I encourage you to play around with this sometime.
+Lewis Benson: Okay, so we have our zero zero 10 and then we have our Rgba. So let me show you in a color picker what this looks like. If I take my little thing here, and I go to the bottom left corner that zero, zero is black, and then there's this gauge here. This is the opacity. This is what makes it kind of see-through. And then I'm going to bring that down. I don't think I can actually line it up on one again. So, I'll just put that back in manually. And it just gives it a little bit through. And it kind of adds it just a subtle shadow to the page.
+00:50:00
+Lewis Benson: let me minimize. And it's kind of hard to see, but there is a little bit of shadow around the edge of that. if I are to Select and deselect it. You can see it kind of flashing there. Just to show you that it's working and it gives it just that nice little bit of detail.
+Lewis Benson: okay, so we can also add a little bit aside. I don't want to push the time too far. I haven't had a lot of questions, so that's why I'm kind of doing the stretch goal because I'm assuming everyone's Pretty much understanding how all this works with the sections, the table and all of that. So if you do have any questions, bring them up and we can get back on that. Put in this code block. And you can see this the same pattern. Again, we have the Property name the code block and then the key value pair. So, Side. I'm going to use a property that you won't see often anymore. It's not fully deprecated yet, so it is still being used sometimes.
+Lewis Benson: But it is still a valid layout, so I'll just introduce it here. It's called float. All this does is push all the content to the right. It floats it to the right. I'm also going to limit the width of the assigned so that it doesn't take up the whole page. And we'll do 30% of the page. And I'm going to push things to the left using padding left. And I need to put my semicolon in padding left. And 20 pixels.
+Lewis Benson: And we'll take a look at the page. Let me zoom out.
+Lewis Benson: Doesn't look all that great.
+Lewis Benson: But this is on the side now because we floated it to the right.
+Lewis Benson: And then we can float our sections to the left and limit their width as well.
+Lewis Benson: So, I'll do section. Float. Left. And limit the size to 65% of the page.
+Lewis Benson: And we'll take a look at that.
+Lewis Benson: It looks like it collapsed. Let me add in. This little clear flicks thing that is for float.
+Lewis Benson: And we'll dive deeper into how that actually works next week. But basically, if you don't have any content, it will collapse the entire element. so now, related post off to the right, we have our sections off to the left. So we have this kind of two column layout going on. And I believe Ryan, you used display Flex last time to do the same thing. The flexbox is the more modern approach but I just wanted to show that you can do this was float and you may run into this working on some order code bases as well. There are some, people actually still actively use float. So if you ever come into a problem though, where the whole page was collapsed up here, you can see my main was all the way at the top. This is how you fix it. It's called clear.
+Lewis Benson: And again, I'll go into more detail with that next week on how it works because it kind of a rabbit hole right now.
+Lewis Benson: And then last thing we want to style is the table. Because that table is very ugly right now and I like my tables to take up full width. So we'll do a hundred percent width, percentages are good because when you change your screen size, it changes with the screen. That's called a fluid layout. And with modern windows 11 and the whole multitasking thing and monitors getting huge and people, putting five six windows on their monitors. They're going to be dragging their windows to different sizes all the time. So, it is good to have a fluid layout. And keep that kind of thing in mind. And if you remember from last time I used this border collapse, I just like to get rid of that empty space between the cells.
+00:55:00
+Lewis Benson: I spell something wrong me. Just auto completed in.
+Lewis Benson: There we go, collapse. And again that just But you can't see it because I don't need background color, but there was a little bit of empty space between each cell and I got rid of that.
+Lewis Benson: Okay, I like to. Margin. Do 20 pixels. Just so things aren't pushed up against each other. And I'm going to do the same thing. I did yesterday, where I select the t comma TD. I'm selecting two elements at the same time. So as I apply styles, they both get the same styles. And we're going to put some padding just to add some space within the cell. I like the text aligns left. So everything, it's kind of Excel with everything to the left side of The cell. And then we're going to add a border bottom.
+Lewis Benson: The Border Bottom property will only apply it to the bottom. But remember, I'm applying this to my header and my cells, so it's going to apply it to everything. And we'll do one pixel in this little thing keeps popping up in my One pixel. Solid. And I'm going to pick a dark color. The dark gray.
+Lewis Benson: Something like that.
+Lewis Benson: I'm sure that's missing a semicolon. Comma.
+Lewis Benson: I don't know where this came from.
+Lewis Benson: had a random RGB color in the middle of my
+Lewis Benson: Okay, so next, we'll select the T head. And I'm gonna give it that off, white color that I gave to The background color. I'm using hexadecimal. Just because it's more performant. But if you don't like hexadecimal, you don't have to use it. You can always use the color picker and switch between these different types of options. They all mean the exact same thing when you're looking at these I just prefer hexadecimal because As far as writing goes, the less memory, it takes up in the browser and it makes the website just A millisecond faster, nothing you would ever even notice but Everything helps. Let's take a look at what this looks like.
+Lewis Benson: So that's looking a lot cleaner.
+Lewis Benson: I'm also going to put in a pseudo element just to show you what these look like. we have an extra minute here
+Lewis Benson: and we'll put in the hover. and what this does is, whenever you put your mouse over the TR elements, It'll just do whatever you put in here. So I'm going to put a background color. And we'll go a little bit darker, we'll do five. Hashtag. F5. So it's just slightly darker and let's see what happens now. You can just see that it gives it that little hover effect going on. That's pretty cool. Anyone have any questions about any of that?
+Lewis Benson: And again, this pseudo element is just a colon separated. You have your property name colon and then the value there of the pseudo element which just in case it's hover.
+Lewis Benson: And that's a lot of styling I put on this. It's a little more that I planned on doing but again, a lot of this is review, but I definitely needed to show you. How to Lay out a blog style Web page because that's what you're going to be. Mainly building. So that does this kind of look like a blog now, Rather than just some random content on a page for our demo.
+Lewis Benson: And you can kind of see how this is a little cleaner looking than what we've been doing.
+Lewis Benson: Does anyone have any questions?
+Lewis Benson: Okay, so let's take our first 10 minute break. and then when we get back, I'll go into some more depth attributes. And show you how some of that stuff works. Okay. We start the timer.
+01:00:00
+Lewis Benson: And I'll see you in 10.
+01:10:00
+Lewis Benson: Okay, welcome back everybody.
+Lewis Benson: Bring up my notes real quick. See where we left off.
+Lewis Benson: All right, so I'm gonna actually stop the recording and then restart it again.
+Lewis Benson: This should make it so I can upload it faster and maybe even have it up tonight.
+Lewis Benson: It'll break the file size down a little bit.
+Lewis Benson: Okay, so this is where we left off. This is what our blog looks like at the moment. I think a good blog has some images though. So I want to add some images into this. And we'll make these images. Actually be links. And this will give us some practice with the navigation adding more files in. And I'll go into unsplash and I'll show you some tricks with that as well. And we'll also go over some more advanced attributes this hour. So let's start with the images. Where should I put them? I'm thinking in between the two sections. It's probably a good spot.
+Lewis Benson: We have a section for some text. I think that would look good there in between the two. So make a section.
+Lewis Benson: And within this section, I'm thinking we just do. Three thumbnails and those thumbnails will direct you to the large version of the image. And this may be something you've seen before, where you click on an image, that's small and it takes you to an image that's large. So we'll do something like that.
+Lewis Benson: As far as the semantic elements, I believe we should put these. A NAV doesn't really make that much sense because it's just taking it to the larger version of the image. But we're already inside of the section. I think we'd be fine, which is keeping it right here on the top level. So let's put an anchor tag. And the anchor tag is going to go to a new file and this is going to be the large version of the image. So I guess first, let's find some images that actually would make more sense. I'm going to go to Unsplash.
+Lewis Benson: And I'm just gonna search for tech. And if you haven't used on splash before the images you find on this website are public, everyone's allowed to use these, they just require that you give attribution to where you receive them. And they encourage you to also give credit to the author of the image as well. So this is a nice looking little picture here with a Kind of darkened out laptop. So what I like to do, before I download this I'm going to right click on it. And I'm going to copy image address. And that gives me a URL to the image and this is what I'm going to use for the thumbnail this way. I don't have to do any sort of CSS, styling to change the size of it. Because that's actually built in.
+Lewis Benson: So the href will take us to another page with end the anchor tag. I'm actually going to create a new element called the image and the image has multiple versions of it. I'm just going to go with the basic version. There's another one in there, It was src, set that allows you to create multiple versions of the same image. For different bandwidths. So if you're on slow Internet, you could have a smaller version of the picture that loads. Or if you're on mobile, you might want a smaller version of the picture loading there. So that's where you'd use that src set. I'd encourage you to look into that one. Using MDM sometime in the future, but we're not going to dive into that one at the moment. So in the src, I'm going to paste the link and it's a really long URL. But if we look carefully at the actual text here, we see this W equals 2020.
+Lewis Benson: I'm going to change this from Equals 2020 to W equals 200, and that's actually referring to the pixels. That's the width of the image. Let's take a look what that looks like. And we'll go to the blog post. And there's the smaller version of the image. And we can see, that's already a link. That's because I put it in an anchor tag. Let's take this down to a hundred, just to show the difference and show you that, that does work. So, that's a quick way to make a thumbnail. On your images using unsplash. It hasn't built into the URL. So we'll go back to I think 200 is good for three on this screen size or my I'm zoomed in quite a bit. So there's a hundred percent. This is what the page looks like at full screen. Yeah, that should be fine. I'll go back to 150. So it's easier to see though. So that's one image down.
+01:15:00
+Lewis Benson: And we'll create a file now. And the file is going to be called laptop HTML. And every HTML file gets to oillate. And laptop and the title. So that shows up in the tab. So the only thing we're going to have in the body, I'll put a mean. and the only thing we're going to have is an image with an SRC and an ALT Let me explain the alt real quick. This is what will happen. If a screen reader sees the image, it will actually read out what's in the ALT text. And it's the way a screen reader reads it'll actually say picture of and then whatever the alt text is. So you don't want to say in your alt text picture of a laptop because then a reader will say, picture of a laptop and it's
+Lewis Benson: Not really. All that good sounding. So you could say a laptop and shadow or something like that, some sort of descriptive text for the image. And you should always always include alt text, if you don't want it to read the image for some reason, Then you include an alt attribute, but you don't put anything in it. You leave Empty an example of that would be if you just have a picture. That's a red square and it's in an image element. And you just have that kind of as a background image, and it's not part of your actual page, it's just giving it some color. Then, that's the only time you want to leave this blank, but never leave the ALT text off. because it will actually read the Src, then,
+Lewis Benson: Okay, so we have the image. And we're going to href this to. Laptop. Dot HTML. So when I click on this anchor tag, which includes the image. So, when I click on the image, essentially, it's going to take me to Laptop.tml and this is going to have the picture now. I don't want to put the URL in here again. Instead, what I'm going to do. is actually download this, and we're going to say save image as
+Lewis Benson: Wonder if I can just copy this. And We'll hit download free that works. And then let me open up my VS code Ryan. You have a question.
+Ryan Arnold: I was just going to ask if you could show. What the laptop page looks like again real quick.
+Lewis Benson: The blog project. you mean the code for that?
+Ryan Arnold: None of the …
+Ryan Arnold: the code for that. Sorry.
+Lewis Benson: yeah, so I have a main And I have an image.
+Lewis Benson: That's the only thing in there so far. Yep. Okay,…
+Ryan Arnold: Okay, thank you.
+Lewis Benson: so let me put that downloaded image in there. And that went into my Downloads. And I can move this directly into here like that. And there is. And I'm going to rename this to something a little more manageable. We'll call it laptop Dot jpg. And I'm showing this to you because it's oftentimes you're not going to have URLs to images especially If you're sent all of your assets from a designer, they're not going to be on the Internet, they're going to be local to your computer.
+Lewis Benson: So, I'm actually going to create a folder called Assets for these images. And I'm just going to throw that in that assets folder. And then on my laptop, the src, can anyone take a guess of what this is going to be for the Src?
+Iris Coats: Either the image and you just put in there or the URL for the picture.
+Lewis Benson: Exactly. It'd be either one of them, but because I have this saved locally, I'm going to use the local one just to demonstrate that. So, I'll put in the folder name first. And as soon as I press the letter it's like you want this folder. Yes, that's the folder. You want this file? Yep, that's the file. I want. And then we'll do a laptop and shadow.
+01:20:00
+Lewis Benson: So now we have the full image downloaded. And we have the alt text on its own page. But what we don't have is a way back. So, what we can do is create an anchor tag. To the Index.html.
+Lewis Benson: And And that'll just be underneath of the image. Okay, so let's take a look at Our sample, I'm going to click on the laptop. And it is huge. It's absolutely massive.
+Lewis Benson: Let me 25% Zoom. So if you wanted the full thing, that's one way to do it. That might be too big actually.
+Lewis Benson: So what we can do is just add a little bit of style to that, so that it's not that big. And so what I'm going to do now is I'm going to show you how you can use the ID attribute I'll type in ID.
+Lewis Benson: and we'll say, That up image. So I'm actually going to use this now, I showed you how to create one before, but I never showed you what to do with it other than navigation, I'll show you how to use this for styling now. So we're going to use our style element. And to select an ID. I could type in laptop dash image and now it's looking for a laptop image element. There is no laptop image element. There's only a laptop image ID so we have to indicate to the style language that we're selecting an ID and to do that we put a hashtag And that's the same as whenever we were doing it in navigation. If you remember, the anchor tag was set to hashtag And in style, we're setting it to hashtag ID name.
+Lewis Benson: And one way to remember that is because this hashtag is also referred to as the number sign. You could think And then ID number, and I don't know if that's confusing. That's one way helps me. Remember it. Yeah, I'm going to set the width. To.
+Lewis Benson: 100 VW is a unit of measurement and it's referring to your monitor size. So, I just set the width of this laptop to be a hundred percent of my monitors width. So let's take a look at that. And it did go a few pixels past. But that's a lot more manageable now. It's a nice big image of that. And at the bottom, we have our homelink. Okay, so let's add two more images.
+Lewis Benson: And we'll go to Unsplash for that. Ryan, you have a question.
+Ryan Arnold: Yeah, I'm just having trouble getting the link. when you click on the thumbnail, I'm having trouble getting it to go to the image. Can you just show me what the code supposed to look like for that?
+Lewis Benson: Yeah, so I have the href on my anchor tag set to that new HTML file.
+Ryan Arnold: That's exactly what it was. I forgot to put that in.
+Lewis Benson: That'll definitely break it. Not having that. Cool. So let's grab another one Here's looks like a processor. And notice it also has this istock credit thing here.
+Lewis Benson: That's actually a different Web page. I'm going to get a different image.
+Lewis Benson: And here's one of the things they talk about for attribution. They want you to give a shout out, or Copy the text below. So, what I'm going to do is Click this link here. And just to show you because this is the proper procedure for this. Whenever you have an image, that's not yours, you definitely want to let people know that it's not yours. So what you can do is put in a code comment and you can just paste in that link there. And you can also create a new file. Called Read me. Dot MD stands for Markdown. And within here is where you would also. Is that's another way that you could give attribution to things like that? You could say used image from unsplash.
+Lewis Benson: And then put in the link there.
+Lewis Benson: Yeah, and markdown has its own syntax, so an h1 uses a hashtag. So if I put a hashtag, that becomes an h1 If I wanted a regular paragraph you don't put anything. You just have text. and for links, You can put square brackets. And this is kind of another stretchical thing. You don't have to memorize all this right now. But it is good to know how to documentation. and you could put some text that would be like your ALT text and then you put the link inside of
+01:25:00
+Lewis Benson: Quotes and then if I hit this, there's a little thing on the top right here it says Open preview. This only works for Markdown. If I click that, it'll show me what that looks like. And then it has the link. And it has the heading.
+Lewis Benson: So, a little extra there. Just a way to give attribution or you could just do it inside of a code. Comment, if you prefer Just to, so you're giving that attribution somewhere. And I'm going to copy this line and place it here as well.
+Lewis Benson: Okay, so we have our attribution in. And Here's some. Code. We'll grab the. Copy image address again like we did before. And then I'll go back to the index. So, we're going to create an anchor tag.
+Lewis Benson: and this is going to be an href to Code.html. Which doesn't exist yet And We're going to nest our image inside of the anchor tag. And I'm going to paste in the src link that. I copied. I'll do that one more time. Just to show Right. Click Copy Image Address. And look at that full screen. And then I'm going to paste that in my src.
+Lewis Benson: Format. And then add my ALT text. And this will be some code on a monitor.
+Lewis Benson: And then I'm also going to download this the same way I did before download free.
+Lewis Benson: And grab that link.
+Lewis Benson: Put in a code comment. Paste it in. We have our attribution there, I'll add it to the Readme just because I did it once.
+Lewis Benson: Just like that.
+Lewis Benson: Just to stay the same. And now I need What did I call that file? I called it Code.html.
+Lewis Benson: And when we create a new file, we do our boilerplate with the exclamation point. I want to change the title.
+Lewis Benson: Code. And we had a main last time, so I'll do a main again. We had an image in the main, and under the image, we had an anchor tag back to home.
+Lewis Benson: Just exactly the same. I actually could have just went into my laptop and just copied and pasted this and replaced the links But I don't like copying and pasting a whole lot. Because I might forget to change my alt text. I might forget to change my attribution. I might get free, there's so many things that you could forget to change. And if you forget to change, then it's gonna break. For example, we only want one ID so I'm going to name it, something different So in this case, I'll actually just do this inline style Width. And we'll set that to 100 VW. And this works the exact same way.
+Lewis Benson: instead of adding the ID putting into style element, just to give you a refresher on how to do Internal style.
+Lewis Benson: So hopefully we are good on that different between the two. Okay, so now we need the file that I just downloaded.
+Lewis Benson: And this will be It looks like a laptop.
+Lewis Benson: Let me look at my browser.
+Lewis Benson: Luca.
+Lewis Benson: Just download it again, just to make sure Luca Bravo and it has on splash in the name. And I think I can actually just drag it right out of here.
+Lewis Benson: Nope.
+01:30:00
+Lewis Benson: Okay, so that's the We'll rename this to Code.jpg. And I'm going to push this into the Assets folder. So that these are all together in one place and we're not too messy. And then we'll go to that file and make sure we add that as our src.
+Lewis Benson: It is that one.
+Lewis Benson: Okay, so now we have two images and that's one is 100 view. Hike, One thing I forgot to do, I think was the URL, To there it is. 200 pixels.
+Lewis Benson: So, we want to make sure that that width isn't too massive. We'll check our preview. And there we have two thumbnails side by side.
+Lewis Benson: Does anyone have any questions about anything I've done so far?
+Lewis Benson: Okay, and then let me test this, I haven't clicked on this yet and there it goes. I don't know if you noticed, but when I refresh Control Shift R. You can see that flash for a second. And you can see the Home button at the top.
+Lewis Benson: There's something you can do where you set The default width before the image is created.
+Lewis Benson: It's a little bit complicated, but if you're not happy with that behavior, that's something you can look into, there's probably some solutions on stack overflow. Where The container is collapsing. Because the page is still loading. And then if we do an inspect, just check what the other width looks good on that. And there's the actual pixel size.
+Lewis Benson: And if you don't like how there's a scroll bar, you can always go a little bit smaller too. Let me go to code. I'll try this one at 80 VW.
+Lewis Benson: And that looks a little weird at the home on the side. 99 Props. So, some of the stuff is just trial and error.
+Lewis Benson: and there we only have a down scroll if I change the height of this, We'll start affecting the aspect ratio. It'll start stretching the image in a really weird way. So, Whenever I just change, only the width it automatically adjusts the height slightly too. So that it maintains its aspect ratio. There are ways to scale it down. There's a property called scale actually that will scale the whole thing evenly. there's a few other tricks to you can use if you want your image to be a certain size, but you don't want it to I changed the aspect ratio. And you can see that Notice how the height on these has a slight difference. This one's slightly taller than the other That's not something I want to dive into today, but there is ways to make these all exactly the same height.
+Lewis Benson: Okay, so What we've done so far, is we've imported two images locally. And we also imported them. Through the browser. So we have the image in two different ways. Does anyone have any questions about that at all? Is there any confusion at all? Anything that's unclear about what I've done.
+shaista umar: Here can you please explain again why do we want it? The images in two different ways like with the link and download it.
+Lewis Benson: Yeah, so I could have did this downloaded completely but I just wanted to demonstrate the difference between the two and also I wanted to show you how you can modify, the width of an image using the best practice, I probably wouldn't ever do this. I would always download the images and use them locally. But I just wanted to show you that you can do this.
+Lewis Benson: If no problem. Yeah, I just showing you two different ways to do the same thing. One of the downsides of using a URL. Is. That the image could disappear, it could go away, unsplash could remove it, the URL could change. So that could break your images. But one of the upsides to using a URL is it's not taking up a ton of space. These images are quite large, they actually take up a lot of storage space. and if you have to pay for the hosting and you're paying for the storage of the site, And let's say, you have. 10,000 Blog Posts or Something. this is a big company that you're with And you got hundreds of thousands of images. You might not want to host the images yourself, you may want to be using unsplashes.
+01:35:00
+Lewis Benson: URLs for that. And a lot of times blog posts, you're not going to be taking the images yourself, you're just going to be trying to find stock images that kind of match the themes just so you have a little bit of content on your blog. So there are benefits to using the URL and there are benefits to using the files locally. So you'll just have to see what's fitting your needs and also what the other developers you're working with are doing. If they're downloading the images, you probably want to also be downloading the image. Otherwise, it can get a little messy. If you're doing two different things and doing it, two different ways, does anyone have any other questions about this?
+Lewis Benson: so, I'm going to show another attribute. And this one's called the title attribute. This one is kind of cool. I use this occasionally with images, especially And what it does is it creates a tooltip for you? And you can do this with your ALT text. You can duplicate your ALT text into this attribute title equals. A. Laptop. And Shadow. So, let's see what happens and I notice I put this on the anchor tag, it's the more parent element. It doesn't really matter. I could put it on the image or the anchor tag. I think it would still work the same. But now if I just lay my mouse here you can see that pop up. We have a laptop in shadow. And I'll do that to the other images as well.
+Lewis Benson: And I'll do this one on the image just to see if there's a difference. I don't think there would be
+Lewis Benson: and there we go. Some code on a monitor, make a capital S. So it matches the other one, there we go. Some code on a monitor and I'm gonna bring that up in the documentation. We'll see if there's anything else with that attribute that I may have missed to go over. So, this is a global attribute. I mentioned as earlier, I said, I'd be going over some of these and it just contains text advisory information.
+Lewis Benson: If included on the abbreviation element opening tag, it must be a full expansive. So here's something that I actually didn't know when you're using the abbreviation element. Which shortens text, if you have a really long text little shorten, you can use the title to expand it to the rest and that's pretty cool. And here they're using some JavaScript with that.
+Lewis Benson: And I thought this would be interactive. so this pretty basic attribute but it's pretty handy. If you want a little pop-up with some description there. Maybe you want to have this on a form where a user's, putting in a password and you can put some special instructions on the password with this So that they can see Another attribute. I can go over is the tab index, I think This one is. Pretty cool. Have index. And what this does is it allows you to tab between different elements on your page. So, when you have a blog You can make the navigation, really quick. Using the Tab key? You probably seen this with forms.
+Lewis Benson: you type in your password, Tab, press Enter, and you're logged in Maybe you haven't done that, maybe you have. It's just one of those. Things that some people see. Okay, so put one in our header. We'll do tab index equals zero. And the way these numbers work is you start at zero and you I believe, if you use a negative number, it makes it, so it won't index it, and I think that says it. Maybe useful for elements that should not be navigated to directly. So that'll do the opposite. When you do negative numbers, So, you may have a use case for that someday. So,
+Lewis Benson: If you remember there it is. If not we have the documentation to remind us, Have index one. And we'll put a tab index too on the section. And remember what I'm doing, attributes, it goes after the opening tag name. So this is the open and tag name. And the closing tag is down here. You cannot put attributes on the closing tag. They can only go on the opening tag and it has to go before the greater than it has to go inside the titles at and then you want to put that space in there.
+01:40:00
+Lewis Benson: And we'll put another one Have index of three. And this is the order that is actually going to navigate in when I'm pressing Tab. And we could also put it on our table cells. If we wanted to navigate through the rows, we could have index of,
+Lewis Benson: And then another row. Have index of 5.
+Lewis Benson: And then I'll show this all in action here just in a second.
+Lewis Benson: And we'll put one more here have index of 8.
+Lewis Benson: And let's see it I'm going to press Tab. And you can see it's selected my header. It actually put a big box around Press tab, it selects the images, I press Tab, I selected my whole table because that's the section. Now, we can go through each cell using the Tab key. And then we have a related post server there. Did anyone have any questions about that?
+Lewis Benson: Just holding the Tab key down there. So Going crazy.
+Lewis Benson: yeah, so that's kind of similar to This hover thing, but the hover thing actually doesn't select it whenever you're tabbing through these elements, see how I have this Link tab. If I press the Enter key, it actually selects that link. I Press Tab and select it's actually going. It's trying to go to the link on if you hold shift and press Tab, it goes backwards. We can go back through the numbers.
+Lewis Benson: So Tab Goes Forward Shift, tab goes backward.
+Lewis Benson: And it looks like there are some different behaviors for different elements. Because some of these are already focusable.
+Lewis Benson: Okay, so we went over that. Something I want to go over to is it's called The Data attribute. It definitely has a use case. I think I can actually show you a real world use case where I recently used this.
+Lewis Benson: We had this help ticket application. And on different screen sizes. If I bring this down, this is actually using the data attribute here because these are duplicated tables. If I inspect this, we can see Number data label equals student. That's how it's actually displaying the content on this. That's where it's getting these information from us through this data label and whatever is after the word data you can write whatever you want there. You doesn't have to be the word label, it's just data, and then something, and I'll show that in just a second. so, if I want to add some data to this category one,
+Lewis Benson: I can do data dash and then I write whatever I want, I'm going to say, Data Cat. Equals.
+Lewis Benson: Category One. And what this does allows you to grab this either through CSS or through JavaScript. And then once you grab this data, you can use it in other places. So maybe you want to know what's exactly in here. You can tell whatever's in here to be over here. And I know that's a little confusing sounding right now. That'll make more sense. Once we actually start manipulating HTML with JavaScript, but I wanted you to be aware of that one's data cat. We'll call this one data - cell. And again this doesn't really have much of a use right now. This is just a demonstration and just trying to introduce it to you and show you that it does exist and you may see it. And if you ever need to
+01:45:00
+Lewis Benson: Add data to your HTML or grab data from your HTML. Just hit the documentation and refresh on this one because it's a niche attribute but it does have usefulness. So hopefully that'll
+Lewis Benson: Ring a bell. Whenever the time comes to use it, we'll call this one data cell as well. 70
+Lewis Benson: I know this looks a little convoluted because I'm just repeating what's in the cell. But if you had, Very specific numbers in here. and then you were just playing this as
+Lewis Benson: 60.
+Lewis Benson: 70. And 80. The computer doesn't know what these words are. But these are the human readable versions of the numbers so you can use the data cell. To translate, we can say that this one's actually 60 and is going to be that. And again there's This real world use case here. Where we're displaying all of Through. the data cells or this one data label, we call it
+Lewis Benson: Does anyone have any questions about that?
+Lewis Benson: Okay, so no questions We went over the style element quite a bit. I won't beat this one, too hard, but I do want to show you the class attribute and how you can use that with the style. Element. I'm trying to find something that's not too messy yet. The code.
+Lewis Benson: I want to do something that has multiple things. So, the sections will work. I'm going to change the color of all the font on every section. So what I'm going to do is I'm going to add a class and I could do this through the section selector But I'm also going to put it on something else too and I don't want to select more than one thing. So what I'm going to call this, you can call these classes, whatever you want the value. it's kind of like an ID. You just name it whatever you want, except you can put it on multiple things. So, I'm just going to call this.
+Lewis Benson: Go Red. And we'll see why in a second. I'm going to copy that. I'm going to put it on every section.
+Lewis Benson: Class, go Red.
+Lewis Benson: I'll put it on a cell too for the total.
+Lewis Benson: And I'll put it on the summary.
+Lewis Benson: aside, we'll put it on the footer. so when I go up to the style area, I'm going to select that. if you remember I told you before, how you could select an ID and I'm actually going to show you that one more time, just so we're clear on that. So if I do ID equals And we'll call that. Just mean, if you select an ID, you use the pound sign the hashtag, whatever you want to call it. So you put that in. And then you put in the name of the ID. and then we can just do something like
+Lewis Benson: I'll just leave it empty. I'll put in a code comment. So that's how you select an ID is using the pound sign.
+Lewis Benson: And I'll put it in.
+Lewis Benson: so, to select a class, use a dot, And it's very similar to the ID because it's a custom name and we called our go red. So it's go dash red. Then to put in your code block and one way to remember this, Is s have an ID number. So you're using the number symbol and classes kind of have a class period. And that's how you remember the selector for a class. Now, we're going to do So I named the class Go Red because I'm changing the color of the stuff to red. It kind of makes sense because I put that class on a whole bunch of different elements, let's see how it works.
+Lewis Benson: So I did put it on that section and I put it on a single sale so that doesn't really make much sense. But you can see that it added that red color. It didn't add it to aside because I don't put it on that and it didn't add it to the header but out of it to everything else. Let me remove it off. That one section with the table because it kind of defeated, the purpose of me putting it on that cell.
+01:50:00
+Lewis Benson: From there. And now we have one sale, that's go With that class name. And we have all of this down here. Let's go Red.
+Lewis Benson: And we have this up here, that's got red. Does anyone have any questions about how the class works and why you would use that?
+Lewis Benson: Again it's very similar to the ID. But an ID can only be used once, so if you have two IDs, you have to have two different ID names. But with a class, you can put it on as many things as you want. And it's really useful if you're putting the same style on a whole lot of stuff. So, in this case, I wanted red text on all of this different stuff. It was scattered all throughout my code. So I just use the class, go red. And I just sort of putting it on every element that I wanted to be read. You could also do it with, margin, maybe you want to put 20 pixels of margin left on all of your elements. But not all of your elements but most of your elements. And then you could create a new class and just call it margin Left and whenever you add that it will automatically apply that style.
+Lewis Benson: So it's a way to prevent you from repeating yourself many, many times. And that's a principle that you'll hear quite a bit too. don't repeat yourself. so, in this case, I wanted this red to be added to a whole bunch of stuff. So, instead of saying put it on the section, put it on that one. TD. and that's another thing In order to select this TD, I would have to use an ID if otherwise, So I'll show that what that would look like real quick and this is where you'll see some repetitive code. So this TD we're going to put an ID instead. And I'm just going to call it red because I don't want to have it the same name as my class so it's not confusing. So equals red. So I'll remove this. That was just for demonstration. We're going to select that ID called Red. And we're going to set color is red.
+Lewis Benson: So now I just repeated something I have this color here and I have this color here. What I could do I could technically do this comma hashtag red. But I'm still adding extra code, whenever I don't need to because I'm now selecting IDs and I'm selecting classes, I could just remove this ideal together and use the class, and that's the more efficient way to do it. it's dry. Don't repeat yourself as it's an acronym. And then, let me switch that back that ID. Sorry, for the fast scrolling.
+Lewis Benson: Glass. Equals. Go Red.
+Lewis Benson: And we're back to Anyone have any questions about the difference between ID class? How do you Data attribute anything. We've gone over today. If you're coding along with me, is anyone having any issues, anything breaking on them? Anything like that.
+Lewis Benson: You're also quiet.
+TRACY JOINER: Just completely Then catch up in this.
+Lewis Benson: Playing catch up.
+Lewis Benson: And did you find the videos? Yeah with those being in YouTube format,…
+TRACY JOINER: I did, I did.
+Lewis Benson: I think everyone will have a lot less issues With that.
+TRACY JOINER: Right.
+Lewis Benson: I got fast Internet and I always having bandwidth issues with it so I could see where that would Lead to some issues.
+TRACY JOINER: Yeah. That.
+TRACY JOINER: I'm gonna keep and…
+Lewis Benson: Yeah.
+TRACY JOINER: I think mainly just got to play in here. More or less.
+Lewis Benson: Yeah, that's a big part of it. Experimentation. Yeah,…
+TRACY JOINER: The bottom line is because the trots and stuff and see what it looks.
+Lewis Benson: and it's really good. And I know this is gonna sound a little weird. It's really good to break the more you break it,…
+TRACY JOINER: And you learn to fix it and…
+Lewis Benson: the more you learn, so Yeah.
+TRACY JOINER: then you learn not to do those things. So you want to do that.
+Lewis Benson: Yeah, so, there was someone yesterday who had their uls and l's inverted. You make a mistake like that once and then it's like, okay, I got it now. I understand. You…
+TRACY JOINER: Yep.
+Lewis Benson: it really making a mistake is probably the number one way to learn.
+TRACY JOINER: Yeah, yeah I'm just gonna go online and read everything. You do a little teaching that way. And just trial and error.
+Lewis Benson: So everything I've showed you today is pretty much everything we've gone over and the last four days. A lot of this is recap creating the boilerplate code creating files and vs A lot of this is repetitive and hopefully that'll help everything kind of stick together, too. So, if you were behind,
+01:55:00
+Lewis Benson: I would advise watching the older videos, but you could also watch rewatch today's video, and I do go over a lot of those concepts again. But it would be better if you rewatched days. One, two, and three. If you missed those, just because I don't go as deep whenever I read revisit topics and concepts. Does that make sense?
+Lewis Benson: and that'll be also for anybody that's not able to Follow along and are having to watch the recording at this time, too. So make sure that you rewatch the older ones as well. And I think being that that's on YouTube, you can also control the speed of the playback. So you should be able to watch it at times two speed. If you just need a quick refresher and then skip around and all that.
+Lewis Benson: Okay, so let me go over the assignment. it's time for a break. I'm going to shut the recording off for the break. That way, we can minimize the amount of video. It'll make things upload faster, and hopefully get a safe recordings before we head off for the night.
+Lewis Benson: We'll take our 10 minute break and then we'll go into the assignment for today.
+Lewis Benson: Let me get my timer going.
+Lewis Benson: And I will see you in 10 minutes.
+02:05:00
+Daniel Perez: it was a thing you guys, you might be
+Lewis Benson: I sure do. Thank you.
+Lewis Benson: All right, welcome back. We're gonna go over our assignment.
+Lewis Benson: Let's start at the top, so you'll open your Visual Studio code. It starts off, just like the rest. I'll create a new folder called Day 4 Assignment. And you're gonna create two files called Index. And an And set your index.html similar to how you have in previous assignments. And feel free to experiment. Do something new. With what you learned as well. And utilize the knowledge you've gained to create a new structure for your index.html page, this can be anything you want. But ensure you use as many of the elements you learned this week as possible. So this is pretty open-ended Basically. I just want you to build something, you can follow the blog post template, if you want. You can build a portfolio, do something creative.
+Lewis Benson: But make sure that you're using all of the appropriate HTML tags. And have an article, an Assad in a meme. And fill the new elements with content, that's relevant to your interest and feel free to put whatever content you want is. That's appropriate to the assignment. and then keep in mind the whole accessibility and SEO. so yeah, this is really really ended but I basically just want you to Refresh everything that we've gone over this week. So, you'll build out an HTML page, you'll have all the main stuff. It'll be having two pages, one called advance one called Index.
+Lewis Benson: What you could do is on your index.html. You could create a. Couple of mock, what would look like blog post that you can click on to read? So maybe have an H2 title a little bit of text underneath it, describing what the article is and then on your advanced.html when you click on that, you can go in and actually create a similar blog layout that I created in the demo today where you have a header You have an article. Everything that's listed inside of the rubric here. We have all of that and make sure you also include an ordered list and unordered list table. Just have as many elements in there, as you can. Does anyone have any questions about that?
+02:10:00
+Lewis Benson: Again, this is really ended. So we're going to be very lenient about how this works, but we do want to see some of these new attributes being in used as well. So you can put an ID for ID, navigation, If you want to do group classes to do some styling, go ahead and include that use the style element and put a couple styles on something. You can change the color font size, whatever how complex you want to dive into when says it's referring to the title attribute. Remember, that's that little pop-up tool tip thing. the Tab index so that you can navigate through your page using the Tab key And throw in a data. Attribute as well. And then remember that star represents a
+Lewis Benson: A wild card. You can put whatever you want after the minus, so it's data dash and then whatever you want. And again we don't have any rule use for that but I just want you to use it once that way. Maybe It'll come to the front of your mind whenever you're thinking about a solution where you need that.
+Lewis Benson: Does anyone have any questions?
+Lewis Benson: Okay, so if there are no questions, then we can go ahead and get started. And again, feel free to collaborate. You don't need to raise your hand to ask questions for The workshop, just go ahead and unmute your mic whenever you want to talk. It's perfectly fine.
+02:20:00
+Lewis Benson: Hey, Gregory you got a question.
+Gregory Robertson Jr: Yeah I was trying to Go ahead and late start today. I was trying to say Feel, okay. If I come back Saturday, watch the lab recording and do the home. Assignment.
+Lewis Benson: technically not due till Saturday. but don't go a whole week and try to do all the assignments in one day because that would be Really.
+Gregory Robertson Jr: I got all the time is completed today. I had a late start sometime though.
+Lewis Benson: Yeah, that's fine.
+Gregory Robertson Jr: All right.
+Lewis Benson: yeah, we have about a half hour of class left too, so if you want to work on, something you fell behind on or review, I guess you can't review the video yet, it hasn't been Okay,…
+Gregory Robertson Jr: I'm caught up weird angles.
+Lewis Benson: yeah, that's fine.
+Gregory Robertson Jr: All right. Thank you.
+Lewis Benson: Yep.
+02:25:00
+Iris Coats: Lewis, I gotta go. I'll get everything turned in Saturday. I hope I just had the today in yesterday.
+Lewis Benson: Thank you for letting me know.
+Lewis Benson: Remember if you get finished up early and you haven't done your Dev Tolls assignment or the VS code assignment. Make sure you get those turned in as well.
+02:30:00
+shaista umar: So, I'm trying to add a time element within paragraph element and it's not when I hit T. Nothing shows up. I don't know what's going on.
+Lewis Benson: You mean you're pressing the letter T to try to get it to auto complete the time element?
+shaista umar: Yes, yes, it's not showing there.
+Lewis Benson: Yeah, that one doesn't autocomplete for me either. I had to type it in manually.
+shaista umar: Okay, so I have to. Okay, so that's what I tried manually. I did time element after that. Daytime it does not auto complete as well. So I want to what I do it manually. It just thought on your screen, turn into some purple color, but it on my screen is not turning into any color. I don't think it's not even working properly. You want me to share the screen you Okay.
+Lewis Benson: Yeah, let's see what you got.
+shaista umar: Also, here it doesn't show. So I do. sorry.
+shaista umar: I'm, and now that I right, it does not give me date time.
+Lewis Benson: The date time is an attribute.
+shaista umar: daytime equals.
+Lewis Benson: Yeah, but you're not inside of the opening tag, currently you're in the content of the element. The attribute goes into.
+shaista umar: I see the mistake. Okay, I know what you mean. Okay, okay so I have to go here, right?
+Lewis Benson: Yes.
+shaista umar: On daytime, Okay, I think. yeah. Now I'll be fine.
+Lewis Benson: Okay, Yeah and there's actually a few other formats you can if you're interested, they're on the Mozilla website. If you just type in the time element, Because you can actually just plug in time or…
+shaista umar: Okay.
+Lewis Benson: you can plug in the date. There's a lot of different ways you can use that attribute, so that it's machine readable.
+shaista umar: Okay, I can check that as soon. Thank you.
+Lewis Benson: Cool. Yep.
+Meeting ended after 02:40:55 👋

@@ -1,0 +1,558 @@
+﻿nia-amar-wfe (2023-10-27 19:31 GMT-4) - Transcript
+Attendees
+Chantrice L, Daniel Perez, Elgin Sharper, Iris Coats, Justice Miller, Krystal Jefferson, Lewis Benson, Lewis Benson's Presentation, Reece Renninger, Ryan Arnold, TRACY JOINER, Umar Z, Umar Z's Presentation
+Transcript
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.
+Lewis Benson: Okay, so welcome to day five. We're just going to be finalizing our CSS Concepts. This is mostly going to be a review of this week. We're going to retouch on a lot of the concepts that we learned. But we're not really going to dive into anything too new. Maybe something that we missed as we're going over some of the typography stuff or maybe some. Style properties that we haven't seen but it won't be anything overly complicated. What I want to do first is I'm actually going to show you. Kind of like a build out.
+Lewis Benson: of a web page and I think this would be a good way to just kind of reiterate over a lot of the stuff. We learned by actually using it and building something that's kind of realistic looking. So I'm going to start with a wireframe just so we have an idea of what it's going to look like and that'll give us an idea of how to plan it out. So let's start with our overall. body
+Lewis Benson: And I'm going to use grid layout for some of this and I'm going to use flexbox for a lot of it as well. That way we can get a good review of that. So at the top of the page, I'm going to want to put a navigation bar.
+Lewis Benson: And we'll have a logo. on one side
+Lewis Benson: Let's try that again.
+Lewis Benson: I'm zoomed out too far. I'll just use the shapes for this.
+Lewis Benson: And let's change the background color so it's more obvious. And again, I'm just showing you an easy way to lay out the page using this wireframe just so that it's clear what our plan is going to be. So my plan for this now bar is going to be using flexbox inside of here to push things apart and line things up where we want it. I think we'll have three links.
+Lewis Benson: It's a link. I'll just duplicate this.
+Lewis Benson: There we go. So it looks something like that. We'll have a logo over here or three links over there and just looking at having this drawn out. We can already kind of see what the solution is to make it look like We know that this navbar is going to be set to display Flex. That'll put everything into a row. This is going to have to be in a container in order to get these to be separated. And we'll just call this a div. probably be I want to make us a UL. This would be my UL. And this UL is going to be a flex container as well. And that's how we're gonna get these links to be horizontal here. because this navbar is also a flux container. We know that we can Justify content space between in order to push the logo to the left and push the UL to the right because that's going to be the two children of the now bar component. So then the next thing.
+Lewis Benson: to be it's called a hero element. This is just a large image to kind of grab the user's attention. You'll often see this on the Apple website anything that's like a business related to have a large image here taking up most of the top of the page.
+Lewis Benson: And we'll call the hero section and then right in the middle of the hero section. We'll place a button right here. Let me change the background on this we have a little bit of contrast.
+Lewis Benson: And this button is going to be called a call to action. This is a term. You'll hear whenever someone is referring to a large. Way to get the user's attention and make them want to do something and this case it would be a button that would say something along the lines of click here.
+Lewis Benson: that will go right in the center of our hero. I'll make this also a different color for other contrast. There we go. So then as we go down The next section we'll put three sign up tier type cards. This is something you'll see quite a bit. This is marketing strategy where companies like to put three options. And they'll put an option here. That's Not maybe the best option and then they'll put something that's got the best value option. And then they have their Top Gear option usually here and it's a marketing strategy that will help users. Click on one of these cards based on their needs. and then after the three cards We can. Put a footer at the bottom.
+00:05:00
+Lewis Benson: Something like that and this photo could also have some navigation in it as well. Whenever you're building up Footers a lot of times. If you have multiple page applications, you can put your Three Links from the navbar also in your footer and then maybe some legal disclaimers and that sort of information will go into your footer. and then I also want to put three buttons here
+Lewis Benson: just for this demo. They're all gonna go to the same thing. But these are going to be links to another page and it's going to be a sign up page. So we'll also get the opportunity to style some form elements and get some practice with that as well. So it looks something like this whenever it's done.
+Lewis Benson: And this will also be a call to action.
+Lewis Benson: So we have three call to actions on these three cards and these three cards again they're probably be divs or we could use sections whatever we need to do and we can already see that this is laid out. Horizontally, so we have a couple options here. Let me change the color of this one as well. There we go. We can use a grid layout for this since these are laid out horizontally or we can use flexbox and then set these to row our wrap property to make them if they need to drop the multiple lines. They can do that. So we'll look at that whenever we get to that point. I'll probably use flexbox just because it's not a two-dimensional layout if I had say six cards, then I definitely want to use grid, but with flexbox I can just put these in a row since it's the one dimensional layout plan.
+Lewis Benson: So this will be a flex container. Does anyone have any questions about this wireframe and how I planned this out?
+Lewis Benson: Anytime you draw out a wireframe like this. It doesn't have to be. Used in say figma. You can actually do this on paper. It's just good to have something written down some sort of drawing that kind of gives you the idea. I'll put a little X here to symbolize a picture there.
+Lewis Benson: And it's not a very good one, but it's good enough. Okay, so there's the plan for what the page is gonna look like whenever I get to the sign up form. I'll draw another wireframe for that just so we can have an idea of what our plan is. So now I'm going to open up vs code. I already created a new folder for today demo 1027. So I want to start with an index.html now.
+Lewis Benson: I can get that to type. We'll put in our boilerplate. And this is going to be the main page we'd have to come up with sort of a theme for our content. I don't really have an idea for that yet. So I'm just going to call This will just be a sample page. Maybe you could present something like this to a client if you were trying to sell. A website that was shaped like this you can say this is how I would design your web page. Maybe this is a grass cutting company and you can have three options for the grass cutting company. You could have a picture of their equipment maybe they're their truck and their trailer with a mower on it and then a button that would say reserve a appointment something along them lines and then up in your top here. This is where you could put a link to reserve you could have a link for about us page.
+Lewis Benson: And then maybe a link to your GitHub if this is just a sample something along them lines. And then you could reuse this template endlessly across different clients as Okay, so we have our idea for how this works now. We just need to get the structure written. First thing. We said we're going to have is a nav bar. So in the navbar, we know we're going to have a logo. So I'm going to create a UL this is going to contain all of our links and then above that. I'm going to create a give and this is going to be for the logo. and within this logo or within this day, I'm just going to use a paragraph element and say
+00:10:00
+Lewis Benson: company name or something like that just and you can have a logo that's playing text or you can actually have a small image there as well. Whatever you want to use for that on the left. I'm gonna make this an anchor tag. So let me throw that in there and I'm slide this paragraph element into the anchor tag. And then I'm just going to put a hashtag in there. And the reason I'm doing that is because often these logos. are Links back to the home page. So when we have a multiple page application, this would actually go back to index. In fact, I'm going to put index.html in there. So if we do have to copy this over we already have that. So UL I want to create Three Links so that would be an times 3
+Lewis Benson: and they're going to have direct children that are anchor tags. And did everyone see that shortcut. I'm going to show that one more time. I'm using an image shortcut where I can type in the first element times 3 and then I'm using the direct child selector that we use in CSS. And then I hit the letter a and it will Nest these anchor tags within the LI. So it's just a little shortcut to make this easier. You don't have to use these if you don't want to but then you can just click on the emit abbreviation and we'll Nest the anchor tags with an Elis. So the first link could be sign up
+Lewis Benson: we could have about us. And possibly even like a login. If we create some sort of authentication for this site.
+Lewis Benson: And then I'm not going to create these Pages just for the sake of time. So I'm just going to throw some hashtags in there Justice placeholders for now. Okay, so that looks pretty good for our nav the structure looks like this could be laid out easily using flexbox. and I'm thinking maybe we could make a fixed navbar so that it scrolls with us or maybe just use grid and have this at the top of the page I think grid is probably the way to go. For this so I'll put a class on this and this is going to be a item And we're going to call it nav.
+Lewis Benson: Okay, so that's our nav ready to go. I'm actually gonna build this right now. So that this part is done. So first I need to create a s CSS. because I have a CSS file called Styles. I need to link that in.
+Lewis Benson: And Lincoln Styles dot CSS like Okay, so that's again in the head of my document. I prefer to put it You can put it over the title. It doesn't matter. And I'm gonna put a comment here.
+Lewis Benson: And say this is a layout for flexbox.
+Lewis Benson: Just so it's clear what this piece is. And I'm going to put this inside of the nav. And that way it's tied to that element. So just a quick comment on what this is going to be used for. So let's style this now let's take a look at our content first and make sure it actually looks fine.
+Lewis Benson: And here we have our links and we need to style this so that The links are on the right and everything is placed apart from each other. So let me get some participation here. Somebody want to kind of guide me through how to do that. I'm actually going to make this so we can see. I'll bring this down.
+Lewis Benson: on a smaller window so we want to guide me Laying out this navigation.
+Lewis Benson: What would be the first thing we need to do for this element? I'm actually going to open up my inspect tool so if we look on the right, we can see the class name we can see the element name. And we can also see how the structure is there now.
+Ryan Arnold: You need to do your grid template areas first.
+Lewis Benson: Okay, we can start with grid template areas. we need a grid container and it looks like my body is going to be my grid container. So I'll go ahead and create a good container there.
+Lewis Benson: let's say grid container
+00:15:00
+Lewis Benson: what are some of my starting styles for the good container before we do the template areas? What do I want to set?
+Iris Coats: I'm just
+Ryan Arnold: You would want to set Grid. Do you want to tell it how many columns you want? set up the spacing in between the grid Gap your padding.
+Lewis Benson: How many columns do you think we should use…
+Ryan Arnold: And your height?
+Lewis Benson: if we look at this page here?
+Lewis Benson: considering this is going to be a flex container instead of
+Lewis Benson: this won't be a grid container so these aren't going to be separate columns. So knowing that how many columns should we make for this page?
+Elgin Sharper: three
+Lewis Benson: We can do three we could also just do one. Because we don't have anything dividing the page up.
+Iris Coats: Ice.
+Lewis Benson: We can also do three if we wanted to maybe add something in maybe for media queries later. So I'm gonna do three, but we could get away with just doing one and whenever you're just using one. Column, then you could probably actually just make it a flex container and make it into a column that way but because I wanted to just reiterate over how grid works I'm gonna make this a good container. so we're just going to say We'll do the repeat way. We could say one FR, but I'm going to use the repeat function. And we're going to say three one R that. and something else I want to do to my grid containers. Give it a height.
+Lewis Benson: What should I use for the height on the grid container?
+Ryan Arnold: We want to use Auto for the height.
+Lewis Benson: Could use Auto. I actually want a hard code and the height so that if I don't have a lot of content, it doesn't have it way up here because with auto it's only going to make it as big as we want, but you could use Auto if you're going to have enough content to fill your whole page. But I don't know if you've seen the ultrawide vertical monitors, if you had one of them then the page isn't going to go the whole way down. So I'm going to use 100 VH so that it takes up the whole height of the page that way.
+Lewis Benson: And does that make sense why I chose this and it's your answer isn't wrong. It's just not the way that I was thinking ahead of time. So it wouldn't match up with my notes. It's the only reason I'm kind of sticking with this. You could use Auto and just have enough content to fill everything. But again, I'm just choosing 100 VH. So it takes up the whole page and I know so I got this little scroll bar here now, so sometimes when you're using Before I even continue on let me get a CSS reset this should solve that issue.
+Lewis Benson: Because I have some extra. Margin that's stretching my page a little bit. I don't like having a scroll bar when it's not necessary.
+Lewis Benson: So we'll create a new file. This will be t CSS. I'll paste in that code that I just got from this code block on the Meijer website. And again, I just search for CSS reset to get to there.
+Lewis Benson: Okay, so I'm going to save this it's going to format. That's okay. And then I'm going to go to my index and Link it in above my style et. Somebody tell me why it goes above the style sheet.
+Iris Coats: Cancel out the styles that you create in the style sheet.
+Lewis Benson: Exactly and we can see that I lost the scroll bar. all that margin gone. Everything's pushed up to the top left and it even got rid of those bullets for me, so I don't have to worry about that now. So that's kind of nice that saved me a little bit of time there. So we have our grid template columns. We have our grid container. Is there anything else that we should put into the grid container?
+Iris Coats: with the columns
+Lewis Benson: The width of the columns is one fractional unit. so I think for good I'm gonna give this a different background I'm just a contrast our cards later. and I'm just going to use my favorite white color, which is #f4f4f4
+00:20:00
+Lewis Benson: and it's just an off-white. You probably can't even tell the difference right now. But whenever I start using a brighter white, you'll see the Okay, so grid containers done. How can I make my nav bar laid out to look more like a navbar at this point?
+Lewis Benson: And again, I have the navbar open here on the right if you need to reference the HTML.
+Daniel Perez: There would be display Flex.
+Lewis Benson: It is displayflex. And what selector would you use to actually select the nav?
+Lewis Benson: Which CSS selector would be good for?
+Daniel Perez: I'm going to use a class.
+Lewis Benson: Okay, we'll use the class and I'm going to use the class nav and AV I could use the class grid item, but that's gonna put it on every single grid item. This one is specific to this one. I could also just type in the element name now, but if I put another nav in my footer I'm using the element might not be ideal. So we're gonna go with the nav class. So, thank you.
+Lewis Benson: And we're going to set this to display Flex.
+Lewis Benson: And look at that. We have the logo on the left and the links on the right. What do I do now? What's next?
+Lewis Benson: If I want to for example, push the links over to the right all the way.
+Ryan Arnold: bestify content
+Lewis Benson: justify content and I'm going to use space between this will separate everything completely. What happened there?
+Lewis Benson: Any idea how come it only stopped in the middle?
+Iris Coats: the columns
+Lewis Benson: It looks like the width of our nav stops right there for some reason.
+Lewis Benson: That's actually unexpected. I didn't. Think that would happen. Let's see if we can figure out why we have space between display block. This is our reset.
+Lewis Benson: That's interesting. And then when we look at this grid container. We see. I think you're right Iris when you said the columns. If we look at the grid container we can see those you see the vertical lines.
+Lewis Benson: Our nav we never defined where it should live using the grid template area.
+Lewis Benson: So that's why it's stopped right there. So I guess that's not unexpected. I just never actually did it without laying out the template areas first. So that's interesting.
+Lewis Benson: Okay, so I'm going to reselect my grid container. And somebody tell me why I'm reselecting it here on new line.
+Iris Coats: So that you can do a cleaner look of how you're fixing the content of your grid.
+Lewis Benson: Yeah, so I like to keep my stuff modular and group similar things together. So this grid container up here? I'm just gonna call this mmm. I'll put a little comment in here and this will kind of describe what's going on. We'll just call this primary layout. properties
+Lewis Benson: just something to kind of describe what's going on in each block and then here we'll say.
+Lewis Benson: grid template area
+Lewis Benson: or main grid container okay, so I'm going to use the grid template areas
+Lewis Benson: And I'm not gonna autocomplete none. So you said you wanted to use three columns? So I'm going to say header like that. And it's going to format back to one line. That's so with three headers What can I do to make? My header be bound to this template area. Does anyone remember the property for that?
+00:25:00
+Daniel Perez: Would be great area header.
+Lewis Benson: Yes, grid area and we'll type in Now we are the whole way across the screen because we said all three columns are the header.
+Lewis Benson: All what do we do about these links? They're all. stacked on top of each other there
+Lewis Benson: Let's open up my nav and take a look. There. They are.
+Lewis Benson: What do we need to do to get these links to be side by side?
+Daniel Perez: Is that another display Flex?
+Lewis Benson: Yeah, we'll put those in display Flex. So what I'm gonna do now is I'm actually going to use a multiple selector. I'm going to use. the adjacent
+Lewis Benson: sorry, what's my train of thought I want to use the How do I use the adjacent sibling selector to select the l does anyone remember that? from our CSS Diner game
+Daniel Perez: Would that be this close map or…
+Lewis Benson: Exactly it.
+Daniel Perez: nav close?
+Daniel Perez: Definitely.
+Lewis Benson: It's a nav+ UL actually.
+Lewis Benson: So that'll grab the UL that's after the div. We could also do it with a direct child selector, which would be more specific. So I think actually instead of The Sibling. This is a good review on what that's supposed to look like. It'll grab the one after because these are siblings. But I'm actually going to use this class name. now Because maybe I'll have another div and UL somewhere later in my code. And I'm gonna use the direct child and say this way. This is the same as saying give plus ul but instead of using the adjacent sibling select I'm using the direct child selector of this class. because this is a class we can look at our specificity and see that it's a one-one. specific class
+Lewis Benson: selector and I like to use classes at minimum. Sometimes I'll even use IDs for my selectors if I want to be very specific. All right. So let's set this to display Flex.
+Lewis Benson: And how do I put some space in between those?
+Lewis Benson: There's a certain Flex property that's good for just putting a little bit of space between things.
+Daniel Perez: we justify space between
+Lewis Benson: I could use that but then I'd have to put a width on my UL on the one I'm looking for is Gap. And I'm just going to put 10 pixels a gap rubber Gap can only be used with a flex container. So if you try to use this on anything other than flexbox, it's not going to do anything. There's also grid Gap. So if you're using grid layout I believe there's column Gap row Gap and grid Gap. And they call that gutter. I believe is the space between the grid items. I have to double check on the terminology. I believe that's what they refer to as gutter whenever you have a grid. And the space in between each item is the gutter.
+Lewis Benson: I usually just call it the Gap just because that's the name of the property. Okay, so this is looking pretty decent. I'm gonna give it a background color.
+Lewis Benson: of White
+Lewis Benson: so this should contrast a little bit and it's just hard to see because it's so row. So we're gonna give it a height. we'll go 60 pixels. So that has a little bit of
+Lewis Benson: So we can see that contrast now that I was talking about. There's a actual. White line there and just to add some more to that. I'm gonna do border. bottom
+Lewis Benson: not bottom radius just order bottom. I guess I don't get that option to there we go. And we're going to say two pixels solid. black
+Lewis Benson: that might be a bit much. Let's try one pixel.
+Lewis Benson: And I'm going to throw in one more property. I think I might have showed this one briefly. I didn't really go into how it works. This is called a box shadow. I do remember showing this briefly. And this is one that I always have to look at MDM to see which property does what so don't worry if you don't have these memorized but I do 10 pixels and then you put in a color and we can already see that shadow starting to show up there. and we'll put in a gray and then I'm actually used the Color Picker in vs code. And maybe lighten that up just a little bit. Something like that. So that gives it kind of that three-dimensional look and then I'm going to switch this to hex by clicking at the top of the Color Picker. I just said that it uses the shorter. version of the text
+00:30:00
+Lewis Benson: I think it actually looked better without the Border. Or I'll use the same color on the border. And this is the kind of things you'll be doing whenever you're actually designing These pages is on the Fly you'll be deciding on what you want to do as far as the colors go.
+Lewis Benson: Okay, so there's our navbar. How can I put these links in the middle? Does anyone know how to do that?
+Lewis Benson: Because they're all the way at the top right now. It's pretty tight up there. How can I bring them down?
+Iris Coats: The middle of the nav bar.
+Lewis Benson: Yeah, I want to put them right in the center. What could I use for that?
+Iris Coats: lay out sit..
+Umar Z: pad
+Lewis Benson: I could use padding. But what padding will do is also make my nav grow. So then I would have to adjust my height to account for that as well. There's actually an easier way because this is a flex container. I can How would I move these on the cross axis? Align items. Yeah There's also this one called a line self. I'm going to use a line self just to show you how this works. I'll do both first. I'll say a line item Center. And we see that they come right down to the middle. I'm going to comment this And show you how to use a line self because it's a little bit different. In order to use a line self. I would have to select the UL which we have selected here. and align self and I can say Center and it brings these down. But this is still up.
+Lewis Benson: So to bring the other one down, I'm going to select. dot now
+Lewis Benson: give and say a line self. Center and then that brings that down as well.
+Lewis Benson: The reason I did that was just again just to show you that you can move individual items again, this is making flexbox even a more powerful toll for layout because if you wanted your logo up top, let's say it's a picture and then you wanted something else underneath of it. You'll have room to do that a little use cases for a line self. Sometimes you want to move one thing over but not another because I could also say for example justify content or justify self and I could give this a center property.
+Lewis Benson: am I on the wrong one?
+Lewis Benson: That should move that to the center. because it's not being overridden by the space between here is why that didn't work. But if I did justify self instead of a justify content space between then you could individually set certain items. I could say I want this here and maybe I want another item over here. I could start flex and justify self. So whenever you say self it goes on the child of the flex container. So we have two children are Flex container. So justify self would be on this div and then we'd have to have another just Myself on this ul and again the reason it didn't work in my little example there is because I already have this set to space between and that was overriding the justify self. And then the last thing I want to do Omar you mentioned padding. I want to put some padding on the edges here just to bring this in a little bit. So
+Lewis Benson: we'll say padding. left and we'll give that 10 pixels. And then on the UL will do adding right hand pixels.
+Lewis Benson: And that looks pretty decent for a navbar. Does anyone have any questions so far about anything I've done.
+00:35:00
+Lewis Benson: And then I mentioned the documentation for the Box Shadow. I just want to show that one more time. Just so we can see what that looks like. For anyone who wants to use this because it is really cool. I just typed into Indian.
+Lewis Benson: And then here's the different properties if you want to look and see what these actually do. You can scroll down. It'll tell you where is it at? Because this is the shortcut version of it. Where is it? We have border radius. Text Shadows. I guess you can just change them and then see what it does. So this is moving the left and right.
+Lewis Benson: This is moving the up and down. And then this is the amount of blurriness. So if I want to make it really blurry I can see 55 and it gives it that blurriness. But I can never remember these off the top of my head. So I always come to MD. Hen and Mess with it and get it the way I want it to look on my page and then I can copy this out of here and paste it right into my code.
+Lewis Benson: Okay, and So here's our sample. All right, so looking back at our wireframe. It looks like the next piece is going to be the hero section. So I'm actually gonna put a main in now and I'm gonna put the hero section within the main.
+Lewis Benson: a little bit taller here There's my nav, we're gonna go under the knob so that the knobs at the top. I'm going to put in a main.
+Lewis Benson: And within the main we're going to have a section, I'm going to show you another shortcut on that. I haven't shown yet. I'm going to say section Dot. hero hyphen section. I'm going to autocomplete that and it will create the section with a class name already built into it. That way I don't have to, go back and type the class attribute and this also works whenever you're doing. The shortcut like I did with the UL, but the nested allies you can also throw class names on things like that. You can change together a whole lot of stuff. You could technically build your entire. HTML With one line of code, and then press Tab and it should complete all of your structure if you did it perfectly and thought it all out perfectly. I'd be really hard to do. I don't think I'd ever attempt it but that is something you could do.
+Lewis Benson: Okay, so our hero section, it's going to contain two things. It's going to contain an image and it's going to contain a button. I'm not going to put the image actually in the section instead. I'm going to put a background image on my section using CSS. And what this will do is make it so screen readers don't see the image for the hero because it's going to be part of my background. I don't want that to be the primary thing that the screen readers focused on. I want the call to action button to be the primary piece. So all I'm gonna have in here is a button. and this is going to say requests quote now something like that.
+Lewis Benson: So I'm going to show you how to do that with the background image here in a minute. And we're also going to style that button. So it doesn't look like That's not really getting my attention making me want to click on it. All right. So let's first get this section added into our grid items.
+Lewis Benson: So we'll say grid. item
+Lewis Benson: and hero section and I haven't used this grid item class yet. This would just be something that if I wanted to manipulate all of my grid items using media queries. I have the option to do that. I probably actually won't use the class anytime. I'm just putting it on because it's just a habit. Because oftentimes you do need to access all of your grid items to manipulate through media queries. So next is the hero section. And what I want to do is add that to my template area. So let's take a look at the template area. We have the header. Let's remove the semicolon. And let's put in. hero hero
+Lewis Benson: Okay, so we have our three Heroes. I need to select How do I select the hero element? Just take a look at our Dev tools.
+Lewis Benson: Looks like we have a class on it. So we can use that the same way we did with now. dot hero Dash section
+00:40:00
+Lewis Benson: and what properties do you think we should apply to this to get our button in the middle?
+Lewis Benson: where it's at right now. I'm going to use the outline property. And I'm going to set it red one pixel. solid
+Lewis Benson: so there's our hero section. Looks like I'm missing something here. Can anyone tell me what I'm missing to make this fit where it's supposed to be?
+Lewis Benson: It's the same issue we had with the navbar earlier. If we highlight the grid. We can see our grid lines. And it looks like it's stuck in the First Column because we never actually assigned it to. Our grid template're Deco. It's up here. We put hero in the grid template, but I never actually set the grid area. on that piece and this is a lot of stuff in here. I'm actually going to break this apart a little bit. this is easier to read. Sorry, if this is seeming like I'm a little sidetracked here, but I think this is an important thing to do. We want to put our borders in here. And we'll put our background color in there. and our height
+Lewis Benson: And this is just to organize the types of things we're doing. and then here we'll put a comment and we'll say grid styles for nav
+Lewis Benson: What do they call the other one? primary layout properties
+Lewis Benson: We'll use the same name just to keep it consistent primary layout properties.
+Lewis Benson: Okay, so that's a little bit more organized and then in our hero now, I want to set my grid area. So the grid area is called hero.
+Lewis Benson: And what happened there? That I make a typo.
+Lewis Benson: hero hero hero
+Lewis Benson: I have our three columns.
+Lewis Benson: Heroes section is set. Weird area is hero. Does anyone see a bug anywhere?
+Lewis Benson: I see it if we look right here. If anyone see it now that I'm moving my mouse over these two elements.
+Ryan Arnold: Doesn't need to be outside of the main.
+Lewis Benson: Yeah, so there's a couple options here I either make My grid container which then would put my nav inside of my main and that's not ideal because it's not part of my main content.
+Lewis Benson: Or I make my hero section, which also is an ideal. I might have to use Two grids on this to make this work, So yeah, I need to somehow make my I need to select my main and make it my hero. But that actually doesn't make sense. So if I look at my content here. Instead of hero. I think I want to say Main
+Lewis Benson: and this is one of the reasons why you want to plan this out ahead of time so that you don't run into issues like this and I'd say Twitter footer footer. And then within my main I can create my main as another grid container and if we look at our wireframe. My main would wrap the hero section and the flex container together. So I could also make that just a flex container.
+Lewis Benson: I think I'll do that just for the Simplicity of it because I haven't showed anything with a column. So that'll give us the use case for the column. hero section and flex container. These two elements are going to be wrapped inside of another element like this.
+00:45:00
+Lewis Benson: Does anybody have any questions why I'm doing this this way?
+Iris Coats: When the reason why be because it's more here It's more your style of the way you do things and the way you prefer to see Which might translate into you think other people like to see it this way it makes it easier for their devices.
+Lewis Benson: Kinda, I do have every preferences toward using flexbox just because than a grid isn't necessarily hard to use. there's a lot more code to write to make it work good. But the reason I'm wrapping these is because my grid Is technically only one column wide even though I'm using three columns? Because we could then manipulate it with media queries later to make it into a three column application. We're almost going toward a mobile first approach right now, which is great. That's kind of the standard and development right now is to make this look good on mobile and then expand it out to a desktop. But the reason I'm putting this inside of its own container is because with my current grid my body is my grid container. And then I'm saying my header is going to be the top of it.
+Lewis Benson: And then I can't put just this into its Part of the grid because I'm using a semantic element to describe my main content. So if I were going to do that, I would either have to make a second grid container. And again, that's kind of redundant because I only have one column I could make it a three column one and then put these each in their own column. So that would actually Work pretty well as well, but it's like you said there too. It is kind of preference of mine. I do like working with flexbox more than I like working with grid and it's just because of the syntaxes a little bit easier with flexbox. I do think grid is a more powerful layout tool, but it's also a little bit overkill for what we're using it for here.
+Lewis Benson: So hopefully that answers any questions about that.
+Lewis Benson: I'm going to select my main just using the main. And I want to do that above my hero section but underneath of my nav and I always want to keep my elements in the same order that they're displaying on the page. So I have my nav we have my main and then underneath that I will have my footer. So inside of my vs code. I selected under my nav, I'm selecting my main because hero section lives inside of me, it'll come right after me. And then all I'm going to do now is say grid area
+Lewis Benson: oops, grid area and this is going to be mean. And now that stretches the whole way across. and then the next thing I want to do is
+Lewis Benson: for my grid or sorry for my main is set this to display. Flex
+Lewis Benson: Direction column that way it puts the two elements on top of each other. So what do we have all this extra space for let's take a look at that. And it looks like we're at the bottom of a grid line. Which means the height of our header? Goes all the way down to this grid line here. So that's how much space this is taking up even though it's not using that space. So what we need to do then is Set the height of our first column. To shrink down to whatever's being used rather than having all this extra space.
+Lewis Benson: So let's take a look.
+Lewis Benson: at our columns and I actually forget the property selectors. I need to look this up again. grid columns
+Lewis Benson: it might be the grid Auto columns.
+Lewis Benson: All right. This is columns we need. Yeah, that's right.
+Lewis Benson: Sorry, we need rows.
+00:50:00
+Lewis Benson: There we go. So this is what stretches and shrinks the rows. So this is what I was looking for here is grid row and then we'll use this span property in order to it tells it how many grid lines to span. So we should be able to reduce the number that way. Let's see what they have for.
+Lewis Benson: When you're using end in Grid row this means that you're gonna have to tell it to start on grid line 1 and then end on say grid line three if you want to go to grid lines. Looks like we also have an auto property. That's what I was looking for. Let's go ahead and apply that.
+Lewis Benson: And I believe I can just place this here. ribbed row Auto
+Lewis Benson: that's a change this. one
+Lewis Benson: Doesn't do decimals, okay? so this isn't very clear on the
+Lewis Benson: It's a shorthand property for good row.
+Lewis Benson: the location contributing line span and nothing Model 100% sure why?
+Lewis Benson: That didn't actually change anything.
+Lewis Benson: grid column and grid column start
+Lewis Benson: might have to actually put this on the parent container.
+Lewis Benson: There we go. So all I did was added grid Auto rows. So that means that should have worked. I'm not sure why that didn't work.
+Lewis Benson: I'll have to look into that later and see what exactly went wrong with that property. I'm a little rusty with the setting up the columns and everything. I typically only use grid to lay out actual grid squares. I like if I have now, let me bring up my page here and just give you a quick example of when I find it to be the most useful if I'm laying out content
+Lewis Benson: 
+Lewis Benson: Try that again.
+Lewis Benson: this kind of pattern here. This is when I typically would use a grid layout. Is when I actually have a grid of content.
+Lewis Benson: So hopefully that makes sense. It is good too for multiple multi-column page layouts. That's another time I use it. But I don't typically have to adjust the height of my rows and there are so many properties with grid. So it's one of those things you just have to keep on revisiting in order to get it all down. There and there's multiple ways to actually do this too. I showed you the template areas because it's the easiest way to use grid, but you can actually Define your rows and columns individually. And set up individual sizes on them like how they did here. This is grid template rows. And then they have their grid template columns. So they're specifying everything.
+Lewis Benson: So here they're using fractional units and it shows you on the rows that they have one raction unit on the top two fractional units here. And then one on the bottom again, this is one of those things that you just have to kind of read the documentation find tutorials on just because there is so much you can do with it. It's one of those things it would take months to just get through all the properties and even then you probably wouldn't have them all mastered. You would just have a general idea how they work. All right, so let's move back to what we're working on So currently our main is it doesn't have any content in it. So it's like all collapsed up here. We're gonna add some content to make it bigger. So that'll be fine.
+Lewis Benson: There is our main and here's our hero section. So I'm gonna remove this grid area. We're not using that anymore. I'm gonna remove this outline. I like to use outline for debugging purposes to see where things are at because it doesn't move things around like a border if you use border to try to see the outline of something If you have a one pixel border, it's going to push things by two pixels because it's one pixel on the top one pixel on the bottom one pixel on the right one pixel on the left. So it'll move it left and right by two pixels and up and down by two pixels and when you have multiple elements. That can actually cause issues. Okay, so For the background image. I'm going to go to unsplash and grab one. So here's a little bit of review on how to do this.
+00:55:00
+Lewis Benson: we'll say grass cutting stick with that kind of theme. And this looks like it would work pretty well for a splash image. Maybe there's something a little wider but we'll go with this. It looks like they have a embedded thing in the middle of it, so I don't have to worry about the
+Lewis Benson: attribution because it's directly on the copy image address and I'm going to say I'm just going to use The background property is actually a shorthand property. You can use multiple Parts here. you could set a background image and then you could also do some things to manipulate with the image looks like and we'll type in. Url. And we'll put in some quotes and paste that in. And let's see what we get. Okay, so it looks like our content. is
+Lewis Benson: not being expanded out because again, they're being a background image. It doesn't count it as content. So it's only going to be as tall as this button. Once we get this area set that'll look a lot better and we can actually do that by setting a height on it. That should solve that issue. So then we have to decide how tall we want it to be and I think it should always be at least 60% of the screen size. So I'm going to use 60 VH. And we get something like that. It's a background image. And now we got this repeating thing going on. This is where images can get a little bit tricky. So we have to add another property for that. And I can do this directly on my background property see where I'm at on the semicolon here. I'm still inside of the background property. I'm going to press space. And then I'm going to say no. repeat
+Lewis Benson: So it's no longer repeating, but now it's not stretched across the screen. So I'm going to press space. And I'm going to say cover.
+Lewis Benson: I think is the property name. I'm gonna have to check mdn. I'll just do a quick Google search for it.
+Lewis Benson: Something like this. How do you stretch an image to fill a div? We have object fit. This is for whenever you have an actual image, this one wouldn't work. But I believe it uses the same property name cover. What I was looking for.
+Lewis Benson: So covered, didn't it actually breaks it. I also have contain we'll try fill.
+Lewis Benson: It could be that. I need a comma.
+Lewis Benson: I don't need a comma. I'll just do it as a separate property.
+Lewis Benson: So we have our background and then we can say background.
+Lewis Benson: position
+Lewis Benson: and we're going to put Center. And then we'll say background.
+Lewis Benson: size cover There we go.
+Lewis Benson: So this is what our little splash image or sorry our hero elements gonna look like it's just gonna have this now we need to get this button in the center. Does anyone have a solution to put the button in the center?
+Lewis Benson: If I want it right here in the middle.
+Elgin Sharper: Alliance Center
+Lewis Benson: 
+Lewis Benson: So to use a line item Center? That would have to be a flex container.
+Elgin Sharper: Yes.
+Lewis Benson: So first thing we want to do…
+Elgin Sharper: Okay.
+Lewis Benson: then is
+Lewis Benson: Where's it at right here? The hero section we can see us not a flex container. So we'll say display flex and then I'll use that align. And I'm actually going to do this in a separate selector again just for organization purposes. But yes a line Center is a good start. So let's say a line items Center Okay, so we're lined up like that. So we could also justify content Center. But because we're going across let's try to margin Auto. Let's see if that actually gives us the same result. and it breaks the image because of the content so we can't use margin Auto because it actually shrinks the entire container. So we'll try the justify content Center as well.
+01:00:00
+Lewis Benson: And it looks like we have our button right in the center of the page now. And if you wanted to bring it down just a little bit lower. So there you could use padding for that but keep in mind it will stretch the container a little bit. You could also put margin top on the button itself. So if we were to say button.
+Lewis Benson: margin pop 30 pixels it moved it down a little bit say 130 pixels. It moves it down quite a bit more so, something like that so we didn't want it all the It's a center that way. Does anyone have any questions about how I just did that?
+Lewis Benson: So now that I like to add padding to my buttons. And I usually do the shortcut where I say padding and I put two numbers in the first number is my top and bottom padding. So I'll say five pixels. And then my next number is my left and right padding. I'll say 15 pixels. And it gives it a little bit better. Look that. Let's give it a border radius.
+Lewis Benson: Of 10 pixels might be too much. We'll try seven. That looks a little bit better. We also have this weird
+Lewis Benson: Darkness around it. So if I click on that and I look at the current styles that are being applied. We can see exactly what would be causing that. So here's the default styles that come with a button.
+Lewis Benson: And I believe it's a Setting which here we go border width two pixels border Style outset. So I'm going to change those as well.
+Lewis Benson: I'm going to say we'll start with the Border width this might fix it by itself. We'll say one pixel. And that actually already looks a lot better.
+Lewis Benson: And then we'll give this a background color.
+Lewis Benson: We want something that pops so I'm gonna say tomato.
+Lewis Benson: That's really ugly.
+Lewis Benson: Maybe something that deals with the grass cutting themes. I want to show you this one side again, and then we're gonna take our 10 minute break. And we'll come back and we'll finish laying this out. But the site is called coolers.co. and we can actually use something like this to find a color palette to use on a page like this. So if we wanted something that had a lot of Greens in it for a grass cutting site we can use something like that. And then you could just click and it copies the color. And then we can paste that in. I think I need the hashtag still. Yeah. And there we go.
+Lewis Benson: And then we would need something to contrast with that. So I could use the colors coolers has a me coolers color contrast
+Lewis Benson: and our background color will paste that in. And we can see we have very poor contrast. So I'd want to adjust this so that we can get this number up. And it looks like we want to go. I usually just do this kind of at random until the numbers start going up.
+Lewis Benson: There might not be that many good. color contrast here We can also this click to fix.
+Lewis Benson: It wants me to adjust my background color. So we'll do that and we'll use a black and we get a very good color contrast. This is a normal technique whenever you're trying to. Get good contrast and that's a really important concept to keep in mind is whenever you're picking colors. Make sure you have a good contrast score and this color contrast checker on coolers.co is a great tool for that. and there we can also add a hover on that and make it so our Mouse. Does that little thing and we'll do all that after our 10 minute break? Alright, so I will see you in 10 minutes.
+01:15:00
+Lewis Benson: Okay, so welcome back everybody. So hopefully today's been helpful as far as a review of these Concepts. We're going to continue on with building out our little grass cutting company website. If it seems like I'm going kind of fast with this that's just because of the time constraint on how much content I need to put in here. If you're confused about any of the properties or anything like that, feel free to ask questions. I do plan on continuing to kind of work on this during our Extra or what? We call it the workshop time so that we can see what a finished product might kind of look like. I'm not gonna talk over you working, but I do encourage you to ask questions and work together on your assignments today.
+Lewis Benson: Okay, so just to continue on with this. I'm going to add a couple hover effects on this button just to recap on that pseudo element. So here's our button. Does anyone remember how to add a hover to the button?
+Lewis Benson: with the selector Exactly.
+Daniel Perez: You'll be buying colon hover.
+Lewis Benson: Thank you.
+Lewis Benson: hover And we'll give it this cursor pointer. So when I hover over that we get that little pointer cursor. That kind of grabs the attention.
+Lewis Benson: I'm also going to give it a little bit of a movement as So I'm going to say Translate and I do encourage you to explore the transform property. There's a lot of cool values you can use to make it do. this translate 3D you can actually make it look like it's a three-dimensional object. I think using card games. They make the card actually flip over so you have two halves in it will show both sides. And we want to translate why minus four pixels.
+Lewis Benson: And there It's given it that little bit of hover. And I'm also going to add a box Shadow on Hover. We'll do two pixels by 10 pixels. So it's really blurry. And we'll just do black. See what that looks like. So that looks like it's popping up in the air a little bit. And then the last thing I want to do is add. A little bit of transition to that so that it's not so abrupt so we'll say transition. And then I like to select all so that does all three of these. So we'll transition all and we're gonna do this over 0.3 seconds. That's a time that I kind of go with that random. when I like to use and I like to say ease or ease and is the one it looks like we're getting okay. It's not doing it on refresh. That's good.
+Lewis Benson: And then when you hover that the time does seem a little off. I'm gonna make it just a little bit faster 0.2.
+Lewis Benson: Okay, so it looks okay that's good enough for the hover demo just for that little bit of recap. You can see that kind of gives it that three-dimensional. Look whenever you hover it now now we just need to get this coloring look better in the font looking better. changing the font would probably do a lot for that. So if I go into my button and I just say font size. We'll say 20 pixels.
+Lewis Benson: That'll be good enough for Okay, so I'm going to move on to the next section. I'm going to look at my wireframe get rid of these extra pieces.
+Lewis Benson: And looking at my wireframe the next part is this Flex container that are three cards. So let's build that out. And if we look at our index.html this is going to go inside of the main. So we're going to create another section. What class should we call this? This isn't going to be a grid item. I can actually delete that off of this one as well. I guess we could call it card section.
+Lewis Benson: And we'll post a tab. We get the autocomplete with the class name build in. and then for the actual cards Let's see. What? Elements are available.
+01:20:00
+Lewis Benson: this is Not worried about the Caps so we have how to create cards with CSS these look pretty nice. It looks like they're using an image a div and a div. I want to see if there's semantic elements.
+Lewis Benson: We have an Sections. I don't see anything that's particular two cards. So I'm just going to use divs the generic containers that represent a cards. That should be fine. And I might copy what they did here. Just because this looks pretty nice. They're using an H4. I'm not going to use an H4. But we'll follow suit with how they did this. They have a div. They called it card. They have an image. We'll grab an image. We'll grab it on the splash image for that as well. Okay.
+Lewis Benson: And then they have this div with some text in it underneath. So let's kind of mimic what they did there. So we need to give doc card. And this is going to have a direct child called an IMG. And this is going to have a sibling. That is going to be a div Dot. container And this is going to have a direct child of.
+Lewis Benson: I don't want to use the H4. I want to use a paragraph.
+Lewis Benson: Actually, I use an H2. So we have our H2. And the H2 is going to have a sibling.
+Lewis Benson: called p So, there we go. I was able to generate all of that at once using that image shortcut. Where you just use your selectors? To say what each piece is going to be. Does anyone have any questions on how I just did that? I bring that back up I'm saying my parent container is a div that has a class called card and that also has a direct Child Called image with a sibling called div which has a class of container and that container div has a direct child of H2 in a sibling of paragraph and I'm just using the CSS selectors that we learn to make this image shortcut work and then you type in the element names and you can autocomplete that and just build it out for So a nice little shortcut for building things quickly. And we'll say basic. package for this card and
+Lewis Benson: something like that for our placeholder text. And then we need an image SRC so check unsplash.
+Lewis Benson: There it is.
+Lewis Benson: This is no longer unsplash.
+Lewis Benson: We'll get more stuff. And I want to look for one. That's kind of in a taller position for This one here could work.
+Lewis Benson: I'm due to copy image address.
+Lewis Benson: and then for my alt
+Lewis Benson: I'm going to type unsplash in the alt just so that it gives a little bit of attribution. I'm also going to do as a code comment. And that is a push mower.
+Lewis Benson: And then I'll put a code comment.
+Lewis Benson: And say image from unsplash and let's see if they have the author name here.
+Lewis Benson: Free under the unsplash license. I don't see the author name. Let's all here it is. So I'll just paste that in as well.
+Lewis Benson: Just so we're making sure we're giving attribution to the author.
+Lewis Benson: Okay, so next is Our next card so I'm just going to copy this entire card and duplicate it.
+Lewis Benson: And then So this one's going to be the premium.
+01:25:00
+Lewis Benson: I'll just leave this text the same for now.
+Lewis Benson: premium Let's take a look at our samples and see what it looks like with this. It looks like these cards are huge.
+Lewis Benson: And the HTML is very basic so we'll have to fix some of this. So what we need to do then is set the width of our images one thing to keep in mind since I'm using the same image. This is going to be fairly simple. We can do it here in the URL. but I'm going to do it with CSS and
+Lewis Benson: So I'm just gonna select all images. And I'm going to say all I images should have a width of 250 pixels.
+Lewis Benson: And there We'll go 300 pixels just to fill up some more space. That way the text is inside of the image.
+Lewis Benson: And then the card I want to select above the image because the card as a parent container of the image and I'm gonna give this a border.
+Lewis Benson: I'll use this gray that it's giving me one pixel solid. We'll give it a little bit of Let's say 20 pixels of padding.
+Lewis Benson: And we'll give it a Color of white so that it has some contrast.
+Lewis Benson: And then I'm also going to give it a width.
+Lewis Benson: of our images 300 pixels will give it a width of 350 pixels
+Lewis Benson: so those are starting to look more like cards.
+Lewis Benson: Does anybody have any questions so far about any thing I've done here.
+Lewis Benson: Okay.
+Lewis Benson: All right, so I'm gonna set my Parent container of this card to be display Flex so that these are laid out horizontally.
+Lewis Benson: I don't have a parent container. It seems I should have a section here.
+Lewis Benson: There it is. We have this card section container. And we want this to be displayed Flex so that everything is horizontal.
+Lewis Benson: Play Flex. our cards are lined up horizontally. They do seem a bit larger than what we were showing here. So we might have to adjust our sizes a bit to make that work. Part of it too is my screen size. There's some unexpected Behavior with that image there. And it's scaling as I move my page. And also we have this tied up against a hero here. I think we need to add a little bit of space Does anyone have any suggestions on how we can add space between these two sections?
+Elgin Sharper: It is a gap.
+Lewis Benson: let me see. Are we in a flex container? Because in order to use Gap we have to be on a flex container, so Here's and our main is a flex container so we can definitely use gap for that. So yes a very good suggestion there.
+Lewis Benson: So we'll Place Gap. And I'm gonna give it 50 pixels. And that looks good. It actually brought it down a decent amount and then we can do the same thing on these cards we can use Gap or I think what would be better than Gap would be space around and then the dimensions of the cards once we get them so to justify content space around
+Lewis Benson: and this is hard to do with this over top of my screen, but we can kind of see how that looks we don't have any space underneath of it. So just for now, this is going to be temporary. I'm going to put some margin bottom. As a placeholder just so we can see what this looks like on a larger scale. We'll do 50 pixels just to push it down and give us a little bit of scroll bar. There we go. Okay, so the cards. Look weird. I'm going to adjust the image size first. I'll say 200 pixels for the image. and then we'll adjust the width of the card to be 250
+01:30:00
+Lewis Benson: and does anyone have any suggestions for centering this image inside of the card?
+Lewis Benson: I opened this up.
+Daniel Perez: Will be just by contact.
+Lewis Benson: Are justify content. Would work on the main axis and also only works on Flex containers. So the first thing we would need to do if we're going to use a flex property would be set up to display Flex, right?
+Lewis Benson: But Watch What Happens now? If I justify content, it's going to move this across the main axis. What can I do to get the text back where it goes?
+Iris Coats: 
+Lewis Benson: See how the text is to the right of the image now. Whenever I set this card container to display Flex, it defaults to a row, which means that we have two children in the card. I'll actually bring that up Here's the card. And here's my three cards. And then we have this image. And then we have this div. So we have two children. One of them is a selector puller shot. We have this div and then we have the image. These are our two children in the flex container. We want the text to be underneath of the image. What can we What property that we know from flexbox will make this go underneath of the image.
+Daniel Perez: If we do Flex Direction column.
+Lewis Benson: Exactly. That's what I'm looking for. Flex Direction column and now our text is back underneath so you mentioned Our main axis has now vertical so justify content won't change this to be centered left and right. So what could we use instead?
+Lewis Benson: We want to move on our cross axis now.
+Daniel Perez: Hello.
+Lewis Benson: align items and we want to center it.
+Lewis Benson: And now this basic package that's an H2. I'm actually going to scroll all the way to the top. I like to put my topography stuff at the top of the page, even though they don't appear in that order. It's just a styling thing that I like to do. So I would also do H1 and I would set all my sizes for that and then I'd make a new line. And I would do H2 and I'd set my sizes for that and I'd go through and manually set each of these so our I'm going to set up font size. we'll say 20 pixels.
+Lewis Benson: That's probably not big enough about 30 pixels. That's looking pretty good. And then if I wanted to I could save my H1 font size would be 35 pixels. Even though I don't have any on the page right now. I am going to put one though. I'll probably make my company logo an H1. Just so we have some sort of heading one. So our search engine optimization can see that because currently we're not semantic if we look at our HTML layout we have H2S, but we have no H1s, and you should always Go in order. So if we're going to have an H2, then we need an H1 somewhere. So where I have this P tag, I'm actually gonna change this to be an H1.
+Lewis Benson: Where's the closing tag? It is H1. And that's really big.
+Lewis Benson: And one of the things about these font sizes the H1 doesn't have to be the largest font size. We just do that because when you look at scientific papers when you look at like Wikipedia, that's how they do it. But if you wanted to you could say that this is 16 pixels. And that's perfectly valid. It's not considered bad practice or anything. What this does is it allows search engines to find an H1 and it doesn't care about the font size. Yes, Ryan.
+01:35:00
+Ryan Arnold: My cards are still looking kind of weird. Could you show the CSS for that again one more time?
+Lewis Benson: Absolutely.
+Lewis Benson: I'm also explain it and then we can see if we missed anything so we have them set to display Flex column. And we're aligning them to the center.
+Lewis Benson: And I gave them a width of 250 and I gave the image a width of 200 pixels something I'm going to do here too is say Doc card and I'm going to put that that. It doesn't change anything. I like to have a class name in my selector. I don't like to select things without a class name even though I did it to my button to my H1. I think it's better practice to have a class name when you're selecting things to be more specific. Do you see anything that would be throwing them off?
+Lewis Benson: What kind of issue are you having with them actually?
+Ryan Arnold: There's still that extra padding on the right and the text isn't aligned quite right.
+Lewis Benson: you did set display Direction column It could be.
+Ryan Arnold: I forgot the display Flex. That's what it was. Okay. Thank you.
+Lewis Benson: Okay, that'll do it. Yep. And…
+Ryan Arnold: Sorry about that.
+Lewis Benson: then one more thing I want to do for my typography at the top here. I'm going to select HTML. And I'm going to set my font family. to be aerial sansara Just because I think it looks a little cleaner.
+Lewis Benson: It's a little bit easier to read this stuff now.
+Lewis Benson: Okay, so there's our cards and then one more thing. I want to put on these cards because we said we would in our
+Lewis Benson: wireframe as a call to action. So the call to action could either go in the picture or could go underneath? I'm leaning toward putting it. above the heading I think that would be a good place for it.
+Lewis Benson: So let me expand this out. If you look on the left here, my line numbers are a little weird right now because my screen is so small. Maybe I can make that a little better right on that. So line 29 is taking up two lines, but it's actually all one line. it rolled it down to another line.
+Lewis Benson: Okay, so here is my H2. so my H2, I'm going to put a anchor tag and I'm going to give it a class name of CTA so this will be my call to action. anchor tag and I'm going to say
+Lewis Benson: click here. That should work for now. And that to put it on that one. Let's put it on the rest of them as well.
+Lewis Benson: There's my H2. And the one is underneath.
+Lewis Benson: And we're going to eventually put another file in here so that we have a That we can style as well.
+Lewis Benson: So this is our call to action. It's just click here. And then this would be what would direct you to the signup page for whichever one you chose. So the last thing I want to do is the footer for my main layout. I'm going to come back and I'm going to restyle some of the stuff. Before I move on I do want to add one more property to these cards because it's kind of bothering me. And that is my border radius. I like to have at least. A few pixels of Border radius so that things don't have sharp edges and I also going to do the same thing to my image so that it matches the card.
+Lewis Benson: like that
+Lewis Benson: Okay, so we have our three cards. to add a box Shadow on that too, but I'm going to move on to the footer. So ers the next thing in our HTML. I'm going to put this underneath of the main. I could put a footer for my main it be like a bottom section of content is part of the main content. But this footer is going to be for the overall page instead. And within the quarter, I'm just gonna put a copyright. So to do a copyright, I like to do that with this. I'll say Ampersand copy semicolon and that will actually show up as The copyright symbol you can see that the bottom left here. And I'll end up getting this Center to making it look a little better and a little bit. And we'll say 2023.
+01:40:00
+Lewis Benson: Green Works grass cutters something like that. Just some sort of company name. We have an extra letter in there. We'll use the X so it's extreme.
+Lewis Benson: All right, and then I could also put a ul and some links in there. I'm just gonna leave it as this basic one for now so that we have more time to go over some of the other styles that I want to refresh on. And then we're gonna go back in and fix our grid for this. So I'm going to go all the way back up to where my grid template area is.
+Lewis Benson: Here it is. And it looks like we already have the footer assigned. When I created the footer I didn't put the class footer on it. So I'm going to do that now.
+Lewis Benson: And then back to my styles. And I'll scroll all the way down to the bottom again. And I'm going to select my footer. And we're going to say grid. area order
+Lewis Benson: and we don't see any difference because it's already taking up that space but we do want to be using our grid layout so that we could manipulate it using media queries. If we chose to do that, I'm going to give it a background of white so that a contrasts a little bit. And we'll give it a height. Of 60 pixels so it matches the top.
+Lewis Benson: And it looks like that applied by our text is at the top. How can we get our text centered on this footer?
+Lewis Benson: Currently it's not a flex container.
+Lewis Benson: So we could make it a flex container and Center it that way. I want to show you something too. That is kind of interesting. I've used this a couple times. I don't really think of it too often.
+Lewis Benson: Or Center a div using And I believe this is just a couple of properties here. So you set display grid we have a width. and a height
+Lewis Benson: and then this is the div.
+Lewis Benson: And there it is place self-center. That's what we're looking for. So we're going to display grid play self Center.
+Lewis Benson: display grid And to do the place self-center, I have to actually put this text inside of some sort of semantic element.
+Lewis Benson: Let me close that again. So I'm going to put this inside of a paragraph element.
+Lewis Benson: Best practice I should have done this to begin with. You can put text outside of semantic elements, but it's better for search engine optimization and for screen readers, if you have it inside of the paragraph element, and this also allows us to use this property that I just found. Place self Center and we'll see what kind of results we get with that. So I'm going to select dot order. And then we're going to select the paragraph. And place self-center like that.
+Lewis Benson: And it's perfectly centered. So instead of doing justify align item Center. I was able to do display grid play self Center. So I saved one line of code. It's not a huge change, but I did have to select an extra element. So I'm not really saving anything. Unless I wanted to actually do some stuff to this. Already, so then I would be saving it's kind of one of those do it. However, you like but I did want to show that you can do this. There are lots of different grid properties that we're not going to be going into this week and this right here is one of them. So Our footer is centered. And if I wanted to I could also add another Shadow at the top of this so that it matches the Shadow on our navbar. And I could put a border at the top. There's lots of things we can do for styling. We only have so much time to work on this though.
+Lewis Benson: So I want to do something about this click here button. And the reason I want to show you this too is because this is a pretty common thing. You'll run into whenever you're building web pages. Is you'll have an anchor tag sitting by itself, but you don't want it to be an anchor tag. You want it to be a button but semantically a button doesn't really make sense because this isn't a button it's a link. The reason I'm using a button here is just because it looks like a button. But technically you probably should use an anchor tag here as well. Just because buttons should only be used in forms. It's one of those roles. That's the developer Community split on 50/50. So if you want to use a button for your call to action button, feel free to do that do whatever you like, but I do want to show you the other option now where you just use an anchor tag and then style it to look like a button.
+01:45:00
+Lewis Benson: So what I'll do is I'll go into my styles. And this is inside of my card. So I want to scroll up to the card and then I'm going to go directly under that. And we're going to hit card. and I'm just going to hit space And we're going to look for any anchor tags inside of Our card container. Remember the anchor tag is actually nested inside of another. Piece of this if I actually look here. on my Dev tools we have a div called container. And inside of the divco container, that's where the anchor tag lives. I'm selecting the card. And I'm telling it to find an anchor tag living somewhere in the card. I don't know which element it's in. So I'm just kind of being generic about it, but it should select Just fine. So first thing I want to do is remove the link styling.
+Lewis Benson: Let me do a quick search and I'll show you how you find a solution like that. remove default linked styles from We got a video for that. That's not what we want. But here's stack Overflow and this is great because a stack Overflow every question you could possibly ask is probably in here somewhere. Here they're using Color inherit. Let me see what the actual question was. How do I remove the default link color from the HTML a tag? And the solution they're showing here is using the color inherit grabs the property from the root or whatever parent has the color set. So if I were to set a font color in my DOT card, it would grab the color that I have set there and inherit that because I don't have anything set. It's gonna go all the way to the root and grab my color from there.
+Lewis Benson: I'll say color. And we're going to do inherit.
+Lewis Benson: And we can see we have that autocomplete there. And let's take a look at sample and now it's black, but we still have the underline. So the next thing we want to do is how to remove underline. Which this property is a pretty simple topography property that you can use for a few different things.
+Lewis Benson: I believe you can add strike through the overline.
+Lewis Benson: how to remove underline from link and HTML
+Lewis Benson: So text decoration none and they're showing the solution as an inline solution. But remember any inline solution you find can be translated into CSS. And the reason I'm showing you these searches is because this is a very common workflow. This is what you'll have to do because there's no way to remember every single property. So I'm just typing in these questions and searching we're getting a bunch of blogs coming up blogs are a really good resource developers will create blogs and they'll post their little Solutions so that they can get some
+Lewis Benson: basically some Network on networking and some coverage for people to find them. And then here we have our stack Overflow version of the solution in my page. I've put some links under which I don't want any line. So, how can I remove that using HTML? And here they're using tech decoration on and the reason they're giving this solution with the inline style is because he asked for a HTML solution. And then here we have the CSS solution. So the top answer is with the HTML solution because that's what he asked for. And then we also have our CSS solution. And here they're doing it. As internal so that it's still kind of complies with his request. And that's kind of a nice little review here too. If we look at this snippet of internal versus external styling.
+01:50:00
+Lewis Benson: Okay, so let's add that in text decoration. And I'm going to show you some of these autocomplete we have dotted Dash double line through none is what we're looking for. We overline solid and underline. So lots of different properties to use with text decoration. It's kind of Handy the strikethrough is pretty cool. You can use that for it to- You can make it strike through when you check the to-do list. Okay, so the underline is now gone. So in order to make this look like a button buttons have a border So let's add a border to this.
+Lewis Benson: border We'll do a dark gray.
+Lewis Benson: one pixel and we'll use the unset. We'll see what that looks like.
+Lewis Benson: I don't see a result.
+Lewis Benson: on the anchor tag Do we have that wrapped inside of something we do not. Let's take a look over here and see why.
+Lewis Benson: First Let me refresh to make sure that's not that okay. I'm going to select my link
+Lewis Benson: and I must have made a typo here. It was the unset.
+Lewis Benson: I'll do solid. I think I've made a typo I did that's all it was. And we notice the link is pushing up against that image. Let's try adding some margin and see if that solves that we may have to use flexbox on that container and push things around like that. quite margin prop first. A lot of this is trial and error. we have no results so I also put that on the anchor tag that is where I would want it. So now I'm going to select the container. And that's going to go. Above the anchor tag, but under the image.
+Lewis Benson: I can pick the curly bracket. And I'm going to give this an outline just so we can see what we're working with red one pixel solid. So there's where it's at. So it looks like our dimensions are spilling out a little bit. Maybe I could give this some margin.
+Lewis Benson: Martin Top by pixels That moves it down. So that kind of solves the issue. We are having there. I want to go 15 pixels just so we have some more space. And it's nice that our card is stretching for us. But I am actually going to set this to display Flex into a column. So that we can manipulate the items.
+Lewis Benson: Flex Direction column
+Lewis Benson: and this is taking up 100% So let's go to our anchor tag and tell it how wide we want it to be. I'm going to remove that outline now. We don't need that anymore.
+Lewis Benson: So we'll say width. Go with 150 pixels to start. That's way too big. Half of that is 75.
+Lewis Benson: And then I'm going to set this to Of 70 Maxwell. Sorry.
+Lewis Benson: 75 we'll do 85. I think that'll look better. And then text the line Center so that our text is centered within the button. And then I'm going to add some padding. of five pixels all around
+Lewis Benson: So that's starting to look kind of right? We want to have a rounded corner. So we'll do order radius. Seven pixels is what I've been going with. So we'll keep that Trend going and we already have the cursor, but we can still add a hover effect for that and what I can actually do is I can look at this button hover here. And I can make this into a class and we'll say dot CTA and I'll just put that class on my button. It's already on here now.
+Lewis Benson: And if I scroll all the way up to my button, I can add that class.
+Lewis Benson: CTA and then that'll fix the button. I broke up above. So that one's working. And that one's working notice. This one doesn't have the animation though. So we'll have to add that as well.
+01:55:00
+Lewis Benson: That was my reset. And I still have it right here. I'll just copy it from the button. And I'll scroll all the way down.
+Lewis Benson: And it's inside of my card dot anchor so I put that on the anchor tag so I can actually just put it right here now. There it is. Anyone have any questions at all about that?
+Lewis Benson: Okay, so I'm actually going to start going over the assignment. We'll take another 10 minute break and then when we start on the workshop. I'll actually start working on the form. I'll just kind of style it slowly and I'll even keep the recording going for that to show how I do this stuff. But I'm not really gonna explain each step as I go. It'll just be more of as we're working if you want to watch what I'm doing. rewatch the recording on how I did it I'm not going to use anything new. I'm going to use everything that I've already showed so there will be no new Concepts and reduced during that time.
+Lewis Benson: Does anyone have any questions before? I get into the assignment.
+Lewis Benson: The assignment will be a lot. Simpler than what I was building here.
+Lewis Benson: This is just a way to review all of the concepts that we covered today. and that was the main idea was just to kind of. I'll show you how to use flexbox again some of the troubleshooting techniques you're gonna run into how to find answers for style related issues and kind of go over a lot of the terminology that you're going to be hearing whenever you're actually working with CSS. All right, so, let me get the assignment up.
+Lewis Benson: week two day five
+Lewis Benson: Okay, so you're going to create three files? We'll have an index. A html along with a file name styles.css and you can optionally add in your reset.css.
+Lewis Benson: I would advise it if it's not required for the assignment. So wont what we want here. Is you to practice navigating between Pages along with utilizing an external style sheet that is shared between the two pages. So you'll set up your index.html and your page HTML with an idea in mind. This can be a home page that leads to a mock product that you want to display on a personal portfolio page or this could be really useful especially when you start sending your portfolio with your ume. during job application or a welcome page that leads to a Blog Page. It's up to you and I'll just create something you're interested in. But make it have real content. Don't use lower mipsum. you can do some repeated content like how I did with my
+Lewis Benson: Example Try our basic package is listed on all three cards, even though They're both premium. It looks like that type of stuff is fine. The idea is that you're building something kind of real, but it doesn't have to be Pixel Perfect and you're the expectation. Isn't that you're going to build a designed ready application for somebody? And unless you have some sort of design experience prior to this. I wouldn't expect you to be able to even build something that would be able to be sold if that makes sense. it's not something you'll learn to do in one day.
+Lewis Benson: We're the instructions There we go.
+Lewis Benson: the colors of your background you change your fonts generate using grid properties and use flexbox to manipulate positioning so you can do what I did here where I just kind of created a generic Page I'll put this in the same browser. Where's my figma? If you do a one column page, it'll be hard to use grid here. So maybe make a two column part of this page have a section where it has one card here and one card there. That way you can get some leverage out of the grid if you want to do a single use three grids and do how I did it. That's perfectly fine as well. Whatever you're comfortable with but we do expect that you'll use grid and flexbox both.
+02:00:00
+Lewis Benson: Okay, so design them in a way, you'll find interesting if you want to follow along with what I did today, especially if you're going to be working tomorrow since these aren't technically due till tomorrow. You can go ahead and utilize the video whenever I posted in the morning. And cut a coat along with me. If you're having trouble keeping up that way you can at least get the assignment in. but don't just
+Lewis Benson: Copy and paste code without understanding it if you're confused about a concept make sure you check the documentation. If you don't understanding the documentation check out YouTube tutorials or ask the Tas are a great resource, but it also is beneficial to find some tutorials online as well I mentioned Yesterday web dev simplified and I posted a couple of his videos and the October 2 cohort I highly advise watching any of his videos. They're great. There's also another one. His name is Kevin Powell. If you want to find him on YouTube. He is a master at CSS that guy can do anything with CSS. So if you want to get into some more advanced stuff check him out. He also does basic explanations on very basic concepts as well.
+Lewis Benson: Okay, so to get back on subject here. We're going to be using grid you can be using flexbox and then just experiment and show off what you learned over this last two weeks. So make sure you are using semantic HTML to the best if your ability don't just put everything inside of divs. Once you start learning these layout techniques, it can be tempting to do that because you think I need a container and then I need three children. So I'm going to create a div as my container and I'm going to create three divs as my children. And then inside those divs. I'll start placing my content use articles use all those semantic elements to make this optimized for screen readers. How does anyone have any questions about the assignment?
+Lewis Benson: Looking at the rubric. It pretty much covers everything I said. The CSS properties used to manipulate the page the page is styled in a way that showcases your understanding of the properties and look for a variety of different CSS properties used. So make sure you're mixing it up a little bit change up. Some fonts change up some layout stuff do some typograph.
+Lewis Benson: be just basically show that what you're doing with CSS is the idea here. You don't have to go too crazy with it though. Just use a couple of each category. I mentioned there. So change a font size change using grid change the layout using flex and then maybe manipulate something using positioning if you want you can set something to block anything like that. And then this is just for the basic layout of the page and make sure you link your CSS. Does anyone have any questions about the rubric?
+Lewis Benson: Okay, so there's no questions. I'm going to set the timer for 10 minutes. Take your break if you need it. And when I come back, I'm gonna start styling at the form for the second page and then you can follow along with that if you I'm gonna be moving probably a little bit faster with that just because I'm not gonna be explaining all the concepts again, but I will keep the recording up for that if you're interested in how I manipulate that and then feel free to ask any questions as well. So I'll see you in 10 minutes.
+02:10:00
+Lewis Benson: All right, welcome back. Everyone feel free to get started on this assignment if you get stuck on anything at all, you're having any issues with the layout getting colors to apply anything at all. Just shout it out and I'll help you solve any problems you're having with that.
+Lewis Benson: I would expect that you will have Introducing all of these Concepts through one week. it does feel a bit rushed as far as the amount of stuff you have to learn this week. But luckily next week is still styling even though we're using a framework which makes it a little easier. So you'll still have time to practice a lot of these Concepts.
+02:15:00
+Lewis Benson: But it does feel a little bit Rush this week and I do apologize for that. there's for so little bit of time. But the amount that we did go over this week. Is the minimum you would need to work as a front-end developer.
+Lewis Benson: Okay, I'm going to get started on.
+Lewis Benson: form now
+02:30:00
+Lewis Benson: Anyone have any questions about the assignment?
+Lewis Benson: Hello everyone feeling about CSS after this week.
+Lewis Benson: cool yeah, again we've only scratched the surface.
+Justice Miller: I think I'm more partial to the design stuff than everything else where I'm enjoying CSS.
+Lewis Benson: nice I'm personally not that good at design. I can follow somebody else's design and make it look like when it comes to color palettes. I mean you've seen my tomato button. I'm not good at that picking colors. I use tools like to tell me the contrast and stuff.
+Lewis Benson: yes, Elgin.
+Elgin Sharper: Yes, where do I find the TA schedule?
+Lewis Benson: So there's two links if you look in slack I actually pinned them to the channel. You'll go to the October cohort to channel. And do you see at the top of the channel?
+Elgin Sharper: Okay.
+Lewis Benson: It has the pinned messages?
+Lewis Benson: There should be three pinned.
+Elgin Sharper: and on top of October
+Lewis Benson: It should be inside of World of messages currently. are you on a desktop looking at it or on mobile? Okay, it might be in a different spot on the phone.
+Elgin Sharper: I just went on my phone.
+Lewis Benson: I'm looking on my computer. But if you do scroll up just above the videos. There's two calendly links. Those are the TA schedules. Yeah, I'm not sure…
+Elgin Sharper: Okay.
+Lewis Benson: where the pin button is on mobile.
+Elgin Sharper: All right. Thank you.
+Lewis Benson: Yeah, thank you for sharing those in the channel. There are two Reece.
+Lewis Benson: Yeah, and if you like design and CSS the next week, I think you'll like that as well because it simplifies a lot of the stuff we're doing by using more tools to leverage what we're doing. So a lot of this boilerplate code is already written for us. We just have to tell it what we want.
+Lewis Benson: It's pretty cool.
+Umar Z: Lewis I have a good question about this
+Lewis Benson: What's your question?
+Umar Z: Yeah, sorry. I saw My question is about this. I'm lawnmower picture you added in the hero section. So you are copy that.
+02:35:00
+Lewis Benson: Yeah.
+Umar Z: Address from the address bar and you paste it in the section background image URL that you just paste it over there.
+Lewis Benson: So to grab the image,…
+Umar Z: and that
+Lewis Benson: I open the image like this. And then I click on it and I go to copy image address.
+Umar Z: Yeah, so that's what exactly I tried to do but it never worked for me. Let me try one more time. so you said open the image and just copy image address, right?
+Lewis Benson: Yeah, when you right click on the image. It'll be in that menu. It says copy image address.
+Umar Z: Okay, let me try one more time.
+Lewis Benson: Yeah, you won't copy the URL off the page.
+Umar Z: Yeah, somehow it's not working for me. let me tell you what.
+Lewis Benson: Yeah, I'll stop presenting so you can take over.
+Umar Z: Can you hear me?
+Lewis Benson: Yes, I was muted there. Where's your url at for the image?
+Lewis Benson: Where did you paste it in a?
+Umar Z: 
+Lewis Benson: Yeah, so remove the word image from background, it's just background.
+Lewis Benson: And see if that gives you different results.
+Lewis Benson: And do you have the semicolon at the end of that too?
+Lewis Benson: and put it inside of quotes. That's the other thing.
+Lewis Benson: It can be single or double quotes. I think pretty or automatically convert it to single quotes. So that's okay.
+Lewis Benson: So whenever you place text inside of quotes that's referred to as a string just so you're aware of that terminology. So if you ever hear me say it needs to be on a string. That's what I'm referring to.
+Lewis Benson: Did it solve it?
+Umar Z: So you cannot see my web page, right? yeah,…
+Lewis Benson: I can only see vs code.
+Umar Z: because I'm extending the screen and I don't know how to create the mer to the other screen hold.
+Lewis Benson: You'd have to move that window onto the one you're sharing.
+02:40:00
+Umar Z: Yes, which is still not solving a kidney coatscreen. Can you see where we as coatscreen?
+Lewis Benson: All I see is vs code still. if you bring the Google Chrome on top of your vs code. So that they're on the same screen. I'll be able to see it that way.
+Lewis Benson: Yeah, see your browser.
+Lewis Benson: So you'll have to switch that to index.
+Lewis Benson: You're currently displaying a table.html.
+Lewis Benson: And you're also muted if you're talking. Right, okay.
+Umar Z: So now I'm not. So whiskey will be able to see right now. I'm so conf.
+Lewis Benson: Yeah, I can see your browser. I was seeing table.html which doesn't exist. So you have to switch that to either index or other we go. I see it now. Okay, so we see a broken image there. Did you put in a
+Lewis Benson: I wonder if your background where's that element at? hero section
+Lewis Benson: Can you click on that hero section? Or just Look at your Styles, is it currently colored?
+Umar Z: yeah, I gave it a color just to see which section is where you
+Lewis Benson: Give it an outline instead of At least just that one. Because the color might override the background.
+Lewis Benson: you can look at your elements there too in the style tab inside your developer tools if you click on that specific element. that I believe you would call it hero section or something along the lines. So we'll have to open up Main.
+Lewis Benson: You'll have to actually open it up. There's a little error there to drop it down. click on that hero section.
+Lewis Benson: And it looks like none of your Styles applied. It could be that the capital H on the class name That could be the issue.
+Lewis Benson: Yeah, it looks like that's what the issue is. So if you go in and change your index.html, so it uses a lowercase H instead.
+Lewis Benson: And see if we have results.
+Lewis Benson: Iris Now it just needs sized.
+Lewis Benson: The current size is set to your button. Because that's the only content inside of the hero. So whatever the height of that button is the height of the element. So if you just go into your hero section and give it a height. I believe I use 70 or 65 view height for my hero section
+Lewis Benson: You want to view height. Unless you want to set up the pixels then you would set 900 pixels or something.
+02:45:00
+Lewis Benson: That looks pretty good.
+Umar Z: You were not able to hear I think.
+Lewis Benson: No, I couldn't hear anything you were saying if you were talking.
+Umar Z: Yeah, I was okay. So I would like you see that. where it says. How do I get into the bullets from the sign up and about us that the top menu. I need to get it.
+Lewis Benson: Yeah, so if you would set up the reset, that'll do it. Or if you wanted to do it manually, it's list of look it up real quick. I go to UL.
+Umar Z: I think I didn't reply hold on. Let me apply that first.
+Lewis Benson: Yeah, it's called list style type. Which is included in the reset.
+Lewis Benson: Looks like you already have the docs open for it, too.
+Lewis Benson: You should also be able to grab the reset from one of your previous projects if you have it saved locally.
+Umar Z: Yeah, that would thank you so much.
+Lewis Benson: Yeah, no problem.
+Umar Z: Something sometimes when I'm falling behind and I'm struggling I start feeling frustrated a little bit. So then I definitely need help in that moment. I'm sorry if I bothered you too much,
+Lewis Benson: No. No, this is exactly what I want. I want anyone who stuck to reach out. Let me know because whenever you get stuck on a bug like that, it's a learning opportunity for everybody in the class. For example having that little typo. That's something that is really good to find because everyone now sees that if one small capital letter broke the whole thing. The coats around the link was another one. So I'm glad you're bringing this stuff off. So anyone who gets stuck, please bring it up, especially during Workshop. That's the best time.
+Lewis Benson: Or even during lecture a lot of times. A lot of the content I get through a little bit quicker than I anticipated because I'm anticipating questions. And there's not a whole lot of questions during class. So you do have questions actually.
+Umar Z: Now I'm putting the standard from a programmer point of view. You guys are how to do things how to write all these course and sometimes you switch between the windows being because are used to You used to work in the Fast Pace environment, but we being coming from a different background and sometimes I find it hard to keep this when you're just moving too fast, but I don't sometimes I stop you sometime. I don't because I think maybe all other people are following you properly and it's only me following me. and it feels bad for me that I'm stopping everybody, so that's why sometimes I just keep quiet.
+Lewis Benson: Slow me down if I'm going too fast, especially with the screen changing. it's a bad habit of mine. and whatever I'm watching other programmers work. That's something that it kind of throws me off too because I'm actually switching screen slower than what you think. It's the delay between me broadcasting. So there's that little bit of For me, it looks a lot slower than it would for you. It's going to come across faster when you're watching a broadcast.
+02:50:00
+TRACY JOINER: Yeah. Yeah, I'd like it a little slow.
+Umar Z: Yeah.
+TRACY JOINER: I'd like it a little slower myself. It's
+Lewis Benson: Yeah, so if you notice being that switching between screens really fast, just let me know because I don't realize how fast it actually is.
+TRACY JOINER: yeah, it backwards and forwards and I'm like, whoa. Look what I'm
+Lewis Benson: Yeah, and today was a much faster exercise too because I wanted to try to cover everything we did for the whole week by just doing one project. And that's a lot of content to cover in a two-hour section. And in fact, I didn't even have enough time to finish everything. I wanted to show. but I did get the form style. So if you want to sample of how you could lay out. Something like this. That's what I ended up looking like. I put a little splash image on the left and then the form on the right.
+Lewis Benson: you can't even see my screen, right? I'm sorry, let me
+Umar Z: Now we cannot.
+Lewis Benson: Yeah, so this was the example I was trying to show. So I got the splash image on the left and then the form on the right. I don't know if anyone was watching me. Work on this at all. have a mistake right here. I have two H ones on my page. Need to fix that. So I laid out my comments here. I used this red comment to say styles for index.html. and then when I scroll down I have styles for forum.html that way they're in the same file. but they're kind of modularized so I know which is where
+Lewis Benson: you can use whatever color you want. I just did Red because it stands out.
+Lewis Benson: And then I want to make that an H2 instead of an H1.
+Lewis Benson: There that looks good.
+Lewis Benson: And then if anyone wants to see the code.
+Lewis Benson: for the actual inputs leave those up if you want to get That rounded look that I got there I don't know if anyone's using a form. But there they are.
+Lewis Benson: Yeah, and that's perfectly fine. so with this next week. I feel like it's gonna be a little bit of a slower pace. So that should be some time if you're behind on assignments. It'd be a good time to get caught up next week. We will be going into some new Concepts using the framework bootstrap But it uses all of the same stuff that we just learned in CSS.
+Lewis Benson: So I won't have to reteach what things are. I'll just have to show you how to using those tools. For example, if we wanted to set up some sort of grid that uses a flexbox grid where it uses Flex wrap and then drops items down to multiple rows. I'll show you how to do that with bootstrap instead of having to type in eight different CSS properties. You'll just type in a couple class names and it's just automatically applies at all. So you won't have to relearn the concepts. You'll just have to learn the syntax if that makes sense. So I feel like it should be a bit of a slower week as far as and it should give you a little bit of an opportunity to get caught up. After bootstrap, we're going to start getting into JavaScript.
+Lewis Benson: JavaScript can be a little bit intimidating when you first start learning a programming language. So I'm going to try to go as slow as we can and we scheduled Thanksgiving break to be right in the middle of that. So if you do fall behind, there'll be some opportunity to catch up there that will have the entire week of Thanksgiving off.
+02:55:00
+Lewis Benson: And that'll happen right after we learn JavaScript. At least the first part of it.
+Umar Z: So we're gonna learn JavaScript after that. we're gonna move to Python and then I think I read in the curriculum that we are also going to study what you call cyber security as well. So is this all part of our program?
+Lewis Benson: Let me bring up the badges. I don't remember seeing python in there for full stock. But the cool thing is when you learn JavaScript, it's similar to what I was just saying with learning CSS and learning bootstrap. You won't have to relearn Concepts. So if you learn JavaScript, you could look at the documentation for Python and just code and python without even knowing how to do python you would be reading the documentation. So you'll be slow at it, but you'll know enough about how programming Works to be able to code in another programming language. You just have to learn the rules for that language similar to if you didn't know how to speak any language.
+Lewis Benson: And you had to learn let's say English. For example, it would be a lot harder to learn English. But once English, you'll have a language to use to translate if you wanted to learn Spanish so you could say the word for apple and English is one word, and it's another word in Spanish, but if you don't know any languages, it's a little bit slower. But once you learn one, it's easier to pick up another that makes sense. Let me bring up the badges.
+Umar Z: it makes
+Lewis Benson: I have a link to them. I go to here.
+Lewis Benson: So this is all of the front end level one. we're currently on CSS. We're gonna move to bootstrap. We'll do JavaScript and then we're going to do Source control and deployment at the same time because those are so closely related. And then we'll move to JavaScript 2. Capstone project and then we're going to end developer one. So let me open this up.
+Lewis Benson: And then we're going to go to developer two next. We're going to go up to full stack level four. That's what we're actually going to stop As far as the Codex curriculum goes when you're done with full stack level four. That's where you're able to get a junior to mid level development job right out of the box. If you complete developer five developer six, even this engineer eight. You're looking at senior level positions if you can finish all of these. They do have I see Security Plus here. This would be like a CompTIA type certification. If you're familiar with that platform at all, that's where you get into cybersecurity and networking and things like that, but that's not taught at codecs. But there might be some security aspects to these. I'll have to look and see exactly which ones were here.
+Lewis Benson: There is no cybersecurity here.
+Lewis Benson: Do you remember where you seen that?
+Umar Z: Yeah, probably not wrong. I was looking at yet the same thing. Yeah, maybe I measured something or I'm not sure I have to recheck it and if it's not included because my wife she also mentions something was our security. I was like, okay, they're teaching so many things which is good. Anyways, that's not it. Yes because you define the curriculum, so maybe I misread it or something.
+Lewis Benson: Yeah, I haven't dove into these exactly to see all of the content that's so off. There will be a little bit of cybersecurity with that but it's not like Network cybersecurity. It's completely different. when somebody says cybersecurity I'm thinking all of the different aspects of cybersecurity not just the development side. So your network stuff virus protections. password protections different types of authentications encryptions all of that type of stuff and It's a very large topic too. That would probably take a couple months to get through.
+03:00:00
+Umar Z: Elgin the same thing that these might be totally two different lines, so we are working on one line which is what you call it front-end developer and cyber security is totally different field. I mean by the line of hopefully do two different fields.
+Lewis Benson: Yeah.
+Umar Z: So why do we need to learn to different fields at first place? unless we are dedicatedly trying to learn cyber security. That's a different thing then.
+Lewis Benson: Yeah, I don't see anything about that on here at all. And these are all of the badges that we're going to be going through. There will be some talk of cross site scripting which is a type of attack that you could run into on a website. So we will talk a little bit about security of your web applications.
+Lewis Benson: securing databases things like that, but we're not going to go into the full broad topic of cybersecurity because it encompasses so many different things including social engineering there's penetration testing there's so much stuff involved with the cybersecurity that It is its own curriculum. codex might do a cybersecurity program as well. I haven't talked to. all of the different instructors
+Lewis Benson: so there could be something in the works for that.
+Lewis Benson: They're definitely for growth for grow strong,…
+Umar Z: I haven't. Sorry good.
+Lewis Benson: though. yeah, I was just saying they're definitely is stuff through grow strong for That I like is that something you're interested in or is that just something you've seen and you thought that that was what we're gonna be going into.
+Umar Z: Not only yeah, I think I've just seen it. That's what I'm trying to discuss it. I think in the beginning we received an email and that covered everything. I have to find out that email and go through the list of all the documentation for the courses which we are going to learn so I'll see in that list, maybe a mistaken.
+Lewis Benson: Okay.
+Umar Z: Yes. That's
+Lewis Benson: And they may have been talking about web application security and they just use the buzzword cybersecurity. because if you learn enough about application security And you're in the development side, you can talk with people who are and what's called devsecops. It's development security and operations, which they handle your deployments and things like that. So you would be able to work with cybersecurity people, but you're not like a cyber security professional and they may have just lumped it all together with that one word. I' think that. I would hope they don't say cybersecurity. Yeah.
+Umar Z: It's okay. I mean That makes sense. you feel of course on its own.
+Lewis Benson: Yeah, these are the four here that we cover is run into front and three and full stack four and then you can continue to learn this stuff on your own. It has all the resources and stuff in here. If you want to start getting into full stack five full stack six either really advanced. And this is if you can get through these and get up to the engineer levels, you could land a senior developer position. But it'll take about a year to get done from level one to level four. That's about a Year's worth of Education. To get to level five to level nine. Realistically, it should probably take another Maybe even two years. I haven't gone through the engineer stuff.
+Lewis Benson: But I would expect it to at least take the amount of time. It would take you to get a bachelor's degree.
+Lewis Benson: Just because it's so much information to learn.
+Umar Z: so once we're done with false tag developer four levels, so as you say we'll be able to land on entry level a junior or Junior level,…
+Lewis Benson: You could lend a mid level with level four.
+Umar Z: Or even mid level you say, okay.
+Lewis Benson: Yeah, Junior would be easy to get mid-level. if I can get this to come up again. I think I have it up still and as we're go. This is two here's four. So this is actually the criteria for four. So we have backend typescript as a back end Typescript and JavaScript are very closely related to type scripts actually based in JavaScript. So that won't be too hard to roll into Babel is part of typescript. So these are pretty much the same. We have SQL is a database language. This is where we're getting into that whole full stack thing.
+03:05:00
+Lewis Benson: Yeah, if you have all of this stuff pretty well mastered you could easily land a mid-level. You could possibly hit a startup company as a senior developer as well with just level four. But it' kind of would be a risky position to take. Because startup companies. They might work you 80 hours a week, and promise you a lot of big money and then just not pay you. Because they look got a business before it's too late, I'm going to stop the recording though. We're going a little bit over our class time. That's okay. Does anyone have any questions before we head off as anyone stuck on my pieces of code or anything that I can help you get through that?
+Lewis Benson: anyone running in a bugs
+Meeting ended after 03:06:07 👋

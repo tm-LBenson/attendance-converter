@@ -1,0 +1,779 @@
+﻿nia-amar-wfe (2023-11-02 19:34 GMT-4) - Transcript
+Attendees
+• M a t c h a M o c h i i •, Chantrice L, Daniel Perez, Gregory Robertson Jr, Iris Coats, Justice Miller, Krystal Jefferson, Lewis Benson, Lewis Benson's Presentation, Reece Renninger, Umar Z, Umar Z's Presentation
+Transcript
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.
+Lewis Benson: All Welcome to week three day four. We're going to be going over mostly utility classes today. So utility classes are going to be like the Swiss army knife of
+Lewis Benson: AR's our hand I just want to play. Another wasn't sorry. It was been recording sound. It's like the Swiss army knife of styles. Basically it allows you to do whatever you need to do to get things into places. You need to get them. They also include some regular color that sort of stuff. Let me get the presentation going.
+Lewis Benson: And we're gonna go over as many of these utility classes as we can today. Some of these we covered in regular CSS and they'll work very Similarly. Some of them are not. Covered in CSS or they are in CSS, and we just haven't covered them. Or maybe the way they work is slightly different as well. So looking at the documentation, here's all the different utility classes. I'm going to open up this API right here. This allows you to create your own utility classes a user SAS, and we're not going to be diving into this one. Just because it's out of the scope of what we're doing. We can create our own custom classes just using CSS and CSS file and creating our own utilities and we will go over that today.
+Lewis Benson: So we went over this one a bit the BG property. And it has all these different colors. There's a lot here to choose from and we can also add more if we need to. So let me open up some code.
+Lewis Benson: That's yesterday's code. We'll do open folder.
+Lewis Benson: and I'll start creating my Files I need an index.html. and type today I'm going to create a style dot CSS. We'll need that later.
+Lewis Benson: And that should be good for there. I will import my starter code.
+Lewis Benson: And this is a utility strap demo. All right, so I need to import my bootstrap.
+Lewis Benson: So I'll go back to their home page. I like to use the link here. If you ever go to the docs, you can actually get the link out of here as well. I'll just do it this way just to show you if we hit copy. We can copy this entire code block which already includes the link and the script and it even gives us some content to look at and we have our title there obviously their title. I'm just going to override my current.
+Lewis Benson: So it's the same process. It's just using their starter code instead of the Emmet shortcut. So just a little bit more utility for us.
+Lewis Benson: So we'll get into the background. I'm just going to go with a BG secondary from my background color. And I'm going to put this on my body.
+Lewis Benson: and I cannot use the dot and we'll go live and make sure everything's wired up correctly and working this background color is telling me that it's a very obvious way to see that this is working. We do have a little bit of issue with our contrast here. And this is one of the problems you could run into with using bootstrap colors. Is your contrast issues because it doesn't really give you much of a warning and it doesn't tell you the exact color names or give you the hex codes. If you go into your Dev tools, I'm gonna remount just to my side.
+Lewis Benson: And there's actually a way in here to the colors in the contrast so we can see that this has a black background. I'm gonna click on the body.
+Lewis Benson: And I'm gonna look for these colors that are applied right now.
+Lewis Benson: So It has this RGB. 108 117 125 so I'm gonna grab this color and I'm gonna go to the coolers. dot Co I can't remember where the actual link is in there. So I'm just going to search for coolers.co.
+00:05:00
+Lewis Benson: And I want the color contrast. And the reason I'm showing you this is just because this is an important concept here. This is showing it as a hex thing. Hopefully this works as RGB. It's gonna make me convert it to hex. That's okay. I usually use vs code to convert things to hex. So if I go into my Styles I can say Background color and then I can paste in the hex code or I guess this is RGB. and it sees that
+Lewis Benson: and then this goes inside of these. And now I can convert that to hex. And put this inside of that tool. And we can see we have a very poor color contrast right now. So if I wanted my I put this in text. this is going background. And my text color is things type in Black
+Lewis Benson: yeah, so it's still a very poor color contrast so I can take this and move this around to try to find something better and we're not really going to get much of a better one with black so I don't have to
+Lewis Benson: I'm not sure that I can actually get any good contrast with this. This is a little better with white. In this case, I'd probably not want to use this is my main body background color. if I have a lot of text content, so just keep this toll in mind. It's really useful for accessibility and making sure you have good contrast will really make your sights pop. So that's an important concept to keep in mind. So whenever you're using these background colors, definitely be checking. For contrast and you can see also they have a color in here. If I do an inspect on that. I can get the actual color that they're using. for their contrast out of here and I believe it's also listed.
+Lewis Benson: Right here.
+Lewis Benson: So for secondary, they have text White. So just make sure we're using all of our tools whenever we're using these background colors to make sure that we're getting the most effective contrast out of this. So here is a really good source for if you're using this background color, then probably pair it up with the ones that they're providing in this list. So if you're using BG warning then use text dark. And so on and so I am going to do that secondary with text White.
+Lewis Benson: we'll go there.
+Lewis Benson: And we get that better contrast now and that does look a lot better. Does anyone have any questions about the contrast and how I determined which one to use there?
+Lewis Benson: It's pretty straightforward. If you just copy their code, you can't go wrong using the starter code they give
+Lewis Benson: all So we're going to go back into the margin and padding. A little bit we talked about this before. I just want to go back over this because this one can be confusing to look at and the documentation and I was kind of going through it quick to saying mt's margin top, but I really want to dive into this and make sure that everyone understands how this works. So I'm gonna create an element in here. I'm going to start with a container.
+Lewis Benson: So I'm going to do a div Dot. container and I'm going to put my 5 does anyone know what my does?
+Lewis Benson: Yes, it's the axis. So this will apply margin top and margin bottom both. And what does this five do?
+Lewis Benson: So the five I like to think of it as a scale of one to five a five-star rating. And it's applying margin or padding and it has this spacer variable times a number. So let's actually take a look at this in our inspect hole and we can see what numbers are being applied to this and I believe it's using Rems. So this would be dynamic. If the user changes their screen size, so that will be useful. And we can see we have all this extra margin. Around this now.
+00:10:00
+Lewis Benson: So if I go all the way to the bottom here, we can see that there's pixels on it. for the margin bottom but it's not actually using pixels to make the determination. It's using the Rems. So let me find where that's applied. And here. Font size is being calculated. Where is the margin
+Lewis Benson: I don't have the right container selected. There we go.
+Lewis Benson: So hopefully we can find it in here.
+Lewis Benson: I have the HTML selected. So here's the container we're looking for. There we go. So three REM for margin top and three REM for margin bottom and it is using the important. Flag on these to ensure that whatever margin you apply yourself is overridden by these from the bootstrap. so we can see that that's Rendering it up and down because this is using Rems. It's based on our root ont size. So if I set my REM font size to be 10 pixels, then this would be 30 pixels. I'm not sure what the default s element font sizes set for bootstrap.
+Lewis Benson: It might not be set so that would be 16 pixels. It doesn't appear to be.
+Lewis Benson: So it would have a default size of 16 pixels. So if you wanted to change I'll select the root this time. So it's showing you the other way. Our root is the same as HTML and we're going to do and pixels
+Lewis Benson: I was hoping I could see that change live.
+Lewis Benson: We select the body the container and when we look at the pixel size, we have 48 margin on the top and bottom. So it doesn't look like I might have to put the important in here.
+Lewis Benson: I didn't see it Flash and we're still at 48.
+Lewis Benson: so these might be just overriding whatever I put in. And that's one of the pitfalls with bootstrap is it's very hard to customize unless you're using sass. yeah. You have a question.
+Iris Coats: He has Lewis. I was just wondering here on the inspect. It's got the important right up against the three REM. But you have the space in yours.
+Lewis Benson: Yeah, I always put the space in to make it more readable.
+Iris Coats: Okay, so it would make no difference on whether it worked or not.
+Lewis Benson: I don't think so. My formatter doesn't let me.
+Lewis Benson: So since I had saved it just automatically pushes it back out. I don't think it matters.
+Iris Coats: Okay.
+Lewis Benson: If you look at the bootstrap file and I'll actually show this to you. This is a minified version. That doesn't have any spaces at all. And everything is written on one line.
+Lewis Benson: So this looks like multiple lines,…
+Iris Coats: 
+Lewis Benson: but it's actually all one line of code and you can see there's absolutely no spaces in anything here. and…
+Iris Coats: Right, okay.
+Lewis Benson: it reads it. Just fine. So yeah,…
+Iris Coats: Thank you.
+Lewis Benson: no problem. Yeah, and this is considered machine code. This isn't meant to be human readable. So if you wanted to modify any of your components, I wouldn't try to go in here and modify this file. but if you wanted to I think we can actually get it like this. Yep. We could actually copy this into a CSS file.
+Lewis Benson: and edit these to be customized that way so all the different colors and everything are listed in here. This is what those are. So if you wanted to customize your primary background color. that is let me see. primary
+00:15:00
+Lewis Benson: And here's the background color they're using. And we can see that this is using rgba and then are passing in a variable and then they have this bootstrap primary RGB and then they give it a little bit of opacity which is bootstrap background opacity. So I'd have to find both these variables to make this whatever color I wanted. But if I select this one
+Lewis Benson: and place it in here. We can then change the default primary color inside of this file, but I would have to download this file. So I control a control C. And then I could create a new file in here. root strap dot CSS And then paste that in. And then if I want to change any of the bootstrap code I can run this CSS file instead of that CDN. And I can actually modify these different colors here. So here's my primary color. There's my secondary everything's listed in here. And then to use this you would just import it. Here instead of all this so if I delete this link I can say and type in bootstrap about CSS and this will give me the same.
+Lewis Benson: It's refresh this one. I have two of these open and I have all the same style applied. It's working just the same instead of having the CDN. I just have a local file with all of the bootstrap code. Does anyone have any questions about how I just grabbed all of that bootstrap code?
+Lewis Benson: I can show that one more time in case somebody missed that. So what I did was I actually grabbed the file or the link out of this atrev. I'll put that back in there. I'm heading control X.
+Lewis Benson: So here is If I copy that href link and paste it into my browser. It will take me to the minified version and then inside of the link I delete the dot m i n. And it takes me to the human readable version of it and then I can copy all of this and paste it into a new CSS file. I call it css. Once I paste it in here, then I can modify this. So that it's a little bit easier to customize it this way.
+Lewis Benson: Or you can override the styles using your styles.css.
+Lewis Benson: yes, Iris
+Iris Coats: And you got all that by removing the Dot from what part of that unreadable file.
+Lewis Benson: And the URL it says bootstrap dot dot CSS. men stands for minified Look,…
+Iris Coats: Okay.
+Lewis Benson: which means it just removes all of the white space. If we remove the dot men and just do bootstrap.css it will take us to the human readable version.
+Lewis Benson: So in this this is a really useful way. Because you can create your own bootstrap templates this way if you wanted to have a very specific color theme and you don't want to have to download an color theme you can create your own by downloading all of the code out of this file here.
+Lewis Benson: It would be time consuming but it could have some payoff in the end. It could be a good hobby. If somebody's interested in that just to create your own themes. You could throw them on your GitHub for later. And then just whatever you need them. You can either grab your own get Hub link. To the CSS or you can just download it from your GitHub and use it.
+Umar Z: Lewis I'm sorry, so are you just copy the link I removed. Dark Men and it worked here's pasted in the browser of search window. I don't know. Mine is not working some
+Lewis Benson: Yeah, so if I go back into my index, I'm grabbing this href. I don't grab the coats. I want to make sure that the https to the CDN link. And I paste this into my browser.
+Lewis Benson: And it takes me to the minified version like this. Is that part working for you?
+Lewis Benson: Did you have?
+Umar Z: Here, sorry my mic setting. But yeah, I'm going to just give me a minute. I'm sorry.
+Lewis Benson: Okay.
+Umar Z: I'm getting this paste it appeared. So now I just remove dot men from address and…
+Lewis Benson: Yep.
+Umar Z: Let's So now the whole thing I just copy and paste it over. it cool stuff draw away control C.
+00:20:00
+Lewis Benson: Yeah, so you can use control to copy it. Yep, exactly.
+Umar Z: Okay. Thank you so much.
+Lewis Benson: Yeah, no problem.
+Lewis Benson: So this is the axis as we've seen here when I inspected we have margin on the top and we have margin on the bottom and I didn't put any on the left and right so I didn't apply any.
+Lewis Benson: Okay, so I'm going to put
+Lewis Benson: a class on this called Text Center.
+Lewis Benson: I believe I showed A couple times. This one's pretty self-explanatory It Centers your text. But I'm also going to put mb4 can anyone tell me what mb4 is going to do to this.
+Umar Z: margin from bottom
+Lewis Benson: Yep, margin for the bottom. So if I inspect my H4, my H1. I make sure it's selected. I scroll all the way down. I can see that we have 24 pixels of margin at the bottom of my H1.
+Lewis Benson: So let's take a look at the next one. I want to find. The text alignment so we do have some other ones in here as well. We start text Center and text and we also have these viewport versions of this. So if you were on a small screen, maybe you don't want your text to be centered. So you could also add a text MD and class at the same time.
+Lewis Benson: And where did that go?
+Lewis Benson: Let's see how that responds. We close these other ones. They're confusing me.
+Lewis Benson: All right, so this is currently Set to the right and then as I shrink my screen down.
+Lewis Benson: It eventually gets to a point where it breaks straight to the center. And then as I expand my screen back out it goes to the right. So maybe on mobile you want to have this in the middle, but on large screens you want to have it off to the side. So there might be a use case for you there. Remember when you're looking at these breakpoints? It's referring to. The large so if I'm on a larger size than what's listed here, that's the style that's being applied.
+Lewis Benson: So if I put text small end on there as well. As you can stack these and it's only going to apply the ones that will work for whatever screen size and this would be s-m.
+Lewis Benson: We'll take a look. So we get down to small screen size and it'll Center at that small. There it goes. As soon as we hit medium, we're back to the end again.
+Lewis Benson: So it's a pretty useful thing to be able to put multiple breakpoints on. I will keep it just on tech center though. And I'm going to add a text To this as well. I already have text White on it. So we're good on that. I'll do it on my next one that I make.
+Lewis Benson: so I'll do it inside of this container still. Create a paragraph. And I'm just gonna put a class on margin bottom - 3 so far we've done five for now. This is three.
+Lewis Benson: I'll type in here bootstrap provides powerful spacing options. With all of these different paddings and margins you can really get things down the way you want them to look like especially since these are so subtle whenever you're going from one to two. It doesn't do a very drastic change, but it is a significant enough change. If you have to go past five for some reason, you don't want to go into your CSS and to start adding more margin of padding. You probably need a different layout technique. You probably have something else going on. For example if you wanted your Element to be halfway down the page adding margin is probably not the right solution for that. You probably want to use something like flexbox.
+00:25:00
+Lewis Benson: Perhaps absolute positioning ic relative positioning some other solution to put it where you're trying to get. It relative positioning is probably a pretty good approach because it doesn't take it out of the flow of the document. and if you remember that from last week All right. So now I'm going to do another. And I'm actually going to start bringing up There's some display utility classes here. it is. And these work the same as the ones and CSS. So if you remember we used display grid and it made it We also used itted a flex element. We also have inline Flex table cell table row. So these are a little bit different than what we've seen.
+Lewis Benson: And we also have the different So with these breakpoints. you can change your display properties based on screen size. So perhaps you want something to be display Flex on a large screen size. But you don't want to have that applied on a smaller screen size so you can use. the different breakpoints for that
+Lewis Benson: So the display Flex is a really good way to lay something out. And this is what I was talking about ar that might help you with getting your elements in a row. So instead of using that row property. Maybe try using this. I'm going to put a class on here. And I'm going to say and then whatever property I want to set so for this one I'm going to block so that when we're on a medium screen size. It's display block. And I'm already in a paragraph. So let's put some text in here and say this. content is
+Lewis Benson: block on screens
+Lewis Benson: larger than medium and I'll show you why I'm doing this here in a second. There's actually a really good use case for this. Because remember a paragraph element by default is already a block element.
+Lewis Benson: So here it is. This content is block on screen larger than So if I go smaller than medium, we don't see any changes and that's because it's already set to block. So this is where you want to start stacking your classes and your utility classes in particular. we can also do Dash none And what this will do is set it to display none, which means there'll be no content on the page. We can still see the content there and that's because we're on larger than a medium screen size. as soon as I shrink this down it disappears. And this could be useful for mobile layouts again, you might have advertisements that you don't want to be displayed through this property. You can display none to make them disappear on mobile and maybe relay out your entire page using this as well. Does anyone have any questions about why this works or how this works?
+Lewis Benson: One thing to keep in mind is it actually removes it from the HTML? so if I inspect this
+Lewis Benson: let me bring my elements down. Watch the element tree here.
+Lewis Benson: it's keeping it in there still but it is removing it from the document to where you wouldn't be able to have anything be pushed from it and I'll show you that with another element underneath of it. That'll make a little bit more sense. I'm going to set up a little bit of a flexbox here. And this is the solution I was talking about Omar.
+Lewis Benson: I'll make this Diva UL.
+Lewis Benson: And we'll do Li. times 3
+Lewis Benson: two item three And remember that i's are display block by default. So they're all block elements. So if I put a Class B. - Flex
+00:30:00
+Lewis Benson: my quotes didn't pop up for some reason. Then it puts everything on their own line the same as if I were just to say display flex and we can also see I have the flex box toggle here. I can select that and actually see the container. This can be really useful too when you're using flexbox to kind of see how these are going to get laid out whenever you start manipulating them. So we have the same classes you would use in flexbox. If you remember I said across the main axis is Justified. And across the cross axis of the line items we have those available here. I'm actually in There we go. The right class now, we'll say justify.
+Lewis Benson: content hyphen between
+Lewis Benson: and now these are spread out. As if I were to do the justify content property with the space between value inside of CSS and I'll show you the CSS equivalent just in case you forgot what that looks like. I'm going to just select the nav here even though I don't have one yet and I'll say display. Flex
+Lewis Benson: justify content space between so this right here deflects justify content between And you could create these on your own if you wanted to if you weren't using bootstrap, you could do something like Dash Flex. And I'm doing this as an element in other class right now. So let me change that.
+Lewis Benson: And we're going to say display Flex. So this would be the deflects class and then they'll have another one called. justify
+Lewis Benson: content between
+Lewis Benson: and that would do the justify content space between just like that. So this is how they set up their utility classes to work. You just put the class on and it applies these properties.
+Lewis Benson: So with that we have all of the Power of flexbox, but not the complexity of the nested divs to get those rows and columns. So if you need to use this to lay something out, this is also a good option the nice thing about the bootstrap grid though is it gives you out of the box? You don't have to do anything. No media queries. It'll automatically set up all of your breakpoints for you. So it is definitely more powerful and the better choice for responsive design. But if you don't need all of that power, you can just use the normal flexbox classes to get the same results. So you could use these in combination with each other. You could use the grid system to get your breakpoint set up and then you can use the flex box just to get your general layout working. Does anyone have any questions about what I just did here?
+Lewis Benson: Okay, the next utility class I want to show is the Border. And some of the color utilities as well. So let's take a look at the docs for that.
+Lewis Benson: We'll go into borders. We should be getting pretty comfortable with navigating these documentation now, so. Anything I don't go over today and you need a solution. Just make sure you're using your documentation to get the solutions. It's really important that you get comfortable with your documentation and the ability to read documentation whenever you're developing anything. All right, so we have some different borders here. the first one is showing If I put the border on an element, it's going to place the border the whole way around. So let's take a look at this one.
+Lewis Benson: I don't want to use a nav. I'm going to Or the stand because it's in line, but actually that'll be nice because it'd be small. So I'll put this in. And I'll give it a little bit of content.
+Lewis Benson: So here is our border going the way around. I'm also going to give this some padding because anyone tell me how to put padding on all four sides at once.
+Lewis Benson: I font padding top.
+Daniel Perez: we just p
+Lewis Benson: It's just And then a number I'm going to do P2. We'll see if this looks okay.
+00:35:00
+Lewis Benson: Yep, that looks good. And how can I get it off the edge of my screen?
+Lewis Benson: using margin Yeah,…
+Daniel Perez: They're using margin.
+Lewis Benson: so with margin. I can do m. Dash Auto it's not in a container that spans the whole wet. So I need to do that. So I'll create a div.
+Lewis Benson: and this div
+Lewis Benson: am I put this in the wrong spot? I think this thing's gone the parent.
+Lewis Benson: I always mess up the margin autos because I don't use it very often.
+Lewis Benson: One second. Let me find.
+Lewis Benson: what is it spacing?
+Lewis Benson: Okay, so this is what I'm attempting to apply.
+Lewis Benson: For centering a fixed Wix. it's got to be Block Level content. That's why it's not working.
+Lewis Benson: So I did have it in the right spot. there were the documentation comes in handy.
+Lewis Benson: We just make this a div. with margin Auto
+Lewis Benson: but it's centered across the entire screen. So I need to set a width on it now.
+Lewis Benson: There we go, just to show you how that works. So when you have a block element, you have to set a width on the Block element to use margin Auto and I'm actually going to use the sorry W 50. So we're using the utility class to set the width And we have the same result there. This W class is setting the width to a percentage based on the parent container when you have a width set to less than 100% On a Block element. You can use M Auto and it will automatically Center that Block Level item. To the center of its parent container. Does anyone have any questions about that? I'm sorry. That was a little bit scuffed on that showing you how that works.
+Lewis Benson: But basically when you have a block element, it's still accounts for the whole Space across the document. So when you set a margin Auto it can then automatically adjust the margin based on that if we watched the margin here as I change my screen size. It's actually adjusting that margin. For whatever it needs to be.
+Lewis Benson: I know that's flashing quite a bit, but my margin down here has been moving the whole time. For whatever. It needs to fit that content.
+Lewis Benson: So this is a really useful way to Center. My preferred way would be justify content Center. You would get the same result without having to do the margin Auto but you do need a parent container for that to work like that. So if I was going to do the same thing with flexbox, I would say div. and my div I'm going to put a Spam like I did before. And I'm going to give it some content. and I'll put the padding
+Lewis Benson: and border on it.
+Lewis Benson: And we'll take a look at that result. I should have two content blocks. There's the other one. And then on the parent component, I can do Class E Dash Flex. So I just put it into flexbox. So I'm actually gonna go into my div tools and select the flex so we can see what the parent looks like. So if I click on this? And I'm going to toggle this word Flex right here, and now we can see that this div is spanning the whole way across so whenever I set my main axis justify properties, it's going to move along these hash lines here left So if I do justify content center, it's going to move my content right to the center. So let's watch that happen.
+00:40:00
+Lewis Benson: And it's perfectly centered now. These are kind of close together. How can I move these apart from each other?
+Daniel Perez: margin bottom
+Lewis Benson: margin bottom on this one
+Daniel Perez: or it could be margin top on constant.
+Lewis Benson: Yep other way will work it wouldn't be on content. Because this isn't a span it would have to be on the div.
+Daniel Perez: you did
+Lewis Benson: But basically the same thing. As long as I'm on the parent container, so that These remember margin pushes elements away from each other. So we have two divs here and I want to push them away. So we use margin. Sometimes you might mix up padding with margin if it makes the content move away from the border and it makes this thicker I'll show that with the Box model down here So if I add some padding we'll say 50.
+Lewis Benson: on the div
+Lewis Benson: might not let me. I think the importance actually overriding it.
+Lewis Benson: Yeah, so it's being overridden by the important tag, so. I can't even apply it in my box model. You can see that's crossed out right there. If we uncheck this though, we can see that move down and it's moving away from the border. So we know that I've used the wrong one. I actually want ding or merge and not padding. So just one of those little tricks to keep in mind. so here is
+Lewis Benson: I put margin bottom. And I could just use m y it'll put margin top and margin bottom. We'll do four for that one.
+Lewis Benson: That I put it in the wrong one. I can see it already. It's on the class that I have set the flex box. You can see that margin. I did apply to the bottom. But I needed to apply it to this one up here instead.
+Lewis Benson: So I put it here it actually needs to go here. 4. And that pushes it down.
+Lewis Benson: Okay, so that is our spacing and our text
+Lewis Benson: We also have this text wrap here. This is good for when you have a set you can actually see they have a set width on this container. And it allows it to wrap the text around. So that it doesn't spill out the container. If you run out of room it might cause the container to either or so the text stretch down and I'll show you what happens. Actually just take their piece here. and I'll put it in without the text wrap on it.
+Lewis Benson: And you can see how this is spilling out of the badge here. Let me add some more padding.
+Lewis Benson: There we go. And how could I Center this badge so we can look at this a little easier?
+Lewis Benson: This doesn't have a parent container. So what happens if I use motto here? I never set the width so it's not going to go anywhere. But if I set W 50 we can get it to stretch out that way and this doesn't really show us how text drop works for this case. I would probably use flexbox to Center I could use grid to Center this div as well.
+Lewis Benson: All right, so to get the text route. I'm going to apply the text wrap now.
+Lewis Benson: oops
+Lewis Benson: And we can see that that's no longer spilling out of its container that it's wrapping down. So that's definitely a useful tool if you're having issues with your text spilling out of the sides.
+Lewis Benson: Does anyone have any questions so far about any of these I've covered?
+00:45:00
+Lewis Benson: Okay, so I want to do another I'm gonna go back up to this content here and I want to show you another. border property
+Lewis Benson: Let's go back into border.
+Lewis Benson: And what I want to do is kind of round the corners over we can see that here. and I also did this yesterday with the cards with the images. I mean I had to Corners rounded on one side that's opacity with here we go radius. So we actually have a lot of different options here. We actually can go straight to a circle which is pretty cool because this can be a little bit tricky to do with CSS making circles. You try to make a circle and a lot of times you get an oval. the pill we can see what that looks like there. So I'm just gonna add the rounded to my content.
+Lewis Benson: And I'm also going to add it to. There's another content here.
+Lewis Benson: And there We have rounded corners on our content. And that looks pretty good. That's a really nice way to just add that fine detail to your page.
+Lewis Benson: We also have these different variations. Of the rounder here goes from 0 to 5 0 is perfectly square corners. This could be useful whenever we get into manipulating things with JavaScript. We can actually add classes dynamically based on things that are happening on the page so we can say if somebody's hovering this item we could then remove the rounded edges by setting rounded to zero and then when they're not hovering we can set it to rounded five. That's something we'll get into a little bit in a couple weeks.
+Lewis Benson: So that's it for borders. These are all pretty well. Self-explanatory here. These ones here can be a little tricky to get set up correctly. especially since the documentation has a lot of stuff going on here. So we see this rounded five rounded top zero. This one gives it this Square edges on the top and rounded on the bottom. And we also have a rounded start pill. It looks a lot like the rounded End Circle.
+Lewis Benson: So you could kind of get the same results here using two different ones. So that's something you can keep in mind as well if you're dealing with these type of shapes.
+Lewis Benson: Okay, so let's bring up the nav bar now.
+Lewis Benson: I'm gonna do a custom background color on that. Where's my nav at so the nav should be in components? bar and I'm gonna get a very basic nav bar one that just has the brand in it. I don't want to get too complicated with all this.
+Lewis Benson: And of course, I want to put this a pop.
+Lewis Benson: Okay, so we don't want to use this BG body territory if we look at that it has that kind of white. Look we want to come up with a different color. But we want to use The easiest way to do this is just to create a custom color so you could say custom
+Lewis Benson: this has to have a DOT. dot BG
+Lewis Benson: we'll do a color.
+Lewis Benson: And I'm going to do. Just three three, so it's a dark color. and I'm gonna apply that on nav and this is probably the quickest way to do it. Just create your own custom utility background color classes. I just wanted to show this because whenever you try to select. The bootstrap class. It doesn't really like to the play. so if I place mine on here And I'll have to link in my state the CSS.
+Lewis Benson: We can see that it doesn't seem to be applying and if I take a look at this.
+Lewis Benson: Doesn't seem like I have the right one. There we go.
+Lewis Benson: We don't have any results there.
+00:50:00
+Lewis Benson: But we have this right here.
+Lewis Benson: being applied
+Lewis Benson: so what I could do is run the important on the bootstrap color
+Lewis Benson: So if I go back into my styles?
+Lewis Benson: these are so difficult to get teased to apply correctly. do I have that in the right spot?
+Lewis Benson: That is where it would go.
+Lewis Benson: So I'm going to remove this one off of here. And mine is now working.
+Lewis Benson: This should be darker though than the background of the body.
+Lewis Benson: I must have something making my background color transparent
+Lewis Benson: but another approach we can do to make this work is if we take a look at the BG Territory, I cannot say that word correctly. We cannot modify how this one's working. And we can see they are using the important tag here for the color.
+Lewis Benson: If I just change this. I hate trying to override their Styles because it's such a pain.
+Lewis Benson: And it's still didn't override it. It's interesting.
+Lewis Benson: This is something I'll have to come back and approach and What's Happening Here
+Lewis Benson: the only way I could think I can make this work now is by going into the bootstrap file and overriding it. Yes, you have a question.
+Lewis Benson: terrish territory Okay.
+Iris Coats: Virtuary it's like aluminum for some folks.
+Lewis Benson: Got I'll just call it the t word.
+Lewis Benson: Yeah, again this is one of the biggest pitfalls of bootstrap is trying to get customizing and that's the cool thing about tomorrow lecture is there's a really easy way to do it. I don't want to introduce that right now. But I'll show you that there's a much better way to get these customized colors where we don't have to deal with trying to create our own classes and override them. I definitely can select other individual things and apply those to the background colors to that. I might even be able to put this in a container. And style it that way.
+Lewis Benson: I just wrap this in a div.
+Lewis Benson: And I want to try my custom background on the div.
+Lewis Benson: And make sure I have this the same. I think I just did custom up to the same
+Lewis Benson: It seems that I have a air in my syntax because my prettier has the red going on. Let's take a look at that.
+Lewis Benson: Line 21, it's not happy with this nav and it's because I have a div right here. I believe.
+Lewis Benson: Showing my closing tag.
+00:55:00
+Iris Coats: The div online 18 has red marks on it.
+Lewis Benson: Yeah, I got two divs going on here. line 17. I'm going to do is manually a little bit to see what's going on.
+Lewis Benson: Am I missing maybe a closing bracket
+Lewis Benson: This one's not showing that I have a closing tag. And when I click this one, it shows the closing tag for this div is outside of here. So that would imply that I need to move this one down and add a closing tag inside of here.
+Lewis Benson: Hope that just created enough for some reason.
+Lewis Benson: I'll just do some undo's.
+Lewis Benson: I'll see where I went wrong here.
+Lewis Benson: And we want to put this around the nav.
+Lewis Benson: Okay, so what it's all happy again someone close the terminal.
+Lewis Benson: And we're going to put our custom BG. on this here
+Lewis Benson: and remove this
+Lewis Benson: yeah, so that's something I'll have to just mess with it. I'm at a later time as see what's going on with this as far as modifying the color of a nav bar. You'll probably either have to not use the bootstrap nav class in order to get this to apply correctly and just kind of build this manually.
+Lewis Benson: Or use the bootstrap file and go in and modify it because it does not seem to like me trying to modify it externally like that. I might be able to try one more thing here just to make sure. I might be able to just say Style.
+Lewis Benson: background color try red and there we go. So when it comes down to it you inline styling wins? This is a specificity issue it seems so no matter what I was doing. It was overriding whatever I put so
+Lewis Benson: there is a solution there and I'm actually just going to put my three three in there.
+Lewis Benson: So I've been fighting for so long. There it is.
+Lewis Benson: So everyone see how I made that solution work? Again, bootstrap is one of those things where it's not easy to customize and that's one of the benefits of a framework too is because it's a framework a lot of the stuff's already set up. So you're not supposed to have to do a lot of this customization. You're supposed to just use it the way it's designed to be used, but that's using their colors. Not your own. But again tomorrow I'll show you a way where it's really easy to have your own color palettes. Or you can just go in and change this CSS in here as well. So if I wanted to find that specific color the t word I'd be able to change it that way. In order to locate that though I'd have to do a lot of fishing through the files. And we don't really have time for me to dive into that. Does anyone have any questions?
+Iris Coats: I always get the explanations, but when it comes to start the work, I really got to work on it.
+Lewis Benson: Yeah, that's the thing. I've watched a lot of tutorials when I was first learning how to do a lot of this stuff and I was the same way. It's like okay that made perfect sense. let me try to build it and nothing works. But with practice you'll start to see a pattern for how you can solve a little problems. For example me trying to solve this background color on my nav. I tried about four different things. I created a wrapper try to change the background there. I used the important keyword. Finally. I just had to brute force it with an inline style make it work that way. So again, those type of things will come with practice figuring out all these different solutions and how to get to stuff all to work as for now though this right here.
+01:00:00
+Lewis Benson: using this deflex justify content the main takeaway for this first hour is you can use all of your CSS tools through bootstrap without having to write a lot of CSS. so far we've been able to manipulate things the way we did last week, but without any CSS.
+Lewis Benson: Does anyone have any questions about that?
+Lewis Benson: Okay, so this is a good time for our break. We're just over that hour mark. Then when we get back, I'm gonna rebuild a card component. I'm also going to share I could put in the slack chat earlier a way to get random unsplash images which I've never seen before. It's really cool. You can get all kinds of random things based on search parameters. So I'll show you how to use that and we'll build out another products page but instead of using the bootstrap grid we're going to use flexbox, but we're going to use bootstrap flexbox Okay, so let me start my timer.
+Lewis Benson: And I'll see you in 10.
+01:10:00
+Lewis Benson: Hey, welcome back everybody. That was a good break.
+Lewis Benson: Alright, so I want to go over this cards that we did yesterday. We built a little product page. We also use the breadcrumbs and the pagination to have multiple Pages. We're not going to go over pagination and breadcrumbs again, but I do want to go over building out. A product page again that's going to be part of today's assignment. So if you wanted to follow along at this point, this could be a way to get a little bit ahead on that. so I'm gonna lay out these cards using flexbox instead of using the bootstrap grid system. The planning is going to be similar to how you would do it with CSS. It's also similar to how you would do it with the grid system. It's just the parent and children are a little bit different when you have rows and columns.
+Lewis Benson: I will use a little bit of Grid in here as well, but I mainly want to use the CSS I'll just use the whole thing with flexbox actually for the card itself, so I want to actually open up a bigma and just remind you how to plan your components.
+Lewis Benson: Go with this one.
+Lewis Benson: It just makes it a little bit easier whenever you're building out your HTML. So we'll start with it's going to have a card container.
+Lewis Benson: and this is going to be a container and then on the container. We're going to have another class called card.
+Lewis Benson: So far, these are taking up a hundred percent of their width and height. This would actually be all the way up here, but I want to be able to see the name of it. And whenever I place these I like to play some so it shows a hierarchy of the components. So if this is the parent component, I always put the child under the parent that way just so it's a little bit easier to understand. so with that we're going to need another. Component here. This is going to be the one that is our Flex container. And again, this one's also going to be a hundred percent within height of its parent. So we're just going to call this one Flex.
+Lewis Benson: And the next one we want is. We're going to have an image on the left and text on the right so to do that. We're going to need two. items in here does anyone remember from flexbox how we can make these Set Side by Side?
+Lewis Benson: Does anyone remember that? how to accomplish that
+Lewis Benson: If you want your items and a flex container to be side by side.
+01:15:00
+Lewis Benson: So with regular CSS the property display Flex automatically sets things as a row.
+Lewis Benson: so using bootstrap flexbox. All we'd have to do is say deflex as a class and it will put the image on the left and the text on the right. We could also put the text inside of a flex container. So that we can use the Align items and justify properties. And then instead of this being text. This would be Flex column
+Lewis Benson: and this would be the text like that.
+Lewis Benson: And then this would be one card here. Once our cards are laid out. we can make it so the cards are inside of a Bootstrap grid system that way that our Auto wrapping down to the multiple lines, and I think that'll be a little bit cleaner approach than trying to use our grid layout just that many Dives gets a little bit cumbersome to look at and without having some sort of Automation through JavaScript, that's a lot of HTML to write. Okay, so I'm gonna start laying out this card now, so The first thing we want to do is create our parent container. So that's going to just be a give. And it's gonna have a class of container.
+Lewis Benson: I could use container fluid. But if I did that it'll go the whole way across the body. But what I am going to do is On this div. we're outside of that div. So I'll leave that one alone on my body. I'm going to do container fluid.
+Lewis Benson: That way it just takes up the full width and it grows and shrinks with this green size.
+Lewis Benson: So we were container which is now nested inside of a container fluid. So that'll give us a little bit of default looking at the drawing I have here. I'm actually going to split this. whoops
+Lewis Benson: Try that again.
+Lewis Benson: I don't like it on that side.
+Lewis Benson: I'll get it there in the end.
+Lewis Benson: There we go. So looking at this drawing that I have here. What would I need next? So I'm inside of the container here. So what is my next component to make this work?
+Iris Coats: However, you get the image.
+Lewis Benson: Before the image if we look over here at my drawing we need this card container. So the image is going to be nested way down here. So let's put the card in next.
+Lewis Benson: And that's just going to have a class of card. And I'm probably gonna have to add some padding and margin to these components once I get them all laid out. So what's the next element to go in?
+Lewis Benson: So we'll have another div. And this one is going to be our Flex container. How do I Flex using bootstrap?
+Lewis Benson: Does anybody have the documentation?
+Iris Coats: step on the deflux
+Lewis Benson: That's deflex. Yep. What's the d stand for?
+Lewis Benson: Didn't want to take a guess.
+Iris Coats: display
+Lewis Benson: Display, yep, so it's setting it to display flex and if I was going to do that and CSS, it would look like that. I keep clicking on that bootstrap file since I'm doing it with bootstrap. It's deflex. So it's yet different. We don't have any content in here yet.
+Lewis Benson: how many children do we need to have inside of this Flex container to have two columns?
+Iris Coats: just
+Lewis Benson: So I'm going to just Nest my image inside of a div. I always like to put something around an image. I don't like to have an image floating by itself. So if I did the image like this, I don't have any control over the parent of the image because if I start manipulating this deflect It's going to also manipulate the text. So I like to always wrap images inside divs. So I always create a div and And then I can always do things with this div that will manipulate my image. So here is the image and I'm going to use an SRC.
+01:20:00
+Lewis Benson: That I shared inside of the class chat yesterday and let me open this up a little bigger so I can read it. So, it's HTTP PS? colon slash slash source Dot unsplash
+Lewis Benson: dot com slash random / query, which is a question mark and then you can put whatever you want here comma separated. I'm going to click Peck. I'll just like a tech style image and then for alt I'm gonna say random. image from unsplash
+Lewis Benson: and let's make sure this is working. Okay, so there is a random image from unsplash. Does anyone know how to make this image fit inside of its container so it doesn't spill out.
+Daniel Perez: Crap, he's in there.
+Lewis Benson: I'm sorry. What was that?
+Daniel Perez: It's rap. He's in there. Yeah.
+Lewis Benson: rap
+Lewis Benson: I'm not sure how rap would work on an image. What would be the last?
+Daniel Perez: but they fake content
+Lewis Benson: What's that?
+Lewis Benson: Content fit that would work. I'm gonna use image fluid. The content fit will do the same thing. It'll actually make it fit into there and I'm going to go over that one closer to the end. I'm going to go over the object fit.
+Lewis Benson: class but that'll be toward the end of today's lecture. So here is the current image size. I'm also just going to put a size on this I'm going to do it on the div. I'm gonna say width we'll go 300 pixels and you also inside of this URL. I believe I can do. 200 by 300 something like that and it will like Auto apply. I'm not 100% sure how that works. But every refresh we get a new image, too. So that's pretty cool. Image fluid though will make it take up 100% of its size.
+Lewis Benson: I'm also going to add a height to this and you put a Height 300 pixels. This is something you'll see a lot whenever you're working with bootstrap. is developers will use inline styling just because they don't want to create a CSS file. So this is a fairly common practice. So I did want to show you that this is an option, but it is preferred that you use a CSS file. That way you're not dealing with inline specificity later on especially when we start manipulating us through JavaScript. Let me remove this height.
+Lewis Benson: Okay, and this have to do a quick inspect and see where we got.
+Lewis Benson: Okay, so here's the div of 300 pixel width and it looks like our Flex container is going across the entire. Container there that's expected. I just wanted to make sure that this image wasn't stretching the kind of the issue. We're dealing with yesterday with those placeholder images. They had all that empty space around them that it made things look weird. But using this unsplash thing seems to be working pretty good. We have a 300 by 200 pixel image here. And our deflects is still taking up all of its width and I'm actually going to set a width on my card as well so that the cards are limited to whatever size we need them to be. So we'll do.
+Lewis Benson: if I'm using this container I'm going to say w.
+Lewis Benson: 25 I may have to adjust. my width on this we're not actually setting Dynamics sizing on this. Let me just remove this width and see what this looks like now.
+01:25:00
+Lewis Benson: Yeah, I'm gonna go with this for the moment. I might have to adjust this in a little bit how to make this look perfect. so we have our first child and that's this This div represents the image. And what I can do to make this clear. Is start putting comments in here?
+Lewis Benson: Image wrapper would be a good comment for that one. And then I can create another comment here. And this would be extraapper. Whenever you start adding comments and explaining what each part of your codes doing. This gets a lot easier to manage. So we need to give a paragraph element and then we need some warm. And here's our card and we can see we have that same thing going on. We had yesterday because our sizing isn't stretching it all the way down. It doesn't want to lose its aspect ratio. So it automatically adjusts based on width but not on height. So we do have some extra space there as this The image won't grow any taller than it needs to be. Let me zoom in on this content a little bit. There we go. And as you can see that this image with is locked in right now.
+Lewis Benson: If I change my width of my screen now. It does adjust a little bit because I'm using that w25. on the card
+Lewis Benson: Okay, so how could I make it so the image is on top of the text if I wanted that layout instead?
+Lewis Benson: Take a look at our figma here. And this is our Flex container. And we have our image on the left. And How can I make Text or sorry this image be on the top and the text beyond the bottom. Anyone remember how to do that with flexbox?
+Lewis Benson: Take a look at the code. Maybe that'll help.
+Lewis Benson: So here's our Flex container. And we have two children in it and they're currently side by side because we're using flexbox.
+Lewis Benson: Let me open up the documentation for this.
+Lewis Benson: Because we're using deflects. We'll search it here.
+Lewis Benson: And here we can see this property right here. selects column I'm going to place this on the flex container. I always grab that period I wish I'd remove those. And now our image is above our text.
+Lewis Benson: I think I'm going to go with this layout for flexbox just so that we don't have to worry about having it flip left and right and it just looks better with the unsplash image. so as we refresh that it seems like we're getting this aspect ratio every single time. So I'm just going to stick with the column here for the cards Yesterday we had a title in here and some small text on the bottom. I'm going to add that in as well.
+Lewis Benson: So we'll have an H2. And in the H2, we will say product info.
+Lewis Benson: and then we could also include a div right here with a class of badge and we can say 2.99.
+Lewis Benson: my end the text
+Lewis Benson: Or maybe I didn't do the badge correctly. Let's see.
+Lewis Benson: Also have to give it should not together background color.
+Lewis Benson: So BG secondary.
+Lewis Benson: Okay, there it is. So we put a little price on there.
+01:30:00
+Lewis Benson: All right, so We have three items in here. So what I'm going to do is I'm going to actually set this to a flex container. Does anyone remember how to do that?
+Lewis Benson: I want this to be in a column.
+Iris Coats: You mean a separate column?
+Lewis Benson: Yeah, so this I want everything in here to be a column. So that It's already on top of each other, but I want to be able to manipulate it.
+Lewis Benson: I want to be able to use the aligned property on it as the goal here. So I'm going to use deflects. Lex column
+Lewis Benson: And we hear our badge is now a hundred percent of the page. I'm going to give this a w 25 just so it's smaller.
+Lewis Benson: let's see how they do align self. on the flexbox
+Lewis Benson: just go back and
+Lewis Benson: let's A line self. That's what we're looking for.
+Lewis Benson: So the aligned self. Is a class.
+Lewis Benson: Here we go.
+Lewis Benson: self start align self and align self Center So it's just adding this class right here to get it to move around the way we want. So I'm going to put that on my badge.
+Lewis Benson: align self Center and we can have the badge in the center like that.
+Lewis Benson: You don't have any questions about what I just did there.
+Lewis Benson: Where you get some weird size images coming in sometimes?
+Lewis Benson: Okay.
+Lewis Benson: So how does everyone feel about laying out using flexbox? Just to kind of build something like this right here. I think this is a little bit easier when you're dealing with smaller components like this to use flexbox instead of the grid system's great because out of the box already Works built in media queries you don't have to worry about if we wanted this to be left and right we'd have to do a little bit of manipulation to get that to modify like that. I believe we can use. the MD property on that
+Lewis Benson: Let's see here it This is for MD column.
+Lewis Benson: So if I go to this one up here instead of just Let me say Flex MD column. And this should give us a similar.
+Lewis Benson: Or do I have this backwards? flex and D row
+Lewis Benson: And then flux column.
+Lewis Benson: Yeah, so that's switching it between column. And row based on screen size what happened there?
+Lewis Benson: Did adding that break it?
+Lewis Benson: Or am I just zoomed in too far?
+Lewis Benson: But is everyone see how I did that I'm making it. So it's side by side on a larger screen and then as we get down to a smaller screen, it goes into a column. Because I'm using both of these properties at the same time. I'm saying by default make it a column. But on anything above a medium make it a row.
+Lewis Benson: And this one is going to be listed lower on their style sheet. That's why this one won't be applied while this one's applied. They lay this out so that you can do it this way. So it's all mobile first design. So you set up your mobile first, and then you can add in your larger screen sizes.
+01:35:00
+Lewis Benson: And that's not all that pretty with the image not being all the way down. So, let's see if we can actually figure that out.
+Lewis Benson: So whenever we hit a certain screen size, it looks a little weird and then we also have this tight up against it here. Let's see. Where's the Gap at?
+Lewis Benson: It doesn't look like it has the Gap property of available. We do have. Justified content space between but I don't think we have enough space to work with that.
+Lewis Benson: Gap would be ideal so we could always add that in manually. And we could create our own unless it's using the G. We could try the G.
+Lewis Benson: the letter G for Gap This was gutter when we were using the other grid system. So this might still work. Grid three. I haven't actually tested this before. I don't see it being applied. But we can create a custom class called Gap. And we can do Gap three.
+Lewis Benson: And then in my styles.css. We could create two Gap three and then apply around.
+Lewis Benson: And there we get that little bit of Gap. So I'll make this Gap one.
+Lewis Benson: And then we'll do a gap three. And I can do Gap four and five if I wanted to as well, this is just a good way to make your own custom utility classes that you can use for. Building out things like this. Alright, let's see we can get just container to contain that entire image now. So we're going to go into. styles.css
+Lewis Benson: and there's some different properties we can use here. I'm going to try the object fit class on this to see if we can get that to play well with this. So we'll do on the parent container.
+Lewis Benson: Sorry this would actually go on the image itself for I always mix these up because whenever you're using the background in your CSS, it goes directly on the parent and when you're doing it on the HTML that it has to go inside of the actual image. All right, so we're going to create a class. and we're going to say object fit contain
+Lewis Benson: And it seems like I broke something here.
+Lewis Benson: Copy this class on to retype it.
+Lewis Benson: I was because I already have a class on here.
+Lewis Benson: And that's remove object fluid.
+Lewis Benson: Object fit tain. So now on our parent we'll have to actually set a size to that. Let's take a look at the object fit.
+Lewis Benson: This is one of the more complex things because you're having to deal with multiple elements at the same time. Yeah, they can see how they have this on an image. It also works on videos. They have that here as well. But we have different versions of this and hopefully I can demonstrate how this is going to work because whenever you use this it actually will crop your image a little bit to make it not lose its aspect ratio. And you can get pretty specific with it adding in numbers. It doesn't look like it supports that with bootstrap. We do have the different breakpoints so that you can put this in alternatively for different screen sizes as well.
+Lewis Benson: All So let me get this sizing set on the div. I'll do Style. When you just max width for this so that it does kind of change dynamically.
+Lewis Benson: And we'll start with 300 pixels. See what we get.
+01:40:00
+Lewis Benson: And it doesn't seem like we have our 300 pixel. Size, so let's see if that's working.
+Lewis Benson: It is but it still spilling out of the image. So, I wonder if our object dot fit isn't working. Let's open it up and look.
+Lewis Benson: Just like they have two of the same here.
+Lewis Benson: Object fit contain is set to important.
+Lewis Benson: Which are the cover that shouldn't be spilling out like that.
+Lewis Benson: a little confused because this normally works a lot better than me having to hard code in the width on these.
+Lewis Benson: That's still spilling out.
+Lewis Benson: So if our container is 300 widths and we're containing this within our container.
+Lewis Benson: Even says here in the documentation this property tells the content to fill the parent er. Preserving the aspect ratio or stretching to take up as much space as possible.
+Lewis Benson: Use the object for utilities to modify how it's replaced.
+Lewis Benson: How it should be resized to fits container. Now that is really strange.
+Lewis Benson: This makes it pick up 100%
+Lewis Benson: I want to try this outside of everything else. Just to see if I'm missing something.
+Lewis Benson: So I have a 350 pixel width almost div.
+Lewis Benson: This is nested inside of the div.
+Lewis Benson: This is really unexpected.
+Lewis Benson: I want to switch over to some CSS here just to make sure that I'm not misunderstanding something or
+Lewis Benson: put a test class on this. And go into our Styles object that contain
+Lewis Benson: This way we're not fighting with bootstrap.
+Lewis Benson: You have some bridge cap stuff on here.
+Lewis Benson: Remove this completely out of bootstrap.
+01:45:00
+Lewis Benson: That is really odd.
+Lewis Benson: It might have to have the Overflow hidden property on it. I apologize that this isn't working.
+Lewis Benson: I have the class on the wrong.
+Lewis Benson: I can do that here.
+Lewis Benson: Okay, there it goes.
+Lewis Benson: And then with this you also have to use the object out position to get it to go to the right spot. All right. So if this is set like that, I'm missing one property is why it wasn't working correctly. I would have thought boost drop would have had that built in. So I do apologize that that was not working the way we expected. We need one more class in here.
+Lewis Benson: And that is our overflow hidden.
+Lewis Benson: And here's the class name overflow hidden.
+Lewis Benson: I got that in style not class.
+Lewis Benson: So we have overflow hidden on the parent object fit fill on the child and when we look at this.
+Lewis Benson: What happened? I'm gonna typo.
+Lewis Benson: There we go. It won't take up any more space than what it needs to fit that left and right.
+Lewis Benson: we have no restriction on the height. So let's add that as well.
+Lewis Benson: Add that encode. So we have our width 350 pixels so I set the height. 350 pixels
+Lewis Benson: and we have our text on the bottom. with the smaller
+Lewis Benson: and I also need to put this back in my card.
+Lewis Benson: There we go.
+Lewis Benson: Okay, so this can't take up any more space because of the w-25 on it. But this seems to be working. Now when I shrink the size down.
+Lewis Benson: We still have that width set to it. So it takes off across the screen. So we'll have to set our width from this.
+Lewis Benson: And this isn't going to be very dynamic because different screen sizes are gonna have different widths. So we have to mess with this to get this to actually fit inside of their perfectly. The problem is I'm using this style.
+Lewis Benson: I'm going to try using the W property on this let's say w25.
+01:50:00
+Lewis Benson: This is a class. and H25
+Lewis Benson: We don't have any restriction on the height. I'll give it a Max height.
+Lewis Benson: of 500 pixels
+Lewis Benson: Let me put that that's a class name. It's not a style. Let me put this on the card.
+Lewis Benson: The card should have a width. So we have a width. We need a Max height
+Lewis Benson: 500 pixels
+Lewis Benson: We're still getting this spillover from this we'd have to do some more overflow work to get that to look right.
+Lewis Benson: this is where I just like to make my images the exact pixel size that I need them to be. And then I can stretch them and grow them based on whatever my needs are.
+Lewis Benson: Does anyone have any questions about how this is working and the purpose of the object fit is? It's not very clear. I know with my demonstration here, but it's supposed to. Make it take up exactly the size of its parent container.
+Lewis Benson: This might not be the best use case for it because I'm nested inside of a dynamically changing container. So I'd want to use this on something that isn't going to be changing the sizes on because whenever you use object fit you're supposed to hard set the pixels so they don't flex on you. But my container size keeps changing my width set to a dynamic size. It's just not really working that well inside of this card here. But if I had something like a profile picture up here in my nav bar. As long as my profile picture has never changing its sizes as of my math bar changes. It shouldn't change then that would be a good use case for an object fit just because that image is just gonna rest right there not try to flex and grow with the container.
+Lewis Benson: So hopefully that clears up what it's actually used for kind of going outside of the scope of that. By trying to place it inside of this card to make this work more dynamically probably should just stick with my fluid. size on this so I'm actually going to put that back on instead of this object fit. This is where you would use the fluid sizing for this. And then we'll get rid of this.
+Lewis Benson: I'll keep the Overflow hidden just because that's not going to hurt anything. And our card has a max height of 500 pixels. We don't need that anymore. We'll let this grow and Shrink as needed. And then again on smaller screen sizes. This will look a little better because we have the text on the bottom and the image on the top.
+Lewis Benson: and then if we did to create multiple cards this is a lot easier to do now because we have flexbox available to us for that. So I'm just going to create a container here. This is going to contain all of the flex cards. So I'll create a And inside of this main I'll go to class of d. Flex this will make it a row by default. So everything will be lined up left to right. And I'm going to take this card and I want to duplicate it in here a couple times. So here's one and I'm actually going to put a code comma in here so that this is easier to see. It's called new card. And then underneath of this we'll do another code comment. new card
+Lewis Benson: and remove that one I was copy and paste this again.
+Lewis Benson: And now we can see these are coming outside by side. I pasted a third card apparently.
+Lewis Benson: I still have my original one here.
+Lewis Benson: And this is set the flexbox. So it's going to make these on a row. Let me my screen a little wider here so we can see that. And it looks like they're pretty far apart. I'm assuming that they're taking up their full width. the div container goes the whole way across. So, let's see what we can do about that. That's because we have the w25 on the card But we should have that on the container instead.
+01:55:00
+Lewis Benson: There that looks a little better. I'll have to do the same thing to the other one.
+Lewis Benson: It's a little details like that that can kind of break things. Hopefully it made sense how I knew to move this up being this is 25% It's going to be based off of the parent container. In this case. The main is the parent for both of these since these are both siblings. because this is a 25% thing I should be able to fit for cards unless the space in between them is going to affect that. That will only allow three but if that's the case we can always adjust it. And there's our four cards.
+Lewis Benson: Next thing we want to do is put wrap on this. So that they'll actually spill down to the next line. I'm not sure if it's enabled by default. So I'm just going to try adding one more card. And it's not we're getting five cards there.
+Lewis Benson: but you could also just use the Grid system for your main that way you can set your actual columns. That actually might be an easier way to do it where you would say row. and then on each card you would place a column in the dash
+Lewis Benson: what do four? Sorry three if we want four.
+Lewis Benson: so column md3
+Lewis Benson: we can scroll down. We see the new card comment that makes it easy to find column and B3.
+Lewis Benson: There we go. Does anyone have any questions about that?
+Lewis Benson: So we have our two column cards on widescreens. and then it switches to a stacked column with four cross that way and I could add some more in here if I wanted to change these two. six or even MD 12 on mobile sizes so that these are all stacked. That's another option as well.
+Lewis Benson: For the assignment. It's going to be pretty much the same as yesterday as assignment. Let me get that opened up. The only difference is I want you to utilize the utility classes as much as possible use the flexbox try to lay some things out using this deflects so that you can implement the rows and columns, for your primary layout, but try to lay out the card itself using the flexbox. You could also choose to use grid if you want I didn't go over that one, but feel free to use that in place if you're more comfortable with the grid system. That is in. position I believe they're not position.
+Lewis Benson: It might be under Gregory. I'm just going to type in Grid.
+Lewis Benson: Layout grid this is a different grid. you do have access to the normal CSS grid system. I'd have to look for I think it's just grid.
+Lewis Benson: That's bullet wrong.
+Lewis Benson: They're using it here.
+Lewis Benson: Not sure where it's at and the actual docs though. We have to dig through that to find it. I've seen it earlier. And I already lost my place on it. Maybe it wasn't Flex.
+Lewis Benson: There's a lot of stuff in there.
+Lewis Benson: CSS grid here it is.
+Lewis Benson: So it's just the class called grid. And then you can set it up using. four G column six, so if you prefer to use this you can for the primary layout of all your cards. so it actually looks pretty simple to use so If you want to do that I have at the docs right here as far as the assignment goes, let me get that back up.
+02:00:00
+Lewis Benson: This is the day for assignment.
+Lewis Benson: I got the right one three day for you.
+Lewis Benson: All right, so you want to make sure you have your
+Lewis Benson: Sorry, you want to make sure you have your css whenever you're overriding any Styles make sure that's linked properly. Make sure you have your bootstrap link properly. and it looks like there's
+Lewis Benson: yeah, this is it. So the structure of your page can be built out similar to your product page from yesterday's assignment. We get the repson build it out again modify and adjust the responsive design for you learn today. So what we mean by this is just don't copy and paste your old Write out new code each time. That way you get used to finding what you need for your documentation and actually building the stuff out because if you keep on just copying and pasting the old stuff, you're not going to get that muscle memory, which is very important whenever you are trying to do this on your own. I'm using this in your own projects. If you're just going to start copying and pasting your code, then it's not good in the long run. It'll only hurt yourself. So. Make sure you're actually building these out. Let me open up the rubric.
+Lewis Benson: So this is integrated the majority of what we went into today. I'm not expecting that you'll use every single element that I went over today because I did use quite a few. but you definitely want to use as many utility things as you can so make sure using your margins your paddings Implement that D Flex if you want to put in the grid from CSS do that and if you want to use your grid that we went over yesterday with the bootstrap grid system Implement that looking at this here. All the necessary files are created all bootstrap elements introduced this week were used attempted to be used. We only briefly went over like the spanner. I'm not worried if you don't have a spinner on your page because we don't have any sort of. things that would use a spinner
+Lewis Benson: So this one would be hard to implement unless you just want to throw a random spinner on your page somewhere go for it. But if you don't have it, you're not going to get docked for not having a spinner just because it doesn't really make a lot of sense. the card navbar the alert the badge just get as many as you can in there.
+Lewis Benson: And all content being relevant means is that you're just not putting a lot of gibberish on the page or making it look like kind of a professional layout. So product one, maybe throw a little bit of some in there but have some real content too to kind of give it some reference on what you're actually trying to build. So if you're building a portfolio have a couple pieces on there that represent a portfolio if you're building a Blog maybe have a Blog title so that's obvious with that layout is for that site. And if you're building a product page make it kind of look like a product page have a couple things on there that would indicate that hey this is a product page. That's what you're looking at right now. That's what we mean by this content here. Does anyone have any questions about that any questions about the assignment?
+Lewis Benson: Yeah, so the most expecting the assignment to look similar to what I have here at minimum. It doesn't have to look pretty it just has to.
+Lewis Benson: Allow you to understand how these components work and interact with each other. Maybe for this one here, I could put some padding on the top of this or merging on the top of this. It's not pushed up against that after that. This would be good to submit where it's sitting right now. something along them lines
+Lewis Benson: The main thing is we're getting comfortable with everything. And I've gone into this third hour quite a bit. So I'm going to start the 10 minute timer take your break if you need it, and then you can get started on the assignment. And again if anyone has any questions don't hesitate to ask if you're stuck on any of these components we can try to work through it. I'm gonna look into this object fit thing a little more so I can do a better demo in the future with that. I'll probably go over it again tomorrow just to make sure that that's fully understood because that was a little bit scuff trying to get that in there and make it look good. When I've used it in the past with CSS, I didn't have those difficulties. It actually looked really good when it was implemented. So I want to see what went wrong there with that. It should look a lot like this. Okay, so let me start the timer.
+02:05:00
+Lewis Benson: And I'll see you in 10 minutes.
+02:15:00
+Lewis Benson: Okay, welcome back everybody.
+Lewis Benson: And I found the problem. I redid it with CSS and muscle memory kicked in I never put a heighten a width on my image. So with bootstrap, it's the same concept. I'll show you what I did here. It's actually this image here on the bottom left for anyone who's interested in seeing how this works.
+Lewis Benson: So let me bring up my code.
+Lewis Benson: So whenever you're using object fit. on the image, you have to take up a hundred percent of the height and width of the container and the container you're setting the height and width manually with pixels. So I use 200 pixels for height and width here. And I set the image to be a hundred percent of the container and this is why it wasn't working is because the image never had its heightened with set previously.
+Lewis Benson: So I'll just go through these real quick we have cover. Which this is actually cropping the image a little bit. So the outside edges are cut. We have contain.
+02:20:00
+Lewis Benson: the image is a little bit taller than the Container so it's also cropping that down a little bit. There's fill.
+Lewis Benson: And I'm trying to remember the rest of them. I go to my CSS. I do object fit now. It's contained cover fill and none. and we also have scaled down to So that one's a useful one. If your image is really large and you want to maintain your aspect ratio. You can use that scale down. That must not be a real class because you can see it's stretched now. Let me see how that works with.
+Lewis Benson: bootstrap That would be a utility.
+Lewis Benson: object fit it's just scale.
+Lewis Benson: object fit scale and it just kind of shrinks it down a little bit. Does anyone have any questions about that or why it wasn't working before now Anything along them it still wouldn't be a good fit for these cards because the card sizing is changing dynamically. So this container it can't maintain 200 pixels because container is going to change its size. So that wouldn't be a good use case for it there. But if I were to put this somewhere static on the page, maybe a user profile picture on a Portfolio you have a big image on one side and some text on the other that could be a good use for Something that isn't going to be changing.
+Lewis Benson: Instead of changing the image size. You always want to change your layout to make it work.
+Lewis Benson: But yeah Classes to remember when you're using object fit make sure you have a container. with a set pixel height and width and you have an image. With the height and width set to 100% of its container.
+Lewis Benson: Maybe I could make that work using. I'll try it real quick.
+Lewis Benson: Never done it with a dynamic size before.
+Lewis Benson: So this is the one I applied it on.
+Lewis Benson: Use a different image for that one.
+Lewis Benson: So that doesn't look terrible. but you can see how the
+Lewis Benson: behaving a little bit weird there. So I guess you can use it in the card. You just have to kind of set it up for that. Maybe if I set the height and width
+Lewis Benson: now it got work. So yeah, that's as good as that would get on a card.
+Lewis Benson: And does anyone have any questions about what we're doing here in this assignment?
+Lewis Benson: And I do apologize for forgetting that that's one of those things where whenever I'm switching over to a framework like bootstrap. I have to go ahead of time and work with this stuff because I usually don't use bootstrap for my styling on my own projects. I typically just use CSS. Bootstraps good if you're trying to put a lot of stuff out quickly, but when you're working with a designer, it's hard to use something like bootstrap because They want certain things set to exact pixel sizes and bootstrap isn't the best for full customization
+02:25:00
+Lewis Benson: Also quiet today again.
+Umar Z: I was gonna say that yeah, I feel the same thing that just you are working with when we are working with bootstrap. Yes, it gives you some power but then it gives you limitations as well. So I was trying to just find a way around with CFS, because that's what we're doing in the beginning and I'm still more comfortable with doing it in CFS. So yeah bootstrap. Is a thing but I think is there a Best practice in Market that you will be following in general doing it CSS or JavaScript bootstrap may not be that handy in Practical environment.
+Lewis Benson: so I have a lot of connections in the industry and I've actually asked that exact question most of them to see what kind of tools they're using. There are some that are using front-end Frameworks. Most of them are using Tailwind right now. Because they're using a JavaScript framework and it works really well with that. And it's a little bit more customizable than bootstrap is. I do know of at least two people right now that are using the default vanilla bootstrap 5. But there are only building things they're freelance developers. So they're only building things for small businesses. And they don't work with a designer or anything like that. So as a freelancer, it's definitely a good tool because it allows you to.
+Lewis Benson: Maximize your time if you need to produce something quickly for somebody because your time is valuable when you're working with small businesses. You're not getting paid by the hour. You're getting paid for the project. You definitely want to use something like bootstrap to knock it out quickly.
+Umar Z: So what I feel they're moving forward whatever we learned with CSS darling and I think it's going to be integrated. That's what Maybe I'm wrong, but is gonna be integrated with JavaScript and I think the win we will not be using bootstrap that much am I correct or not?
+Lewis Benson: You can use bootstrap with JavaScript because typically with JavaScript when you're applying Styles, you just use JavaScript to give something a class name. So what you would do for this div here, I could give this an ID. And I'm just going to call it an idea of find me. So I'd use JavaScript to look for this div. And once I find it I can tell JavaScript give this div a class of D flex and a Class A Flex column. And if I have my bootstrap link to my HTML, it'll apply the bootstrap styles using JavaScript to do it. And it would work the same way if I was using vanilla CSS and here I would have to create my Styles so For example, if I wanted to just make something disappear I could say hide. this element
+Lewis Benson: and then set this display. none And then in my JavaScript, I would apply that class. Let's say I wanted to hide this div. I would just say put that class on there using JavaScript and it just disappears.
+Lewis Benson: So it works the same way and I can do the exact same thing with bootstrap. I could just say d none. And it would disappear the same.
+Umar Z: Of solutions if you can help me I've done most of the thing today following you but I'm still stuck with the picture sizing. I want you to take a look at it. I don't know where I'm going wrong.
+Lewis Benson: Yeah, and that's probably one of the more difficult things to deal with so I'll definitely help you with that.
+Lewis Benson: Yeah, I mean if you're not fully comfortable with bootstrap, I wouldn't fully dismiss it. Just because you may need it occasionally. My preference is to use CSS or SAS, depending on how I'm feeling that day other one's good. You'll be able to take the screen share now.
+02:30:00
+Umar Z: Yeah. I'm just trying to put both screen on one page because I'm extending the screen so you won't be able to see the second screen. Hold on. Give me a minute.
+Lewis Benson: Yep. Take your time.
+Umar Z: and so I'll keep myself unmuted and then it's going to close the window. Let me just
+Umar Z: so, okay, so extend it for The presentation so this is how it's looking right now. You see that the bottom right?
+Lewis Benson: Yeah. I noticed you have the class image fluid instead of IMG fluid. Maybe that's the
+Umar Z: okay. Hold on. Let me know that. And Telescope 2017 right here, okay. I
+Umar Z: so now it went down to 100 pixels. Okay, so you okay?
+Lewis Benson: Yep.
+Lewis Benson: see how it sits there if you don't have a width set to it.
+Umar Z: yeah, So every time because the random picture appears just the size still changes. So, how can you just mix it? So you said we need to for some height
+Lewis Benson: Or set the height to height and width both where you have the 300 pixels.
+Umar Z: Okay.
+Lewis Benson: And then that way your container never changes sizes.
+Lewis Benson: Did you put a semicolon in?
+Umar Z: yeah, I do but I think I miss you. Okay. I
+Umar Z: didn't
+Lewis Benson: So that should turn that into a square. and then on your image give it the w100 and 100
+Umar Z: I
+Lewis Benson: On your class Where you have image fluid?
+Umar Z: hear
+Lewis Benson: where you have your image fluid class how to add two more classes 100
+Umar Z: I've been in this thing right like you looking okay.
+Lewis Benson: yeah. You don't need semicolons, though.
+Umar Z: Okay. what would it be h? Ash 100 and…
+Lewis Benson: Yep, - 100.
+Umar Z: ww.com, okay.
+Umar Z: Okay analysis screen, okay.
+Lewis Benson: Yeah, and then if you want to replace your image fluid with that object fit that will actually work now.
+Lewis Benson: And then you can try switching between object fit Dash contain. Because it's not a plot yet.
+Umar Z: Right here. So what we want to do, sorry.
+Lewis Benson: Set it to we'll try cover object fit dash cover. Yeah.
+Umar Z: Nashville, okay.
+02:35:00
+Umar Z: I think it's working you.
+Lewis Benson: I think so. okay, that one there would be a see if you can find an image that is
+Umar Z: I think the size is now saying. What do you want me to find?
+Lewis Benson: One that looks like it might be cropped. Just to make sure I'm not sure…
+Umar Z: Okay, how Yeah.
+Lewis Benson: how because all these images they look really good to me. I don't see any.
+Umar Z: so you want me to pick some other category from here?
+Lewis Benson: Yeah, maybe another category a part like a people category.
+Umar Z: Okay and see what you mean it. Okay.
+Lewis Benson: Yeah, just so we can make sure that it's scaling it. Yeah. Yeah,…
+Umar Z: However, even with this and you can't really tell.
+Lewis Benson: you can't tell it could just be good. I just wanted to make sure that it was sitting properly and working properly. Maybe another refresh see if we can get a single individual in there.
+Lewis Benson: It's got to be working correctly everything in here looks good.
+Lewis Benson: Yeah, so based on that one where the top of her head was cropped a little bit. I think it's working correctly.
+Umar Z: you so Mother Mary I think I need to apply that the row or column thing. So it comes here instead of being at the bottom.
+Umar Z: The text. I mean, it has to be here on the side, right? yes,…
+Lewis Benson: Yeah, you want the text on the side? So we look at your containers.
+Umar Z: please because
+Umar Z: let me just expand it. Maybe it knows. it stays at the ball. Okay?
+Lewis Benson: Yeah, so you have your div with the image inside it? That needs to be a sibling to your text, which it looks like you have an H2 and a P tag. you have to put those inside of a wrapper? You have the comment for the wrapper, but you don't actually have the div there for it.
+Umar Z: this one
+Lewis Benson: the other one Yes, see how your H2 and your P tag are siblings to the div.
+Umar Z: yes.
+Lewis Benson: They need to be contained so you only have one or two children inside of your deflects. currently
+Umar Z: Just so the P has to go. I'm kind of lost another day.
+Lewis Benson: You just need another div. Yeah and it's gonna wrap the H2 and the P tag together. And maybe your badge as well.
+Umar Z: Okay, I don't think.
+Lewis Benson: You might want to include that. inside this div You just want to contain everything in one spot is the idea.
+Umar Z: So bad.
+Lewis Benson: all of the stuff that you want in the right column needs to be in one.
+Umar Z: If it has to go down. Right here.
+Lewis Benson: Yeah.
+Lewis Benson: Okay, so, where is that deflect sitting in relation to these now? You have it set as a column currently.
+Lewis Benson: What you could do is say deflects Dash column, and then you could do now it's online 32.
+Umar Z: this
+Lewis Benson: You could add a second class there.
+Umar Z: okay.
+Lewis Benson: And it would be Flex Dash row. That way when you're on a larger screen size it goes to the row.
+Umar Z: So okay. Let's see.
+Umar Z: I open.
+Umar Z: But now it's cropping the image, right? Or whatever. It's retarding in a very hard way.
+Lewis Benson: Yeah, it is resizing it in an odd way. What might correct that also is putting a Max width using the column system. on your card So that would be on the container w20 instead of w 20. you could put
+Lewis Benson: you could put row on that deflects Main. Yeah.
+Umar Z: Right here. D Flex Dash roll
+Lewis Benson: just row.
+Umar Z: Okay.
+Lewis Benson: And then you could make your card into a column. using the Node would be online 27.
+Umar Z: right
+Lewis Benson: That's the start of your card.
+Umar Z: Of 27, 27 Okay,…
+Lewis Benson: Yeah. Yeah.
+Umar Z: so You want me to make a container? That's what you mean?
+Lewis Benson: column like c o l dash six maybe four or whatever size instead of the w20.
+02:40:00
+Umar Z: you want me to remove w20? I'll hold on.
+Lewis Benson: Yeah.
+Umar Z: What was there deflects row?
+Lewis Benson: You had it almost all correct? You just had to delete w20. Yep. Yeah,…
+Umar Z: Okay row row?
+Lewis Benson: so instead of deflects do row.
+Umar Z: also you want me to remove D Flex?
+Lewis Benson: This would just be for the bootstrap grid system.
+Umar Z: So class would be just roll no d flat. I see.
+Lewis Benson: Correct.
+Umar Z: Okay. Let me just
+Lewis Benson: Yeah, sorry that wasn't clear. So that would be the row and then you would have your cards as a column. Instead of w20 you'll do. whatever number
+Umar Z: try to
+Lewis Benson: and then you'll need your quotes closing that out.
+Umar Z: on your uncle Soldier machine was still
+Umar Z: Okay, it's like a very tiny town.
+Lewis Benson: Okay.
+Umar Z: Something is going on something.
+Lewis Benson: Yeah, so I kind of expected it to do some of that. We'll have to look and see where is your image with being declared at?
+Umar Z: AR thank you.
+Umar Z: something you But they said no,…
+Lewis Benson: Because it is shrinking.
+Umar Z: that's all I don't know. Why is it here? We even need it here. I don't know why you do is in CSS. not
+Lewis Benson: You don't need to do that in CSS, whenever you create a nav it's already set to display flex and all that.
+Lewis Benson: I think I did that with my UL earlier.
+Umar Z: I think maybe not just trying to follow along with something. Okay?
+Lewis Benson: Yeah.
+Umar Z: I did something to the picture. it was
+Lewis Benson: It just to give a different picture. Because it hed. Okay, so We'll look at the width of the image in the image parent. And you have it set to 300 pixels. Yeah, that should be working.
+Umar Z: right here.
+Lewis Benson: What about its parent? It's set to flex column.
+Lewis Benson: I don't see anything. That should be affecting the width of that image though.
+Lewis Benson: Unless the text is taking up that much more space than it should be.
+Umar Z: 
+Umar Z: You wanted to Hold on you something this? Just to check out.
+Umar Z: Now I got a little bit.
+Lewis Benson: Give it a couple refreshes. if it changes the
+Umar Z: I mean a little bit more.
+Lewis Benson: So this is another thing we can do here. Let's go back to
+Lewis Benson: the code here we have those two parents. So the width you have set to 300 pixels on your style.
+Umar Z: you can increase it or
+Lewis Benson: What else if you increase it, it probably won't do much try 600 pixels. It's probably not going to do much.
+Umar Z: not that much.
+Lewis Benson: Yeah, so it's actually scaling it down. So whenever you would switch to your other layout it's probably going to
+Umar Z: it's something to do with it high turned with hundred this thing.
+Lewis Benson: No, it has nothing to do with that. I actually ran into the same issue when I was doing the demo. It's scaling it. If you could make this switch to a row real quick by changing your screen size. You'll see what I mean. It did change it to 600 pixels. You just can't see it right now. You have to go smaller to get it to.
+Umar Z: Yeah, okay.
+Lewis Benson: Shrink it down a little more.
+Umar Z: Yeah, I don't even have a mom. I mean I need a mouse. I know it's raining. It's been hard time through control.
+Lewis Benson: I see.
+Umar Z: Yeah, I'm just trying to do it with the okay.
+Lewis Benson: Yeah, how that's now really wide in your text isn't really wide. The part of the problem is as I was mentioning earlier is when we hard set the width on our container. It doesn't work very well with bootstrap because it's not Dynamic anymore. But bootstrap still trying to be dynamic. So if we could set Dynamic wits on this that would probably solve it. So if you go to that div remove the style off of it completely.
+02:45:00
+Umar Z: it's like
+Lewis Benson: 34 That whole style attribute. We'll just take the whole thing off.
+Umar Z: Okay.
+Lewis Benson: And see how it sits there just by default. without the style attribute
+Umar Z: probability
+Lewis Benson: you took everything.
+Umar Z: Yeah, I removed the track.
+Lewis Benson: All right. So now it's taking up half of the
+Umar Z: Yes taking a little shape here. Let me just expand this thing. Half of it. Yes, you're right. Let me just okay.
+Lewis Benson: yeah. is
+Umar Z: What happens when we shrink it a little bit?
+Umar Z: okay those okay, this is
+Lewis Benson: yeah, so there's a couple spots where it's not perfect. And if you want to make it more perfect, that's where you have to use those breakpoints to change it early. And you can do something on your You could say MD - 75. or something image on the div, It's the images parent. Yeah, you could give this a class name of something along the lines of MD -75 something like that. So it takes up more space or less space if you want to go smaller number with it. And then whenever you get onto that small screen size, it should change the entire thing. You'll have to shrink it down to get the effect.
+Lewis Benson: Because it's switching to the column on medium screen. You won't see it.
+Lewis Benson: So you might have to change it sooner. So maybe wlg.
+Lewis Benson: instead of wmd
+Lewis Benson: and yeah, it doesn't really seem like it's fixing that issue.
+Lewis Benson: So I guess the next one would be your card size if you change the card size on this screen size where you have call for.
+Lewis Benson: You could do call.
+Umar Z: it's going to Biggers or…
+Lewis Benson: Go bigger by default go like call eight or…
+Umar Z: smaller
+Lewis Benson: something. And then do a second class like call MD. - 4
+Umar Z: right here.
+Lewis Benson: right beside the call 8
+Umar Z: And so call. and B ash what it
+Lewis Benson: A smaller number like a four or three? And what this will do is when you're on smaller screen sizes, it will apply the smaller one. But when you're on larger screen sizes, I got that backwards when you're on smaller screen sizes. It'll do the column eight. When you're on larger screen sizes, it will apply the column for.
+Umar Z: Was just
+Lewis Benson: And then maybe change that column eight to the smaller one. I think I inverted it on you there. So collimate would be like column 4 and then call them MD would be the bigger number. I always mix these up because I'm used to doing. media queries which are opposite
+Lewis Benson: Yeah, that's what I was trying to get you to do.
+Lewis Benson: And then trick it down and see how it So That's where you need it to be larger is when you're on that smaller screen.
+Lewis Benson: Christ switching that four to a 12 Yeah.
+Umar Z: right here.
+Lewis Benson: And then go to the small screen size.
+Lewis Benson: So that's going to take up the whole screen now on small screens.
+Umar Z: So this is the right? Because it's under it and…
+Lewis Benson: Yeah, so I told it.
+Umar Z: the picture has expanded to the whole screen almost.
+Lewis Benson: Yeah, so with a column of eight it's always going to be a vertical version. the largest you could go with call MD would be six. If you want to have this be side-by-side your cards. You have to go six four or…
+02:50:00
+Umar Z: call
+Lewis Benson: three for your call MD.
+Umar Z: okay.
+Lewis Benson: Unless you just want to have your cards all vertical all the time. whenever you have multiple cards, I mean
+Umar Z: you so with these values of can I just duplicate them now? You think it enough these other side? I think I need to we had to go there already. So let me just copy this you're gonna see how it goes.
+Lewis Benson: Before you do, you're gonna be making a column instead of a row. Because your column MD is set to 8. It has to be six or under in order to have a row.
+Umar Z: Okay. You want me to drop this value a little bit? Thanks. Yeah divides into tools.
+Lewis Benson: Yeah, at least down to a six.
+Lewis Benson: Yeah, that way you can at least have two side by side.
+Umar Z: because sections Okay.
+Lewis Benson: And you shouldn't see anything change.
+Lewis Benson: I guess it we have to sorry.
+Umar Z: let it
+Lewis Benson: And now whenever you duplicate this put a couple comments in or at least one comment. And so where the top of your card is.
+Umar Z: Good.
+Lewis Benson: So to go right above line 27 you can put a comment.
+Lewis Benson: And just say top of card. You want to do this as a code comment? I just gonna type it first, okay.
+Umar Z: Hey, I know I'm just gonna do. Because what I do. What happened?
+Lewis Benson: Yeah, that just makes it easier to work with your code because you'll be able to find that whenever you have multiple divs.
+Umar Z: I can just copy now from here, right? So. comment Okay,…
+Lewis Benson: Copy the comment, too.
+Umar Z: And we are going up bad including doctor today. I think.
+Lewis Benson: You're going to go all the way down to line 54.
+Umar Z: Line 54, okay.
+Lewis Benson: Yep. If you look at your main. That's the parent. of the card itself
+Umar Z: Yeah, that's correct. Okay, I understand that. Okay.
+Umar Z: I told the credit key suggestion Let's face you
+Umar Z: okay, so what I'm gonna do
+Umar Z: what is that? What kind of white? No break in it.
+Lewis Benson: I have no idea.
+Umar Z: And so why is it changing the site now because of the picture size?
+Lewis Benson: Yeah, the picture size is so much different. and you can't put it a hard coded height on it…
+Umar Z: Okay.
+Lewis Benson: because of that issue with the
+Lewis Benson: Yeah. but we
+Umar Z: So, how can we control that symmetry of the website then because of course we're not gonna using these random pictures with those pictures will be static of course or…
+Lewis Benson: Yeah, also the other thing is…
+Umar Z: they'll stay that so that could be
+Lewis Benson: if you get into a situation where you do have Dynamic images coming in, let's say I actually build a campsite review website one time and…
+Umar Z: 
+Lewis Benson: I made it so users can upload images of the campsites for it's kind of like I called it Yelp camp. But yeah, basically they would leave these images on there and they were all different sizes. And that's where I used the object. to fix that, but I was able to hard code my Heights on my parent container where you currently have wlg 75 I had the pixel wet set there so that it never changed. And that solved that issue. With what I see here, you might be able to do something like that with just the height.
+Umar Z: right here.
+Lewis Benson: Yeah, if you just put a style and a height on that. It'll be outside the class. Yeah.
+02:55:00
+Umar Z: Yeah.
+Lewis Benson: But you'll have to see how that behaves whenever you switch it to column. Yeah.
+Umar Z: So style hike you said? Okay.
+Umar Z: Can you use great content or something? nobody's all…
+Lewis Benson: Yeah,…
+Umar Z: if we use fit content, they still gonna be dynamic and
+Lewis Benson: it's too Dynamic. You'll have to put an actual pixel value in 3 400 pixels somewhere in there.
+Umar Z: Here, what do you want me to like reentry pixels or?
+Umar Z: Okay.
+Lewis Benson: It didn't do anything. you also have the wlg 75 on there still.
+Umar Z: you want me to remove it?
+Lewis Benson: yeah, That'll probably override your style. Because they're using important.
+Umar Z: So you want me to remove the whole thing with this whole class, right? Okay,…
+Lewis Benson: Yeah, just remove the class.
+Umar Z: let's see.
+Umar Z: yes. no justice.
+Lewis Benson: it might be because your other card you only applied just to one card.
+Umar Z: ice yeah. Okay, I think.
+Umar Z: image problem but
+Umar Z: Yeah.
+Lewis Benson: So if you just want to copy that whole div you can overwrite this one with it.
+Umar Z: Yeah.
+Umar Z: height. 300
+Umar Z: There you go. Yeah, nice looking better. I have a bit of Hosting.
+Lewis Benson: Yeah. right And so now…
+Umar Z: I like
+Lewis Benson: what this is doing. it's actually setting the Aspect ratio to always be a height of 300 pixels on your object fit.
+Umar Z: Yes.
+Umar Z: mmm
+Lewis Benson: And that's why it's cropping that image a little bit on the one side there.
+Umar Z: Yeah, this one who seems like it's Gregory. You can't really talk about this what though?
+Lewis Benson: Right, and there is a solution for that as well. And I don't think there's a bootstrap class for it, but you could set the center property on it, but it looks like we could slide that over a little bit too on certain screen sizes. Where is that set at? It doesn't look like it's set.
+Umar Z: What are we looking for? Sorry.
+Lewis Benson: On that same div where you have the height. Of put a class back on that again and…
+Umar Z: Okay right here.
+Lewis Benson: try doing a W 50.
+Lewis Benson: To see if it takes up 50% of the container.
+Lewis Benson: He lost the S on Style.
+Umar Z: Yeah, what happened in? Okay, they go to the students.
+Lewis Benson: Yeah, it didn't give you 50, but it did give it a little bit.
+Umar Z: Gallons smallest on bigger screens, it looks better but on smallest being here certainly this one. is too compressed whether you
+Lewis Benson: I'll try w100.
+Lewis Benson: I don't think that'll work. But just in case.
+Umar Z: Also, I have to apply on the other one too.
+Lewis Benson: Etc
+Umar Z: Actually, I'm not just applying on one of the class
+Lewis Benson: Yeah.
+Lewis Benson: I'm actually surprised that helped.
+Lewis Benson: Yeah, the bootstrap styles are So weird when you look at the code in there, it's hard to follow because they wrote it all with sass. And then it gets Trent converted.
+Umar Z: he looks nice.
+Lewis Benson: Yeah, that doesn't look too bad.
+Lewis Benson: Is anybody else have any questions?
+Lewis Benson: We are running past the class time. I'm gonna stop the recording so it doesn't get any longer. But I'm glad that you
+Umar Z: Yeah, thank you so much and…
+Lewis Benson: Yeah, I'm glad we got to do this…
+Umar Z: didn't really help a lot.
+Lewis Benson: because your little demo here was we got to use the object fit and make it work and everything. So
+03:00:00
+Umar Z: Yeah, when I write it everything with my own hands and you see me for me to remember and yeah.
+Meeting ended after 03:00:07 👋

@@ -1,0 +1,401 @@
+﻿nia-amar-wfe (2023-12-01 19:30 GMT-5) - Transcript
+Attendees
+Brian Kimbrow, Daniel Perez, Elgin Sharper, Gregory Robertson Jr, Iris Coats, Lewis Benson, Lewis Benson's Presentation, Ryan Arnold, Umar Z
+Transcript
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.
+Lewis Benson: And welcome to week 6 day 5. We're gonna have our JavaScript review. I want to cover. Basically everything we covered this week and I'm going to do that by going through this week's assignments and just kind of running through them and explaining how I would maybe approach some of this stuff. Maybe it'll help clear up any questions or issues. You were running into while working on these assignments. I haven't seen any questions coming through the slack or anything so I'm assuming that it might be going well, but just in case anyone's feeling a little reluctant. I'm just going to go ahead and run through some of this stuff. I actually created a GitHub organization here so that I can make new repos without putting my Groups home blast so I'll start off exactly the way we would do this as if we were running through this normal. So for this assignment, I'm going to copy this name here.
+Lewis Benson: We're going to create a new Repository.
+Lewis Benson: I'm going to create this repository called Java Script logic Dom. We'll do a public repository and I'm going to include a readme so that I can clone this.
+Lewis Benson: And again, this is the week six day one assignment that I'm just kind of run through here. I'm gonna grab my little link here so I can clone this. And I created a new folder. This is going to be my projects folder. This is where all of my projects are going to exist. So this is where I'm going to clone it to. Open get bash here. And I'll just do my git Shift insert to paste that that's the windows thing. Sometimes you have to use shift insert for paste. And I'm going to run that through. Okay, so there's the folder I'm gonna CD into it.
+Lewis Benson: And codes space period open vs code.
+Lewis Benson: And let's get started. We're going to create an index.html. And a script.js. So that's going to be the same on every assignment this week.
+Lewis Benson: It's always going to be the same file structure. And I just want to get my proof of life before I do anything else.
+Lewis Benson: And then in the body I put my script. I always mess up the import on this.
+Lewis Benson: And I'll put just a little bit of content here.
+Lewis Benson: So we can see that it's working on the page.
+Lewis Benson: Okay, that seems to be looking good. We did this part. We have an index HTML script in the index. We're going to create a div with a unique ID that's gonna serve as a container for our Dynamic output. So go to the step next.
+Lewis Benson: And we'll create a div.
+Lewis Benson: And we'll give it an ID. of content will work. You can call these IDs whatever you want unless it specifies otherwise.
+Lewis Benson: we're gonna add a text input field in a button to facilitate user interaction.
+Lewis Benson: I'm going to put this underneath of the content Place it here. Whenever you have an input field, you always need to have a label. So I'll put the label in first. and this is going to be for my user input and under the label put an input here.
+Lewis Benson: And this is user input and the ID will be user input as well.
+Lewis Benson: And let's see our output on that. Okay looks good. I click on this button that looks like it's all wired up correctly. So that is all working correctly. let's see the instructions for the next step and the script.js write code to create new paragraph elements and append them to the container with Dynamic content based on user input and logic. So there's a few ways to approach this. I know that I'm going to be having stuff happen whenever I click on the button, so I definitely want to make this into a function. So let's start with that.
+00:05:00
+Lewis Benson: I will create a new function. and this is basically just going to handle all of the Output messages, so I'm actually going to call this function display output. And it's going to take in a string. So I'll put in message there as my parameter. And we want to create a paragraph element.
+Lewis Benson: And this is going to equal document dot create element. And we're going to pass in the paragraph element so that it knows which element to create. It does match my variable name, but it doesn't have to match the variable name. I just choose to do that. and then for the content of the message, He dot I'm going to use text content. I've been using intertext. I just want to remind you that we also have this. property available and I'm going to assign this to the parameter coming into the function message. So whenever I invoke this function, that's when the message will be generated. We don't know what it's going to be until we actually call the function. So if I wanted to I could invoke this function now. in my
+Lewis Benson: they call display output and We Know It Takes in a string.
+Lewis Benson: And I forgot to append this so let me add that last bit there before I can append it. I actually need to select my container. So I called my div content. So let me go ahead and grab that.
+Lewis Benson: I'll call this very old message area because it is representing the area that all the messages will appear. And I'm going to use Query selector. with hashtag Content what's the name of the ID? And I can see that right here. I'm using the same ID as this So now that we have the Message area selected. I did this in global scope in case I need it somewhere else as well. Now that it's selected. I'm going to go ahead and a penchild message area Dot pinned child and we're going to pass in the PA element. Let's try that again. And We get our output there that says hello. So the function is working correctly. Let's take a look at the next step.
+Lewis Benson: Implement function that triggers when the button is clicked Use comparison operators. So I need to put a button and I forgot to do that part and I'm just gonna make this kind of a little guess the number game that's pretty simple and it'll work for what we're doing here. So let's put in my button first.
+Lewis Benson: And I'm just gonna query select that button.
+Lewis Benson: And it's just an element. I don't have a class name. I don't have an ID. So I'm just gonna pass in the element name to actually select the button. Now that it's selected. I'm going to add an event listener. And we are going to pass in the event click as the first parameter and we want to call back function for our second parameters and we'll The comma tells me that I'm gonna have two parameters and then I'm going to use the classic function declaration here just to remind you that you can do this instead of the arrow function. And it looks like We have our parameter block. We do not have a function name because this is an anonymous function. And then I'm going to make this multiple lines again. I could do this as an arrow function. It would work the same. And when I click on the button. What I want to do at that time. Is whatever is in my input I want to place.
+Lewis Benson: In this function invocation as an argument, so I actually need to select my input as well notice. I'm putting all my variables at the top of the page. This is a very common practice.
+Lewis Benson: So my input element will be document Dot. query selector and I gave this an Let me check that It is called So I'll put user Dash and put here. We are selecting the ID for user input. So now I have access to the element which means I have access to its value. So what I'm going to do first is I'm just going to console.log. To make sure this is working correctly input element value.
+00:10:00
+Lewis Benson: And then I'm going to type in my input area and click on the button. And it seems to be working correctly. I do have the output of my input area. I'm going to give this a little bit of text. I don't like that little tiny button there. I want a little bit of content in my button.
+Lewis Benson: We'll just say submit.
+Lewis Benson: That looks a little better. So now that I have the access to the value. what I'm going to do now is I'm actually going to call the function display output. And I'm going to pass in. my input element dot value as the parameter and this will be the string that's available inside of that area So if I type something in here? We see that come up top. For the next part of this assignment though. It says to use these comparison operators. So I need to make something that's actually checking against in order to make this complete. So again I said I was going to use a guessum number game so to do that. What I want to do is have conditional inputs here. So first thing I want to check.
+Lewis Benson: input element dot value is first I want to determine I guess is what my number is going to be. I'm just gonna go with 12 as my number. So if the value is strictly equal to 12. Then that's where we're going to put.
+Lewis Benson: the actual output here and I'm also going to put another message with this. I'll say display output. and I was going to put a string here and say You are correct.
+Lewis Benson: Which I want to do. I could do this as wanna concatenated obviously. Yeah, this is fine. I'll have your correct if it's correct. else if
+Lewis Benson: I forgot my conditional here else if input element dot value is less than 12.
+Lewis Benson: Then I will say.
+Lewis Benson: I'll do both of these again, but I'll have them separate message.
+Lewis Benson: And we'll say hi.
+Lewis Benson: And then we'll do the same thing. For lower, but we actually don't need to put any logic in because it's the only condition left that we could possibly check for. If it's not less than 12 and it's not equal to 12, then it has to be greater than 12. Unless it's not a number. So I'll show that condition and I'll show you what I mean, and that's something we can also check for. If we wanted to I could also just use and then another else. Perhaps I'll do it this way first and then I'll show you what I'm talking about. so display output and we'll say
+Lewis Benson: lower
+Lewis Benson: and I'll show you that little bit of a bug. So if we put three in here we get higher we put 14 in here we get lower. If I put G in here I get lower. So that's the bug I'm talking about. It shouldn't accept letters. So what we can do instead of using this else right here. we could make this an else if
+Lewis Benson: And we'll just steal this logic from in Reverse it. If it's greater than 12 say lower and then we can do our else. and say
+Lewis Benson: invalid input
+Lewis Benson: I'm guessing number something like that. So we'll check it again. two says higher 22 says lower G. So as invalid input guessing number, so that's all that is needed. For this assignment if we look back at the instructions here display the results as text inside and the Dom everything there looks good. So the last thing we need to do is ACP and submit so to ACP we're going to do that through the terminal. I'm already inside of the Spot in my terminal if you didn't have your terminal open anymore. You could always open that back up. I asked Ryan. What's your question?
+00:15:00
+Ryan Arnold: I was just gonna ask if you could Slide the terminal window over so that the code is still readable.
+Lewis Benson: Yeah, so what I'm actually gonna do is open my terminal up in vs code.
+Lewis Benson: And I'll put it on the right side so that it is readable. Where's that was open it all the way. I think maybe I click to do that. No. Panel position right like that. And then I also want to switch this to get bash currently. My default terminal is set the Powershell. so we'll switch that over to get bash and now I'm in the correct directory again, and I'm just going to say get add period
+Lewis Benson: again, you don't have to do it this way. You can use your terminal the way you've been using it by get bash cding into it or opening up your Click in the folder Click and open get bash here. This all works the same. I just wanted to show you that you can do this through vs code as well. I know some of you have to do it in vs code again. I just get add to add my files and we can see over here my tracker showing their added to staging so to get commit Dash m and we will say add function or creating paragraphs
+Lewis Benson: that'll work for now. I'll send that. And then we'll get push origin Main.
+Lewis Benson: And then I would simply go to get Hub and grab that link for submission. So that is day one week six lab. I'm going to do the same thing for the rest of them just so we get a good review this week. It also will give you a way to catch up if you fell behind on this JavaScript week. We will have a more ample time to catch up on assignments if you are behind. so go ahead and take advantage of that for now. Let me close this out. This one is done. I'm gonna go to the next assignment.
+Lewis Benson: just open it up this way.
+Lewis Benson: So here is day two.
+Lewis Benson: This is the looping assignment. So let's go to vs code. I'm going to create a new Repository.
+Lewis Benson: and I'm going to select my
+Lewis Benson: Codex demos I'm using This organization just so I don't spam my own repos with this make this a public repo add a readme and let's see what they want us to call it.
+Lewis Benson: Create a new repository called JavaScript Loops. Be careful not to grab that period JavaScript Loops public and we're adding the readme so everything here is good. Go ahead and create that. And then I'm going to clone this down.
+Lewis Benson: So I'm going to go back to my folder. I'll back it up one level. I don't want to clone it in here because I already have a DOT get folder there that would cause a major conflict. We don't want to have that but I do not have a get folder here. This is going to be my project directory. So we'll get bash here. And used it clone shift insert enter.
+Lewis Benson: And they're created my CD JavaScript loops
+Lewis Benson: And codespace period to open vs code.
+Lewis Benson: And now I will create an index.html. and a script.js and within my index I'm going to create my starter stuff this is we six day two. We're going to add content for proof of life and I'll add in my script.
+Lewis Benson: you strict
+Lewis Benson: and I'll just feel cons about log in here just to make sure this is working.
+00:20:00
+Lewis Benson: You go live. Okay, there's our content.
+Lewis Benson: There's our console.log. So everything here seems to be working. So let's see what we got to do first. We created our index on our script. We're going to create an array of at least five elements in JavaScript. So I'll start with that. To create an array I'm going to use const and I'll call this my Array, template literal with the square brackets and five items. Does it specify what they need to be? It does not so when you strings.
+Lewis Benson: Okay, there's our five items.
+Lewis Benson: And use a for Over the array and log each element to the console. So each element is referring to each string within our array. So in order to Loop over this and add each item to the console. I'm going to declare for a loop. I'll say four let I equal 0 semicolon. We declare our initializer starting at 0 less than my array semicolon plus. This is going to increase our iteration as this Loops or starting at zero and then we know this is going to Loop five times because this is going to be true. For five iterations. Remember this does result as a Boolean because we are using a comparison operator here.
+Lewis Benson: Okay, so we just need to log these to the I' say my array we'll put in the index notation of I am using because every iteration this is going to be increasing numerically. It's going to start at zero. So it'll say first eration my array at zero my array at one. Third iteration Myra at 2 until it reaches the end of the array where it would be.
+Lewis Benson: I would be equal to four at that time. So let's go ahead and look at the result and there we have item 1 through 5 being put out the console we see each of those consoles are on the same line because this Loop is working correctly.
+Lewis Benson: Let's take a look at the next step. We're going to use a for Loop to generate and log a sequence. So we want to do numbers one through 10 to the console. I could do 0 through 9. That's kind of boring. I want to increase it by one so that it shows that 1 through 10. So we'll do our normal for Loop declaration for let I equals zero. if I is less than 10
+Lewis Benson: Or semicolon to separate our statements. plus. We'll put in our curly brackets and then we will say. console.log I plus one and this was because this says less than 10. It's only going to get us one through nine. So let's take a look at that. no, it did give us 10 if I is less than 10. because we're starting at zero, right? So it will give us all 10. And then we're just doing I plus one. So 0 through 9 that's 10 values. I plus 1 gives us 1 through 10. So that is working correctly. And the next part is Implement a while loop that executes as long as a certain condition is true.
+Lewis Benson: That's pretty much the definition of a So as long as you implement a while loop that ends at some point and doesn't just not run at all. Then you'll be able to complete this part of the ignment. Demonstrated practical scenario where a while loop is preferable for Loop. This isn't really in the definition of a while loop. This is where I would do something like Checking to make sure something is correct before ending the loop the best example for this is using the prompt function and making sure that something is correct as it loops. So I'm going to do. while true
+Lewis Benson: Sorry, I'm actually gonna make this a variable I want to say what the variable of let user reply I'm just going to initialize this to undefined so that it exists and we'll say while user reply is not strictly equal to.
+00:25:00
+Lewis Benson: Hello with a capital h. Then this Loop will run forever. So then we will say. assign user reply who the prompt function passing in the string What is the password?
+Lewis Benson: And this will run Forever Until the user submits. Hello.
+Lewis Benson: And I don't see any bugs. So this should run unless I'm already in an infinite Loop, which I am so let me restart.
+Lewis Benson: What is the password h e l l o? refresh put in some random text. h e l l o Okay something to note when you're using the prompt function notice that and when I refresh I don't get my content on the page. This pops up before that happens. There is a way. To make it so it doesn't do that and I just want to show this real quick. It's kind of a little side note with this. This is called the set timeout. So what we can do is say
+Lewis Benson: set timeout. This is gonna put a delay on it. And for the first part of the time out, we're gonna put a Callback function so I'm actually going to write the word function here. I could use an arrow function it would work just the same. So the first parameter is a callback function and the second parameter is the amount of delay. I'll put 500 there. And then I'm just going to place this inside of that function and then format. Let's take a look at that.
+Lewis Benson: Let me do a refresh.
+Lewis Benson: And it seems that I broke it. I believe it's because my while loop isn't inside of a function. so what I'm actually do is redemonstrate this for my browser crashes. I need to close this tab.
+Lewis Benson: Okay, I'm gonna redo this with a function that will be invoked at the delayed time. So I need to give this function a name. We'll call it Main.
+Lewis Benson: You'll also call this initializer or something and the main function will. Be invoked at a later time. So I'm just gonna put my while loop inside of it.
+Lewis Benson: and then we'll do set timeout.
+Lewis Benson: We'll pass in Main. And we'll pass in the amount of time.
+Lewis Benson: And that should give us enough delay that it can load to content first.
+Lewis Benson: To a refresh and there we go. We got our content and then we got our pop-up. So, let's see that again refresh contents on the page and then we get our problem. So a little bit. Useful thing when you're using prompts. Put them in a set timeout like this. Keep in mind when you're using a while loop. You'll need to make sure you have a function to encapsulate your Loop. Otherwise, it won't work correctly. It'll run the the while loop will get confused. It'll never break and your set timeout will never get an opportunity to run. So that's why I didn't work the first time you have to make sure you encapsulate it within a function like that.
+Lewis Benson: So now that we're out of that rabbit hole. Let's take a look at the next step. Create a nested Loop structure to solve a complex problem such as generating a multiplication table log out the output of the nested Loops to the console. What this is referring to is basically indexing through a matrix we could do this generating a multiplication table. it's a little bit more advanced than I like to get into. So I'm just going to create of arrays and I'm going to call this Matrix. equals
+Lewis Benson: and we're going to put in an array of arrays.
+Lewis Benson: So we'll do this. What is a three by three?
+00:30:00
+Lewis Benson: So there are three.
+Lewis Benson: And then we'll put some content into each of these one two, three, four, five six, seven eight. 9 okay, so we each in our array contains one item. So now we're going to do four. Let I equal 0. if I is less than Matrix dot length
+Lewis Benson: Then we will do I And now we need an inner loop because we're going to be accessing this array which only contains one item. So this isn't that bad. I could make this a little bit more complex by doing something like this.
+Lewis Benson: oops
+Lewis Benson: That'll give it a little bit better of a demonstration on what it's actually doing.
+Lewis Benson: In fact, I'm actually gonna make this a lot shorter. It's a lot of values.
+Lewis Benson: Here we go. That'll work. So we have our three by three by three. inside of here, I'm going to create a second for Loop.
+Lewis Benson: And to using J. We're going to initialize that to zero or semicolon to separate this part of the statement. And We don't want to know the length of the Matrix. We want to know the length of the inner array. So this is the part. We're actually trying to check now the length of we want to because this Loop isn't looping this outer array. See the blue.
+Lewis Benson: Square brackets here. It's representing an array with these three arrays. That's what this array length is tracking. We want to track the length of the inner array. It's just so happens that it is the same length. So if you were to use Matrix talk length, it would work technically. But if we were to have another item in here.
+Lewis Benson: This would no longer work. I'm actually going to leave that extra item in there just for that. What did I break?
+Lewis Benson: it's my Loop. Okay. So now I'm going to do. Matrix at I which represents whatever loop we're on or whatever index. We're on it'll grab that specific array. We want to know that array dot length. And then we will increment J.
+Lewis Benson: my prettier should be happy.
+Lewis Benson: So we have four items in each of these arrays and I did that again just to show you because you have to select this inside array instead of this So the outer array has three the inner array has four. So that is an important distinction here. And that's why we're using Matrix at I is going to start at zero as the outer loop runs when I is zero. We're on this one. And then what J is at 0 J is going to be looking at this J's going to look at this J's going to look at that. I would increment the two. So then we're looking at this one and then J is going to look at this J's gonna look at that. I is gonna increment again. It's gonna see that the Matrix no longer has any arrays and it's gonna in the Outer Loop. Okay, so let's go ahead and console.log.
+Lewis Benson: The Matrix at J And the reason I'm doing I is because I want to select whatever element we're currently working on. But I also want to select the inner element as we Loop through the inner array. So I isn't changing as this J increments this eye is going to remain static until this J. Loop is completely finished running. I will remain the same J Will increment all the way to the end and then this Loop will complete running and then this one will increment by one and that's when my jloop will begin running again. The next time Jay runs this will be incremented. The one my J is going to go 0 1 2 3 4 or sorry zero one two three, and then this inner loop is going to stop running. We're going to go back to the The outer loop is going to be incremented to two. And then our inner loop is going to go.
+00:35:00
+Lewis Benson: it's not going to continue to increment. J is going to go 0 1 2 3 and then this entire thing is going to be done running because we're now out of our Matrix length. And let's make sure this is working correctly on our console. Password is hello.
+Lewis Benson: And let me do an inspect. It came up. I pressed it twice. And it seems that we have an issue.
+Lewis Benson: Let me comment these out first we need to debug to make sure it's not my while loop that's throwing the issue. Okay, so it isn't the while loop I am gonna turn this one off temporarily. Just so we don't have that coming up. Refresh everything looks good. Let me turn this back on and see where we went wrong here. I see it. So we have Matrix dot length. But I never did J less than Matrix thought length. So this was just a static value. It wasn't a Boolean. So the for Loop wasn't working correctly. Let's do a refresh if it'll let me hit the cancel button. It's not gonna let me so I'm gonna hit close on this browser tab. Hope I can get this before the browser crashes. You got it.
+Lewis Benson: full 5
+Lewis Benson: and we're seeing script one 29 Where's line 10 tens up here. Let me comment this one out for the moment.
+Lewis Benson: Refresh here's our script line 29. I'm gonna put a little bit of a string in here too. Just so we can make sure. That this is what we expect.
+Lewis Benson: So I'm actually put some information in here. So. Let me wrap this in a template literal.
+Lewis Benson: and what we want to know is
+Lewis Benson: current index of Matrix array and that's going to be dollar sign curly brackets. I
+Lewis Benson: move into a new line here. current
+Lewis Benson: index of inner
+Lewis Benson: array
+Lewis Benson: dollar sign Curly brackets, and this is J. So let's take a look at that console put So here we can see current index of the inner array is zero and we get one current index of the Matrix array still our inner array incremented by one we get 2 We still haven't incremented or Matrix our current index of our inner array is two and that has a value of 3, and now we can see that our current inner array incremented three and we get a value of 4 again. We're still having an increment our Matrix. The NRA at this time would end at the end of the inner array. We will then index increase our Matrix array. So it's one of the show how that's all working.
+Lewis Benson: This is what we mainly were trying to solve with the assignment was just doing something with a nested array. It didn't have to be anything particular. I'm not doing any math with any of these if I wanted to I could say something like times.
+Lewis Benson: Pen and now we have different values so there if you wanted to do a little math. You can do that inside of your console.log. But that's all that we have for this assignment that says. Yeah, we did the complex problem. We're logging out the output of the nested Loop. So this one is complete. So I'm going to ACP this and just to remind you that you can do this. I'm going to ACP using the vs code without the terminal. So I'm going to click on my source control on the left. And we see our changes here. I'm going to add my changes to staging. This one still changed. And then I'm going to type in my commit message.
+00:40:00
+Lewis Benson: And press commit. And then I'm going to press this to push. And there's the full ACP process only using vs code. if you want to use this feel free to do it just try not to get too rusty with the terminal because there are times where you have to use the terminal for your ACP process, especially if you get into an environment where you're remotely using a platform as a service for your coding environment. Okay, so that's it for this one. Let me close this out. And we will get into the next assignment.
+Lewis Benson: So this would be day three. We're going to create a new repository called callback array methods.
+Lewis Benson: So let me open that up. new Repository
+Lewis Benson: me select my organization.
+Lewis Benson: Go public addyread me. Make clone this down.
+Lewis Benson: And as I clone this down.
+Lewis Benson: As I clone this down, I'll be able to actually create my files using the terminal if I want to so I'm going to do that this time. I have a demonstrated that in a while would you get shift insert
+Lewis Benson: and then we'll see into that.
+Lewis Benson: That was the Callback one. And then I'll do touch index.html.
+Lewis Benson: and script.js
+Lewis Benson: and then I will period open my vs code there. We can see my files were already created. I didn't put any content in them now. So let me do that now.
+Lewis Benson: And I'll in some put in a script
+Lewis Benson: you strict
+Lewis Benson: and I'll throw a random console.log in here. Make sure our proof of life is working.
+Lewis Benson: and go live
+Lewis Benson: excuse There's that Ro I put in there. So this is all wired up correctly. See what our first step is.
+Lewis Benson: So implement or create an array of numbers and we're gonna use the map method. with a callback function to modify each element So let's go ahead and Implement that. First I'll start with the array. We'll do const my array equals. Two three four five because it's have a maximum number. It doesn't say just an array of numbers. And then we want to call the map method on that. So the map method creates a new array, so I'm going to store this into a variable.
+Lewis Benson: And we'll do my array. dot map and I always use an arrow function for my map method. So I'm going to put in. parentheses I'll just call this num as a parameter for a function. So you could call it whatever you want. Remember these callback s functions and parameters are variables. So those can be whatever you want them to be called. We don't have an actual function name again because this is an anonymous function. There's a parameter.
+Lewis Benson: I'm just going to return. times The reason I'm using the return keyword is because I put curly brackets here. If I didn't have the curly brackets, I could do all this on one line without the return statement. I'm just gonna throw the return statement and just to show you maybe you wanted to do some other logic maybe a console.log here for some reason and have your the output and then we'll just changed nums
+Lewis Benson: and let's take a look at our output. So there is the nums that are inside of our map method. And here is the change numbers array. Let me put a label on each of these.
+00:45:00
+Lewis Benson: I'll put a comma. string
+Lewis Benson: original number
+Lewis Benson: and the are ready. There we go. So there's our new numbers array. And there's the original number that was being multiplied by.
+Lewis Benson: Okay, let's take a look now.
+Lewis Benson: Use the filter method with a callback function to filter elements of the array. Such as keep only even numbers so we're going to use the filter method here. and someone said const
+Lewis Benson: we'll do odds. equal
+Lewis Benson: this would be the change numbers. Of the array I'm gonna go with the original array because it's 1 through 5. We'll do my dot filter And then we're going to invoke this method and pass in our callback function as a parameter. So we'll put in the anonymous Arrow function.
+Lewis Benson: I'm going to call this element this time just because I can. And I'm going to do an implicit return. I'm not going to put curly brackets, so I don't need to use the return keyword. But what I do need here is we can actually see it says expression expected more specifically. I need something that's going to result in a Boolean. So I need in comparison operator. So I'm going to say if my element which is my number.
+Lewis Benson: If can spell my element If we divide that by two.
+Lewis Benson: where my modulo mod 2 if that is not strictly equal to zero. Then we want that to be returned as an odd number. Let's make sure this is working correctly.
+Lewis Benson: And there's our odd numbers from our array. So filter is working well.
+Lewis Benson: And finally, we want to utilize for each method to iterate over the array and perform an action to the element and log each element to the console. So remember for each doesn't return any values, it's used exactly like For Loops don't return anything and for each doesn't return anything or eats is just an easier way to do for Loop. So we're gonna say my array for each notice. I'm not assigning this to riable. Because that variable would only be assigned to undefined if I did. And this requires a callback function again, so we're going to use another arrow function.
+Lewis Benson: And for our parameter of our Arrow function, I want to put in item this time just to show you each of these could be called exactly the same thing, but I'm calling them something different in every single callback function. I just want to make it really really clear because this is always a point of confusion with callback functions. This parameter can literally be cold. Whatever you want. it just represents the actual element that you're iterating over.
+Lewis Benson: So let's do something to it. Because this doesn't return anything. I'm going to use curly brackets. And we'll do a console.log. Here's our item. I'm going to do squared to. plus one that's good enough. And we doing some weird math there to it. Let's take a look at it. And there's each one squared plus 2 plus 1 so plus 3. So each one squared plus 3
+Lewis Benson: Okay, that seems to be working Actually make this parentheses. So this is plus 3. There we go.
+Lewis Benson: Now it's cubed It's good enough. It's working I met the requirement. And we use the 4-H and that's it for this assignment. We just had to use the the filter method for each method. So hopefully that's some good review on callback functions how to pass a callback function into an array method. And also just to remind you anytime you're using array methods open up mdn. And remind yourself what the rules are for those array methods so for We have a rate up prototype.map. That's the one we want. because remember map method lives on the Prototype of the array so we can see here. They have some syntax example for us. They're using X as their parameter.
+00:50:00
+Lewis Benson: It's an arrow function and they're using an implicit return without the return keyword and we can see that it's creating a new array. This is what I like to look at here. What are my umar's I can see that it takes and a callback function anytime. You see this argically means that you can add optional arguments. It's not something I've ever used myself. But it is a thing and even says optional here.
+Lewis Benson: So these are the three parameters of the The first parameter element. This is the one I called it nums and This is the actual element that's being processed in the array. I read that from right there what that means is if you were to index the array in a regular for Loop, that would be The index is the current index you're working on. So if you're on the first element, you're at index 0 this is your second parameter of the Callback function and the third parameter. I never covered this but there is a third parameter and it is actually the array of the original. What you're mapping over so you have two ways to access your array and just show that real quick what I mean. on the map here It's actually on all three of these we could do I for index.
+Lewis Benson: And then we could do. for array, you can call these whatever you want. What matters is their positioning? So if you didn't need this access to this index, but you did need access to this array for some reason. You could just skip that some people to put an underscore. That means they're skipping this parameter. It doesn't really matter. How did you just put the i in there and everyone will know that that's the index. And then you could do something like log or our at and it's almost like you're in a classic for Loop now. Because it's going to be iterating over this array and it's going to be using the index. So it's just one of those little things maybe it comes in handy one day. It's kind of keep it in the back of your mind. It always check MDM and just remind yourself return value is a really important thing to find on here. It returns a new array with each element being the result of the Callback function. So that's important.
+Lewis Benson: And that's it for that assignment. So let me go ahead and ACP this again. I'm going to use the terminal again for the ACP open new terminal. I'm going to move this to the right.
+Lewis Benson: And I'm going to open up get Bash.
+Lewis Benson: and we'll say get add period it commit Dash m.
+Lewis Benson: perform different array methods
+Lewis Benson: It push origin mean.
+Lewis Benson: And then I would just grab that link and submit this one is complete. So I'm going to go ahead and close that.
+Lewis Benson: And we can move on to day four.
+Lewis Benson: All right day four.
+Lewis Benson: We're creating. a repository named Advanced Dom manipulation So let's do that now.
+Lewis Benson: Let me put this on codex demos. public
+Lewis Benson: and Addie readme
+Lewis Benson: the me cloneness down
+Lewis Benson: yet shift insert
+Lewis Benson: CD
+Lewis Benson: a press tab for autocomplete. And we'll see the end of that folder and then I'll do touch. index.html and script.js
+Lewis Benson: and code period to open it Add my starter code.
+00:55:00
+Lewis Benson: day we six
+Lewis Benson: eight four content and we'll do a SRC script.js and you strict
+Lewis Benson: put on my console.log and go live.
+Lewis Benson: We got our hello showing up. So let's see what the first step of this one is. So we're going to start off with building out our index.html. We need a div. with an ID of main container
+Lewis Benson: So we'll start there.
+Lewis Benson: And then we need to add three button elements with these IDs BTN one btn2 and BTN three. So we will do.
+Lewis Benson: button with btn1
+Lewis Benson: I'll give it a little bit of content. I'm just going to copy these and then alter them.
+Lewis Benson: So there's our three buttons. And an empty UL with an ID of list container. You want to put this inside of my main container?
+Lewis Benson: ID of list and cleaner
+Lewis Benson: and we're going to get element by ID to select the main container and list container.
+Lewis Benson: Okay.
+Lewis Benson: So what do a const main? Container equals document dot get element by ID. And that ID is mean container. I like to copy and paste these in. So that I don't accidentally mess that up.
+Lewis Benson: and const What did they call that?
+Lewis Benson: list container
+Lewis Benson: and the ID was list container also
+Lewis Benson: Okay, so I got done next use Query selector all to select all buttons so this one here was kind of designed to throw you off because you see these IDs and that when you select something by ID, you can't use Query selector all so just kind of you think out of the box here a little bit. But what these do have in common is they all have the same element name? And there's only those buttons on the page so we can actually just do buttons equals document Dot very selector all and then pass in buttons. And I'm just going to console that log down to make sure this is working correctly.
+Lewis Benson: There we go. I have an empty node list. So I did not find the buttons. That's because I put an ass at the end of it. There we go. So that's a good thing to do if you're not sure what's happening that one little typo could have really made my day rough. Because now this is an empty node list. because I had An asset at the end of that I removed. Yes, and now we can see my node list has three button elements in it. And we'll be able to use indexing to select each one.
+Lewis Benson: so let's go ahead and select The first button will add a new Li to the list container with the new item So we need to put an event listener on button one.
+Lewis Benson: when we have the event listener inside of the event handler we want to create an ally and we went to append that to the UL. So let's do that. I'll do buttons at 0. Dot Add event listener. And this is going to be a quick event. And it's going to receive a callback function.
+01:00:00
+Lewis Benson: as the second parameter and then we want to create an ally so we'll do const Ally equals. document dot create element
+Lewis Benson: and we'll just pass in the LI here. And we already have the list container selected up here. So we'll be able to append that well enough. We need to add our content. in our text equals and what did we have to call that now? new item
+Lewis Benson: or the capital i
+Lewis Benson: Okay, so this will create that but it's not a pending anything yet. So let's go ahead and append that to the list dot pin child and we're going to pass in the Ally. Made my mouse really slow.
+Lewis Benson: Let's try it out. Make sure it's working.
+Lewis Benson: There's a new item. Seems to be working so the next step is
+Lewis Benson: Button, two is clicked change the text of all the LI items to updated items. So I want to do that inside of my event listener. I want to select all of my allies at that time. I have the UL selected here But I don't have all the lies So I'm going to do that buttons at one to get the second one. Add event listener. We're going to pass in a click. We're going to pass in a callback function.
+Lewis Benson: And within the second parameter this callback function. I want to grab all of my allies so const and the reason I'm doing it inside of the event listener because I want to grab them every single time. I click this button because maybe we created a new one in between clicks. So we will call this. all our eyes all Li list of Li
+Lewis Benson: I'm not sure what to call the variable, but I guess that'll work. We're going to query selector all and we're just going to pass in l i that'll select every Li on the page. and then we want to update that text so to be What actually have to Loop over this to do this? So we'll do list of Li. It was about to do with four area for each. I don't like using for each but I'm dealing with the Dom I've ran into some issues with that in the past. So I just avoid that now. You could try it if it works for you. That's great. It's not a fan of it anymore, but I equals zero. if I is less than the list of length Semicolon then we're going to increment to the next element.
+Lewis Benson: Then we just want to do list of Li at i.inertext. The reason I'm selecting this index of I is because remember this is like an array. And each element it's going to be zero the first time there's gonna be one and that's gonna be two and never how many elements I have it'll increment to all the elements like this because we want to update all of their inner text to I believe it was updated.
+Lewis Benson: item
+Lewis Benson: This should accomplish that now so let's try it out. two three. Click one click. It seems to be working fine. Let's take a 10 minute break before I finish this up. Then we come back. I'll do the last submit button and what was the last part of this?
+Lewis Benson: The Styling I'll add in that as So 10 minute break then come back and I'll finish up this lab. And then we'll dive into the day five assignment what you haven't seen yet and I'll still do that one as well. I just want to make sure everyone's having this opportunity to get caught up. That way. You're not filling overwhelmed and we can use our lab time to get caught up on assignments as well as go over anything that you may be having a hard time with or any review that you want to get into before we get into our actual review week. All right, so we'll start the 10 minute timer now.
+01:05:00
+Lewis Benson: And I'll see you in 10 minutes.
+01:15:00
+Lewis Benson: All right, welcome back everyone. I'm gonna pick right back up where we left off on this assignment. Let's take a look at our functionality first to see what we're out here. We have a button one. The cable to add new items. button two can update the items. button three has no functionality yet. So when we look at the instructions. We want to see if button one is click to create a new item if button two is clicks. It updates an item and when button three is clicked we want to remove the last Ally from the list container. So I'll do that the same way that I did these first two by selecting the element button three. And we'll just add that logic in with the remove method that I showed. yesterday
+Lewis Benson: So first, we'll do buttons. At two that will select the element for the third Add event listener. This is a listener again. So our second parameter is a function. I'm going to put in my callback function. We'll do the arrow.
+Lewis Benson: Okay, so there's my two parameters. I'm going to open up my arrow function to multiple lines. And what I want to do here is I'm actually gonna do this again. So I'm going to repeat this line of code. So I select all the elements. And then I just want to grab the last element from this list of elements. easy way to do that is the length of the list of Li minus one and then I index to that number and that will be the last element. So what that would look like is? list of Ally index 2 list of Li dot length minus 1 this will give us the last element. This is a little bit weird looking with the square brackets right here. So what I like to do is actually put this into a variable.
+Lewis Benson: And we'll say a const last item equals. List of Ally length minus 1 and then I can place that in there just to make this a little bit more readable. And then we're just going to use the remove method. I'll show you that real quick in MDM.
+Lewis Benson: I'm just so we remember what that is.
+Lewis Benson: remove the div that matches the ID. So that's pretty straightforward. They selected an element here by ID. They selected div zero two. That's this one right here. And they call it on the element and it removes the item so pretty straightforward. That's how it works. Let me go back in here. So when I click on this button with this event listener. It's going to invoke this The Callback function is going to select all of my allies. It's going to find item. And then it's going to remove the last item after this is run. We'll no longer have all of the Ally selected. So this will no longer be relevant. Let's go ahead and test this to make sure it's working correctly. Create some allies. remove
+Lewis Benson: create some new ones add some updated. remove
+Lewis Benson: so this seems to be working correctly.
+Lewis Benson: Let's take a look at our next step for this. So when button three is clicked we're removing the last item from the list. So now we're going to part three styling. The first one is apply a border and adding to the main container using inline styles. so we have the main container selected. That's right here. So we can just go ahead and modify that I'm going to do it at Above my button selector here. You put this wherever you want in your code, Okay, main container. Dot style This Is How We Do inline styling with JavaScript is the style We select attributes with the dot notation consider these an object in every attribute that you can have an HTML is a property within that. And we want to add equals
+01:20:00
+Lewis Benson: and then this is going to be written exactly the way you would write it in CSS so I could say one solid black. I could put it in any order CSS doesn't picky about that. I could say solid one pixel black, whatever order you want to put them in. That should work fine. Let's take a look at it is. And as I put an items in there we can see that that's applying correctly. So that looks good. And adding is the other one we want to add. So let's take a look at that.
+Lewis Benson: Main container dot style dot padding equals we'll do 50 pixels you put whatever value you want for yours. Just picking a big number so we can see the difference. And there we go. and you could always inspect this and check out your box model at the bottom and make sure that and a selected there on your seeing the padding being applied there. There's that 50 pixels we added. This is also the Border. That's being applied as part of the siding. So this all seems to be working correctly still. Let's see. What's Create a CSS class called highlight using a style changes the background color of the elements.
+Lewis Benson: When any Ally list item in the list containers clicked cloggle the Highlight class for that item? Okay, so to do that. I would want to put that when I create the I that's what I want to create this event listener. If I were to do this outside of here, if I were to say select all of my allies and Global scope. After this script runs once it's no longer running. So my Lys aren't going to have the event listener. But I can do it as soon as I create DLI I can add that event lesson or now. So we'll say Eli dot add event listener. This is a click er. requires a callback function as these have and we just want to
+Lewis Benson: Change the background color on a click of the Ally and to do that. We're going to do it by adding a class. So this will be lie Dot
+Lewis Benson: Classless, sorry because you're on a blanket for a second add. In the name of the class was called highlight.
+Lewis Benson: and I'm getting this from
+Lewis Benson: are right here that toggle the Highlight class for that item Add the class highlight, so that's where this is coming from. So here we're adding the Highlight class and now we just need to add that CSS within our I'm not gonna do the external style sheet as a separate file as the instructions say to use a style element. So we'll create our highlight and we'll give it a background color. And with our blue in here just so we can see it happen. And let's see if this is working correctly. Create our elements click on our elements. remove our elements and everything seems to be working fine.
+Lewis Benson: Everything's working good. I feel like they had a good test with that and one thing note too is when I select this item we can see the Highlight class was applied.
+Lewis Benson: Okay, so we want to attach event listeners to the buttons for the oem the above actions. This is kind of verification of what we've already done. we wouldn't have been able to do part two without part 4 being complete. I should probably just remove part four from the instructions and then attach clicklisteners to each Eli to toggle the Highlight class. We did that. Event handling ensure that the page responds to users actions described above Implement functionality. So that new Li items also have the click event listener attached for the Highlight class to toggle if for Loop outside. if you were to put your event listener here
+Lewis Benson: Somewhere else you may not have had this on the new items that were created. So you want to make sure that this is inside of the It's a nested eventless Center. Let me actually separate this out a little bit. I'll just move this up so that everything that's grouped together. We can see there. It doesn't matter what order these are in as long as they're all here. Other than the first one matters the rest of these that can be in any order.
+01:25:00
+Lewis Benson: So we want to make sure again that within this event listener. So these are nested. And the reason we're nesting it is because at the time of creation, that's when we want to add the click listener to the LI specifically if we added at a later time, it might not function the way we want. We could do this as a function as well. We could say add highlight listener or something like that in a separate function and then invoke the function in here. That's also acceptable. There's a lot of ways to solve this. But that's the main takeaway. There is it if you have it inside there you don't have to Do any external looping? One solution I seen yesterday. Was nesting your buttons. This one inside of button zero.
+Lewis Benson: And then you don't need to use a for Loop to select all of these because you already have access to your allies in there. So it was a pretty clever way to do that. I've never thought or seen that done before so Props to the student that actually nested their button inside of their other button. And gained that access to the Allies at a later time.
+Lewis Benson: Okay, so this lab looks to be complete. I believe we have. all of the functionalities working, so I'm going to go ahead and ACP this. So that it's ready for submission and I'm going to do that through the source control. And this time I'm just gonna press the commit button. I'm not going to click stage. I'm not going to put a message in here. I'm just going to press commit and then it's going to want to know do you want to Stage all these direct you want to Stage all of your changes and commit them directly? I'm going to say yes. I never click always for this because that actually does lead to issues if you accidentally press commit and you didn't want to so I'm just gonna say And then it wants to know what is my commitment message. So I get to write my commitment in this file now where I get a little bit more control over the formatting. and I'm going to create or button one
+Lewis Benson: doesn't look great.
+Lewis Benson: There we go. Great listener for button one. and then the details that we relate to that would be it creates. new
+Lewis Benson: I on click
+Lewis Benson: create The center for button two and these are the kind of commit messages that are really strong whenever you put in bullets like this and you're really detailed about what kind of work you did. This is what you'll want to do when you're working in the industry is be very detailed and maybe even includes screenshots and stuff when you get on to get upload screenshots of the before and after changes to whatever changes you made. This one's updates text of the allies.
+Lewis Benson: updates now this one removes last item from West. I know I also did The Styling I would want to put that in my message for the sake of time. I'm just going to go ahead and Commit This on the way you commit through this commit message edit file. Is just by pressing either close or this check mark here. I usually just close it and it does the commit and then I click this to commit or sorry to push. And that's it for this one. I'm going to go ahead and close this out. and moving into Assignment five
+Lewis Benson: the long assignment five There we go.
+Lewis Benson: this one's All formatted funny let me fix that.
+01:30:00
+Lewis Benson: Hey, that looks better.
+Lewis Benson: All So this one's gonna be called JavaScript week review.
+Lewis Benson: Let's go ahead and create this repo.
+Lewis Benson: select my organization public
+Lewis Benson: Add readme file. I remember the organization is just for this demo. It's just so I'm not posting all of the repos over and over and over again in the future on my personal. Get our profile.
+Lewis Benson: And I'm going to clone this down.
+Lewis Benson: here one shift insert
+Lewis Benson: and we'll see the end of that.
+Lewis Benson: And I will do touch index.html. and script.js include period
+Lewis Benson: Pull this over.
+Lewis Benson: Get my Proof of Life information so I know that everything is wired up correctly.
+Lewis Benson: And we'll put in a use strict. followed by a console.log
+Lewis Benson: of some random text just so we can see that it's working. I use different texts and each one of these just so that I know that I'm on the correct file. Everything is wired up. Let's look at our instructions.
+Lewis Benson: Boom, excuse me. All right, so in the index.html. We're going to create a form with two input field Name and age and a submit button, So we'll have a form. We're going to just action. We're going to have two input Fields. So I'm going to have two labels as well.
+Lewis Benson: And what were they again? name and age name name
+Lewis Benson: input name name
+Lewis Benson: label age
+Lewis Benson: age
+Lewis Benson: input
+Lewis Benson: when I get my
+Lewis Benson: I'll get my extra stuff there
+Lewis Benson: So there's a label and input.
+Lewis Benson: So we have our two fields and we need to submit button. I always forget the button.
+Lewis Benson: Just to show you too. Another way. You can do a submit button by saying input type submit. And that does the same thing. I think you have to put a value in here or make this not a self-closure to get the actual text in there. So I never use that one. It's easier just to make a button. It does create a button when you have it like that. It is a thing that you'll see sometimes. So there we go. We have the required HTML for the beginning and now in the script we're going to write code to append the submitted data. As a list and an unordered list on the page when the form is submitted. Okay, so we don't have an unordered list. So I'm going to go ahead and create that here. this UL Can just live right there I could also do this.
+Lewis Benson: Using JavaScript, I could say create element L select my body and append this UL to the body. We're not really a need to do that though because I know it's going to be here. I know it's gonna exist so I might as well just create it now. And we're gonna append the submitted data to the unordered list on the page when the form is submitted. Next we're going to create an array of five colors. It looks like they gave me some color here. So let's go ahead and use that.
+01:35:00
+Lewis Benson: Usually for Loop to display each color as a separate paragraph on the page. Okay, so that's not in line with the Li. or Implement a loop
+Lewis Benson: Is the map keep and display each number and filter them as a list of okay, so we will be using the list items later. This is something separate. So I'm actually going to create another element to latch onto in here for that. And I was going to call this we'll do a div. And we'll give it an ID of those data.
+Lewis Benson: a message so I'm going to select that up here.
+Lewis Benson: query selector ID of message
+Lewis Benson: And each of these are going to be a paragraph element. So we're going to do. a for Loop let I equal 0 I is less than colored length
+Lewis Benson: I and now we're going to create a paragraph. So be const.
+Lewis Benson: He equals document dot Pass in our P. So we creating this paragraph element and now we want to change the intertext to be the P Text equals. color at I
+Lewis Benson: let's look at our output.
+Lewis Benson: I don't see any output. That I forget to append it. I did.
+Lewis Benson: message append child p there we go. Each of those is a separate paragraph now. So that's one step done. Implement a while loop that adds. Yes, Ryan. You have a question.
+Ryan Arnold: Of what are we doing with the input from name and age?
+Lewis Benson: That's a good question.
+Ryan Arnold: Did it just have us make those forms just or?
+Lewis Benson: I don't see a use for them.
+Lewis Benson: Use a map use for each demonstrate. Yeah, that's a good point.
+Ryan Arnold: Wait, I see it's in the second line right there the second bullet.
+Lewis Benson: that I miss it right code to append the submitted. As a list of Yep. Thank you for bringing that up. I would have completely missed That would have been loss of points on this assignment. So let's go ahead and Implement that now. So I have my UL I'm gonna go ahead and select that. Oops. I didn't mean to alt tab there. So it's equals document dot query selector. pass and the UL
+Lewis Benson: And now we want to make a list items every time we click so. we're not going to select a button. We're going to select the form because this is inside of a form. So let's use Query selector on that.
+Lewis Benson: And now on the form we're going to add an event listener. Does anyone know which event listener I'm going to add?
+Lewis Benson: Does anyone remember When we did the form the other day.
+Ryan Arnold: That's a click event listener, right?
+Lewis Benson: That would be if I was putting this on the button. But because I'm putting this on the form, it's actually a different event. It's a submit event.
+Lewis Benson: So whenever the form is detected is submitted. That's when this action will occur. interesting to whenever you select a form. You have access to everything inside the form including the input the label everything.
+01:40:00
+Lewis Benson: So we could put a click event The button through the selection of the form, but that's not a very common practice. It's more common to just do it on submit one of the reasons for that. Is because we need to prevent Whatever logic I put in here right now. notice submit refreshes my page unless you can see that happening if you look up top here. Every time I click that it refreshes.
+Lewis Benson: So we need to stop that first thing. So I'm going to put my stands for event. E dot prevent default. This is a method that will prevent that from refreshing the page. So now I click it and we have no page refresh. So that's the first thing I like to do whenever I'm setting up a form is stop it from refreshing the page. There might be times where you need it to refresh the page. If you're actually doing a real form submission to an API. If that's the case then obviously don't put that in because you need it to refresh in that case. But in this case, we're good to go.
+Lewis Benson: We want to create an ally and append to the UL. with the value of
+Lewis Benson: let me actually double check what that said agent name. Write code to append the submitted form data as a list item. So it'll be one list item and an unordered list on the page. When the form is submitted, So I'm actually gonna do that. It's kind of like a string template literal. What we'll do is create an online.
+Lewis Benson: argument dot create element
+Lewis Benson: we're going to create an Li. Or we use a string to create it at the variable is not a string. So we see the little bit of a difference there. And then we want to change the inner text to be the value. That's in our current form that's being submitted from our form. So this will be l i dot enter text is equal to I'm going to use a string template literal. and say we'll do what were the forms again. I keep creating. name and age So we'll do dollar sign curly bracket This will be form Target dot value.
+Lewis Benson: age dollar sign curly bracket form Dot Target that changed named our value dot Target
+Lewis Benson: age dot value
+Lewis Benson: and I'm just gonna break these out into separate variables because this is kind of long so I'll say const name equals. And we'll just grab that and place it here. And then we'll grab the variable and place it there. Just to clean this up a little bit.
+Lewis Benson: Remember these are pressions. So anytime you have an expression it can be assigned to a variable. And anytime you have dollar sign curly brackets, they require an expression so you can insert variables here just as easy as all of this text. So let's just cleans it up a little bit makes it a little easier to read see if it works.
+Lewis Benson: I will say a name. 22 submit And cannot read properties on defined reading value. I believe it's because I have Target here. Let me remove that.
+Lewis Benson: Let me get a console.log.
+Lewis Benson: Of form, maybe I didn't Target.
+Lewis Benson: undefined what we got going on here. Let's take a look. So here's the form element.
+01:45:00
+Lewis Benson: We have an ID and a name of name.
+Lewis Benson: A little bit of a bug going on here. I see what I did wrong. It's not a bug. It's actually Let me undo.
+Lewis Benson: And this shouldn't be formed on target. It should be target. Because I used the letter e it'll eat at Target.
+Lewis Benson: Try that again.
+Lewis Benson: And again, I don't have Any luck, let's console.log. e dot Target age see if this is working. Okay, we did get the element.
+Lewis Benson: the value of it again. I forgot to append it to the page. So this is probably working. L a penchild And then passing the Ally. I apologize for that little bit of a hiccup there. And there His name age is 11. Put in my actual name.
+Lewis Benson: That seemed to be working fine. The formatting is not the greatest I could do this.
+Lewis Benson: Or something like that.
+Lewis Benson: So that kind of works. It looks a little better with it being multiline like that the dots up there. I would have to do some CSS to fix that. One thing I want to change though this is a text input. I want changes to a number input because age should be a number. So instead of text, this will be number. It just makes a little more sense to me.
+Lewis Benson: And there we go. This way I can't if I press letters here. It doesn't do anything. So it has some building validation.
+Lewis Benson: That seems to be working So Steps one through three are complete. Usually for Loop to display each color as a separate paragraph. We did that implementing loop that adds paragraphs to the page. While a counter is less than five each paragraph displaying the counters current value. Okay, so this is going to be a while loop that acts a lot like a for Loop. So we'll say let counter = 0. while counter Perez's counter is less than or to say five.
+Lewis Benson: Yep.
+Lewis Benson: I'm not gonna finish that logic just yet. I'm going to put the 5 here in a bit. I don't want to start it infinite Loop by accident. Let's go ahead and start putting paragraphs on the page.
+Lewis Benson: I believe I have. We'll do this message one.
+Lewis Benson: Message DotA penchild. and then
+Lewis Benson: we'll actually create the element we're going to put in there now. That will be a paragraph. I'll just copy this one.
+Lewis Benson: and the inner text Is going to be the value of the counter. So it'll be counter. P Dot intertext equals
+Lewis Benson: I'll do a string template literal. We'll say count. dollar sign curlies counter and then after all of this we want to increment our counter.
+Lewis Benson: Otherwise, we'll be an infinite Loop. And we want to append the paragraph to the page. And now I'll put my five in there so that I can. Make this run. And let's take a look.
+Lewis Benson: count zero count one count two count three count four We need to increment this we're starting at zero. We're doing that by five. That's all fine. I'm actually gonna add one to this here.
+01:50:00
+Lewis Benson: And there we go. One two, three, four, five our normal counter starting at zero and it's going up to five. We're adding one here so that it displays the proper output on the page. So there is our while loop. You don't have any questions about the while loop?
+Ryan Arnold: So I was having trouble keeping up with notes. Could you show the code for just a minute? Thank you.
+Lewis Benson: Yeah.
+Lewis Benson: All right. So the while loop is done notice my counter is outside of my while loop when I first declare it. If I were to put it inside of my while loop, it would create an infinite Loop because every time this would iterate it would reset my counter back to zero. If I were to place it here.
+Lewis Benson: That would be an infinite Loop because this would run this line of code this line. It would send it to 1 it'll go up here and check. Yes. It's still less than five it reset it back to zero and then it would do all this over again increment it to one. It'll go back up Check us. Yes, it's still less than five set it back to zero and that would run forever. So be careful with that make sure your counter is outside of your while loop. I haven't seen anyone disconnect from the call. So I don't think anyone has had any. Infinite Loops that were so bad that it caused a browser to crash but that can happen. You could actually run out of RAM and your computer becomes unresponsive and it'll actually crash your browser if you let the loop run for too long.
+Lewis Benson: All right. Let's look at the next step. Create an array with these numbers one through five and we will then do something with map. So let's do the array first. I'll create that up here. I'm actually gonna move this up.
+Lewis Benson: I like to have all my variables at the top of the page. Just keep things organized.
+Lewis Benson: So there's my array of five numbers. And I know we're going to be mapping over it and remember map returns and array. So let's look at that again.
+Lewis Benson: So here. We declare a variable and we assign it to the value of the original array dot map. It takes in a callback function. And outputs whatever was returned. It takes in this callback function again as the parameter. And returns a new array with each element, So let's go ahead and use that. const new nums equals numbs.nap
+Lewis Benson: callback function number
+Lewis Benson: I'm not going to put the curly brackets because they need to return these and when you don't have curly brackets, it's an implicit return. With that there's actually a trick you can do. If you do have multiple lines of code, but it all evaluates to a single value that can be returned. You can actually use parentheses here and make this multiline like that. And it'll still do the implicit return. I'm just going to go ahead and do it without the curly or sort of the parentheses though. So we want to See what it said. I used to map method to double The filter method to keep only the even numbers for each method to display each number from the filter operation as a list item. Okay, so that's a lot going on. But each of these are separate step.
+Lewis Benson: So I'm just going to do these one at a time. We're going to start with the map method and we're going to double the number.
+Lewis Benson: so number
+Lewis Benson: times 2
+Lewis Benson: and this needs to be a list item. So we'll do. Constant. I Is already been created?
+Lewis Benson: equals document
+Lewis Benson: But create element.
+Lewis Benson: And I'm gonna encapsulate this on a function.
+Lewis Benson: Call it map method.
+01:55:00
+Lewis Benson: And the reason I'm putting this in a function is so that I can reuse this l i variable name over and over and over again for each of these methods. You don't have to do it this way. You don't want to. You could call each of these a different name. I'll just think this will be easier this way. And after we create the Li. we want to
+Lewis Benson: output each so this is actually going to be happening. Inside of there. why I would do it like that. Let me double check that. Filter and for each to display each item. So for each is the only one doing the lie, so I actually need to back up apologize there. We'll just change this to a four each.
+Lewis Benson: And we'll come back to that. We'll leave the Ally in there.
+Lewis Benson: We use that later. So we'll just console.logeneums.
+Lewis Benson: And there's my new numbers. Everything's been doubled. So that one is complete. Next is filter.
+Lewis Benson: And I believe we have to filter the new nums. Which doesn't make sense because these are already all even numbers. Because we doubled them. Let me see.
+Lewis Benson: Use the map method to double each number the filter method to keep only even number so I'll do it on the original list just so that we actually get some value out of it. And I was assuming that it wanted me to filter the new nums, but that won't work because they're all even numbers. So let's odds from nums
+Lewis Benson: thumbs up filter pass in our callback. This is going to be a number. Put in our Arrow.
+Lewis Benson: And we'll do an implicit return. We'll say divided by 2 with remainder It Does not strictly or looking for odd numbers.
+Lewis Benson: zero that gives us the odd numbers console.log odds.
+Lewis Benson: It's working correctly and there they are.
+Lewis Benson: And finally for each I have this inside of a function just so I can keep this Li and Global scope. So this will be numbs dot for each callback function number
+Lewis Benson: And then we will. Do what to the number?
+Lewis Benson: to display each number from the filter operation. As a list item, so I actually need to not do nums I need to do odds.
+Lewis Benson: for each? So this would be Li Dot. in our text
+Lewis Benson: equals number this actually needs to go inside of the four each. Otherwise it will not. we want to recreate a new Li. every single time this runs and then we need to take this appendore URL. So this will be UL Dot pinchild. lie So this is basically for each and the four Loop of the same thing except that only works on arrays. And we're going to be looping over this number or all of the numbers for each number that we Loop over. We're going to create an ally. We're going to set the inner text of that Ally to the number and then we're going to append the LI to the UL. And now I just need to invoke my function for each method.
+Lewis Benson: And everything should work fine. There are the odd numbers from the filter list being displayed as an ally.
+Lewis Benson: Arnold's it the next step is we need to demonstrate the difference between copying primitive and reference types. Show this by Creating and manipulating variables of each type and displaying the results on the page. Such as copy and change array versus number, So we'll do my array one equals 3 points my array two equals my array one.
+02:00:00
+Lewis Benson: my array
+Lewis Benson: one dot pushing the number five
+Lewis Benson: we'll push in a string.
+Lewis Benson: And then we'll cancel that log. my array to
+Lewis Benson: so what this is representing is we have this reference type array. And we assigned array one to a value over A2. we modified array 1 and we'll see that represented by logging array too. So anytime One array 2 also updates because these are the same location and memory. they are the They're not separate arrays are stored and variables. They are the exact same array. So anything I do to this one will happen to this one as well.
+Lewis Benson: And there we can see the new value being added even though that's not one that I did to push on it. It's still updated. I did push a console.log array 2 and we still see the new value was added. So there is the demonstration of the first one.
+Lewis Benson: And let's do a primitive type now.
+Lewis Benson: and show that what the behavior of that looks like so const If they actually use left for this. Because we're going to try to reassign this. my mom one equals five two equal mine, one
+Lewis Benson: my num
+Lewis Benson: one equals 10 console.log my num 2
+Lewis Benson: and I would expect my num2 to be 5.
+Lewis Benson: And there I get five. And that's because this is a primitive type. So when I'm assigning my num2 at the time of assignment, my number one is equal to five. And I reassign mine on one to 10, but I never reassigned the value of my num2 because the Primitive is stored within the variable and not its location and memory as the arrays were. so there's my demonstration of I reference type manipulation and here's my demonstration of a primitive type manipulation or I should say. I'd attempted primitive type manipulation because My number one did not update. My number two, even though I assign mine. I'm two to be my number one. It's because primitive types don't behave that way.
+Lewis Benson: Does anyone have any questions about primitive versus reference types?
+Lewis Benson: Any questions at all about JavaScript? That's the entire assignment. So if you do have questions, this is a great time for them. I'm going to ACP this. I'll use the source control again. And I'm going to add all of these At Once by clicking this plus sign. and then I'm going to say complete assignment
+Lewis Benson: five commit push done What questions do you have about JavaScript?
+Lewis Benson: Is there any part of this that is confusing? Anything you want me to go over? Anything you want clarification on anything you're stuck on. Any bugs you might have run into?
+Lewis Benson: Maybe confusion with methods. Maybe you want to know about other methods anything at all.
+02:05:00
+Lewis Benson: Okay, there's no questions. I'm going to end the recording. Hopefully I'll be able to upload this video tonight. That way we have reference earlier on the normal.
+Meeting ended after 02:05:31 👋

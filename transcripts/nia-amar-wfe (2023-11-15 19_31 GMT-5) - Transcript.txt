@@ -1,0 +1,681 @@
+﻿nia-amar-wfe (2023-11-15 19:31 GMT-5) - Transcript
+Attendees
+Brian Kimbrow, Daniel Perez, Elgin Sharper, Gregory Robertson Jr, Iris Coats, Lewis Benson, Lewis Benson's Presentation, Reece Renninger, Umar Z
+Transcript
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.
+Lewis Benson: Review, it's not helpful.
+Lewis Benson: So it's the same as GitHub notice we have the equal signs.
+Lewis Benson: Less than signs and…
+Lewis Benson: This is like a border a boundary and…
+Lewis Benson: This is a get term that refers to…
+Lewis Benson: Wherever you're working is…
+Lewis Benson: There is a thing called detached head.
+Lewis Benson: If you get through the first set of levels and…
+Lewis Benson: But it short answer is it's where?
+Lewis Benson: You're in the code.
+Lewis Benson: I can click on.
+Lewis Benson: the
+Lewis Benson: Little text up here.
+Lewis Benson: I can do a combination.
+Lewis Benson: I'm just gonna accept incoming.
+Lewis Benson: and then down here…
+Lewis Benson: And then maybe looking at it.
+Lewis Benson: and then I hit complete merge.
+Lewis Benson: I showed you this interface before we can see we have a staged change it automatically stages this whenever you resolve a commit.
+Lewis Benson: Sorry, whenever you're reserve a merge conflict.
+Lewis Benson: And now we can see it's a sync changes…
+Lewis Benson: I think it says push to commits to origin main…
+Lewis Benson: So I could click on that to sync it also…
+Lewis Benson: I can push to commits to originate I could click on this as well.
+Lewis Benson: Or I could use my terminal and…
+Lewis Benson: Once I push this that'll change back to normal.
+Lewis Benson: And that's again.
+Lewis Benson: So we go to GitHub and…
+Lewis Benson: And I'm going to use that shortcut insert earlier with get remote Dash V.
+Lewis Benson: Remove remote to…
+Lewis Benson: And here we are I got my project 3-4.
+Lewis Benson: Does anyone have any questions about that at all?
+Lewis Benson: Okay, and…
+Lewis Benson: You can actually have this deployed with and…
+Lewis Benson: This isn't one of those things…
+Lewis Benson: Deploying web pages just means that a URL was generated.
+Lewis Benson: One thing to note is I'm on a private repo to deploy a web page.
+Lewis Benson: They shouldn't receive that notification when I do this.
+Lewis Benson: If you ever do need to change this,…
+Lewis Benson: And you just want to change visibility here?
+Lewis Benson: And again to get to here it's the settings tab.
+Lewis Benson: We have code this is…
+Lewis Benson: Change visibility change to public I'll copy this now…
+Lewis Benson: It's just gonna have me put in my password.
+Lewis Benson: And my PIN number.
+Lewis Benson: I also have the setup for two.
+Lewis Benson: two-factor so I can use my cell phone to authenticate other than my password but
+Lewis Benson: It doesn't require it.
+Lewis Benson: Okay, so we are not public.
+Lewis Benson: So we're good to go there.
+Lewis Benson: And also when I come back here we can see that this says public and…
+Lewis Benson: And on the left,…
+Lewis Benson: We're going to go to pages.
+Lewis Benson: And once you're in Pages…
+Lewis Benson: save
+Lewis Benson: And that's it.
+Lewis Benson: But it live to get the URL we can go to our actions.
+Lewis Benson: I just want to note here.
+Lewis Benson: profile page or…
+Lewis Benson: You could create Iris dot coats.com or…
+Lewis Benson: Whatever you want it to be you can create your own custom domains through there.
+Lewis Benson: popular domain in mind you could spend a lot more…
+Lewis Benson: I can't even think of an example of top my head at the moment.
+Lewis Benson: You also see the extension.io.
+Lewis Benson: So to get to your url now,…
+Lewis Benson: There's more than one way to do this,…
+Lewis Benson: And here's my URL there.
+Lewis Benson: And I can also visit site.
+Lewis Benson: Click on this link here.
+Lewis Benson: And then the link is right here.
+Lewis Benson: Or you could always go to your settings and…
+Lewis Benson: You have this deployments on the right now.
+Lewis Benson: they change this it's used to take you to.
+Lewis Benson: OK me to my commit let me look at that again.
+Lewis Benson: Here it is.
+Lewis Benson: And they actually change this a little bit.
+Lewis Benson: If I click on this link,…
+Lewis Benson: Dot github.io
+Lewis Benson: And then…
+Lewis Benson: But remember I actually created a page called.
+Lewis Benson: My notes,…
+Lewis Benson: Yep, my notes dot MD a markdown file is very similar to an HTML file.
+Lewis Benson: It will display content the same as an HTML file.
+Lewis Benson: So I should be able to go to slash my notes and…
+Lewis Benson: I can see the markdown deployment of this page.
+Lewis Benson: And if I click on this it takes me back to the home page.
+Lewis Benson: So I just deployed this live on the internet for anyone to find…
+Lewis Benson: But don't worry about the fact that somebody might stumble upon your unfinished looking web pages.
+Lewis Benson: Does anyone have any questions about that?
+Lewis Benson: Again, I'll cover this again tomorrow.
+Lewis Benson: a little bit of jump on this one today just to kind of show you this process tomorrow we'll review
+Lewis Benson: Pretty much everything again,…
+Lewis Benson: And then Friday,…
+Lewis Benson: And if you're…
+Lewis Benson: AR for you for anyone…
+Lewis Benson: are there any questions before breakout rooms?
+Lewis Benson: I probably should go over the assignment real quick before I just put you in the breakout rooms.
+Lewis Benson: Me open up the instructions.
+Lewis Benson: Put this on the correct screen.
+Lewis Benson: It's a two-part assignment.
+Lewis Benson: the specific commands that you're going to be using are going to be
+Lewis Benson: they were listed here.
+Lewis Benson: I guess they're not in an actual list.
+Lewis Benson: To your desktop just follow each step into bullet and…
+Lewis Benson: Navigate to this directory with CD get practice so the commands are all here for you.
+Lewis Benson: Create a new file named notes.txt using touchnotes.txt.
+Lewis Benson: And then list the contents of the directory using LS that just gives you a little bit of that practice using this commands.
+Lewis Benson: And put that screenshot inside of the repo that you're going to create…
+Lewis Benson: Go to github.com create a new repository named get practice initialize the repository with a readme.
+Lewis Benson: And clone your newly created repository to your local machine using the get clone.
+Lewis Benson: Navigate to the cloned repository move the contents of notes.txt into this directory.
+Lewis Benson: If you want to use the move command,…
+Lewis Benson: But do keep in…
+Lewis Benson: Add some text to your notes.txt.
+Lewis Benson: And then add the screenshot of your terminal to the repository that can be in the root of that Repository.
+Lewis Benson: Perform your ACP.
+Lewis Benson: And that is it for the assignment go ahead and…
+Lewis Benson: Are there any questions about today's assignment?
+Lewis Benson: If you've been following along,…
+Lewis Benson: Yeah.
+Lewis Benson: You mean with the terminal?
+Lewis Benson: Yeah.
+Lewis Benson: So for as far as the instructions go you don't have to use the terminal.
+Lewis Benson: If you want to use the terminal.
+Lewis Benson: I'll show you the command again just
+Lewis Benson: to actually just pull up to it here.
+Lewis Benson: …
+Lewis Benson: We have the Mind notes listed here inside of this directory.
+Lewis Benson: And the command is MV.
+Lewis Benson: And then you put in the file name.
+Lewis Benson: And then you put in the destination…
+Lewis Benson: And then the file name.
+Lewis Benson: Oops. I tried to autocomplete that and…
+Lewis Benson: Also, keep in mind whatever file you put here.
+Lewis Benson: I'm going to keep the lowercase in so it just moves it.
+Lewis Benson: And then…
+Lewis Benson: I'll do a CD dot dot LS.
+Lewis Benson: my - notes dot MD space
+Lewis Benson: my Dash project slash my Dash notes.
+Lewis Benson: dot MD
+Lewis Benson: and then when I CD into my project.
+Lewis Benson: LS we can see my notes back.
+Lewis Benson: but as far as the terminal goes
+Lewis Benson: It is the MV command the name of the file and…
+Lewis Benson: My Dash project slash.
+Lewis Benson: My Dash notes.
+Lewis Benson: And then I want to move this to…
+Lewis Benson: 11 - 15
+Lewis Benson: Slash my gosh notes,…
+Lewis Benson: Otherwise this will fail.
+Lewis Benson: and that will move it from
+Lewis Benson: my project directory it'll grab the
+Lewis Benson: Mynote stock markdown and…
+Lewis Benson: Does that make sense you have any more questions about using the terminal move files?
+Lewis Benson: Or the assignment in part one.
+Lewis Benson: Yeah, so the file was created on the desktop in part two.
+Lewis Benson: And you're cloning it down.
+Lewis Benson: Because your notes.txt is on your desktop,…
+Lewis Benson: Yeah, so that and…
+Lewis Benson: But you don't have a GitHub repo yet.
+Lewis Benson: And…
+Lewis Benson: Into this repo…
+Lewis Benson: That's the only moving you have to do.
+Lewis Benson: Yeah, I was just showing you…
+Lewis Benson: Yeah, and…
+Lewis Benson: Yep, no problem.
+Lewis Benson: Does anyone else have any questions about the assignment?
+Lewis Benson: Practice these terminal commands and…
+Lewis Benson: Gregory did you still have an issue with your GitHub?
+Lewis Benson: Okay.
+Lewis Benson: You can work on this right now during the breakout room session.
+Lewis Benson: Or I can help you with Brian's busy with grading.
+Lewis Benson: I'm gonna go ahead and…
+Lewis Benson: Okay.
+Lewis Benson: Yeah, okay.
+Lewis Benson: All…
+Lewis Benson: All…
+Lewis Benson: So I'm gonna start that now.
+Lewis Benson: That way I get kind of The Best of Both Worlds in that case.
+Lewis Benson: if you don't have an index.html this case,…
+Lewis Benson: I'm opening them up and…
+Lewis Benson: then the other version is copy instead of mvu CP.
+Lewis Benson: It's deployed.
+Lewis Benson: I'll do an LS.
+Lewis Benson: I'll create an extra breakout room and…
+Lewis Benson: then one last thing before we go to our breakout rooms and…
+Lewis Benson: I actually won't be available Friday.
+Lewis Benson: then you're gonna create your repo clone it down.
+Lewis Benson: what I LS we can see my notes is gone.
+Lewis Benson: if I needed to I could modify this further and…
+Lewis Benson: That's the same as saying get push origin Main.
+Lewis Benson: if you don't know Robert,…
+Lewis Benson: what you can do with the move command…
+Lewis Benson: I think it was.
+Lewis Benson: if you end up in cloud computing you will be using commands like MV all the time.
+Lewis Benson: open up the breakout rooms and…
+Lewis Benson: So we have two authors that's this one here except current change except incoming change except both changes and…
+Lewis Benson: I realize we need five parameters so down here.
+Lewis Benson: you have all these different options here.
+Lewis Benson: it'll take me to the live page.
+Lewis Benson: where you're at by default.
+Lewis Benson: You can create a custom domain for this.
+Lewis Benson: This is now a live website that anybody could visit there's not much content on it.
+Lewis Benson: but I'm going to be deep diving a little more into this deployment practicing with deployments that sort of thing troubleshooting comment issues.
+Lewis Benson: because it's currently on your desktop.
+Lewis Benson: It just has the option.
+Lewis Benson: by the way,…
+Lewis Benson: So what you're going to do is actually practice with Git commands first.
+Lewis Benson: because I'm already in the Parent Directory that's going to be…
+Lewis Benson: here's how you do it.
+Lewis Benson: I just wanted to give you the
+Lewis Benson: You just have to read each of these bullets.
+Lewis Benson: yes, Omar.
+Lewis Benson: So this head is saying that my current commit.
+Lewis Benson: I can grab the current and…
+Lewis Benson: where it says Branch none,…
+Lewis Benson: Typically though this takes some time to build and…
+Lewis Benson: it kind of looks a little tricky just…
+Lewis Benson: where your head is.
+Lewis Benson: we'll see projects 3-4.
+Lewis Benson: I'm gonna stop the recording before I do.
+Lewis Benson: I could just refresh actually.
+Lewis Benson: who was at the orientation presentation or…
+Lewis Benson: if I click on sync changes.
+Lewis Benson: we have the greater than signs here.
+Lewis Benson: what I need and…
+Lewis Benson: make sure they're all working correctly for you.
+Lewis Benson: it will move it into this folder.
+Lewis Benson: I'm going to move over to settings and…
+Lewis Benson: some sort of portfolio page
+Lewis Benson: it is more practice,…
+Lewis Benson: You can click on this.
+Lewis Benson: where you shouldn't be afraid to debull your web pages…
+Lewis Benson: he was the instructor that was leading the orientation day.
+Lewis Benson: That's where you would remember.
+Lewis Benson: I'll see…
+Lewis Benson: where you're currently at on your branches.
+Lewis Benson: It creates a commit automatically and…
+Lewis Benson: because I'm moving this to a different directory.
+Lewis Benson: there we have it.
+Lewis Benson: And that's just…
+Lewis Benson: then somebody will be in there to help you.
+Lewis Benson: what we have.
+Lewis Benson: I'm going to go to actions.
+Lewis Benson: if you wanted to play around with it.
+Lewis Benson: if we look down here.
+Lewis Benson: There's a lot of trending things right now,…
+Lewis Benson: it did not work correctly.
+Lewis Benson: then you guys can be one-on-one.
+Lewis Benson: So I'm just going to click the button…
+Lewis Benson: It's pretty popular right now for developers.
+Lewis Benson: My notes is here in The Parent Directory.
+Lewis Benson: how you move using the terminal…
+Lewis Benson: but if you're feeling comfortable or…
+Lewis Benson: it's not in your repo.
+Lewis Benson: get push origin Main and…
+Lewis Benson: then go to pages and…
+Lewis Benson: it will be your web page.
+Lewis Benson: Just talk about…
+Lewis Benson: submit from there.
+Lewis Benson: That's this step here.
+Lewis Benson: So you're going to use CD.
+Lewis Benson: because normally we create our repos first,…
+Lewis Benson: And then once you clone it down all it says to do is just move that file.
+Lewis Benson: get into the next set of levels,…
+Lewis Benson: I'm going to click on that link.
+Lewis Benson: You don't have a repo yet and…
+Lewis Benson: this is the code that we're focusing on and…
+Lewis Benson: Every single web page that you create is going to be your username.
+Lewis Benson: if I get the little tool to pop up there.
+Lewis Benson: you won't go wrong.
+Lewis Benson: It could technically name it as well.
+Lewis Benson: but MD and…
+Lewis Benson: can do combination with incoming first.
+Lewis Benson: You scroll down to the danger zone.
+Lewis Benson: Those do cost money.
+Lewis Benson: because it's the same as when you delete.
+Lewis Benson: I just was saying you could use the terminal to get a little extra practice and…
+Lewis Benson: no longer have that little lock.
+Lewis Benson: This could be like a domain you retrieve from go daddy or…
+Lewis Benson: if I did something like
+Lewis Benson: it's showing my project is the repo name.
+Lewis Benson: That's the main purpose of today's assignment…
+Lewis Benson: we just need to switch this to Main.
+Lewis Benson: And this is the name of the file again.
+Lewis Benson: what you learned today.
+Lewis Benson: And this is just telling me this is my commit.
+Lewis Benson: I could actually add that fit parameter and
+Lewis Benson: This would be the same as me saying push origin Main.
+Lewis Benson: We have the
+Lewis Benson: It's not going to be github's web page.
+Lewis Benson: So Robert's going to be filling in for me and…
+Lewis Benson: You're gonna create a new directory named get practice using mkdir.
+Lewis Benson: start on any assignments.
+Lewis Benson: if you just want to drag and…
+Lewis Benson: the location of the file.
+Lewis Benson: Hyphen for
+Lewis Benson: it's at the top of your pages…
+Lewis Benson: Maybe this was a JavaScript function…
+Lewis Benson: This would also push my changes up.
+Lewis Benson: then scroll down to Danger Zone.
+Lewis Benson: something like that.
+Lewis Benson: That way we understand what's going on today.
+Lewis Benson: So you just have to move it into your repo.
+Lewis Benson: So I'm going to move that to The Parent Directory.
+Lewis Benson: This is…
+Lewis Benson: that's where you'll actually use the detached head thing and…
+Lewis Benson: So that one could cost you a little more.
+Lewis Benson: revolving around GPT.
+Lewis Benson: because it's a big green button.
+Lewis Benson: That doesn't mean anybody knows your url or…
+Lewis Benson: I'm gonna put the extensions on here as well.
+Lewis Benson: That's the only difference.
+Lewis Benson: which we haven't gone into yet.
+Lewis Benson: seen that video
+Lewis Benson: where you're creating your repo.
+Lewis Benson: So how this all happens on your desktop.
+Lewis Benson: where it's going to be moving from and…
+Lewis Benson: There was a padlock up there earlier that is gone.
+Lewis Benson: this won't pop up right away.
+Lewis Benson: but it's not likely they're going to go to this particular URL.
+Lewis Benson: you're creating this file on your desktop.
+Lewis Benson: this commit message is perfectly fine.
+Lewis Benson: because you're afraid people will see it and…
+Lewis Benson: I have to include the directory.
+Lewis Benson: I'm going to put it back into my project.
+Lewis Benson: it also is showing my Branch right now except emerging.
+Lewis Benson: Keep in…
+Lewis Benson: Your latest code is not your current location.
+Lewis Benson: You can see it actually swapped as a round for me.
+Lewis Benson: You need to be on a public repo so I'm actually going to change my visibility.
+Lewis Benson: I believe on average.
+Lewis Benson: if you're on the code.
+Lewis Benson: You need to get caught up on this is something that I'm going to cover more tomorrow,…
+Lewis Benson: if something goes wrong.
+Lewis Benson: My latest commit is Project four.
+Lewis Benson: Brian can help you.
+Lewis Benson: Why not use that?
+Lewis Benson: If you don't have an index.html,…
+Lewis Benson: where I'm considering arguments and…
+Lewis Benson: just you don't really care about that command…
+Lewis Benson: So if you're working on the main branch your head is the main branch…
+Lewis Benson: So you can do is go to actions.
+Lewis Benson: That way…
+Lewis Benson: but for these instructions it wants you to do all of the terminal commands First Take and…
+Lewis Benson: It'll be your personal web page whenever you do this.
+Lewis Benson: drop it.
+Lewis Benson: then this is another boundary.
+Lewis Benson: And then…
+Lewis Benson: Feel free to just drag and drop.
+Lewis Benson: I can move this into say demo.
+Lewis Benson: I'll show that in a second.
+Lewis Benson: So if I made this a capital it would actually move this and…
+Lewis Benson: If you're not in the same directory,…
+Lewis Benson: So that'll be dot slash.
+Lewis Benson: if you needed to rename it,…
+Lewis Benson: You can either use the terminal to move it or…
+Lewis Benson: if you run into any issues,…
+Lewis Benson: You don't have to modify that or…
+Lewis Benson: it might not be like front end ready.
+Lewis Benson: They don't have a lot of styling yet.
+Lewis Benson: Friday will just be another review.
+Lewis Benson: And this commit is Project three.
+Lewis Benson: It's about 14 dollars a year for a domain name…
+Lewis Benson: worry about that.
+Lewis Benson: Let me know.
+Lewis Benson: And then this is the other code we're working on this word head.
+Lewis Benson: has the ability to search for your page or…
+Lewis Benson: because you can just drag and…
+Lewis Benson: if you want.
+Lewis Benson: I'll do MV.
+Lewis Benson: you always have to include the name of the file.
+Lewis Benson: I'm so deploy a web page.
+Lewis Benson: If I put that in the domain name,…
+Lewis Benson: it will default to your readme as the home page.
+Lewis Benson: you'll be able to ask your questions about these commands…
+Lewis Benson: It's a really weird scenario that it's easy to fix.
+Lewis Benson: This just means that I was using the merge editor and…
+Lewis Benson: You'll have with deployments.
+Lewis Benson: drop things…
+Lewis Benson: then compare changes.
+Lewis Benson: things already staged just click the commit button.
+Lewis Benson: but I just kind of want to give you a taste of it today…
+Lewis Benson: then go ahead and…
+Lewis Benson: you'll have to put the location of the name as well.
+Lewis Benson: Google domains anything like that.
+Lewis Benson: It's not the most friendly looking URL.
+Lewis Benson: find your page.
+Lewis Benson: So which one do I want to keep?
+Lewis Benson: I typically don't use these…
+Lewis Benson: use the MV.
+Lewis Benson: What you need to do is go to your settings.
+Lewis Benson: it might jump the price up to $80 just…
+Lewis Benson: you can use the drag and…
+Lewis Benson: I'm looking at my other developers code and…
+Lewis Benson: if I'm on a bug fix Branch,…
+Lewis Benson: rename it at the same time.
+Lewis Benson: if you have a very
+Lewis Benson: So by all means practice deploying whatever you can.
+Lewis Benson: The first thing that looks for is an index.html.
+Lewis Benson: because it is the only other New Concept and…
+Lewis Benson: because we're going to have you use them things can go wrong.
+Lewis Benson: because normally when you have a merge conflict you have more than just these two lines,…
+Lewis Benson: So you could create your own fully qualified domain.
+Lewis Benson: drop method whichever way you want to do it.
+Lewis Benson: I'll show…
+Lewis Benson: then take your screenshot.
+Lewis Benson: then your head is on the bug fix Branch…
+Lewis Benson: It's actually in that get game.
+Lewis Benson: what that means. So if I'm in The Parent Directory,…
+Lewis Benson: because everyone wants to use that.
+Lewis Benson: we have a merge conflict…
+Lewis Benson: I'm kind of an between Branch at this…
+Lewis Benson: if you were to switch to this commit,…
+Lewis Benson: because he put three parameters I put four parameters.
+Lewis Benson: this is deployment we can actually make this into a live web page that you could share with your friends.
+Lewis Benson: And this is the opportunity to find those things that go wrong after executing all of the commands take a screenshot of your terminal showing the commands used resulting directory contents.
+Lewis Benson: If it can't find it it'll look for a readme.md and…
+Lewis Benson: it'll usually be 30 or…
+Lewis Benson: I would say MV.
+Lewis Benson: because I was on a commit and…
+Lewis Benson: For example,…
+Lewis Benson: 40 lines you're trying to sift through.
+Lewis Benson: a branch at the same time.
+Lewis Benson: then your head is on that commit.
+Lewis Benson: if Iris wanted a
+Lewis Benson: That's why I showed the head and…
+Lewis Benson: you readme.md will be your homepage.
+Lewis Benson: So I'll just hit open and…
+Lewis Benson: the commit
+Lewis Benson: merge editor and…
+Lewis Benson: Anybody can come visit it.
+Lewis Benson: the reason I like doing this is because I can see the incoming change in the current change side by side and then I can see the result of…
+Lewis Benson: So once you have all your commands written you did the ls just take a screenshot.
+Lewis Benson: what changes that I'm deciding on. So, maybe I want to grab the
+Lewis Benson: And then we get my screen shared as well. and welcome to day three of get First thing I want to cover today is the terminal again. I want to go back over those basic commands to interact with the terminal maybe The terminal is easier in a certain way for you than it is for others. So if you see me opening my terminal by right clicking And then going to get bash here. That's because that's the easiest way for me to do it. You can also do it through vs code. I know a few of you had better luck with that. So if I go into my vs code.
+Lewis Benson: And I open this into my current working order here.
+Lewis Benson: I don't have any files in here yet. But because I opened my vs code into this folder whenever I open a terminal it's going to be in that current directory. And we can see that here. This is also showing that I'm in Powershell and we want to get bash. So I'm going to click this drop down over here on the right you have this little split pane. We can see the word Powershell. I want to make sure I click the down arrow plus sign itself. The down arrow will allow me to get bash inside of my vs code and you can see that the current directory is the directory of My Demo folder. So just a little review on the different ways. We can open this terminal. And I showed a couple of you yesterday another way to open vs code through the terminal.
+Lewis Benson: I'll show that again. So when you have your terminal opened, I'm currently open to the demo 11-15 folder. You can use the code shortcut. This should work for most of you. There is the possibility on Mac and some of the older configurations that this won't work. I can help you get it set up but it is a time-consuming process to you have to reassign the path. Sometimes it works with one command, but a lot of times you have to go in and set up your actual path variable. And that is a little bit time-consuming. so if this doesn't work,
+Lewis Benson: We might have to work through that on a ea time or schedule an appointment for that just because how long that can take to get set up for you. But as you can see when I use the code period the period remember represents my current folder any time you're using a period anywhere in your bash terminal. It's saying in my current directory, that's what the period means so when I do code period it opened this up in my current folder. Another thing you can do with that if I CD into yesterday's demo. I believe the get demo.
+Lewis Benson: I have these different files in here. You can also open a specific file the same way by saying code and an index.html and instead of opening the entire folder. It opens that direct file without going into that directory. So that is another option as well. We can see the directory here, but on the left over here we can see I'm still in demo 1115 so If you need to open a file from another project, but you don't want to do it in a separate vs code. You can use that little shortcut. Okay, so I'll use my terminal inside of vs code for this. And what I want to start doing is creating some files and folders and just kind of reviewing on these commands. I want everyone to be really comfortable using the terminal.
+Lewis Benson: And then we can also maybe get into a little bit of the graphical interface just to show that alternative. It can sometimes help you get out of a pinch. I mainly use the graphical interface for comparing my previous code to my current changes. It's just a really good way to help you write your commit messages and I'll show you what that looks like. So I want to First create a directory. And that's using the mkdir. I'm gonna make directory. And then I want to put the folder name. I'll call this folder assets.
+Lewis Benson: And we can see that folder is up here in my Explorer now. And now I'm going to create a couple files within that assets older. So I'm going to first CD into that.
+00:05:00
+Lewis Benson: Hope to be CD assets. I could technically do touch assets slash and then the file names but cding into it just makes it so I can just create the files consecutively without having to write the folder name twice. So it is a little bit of a shortcut for when you're creating multiple files. So I want to create a Styles dot CSS and a script.js notice. I have the touch command first and then each file is just separated by a space and this will create these two files.
+Lewis Benson: And if I open my assets we can see those two files are being created. I'm also going to create an using touch. I could do dot slash index.html and this will create it in The Parent Directory. I'm currently in the assets folder. So when I use dot slash it says go to the parent folder first and then create the file. So it'll actually create it in demo 11 - 15 and just to kind of review on how you can navigate to a parent folder. This is the Syntax for that.
+Lewis Benson: And we can see that's outside of the assets folder. I open that up and close it. I created it in the right location. So now I'm going to CD. t dot again. This goes to the parent folder. And we can see that it redirected me to demo 11 - 15 so I am in the parent 4.
+Lewis Benson: if I wanted to Create a git repository here locally. Can someone tell me the command to get Repository?
+Lewis Benson: Would be the command for initializing the proposatory.
+Iris Coats: As much it's not get in it is it?
+Lewis Benson: That's correct when I run get in it. This is going to create a new folder called dot get anytime. You have a Where a file name that starts with a DOT that's considered a hidden folder. So it's not going to show up in my Explorer but I can view it with the l with the all flag on that and I'll show that so I'm going to get in it. And we can see that it initialized. My empty get repository here is my file path and it also shows the dot get extension here or sorry the folder here. I know this is a folder because it has the Slash and it ends on a slash. And the dot just means it's a hidden folder. So if I use LS space and I put a flag with A on that. I can see all of my hidden folders.
+Lewis Benson: if you look at these first two over here, there's a dot dot slash. This is referring to the parent folder. And the dot slash is referring to my current folder. I remember anytime you have a single Dot and your terminal. It's referring to your current directory. And that doesn't necessarily have to end a slash. It just has to have that one dot. Does anyone have any questions so far about anything I've shown?
+Lewis Benson: this is mostly a review.
+Lewis Benson: So since I created this as a get Repository. How would I commit my changes? And we can see I have some untracked files here in folders. What I need to do to actually save these unto a checkpoint.
+Umar Z: You have to do ACP.
+Lewis Benson: Exactly. I'm not going to be able to do the push. Do you know why I can't do the push yet?
+Lewis Benson: I can definitely add in commit. I'll show what happens when I try to do the push.
+Lewis Benson: So if I do a get add Let's take a look at the directory here first before I actually do this. I have this assets folder and I have this index.html. I just wanted to just give a little reminder of what we're actually doing with this command. We're adding the files to a staging area so that they can be committed adding the files to the staging area doesn't save your status or your current file locations. All it does is prep things to make a permanent commitment. Once that commitment is created. you can kind of undo it using a lot of Commands and it's really tricky to do but it's very difficult to undo a commit. Once you push it to GitHub. It's nearly impossible to undo.
+00:10:00
+Lewis Benson: So once you stage these it's kind of a way to confirm that you're actually committing exactly what you want to commit again. Whatever you're working with a lot of people in a large code base maybe for a big company. You have to make sure that you're doing these files individually. So you would typically work in one file at a time. And as you complete your work within that file, you would commit that file. So for here, I'm going to say get add index.html. And that's going to add that one file. So if I do get status we can see my assets folder was not added. I'll make this a little bit bigger so we can see everything at once. My assets folder was not added. But my index file was and notice we can't see the files that are inside of the assets folder. But if I were to say bit ad
+Lewis Benson: assets slash script.js And then I do a status again We can actually see the assets content here. And now it's going to show us the CSS because that's the only thing left if there were still multiple files in there. It would just say assets still but because I added one file it'll show us on the remaining file that's there. And the way that I've been showing this is to use the git add period and again the period is saying everything in my current folder. My current folder is demo 11 - 15 if I were nested in another folder the ad period would only add the files within that folder. And the reason I bring this up is because if I create a new folder actually I'm going to use mcder for this.
+Lewis Benson: kdir just so we get that practice. And I'm going to create a folder called photos.
+Lewis Benson: And within the photos I'm going to create a bunch of files. They're just going to be empty. So I'm going to two file three. I'm not gonna put extensions on these. I just want some content. So here are these three files?
+Lewis Benson: if I were to CD and to photos
+Lewis Benson: we can see my directory is Now demo 11-15 photos and I'm going to a get add period it's only going to add the files that are within the photos. So if I say get status
+Lewis Benson: It looks like my ad didn't work on.
+Lewis Benson: it had period
+Lewis Benson: I'm sure my shortcuts not working. Typically when you create a file you can add everything at once just by using the period. That'll do everything within that folder.
+Iris Coats: Lewis I use two dots.
+Lewis Benson: Yes.
+Lewis Benson: If you use two dots that's going to do the parent folder.
+Iris Coats: Yes, sir.
+Lewis Benson: And that should add. My remaining CSS file as well.
+Lewis Benson: And that did so that might not have been to behavior. I wanted it'd be the same as me being CD dot dot and then add period here. I'm not sure why that wasn't working that shortcut typically when I use to get ad period it'll whatever. folder them in I see these weren't in the folder. So I'm actually gonna remove those and show that again because they should have I forgot to put our photo slash file whenever I created these so it actually wasn't working because there's nothing in the folder to add. So let me remove these from my
+Lewis Benson: staging area and I can actually do that all at once by CD into the photos again.
+00:15:00
+Lewis Benson: and then I can let me check the command against get Dash cash
+Lewis Benson: And then the file name, so that's where I'm going to put the DOT.
+Lewis Benson: That's not normally what I see. Okay, it worked. I don't know why it gave me all this extra information here. it's because I must have spelled that wrongs. c a c h e d Yeah, I put an extra H right there. Apparently I still worked though. So I'm okay with that. What it did though, is it removed the three files from my staging area? So when I do get status now we can see those three files there.
+Lewis Benson: So what I can do is add those with just get period and again, it's only going to add the files that are within the current floor that I'm in. So if you are working in a directory, perhaps you are building a multi-page application, you could create a folder which contains all of the contents for one of the pages you're on that would have all of your assets. It would have your products your CSS file for that page. All of those files that are related that page and you can add all of those at once using get add period other than having to add each individual file for one big commit message because sometimes there are circumstances where you want to add multiple files for one commit. Sometimes you actually refactor and I'm actually show where this real quick. We'll do a git add period get commit. and for the commit you have to put the
+Lewis Benson: m flag, so it's Dash M and a message and we're going to say If you files just something quick there.
+Lewis Benson: And since I've made the Commit This is now permanently done. So when I do get status I should have a clean working tree.
+Lewis Benson: Not sure why that's still saying there's a deleted.
+Lewis Benson: Change is not staged for commit.
+Lewis Benson: Let me do a get. I think it's because of that typo I had.
+Lewis Benson: slash long slide
+Lewis Benson: I'm already in the photos.
+Lewis Benson: I'm not sure why I did that.
+Lewis Benson: what I'm going to try though is It meant - A. M.
+Lewis Benson: Okay.
+Lewis Benson: so when you do these Dash a it actually skips the ad stage. This isn't something that's recommended. It was just something that was telling me I could do. I'm not sure what This was about it has something to do with that. Typo I made. I've actually never had that happen to me before typically when you do the RM it just removed it from staging. It doesn't actually delete files which is interesting because the files are still Again is a really deep subject and I don't know everything there is to know about get it Dives in very very deep. It's something that you could work on for months and still have a lot to go on. We just want to cover the basics though how to add how to commit. and also perhaps deal of minor merid conflicts things like that getting into the
+Lewis Benson: Different ways that you can modify your commits and even change your history. There's actually this process of where you can if you created a bug at some point you're working on an application. You create a bug and you do a bunch of commits. And you fix the bug and then you do a bunch of commits. And then you have to roll back your code before they bug fix commitment. You just put the bug back in your code. So there's this whole thing where you would want to roll back to the day of the bug being remove that bug and then merge all of your code forward. It's a really lengthy process.
+00:20:00
+Lewis Benson: I will share some resources though. If you want to explore that, there's actually one of those it's kind of like the CSS Diner but It's just a way to practice to get commands and learn all these Advanced Techniques. So I will share that today as well. Just if you want to practice and really get into the deep dive of how get and how to leverage all these Advanced Techniques again for this class. we just need to learn how to Integrate it with GitHub and be able to collaborate if needed. Does anyone have any questions about that?
+Lewis Benson: Okay, so I currently made my commit here's what's gonna happen if I try to push this up, so if I do a get status, I'll just double check everything. We are on the main b Nothing to commit working tree clean. So if I say push origin, Main
+Lewis Benson: Is anyone have any predictions of what's gonna happen right now?
+Lewis Benson: Okay, let's just see what it does.
+Lewis Benson: We get two fatal errors origin does not appear to be a git Repository. Could not read from remote Repository. Please make sure you have the correct access rights and the repository exists. Anyone see what the problem is here or understand what this error message means?
+Iris Coats: basically
+Iris Coats: that there is not a repository to put it in.
+Lewis Benson: I've never created a GitHub repo for this. So there's nowhere to push up to and the reason I want to make this clear is because get is a standalone application. It's not something that requires GitHub to work. But we are using GitHub to integrate all of our code onto the cloud. I just want to make it very clear that and GitHub are two different things. So mit locally. You can create branches locally. You can do all of the Power of get but you can't put it on GitHub unless you go on GitHub and create that repo. So I'm going to do that now. Put up a new tab here.
+Lewis Benson: And I'll just create a quick repo.
+Lewis Benson: I'm gonna make my private for now, so I'm not putting. All of my people that I'm networked with on blast with creating new repos, and I'm just going to call this. demo 11 - 15 this is the same as my folder name. And I'm not gonna get ignore or the license. I'm just gonna leave this basic. And again, the only reason I'm on private is just so I don't put everyone on blast right now by creating multiple repos today. It gives notifications to everyone every time I create a repo so keep yours as public. And I'm going to create Repository.
+Lewis Benson: And then we get these two code blocks here. So the other day I showed if you just copy this whole block it works, but it throws that error message and I know some of you were concerned about the error message. Yes, Omar.
+Umar Z: Just a good question about keeping it private mean that nobody can access it at all or is it by invite only?
+Lewis Benson: They don't even see that it exists if they go to the link, it'll show a 404 error.
+Umar Z: I see. So there is no way to access it is only for your eyes and
+Lewis Benson: Exactly, unless I invite somebody to that repository they can't see it. Yeah.
+Umar Z: Also, you can invite Okay, I get thank you so much.
+Lewis Benson: Yeah, and just as a side note, we talked about organizations yesterday. If you create a private repo on an organization, you have to have the premium version to invite people to that. Yeah. Yeah,…
+Umar Z: I see that So now the basic preview version. Okay, I get it.
+Lewis Benson: so there's some features there that are out of them when you start getting into the organizations, but for what we're doing you can create private repos if you want to Tinker around and not put your network on blast or if you just want to keep stuff away from employers eyes anything that you don't want to be public just make a private repo for but all of your assignments definitely keep those public.
+Lewis Benson: to avoid that error we have the other day. We actually were copying this whole code block. It doesn't hurt anything to retrieve that error. I just always found it easier just to click this one button and paste it in but at that error bothers you just grab this Top Line and only this Top Line. And the reason we get an error is because the main branch already exists. And we can't push a branch up that already exists as well because it's already there. So it gets really confused when you try these two commands. So just do this Top Line. And I'm going to put this into my vs code terminal.
+00:25:00
+Lewis Benson: Again, I need to back this up. I'm on the photos folder right now. We got to be very mindful of what our directory is whenever we're making changes. So I'll do CD dot dot. Now I'm on my root level of my project. If I were to back it up again, I'd be in the projects folder. That's not where I want to be for this. And I'm just do it get status make sure everything is up to date. And I'm going to paste that in now.
+Lewis Benson: And it's get remote ad origin. And what this does is create this origin is like a variable and the variable stores this URL. So whenever you use the word origin, you technically could replace the word origin with the entire URL. So when I say get push origin main, I could say get push https github.com username repo name dot get and then Main and it would have the same result. That's not typically something you want to do. So what you do here is you do a get remote ad origin and then you put in the URL and it creates that origin variable and it stores this URL so that you can use it in the future. And that's all we're doing here is we're basically linking our local repo to our remote repo.
+Lewis Benson: There's no response to this but I will show you a command if you ever need to test to make sure that it linked properly. You can get remote. And then put the V flag on it. And this will show you the current origin variables. And a fetch just kind of like a pole and So this is where it's going to push the code to so I'm going to go ahead and get push origin Main.
+Lewis Benson: And now that I pushed my code up to GitHub. We can see that it went to here. This is the response 100% of everything went up so I can go to my GitHub repository and just do a quick refresh. And there is the new code base.
+Lewis Benson: Does anyone have any questions at all about that little workflow there? With using the git in it to initialize a new repo maybe creating things with your terminal navigating your terminal. I just wanted to show you some of the things that you might have to do with your terminal cding into this photo so that you could grab just these three files and avoid maybe grabbing your assets so that you could add those and Writing good commit messages is an important thing to the work on it's kind of a scale. And with that I want to show you how you can compare code. So I'm going to do a few things first. I'll just do some. boilerplate in here I'll add in a little bit of content. We' That's a header. with an H1
+Lewis Benson: that's an H2 try that again.
+Lewis Benson: This is my new project. I'll give this a main and in my main I'll put a couple sections. And in this section, I'm going to put some lorem.
+Lewis Benson: All right. So this is basically built site. I added all this content. So now I'm going to do my commit. So to do the commit, let's get add. And I could type in index.html. But since this is the only file I've worked on I can just put the dot and it will only add that one file. And then I'm going to commit this change. So let's get mit put the message flag on it. and then within the message I'm going to build basic HTML with lorem content
+Lewis Benson: and then push that to GitHub.
+Lewis Benson: And there was my ACP. I did a git commit Dash and with a message. That's my C. And then I did the get push origin main. That's my piece. So ACP, everything is on GitHub now, I'll refresh to make sure everything looks good. I can see my build basic HTML with Lauren content commit message and I can see all the content there. Great. So now I'm going to make some changes to this. Let's say I don't like this sentence the phrasing was poor and I'm going to add a little bit here.
+00:30:00
+Lewis Benson: So this is been changed. And now I'm going to start working into a new file. I just want to kind of show you what can happen. So we're going to start working on some CSS this can break our brains a little bit and we get focused on this and we forget what we're doing. And what I'm going to do is I'm just gonna do all selector again. And it was sizing border box and do that one again, so I don't forget it and we'll do margin zero just a little bit of a reset going on here. Very basic. And I'll add in one more thing. font size will do a sensor of Font family. Sorry.
+Lewis Benson: Okay, so I did all the CSS and I completely forget what I did on my HTML. I know I did a bunch of work in there, but I can't remember So what you can do is over here on the left. You have your Source control. This is a graphical interface to integrate with your Git. You can actually do your entire ACP process here. I'm going to minimize this one because this isn't a separate one that whenever I opened up that other file earlier using code and then I typed into file name. It opened up this extra one. I might even be able to close this now won't let me close it. You should only have one in here though. If you just opened up one file, just ignore this top one. But what this is showing me is I can type a commit message in here. I can stage changes. I can do my entire ACP through this graphical interface. I don't advise Getting rusty with the terminal use this if you want, but make sure you're always comfortable using the terminal as well.
+Lewis Benson: Because when it comes time to handle merge conflicts or modify something in a very specific way. Sometimes you'll deal with something called a remote base where you have to change the way the branch is structured for one reason or another and you will have to use the terminal for that. You cannot use the graphical interface not unless you get some sort of other graphical interface. Such as get Kraken if you're interested in get cracking. I think it's still free. I'm gonna go to their website just to check.
+Lewis Benson: so this is just another graphical interface and it looks like they have a free version, but they also have a premium version so I don't know what you'll get out of the free version. But this can do things. I didn't actually says right here you can do the rebase and stuff like that. That's what I was talking about that you can only use terminal 4, you can't use the vs code for that at the moment. I have an integrated that then but this can handle all of your get needs. Feel free to explore this if you're interested in a full-fledged graphical interface forget. It is pretty cool. I've tried it out.
+Lewis Benson: In the past and I did like it except I just got so used to using the terminal that it was faster for me to use the terminal than it was for me to go in here. I'd have to click on everything individually and then drag it where I needed it and then type in my commit messages by the time I did all of that I could have already ACP through the terminal just the terminal was just faster just because I was used to it. But what I want to show you in here and this Source control, I'll go back to this. Remember. I forgot my HTML. So I go into my source control and I'm going to click on the HTML. And here is showing me all of the lines And all of the lines that are not changed. So if we compare line 14, it's saying line 14 was deleted. This part of line 14 looks like it might be intact still.
+Lewis Benson: A line 15 as Looks like it was deleted. So there's two now. These are fully deleted. Yeah, so these two lines are fully deleted three lines And this was what was remaining for those lines. This is what everything got bumped to. And then in my other section we can see my original line 20 was right here. on 19 to line 24, this is my new code block and that's because I formatted and it actually slid all the stuff up. But if we highlight that it should highlight on it's hard to see but this is the same here as it is here. And then from here down we can see the new content and then this is showing all of the new content it had to use these hash marks here to show that the extra space was created. This is a good way to say. This is what I did. so let me write my ad commit, so I'll do get add period
+00:35:00
+Lewis Benson: And if we look over here, we can see stage changes the index just moved into Stage changes. I mean actually I can hit this minus button to undo that.
+Lewis Benson: And I just want to do the index.html because I actually added the Styles as well. So we'll do get add. index.html
+Lewis Benson: and now my index.html staged and then I can say get metasham. And put in my message. and this would be
+Lewis Benson: Add content second section So there's my commit message now, and I know it's that commit message because when I look inside of my working tree file here. I can see those differences. So it gives me a guide if I forget the changes I made and that will happen. You'll be jumping around and then when it comes time to start making your commit messages I said where was I cannot remember what I did. Because you just write so much code that it's hard to keep track of the exact things you did. And you want to be a specific as possible with your commit messages. So you don't want to short yourself and post it updated index.html. It doesn't tell you what you did. It just says that you updated a file.
+Lewis Benson: All right, so that commit is made and we can look at the source control over here and we still have our styles to go. If I click on Styles, we can see the changes we made we added. A little bit of a reset. So I'm actually going to use the graphical interface now to show you this I can add this to Stage it. and then in my message I can say add reset to CSS. And the nice thing about the graphical interface here is if I hold shift and press enter I could come down to a new line and I can extend this and I'll show you why that could be useful. If I add some text. We can see I'm 17 characters over the 50 current and line. So as I delete this, it's telling me where my limit is.
+Lewis Benson: If I get this down. And I hold shift and press enter. And I copy and paste this whole thing. I'm going to paste it one more time. And now on my second line, I'm allowed 72 characters. So what this will do is it'll create a heading. And then it creates a body for your commit message. So it's just a really nice way to be able to format your commit messages. And then there's a one more way to do this. If I remove all of this text I have nothing in here. And I press the commit button. It will actually open up a commit edit message over here. And what this will do is allow me to write my commit message in this file. and I could say reset to CSS. And then I can make a new line. Add border or box sizing to all elements.
+Lewis Benson: Add Sarah font family and you can even use a markdown syntax here so I could say make these into Hyphens this one's already going to be a heading so I don't have to worry about that. So this is another option for your commit messages if you're interested in using this. again, I recommend not getting rusty with the terminal so use everything Maybe or just use the terminal and know that this is here in case you need it.
+Lewis Benson: And then when you close the file it automatically does the Commit This here says publish branch. What this is referring to is. I need to push my main is basically what this is saying. I thought I actually did push earlier and I believe This is already on GitHub.
+Lewis Benson: That's interesting but typically it says It won't say publish unless you've never pushed your code before I'm gonna click this. And this will perform the push. And then we also have this little sink button down here. This is telling me that everything's up to date. Doesn't have an up and down arrow. Again, this graphical interface. You just have to play around with it and kind of explore these tools. This is showing you what branch you're on. And there's also this commit graph you can look at. That's kind of a new feature, but it's kind of neat when you're working with multiple developers. You can actually see where this will Branch off and we'll have a little
+00:40:00
+Lewis Benson: Picture of the other developers and you can see what they've done. You can see their commit messages and you can see who the author is so you can see how powerful commit messages might be whenever you're working with other developers here. And again, I open this up just by clicking on this little visualize commits on the commit graph button at the bottom. It could be useful to you. Definitely keep this in your tool belt. You might want it someday. But I don't use it very often even when I'm collaborating with other developers because typically I'll use GitHub for this. I'll give you their commit messages on GitHub itself. I can show you where that's at on there here was my previous one where I have this Boulder heading I have the two bullets here. So that's kind of what that'll look like. whenever you make a commit message like that. I'm gonna go back into the Explorer and I'm going to close this working tree.
+Lewis Benson: and This is actually an extension. I forgot to mention that so the extension I have for this graph is called get lens.
+Lewis Benson: Is through gitcrackin? And that's how I'm able to view this. I actually completely forgot. That was an extension and not just part of vs code is default Source control. So this get lens an extension for feel free to explore it if you want. It's also the main thing I use get lens for is not for this graph. You may have seen this in my code. It says right here U 12 minutes ago built basic HTML with lorem content. This is showing my commit message right here. It's showing me as the author. And it's telling me how long ago I added this content. And wherever I click it'll tell me this right here. It says uncommitted changes. Not sure why it says that because everything's been here has been committed but
+Lewis Benson: interesting But yeah here it gives you a little bit of History within your file so you can see who did what whenever you're working with multiple people just a little handy little toll this get lens extension. And let me go back to my terminal.
+Lewis Benson: Does anyone have any questions about the terminal review the ACP process anything like that?
+Lewis Benson: Okay, just a quick recap here because somebody tell me the command to view my remote connection with that URL would be to remember that command was
+Lewis Benson: it'll show the Fetch and the push urls.
+Lewis Benson: So just to recap that was get remote Dash V. and when I put that in it shows me that this is now wired up to my remote and it tells me exactly what the URL is something cool about this too is if I hold control and click it'll actually take me to that repo so you could use that command in your terminal to quickly navigate to your Repo another little shortcut if you're interested in that.
+Lewis Benson: That's typically the only thing I ever use that command for is getting to my repo or debugging if I get an error. feeling too lazy to go to my GitHub find my repo I can just click this and it takes me to it. So it is Handy. another one that's similar on whenever we start getting into branches is get Branch Dash V And this will tell you all of your remote Branch names. This one's also showing my recent commit message on that branch. and the name of that commit so if I wanted to switch to that I could so there is the branch. so just a handy little command there. We did to get status.
+Lewis Benson: if there's any other git commands that I want to show you.
+00:45:00
+Lewis Benson: That should be it maybe if you're interested in get logged. It just shows your commit history. Then you can scroll up and see all of your different commits.
+Lewis Benson: So This is useful whenever you're mainly collaborating or if you need to roll your code back. This is how you would do that. So what you could do is this is currently where we're at. This is my latest, but if I wanted to roll my code back to here. I can actually
+Lewis Benson: create event. That's not what we want. I want to copy this.
+Lewis Benson: And this little end thing here you press q and it will close that. I'm not going to get switch. past that in
+Lewis Benson: I got to do the DTaP detach option.
+Lewis Benson: There we go. On so that'll roll my code back to that commit and then I could make my changes here and then merge this back forward. This is kind of a more advanced thing. But if you wanted to go back and see what your code looked like at this time notice, I have some of the HTML content, but I don't have anything in my CSS now because I rolled back. And then to get back to my main just get switched Main.
+Lewis Benson: And then all that content comes back the Styles is So that's one way you can roll your code back. Typically when I'm rolling back my roll it back to that commit and then I'll duplicate all the code that I want and then I'll move back forward and then I'll place the code back in you can do it through get using what's called cherry picking where you grab the specific commits merge them in. It's really Advanced. I'm personally not comfortable doing that because you can break your entire repo if you don't do it correctly, and I'm very prone to typos. So it's one of those things where if you practice it enough you can use it. I typically just copy and paste things even though it's not the most efficient. Does anyone have any questions about this?
+Lewis Benson: this little rollback thing here.
+Lewis Benson: Another way to do it. Is on GitHub itself.
+Lewis Benson: We can see I have five commits if I click on the five commits. We can actually view the commits and see the code from that time. And if I wanted to I could hit copy and it would copy that code from that commit and then I could just paste that if I wanted to roll it back. I can just override what I currently have. So it's not the most efficient again, but it It'll get the job done.
+Lewis Benson: All So if there's no questions, I'll start the 10 minute timer for a break. It'll be a little bit early, but this should push us into our
+Lewis Benson: Assignment a little earlier and give us more time so that way if anybody still catching up on previous assignment, you'll have that opportunity. And you can also practice and I'll show that get a call to game. It's kind just a learning tool similar to CSS Diner. And if anyone's ahead they can also try to start working through that. It's really good practice if you could master all the commands in there. You will be an expert with get You'll be able to do anything with it. All right, so I'm going to start the 10 minute timer and then we come back. I'll show that to you.
+Lewis Benson: I'll see you in 10.
+00:55:00
+Lewis Benson: Hey, welcome back, everyone.
+Lewis Benson: so I want to show you this a little bit of a learning tool for working on your get skills occasionally go back through these just to kind of refresh myself on the commands because there are so many of them and it gets very in-depth. I just search for get game.
+Lewis Benson: And it's the pop link. There might be some other ones here. I haven't seen this one before it might be a new one they added but this is the one I go to is learn get branching.
+Lewis Benson: And it basically just gives you a nice toll to practice the different scenarios. You can be in to manipulate your repositories. I do recommend reading. all of the text on every page all of the information on here is valuable. that the check mark So this is giving you your introduction to branching.
+01:00:00
+Lewis Benson: I believe if there's merging there's a rebase introduction everything you need to know basically to get in its basic form. And then also there's another tab here where you can do the remote levels and go through all of these different things you can do for GitHub. And that's what all these. Commands are for years for GitHub specifically. so this main get and remote is forget Hub and it has those. Separate commands because they are separate tools. And just to show you what this looks like. I'll click on the first one. Again, you want to read all of the text here because it explains how the toll works. You could just try to. Figure it out as you go, but you might not understand exactly what the command does if you do it that way.
+Lewis Benson: And we'll head next. And this right here gives you a demonstration on what the tool looks like when it's working. And so when I hit this button, this would be the equivalent of me typing this command into my terminal and what this is referencing. So when I hit that it shows what this little does using this little graphic over here.
+Lewis Benson: it's showing that I just made a commit again. Remember you have to add before you can commit there are shortcuts to bypass it that I think I don't recommend ever using those.
+Lewis Benson: we'll go into the first level here. And then over here, it has this little mini terminal. Where you would type in your commands?
+Lewis Benson: And here's a little entry so I'm just going to take a get. commit
+Lewis Benson: I just created a commit and I'm going to do it one more time.
+Lewis Benson: And that level is complete and that's all there is to this you just practice these commands remember whenever we' The commit command within our terminal we have to also add the m flag and a message to it. Again. This is just a familiarization tool and a way to refresh on these tools here as well.
+Lewis Benson: So again, just to find this you just type in get game. and it's the Game of Thrones. There we go. And we get to get branching right there at the top. So if you're ahead on your assignments, feel free to mess around in there and explore that again. It's a very powerful tool. I do highly recommend going through all the levels. You can learn those really Advanced GET techniques where you can cherry pick your commits, which means you would grab a commit from a previous time and modify the code there and then merge it back in. Do you have a question no more. I seen your hand went up there for a second.
+Lewis Benson: you're good. Okay, so That's all I have for the get game. I'm not gonna go through every level today on that. So next. I just want to show the other workflow for creating a repo again. This is my preferred workflow for this. So I just kind of want to drill this one in because it's just the way I normally do it. So go to GitHub. I'm gonna go to my homepage here start from scratch. I'm going to start by creating a new repo.
+Lewis Benson: the repo name is just going to be my project. You'll want to make sure this is a public repo. I'm going to do private again, just so I don't. spam everybody with this and this will be the day three assignment.
+Lewis Benson: And I'm going to add a readme that way I can clone this down. If I don't add a readme there's nothing to clone because there's no code that exists. So you have at least to read me to get started. I had my MIT license. And I'll just get ignore.
+Lewis Benson: And it should be The reason we use node is because later in this course, we're going to be learning about node.js which is another solution for JavaScript. It's It's a JavaScript runtime that runs locally on your machine and not in the browser. So it's kind of like how you would do your JavaScript backend for working with servers databases and that sort of thing. We also use it for JavaScript Frameworks. and what this does is there certain things you don't want to push to your GitHub and this prevents you from accidentally pushing secrets to your GitHub, which is typically a public place. That could be something like a key that has access to billable usage.
+01:05:00
+Lewis Benson: For example, you might have an account with some sort of weather website and you are gathering data from that weather website so that you can have some sort of weather widget or even a weather application. And you don't want anyone to just be able to access that through your website and then Bill you thousands of dollars because they hit that millions of times in a few minutes. That could be a problem. So make sure that whenever you start using. Things that you don't want other people to get access to whether it be passwords any sort of authentication stuff. This get ignore is a way to prevent that from getting accidentally pushed to your GitHub. So if we create Repository. I'll be able to clone this down.
+Lewis Benson: And just a quick recap on how to clone. Once you have your repository built. You want to click the green button that says code. And we'll click this little copy for the https link. and I want to put this in my projects for so let me go to projects. And I want to get back here. So I get bash and my projects folder because this is where I'm going to clone to again. if you create a folder in your projects.
+Lewis Benson: And you clone into that folder you're going to have a nested folder and then you're not going to be in the root of your get repo anymore. So just keep that in mind whenever you're cloning does create folders for you. So that'll help you skip a step. It also makes it so you don't have to get in it. So if you cloned your repo down and you're unable to see the branch, it looks like you're not in a repo don't get in it. You're probably just in the wrong directory. You might not have climbed it where you thought you did. Anytime you clone a repo it will initialize a new git repo with the dot get folder. So the command to clone is get clone and then you put in the URL. And for some reason I have to recopy this every time.
+Lewis Benson: Not sure what does that? And I'm going to send this.
+Lewis Benson: Okay, so it says it's complete as soon as I and done cloning. The next thing I do is CD into Whatever that project name In this case. I actually called it my project I can see that here. So I'm going to CD my project.
+Lewis Benson: And I can see I'm on the main branch, which means I am and I get repo if your terminal doesn't show a branch confirm by get status.
+Lewis Benson: You just want to make sure that you are in a repo if I wasn't in a repo I get status. You'll see fatal not and a get repository or any of the parent there's no dot get anywhere in the parent directories. So I want to see me back into my project. And I'll get status I can see I'm get Repository. And now I'm going to period and this will open vs code inside of my new project.
+Lewis Benson: If you don't have this shortcut, you'll have to open your vs code manually and go to that folder.
+Lewis Benson: Okay, so this is the new project. I'm going to create Outside of this. I just want to show you how you could move a file into your repo on someone do this with touch. And we'll say notes dot txt the touch command lets you create anything you want. You can create literally any type of file with any extension on it once I create this notes file. there's a couple ways to move it. I could just drag it into my project just by dragging and dropping.
+Lewis Benson: Undo that I can also use the terminal to move it. If you like using the terminal or you just want to get more comfortable with it, you can use MV. And then you want to put in the file name notice. I'm in So the file is located also in the projects directory, so I don't have to include a folder name here. So I'll just say notes and then where I want to move it to my project.
+01:10:00
+Lewis Benson: And it's called notes. If you don't include the file name, it'll try to rename the file. So make sure you include that. That's also a way you can use the terminal to rename files. And that's notes.txt.
+Lewis Benson: There we go. I've got to make sure I cleaned the file extension for that. Otherwise, it won't work and then I can CD into my projects. If I LS we can see my notes dot txt is there and if I wanted to rename that I could say move dot txt to notes dot MD. I can change the file. I could also change the name completely I could say. my notes, actually I'll do a hyphen.
+Lewis Benson: I like to have hyphens in my file names underscores so movenotes.txt my notes. And then if I LS we can see it renamed that file. So that's the way you can use your terminal. If you ever need to rename a file. It's just the MV command. So it moves the file name that way. I already have the vs code open. So let me go back into there. There's my notes dot markdown. So I'm just going to kind of put a little bit of content in here. before I start ACP
+Lewis Benson: I could ACP that I created a file. That's not a big deal. I want to create a heading. and this will be notes for get and get hub So again this pound sign represents a H1 heading. so I just wanted to kind of Refresh on some of this stuff.
+Lewis Benson: And then we're going to create a H2 heading. We'll do a section one intro. To get something like that.
+Lewis Benson: And then we could put a bullet. And I want to make this bullet bold. And again, I'm just trying to introduce you to some of the syntax because whenever you start writing documentation, this is the type of syntax. We'll use for this. And look at the hole inside.
+Lewis Benson: and then we can just put in some content like this. We could also do nested bullets where I could say.
+Lewis Benson: I'll put in this is bold. Let me actually split this up so we can see what this is looking like over here. So there's our content. I come down to a new line. I can Tab and put in another bullet. and say what is get? And we get that nested bullet format.
+Lewis Benson: Typically white space is ignored with markdown. Unless you do specific things. So if I were to say Hi, I notice that those are on the same line if you wanted those to be on separate lines after the word. Hello, I could put two spaces. And when you have two spaces after a new line, it'll create a new line. It's just one of those weird markdown things. I'm just something to keep in mind. Some other things you can do. I like to use code blocks a lot when I'm doing markdown, then let's show samples of code. So if I wanted to have some JavaScript I could do that with. three back ticks and then write You can also write JavaScript and then inside here I could say strict
+Lewis Benson: And we get syntax highlighting. So that's really nice. Const my VAR equals. we didn't learn about a raise yet. Yeah, we did. make this an array and then say my bar Dot push
+01:15:00
+Lewis Benson: and we'll push and Apple
+Lewis Benson: Orange
+Lewis Benson: and pear And just to show you can write JavaScript. It has its own syntax highlighting over here. We have different colors done over there. So this is just how it's being displayed on this. If I were to show this on GitHub, it could have completely different highlighting and coloring. It just comes down that I have a theme that likes to color this is red. But my output wants to color that is blue. So it's just the way it shows up on my theme. So this is a decent amount of content for my notes. So I'm going to ACP this now. So to do that, I'll open up my terminal again. You can use your integrated terminal if you prefer, I could go into here and bring it in this new terminal. Hit this drop down and go to get Bash. And then I could ACP in here. I'm going to use the external terminal.
+Lewis Benson: And I'm in my project I can see that there so I'm in the root of this repo. So I'll say I've only modified one file, so I'm just going to use period Get met Dash M to signal that this is going to be a message. And my message will be add. notes file with content up to JS block. This tells me where the content stopped in this message. It's showing me that I created content and I did everything from the top to here. So this is a good message for that. It's kind of short. It's under that 50 character mark, and it has the Stopping point of where my code stopped at. So it's a really good message for that. I would be able to know exactly where I'm rolling back if I needed the revisit that
+Lewis Benson: so that is committed and I want to push it to GitHub.
+Lewis Benson: And there It's on GitHub now. So I'm gonna add a little bit to my readme here, too. we'll say
+Lewis Benson: this would be like contributors. I'll put my name here.
+Lewis Benson: we could put sources We got a question Gregory.
+Gregory Robertson Jr: Everyone on let me push it to get doing the same thing different. Honey do today.
+Lewis Benson: Does it say it's not a get Repository?
+Gregory Robertson Jr: He's saying for my password and the right pain Gregory.
+Lewis Benson: you need to authenticate still?
+Gregory Robertson Jr: Yeah, but I don't know. I'm putting the right password and
+Lewis Benson: so It's an issue with your password. Do you think?
+Gregory Robertson Jr: It. no, it can't be though because the right Pantry don't put me.
+Lewis Benson: Is it linked to the correct account?
+Gregory Robertson Jr: I got to see let me see. How do I tell?
+Lewis Benson: Take a look at the remote Dash V command. So if I go in here and I say get remote Dash V.
+Lewis Benson: I'll see if you have anything written in there.
+Gregory Robertson Jr: All right. always say also on my own account that I'm the on connected to.
+Lewis Benson: It has the correct account. Okay.
+Gregory Robertson Jr: You do.
+Lewis Benson: I'm not sure why you would if you're a hundred percent sure. That's your password. Maybe try logging out of GitHub and logging back in again on the web page. Just to confirm that it is the correct password and…
+Gregory Robertson Jr: Okay.
+Lewis Benson: if it's not then you can do the recovery and make a new password and correct it that way. Because it should work if you're 100% sure.
+Lewis Benson: so in my readme file, I just want to include information about whatever it is. I'm working on you can put different headings in here. There's no written in stone way to do this. There are templates out there as well. I can show you a few different readme files. It is important to use good documentation. I will be going over this more whenever we get to project week when we actually start the Capstone. I will only be doing 30 minutes of lecture. And the rest of the class is going to be working on your projects. During that time. I'll do a 30 minute. This is what good documentation. Looks like that way you're familiar with that. It's pretty straightforward. You just kind of follow a template and plug in whatever information you want. So just to show you I do have some stuff in my readme now, so I'm going to ACP that.
+01:20:00
+Lewis Benson: Let me know Gregory if you still have issues after you try that.
+Lewis Benson: So we'll add it in my message
+Lewis Benson: contributors and sources push origin mean and we're pushing that off to GitHub, right? So let's take a look at this on GitHub What I want to do is actually create. A merge conflict again just to show you that interface and what that looks like. So here's my notes file we can see that we have. The same coloring unless because I use the GitHub Dark theme on my vs code. So I get that nice red and purple. I just like those colors you can use whatever themes you want. I'm gonna edit my readme file.
+Lewis Benson: I'm gonna just put some information here and say this isn't the day three assignment. This is the day through demo.
+Lewis Benson: I'll commit this to my main.
+Lewis Benson: Do a refresh. There we go. So I made that change. Now I'm going to make a change locally. And instead of demo or assignment. I'm just going to say day three code. So we can already see there's going to be an issue here. Let me see if that on one three. should be day three code. I changed it to two different things on the same line of code. So this is going to make a conflict. Let me ACP this.
+Lewis Benson: And the last time I did this I did it as a pull request and I was able to handle that conflict in my vs code. I'm going to show you both ways at this time. I'm actually going to do the merge conflict the other way where I try to push this code domain.
+Lewis Benson: And we get this issue here.
+Lewis Benson: Updates were rejected because your current branch is behind it's remote counterpot. So it's telling me that I have to get poll here. I'm going to show you what you can do instead of pulling down. You can do get switch - c and say I'm just going to call this. I don't need a coats con select I'm creating a new branch called merge conflict to handle this. And that I can push this up we can see my Branch name changed right here. push origin merge conflict. I'm not sure I got that air. It does not.
+Lewis Benson: I think I need to put a dash u in here.
+Lewis Benson: There's a flag. I need to put on this to make this work. Let me look on GitHub.
+Lewis Benson: Yeah, so it didn't create that branch.
+Lewis Benson: But I spell it correctly.
+Lewis Benson: just make sure
+Lewis Benson: and I'll remove that.
+Umar Z: There's a typo in conflict is conflict if that's what the problem. I don't know.
+Lewis Benson: I think Yep, that's all it was. So having the correct spelling is definitely important whenever you're doing it this way, but we can see I got this little alert here that we had recent pushes. So I'm gonna open this as a pull request. And we see it says can't automatically merge. So we're just going to create the pull request.
+01:25:00
+Lewis Benson: And now we have to resolve the conflicts and the get way to do. This is slightly different than how we did it locally. We don't have those fancy little buttons to push. but what we do have is so this did actually move the line of code. We can see the original code here. And we can see the new code down here day three demo and day three code notice. This one is on a line that it's saying isn't modified. It's actually saying that everything between lines two and three. Is the original code and then lines five is the new code. So it's showing what these symbols here. This is what it wants me to focus on. So this isn't a perfect tool. This is one of the reasons why I like to do it locally. but if you look here we can see that day three code is there I'm actually going to delete this
+Lewis Benson: I'm going to delete this and Because I removed all of the symbols I could mark this as resolved and move on. But at this point you would have to choose between this line of code and this line of code. So when you have two developers working together and you both work on the same line of code. This is what will happen. I'm going to keep line three and delete line five. And then I'm going to Mark as resolved. And then commit merge. So it's a little bit of work whenever you're doing it through the making branches. Merging them in it's a lot of steps. It's not really inside. It's not really in the scope of what we're doing. I just wanted to show you what this process looks like using GitHub to handle merged conflict. So You delete the code you don't want and then you resolve the conflict. And then once I'm done, I typically delete the branch as well.
+Lewis Benson: And then locally I need to go back to my terminal. I'm going to get switch and I'm going to get whole origin name and watch what happens now.
+Lewis Benson: We get the fast forward merge. Because everything on GitHub has been modified and it's the most up-to-date latest code so it can overwrite everything that we have local. But now I'm going to delete that extra Branch. So I'll just say get Branch Dash D
+Lewis Benson: auto completed it so I don't have to worry about the typo. And that extra branch is now gone.
+Lewis Benson: So that's the one way to do it now. I'm going to create another merge conflict. And show you how to do it locally again. I'm not expecting anyone to be experts at this yet. I'm just showing you that so you're familiar with the interface because even though we're not being tested on this yet. It's something that's going to happen at some point. So I just want you to see it. I'm just going to remove the C. Actually, I'll say project three. This is line one. We're changing. So I'm going to change line one. On my readme file locally. And then commit it. And then pull it down. And put a four there.
+Lewis Benson: And now I have to ACP.
+Lewis Benson: And now I did the AC it won't let me push it this time. I'm actually going to get an error if I try.
+Lewis Benson: and it's actually giving me what it says hand right here. It's actually telling me what I need to do get pull before pushing again. So make sure you read these they are helpful. Sometimes they're hard to understand. If you don't know what a lot of this means. I like earlier when I had that air. And I had that typo it wasn't really clear on what was happening here failed to push some refs. And it just has the name of my remote. It doesn't actually tell me what's going on.
+Lewis Benson: It does kind of say it here. I guess if I would have looked closely I could see this is not the same as this. So I just kind of have more attention to detail whenever I'm putting in these type of things and we won't have an issue. So let me get pull.
+01:30:00
+Lewis Benson: And now we get the interface on vs code for how to resolve this in the editor. There is a possibility that you could have to resolve a merge conflict inside of your terminal using a criminal based text editor. There's one called them that's very well known it was produce I think in the 70s or the 60s some developers still code in them. I don't know why some people they just like the history of it I guess. But you don't get all the tolls and the autocompletes and stuff like that. bragging rights. There's a running joke where if you accidentally open them, it's really weird to close it again and get out of it because when you press control C, it doesn't just exit. You have to press a certain sequence of keys to actually exit them.
+01:45:00
+Umar Z: My mic was good. can you please explain the part again move the note that start the XD file?
+Umar Z: Yes. Yes. what are we doing here? Sorry.
+01:50:00
+Umar Z: Okay, so what's the purpose so we are moving it outside of the folder and then bring it back and that's it. And then we modified and then do ACP. Yes.
+Umar Z: and Yes. yeah, I've done that. So
+Umar Z: just so I'm done with the clothing bar as well. So Okay, let me see where I am right anything. Of course I can ask for the help in the Baker home as well.
+Umar Z: Okay.
+Gregory Robertson Jr: Just the head on I had scheduled appointment on Brian for the more.
+Gregory Robertson Jr: All right.
+Brian Kimbrow: I can help them. But if any help I was gonna just try to get one-on-one with them kind of Welcome through it on or that's all right.
+Meeting ended after 01:54:16 👋

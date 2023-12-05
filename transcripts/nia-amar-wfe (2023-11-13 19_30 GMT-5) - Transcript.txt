@@ -1,0 +1,874 @@
+﻿nia-amar-wfe (2023-11-13 19:30 GMT-5) - Transcript
+Attendees
+Brian Kimbrow, Chantrice L, Daniel Perez, Elgin Sharper, Gregory Robertson Jr, Hannah Richards, Hannah Richards's Presentation, Iris Coats, Justice Miller, Krystal Jefferson, Lewis Benson, Lewis Benson's Presentation, Reece Renninger, Umar Z, Umar Z's Presentation
+Transcript
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.
+Lewis Benson: And welcome to week five day one. So we're going to be talking about get and the basic concepts of get. and what a virgin aversion control system is as anyone ever used to get before.
+Lewis Benson: It's used by a lot of different agencies other than developers. So. There are some that may have seen this used before.
+Lewis Benson: It's not to be confused with GitHub get Hub and are actually two different things and we'll get into their differences in a bit here. So it is a Version Control System. So that's basically software that tracks and manages your files over time what that actually means is whenever we're creating files inside of our folders. For example, I've been using my demo folder and I create an index.html. Sometimes I create another folder in there to contain images and I'll create a Styles dot CSS, perhaps I'll create a Javascript file as I'm creating all these files I can track everything using git And what this allows me to do if I delete a file?
+Lewis Benson: I can roll back my code to bring that file back without having to just go to a recycling bin to retrieve it. It's actually permanently saved even if I turn my computer off turn it back on if I empty my recycling bin everything that we're on these checkpoints is saved and get
+Lewis Benson: So it allows you to revisit earlier versions of your files as well. This includes the content of the files. So if you were to create a theme, for example, you want to do something special for Halloween you get this orange and black theme going. You can use a version control system get to transition between two of code. One of those is showing you that theme the other set of code is your normal code base.
+Lewis Benson: And it's not the only Version Control System out there. There was actually a survey done was the number one Version Control being used by Developers. And they actually stopped doing the survey because it's so popular that we're just assuming now that everyone is using git I notice on here. They do mention the zip file backups. This is similar to what we were doing when we were submitting our assignments. We would put all of our code inside of a zip file and then upload it and what this is actually referring to is a little bit. more in-depth than not even if you were to
+Lewis Benson: Create a version. Let's say you're writing a story and you're using git as your Version Control. You could create two alternate endings to the story and then you would create multiple files which contain the two different endings you could create multiple branches and switch between the branches within the same file so that you don't have to have multiple files that could get to be quite messy. Especially I've heard of college students using it where they have. Five different copies of their thesis and as they're going through and checking the different content. They're switching between the different files and then at some point they end up uploading the wrong file as their submission git would avoid all of those problems.
+Lewis Benson: So little Let me back these slides up. So the way this works is just start off with you initialize a project and I'll show you how to initialize a new get project whenever we get to that point and then after it's initialized you add some content in this case. They're adding a top now bar on their page here. So if I backed it up we can see the nav bar wasn't there. And then they added this checkpoint and this is kind of like a save point in a video game. You can save your progress and then when you start playing again, you pick back up right where you left off? So they're adding the save point after they added this content and then they can add some more content and then they add another save point.
+Lewis Benson: And then add some more content and then they keep on creating these different save points and here they're adding the theme they had this dark theme. They alter the color at the nav bar. And that's when the boss says that they don't like the colors change it back. So what you could do is actually revert back to previous checkpoints within your code. And this old code is it's still here. just you're no longer showing those versions of the code. It's a previous version. And then from here, you can Branch off and add more content and create new checkpoints that aren't interfering with your theme checkpoints.
+00:05:00
+Lewis Benson: In this case, they added a footer and added a third row of content. We can see that on the little display up here. And if you switch back over to the navbar notice. All that extra contents gone. So if I switch back you can see the footer and this third row. And then when I switch back over to the navbar all of that's gone, and that's where you use a merge and you can bring all of that code together so that you don't have to copy and paste everything over. You can just merge all of your different versions of this code into one complete version.
+Lewis Benson: So this is sort of how this process works and I'll actually do a live demonstration on how to use git in order to actually go through a couple different versions just to show what that workflow looks like and we will be using the terminal when we first start this I don't be intimidated by the terminal it looks a little weird because it has that dark screen with the green text or whatever. It is on yours on your machine, but we'll learn how all that works. So again is not ub. There are two different things GitHub is built on get but if get you don't need access to the internet, you can use this locally on your machine. Again. It's just a Version Control System where you can switch between two different versions of your code. Just one command.
+Lewis Benson: And here they have some information about this on the slide, by the way, I got the slide off of canva the author of this was actually Colt steel. He's a popular YouTuber in Tech, so Just borrowing his slides here for this because I didn't really have a good way to show. This while I'm explaining it without just demoing.
+Lewis Benson: And again, this is all local to the machine here. so let me actually open up some code and show you what this looks like how it could be used. So what I'm going to do is go to my desktop. I have the folder created for today. So That's the wrong vs code. Let me open a new one.
+Lewis Benson: day later and we'll open the folder.
+Lewis Benson: Okay, so I'm going to create a new file in here. index.html
+Lewis Benson: Okay, so In order to get again. I said you have to use the terminal and you won't be able to follow along just yet until I show you how to get and get it set up unless you already have it installed, but we'll get into the installation after this little demo. So I'm gonna go into this folder and I'm gonna right click and I have get bash installed. If you're on a Mac or a Linux machine, you'll have to do this a little bit differently and I'll show how that works. So I'm going to get bash here. And the first thing I need to do is I need to initialize my project so that get currently it's not using the Version Control. So I need to tell it to do that. So you type in get in it to initialize the project and again, I'll review all of this in a bit. I'm just showing you the workflow.
+Lewis Benson: So we've created this repository as a get repository. And again, this is completely separate from GitHub. This is all local I can do all of this without internet connection. And I'm going to make some changes to my file now. So I'm gonna go back into my vs code. And I'm going to add. the boilerplate And just a little bit of content. It doesn't really matter what I do here for this demo. I just want to show you how this works.
+Lewis Benson: So we have a Hello World a title called get demo. And these are changes that I've made to the file. So now I want to save these changes so that they're saved in get as well as saving my file. So my file is currently saved but my get changes aren't changed saved and if you look on the left here where it shows the file name, there's this little U that shows up this is because I'm in a get repository. It's telling me this file is not tracked by it hasn't been saved by get yet. So I'm going to go back into my terminal. And I'm I'm going to say add index.html.
+Lewis Benson: And I just staged this change but I haven't actually committed the change what you want to do is you want to make sure that everything is good and that you have all of the changes that you want to track stage before you do this and I'll show you these commands again and I'll go over each one of these one by one again. I'm just showing you the workflow for how this works and we can see that we have a new file called index.html that's currently staged. So I'm going to commit this change by saying get Commit. I'm going to put a message flag on it and I'm actually going to type in a meaningful message that explains what I did. created boiler plate code
+00:10:00
+Lewis Benson: Added each one so you can write whatever message you want here the best messages or the most descriptive to yourself in the future and to other developers. They'll want to know exactly what changes you made and what changes occurred in here including for yourself that way, exactly where you would be rolling your code back to. If you don't have a very descriptive message when you actually try to use this system to roll your code back, you're going to have no idea. I've seen some messages that were like. People just do this just to quickly get the commit over with and move on. This doesn't tell you anything. it's just some text in there. I've also seen changed code things like that. None of that helps you to understand what changes you made so I'm gonna say added boilerplate. code
+Lewis Benson: Added 1. I want to be as descriptive as possible, and I'm going to press enter. And that change has been made it's committed to that change. So if I do get status now. It says we have nothing to commit working tree clean. So now I'm going to make another change also notice that you disappeared on the file name. It's now a track file by GitHub. my next change is going to be an H2 that says hello. And now we can see we have an M there This is a modified file. But these modified changes haven't been made yet. So let's see the get status again. I'm just showing workflows. This is not staged yet. So I'm going to say get add. index.html get commit.
+Lewis Benson: Dash M for the message and we'll say Add H2. To HTML something along them lines something just descriptive of the change.
+Lewis Benson: And now I can see that that is committed and that changes made and just to show you one more piece of this and that was the branching. if I wanted to have a separate version of this that has a third H3, I could say get switch - c this will actually switch branches and the dash C flag creates a new branch and then we need to put a branch name in so we'll call this bug fix.
+Lewis Benson: This is just an example name you could use.
+Lewis Benson: and on my bug fix branch create an H3. And we'll say there was a bug here. This is just a silly little example where I'm just throwing some content in here. This could have been a Javascript file where I actually did go in and fix a bug. and then we would get add index.html it commit - M. And fixed bug on line and we check the line number and see his line 12.
+Lewis Benson: and if I switch back to my main branch We can see that content changes. I no longer have that bug fix and then if I switch back to the bug fix branch We can see that changes there. So I have two different versions of the same file. So this is in sence. What a Version Control is mainly used for. And what I'm going to do now is I'm going to go back to my main branch.
+Lewis Benson: And I'm gonna merge my bug fix into my main branch. And typically your main branch is your production code. This is what would be deployed onto the internet. This would be your public facing web application or if this is an app it would be the code that the user is going to be interacting with. So if everything looks good, we would then take and with get merge bug fix. And we can see that it added one line of code. It was a fast forward merge. Meaning that there was no conflicts between the two branches. So this is basically the workflow of how you use you'll make changes to your file. You'll commit the changes before you commit them. You have to Stage them.
+00:15:00
+Lewis Benson: And then whenever we get into integrating GitHub with Git You would then push these changes to GitHub and that's a step that I haven't showed yet because there's a little bit more to it than that. I just want to get you familiar with the basics of adding changes to your file and then committing those changes. Does anyone have any questions about what get is and what get is used for or anything along them lines?
+Lewis Benson: Yes, Omar.
+Umar Z: Can you please quickly show me again? How you open that get terminal? I think I missed that.
+Lewis Benson: So I have it currently installed on Windows. If you haven't installed it yet, which I haven't gone over how to do then you won't be able to open this terminal specifically unless you're on a Mac get comes with Mac by default. and that's actually what I'm seguing into now is how to get this terminal so Is there any other questions other than that?
+Umar Z: Doubt that that's it. Yeah, I didn't know that it was a separate installation on the computer.
+Lewis Benson: Okay.
+Umar Z: Okay, okay.
+Lewis Benson: It can be if you're on a Chromebook. There are a couple steps to get it turned on it comes with Chromebooks, but it's not turned on by default. Yes, Hannah.
+Hannah Richards: I don't know if you can hear me. Okay, so the changes that you made they're all gonna be in the pop-up box or…
+Lewis Benson: I can hear you.
+Hannah Richards: you're actually making it on the file you added the boilerplate in the text the H1. so the actual changes you're making are in the code and then
+Lewis Benson: So this little pop up here this is called the terminal.
+Hannah Richards: can you just I don't know. Okay.
+Lewis Benson: This is an external application and what I'm doing with this is telling it to save my changes now. I'm saving the file. But doesn't just change save the file. It saves the entire directory. So if I create a new folder in here I could call it assets. And I'll put a new file in there called image dot jpg, and that's not a real image. We can see that that's now an untracked file and this is an untracked foldering gets not just tracking my index.html. It's tracking everything. It's in this demo 11 13 folder. So if I make changes to any file…
+Hannah Richards: Okay,
+Lewis Benson: if I create new files delete files gets tracking all of that.
+Hannah Richards: So it's get pretty standard then is that something that you would standardly use using making projects
+Lewis Benson: Yeah, it's a Cornerstone toll that almost all developers are using you can get away with it. Not using it in some cases but because of how well it integrates with GitHub. It's kind of standard just to use it to get your code into GitHub at minimum and get code from GitHub back down to your computer again as well. We'll go over that process a little bit later. But yes, this is a standard tool used by developers and not just developers. it's even used by Congress for drafting laws and things like that and they have a GitHub repository that all their drafted laws are on. And sometimes contributors will go on there and find typos and misspellings and they'll actually push changes to those GitHub repositories. It's pretty interesting.
+Hannah Richards: so sorry,
+Lewis Benson: You're good.
+Hannah Richards: or the actual use of it. You're only using it when you're wanting to make changes or you use it in general. that's what I'm listening by standard.
+Lewis Benson: Anytime I build any project at all. The first thing I do is get repository. That's step one.
+Hannah Richards: Okay.
+Lewis Benson: Yeah, it doesn't matter how large the project is going to be. I always start with a git Repository. Yeah, so that's just a normal workflow.
+Hannah Richards: Okay.
+Lewis Benson: Not every developer will do that if they're doing something really small. They're just trying out code. They might not bother with the git repositories. I personally always create one just in case because it does give you a lot more tools and a lot more utility. It allows you to try things out without breaking your code. You might have ran into an issue before where you're working on a project working on one of your assignments. And you made some changes and you couldn't technically get them to undo correctly you just had to delete everything and start all over again. If you get to a stable point where everything's kind of working before moving on and you save your progress with Git, you can always roll it back to the working version of your code without having to. Try the control Z because if you save enclosure code and reopen it you can no longer use undo.
+00:20:00
+Lewis Benson: Once you've closed it your control Z history is gone. And that's what I mean by that if I hit control Z right now, it'll undo my changes. But once I save and close my file, I lose all that history.
+Lewis Benson: But you get to keep all of that history as long as you're making those checkpoints using that process inside the terminal here.
+Lewis Benson: Okay, so let me show you the installation process. I'm going to start with Windows because I'm on a Windows machine. So to get that's always interesting to say you're gonna come to this website. It is get hyphen s c m.com and I'm going to put this in the chat as well as in the slack.
+Lewis Benson: You can also just Google search get download. And it will take you to the same page.
+Lewis Benson: It'll be the top result. So once you're on this page, and this is for Windows machines again. If you're on a Mac or a Chromebook, you probably don't need to be on the web page because those are already installed on your machines. They just may need to be updated. Or if you're on a Chromebook you have to turn it on and again, I'll show how that works. So for Windows you just download this. If you're probably on a 64-bit system, it's unlikely that you're on a 32-bit system. So you'll download the 64-bit Windows setup?
+Lewis Benson: And when this finishes downloading you just run the install. And you just go through the install wizard? And it's very straightforward. Once I click install. It'll do the install.
+Lewis Benson: And I'm not going to be able to since it's already installed. We're going to do.
+Lewis Benson: Mice S2.
+Lewis Benson: Let me close this. Oops, I close the wrong one.
+Lewis Benson: I think I just pinned it there. It's fine. So, let me try this again. The reason it failed is because I already had it open.
+Lewis Benson: So it's actually uninstalling my current version. And I'll have to reconfigure it which is fine because I'll show you how to configure get anyway. Once we get to that point.
+Lewis Benson: So that's it. You just run the wizard. And then if you want to launch it I'm not going to view the release notes. And there it is. So if you're on a Mac. I believe you can press command option key to open your terminal. You could also open it through Explorer. It's just a standard Mac terminal. And when you have your terminal open, it'll look similar to my terminal but it might look a little bit different you just type in hyphen version
+Lewis Benson: and you'll see that you get installed just make sure that you have at least version 2.23 installed. If you have at least that version, everything will work fine. If you have an older version than that, which would be from a Mac from 2017-ish around that era then you'll have to come to this website as well to download get and install it that way. And if you're on a Chromebook I opened up. A Blog that does over how to do this. I don't have a way to actually show. How to turn this on other than these pictures here you go to your settings by clicking on this bottom right where your clock is and then you hit the little gear will to go to settings. You go to Advanced.
+Lewis Benson: You won't have this Linux beta thing here yet. But when you click Advanced, you should see an area to turn your Linux tools on. It'll look something like this. Once those are turned on you'll be able to access the Linux terminal by pressing Ctrl. Alt T. I believe you can also just search for it by just typing in terminal like that and you should see something that It to. my windows Powershell or it could look similar to this window here. All the commands all work the same even if the colors are a little different between each of our machines. Different terminals will have different colors Mac might have something looking closer to this style. Or perhaps this coloring either way these all work the same. Does anyone have any questions so far about the installation?
+00:25:00
+Lewis Benson: Is there anyone that's having any issues? Yes, Umar.
+Umar Z: Yeah, so I'm installing it and it's going to the next steps and we just follow whatever is the options is offering by default. the checkbox
+Lewis Benson: If you're going to spot where there's four checkboxes and the top two are not checked. You can feel free to check those top two, they're optional but I do get some value out of them and I can always share that with you later on how to use those options.
+Umar Z: So I'm going back Okay, so Okay.
+Lewis Benson: And if you already passed that point, it's not a big deal if you didn't check them.
+Umar Z: So I'm on the first step where it says, it's my C drive users this and this folder right? So next it says winter Windows Explorer integration And additional icons in a quick launch on desktop.
+Lewis Benson: Yeah.
+Umar Z: That's okay. I worry your desktop. next. Name is gate. Okay, and then it says use when V I am the bigquitous ETC or word to say text editor as gets default editor. So that's what I need to pay.
+Lewis Benson: those are checkboxes, right?
+Umar Z: …
+Lewis Benson: Let me see your screen and I can make…
+Umar Z: Sure.
+Lewis Benson: Yeah, I'll stop presenting.
+Umar Z: Okay, you see it. Okay. So this…
+Lewis Benson: I can see it.
+Umar Z: what I'm talking about. It says.
+Lewis Benson: right, go to the override there. and type in Main
+Umar Z: Made, Tell me already. Okay.
+Lewis Benson: Yeah, so this is actually new they used to call the master Branch. They renamed it to the main branch. Yeah, so we just follow that Trend…
+Umar Z: Master okay.
+Lewis Benson: because that's more inclusive across the developer world now to use the main branch instead of the master branch. That's the only thing it's Gonna Change.
+Umar Z: This version is fine. 2.442.0.2 is Okay,…
+Lewis Benson: Yeah, that's the latest version.
+Umar Z: go to next and what do we do here?
+Lewis Benson: You can leave that the same that one's fine.
+Umar Z: And this one has the same.
+Lewis Benson: Yeah, that's fine, too. Yes.
+Umar Z: and this chair Okay, and this too, right?
+Lewis Benson: Yep.
+Umar Z: Okay. before
+Lewis Benson: That's fine as well. That's the one I was trying to check earlier. Yep, believe that the same.
+Lewis Benson: Leave that the same. Yep, please. Let the same. And this is the part. I think that I was talking now. This isn't that leave this alone, too.
+Lewis Benson: And that's So there was another option that used to be there where you could turn it on to? If you would type code period you could open your vs code through that terminal. Might be able to still do that.
+Umar Z: 
+Lewis Benson: Let me see if I can do it online.
+Lewis Benson: It seems to
+Umar Z: So I can stop sharing now because I think I'm done, right? Yeah.
+Lewis Benson: yeah, I think you're good. Just let me know if it encounters any errors. Is there anybody that ran into any errors while they were setting theirs up? Is there anyone on a Chromebook?
+Hannah Richards: I have a Mac and I haven't been able to get minus and older Mac. So.
+Lewis Benson: Okay, do you have the terminal open?
+Hannah Richards: No, how do I open the term? in the actual code on
+Lewis Benson: you should be able to search for it's an application that comes on a Mac called terminal.
+Hannah Richards: like envious code you mean
+Lewis Benson: no, there is one nvs code but That one would technically work.
+Hannah Richards: a different
+Lewis Benson: But the one I want you to use is your external terminal. It's an actual application.
+Hannah Richards: okay. I see. I did.
+Lewis Benson: Did you find it? Yeah, so once you have that open you'll type.
+Hannah Richards: Okay.
+Lewis Benson: Git space dash version like this, press enter and you should see some sort of get version come up underneath and not a failed command.
+00:30:00
+Lewis Benson: Yes Gregory.
+Gregory Robertson Jr: Because I didn't exact same thing, but I got to get each one a version, but I don't know how to open. they
+Lewis Benson: You typed it in your terminal and you seemed you have a version number.
+Gregory Robertson Jr: yeah, have you say?
+Lewis Benson: Okay, so that's the important thing. So your terminal is going to interact with get that's what you'll use to use so your terminal it might look a little different than mine,…
+Gregory Robertson Jr: Okay.
+Lewis Benson: but it works the same way whatever commands I type in my terminal you can type into your terminal. And that's what this is. This is a terminal that it similar to the one on Mac, and it's Similar to the one on Linux but it looks slightly different with the coloring…
+Hannah Richards: the next
+Lewis Benson: but it functions the same as yours.
+Gregory Robertson Jr: Okay.
+Lewis Benson: Yeah, just the colors are probably a little different.
+Lewis Benson: Yeah, so more.
+Umar Z: Yeah, some on the last step of the installation where it says any stab and it says click finish. Exit setup launch git bash a checkbox and then view release notes checkbox. Third. What do I do here?
+Lewis Benson: So you don't need to see the release notes. Those are just telling you all the different versions and what they've changed if you launch it.
+Umar Z: Okay.
+Lewis Benson: It'll actually open the terminal like you see on my screen currently.
+Umar Z: As a terminal launch, okay, so let me fit.
+Lewis Benson: Yeah, and anytime get bash you're opening a terminal. That's what that interface is It's a terminal.
+Umar Z: I see there. Okay. It's open on my screen as well. Okay.
+Lewis Benson: Okay, and being that you're on Windows, I'm not a hundred percent sure how to do this on a Mac. I think it would work the same way, but you should be able to right click in your folder and open your terminal in that folder and you can also do To open this in the same folder that you're currently working in. For example, I'm in my demo 11-13 folder. And if I want to make this a get repository, I want to get bash within that folder. So I can open it here.
+Hannah Richards: Okay, I'm not sure what I'm doing wrong. I'm in the terminal on I'm not sure because it's not bad. It's the zsh.
+Lewis Benson: Yeah, you're using z'shell. Yeah, that's fine.
+Hannah Richards: Z show okay, so I typed in the dollar sign gets
+Lewis Benson: you don't type in a dollar sign you just type in get the dollar sign is just saying that this is where I'm going to be typing. It's just a represents that on my terminal not every terminal has that for example,…
+Hannah Richards: Okay.
+Lewis Benson: if I open up this terminal it has a Tilda. And that's telling me that I'm in my root folder. So if I say get dash version in here?
+Lewis Benson: I see 2.34.1. So this terminal is using a slightly older version of get
+Hannah Richards: I think that it is downloading something.
+Lewis Benson: It's downloading get.
+Hannah Richards: Yes.
+Lewis Benson: Let me know if you encounter any errors. We want to make sure that everyone's is working. Did it again? Does anyone have a Chromebook as anyone successfully got this to work on their Chromebook?
+Lewis Benson: Okay.
+Lewis Benson: So again with the Chromebooks if you need to go back and watch the video. This is the instructions for it. You just open your settings. You go to your Advanced you click on the Linux tools and you just click the turn on button.
+Lewis Benson: And that gives you the ability to have a Linux terminal on your Chromebook. And then from there you can search for terminal inside of your search area at the bottom the down in here where you can type in. And you'll be able to search for your terminal from there. I believe you can also do Control Alt on a Chromebook to open your terminal up that way as well. But we want to be able to open our terminals inside of the folders. We're currently working in and I will show you how to navigate to different folders inside of your Terminal 2. So if you can't get it to open by right clicking there is other ways to get to the folder with your terminal. And we'll learn a few of those commands today.
+00:35:00
+Lewis Benson: Are there any other questions about Is there anyone still working on the installation? I don't want to go too far ahead and tell everyone's able to have their terminal working
+Lewis Benson: so I did plan for contingencies right now. So if you are having issues, me know. Because we do have a little bit ahead on time because I was expecting at least a few. broken get terminals
+Hannah Richards: I'm still waiting on my download.
+Lewis Benson: Okay, that's fine. Let me know when you're ready with that.
+Lewis Benson: Yes, Omar.
+Umar Z: Yeah, so in order to open a file, so we go directly to Let's suppose I have my all assignment folders my desktop, right? So I'll go to that folder and I'll pick A subfolder from within and I just pick up a file from there and right click on it. And open with Git. That's what you said.
+Lewis Benson: 
+Lewis Benson: So what I do is so I have a few folders here. I'm actually going to delete this get folder. just starting off. I have an index.html. I have an assets with that image in it. So what I would do is I'm going to navigate into my demo folder because this is going to get repository this demo folder. This is…
+Umar Z: Okay.
+Lewis Benson: where I plan on putting everything and then I'm going to right click sometimes on Windows 11. You'll have a more options button at the bottom. To get to the rest of these menu options here. So if you're on Windows 11, you may have to click more options. but I'm just
+Umar Z: Also so you clicked on the blank area the Ampere you're not on the folder. I would be picking a folder first and then right clicking on the folder. That's what I was doing. In the middle of the folder.
+Lewis Benson: I just click right in the middle of the folder. Yeah.
+Umar Z: Okay, and then It gives the option open get bash or something. That's what we pick. Okay, let me
+Lewis Benson: Yeah, you'll click that. And then you'll see your file path to…
+Umar Z: 
+Lewis Benson: how your navigating to that folder right there. And you should see the folder name after the final slash.
+Umar Z: Let me try.
+Lewis Benson: And you can also press PWD. And that'll also show you your file path.
+Umar Z: Yeah,…
+Lewis Benson: this
+Umar Z: I see the file that says.
+Umar Z: Simon's book and big these are my folders name before Jr's review Simon So this is what it opened. Okay.
+Lewis Benson: yep.
+Lewis Benson: So does everybody on a newer version than 2.23 as well?
+Lewis Benson: And if you do ever need to update your Git Version for one reason or another you'll just come to this website. And again, I'll show you how to find this website, too. So if I go to google.com
+Lewis Benson: I'm just gonna search for And it's the top result. With Git is my search parameter. And it just brings me here and it's detecting that I'm So on this little monitor looking thing here I'm able to click the download for Windows button. So this would be how I would update to the latest version as well, which I actually just currently did.
+Lewis Benson: Hannah's, you're still installing or downloading?
+Hannah Richards: yeah, it started at 60 minutes, but it's down to 15 so I'm hoping it should be then soon.
+Lewis Benson: Okay, I'm gonna move along a little bit here. Whenever you're done. I'll get you caught up on configuring your get. And going over these commands 15 minutes is a little bit longer than I wanted to push on this waiting time here.
+00:40:00
+Lewis Benson: All So the first thing we want to do is once we have our terminals opened and installed and everything. I'm gonna go full screen on this so that this is the only thing we see. So it doesn't have to be in your repository for this or in your folder for this. the only reason
+Lewis Benson: I'm currently in this folders because that's where I open. inal. The main thing is you're in your terminal. That's what we want to do So what we want to do first is type get config and I'm going to put this command in the chat so you can copy and paste it. Dash global space user Dot name and then we're inside the quotes, I'm going to put my first and last name. And you want to make sure your name. Is the same actual name you use on your GitHub if you have a nickname on there this name should match that name because whenever we sync this to our GitHub. This is the name that it's going to be using for that. So, let me copy and paste this into.
+Lewis Benson: The slack and as well as to our chat.
+Lewis Benson: And let me change my name out of here. So you don't accidentally configure it with my name. And I'll put your name.
+Lewis Benson: And then I'll do the same thing in. Slack
+Lewis Benson: All So there's the First Command. And once I press enter.
+Lewis Benson: What I'm going to do now is I'm going to press up on my keyboard to repeat the previous command, but I'm going to delete my name from this. And just do the same command, but without the quotes in my name. And it should return my name that it saved into the file there. Is anyone have any questions about configuring your name to get?
+Lewis Benson: So I did two commands the first one had my name at the end of it. And the second time I was out without my name at the end of it. Next we want to configure our email. So this is a similar process but instead of it's email. And then we have quotes and this email should be the email you used on your GitHub. so I'm going to put in my email.
+Lewis Benson: And then I'm going to confirm that it's Correct by repeating the command without the string of text after the word email. And I can see my email pops up there.
+Lewis Benson: Are there any questions about configuring your name and your email has everyone been able to make that work that's able to follow along right now?
+Lewis Benson: 
+Umar Z: Yeah, so I'm trying to follow along so that's what I'm doing gets. and I think I should just copy you post it over there. Okay, let me see. I was trying to
+Umar Z: I'm sorry. I'm
+Umar Z: It is not take C control We Heart Keys,…
+Lewis Benson: please both of these in the chat.
+Umar Z: .
+Lewis Benson: So it's a little weird on Windows shift insert should be your control V. and when you highlight something and right click that's copy. So I'm just gonna right click on so this terminal lets me hit copy. I mean it actually see that here. We have control copy and shift insert for paste. and…
+Umar Z: okay.
+Lewis Benson: some of the other terminals it doesn't even give you that option. So let me copy that and you may have a terminal similar to this one to paste. I can just right click and e. Or I can press shift insert and it pastes that way sometimes control V works. It depends on which terminal you're using. What you have installed?
+Lewis Benson: There is a way to paste in every terminal It's just sometimes different. It could be control V for you as well.
+00:45:00
+Umar Z: obviously when it's not doing anything. I mean, maybe I'm not sure. So when I put this command in it brings back to the same command line. It doesn't do anything. How do you confirm that you entered your core properly how you can form that?
+Lewis Benson: So whenever I do my name, let me go back up to this one. I'm gonna press enter. And it's just gonna bring this down to a new line.
+Umar Z: Okay.
+Lewis Benson: There's no actual response. So I'm going to press.
+Umar Z: so that is happening with me. So I was actually
+Lewis Benson: Yeah, so if I press up it'll repeat and then let me hide this little thing here now. I'm gonna delete my name and it's just gonna be user dot name. I got rid of the quotes of my name. When I press enter.
+Umar Z: okay.
+Lewis Benson: It'll actually return my name here and show me that it was done correctly.
+Umar Z: I see. So there is no response. It means it's all good. Okay, so up.
+Lewis Benson: yes, if you get an error message,…
+Lewis Benson: then something went wrong if I put Something like this there. I get bash get command not found. We know that it didn't work then.
+Umar Z: All right.
+Umar Z: It was a dose prompt a long time ago. I used. Yeah the kid I am as dogs. Yes.
+Lewis Benson: MS-DOS Yeah, it's very similar on the commands are a little different.
+Umar Z: he used to do the same thing, but Yeah,…
+Lewis Benson: ipconfig and all that thing
+Umar Z: you make directory and then why is this internet?
+Lewis Benson: Are you familiar with those commands still?
+Umar Z: Find a little bit. Yeah, that was a long time ago and I think 92 or something,
+Lewis Benson: Was this your make directory command? Yeah, we'll still be using that.
+Umar Z: Okay.
+Lewis Benson: Yeah, they still exist will still be using those. Yeah, that's actually the second half of the class is learning those commands.
+Umar Z: Okay.
+Lewis Benson: You don't have to memorize them. There's cheat sheets out there and everything. A few of them that I would recommend being familiar with though is change directory, which is CD we'll go over these LS for list to see what's in your current folder.
+Umar Z: yes, he just
+Lewis Benson: Yeah, we'll be going over all of them.
+Lewis Benson: not all of them. Just the ones we need for the development. And again, I know people who develop without using. Hardly, any of these commands? I do everything through the graphical interface. So if you're not really comfortable using these commands, it's not a big deal, but it is a nice checkbox on your resume if you're good with these. I'm saying that you're confident with bash commands. It just looks good.
+Lewis Benson: But again, It's not a hundred percent needed. Other than maybe CD.
+Lewis Benson: Make directories pretty good to have and a few other ones, especially if you start working in cloud computing because this is how you have to navigate a cloud computer oftentimes, especially AWS with Amazon web services, they're cloud machines or only terminal based. So you have to get kind of familiar and comfortable using these commands to navigate around the machines
+Lewis Benson: Are there any questions about the configuration or anything? We've done up to this point?
+Lewis Benson: Okay, so I'm actually going to start the 10 minute break a little early on. This should give everyone time to get everything downloaded who are still working on that and we'll come back make sure that there's no questions up to this point and then we'll start going over all of the terminal commands that are good to know or ones you might see. Once we get through the terminal commands and then we can get started on today's assignment.
+Lewis Benson: Again, there's any questions at all before we take off. I know this is a whole new topic probably something you haven't seen before. Yes Hannah.
+Hannah Richards: It finally downloaded I just wanted to see if it was compatible before we logged off I have version 2.37.1 Okay.
+Lewis Benson: 2.3 is good. Yeah. yeah,…
+Hannah Richards: Thank you.
+Lewis Benson: so You'll be able to do these commands then they get And the get email right here I did them twice. Up, here it is. And I also put them in the chat. But you'll have to make sure you replace your name with your actual name and the email with your actual email. And again, make sure you use the same email address. That you used when you created your GitHub account. Is there anyone who hasn't created a give out GitHub account?
+Lewis Benson: And if you're not sure, I'll show you the site.
+00:50:00
+Lewis Benson: So this is the GitHub homepage. I am on the dashboard. It looks something like this. Yours might not be in dark mode. I'm not even sure if I can change that because it's using my system settings. I didn't actually set it.
+Lewis Benson: It's probably somewhere in the settings, but yours might have a brighter looking appearance on GitHub. But the essence is the same you should have something similar perhaps not with any sort of feed yet. But you should be able to see this create new repository thing here. And be able to actually do that if needed we're not going to get into GitHub yet today, but I just want to make sure that everyone does have a GitHub account. That way they can make sure or if you don't have one just use the email that you will use when you do sign up. That way there's no conflicts later on. I was actually an issue that I had when I first started this I used a different email locally than on my GitHub and when I was working with other developers, my commits weren't showing up on the contributions page. So it didn't look like I was contributing any work to anything.
+Lewis Benson: So it is definitely a benefit to having the correct email and name in there. Same thing with the name. If you have a different name on your GitHub notice. My username is not the name. I put in that's perfectly fine. As long as my actual name is what I put on my GitHub.
+Lewis Benson: All right, I'm gonna start the 10 minute timer. you have a question no more.
+Umar Z: Your quick question. Sorry you were about to set the timer. So the name is different than the username…
+Lewis Benson: That's fine. that's fine.
+Umar Z: because I was trying to enter the username. in the game
+Lewis Benson: You can use either one.
+Umar Z: for the network, okay.
+Lewis Benson: Yeah, so when you go into your profile, there's a spot in there where you would put in your actual name. Right here.
+Umar Z: Yeah, I mean, yeah.
+Lewis Benson: So I have my name here and my username here as long as one of these matches. That's fine. I've actually configured it both ways before to test that out.
+Umar Z: Okay.
+Lewis Benson: So it works.
+Umar Z: And a can we change the username or once it's defined is defined.
+Lewis Benson: I think you can change it. I'm pretty sure I've changed mine somewhere in the settings.
+Umar Z: I'm gonna Use my name to okay, I guess okay. I'll check it out. 10 username.
+Lewis Benson: Yeah, it's right here.
+Umar Z: Thank you so much.
+Lewis Benson: Yeah, and when it says unattended side effects GitHub, is it platform that allows you to deploy web applications? And part of your web address URL is your username. So if you had a bunch of web applications already deployed and…
+Umar Z: Okay.
+Lewis Benson: you have those links out there, it could bring a lot of your public facing websites down if that were the case and that's what they mean by these unintended side effects. It could break a lot of deployments if you had links to Pages it break all those links.
+Umar Z: All right.
+Lewis Benson: But if you don't have anything deployed through GitHub you don't have anything to worry about.
+Umar Z: Okay. Thank you.
+Lewis Benson: Yep.
+Lewis Benson: Are there any other questions before the break?
+Lewis Benson: Okay, I'll start the 10 minute timer and then We'll start going through the basic get commands and maybe some of you have seen these before it sounds like Omar you worked with MS-DOS at one point which uses a lot of the same commands. Some of them are slightly different. So hopefully there's no muscle memory conflicts with that. I'll start the timer now.
+Lewis Benson: And I'll see you in 10.
+01:00:00
+Lewis Benson: All right, welcome back. Let me get started now with our demo. So we're going to go over some basic. They're called bash commands. They're also referred to as terminal commands or unix commands. It's basically the type of things you'll type into your terminal.
+Lewis Benson: So we talked about the MS-DOS a little bit ago. This is actually how you would have to at one time. Use your computer before Windows was a visual graphical interface. Some of this stuff still exists, especially whenever you start working with cloud computing. If you work with AWS azure. There's quite a few others. You'll have to actually interface with your computer. Over the internet using what's called an SSL connection and an SSH connection and you'll do that through your terminal using special commands.
+01:05:00
+Lewis Benson: So the first one I want to show you is called PWD and this stands for print working directory and all it does is tell you where you're in your computer. So we see C drive users. Here's my username my OneDrive folder and then a projects folder and then we have this demo 11- 13 so print working directory just kind of tells me where I'm at and I can also see that here. Typically this tilde refers to root or home. So anytime you need to get back to where your home directory is. You can always see the Sorry, I didn't go over CD yet, but you can always change directory to that root directory and then work from there. So you don't have to start with C drive users. And then your username you can start with the tilde and it will autocomplete everything up through your username. And this is useful whenever you are.
+Lewis Benson: and sharing your scripts with other users because everybody's going to have a different username on their computer. So if you start with the tilde and it automatically autocompletes everything to your username. That will just shorten that up a little bit. So don't worry too much about the Tilda and this part here. I just know that this is your route if you ever hear someone refer to your root folder. So It just print working directory and it tells you where you're currently at and we can see that I am in the demo 11- 13 folder. So the next command is CD and this stands for change directory. So what I want to do is I actually want to go back into my projects folder. So what I'm going to do is I'm going to space And I'm going to put in two dots.
+Lewis Benson: And typically in the terminal World here where you would use these type of commands two dots represents the parent folder. So if I do two dots and press enter we can see that my PWD just changed to projects. So I'm no longer in the demo 11-13. I'm now in the projects folder. Another way I could achieve the same thing would be to CD put in the tilde slash OneDrive making sure I spell everything perfectly correct slash projects. And I'd get the same result as long as I spelled everything correctly, which I didn't.
+Lewis Benson: that thought slash perhaps so it might make me have to do my entire PWD and copy that and
+Lewis Benson: or maybe they sorry that the Tilden might not work on the get bash that might just be for Linux based machines. But with that you can see CD with the dot to go back a folder. and then you can see and put in the folder name to go forward one for
+Lewis Benson: yes, Elgin.
+Elgin Sharper: Yes. How do I get mine to say the OneDrive projects because mine just says GF g r q a r.
+Lewis Benson: So it could just be the version of bash that you have. Are you on a Windows machine? You're gonna okay and…
+Elgin Sharper: Yes.
+Lewis Benson: you don't see the folder names here.
+Elgin Sharper: Not just might just have C user.
+Lewis Benson: Okay, so then you might not be if you press PWD. What does it say? For this line right here.
+Elgin Sharper: mommy Justice see users
+Lewis Benson: Okay, so that's the folder you're currently in. So what you can do is your projects folder wherever you have that on your machine. Where have you been working out of if you right click anywhere in this folder, but not on a file just like in the folder in general. If you're on Windows 11,…
+Elgin Sharper: mmm
+Lewis Benson: you'll have to click show more options at the bottom to get to this menu here. But you should have a open get bash here once you hit show more options.
+Elgin Sharper: So I just opened a photo for one of the assignments. Yeah.
+Lewis Benson: Yeah, or probably do a new folder so that you can continue from there.
+Elgin Sharper: Okay.
+Lewis Benson: Or if you want to follow along with what I'm about to do just do it in your projects folder and don't create a new folder. Because I'm about to create a folder. That's my next step.
+Elgin Sharper: All right.
+Lewis Benson: Yeah, so if you just want to get bash here, so I'm in my projects folder. You can see each daily demo. I'm going to get back here. And I'm in the OneDrive projects. Yours might not be Drive. If you don't have your OneDrive turned on this is just so whenever I switch computers. I have the exact same desktop across all of my computers. It just automatically syncs all my files.
+01:10:00
+Elgin Sharper: I tried that way inside of a folder. I don't have to be bash option.
+Lewis Benson: Do you have a show more options menu at the bottom in this area? click on that
+Elgin Sharper: yes.
+Elgin Sharper: Okay. I see it.
+Lewis Benson: Yeah, you should have open get bash here. Yep, so go ahead and…
+Elgin Sharper: Yes.
+Lewis Benson: open it in that folder. And you should see now on your directory whenever you do you WD. you should see that folder.
+Lewis Benson: All right. So, Now we're gonna create a folder inside of here and as Omar stated earlier. It's called make directory mkdir. Is How We Do the command and then once you type mkdir you need to put any folder name next mkdir space and then the name of the folder so I'm going to call this one get Dash demo
+Lewis Benson: I didn't see anything happen to my terminal. But if I actually look in the folder we can see the folder is right here. If you were working in an environment where you couldn't see the folders. the next command I'll show you is how to actually view that so if I type LS it'll list every single folder inside of My working directory. So if I PWD again, I'm inside of my projects folder. And when I hit LS enter it shows me every folder and file that lives inside of that folder. And again, I don't need you to memorize all of these commands right now. I just want you to be somewhat familiar with them. And then if you forget one, you can always look them up the most useful ones the ones I use. Fairly often when I'm working in the terminal environment is LS to see where I'm at. What folders I'm in.
+Lewis Benson: And what's in this folders, I mean PWD to see where I'm currently at to see what my parent folders are. Because if I was an assets folder instead of in my main folder then I'm going to want to dot back and that was the next one that I would want to bring up a CD. if I needed to go to my OneDrive folder or CD if I need to go to my projects folder. And I don't know if you just seen what I did there. I actually autocompleted projects. You can actually type CD space and then press the Tab Key. And you can get a list of all of your folders. If you keep pressing tab on some terminals. It'll actually start scrolling into them. For some reason get bash doesn't do that. So I'm going to shut the letter G and then tab and we'll auto complete the get demo. Does anyone have any questions about CD?
+Lewis Benson: change directory and all I'm doing is opening these folders in my terminal. It's the exact same thing as if I were On any of these up here to change folders or hit the back button the forward button. I'm just navigating my folders, but not with a graphical interface. I'm using a terminal to navigate my Horrors. It's the same thing as being in here, except. I can't click on my folders to open them. I have to open them through the terminal instead of by clicking on them. So it's a little bit different. But again, don't be intimidated by it because once you get the hang of the commands, it's very straightforward. It just takes a little bit of practice to learn them. And again, you don't need to memorize all of them CD and LS are definitely good to know though because it helps you figure out where you need to go next. So I'm currently in the get demo folder. I'm going to press LS woman here and we can see there's no files or folders inside of here.
+Lewis Benson: So that leads us to the next command. I'm going to show you and this is called touch. Yes Hannah. You have a question.
+Hannah Richards: I don't know what it's called the actual menu to get the bash.
+Lewis Benson: So I haven't actually opened any menus or anything. This is just my terminal.
+Hannah Richards: But from the folder when you right click like that drop down.
+Lewis Benson: So you don't have the opening terminal?
+Hannah Richards: that's not
+Lewis Benson: Maybe it says open and terminal like this.
+Hannah Richards: just says view new folder use group sort by Clean Up Show view options.
+01:15:00
+Lewis Benson: Okay, so if you don't have an open and terminal you may have to navigate here manually. So to do that,…
+Hannah Richards: Okay.
+Lewis Benson: let me open up my terminal here and I'm actually going to demo that real quick. So I'm going to CD Tilda. This takes me to my root folder. So you'll kind of have to be familiar with the path to your working folders. So if you open up your Explorer, it should show you something up here right do you have this up here where it shows your folder names? So if you click on that.
+Hannah Richards: Yes.
+Lewis Benson: Does it show everything?
+Lewis Benson: I can see my C drive my users. Do you have the whole path in there?
+Hannah Richards: No.
+Lewis Benson: Maybe you'll find something familiar though. I'm assuming you're in your root folder when you start if I press LS on my root folder. I get a whole lot of stuff come up. but I know that mine because of this here is in my C drive So that's what I need to find whenever I'm navigating through my folders. But if you could also click on this and CD and paste that in.
+Lewis Benson: Let me undo that because I tried to control C.
+Lewis Benson: And it's not gonna make it there from my root on a second. I need to figure out where my relative folders are I may have to back up. Let me hit PWD.
+Lewis Benson: Okay, so I'm already in C users and my username whenever I PWD from are you able to CD into your Tilda?
+Hannah Richards: Say what now?
+Lewis Benson: So this is the Tilda this little symbol here. It's next to the one on your keyboard…
+Hannah Richards: mmm
+Lewis Benson: if I do CD Tilda. It takes me to my route.
+Hannah Richards: So I don't know
+Lewis Benson: and then
+Hannah Richards: how to open up. So just in my regular terminal.
+Lewis Benson: this is this is just your normal terminal.
+Hannah Richards: Okay.
+Lewis Benson: Yeah, so what we need to do is navigate to this location that's inside of your Explorer. so for mine, the Tilda takes me to This part of my file structure so I should be able to finish that. by CD Yeah,…
+Hannah Richards: Just the tilty by itself.
+Lewis Benson: just a total by itself. I should be able to do that.
+Lewis Benson: I may have to put a splash there.
+Hannah Richards: It gives me an error message that permission is denied.
+Lewis Benson: Permission is denied. You may have to type in this in front of your command so sudo CD. Are you already in the whatever you type PWD? What does it say like this?
+Hannah Richards: users
+Lewis Benson: these slashes are backwards. That's why that wasn't working. You see users. Do you see your username?
+Hannah Richards: Not in this one. I was doing it early and…
+Lewis Benson: And when you're looking at your folders,…
+Hannah Richards: it was
+Lewis Benson: do you see your username and your directory here in your Explorer?
+Hannah Richards: Mmm, no.
+Lewis Benson: Does this just say users up there?
+Hannah Richards: I'm in my actual terminal so …
+Lewis Benson: right Okay.
+Hannah Richards: yeah. Yes, it is users.
+Lewis Benson: Yeah, so in the folder we need to find where your projects folder lives. So if you have users and then is it slash projects from there?
+Hannah Richards: is users that Z showing us - 179 by 48.
+Lewis Benson: When that's your folder names.
+Hannah Richards: I guess it's just like the title of the terminal. the name of
+Lewis Benson: I mean in your Explorer. you said you're folders are listed, right?
+Hannah Richards: 
+Hannah Richards: No, they're not.
+Lewis Benson: So when you look at the top of your Explorer where you're currently at for your projects? You don't have a list of folders there.
+Lewis Benson: So there's another way you can probably try this if you right click on a folder. And go to properties it should tell you the location.
+Lewis Benson: Because that's what we're trying to determine at the moment is where your projects folders are located. And then once we get this figured out, you'll be able to repeat this process over and over again, and I'm glad you ask because somebody else may have the same issue if they're all so running on a Mac.
+01:20:00
+Lewis Benson: and this is one of the kind of the blockers will run into whenever we're dealing with this cross platform development this little things like this, but we will get through these little hurdles. Don't worry. It can be a little challenging. I'm not able to set up a virtual machine for Mac. Unfortunately, I tried to get that to work. Otherwise I'd be able to demonstrate on both.
+Hannah Richards: Eyes on it I believe.
+Lewis Benson: What's that?
+Hannah Richards: I said I got the properties up to see where the file is.
+Lewis Benson: Okay, and do you see a path that looks like something slash something?
+Hannah Richards: Yes.
+Lewis Benson: Okay, so that's the path that we're going to navigate to you said you found a user's folder inside your terminal, right? So everything passed do you see users in your current location somewhere part of that path? how mine has users then my username?
+Hannah Richards: AR do I see that?
+Lewis Benson: something similar So that's the path you'll have to navigate in your terminal with the CD. So I'm going to go back into my terminal and show you what I mean. So I'm currently at the Tilda. So when I hit PWD that shows me c users Lewis and when I tried to copy and paste that and notice the slashes or backwards, but what I can do is LS and this is going to show me all of my folders here. Now I already know that This folder here Lewis and when I look in my properties we can see my next folder I need to go to is So I should be able to OneDrive like this and there it took me into the OneDrive folder.
+Lewis Benson: And then the next step I need is projects. So I'm going to CD into projects and if I want to I can press LS and it shows me everything that's listed in the OneDrive folder. and I can see
+Lewis Benson: my projects folders right here so I can CD projects.
+Lewis Benson: And now my path I hit PWD print working directory. Is my C drive users my username OneDrive projects so does everyone see…
+Hannah Richards: ice
+Lewis Benson: how I was able to navigate like that? Were you able to find your Hannah?
+Hannah Richards: Yes.
+Lewis Benson: when you hit PWD? Does it show you your projects holder now?
+Lewis Benson: if it doesn't that's okay. I can show you this again. When I get Whatever you're starting at so when I hit PWD, let Actually go back to my da. CD and then I put in the Tilda. And I type in PWD.
+Lewis Benson: And I can see Slash users slash Lewis. Now I'm going to open up my properties again and I can see C user slash Lewis. The next folder is OneDrive. So now I can CV into that OneDrive and capitalization does matter. So I'm going to do CD. I'm going to type a capital O, I'm just going to press tab. It'll auto complete OneDrive. I'm going to press enter. And now I'm inside the OneDrive folder. and when I do PWD at this point I see C drive users my username OneDrive. I look at the properties in the next folder I need is called projects. So I can see the projects.
+Lewis Benson: and S and I'm inside. Of my project folder. I can see all my demo folders. Were you able to navigate the same?
+Hannah Richards: yes, I think I don't want along and I guess command making the commands. It's like having to get access or whatever to the different files and whatnot. So, I guess I wasn't doing it right before.
+Lewis Benson: Okay, so it's working now.
+Hannah Richards: Yes. Thank you.
+Lewis Benson: Awesome Okay, so I'm going to get demo folder which I see listed right here since I did an LS to list all of my stuff in this folder. So we're going to see the end of there.
+01:25:00
+Lewis Benson: And if I do an LS in here, there's nothing in here. It's an empty folder. So next I want to create a file inside of here. And what I'm going to do is I'm actually going to create a readme file. So I'll type in touch touches the name of the command you use to create files. The reason it's called touch is because if you use this on a file that's already created. It'll update the timestamp on last modified. So you're just touching the file to update that last modified. It's not something that I see used often if it all anymore. But if you type in touch and then I file that doesn't exist.
+Lewis Benson: It will create that and then I can hit LS to list and we can see that readme dot MD was created inside of my get demo folder and I can again use print working directory to see that I'm in that folder and I can use LS to see that we have the readme created in there. And again, you don't have to be proficient with all these commands the ones that I want you to be able to do though, especially Hannah since you're not able to open your terminal inside of your working. You need to be able to Into your project folders. That's the most important thing is getting your terminal opened into your project. But I do want to show you something where this is a pretty useful.
+Lewis Benson: You can use Touch to really speed up your workflows. If I needed to create an index.html Styles dot CSS a script. maybe a second page dot HTML and even a third page you can do all that with one command now instead of creating your files by hand so you can say index.html Styles, I'm just putting a space in between these Styles t CSS. script. space third page dot HTML and any other files you want to create you could even start creating folders as well. I'm just going to do this for now.
+Lewis Benson: And when I do LS we can see all those files were created in one command. So I didn't have to right click and then type in the Click file name extension save so on and so forth. You can do all that in one command and you can even automate things using these commands that's not something we're going to get into at all. But I just want you to know that the ability does exist. You can write a script that will create every single file you need every time you're creating a new web page. So We displayed all the stuff.
+Lewis Benson: And we can also check to make sure we're still in our correct folder. One more thing I want to show you is. Creating files or creating folders with the peak flag. So you have mkdir to create a folder. And I'm going to create an Slash CSS. This is where I would put my CSS files if I wanted to have them in an asset folder. But what I want to do is I'll actually want to put the pflag here like this anytime. I mention a flag. That means you're going to have a hyphen with a letter and this just adds some options to the command. And what this does is if the parent folder doesn't exists it prevents errors. This isn't a big deal with our current setup that actually wouldn't throw an error without the flag like this.
+Lewis Benson: But if I were running this on a different computer, it would throw in there because assets doesn't exist and get them it doesn't exist. So it's just a way to create the parent directories first. I'm not something that's really that important. I just wanted to show you that it does exist.
+Lewis Benson: Next thing is copy and the command for copy is CP. I don't use this very often. It's not very often. I have to move my files around. what I can do is say Styles dot CSS since I created that in my current draw directory we can see that here. I'm going to get demo folder. And I have a styles.css right there. What I want to do is actually move that into my CSS folder or copy it into there. Sorry not move it. I just want to make a copy of it in that folder. So you put in styles.css and then you put in where you want to copy it to so that'd be And when I put the command in we don't see anything happening in the terminal. But what I can do is CD and assets.
+Lewis Benson: slash CSS and then and we can see we have styles dot CSS there. and then if I CD slash dot dot That takes me up two folders we can see I'm back in the get demo folder now because I use these dot references to move up one folder. And if I do an LS? I have a Styles dot CSS here as well, which leads me to my next command. Which is delete. You got to be very careful with this command. Because there's no confirmation and there's no recycling bin. So if you accidentally delete something that you're not supposed to it's gone forever. You do not get it back to be very careful using this command. RM is the name of the command and I'm going to remove styles.css.
+01:30:00
+Lewis Benson: And when I press LS. We can see that Styles dot CSS It's gone forever. I had no confirmation. No, are you sure you want to delete this? It's not in my recycling bin. It literally deletes it. It's gone. So just pick again be careful with that. You don't accidentally delete something important because unless you have it saved through get there is no getting it back. And then the last one I want to show you is the move command it'll work similar to the copy command.
+Lewis Benson: But it moves the file instead of copies to file. So we can V. And I'm going to move my script. Did I create a? Assets folder for JavaScript, I don't think I did so I'll just move it into the assets folder.
+Lewis Benson: We'll put a slash. and then when I CD into that folder
+Lewis Benson: LS we can see the script.s is there. And you can also use the MV to rename a file. So I'm in the same folder as the script.js right now if I wanted to call this app.js.
+Lewis Benson: I have to type in the name of the I've been app.js. And then when I LS we can see it rename script.js to app.js that's the last one. I want to show you as far as bash commands again. I just wanted to give you an overview of what they are. Some of them you may need for example, if you do need to navigate through your folders through the terminal. that's how you would do it. I'm going to get demo folder. I want to make sure that I'm in my project folder now at the root level of my project so when I say root level of my project folder. I mean I'm into get demo folder and this is where my index.html would normally live. So if I do an LS, we can see I have an index.html. I have a couple other HTML Pages here and assets folder and a readme folder or file. so
+Lewis Benson: just to make it clear the get demo is my root directory for my current project. If I was working on a different project, let's say I'm building a Portfolio website then I'd be in a folder technically probably called portfolio. And that's where I currently want to be for my root directory. So hopefully that it's understood what I mean when I say root directory. I'm referring to the root directory of the project. So that's some terminology you'll hear me use if CD to the root level of your directory so that I'm not inside of this assets folder.
+Lewis Benson: So now that I'm here this is the part where we're going I want to start from scratch here. I'm gonna clear out my terminal I'm gonna open my terminal the way I normally would. So I'm going to get demo folder. So this is where the files live for my project. I wouldn't want to do it inside of this folder because this has more than one project in here. So if we look at demo 1110, this is a different web application. I don't want to have access to all these other web applications from where I open this get demo is my current web application. I'm working on so that's where I'm going to open my terminal. And if you're not able to open your terminal get bash, you'll have to use CD. And you'll have to put in the name of your folders to get there. So to show that again, I would right click on get demo.
+Lewis Benson: Go to properties here is my file path that I need to get to. And you will see the folder. Once your terminal once you hit PWD, and you see that you're in the correct term folder. This is where we're going to get repository and the command to initializing new repository is get in it create a local repository. This does not create anything on GitHub. So if I get in it and press enter. We can see I get this main show up right here. If your says Master, that's and later. Maybe Let me know through slack and I'll send you the commands to change your default Branch to main I'll have to actually look them up again. I haven't done that in a while.
+01:35:00
+Lewis Benson: To convert this back over through the terminal. So if you do have a different one there just message me on slack and I'll help you with switching that over to So once you say get in it, it's now saying that initialized empty git repository and then it has the path to where you initialize that. One thing is very very important is that you don't initialize who repositories in the same location? So what that could mean is if I CD and to assets? And I say get in it again. That's bad. I now have a repository inside of my other Repository. And I'll show you what that looks like in my interface here. Let me get as large icons so we see this get folder as appeared here and if you don't have them I'm actually sure where that's at. Now. They've moved some stuff.
+Lewis Benson: I have my being Show hidden files and folders and drives. It's in my folder Options under View. So to get to I click these three dots there might be another way to get to them if I go to properties.
+Lewis Benson: read only so if I back it up a folder here and I right click and go to properties. I believe you can check this hidden block here as well. And then apply changes to this folder or subfolders and files so that will also work to show you the hidden files. no, I just made them hidden. Sorry, don't do that.
+Lewis Benson: Yeah, let me undo that uh- to make them visible. I have to click these three dots options and it's under View and show hidden files and folders. It's not that big of a deal if you don't have yours visible. You don't typically need to get folder just for this demo into the show that whenever you do create a new repository. It does create this folder and this should be a hidden folder. I just did it to all of them again.
+Lewis Benson: Typically when you're folder name starts with a dot it is a hidden folder. if I go into my assets, we have another get folder here as well. I'm going to delete these and redo them so that there are properly set up.
+Lewis Benson: So I'm going to see the dot to get back to my main folder said get in it to initialize.
+Lewis Benson: And that get folder that shows up. if I go into my assets we see that there is no get folder in there. So I'm going to see the don't actually do this. I'm just showing you what not to do right now. And I'm going to create another repository inside of my asset folder. So what happens is this repository inside of my assets folder is trying to track all my files that are here. And this get repository is trying to track all of my files including the assets folder. And it leads to some major conflicts. So make sure you never Nest within a repository. And that leads me back to when I said earlier make sure you don't have more than one project accessible. This is what will happen. if these were all get repositories and I accidentally created a repository in my projects folder.
+Lewis Benson: We're gonna have a lot of conflicts later on and that's a major problem. If you do run into that reach out to a TA and they can help you work through that. All you really have to do is show your hidden folders. And then delete that extra get folder from your nested area. So now I'm just gonna reset one more time just to show you the correct way to do this.
+Lewis Benson: So I'm in my assets holder. So let me go back to my get demo folder. I' I can see that I'm in my get demo folder here and then I'm going to get in it. I initialize this as a repo. And that's all the rest to initialize it. Yes, Omar.
+Umar Z: A can you somehow or increase the font size? It's really hot. Thank you. It was only able to clear anything.
+01:40:00
+Lewis Benson: yeah, every time I open a new terminal that resets it back so sometimes I forget to Make it large again.
+Lewis Benson: All right, so we can see I have main here. This is showing me that I'm on my main branch. We're not going to get into branching any more than what I already showed we will create a new Branch later. But it's going to be very brief. We're not going to use the branching process much. Until we get into the next time we go over get again. It'll be really brief what we do with it. For the most part we're just going to be doing this process. I'm going to show you now. We refer to this as a c p I'll put that acronym and the chat here.
+Lewis Benson: And this stands for add commit push. And let me put that in a slack as well.
+Lewis Benson: My slack is currently closed. I'll just have it in the chat here ACP. I'll write it right here in my terminal. So anyone watching the recording can see what so there's no confusion on the letters I'm saying so it's add commit push. We're not going to be able to push just yet because we don't have this wired up to GitHub. But for now we can add and commit our changes. So What I like to do first type of get status to see what changes we actually have. This is just telling me what is the current condition of my git Repository? And we have no commits yet. So it can't show me any commit history. But we also see untracked files and we have a list of them here. We have read me dot MD. We have an assets folder. We have an index.html a second page dot HTML and a third page dot HTML.
+Lewis Benson: and the way you add these is by typing get add and then the file name, so I'm going to say read me and again, you can autocomplete by pressing tab if you want or you can type it all out. And when you add the change I get status at this point. And we can see the readme is now stage to be committed. It hasn't been actually committed yet. It's just saying I'm ready to commit this file. So you might be wondering why wouldn't you just commit all of these at once and there is a command to do that. You can commit every single file at the same time. But you need to be specific about what changes you made to your files. So typically a readme.md is used for your applications documentation. So what that might look like is get commit - M
+Lewis Benson: and then you would put in your commit message for create readme. And again, this is for the documentation this isn't creating your index.html it's not for creating any of these so These don't really relate to each other whenever you create these now what you could say is create basic file structure for web application and that kind of does encompasses all of these different things you've done. So depending how you phrase your commit and depending on the changes you did. Maybe you do want to add them all at once. But for now, I'm just going to do one at a time. So there I created a commit for my readme now. I'm going to get status again. And we can see that my previous commit was on the main branch and we still have these untracked files.
+Lewis Benson: So the next one I'm going to do is get add assets.
+Lewis Benson: And we'll do another get status just to make sure that that's in my staging. And we can see it staged my CSS and my app.js and the reason that did that is because assets was a folder. So whenever you add a folder it'll actually add everything within that folder. If I didn't want to do that, we could Get restore. And then put in the file name. So if I say get restore But it's a assets slash app dot Js. And then I do get status. it didn't work.
+Lewis Benson: This is the command I typed. Get restore app.js.
+Lewis Benson: I'm actually going to remove the folder name because I think that was the issue there.
+Lewis Benson: Didn't like that. its status
+01:45:00
+Lewis Benson: I have to type in the flag. I didn't see that it's actually telling me that right here in the instructions dash staged. there and then we can get status and it removed that Javascript file from my stage files. So this is where I would add in another one at a time. I could say get commit that stage now I can commit it Dash M put in the message. And we'll say add style sheet to app. And again these messages are just trying to tell other developers what changes you made also. Keep in mind potential employers are going to look at your commit messages.
+Lewis Benson: And potentially see what based on what you write here. So if they see you're using style sheets, then they know you're familiar with CSS if they see your ad in JavaScript and even specifically what you're doing in files as well. So the last way I want to show you. Whoops. I said LS instead of get status. Is adding everything at once so I mentioned earlier if I would add this assets folder. It would add every single thing within that folder. And I did that by just add assets and it added the entire assets holder. We can see that get status. We have the one file now, but it will add everything that's in the file or in the folder. There's another way to do it.
+Lewis Benson: Anytime you're in a bash terminal a DOT represents a folder. So if I say get add dot, it'll say add everything in my current folder. So if I do that? And then I say get status. Now I have every single thing added at once. This could be a shortcut when you first create all your files. I could say get commit - M and the m flag is referring to the message. We have to put quotes here and then I can say a meaningful message would create starter. files for web app
+Lewis Benson: You are limited to 50 characters in your message. It doesn't warn you If you do go over 50 characters, what will happen in your commit message is it'll actually spill it down to a new line and it will be partly cut off. So if they say this were 50 characters here. right at this o Then my message would look like this at first glance, but then I would see the rest of the message when I open up the commit message to make it larger. So it's not a big deal if it's over 50, just keep that in mind it does. The first 50 are considered a title and then after that you're allowed 72 characters per line. It's a weird format. Don't really worry about it too much. Just make sure you're using good commit messages is the important thing. And then we just committed all of those at once. and if I do a get status
+Lewis Benson: We can see my previous commit was on the main branch. I have nothing currently to commit everything as a working tree clean. And that's saying that all of my files are currently saved. I created all of those checkpoints so I could always roll back to those previous ones rolling back is something we're actually not going to cover and this week of get because it is kind of a complicated subject. The main thing that we want to cover is getting your code from get to get hub. And the reason we're showing you all of this is because this is the easiest way to get your code to get Hub through the terminal and be familiar with the same time with that.
+Lewis Benson: So with that I'm actually gonna walk you through the workflow of how you would do your first contribution. You can follow along with me if you want. This will be similar to today's assignment, but it'll be slightly different. We're gonna get into a little bit of GitHub now with this get manipulation. So I need to open up a browser. And I need to go to GitHub. And I'm gonna put this link in the slack. As well as The Clash chat. That's the wrong link. that was the assignment link I need the
+Lewis Benson: first contributions so let me drop this in the chat. As well as the slack. So what this is is a place for developers to do their first open source contribution. you don't really have to know what that means yet, but basically anybody's allowed to contribute to open source code that could be something like the Linux operating system even things like Twitter they have open source code on there a little bit of Windows is all kinds of different open source projects out there and you're able to contribute to those by going on to GitHub and adding to that. So this right here is a toll that allows developers to have their first contribution just so they can get used to this workflow. So anyone who wants to follow along with this feel free.
+01:50:00
+Lewis Benson: You don't have to but again, this could be a little bit of practice before we roll into the assignment and we might go over into our break a little bit with this. bear with me if that happens. So first thing we need to do is once you're logged into your GitHub and you're on this page, there's a fork button here. And what a fork is a copy of their Repository. But the copy links back to the original Repository. So it's kind of like what it sounds like you're kind of creating your own version of their code base. So when I click this it'll actually say fork your own copy of the slash for first contributions. I'm going to click that. And I have a repository name here. I'm going to go first contributions the descriptions already filled out and we're going to copy the main branch only that's perfectly fine. Create Fork.
+Lewis Benson: So it's doing its thing. if we look here we can see my profile picture also, you can see my username slash virtual contributions. So now I have this repository on my GitHub account. And you can see right underneath it here. It says forked from and then it has the original tributions usernames slash first contributions repo So that's the first step to contributing to open source. So the next thing is you want to go down to their readme and we can see this Square here is their readme.md you could click on the file. It'll take you to the same thing. It's just laid out a little bit differently. I typically just scroll down where you have this code tab. You have the name of your repo and the name of their repo. So I'm going to scroll down.
+Lewis Benson: We have first contributions and it just gives you the instructions on how to do this. So the first thing it says to do is get clone and the URL you just copied. I'm going to show you where that's at and actually has the pictures here on how to do all this. So if I scroll back up, there's a green button here that says code. I'm going to click on this green button. Https make sure this is selected. And then I'm going to click on this copy button here. So I just copied this URL. And I'm going to go into.
+Lewis Benson: My projects folder now, so let me close this terminal. We don't need that one open. So I'm going to go back into projects. And in my projects, I'm going to create a new folder.
+Lewis Benson: I'm just going to call it first con. I'm going to open that up. And then in here, I'm going to get bash again. So you may have to see the end of this. I'm not going to initialize this as a repository because what I'm gonna about to do is going to create a repository for me. So I get the link out of here. My PWD is showing that I'm in my first con folder, which is located in my projects folder. So I'm going to use the command get clone. And then I'm going to paste in that link using shift insert. I copied my folder name. So Let me copy the URL again from https. And I'm going to use shift insert. And it's going to give me that https. if you're on a Mac, you may have to use control-v to paste you may have to right click and click paste. The pasting options may be different. Also, I just want to show you real quick if you press Ctrl V.
+Lewis Benson: Nothing happens and then you press can shift insert you get this weird looking stuff. this isn't going to work you have to delete all of this. And then repast it in with shift insert. All right, so get clone then the URL enter. And it's now cloning that which means what it's actually doing is downloading that entire repo to my local computer. So that's downloaded. So if I go into the folder I can see the first contributions folders here. If I open that up I can see this has a DOT get folder already here. So it's already get repository. I don't have to get in it to create it as they get Repository. Anytime you clone code down from GitHub. It'll automatically have this done for you. So the next step is we scroll down into their instructions. We just did to get clone.
+01:55:00
+Lewis Benson: We see CD into the first contributions also here it wants us to create a new branch. so let's go ahead and do that and it's saying to use your name I believe let me double check create your new Branch name. I'm going to use my actual name. It doesn't say you have to but I'm just gonna do that. so if I do LS to see where I'm at, I can see the first contributions folder is there. So I'll see into that. I just press the letter F. Press tab. Did Auto completed first contributions. I'm going to press enter. And I can see that I'm now inside of the main branch. So I'm going to get switch Dash C is the flag, and I'm going to type in my name hyphen my name.
+Lewis Benson: You can't have spaces in your branch name. That's why I used a hyphen and it's fairly common practice to use a hyphen whenever you create branches. Don't worry too much about what branches are for yet. I'm just doing this demo because it's similar to our assignment. We're not going to actually be leveraging the power of branches until the next time we cover get. Other than just one assignment. Okay, so we created the branch following their instructions here with get switch Dash C. So next we need to.
+Lewis Benson: Open the contributors.mark down file. So I'm going to find that Here it is contributors. And we can see that's a markdown source file. So I'm just open that up. and the next step says to add your name to this file, but don't add it to the beginning or to the end. They don't want to accidentally create merge conflicts. We'll get into that topic in a couple weeks. But we're just going to scroll way down here somewhere. And it looks like they're all including their githubs so you can do that if you want. So you put a hyphen square brackets you put your name in here.
+Lewis Benson: And then a link to your GitHub. So this is the link to my GitHub. It's https slash github.com/loot lb Benson is my username. I'll just paste that inside of the parentheses. So it looks similar to what they did and I'm online 1500 something make sure you're not in the same line, as me exactly. Otherwise, this could actually create a conflict. That's why we're putting it in the middle somewhere. I press save formatted. I'm not sure if that's going to be an issue. If I click here and look. Yeah, that is an issue. So let me undo that formatting close that.
+Lewis Benson: Make sure you don't format the file if you do control Z to undo the formatting. I'll just have your name in there.
+Lewis Benson: Once that is done. I'm going to close the file.
+Lewis Benson: And we're going to do our normal ad commit and then we're going to add this extra piece in here called push. So let's go back into the terminal. And add I'm just going to put the dot in here because that's the only file I changed. So that's the only one gonna be added. So if I Get status will show me that one file was modified contributors. and then I'm going this is the new command. We haven't seen yet. I'm sorry really? mit first get commit Dash M. Lowercase m. and just to see
+Lewis Benson: what they say for the commit message.
+Lewis Benson: Add your name to contributors list. So I'm going to just paste in what they said to was shift insert Add your name and I'm going to put my actual name here. Not your name.
+Lewis Benson: So I added the name to the contributors list. I committed it now. I'm going to push it to GitHub get push. Dash you because that's what they said to do here. origin And then My Branch name is Lewis - Benson. I can see that right In my terminal that's where it's showing That's the branch name. I created when I used to get switch command, so if I scroll up. To when I did Get switched - c there's Lewis Dash Benson. That's the branch. I'm currently on. So let me press enter.
+02:00:00
+Lewis Benson: And we received an error.
+Lewis Benson: SRC ref spec Lewis - Benson does not match any.
+Lewis Benson: I'm going to try this again without the u flag.
+Lewis Benson: So it seems like I have an error here. What do we got going on?
+Lewis Benson: I never configured my get with GitHub. I left a major step out there. I apologize for that.
+Lewis Benson: So in order to add your get to GitHub you actually need to sign into your GitHub through your get bash client, and this is an important step because without it. You're not able to actually push any of your code to get hub.
+Lewis Benson: So to do that.
+Lewis Benson: Let me go to. github.com here real quick
+Lewis Benson: Hopefully I don't have to do this through an SSH.
+Lewis Benson: I believe you just sorry, I can't remember the actual command. I need to look this up real quick.
+Lewis Benson: All So to add this I'm going to create a access token
+Lewis Benson: just one second looking through my notes here to see.
+Lewis Benson: So I think it says I can do this with.
+Lewis Benson: One second get CD.
+Lewis Benson: I'm in the root switch It push origin Main.
+Lewis Benson: Okay, so this is wired up to my GitHub. Does anyone have any issues with if you switch back to main branch? I just want to make sure that everyone's wired up because I didn't type in my GitHub Authentication. according to this blog I found it says that pushing your main branch will prompt you to log in. So if you do get switch mean if you've been following along with me. And you have this little main right here. And you do push origin main. It should ask you to log in to get help if you're not currently authenticated. If you haven't been following along, I'll show you a way to do this where you can get caught back up. Very easily so all my GitHub homepage here. I'm going to create a new repository. Sorry.
+Lewis Benson: if you are following along you don't have to do this step on this is just for anyone who needs to get their GitHub up then I cated and I'm just going to call this off. And I'm going to add a readme file. This is an important step. Create Repository.
+Lewis Benson: And then we have this green code button. I'm going to copy this.
+02:05:00
+Lewis Benson: everyone see that copy the URL right here
+Lewis Benson: and then I'm going to go to my projects folder. I'm going to create a new folder. I'm just going to call it off.
+Lewis Benson: And I'll get back here.
+Lewis Benson: And then I will get clone. And I'm going to paste in that link that I just copied from GitHub. And this will clone this down.
+Lewis Benson: And I'm going to open up this readme file. And I'm just going to change the readme file. I'm just going to add the word off here and save it. And that's all I'm going to do to this just so that it has something different in here. And then I'm going to close this out. And if I do it get status.
+Lewis Benson: I didn't see the end of my sorry CV And now we see that main there. And I'll do a get status. and we have the modified read me so I can do add period get commit. - M now it's going to type in add auth file. push origin Main. And let me zoom in on that command there so you can ever see that. So get push origin main is the command you'll need to wire this up to your GitHub. If it's not already wired up and then we can actually see my URL popped up here. You might get something to log in through a token. If anyone has any issues with that, Let the Tas know and we'll get that worked on during our assignment time
+Lewis Benson: if I can't get through everything don't worry about the assignment we can always push that back or even completely remove it from the list. I'm sure that's not an issue. I do want to get through this little demo though. So if you do want to follow along with me that will be sufficient for today.
+Lewis Benson: Does anyone have any questions up to this point right here?
+Lewis Benson: Okay, so as long as you can see your GitHub username whenever you do get push origin main, you're good to go. I'm gonna close this terminal. I'm gonna go back to the one that I was working in. This is my first contributions. I'm going to PWD just to make sure I'm in the right place still. I do an LS. We can see all of those files that were in there. Here's that contributions.md. So I was having an issue with the branch
+Lewis Benson: And I called that Yet Bush origin. Lewis Dash Benson
+Lewis Benson: and this time it worked. I'm not sure why it wasn't working the first time. But was when I did the push on this Branch, it actually pushes that up and let me go to my repositories and find that.
+Lewis Benson: So here we can see that I had recent changes less than a minute ago. That's what you want to see and if I hit this drop down I can see both branches are here whenever I did that push it created the branch in this list of branches. So I have my name here and the main there that's coming off of this. So if you're following along and you're on the first contributions page not on the original one where they're username is first contributions and the repost first for contributions, but it's your username slash first contributions after forking the repository over. After you make that change. I'll go down to the readme just so I can show you where the next step is, but you're going to be opening that pull request to ask about right there.
+Lewis Benson: on this does have about different errors that could have occurred.
+Lewis Benson: So here when you go to your repository, you'll compare and pull request button and it shows the little screenshot of what we just seen we're gonna open the pull request
+Lewis Benson: so let's go ahead and do that. All the way back at the top of the page compare and pull request if you don't have that you may have to let me go back and show you. If you don't have this right here. You may have to click on pull requests tab here. And then hit new pull request. And you'll be in the same page as if we were to. Click here.
+02:10:00
+Lewis Benson: And whenever you get to this point, you'll be at the same point. So here is my message that I pasted in earlier. I added my name to the list. So here's the one thing to notice that it's actually pushing these changes from ry to their repository. So if I hit create pull request
+Lewis Benson: I wait for it to do all its checks.
+Lewis Benson: As long as everything here goes through. Then they can merge in my pull request which it looks like they automated it. So it got pulled in automatically.
+Lewis Benson: So here it says pull request successfully merged and close. So I just contributed to their first contributions repo. Does anyone have any questions about that?
+Lewis Benson: I'm not going to open breakout rooms today because I want to help anyone who runs into any errors can be a bit of a beast. Work on what you can with the assignment. I'm actually going to waive the points on it. I'm just trying to get done what you can. I don't want you to feel pressured with today since our time ran a little long. So today's assignment is going to be more of an optional thing. But I do encourage you to either work on this first contributions or work on that assignment, and I'm going to bring that up real quick. let me get to the Google classroom
+Lewis Benson: and here we go day one. These are in the wrong order again.
+Lewis Benson: Okay, so it's very similar to what we did. You're gonna go to this link here. You'll Fork this repository create a copy clone the fork down. This is get clone you're gonna paste in that link and I can go through that again. Create a new markdown file inside of your local Repository.
+Lewis Benson: you're gonna create a reflections.markdown or something similar to that and then you can just add some content to that by answering the questions below. And then you'll do your submission from there. But again, I'm going to make the points on this optional. So if anyone's feeling pressured, don't worry too much about it. I do ask that you do as much as you can on this assignment so that we can find any errors that might occur on your terminal because if you encounter errors outside of class, it's gonna be a lot harder to solve these get problems can be a big deal So has anyone ran into any errors or anything so far following along?
+Umar Z: yeah, I wasn't following the hunger, but I don't know about other people but was trying to pay attention and
+Lewis Benson: Yeah, that's perfectly fine. If you do want to follow along with something I can open up another demo through that I Gregory you have a question.
+Gregory Robertson Jr: When I come from my power here went out on a couple minutes ago. So my own I would just paying attention.
+Lewis Benson: Yeah, and that's perfectly fine. Again. I'm not going to put any points on this assignment just because it's going so late into the day and I want to make sure everybody is able to actually use their terminal make sure it gets working make sure you can clone and Fork repositories. So if you do want to follow along now, I would advise coming into the assignment and grabbing this link. I'll throw it into the
+Lewis Benson: you can either use this link or you can use the other one. I provided from the first contributions is pretty cool because it actually adds you as a contributor to a major Repository. But here is another one that you can practice with. if you like and I'll go through the one I'm listing here now.
+Lewis Benson: So I'm going to open up the link to that. And it opened it up in the different tab here. So clicking on the link. This is what you're going to see. everyone see this
+Lewis Benson: All right, so you're gonna click the fork button.
+Lewis Benson: Did everyone see where that fork button was? It's You have the code button, but it's above that and underneath of the search bar. So it looks like a Three dots they're all interconnected with lines. Beside watch and star and if you're on a smaller screen, it could be collapsed in somewhere. Let me see that actually looks like on a mobile size. So if your screen looks like this is the button. It has these three dots Make it back up to full screen. So I'm going to Fork this I'm going to keep in the description in the name that's here. And I'm going to copy the main branch only. Create the fork.
+02:15:00
+Lewis Benson: Yes, Omar.
+Umar Z: Yeah, can you please go a little slow? So I mean we can follow along because sometimes screens change so quickly so, I feel lost. I'm sorry about
+Lewis Benson: Yeah, no problem. I'll go back to where I was. So this is the repository link that I included in the chat.
+Lewis Benson: the first thing we want to do is click on the fork button.
+Lewis Benson: And once you click on the fork button. Yep.
+Umar Z: Yeah, got it. I'm on Green Okay, the next one. I mean, okay.
+Lewis Benson: Yeah, so what I'm gonna have to do because I'll just create a second one. I'll have to get practice Since I already have that name.
+Umar Z: Okay, so we can keep the same name as well if we want to. Pick up.
+Lewis Benson: Yeah, it's recommended to keep the same name. I'm gonna have to skip back over to this.
+Umar Z: Okay, I'm gonna
+Lewis Benson: I'll show you what the next screen is going to look like, but I have to go to it manually because I already created it. so let me refresh
+Umar Z: create four. Okay copy the main branch only, okay.
+Lewis Benson: Yeah, for some reason it's because I already forked it. I see. So I'm gonna have to search for this on my repository or deleted off my Repository. In order to create it again. Here we go. So this is the screen you should be on after you finish creating it. I should look like this.
+Umar Z: Okay, I'm creating it. Okay.
+Lewis Benson: But I see we have a third person forked it.
+Umar Z: The license read me index, okay.
+Lewis Benson: So those are the three files that are currently on there.
+Umar Z: how do we see who poked it? Sorry. What was that?
+Lewis Benson: I can just see that there was Three Forks total right now.
+Umar Z: I see over here.
+Umar Z: Okay,
+Lewis Benson: Yeah. I can't see…
+Lewis Benson: who forked it and maybe now it doesn't show me.
+Umar Z: I can and for okay, it says can't four because you own this depository. Are you not a member of Annie organizations? That's what Shows on the fork tap to me.
+Lewis Benson: Yeah, we're not going to be. We can't actually see anybody in there. I can just see the number three there. So it says that three people forked it. Now we got four Forks so I can see that everyone's finding the fork button. But we only have four total so far including myself. Once you do get to this point though the neck.
+Umar Z: so this message is we don't need to worry about it. It says you don't have any folks of this repository. Is this okay?
+Lewis Benson: It should have your username here and then get Hub practice here. if it looks like this. Yeah.
+Lewis Benson: Yeah, and then here underneath of my picture you should see fork from and then it has the original where this yeah.
+Umar Z: I see. Yeah full from Reece some elastic GitHub practice, okay.
+Lewis Benson: exactly So once you have it forked, then you can click this green button that says code.
+Umar Z: Cold, okay and get the cold copied, okay.
+Lewis Benson: Yep, you make sure it says https before you copy it if it says this thing or SSH make sure you switch it to https. that it has an actual URL.
+Umar Z: Okay, copy it. Okay.
+Lewis Benson: So once you have that in your clipboard, this is where you need to create your folder where you want this to live at so I'm going to go. to my projects folder
+Umar Z: folder, okay.
+Lewis Benson: So at this point you have an option you can either create a new folder or you can get bashed directly here because whenever you clone a repository, it'll create a folder. So it's up to you if you want to create a folder and then clone into that.
+Umar Z: Yeah, I'm trying to.
+Lewis Benson: That's fine, too.
+Umar Z: Make a new folder. Okay, I made it. Okay, and then open the folder. Hi. I have to manage my screen because I hold a second. I'm sorry,…
+02:20:00
+Lewis Benson: Yep.
+Umar Z: but I won't be able to see your screen like that. I
+Umar Z: So what do we do then once we create a folder then what do we do?
+Lewis Benson: You either CD into that folder or you open your terminal in that folder?
+Umar Z: I'll open the terminal in the four. let me open the terminal. Okay, cat get cash. Okay.
+Lewis Benson: So now The next thing you type in your terminal once you're inside of the folder you want to be in I'm in my projects folder because when I clone this, it's going to create a folder at that time. Either way is perfectly acceptable. I just wanted to show you the other way, too. You do get flown.
+Lewis Benson: and then shift insert to paste if you're on Windows, and it looks like I lost my Clipboard so let me go back and recopy that out of the browser again. code copy
+Lewis Benson: and then I'm going to open up my terminal again. That's the wrong terminal. I mean the other one back up get clone. and shift insert to paste and for some reason I lost it again. Hold on. Let me try pasting it in.
+Umar Z: It clone.
+Umar Z: you get
+Lewis Benson: coffee Paste there we go. So it should look like this before. I'm not going to press enter yet. You should get clone and…
+Umar Z: in
+Lewis Benson: then the link to the actual page.
+Umar Z: force also your name is first contribution. That's okay. My mind is going to practice okay.
+Lewis Benson: I grabbed the wrong link. you pointed that out.
+Lewis Benson: GitHub practice copy. Yeah when I tabbed over to my other browser. It went to the wrong page shift insert.
+Lewis Benson: for some reason my paste is being weird
+Lewis Benson: copy Just right click and paste it on. All…
+Umar Z: Okay,
+Lewis Benson: There we go. So mine's GitHub practice. So I just press enter.
+Umar Z: Okay, and now it's okay. so
+Lewis Benson: And then when it's done you can CD into it.
+Lewis Benson: So it's called GitHub practice.
+Umar Z: Okay.
+Lewis Benson: So I just CDN to GitHub practice.
+Umar Z: Practice, one whole thing is gone. Okay.
+Lewis Benson: Yeah.
+Lewis Benson: and then if you should see The branch located in your terminal right there.
+Lewis Benson: So it should say mean.
+Umar Z: I think mine didn't work. Okay, I think it's because this case capital. Okay CD.
+Lewis Benson: Yeah.
+Umar Z: get hub
+Lewis Benson: And you can autocomplete it…
+Umar Z: crack
+Lewis Benson: if you press tab.
+Umar Z: Okay.
+Lewis Benson: And that'll help with the casing.
+Umar Z: Yeah, I see me now, okay.
+Lewis Benson: Yep, so when you see main we can open this up in code Leave your terminal open, but also open up vs code in that folder.
+Umar Z: Okay.
+Lewis Benson: It doesn't even have to be necessarily in the four. You can just open one of the files in there.
+Lewis Benson: where we at GitHub practice So I'm just going to double click on read me to open vs code. And then I'm going to file open select folder Hannah you have a question.
+Umar Z: Read me, okay.
+Umar Z: Told practice something.
+Hannah Richards: So yeah, I made it to the actual terminal. in the folder, but I'm not sure how to actually copy. I think I missed that.
+Lewis Benson: Yes, so it's called get clone. Are you in the projects folder right now?
+Hannah Richards: Yes.
+Lewis Benson: Okay, so here is what the link looks like. It's get clone. And then it's that URL that I copied off of the web browser and…
+02:25:00
+Hannah Richards: Yeah, I did that part to get clone.
+Lewis Benson: I'll show you
+Hannah Richards: with the Euro cloning,…
+Lewis Benson: okay.
+Hannah Richards: but it didn't give me the
+Lewis Benson: That'll look like so now pipe LS in your terminal.
+Hannah Richards: yes.
+Hannah Richards: Okay.
+Lewis Benson: And you should and…
+Lewis Benson: you should see GitHub practice listed under your folders. You do see it.
+Hannah Richards: Yes. Yes.
+Lewis Benson: Then you can see the into it.
+Hannah Richards: Okay.
+Hannah Richards: to do our CD dot GitHub practice
+Lewis Benson: No, it's CD space GitHub practice. the dot refers to your current folder.
+Hannah Richards: Okay, I don't need to talk.
+Lewis Benson: So anytime you just put a dot and…
+Hannah Richards: 
+Lewis Benson: it says where I'm at. It's like a shortcut. So …
+Hannah Richards: Okay.
+Lewis Benson: if I were to say LS get practice. I don't think this will actually work because I'm already in the folder. It'd be the same though as me saying GitHub bot. But it knows that I'm in that folder already. So that's where the dot is used. It says my current folder.
+Hannah Richards: I don't know. It's not okay. There it is. I press LS again.
+Lewis Benson: Did you see GitHub practice?
+Hannah Richards: I did but then it said no such file or directory and then I just press L's, but I don't think that.
+Lewis Benson: So if it says no such file it could be your capitalization. So make sure it starts with a capital G.
+Hannah Richards: Yeah.
+Lewis Benson: And has the capital P and The Hyphen also, you can use autocomplete with the tab key as soon as you type in G with a capital g and an i. You could probably hit tab at that point and just Auto fills in the rest for you if it finds it.
+Hannah Richards: He said the same thing. Is it?
+Lewis Benson: So if I do back up a four are gonna get into the same folder you're in. And I'm going to LS. and I can see where's that? There's get demo here. It is get practice right here. So I'm going to type CD space git. H with a capital H. I'm going to press tab at this point. It'll finish the rest for me. Because whatever you start typing as long as the folder exists it can autocomplete it. I'm going to press enter. And then I see the main shows up right there.
+Lewis Benson: Are you at a similar point or would?
+Hannah Richards: No, it's I didn't do the dash. Maybe that's
+Lewis Benson: yeah, it has to be exactly the same as what's written and
+Hannah Richards: but after that I
+Hannah Richards: mean
+Lewis Benson: but you do see the folder, When you hit LS?
+Hannah Richards: Yes. Yes.
+Lewis Benson: Yeah, so if I just do I'm actually going to remove one of my folder so real quick.
+Hannah Richards: but they may
+Lewis Benson: What's that?
+Hannah Richards: it doesn't have me or would it not do that? Because it's just on a different.
+Lewis Benson: It should say I wait you're on a Mac, Yours might not say main,…
+Hannah Richards: Yeah.
+Lewis Benson: but what you can do is type in get status.
+Lewis Benson: And it should tell you something similar to this.
+Hannah Richards: Yet that's what I got.
+Lewis Benson: Okay, then you're in the repository. If you ever need to see your branch, I think you can get branch and it tells you what branch you're currently on as well. You can also see it in vs code.
+02:30:00
+Hannah Richards: Okay.
+Lewis Benson: I'll show you So now that you have your terminal caught up to mine open up the folder. GitHub practice inside of your Explorer And you're gonna want to open vs code in here. So for me, I'm able to read me. You may have to select it from the open with options like this and then select vs code here.
+Lewis Benson: But once you have your vs code open you want to go to Open folder and open that same folder up in your vs code the way we've been doing up to this point.
+Hannah Richards: You opened up read me.
+Lewis Benson: Yeah, I opened up read me just because I know that'll open my vs code.
+Lewis Benson: Yes, Mr.
+Umar Z: and so what happens if you try to open the vscore outside the folder we've been doing also,…
+Lewis Benson: You can do it that way, too.
+Umar Z: there's no harm in that we just need yes or
+Lewis Benson: No, and I can also right click and hit open and code and it works the same.
+Umar Z: Also, the purpose is to just open the vs core and go to the right folder right open the programming.
+Lewis Benson: Yeah, that's the only goal at this point is to get into the vs code with the correct order.
+Umar Z: I see that I thought there was some reason that we were going from within the readme file or something.
+Lewis Benson: No, it's just a way to open vs code. Yeah, and…
+Umar Z: Okay. Thank you.
+Lewis Benson: if you want to right click if you have the option to open your vs code here. I don't know if everyone would have that or not. But that's another way you could do it sometimes some terminals will let you type Period or code of file name and then it will code. I think mine does but my vs codes already open, so it's not changing anything.
+Lewis Benson: That might be an option for you. If it's not set up, then it's not set up and there's nothing I can help with right now because that's a little bit of a pain to sit configure.
+Umar Z: and the money no, I'm in the right folder right now.
+Lewis Benson: Okay, perfect. Yeah, if you're in the right folder then we're good to go. So we're gonna create a new file in here. And it's going to be reflection
+Lewis Benson: MD stands for markdown. I will try to go over some of the markdown syntax. It's very similar to HTML except. It's easier to read. But as far as how it works is similar. But if I wanted to do an H1 and markdown you put a hashtag and then you just put some text.
+Lewis Benson: Like that, and then that's an H1. And also with markdown you get this little option here at the top, right? It says open preview to the side. You don't really have to do this. I'm just showing you that there's my H1 being displayed in markdown. I'm just a little side thing. It's not really related to what we're doing. once you have this open you can put some.
+Lewis Benson: Content in So here's the questions. I'm just copying these right out of the assignment instructions
+Lewis Benson: Why is Source control especially get important for software development? explain problems that Source control systems like get help solve and the benefits they offer. So if you answer these questions, I'd be great. I'm not going to require it for this assignment. I'm actually going to modify the rubric for grading purposes so that this is easier to remember but just get some content into your reflection start markdown file at minimum. Once you have some content and here we can continue. Excuse me.
+Lewis Benson: and then I'm going to actually open up my terminal I'll wait here for everyone to get caught up.
+Lewis Benson: So as long as you have main here. That means you're in the right place Hannah. You said you don't have main listed in your terminal.
+Hannah Richards: No, I don't.
+Lewis Benson: do you have anything different about being in a repo, that's
+Lewis Benson: Showing up in there.
+02:35:00
+Hannah Richards: You want to see what it says?
+Lewis Benson: I'm going to open up another terminal here real quick. Just one second.
+Hannah Richards: It's showing up as At my MacBook, so I guess it's showing my username at the destination. And that's pretty much it like it doesn't give any.
+Hannah Richards: It doesn't give any extra I cannot show you.
+Lewis Benson: I just want to show something real quick here. Let me get into a repo.
+Lewis Benson: So I can use this one. So this is a different terminal. Do you maybe have an X? I'd actually type in get status again if you made your changes like you added the reflections file.
+Hannah Richards: Yes, I have a percent sign.
+Lewis Benson: you have something like this then?
+Hannah Richards: It's a percent sign. Yeah.
+Lewis Benson: Adjust a percent sign that might just be indic like how I have a dollar sign.
+Hannah Richards: yeah, I guess so. Yeah.
+Lewis Benson: Yeah, I was just curious because this is telling me that I have a change inside of this repo that's not tracked if I did a get status. And I can see these files. I haven't committed them yet. So that's why there's an X there. So just figured maybe you had something like that being your own Mac, because this is a shell terminal.
+Hannah Richards: So, that'd be like if it wasn't completed. the excellent come
+Lewis Benson: This is yeah, when I do get status, it's showing me that I have on track changes right there. So I get that little X warning me that I have on track changes, but I don't get that and get bash. It just shows me my branch. Is just curious if you had that just some sort of indicator to see when you're in the right place. If you don't have it, then you'll have to get status to make sure that you don't have changes to commit.
+Hannah Richards: Okay.
+Lewis Benson: So with this point if you've created a file and you added some content to it. Then the next step is to ACP again is ADD commit push? And you always have to get word first. So it's add and you can either type in the full file name or you can say add everything in my current folder by pressing a DOT. This is typically what I'll do is I work in one file at a time so that I don't have to type in the file name. And I'll just say get add Dot.
+Lewis Benson: commit and then you're going to put minus M and then This message should be meaningful. create reflection
+Lewis Benson: and answer questions So this is a meaningful commit message that explains what changes I made at this time. I'm going to press enter as soon as I get to commit.
+Lewis Benson: And then the p and ACP is push so this is the push and sometimes you can get away with just saying get push you can try it. But if it throws an error. You may have to put the rest of it in origin refers to the URL that we're pushing it to this is like a variable that contains the URL string that we clone down and then main is your branch. So get push origin mean if the previous one didn't work. So if you push there was an error. I'll try get push origin Main. I typically just use origin main or origin whatever Branch I'm on because it's typically less air-prone.
+Lewis Benson: But that's the ad commit push workflow. And that part. I do want you to memorize ACP. add file name or period Get commit minus M and a message and push origin Main and I'll just throw those in here one more time. So let's get add period it's not going to add anything because I don't have any changes. But I will do that get And then push origin Main.
+Lewis Benson: So every time you make changes to your code and you have a stable build meaning that everything you did works you should ACP at that point. So if you're doing JavaScript, and you add a feature. at that time ACP if you're doing CSS, and you added some Styles and everything looks the way you expect them to ACP. You'll do it as much as you possibly can that way you're creating checkpoints that you can roll your code back to if you need to.
+02:40:00
+Lewis Benson: Does anyone have any questions about that process or that workflow? I know this was a little bit much. Did anyone have any issues get to their GitHub? Whenever you do the push command.
+Lewis Benson: Did that go through for you Umar?
+Umar Z: Yeah, it's showing me. A pop-up window appear it says GitHub sign in with you.
+Lewis Benson: Yeah, yeah, so you'll need to do that in order to get the push to go through.
+Umar Z: Also, it's not done yet. sign in with you, but I was signed in so why is it asking me to sign in again?
+Lewis Benson: You're not signed in and your terminal.
+Umar Z: On the term and all So signing in is for the terminal, So sign in with your browser,…
+Lewis Benson: Yeah.
+Umar Z: let's see.
+Lewis Benson: Can you share that way we can see that process because I'm unlink my GitHub for my terminal.
+Umar Z: I just clicked on it. I think I can just close the browser, Or you want to scan this? Let me actually start sharing first. So let's you
+Lewis Benson: Yeah, we'll see where let's see what you got. I don't want you to accidentally display your password anything. So make sure you keep that a hidden. Yeah, I know.
+Umar Z: Know it's nothing there I don't even remember my bad.
+Lewis Benson: I've actually helping somebody one time and they hit the hit show password.
+Umar Z: So usually what I do. I just, save them so it says authorized get ecosystem. So it's basically it asking me to authorize get credential manager and that's it. let me share the screen with you guys.
+Lewis Benson: Yeah, just so you can show that process because I'm not able to bring mine up. I'm gonna try to fix this in a future class by using a virtual machine.
+Umar Z: Which screen?
+Hannah Richards: Who's calling that up? It's on push origin what's the last part of it? which
+Lewis Benson: It'll be your branch name. So it's get push origin Main. Yeah.
+Hannah Richards: Main, okay, but if my drinks name isn't Shawn up I will just put the name of the folder. or still okay.
+Lewis Benson: No, they're branches still gonna be mean. At least in this case because the repo you cloned down. The branch name is called Main.
+Lewis Benson: So this is the credential manager. Can you show me the terminal?
+Umar Z: okay, let me pull that terminal on this window because it was an extended screen. So this is my terminal.
+Umar Z: So this is the terminal I accidentally on.
+Lewis Benson: Okay, so when you did push it just opened the browser up.
+Umar Z: Yes, it pop. No. No it just a pop-up man your window up here and then it asks me to sign in and I
+Umar Z: Click the sign in button. So that's when it got me to this window this screen.
+Lewis Benson: Perfect. Okay.
+Umar Z: So authorize no, I don't remember. Okay, so password is already saved it as I said confirm.
+Lewis Benson: Yeah, I had somebody One Time Hit the show password button when I was helping them. Luckily, it was a one-on-one helping…
+Umar Z: but yeah,…
+Lewis Benson: but it was still like you probably shouldn't do that.
+Umar Z: so That's where we are right now. What is it? blank screen Okay,…
+Lewis Benson: Yep.
+Umar Z: so you want me to go back to the terminal?
+Lewis Benson: Yeah, take a look at your terminal see if it's got a prompt or something. If we look at your url there, too. You can see you're in Local Host. We'll just kind of interesting.
+Umar Z: Yeah this yes.
+Lewis Benson: Yeah, the one two seven thing. Yes, is there anything in your terminal now?
+Umar Z: Let me see.
+Lewis Benson: Yeah, it looks like it worked.
+Umar Z: Third. Okay, so we came back to the screen now, It worked. Okay, that's good.
+Lewis Benson: Yeah, so the authentication that's all you had to do is just put in it authorize and put in your password anywhere done. Okay?
+Hannah Richards: It's not let me put my password in.
+Lewis Benson: Are you in that take you to a web browser?
+Hannah Richards: No. It ask for my username. and password
+Lewis Benson: did you earlier do the Thing…
+Umar Z: All right.
+Lewis Benson: where you put in your email and your name? Okay.
+02:45:00
+Hannah Richards: Yes.
+Lewis Benson: And so now it's asking for your username and get in your criminal.
+Hannah Richards: and password Yes.
+Lewis Benson: Okay, I'll come back to you in a second here. Does anyone else have any issues with this? I may have to put you into a breakout room just so I can make sure. Of what's going on?
+Umar Z: Do you want me to stop sharing right?
+Lewis Benson: Yeah, go ahead and stop sharing. So that was basically the entire assignment for today. So I walked through that with you and this is recorded. So you'll be able to practice on that. If you didn I definitely highly encourage that if you didn't follow along that you do watch back on the video and get Of that practice in because again, a lot of stuff can go wrong when you're dealing with get different computers will have different issues and it'll be a case-by-case basis on getting all this working once it's working everything's going to be streamlined. But until those little kinks worked out on your individual terminals definitely do the assignment or at least do The one that I showed earlier with the first contributions.
+Lewis Benson: One or the first contributions does have an extra step. Yes, Omar.
+Umar Z: Good question. So this sign in and linking processor is only one time. every time you make a repository. It's going to be the same steps. It's once okay,…
+Lewis Benson: it's once Yeah,…
+Umar Z: Once in a machine,…
+Lewis Benson: it stays signed in. once on a machine and…
+Umar Z: right? Okay.
+Lewis Benson: I even just reinstalled my get and it's still signed in so it's like I'm not even sure how to sign it out. I'd probably have to go into my GitHub and manually unlink it from GitHub unauthorize it again and then resign in again through the terminal.
+Umar Z: Yes, so now you want to let the beer go but where does the wanna let? Okay.
+Lewis Benson: Yeah.
+Lewis Benson: Yeah, and I don't want to actually do that on this machine because I got too many terminals installed right now. So I don't know which one I would uninstall give another question.
+Lewis Benson: All right. Hannah did you still have an issue with yours getting the password in?
+Hannah Richards: Yeah, I still haven't figured it out. It's not like actually Into anything and I'm not sure if it's locked. orifice
+Lewis Benson: if you have any pop-ups outside of your terminal or anything asking for permission.
+Lewis Benson: If not, I'll move us to a breakout rooms and help you in that one individually because I don't want you to Actually, there's not going to be showing any passwords or anything is there?
+Hannah Richards: I don't think so.
+Lewis Benson: Do you want to go ahead and show your screen then? If you're comfortable with that.
+Hannah Richards: Yeah.
+Lewis Benson: Just in case this is an issue. Somebody else has maybe it'll help them to figure out what you got going on here.
+Hannah Richards: Okay.
+Hannah Richards: so this was the Get home.
+Hannah Richards: practice
+Lewis Benson: Okay.
+Lewis Benson: So you were trying to type your password into your terminal? I see what's going on. So with Unix terminals whenever you type a password, you won't see anything happen.
+Hannah Richards: Okay, so I just have to believe it there. Okay.
+Lewis Benson: Yeah, let me see if I can I'm not even sure if I can bring up another.
+Lewis Benson: Yeah, I actually can I believe show that as an example?
+Hannah Richards: Please.
+Lewis Benson: Yeah, you might have put in the wrong password then.
+Hannah Richards: Yeah, I couldn't see.
+Lewis Benson: Here, I'm going to take over the share. And just to show you what I mean.
+Lewis Benson: So this is a normal Unix terminal Let me open it back up with the Linux one. So this is a normal Unix terminal. So if I type in this command I once made a type in a password. I'm typing right now. And you don't see anything happening. I press enter. And it's gonna say wrong password.
+02:50:00
+Hannah Richards: Okay.
+Lewis Benson: I type in the correct password and then I'm actually switching that over like that, so
+Hannah Richards: how would I like refresh? essentially
+Lewis Benson: You can press the backspace key a whole lot. And hope you headed enough times to restart it. You can also press Ctrl C which will basically end what you're doing and that you restart.
+Hannah Richards: Okay, so then I would just push it again.
+Lewis Benson: Yeah, you would just try it again.
+Lewis Benson: Yeah, good question, though because that's something that I always forget about especially with Mac users and Chromebook users. Whenever you're trying to type in your password, it's not going to appear that you're typing anything in but it's actually typing it in. You just have to believe.
+Hannah Richards: I don't know if I'm still just putting the wrong person.
+Lewis Benson: The error I seen last times that authentication failed. Is that what you're still seeing? Does it have anything in anything more specific about the authentication failing?
+Hannah Richards: Yes.
+Hannah Richards: No, it just says fatal. Please see for recommended mode. of Authentication
+Lewis Benson: Okay. Let's see.
+Hannah Richards: I'm pretty sure.
+Lewis Benson: So it's not asking for a personal access token, right? It's asking for your password.
+Hannah Richards: yeah, this is you name and password and it has the URL
+Lewis Benson: Okay, and your username does it have all the exact perfect capitalization that you used when you created that username?
+Hannah Richards: Yes.
+Lewis Benson: Okay, and it's still failing on?
+Hannah Richards: a large
+Lewis Benson: Are yep, go ahead?
+Hannah Richards: Okay, so is there a add-on or something that you can use?
+Lewis Benson: There is another way to do it. It's called using a personal access token. It's a little bit trickier. And I haven't ever done it on a Mac before typically once you do get push and you put in your username and password, that should be all that you need to do. But you say you're still getting this issue and you're sure that it's the correct password and username and everything.
+Hannah Richards: Yeah, I just made my account today like Daniel.
+Lewis Benson: Okay.
+Hannah Richards: ocean so my memories pretty obviously sometimes…
+Brian Kimbrow: Know for Maxi.
+Hannah Richards: but I don't think
+Brian Kimbrow: She said I'm gonna have to put that in once and then she could go to her system preferences and she could take it to where you don't do it.
+Lewis Benson: It's failing when she puts on her password.
+Lewis Benson: you have a Mac. Don't you Brian?
+Brian Kimbrow: Yes, I do have a Mac. That's what I was saying once you put it in once and she can change the system purpose to work. She don't have to put it in. multiple times on
+Lewis Benson: Okay, it's failing.
+Hannah Richards: it's just not lovely in the first.
+Lewis Benson: Yeah, it's not even working the first attempt. It's saying cannot authenticate.
+Brian Kimbrow: AR authenticate, she actually seen that over to me and then I could try to work on it and see what's going on with it myself..
+Lewis Benson: All Do you have time tonight Hannah to continue working on this? Okay, I'm gonna put you two into a breakout room.
+Hannah Richards: Yeah.
+Lewis Benson: If that's okay with you guys.
+Hannah Richards: Yeah, that's cool.
+Brian Kimbrow: It is fine.
+Lewis Benson: All right.
+02:55:00
+Lewis Benson: Okay, I'm opening that now before I do. Did you have any other questions about the assignment Hannah? Are you kind of understanding what's going on with? GitHub and how we're linking these up and everything.
+Hannah Richards: for the most part, I think I understand is just a way to basically have a kind of what you're saying with the Google or whatever having something to store all of your I guess extra.
+Lewis Benson: Yeah, and think of it like a cloud too it's just where you want to keep all your code.
+Hannah Richards: Yeah. That's…
+Lewis Benson: You can collaborate with. the main goal of today is just to get a little On cloning something down from GitHub…
+Hannah Richards: what I was trying to.
+Lewis Benson: what you did successfully and then pushing your changes back up to GitHub after you make changes so that you can see there's changes occur. so hopefully you can get this to work and you'll be able to practice that push and then you can compare your local to your
+Lewis Benson: Remote so this is considered remote. I just refreshed my GitHub and we can see that reflection.md shows up on my GitHub. So that's what I mean. I made these changes in my vs code. And I pushed them to get Hub and now they're here on GitHub as well and we can see that create reflection and answer questions was 18 minutes ago. So hopefully that makes sense. I'm going to put you into the breakout room and then I want to see if anyone else has any other questions. Before I close out the call.
+Hannah Richards: Okay. when you
+Hannah Richards: actually, go back and make more I guess edits, whatever to the initial vs code holder or Document is it gonna update or do you have to go back and update it on?
+Lewis Benson: Whatever you do. Add commit push it'll update on GitHub. Yeah, so the ad commit push is…
+Hannah Richards: Okay.
+Lewis Benson: what actually makes everything on GitHub update. So all of your code that's local.
+Hannah Richards: I give you everything you're adding your going through to do the ACP again.
+Lewis Benson: Yeah, so every time you make a feature that's stable. That's why you want to ACP at that time. You don't want to push broken code to GitHub if you can avoid that. Yeah, so the idea is that every time you have a stable build or…
+Hannah Richards: I get to
+Lewis Benson: a new feature. You add commit push and you'll see all your changes reflected on GitHub. And then whenever you do your submissions, you can just grab this link right here. And submit this link and whenever I come to you or GitHub, I can go into your files and see your changes and all your code and I can navigate through it really easily just by clicking on these links over here.
+Lewis Benson: And any other developer will also be able to do this and as I showed with the first contributions, you can even collaborate because that file that I added my name to there are 19,000 other developers that have added their names to that file. So I just collaborated with 19,000 other people essentially.
+Lewis Benson: So I'm going to open that breakout room now. I'll check in to see how this is going. And let me know if you can't get this figured out and I'll find an alternative solution for you.
+Hannah Richards: Okay. Thank you.
+Lewis Benson: Yep.
+Lewis Benson: As far as everyone else goes. Does anyone have any other questions? Is anyone else having any issues at all with it?
+Lewis Benson: And you should have got the request Hannah for the breakout room.
+Hannah Richards: got
+Lewis Benson: Was everyone able to get configured through their terminal?
+Daniel Perez: That's zero GitHub turnable.
+Lewis Benson: You might get This one here you mean?
+Daniel Perez: Yeah.
+Lewis Benson: Yeah. Is there something in particular you want to be in a show you with it?
+Daniel Perez: For the ACP. I did add a DOT already. and then commit Elder and
+Lewis Benson: Yeah, so let me redo it. I'll figure out my terminal. I'll make a quick change to my file. I'll just duplicate this line. And so now there was a change made so if I say get status I can see that that's reflected here that this was modified that I don't have it added yet. So I'm going to add it to my staging it I'll put in a period so it adds every file that's listed in red here, which is only one file. That'll do get status and I should see that that's now green. The get status is optional. You don't have to do this every time I just like to see that my changes are occurring. So get status some green I did my ads and I'm going to commit so it's get commit flag hyphen M. However. You want to call it. We actually make this a little larger. So hyphen m space. quotes
+03:00:00
+Lewis Benson: add extra line of text ending quote and I'm going to press enter. and I see add extra lives in my commit message and I see one file changed one insertion three deletions when you see the deletions, this is referring to I had a bunch of empty lines here. So this is something you can see the griddle green right there. This is something I added if I remove that that's a ion. That's what that's referring to. So once you do your commit my last command was get commit Dash M with that text I can do get origin, Main I press enter. And at this point it's either gonna ask you to sign in to get Hub or it's going to complete the push to GitHub if it asks you to sign in then you'll need to do that at this time.
+Lewis Benson: Yep, no problem. Has anyone else need any assistance as everyone been able to make it to this point?
+Lewis Benson: today is the hardest day of get Doing everything I can to make this an easy week since we're still recovering from that JavaScript week. So that's why I'm also making today's ignment not a graded assignment. I want to make sure that we're able to get caught up on all of our other assignments. However, we need to get working so that we can move forward after this assignment. Tomorrow if everyone's criminals are working properly tomorrow is going to be an easy day, hopefully.
+Lewis Benson: Because it'll just be more practice. get
+Lewis Benson: and if anyone has been not able to follow along. Make sure you reach out to the Tas use the class slack whatever you need to do to get some assistance because again, this is something that it could turn into a time-consuming process. If something goes wrong as you seen even in my demos little errors add up. So make sure that you ask for help if you're not fully. Making it through everything.
+Lewis Benson: Okay, I'm gonna end the recording this is gonna be a longer recording. So hopefully I can get this processed and pushed up in a normal time.
+Meeting ended after 03:03:16 👋

@@ -1,0 +1,999 @@
+﻿nia-amar-wfe (2023-10-16 19:31 GMT-4) - Transcript
+Attendees
++1 337-***-**65, Chantrice L, Daniel Perez, Dianca Griffin, Elgin Sharper, Gregory Robertson Jr, Gregory Robertson Jr's Presentation, Hannah Richards, Hannah Richards's Presentation, Iris Coats, Iris Coats's Presentation, Katherina Rosa, Krystal Jefferson, Lewis Benson, Lewis Benson's Presentation, Markeisha Angelle, Reece Renninger, Ryan Arnold, shaista umar, shaista umar's Presentation, TRACY JOINER, Umar Z
+Transcript
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.
+Lewis Benson: There goes.
+Lewis Benson: somebody got disconnected from that.
+Lewis Benson: Okay, so welcome everyone. This is week one day one. This is our introduction to HTML. And we're gonna start diving into the front end Level One badge. We went over the badges a little bit during the orientation. I don't know if everyone made it for that. So, I'm just going to cover that again, briefly, give me one second to get my screen shared.
+Lewis Benson: okay, so the badges I'm here on The Google classroom And you can actually see our current pathway here on this link inside of the announcements. So, I'm going to open that up and show you.
+Lewis Benson: So this is all of week one just in this bad right here, HTML. So I'm gonna open that up. So, I just click on this. And it brings up these links here and then I click on the URL that opens up a new tab. So everything we're going to be covering for HTML is listed here. And we're going to be able to explain the blocks of an HTML. Document identify HTML elements to control the page layout. Differentiate between the common HTML attributes. And we'll go into a little bit more of a deep dive on. What all this means Utilize, topography tags, implement navigation. Utilize list tags and construct the table.
+Lewis Benson: So this is each week, we're going to have a different badge that we're working on and these are the skills that you'll have to demonstrate through the assignments that we'll be doing each day. Each assignment will cover a piece of these tasks, once you have your assignments, submitted You'll earn the badge and be able to move on to the next week. If you don't have all the assignments you'll still be able to move on because each of these badges are standalone. So each thing we learn is going to be atomic to other pieces.
+Lewis Benson: So as we progress through this, I'll show you the pathways here again. So week one's going to be the HTML. Week two will be CSS and we'll just continue through each of these each week as we go.
+Lewis Benson: Does anyone have any questions about the badges?
+Lewis Benson: Okay, so Yeah, go ahead.
+Ryan Arnold: Sorry, when we turn in an assignment and when we finish a stage on a badge, we have to go to that page. And click anything that we've completed that, or Is this just like the step-by-step guide?
+Lewis Benson: 
+Lewis Benson: You don't have to go in here and complete anything, we'll submit that to the Codex staff and then they'll make sure that you get issued your badge. Yeah, so there's nothing as far as that goes,…
+Ryan Arnold: Okay.
+Lewis Benson: but once you complete all of these badges, we'll have a capstone project. I'll actually go into the details for this to show what it looks like. This will be an actual website that you're going to build and deploy. So it'll be a live website. And once this is deployed and graded and evaluated, then you'll be able to go into the front-end developer one badge and this badge is actually through a third party Codex. Won't be grading this badge. This keeps it so that, there's unbiased grading going on. So, if I go into here, And we'll see what the details are on that.
+Lewis Benson: There is view pathway. I'm going to circles here.
+Lewis Benson: sorry about this, it seems that the link isn't taking me where I thought it was supposed to.
+Lewis Benson: Okay, I will look into that but I'll show you on the capstone. It's the same link. I'll see what we can get that link fixed there on that. But at the bottom, there'll be an evaluation like this and you'll schedule your evaluation for that capstone. And then you'll build a website, using all of the tools that we covered. And this right here is the link you'll click on for that to get your final badge for the entire one. And again, I'll look into this broken link thing. I'm not sure what's taking me in circles right now, but it'll look just like this page. And once you earned that badge, then you'll be able to move on to the level two front, End Developer Level 2, and we'll go more into that at a later date. Does anyone have any other questions about the badges or how those work?
+00:05:00
+Lewis Benson: Yes, Hannah.
+Hannah Richards: A question about I guess the prior bridges the things that you wanted us to do or assigned before today, I was trying to complete it and had some issues. I don't know if it was because our work on a mac or through apple. So things just not like, translating the same. I was wondering if there was maybe a guard or something or something I can look towards for Apple complete translations.
+Lewis Benson: Okay, so for the developer tools, I'd advise everyone to actually use Google Chrome especially since the badges specifically for the Google Browser tools. Says right here, chrome Devtools one that would make it so that the Dev tools themselves are the same across the different operating systems. As far as the screenshots go or Adding Them to the PowerPoint Presentation. If you're having issues with that, you can get with the TAs and we can find an alternative to see how you can get the evidence that you've completed each task. It doesn't necessarily have to be in a PowerPoint format. If that's not working for you we can put it into another type of document just as long as we have all the screenshots. If you're having issues,…
+Hannah Richards: That's been.
+Lewis Benson: the screenshots themselves, is that what the issue is?
+Hannah Richards: Sorry I didn't mean to cut you off but that's been fine. I know how to screenshot command shift 3 and I can copy and paste it into the Powerpoints. My problem or the issue was, when I reached a certain level of using the vs code, with the terminal part of it, it was like bash or I'm not like an interactive show. This is so it wants to go under bash, but for some reason it says that Apple has changed the default to z's H. But it's not allow me to basically complete the activity after the terminal. So when you want the vs code to echo, Hello World. It doesn't let me do that because it's saying the default interactive show is not in dash.
+Lewis Benson: I Okay, so it's using z'shell instead of bash. that's not a problem.
+Hannah Richards: Yes.
+Lewis Benson: If the Echo command isn't working, that's not a big deal. We just did that just so we can show you something that the terminal does the translation between Mac and Windows isn't something. We really anticipated all that much. But that's okay.
+Hannah Richards: Mmm.
+Lewis Benson: If it's not doing the bash command it's not gonna hurt anything. You can just take a screenshot of as long as the terminals open in your screenshot. That's the main thing.
+Hannah Richards: Okay, cool. Okay. Thank you.
+Lewis Benson: And then if we end up needing to integrate your terminal with another one, at some point, we can do that. later in the classes, when we actually start using the terminal, you can just use your build-in Mac terminal. You won't have to use the one that's built in the VS code, so that won't really be an issue either. Yeah, because the terminal already build in,…
+Hannah Richards: Okay, awesome. Thank you.
+Lewis Benson: you don't even have to install it. Fortunately that makes it a little easier. yeah. So is there any other questions about this?
+Lewis Benson: Okay, so if we have no more questions about the badges, I just want to briefly cover the
+Lewis Benson: The Dev tools. One more time. Just a quick review of that. I'm just going to do it with google.com. It's just a simple. I'm gonna right, click go to inspect. And then here we can see all of our different elements. And this is going to be our main topic today is the HTML elements. So, this one here we can see at the top, we have this element called doctype. We'll go over that a little bit to discuss what that is. Then we can see we have this HTML. And I'm actually just going to collapse this down. So we see here this HTML We have two of them, there's one at the bottom and there's one at the top. This first one opening The bottom one is called your closing tag, and then everything in between is actually nested inside of the HTML.
+00:10:00
+Lewis Benson: And I'll show you this with a more graphical detail here in a second. We'll just give it a quick overview of these tools rather than me elements themselves. so you can see if I hover over the different elements, it highlights different parts of the screen. So if I'm searching for something in particular, maybe I'm debugging and I want to know. Why is this section of my screen empty? I can see in my dev tools that it is appearing here. and I can look down here in my styles to see if maybe something's missing If you see, there's a style here called Flex Grow, I can actually add another style. Called flex grow. And set that to zero.
+Lewis Benson: And I think I spelled it wrong. I did.
+Lewis Benson: And I still spot it One second, sorry about that and you can see that it actually crosses this one out and it changes how the page looks. So you can use these tools, you can come in here and look at your styles and say this is crossed out. There's some something's going on here. Something's overriding this style so you can use your tools to figure out. Why is this up so high? Maybe you wanted at the bottom. So I can uncheck this and it. Now crosses that one out and it's at the bottom. So let's just a little example of what you can be using these tools for At the bottom. You have an example of your box model. We'll go into more detail that too, but you can see if something's affecting your page based on padding. So if I would Select an element such as this bottom one here.
+Lewis Benson: And we can see it has 15 pixels of padding. I'm going to change this to 900 and it throws everything off to So when you're looking at your page, you see this is off to the side but you wanted it centered. You can look down here and see there's a problem with your padding and that's just a way to quickly debug an issue. That's something we would use this for. Also, maybe you come to your page and there's nothing displaying, you can always look in your consoles. Errors will be displayed in here. There's a lot of things you can use this for another thing is to check different screen sizes and devices. Perhaps you're developing a website that you want to work with on a mobile device. So if you click this, you can actually use this little drop down here and pick different types of phones. And that was this little blue button here next to the selector tool. This is your mobile views.
+Lewis Benson: There's a lot of powerful tools you can use within these devtools. So it's just a quick review of some of the stuff we covered. It'd be good if you all just went in here and explored some of the buttons, played around a little bit, even if you're not a hundred percent sure, what yet? You can just kind of look at some things as you're working. Okay, so Next, I want to go over vs code, so I'm actually going to open up Another computer here so that I can show you how to do the install in case any of your having issues. If you haven't installed VS code, I would recommend kind of following along here. So I'm just going to come to Google. And I'm going to type in VS code.
+Lewis Benson: And we see Visual Studio code is the top result when I search for VS code. And I'm just going to click this link to take me to do the VS code site and I see this download for windows, you're gonna want to pick whatever operating your system you're working in. It should automatically detect. We have Windows, and Linux. so if you are using Linux, hopefully you have the Debian or the RPM version, otherwise you may have to do some extra steps to install it but everything else It should be the same across everyone's platforms. If you do have any issues, TAs can help you if you get stuck with something. So I'm just going to go ahead and click the download and we got the little ring going around there. I'll wait for that to finish.
+Lewis Benson: And this will just make it a lot easier. If we all have this installed, even if you haven't completed the VS code badge, yet, So my opening up the downloaded file. I just clicked on that. Open it
+Lewis Benson: So, I'm going to read through this quickly and accept the agreement. And I'm going to pick the default location for the installation. I'm okay with creating a Start menu. I'm actually going to click these two checkboxes. This allows you to use your terminal to open vs code. It's optional, it's just something I like to have available just an extra little feature. And then we're just going to click next. If you installed it you didn't check them boxes, don't worry about it. You can always add that feature in later. If you want you'll probably never even notice it. If you don't use the terminal to open vs code though.
+Lewis Benson: And then at the end, we just launched Visual Studio code.
+Lewis Benson: And that's it for the installation, it's just a matter of downloading, it following the wizard and installing it. And then here, we get a little welcome page where we get to pick our theme. I'm actually going to switch back to my VS code now and I'm going to close this out.
+00:15:00
+Lewis Benson: Just because I already have. Everything kind of set up on my computer where I don't have to do the themes again and all that.
+Lewis Benson: Open another instance of it here.
+Lewis Benson: Just one second.
+Lewis Benson: Here we go.
+Lewis Benson: So there's my Visual Studio code. and as we talked about earlier, we had someone who had issues with the terminal. This is where you would open your terminal if you needed that. We don't really need to use the terminal yet, but it is there, if you do need it for something. But what I would like you to do is go into the extensions and it looks like these squares here. If you don't have all these icons don't worry about that. These are actually extensions that I installed. But the one you should have is these three squares with a four square called Extensions. And within the extensions, I'm actually going to install something called Live Server.
+Lewis Benson: So Live Server is a way to view your Web pages as your developing them. It'll automatically update all the content as you're working.
+Lewis Benson: So it already says, I have it installed, but when you click on it, this will say Install instead of uninstall and then once that's done, you'll see this on the bottom right of my screen. It says Go live down here. You'll have that option. once that's done. So, with that set up. I clicked this explorer to go back to my files. This is my desktop. I'm actually going to minimize this. And I'm going to create a new On my desktop. And I'm just going to call this demo. I'm just for this demonstration.
+Lewis Benson: Okay, I'm gonna open that up with VS code. So I'm going to go Desktop and Open Demo. And now I can see that the demo folder here is opened on the left. It's an all caps even though I didn't name it in all caps, that's just the normal behavior of the VS Code Explorer, and then I'm going to create a new file. And I'm going to call this file Index.html. And I'm using this name on purpose whenever you're creating any sort of web application. You're going to have the first file, you create called Index.html. It's kind of like the index in a book. It's where all of the basic information is going to load first, it's the first place that the server will look at whenever it's loading all of your HTML content.
+Lewis Benson: This is just one of those little workflows you'll get used to doing because you'll be making lots of different HTML files and you'll just get used to creating that index.html. Does anyone have any questions so far? Am I going too fast with anything?
+Lewis Benson: Okay, if we got no questions. Before I actually write any HTML, I want to show you a resource here. So let me open back up my Google Close, my developer tools. And this resource is called mdn. If you just type MDM in Google, it'll be the top result. It's by mozilla.org, the MDM Web docs. This resource will tell you pretty much everything you need to know about how to use HTML. How to use JavaScript? if you wanted a textbook. This is basically your online textbook. It has everything. So what I'm going to search for in here is introduction to HTML. And in the introduction to HTML, this actually has some good visualizations for us. let's talk about what HTML is
+Lewis Benson: So HTML is the hypertext markup language. which basically is Each word kind of describes markup, if you think about when you were in school and you got the red ink on your papers, they're marking up your papers. That's basically what HTML does it tells the browser how to display the page based on that markup. And the hypertext part of it is referring to it being online. So as we scroll down through this, we get a visualization of see getting started. We'll get a visualization of an HTML element. So in the inspector you would have seen all these different divs and everything. And here it shows the anatomy of the HTML, element That always starts with an opening tag.
+00:20:00
+Lewis Benson: And it doesn't always have a closing tag. You can actually have some of these elements be self-closing. That would be for things that don't have content in For example, An image doesn't have any text in the middle of the tag so it would be a self-closing tag. It would just have img slash So it's just an opening and self-closing tag. But for the most part, all your tags are gonna have opening and closing tags with content in the middle. So what you hear me refer to a tag, I'm referring to this piece of it. Which is the angle bracket. And then this one, for example, has The P stands for paragraph. There are hundreds of different elements. This is just one example where they're showing here. So this is showing a piece of text and the paragraph represents the text.
+Lewis Benson: And on the other side, we have this slash which represents the closing tag. So everything you need to know about this is here but it's as One of those things where you couldn't just probably come in here. Read this and understand it. All without seeing sort of some sort of demonstrations on it. So I will be demonstrating on how a lot of these work. Here, it talks about nesting elements. That's where we have a. You can see the P tag here on the left, I'm using in a little bit. And we have our closing p tag but in the middle we have a strong tag and a strong tag so you can put an element inside of an element. So we have our opening, we have our content. We also have another tag with content and a closing tag within the p tag. So nesting elements is something you'll hear me refer to it quite a bit. You'll also hear to me say this is the Parent element.
+Lewis Benson: And this would be the child element. It's just common terminology that we'll be using. Just so you're aware of that.
+Lewis Benson: Does anyone have any questions so far? Is everyone found this website?
+Lewis Benson: Okay.
+Lewis Benson: So as we go down through here, here's an example of the self closers. you can see there's some extra text in the middle of this tag. You can see the angle bracket here. We got our closing angle bracket there we got our slash. So this is a self-closing tag and these are called attributes. And if you think of an attribute as kind of the definition of the word, it's something that describes the element. You could have all kinds of different attributes. I see a thumbs down there. You have trouble finding the MDM website? Let me just drop a link quick in the chat.
+Lewis Benson: where we're currently looking at? That way, you can follow along there.
+Lewis Benson: And here, it's showing how that works. So, we have our opening tag Angle bracket p. And then we have this class attribute and they did it as a key value. Pair not all use the equal sign. This one has the name of the attribute and then it has the value of the attribute if it doesn't have an equals. So would have a name and a value, then it just means a true or false. we'll see that a bit whenever we start working with checkboxes, you could put an attribute on saying that you want to check box to be checked by default. So you would just put on their checked and it would be checked. In this case, it has a key value pair. It has class Equals Editor Note, and we'll go more in the detail about what a class is and what these attributes can be used for, that'll be Really useful later on.
+Lewis Benson: But let me get back into vs code. Now that I showed you some of the documentation here and some of the references that you can use, if you get stuck and I show you this because when you're learning to code you might memorize a lot of this stuff. But it's not something that anyone expects you to memorize forever, you're gonna learn a lot of stuff and you want to know how to come back and reference things quickly. So you might say What was that attribute? I needed. Let me look in here real quick and you can actually search for straighter on the side. You can just go to attributes. It's okay. It's a class and this is how you put it in. So you may have to reference these later down the road. If you can't quite remember the key to being a good developer is being able to find answers to things quickly. It's not memorizing. All of the code
+00:25:00
+Lewis Benson: So let me open up my VS code again. And we're going to actually start to build out. A document. So what I'm going to write on here is called boilerplate code. It's also called template code or starter code. It's something you write inside of every single HTML document and as you see, now I put in that angle bracket. And I got this little pop up here. It's trying to help me out. It kind of knows what I want to do. You can use this leverage your tools. If I click on DOCTYPE, it gives me My first HTML element. The Doc type and what this does is Whenever you have a website being sent to your browser, the browser will read this first and it will say What am I receiving from you?
+Lewis Benson: And it sees that it is an HTML document. So once it receives the stock type, it'll know exactly how to handle the information. it'll then start rendering the content of your page. And an HTML format. So this is just a flag for the type and the parsing of the document so that the browser knows what to do with it. And it'll go at the top every time. And once I write all this out, I'll actually show you a shortcut to do this boilerplate code with two button presses. I'm just gonna write it out piece by piece so that you can see what each piece is. So, the next one we have is The HTML is what we call the root of your document. It's what contains everything. It's where everything starts.
+Lewis Benson: So I'm also going to add the language attribute to this just because this will be automatically put in whenever you generate it and it's good practice to tell the browser what language you're working in and watch what happens when I put in this closing bracket here it actually auto completed my closing tag because it knows that I'm going to need that. And my cursor is still in the middle. So I'll just press the Enter key and it gives me that extra space to start writing my next elements. So any elements I put in here now are going to be nested inside of the HTML element. And the HTML element. Again, is the root of the file. It's where everything begins. The next element is the head. And this is just kind of like the human body. it has a footer. So it's a good way to of. Remember all your different elements, not that you need to memorize them all the head though is kind of special because
+Lewis Benson: Everything that goes in the head isn't displayed on the page. In fact, none of it is actually viewable on the browser and I can show you that. On the inspector, we're actually inspect Mozilla here. And they're going to their heads right here and notice it doesn't highlight anything on the page. So if I highlight hover over all this stuff, nothing's happening, nothing's lighting up, but as soon as I get down to body, the whole page lights up, And that's because that's where all the content is. So there's nothing to select in the head because it's all invisible. It's just references. The head is basically a set of instructions. For the page. So in this one here, you can see, there's this Meta is a word. You see encoding law. It basically is. Something that happens at the beginning. It's the basic information about the page. It's just kind of like reference information for the page.
+Lewis Benson: so, this is saying, Character set This is your normal English keyboard. the English language, it might be something different. If you had a Russian language going on, they might not use UTF-8 for that. So that's kind of what that's referring to there. If you change this, it might affect how the entire page looks because certain letters might not be available under a different character set. Then we have the viewport this is telling us that we're going to be on a full width. This is good to have in here for whenever you're dealing with mobile devices. So it can check to see, are you on a phone or you want to browser and that it can lay out to page differently, based on what kind of device you're in? Let me get back into VS code. And I'll actually copy those two over. Just because they're a little bit much to type out.
+00:30:00
+Lewis Benson: So I have the metatar set and you don't have to follow along with this part because I will be showing you a shortcut in the end to just generate this. I just want to explain each piece. and then the last thing you want to have in your head, that's kind of important is a title And the title is What Inside of the Browser tab and I'll show you that again on Mozilla. So if you see in my Mozilla up here, it says Getting started with Learn Web development as a PIPE, operator MDM. So if I find in here the title, you can see that getting started with HTML. There's a little pipe operator in the MDM. and I could actually change that to something else and a couple. that's okay. You can see my browser tab up here, actually changed it. So that's where your browser tab information is coming from the Browser. Tab itself isn't considered to be part of the document.
+Lewis Benson: So you can't really do anything to weird. It's like the styling here. You can't change like the font or anything like that in your browser tab, but you can change. What texture is up there. So that is definitely something useful. especially for Modern-day Computer Usage, When you're going to have multiple tabs open and you need to quickly reference which tab you were in. And you can also see here. There's this little icon. I don't know if you've ever heard this term before, but this is called a favicon. And there's actually going to be a link somewhere in the head here to that.
+Lewis Benson: If I can find it.
+Lewis Benson: I promise It's hidden here But somewhere in this metadata is a vicon. All right, here it is. so, You can actually change what icon shows up by changing what this image is. So if you have a link to a different image, you can put that in there and actually change this little logo there. And that's something else that goes in the head. So after the head, notice, this head is closed here. So I'm actually going to indent this a little bit, so it's a little more readable. to have those lined up. And then under that, I'm going to put my body. And the body is where the content of your page goes.
+Lewis Benson: And we can put more elements in here whenever I have a body. I like to put a header first. I like to have this at the top of my body and within the header, you can put things like your navbar. And this isn't a requirement, this is just something I like to do. It's something a lot of other developers will do. Is put the header at the top of the body. It kind of makes sense. You may see this sometimes where you have A nav element above your header and then you have your header here and this would be the title of your page. And this would be the navbar at the top of your page. Some people will put this inside of the header. There's no. wrong way. As far as the layout goes, it comes down to whatever style the company you're working for is using So if you're working in a large company, building a lot of websites and they tell you to put the nav inside the header, then you probably should put the nav inside the header.
+Lewis Benson: Otherwise just wherever you normally put it so that everyone's doing it the same way. In the header. This is where you would put headings. And I'll show A heading real quick. This is an H1 heading. This is going to be the large title that you get on your page and I'll just put some content in here day, what I want to show you now that I have some content in here, Is that I can actually display this. And I'm going to click this. Go Live button. And I'm going to get a pop up in one of my browsers here. And I'm going to give that permission. And we can see that I got this day one in my browser here. And if I got my title up here my page. And if you look at this web address, this is a little weird. You see this one, two, seven dot zero dot zero dot one,
+Lewis Benson: So it's called the loopback IP address. It's Basically, your own computer. So, if I wanted to share this web page with somebody, I couldn't give them this address because this address is pointing to my computer. When you use this address, it sends information to your network and then it loops back to your own computer so that you can visit it. The second part of this address is 5500, This is a port number. This is how your network decides where to let traffic out of your IP address and we told it to use port 550 and the details behind, this aren't important just know that if you put a different number in here I put five, five zero one. It's not going to work. It's actually loading and spinning and it goes away. And if I look inside a VS code, we can see Server started at Port 5500.
+00:35:00
+Lewis Benson: if I open a second VS code, and I start a second live server, it will actually start it on port 5501 because it can't share ports. So if you're ever having issues where you can't see your page, bring open up to vs code and look at your See what port number you're on and then check your URL. And make sure that it's where they go. And make sure that it matches. So we're on 5501. We have nothing displaying. I'll change that to five, five, zero zero. And we got our page back and then we have The slash then, no index.html is referring to the file. So what happens if I delete that? It's still there. The reason is because I used index.htmls, my file name and I'll show you why that's important. I'm going to actually rename this to Demo.html.
+Lewis Benson: And I And now we see that we have this weird looking page here. That's because we're now inside of a folder. We're not on a web page and I got this demo.html. It doesn't know where to go, because there is no index.html. But if I click on this, I see my page again, but notice it's slash Demo.html. And if I go back, this would normally be my index because it's the home page, but there's nothing there. So I click on this file, we're back in the demo. And I'm going to change that back to index.
+Lewis Benson: And this is where you would have your home page and then you can create other pages with links. And now we see this error cannot get demo mode on HTML, it's because it doesn't exist. So, we'll delete that out of there. And we're back to the homepage again. So that was a lot of information. Does anyone have any questions about any of that?
+Lewis Benson: And I don't expect all of it to make sense all at once. Yeah, go ahead with your question.
+shaista umar: And Haley. It's nice. It's not a question. I just want to give my input. I know this is the first day and I think of most emotions people are layman, like me. So I'm kind of lost and the way you sometimes change the windows too quickly and some terminologies. I'm not aware of that, so Is it normal, or should we know these things? before we started this course,
+Lewis Benson: Not at all. So that I'm using the terminology because you're going to be hearing the terminology if there's anything, that's kind of throwing you off and getting you stuck. Just pause me and let me know and I can Explain things. I'm just kind of giving you the overview right now. the main things I want you to know, is how to get into this documentation, and what the elements are, as far as these port numbers and stuff, that's not really that important. I just want you to be able to find, if you go to here, and this is a different number and it's not loading. I just wanted to show you where that problem could be because it's a very common issue, starting off.
+Lewis Benson: As far as switching, the windows go. I'll slow that down a little bit. Thank you for that feedback.
+shaista umar: Thank you so much.
+Lewis Benson: So yeah, this right here though is our current live of just this one heading. and I said, I would show you how to generate All of our code with just two button presses. I'm actually going to redo this just to show you that real quick That way if you do want to follow along with, as I fill out these elements, you can do that. So, the normal workflow is you'll have your index.html file. And you'll put in an explanation point for me, that shift one. And you'll see this little shortcut here where it's saying in the abbreviation, Emmett is eight add-on that comes with VS code. And it allows you to just quickly generate pieces of code.
+Lewis Benson: In this case, it's going to generate all of our boilerplate. One of our click on this exclamation point and you can see we have everything back except for my header and my H1 because it doesn't generate those But just to start out a new page, I'll do that again. Delete that Click the exclamation point, you can just press Tab. And it will generate all of this boilerplate code. And as far as knowing what each piece here does, you don't really have to know what it does. Just know that it needs to be there. if you do want a deep dive into some of this more though, the MDM documentation can explain each piece of this. And then our title says Document. I'm going to change this back to That way our browser tab is displaying my page. And I'm going to put the header element back in. And I got my emit abbreviation for I typed into Word header.
+00:40:00
+Lewis Benson: And then abbreviation, I click and it completes the header for me. And I'm going to put the H1. Click that.
+Lewis Benson: And I'm actually going to write Hello World here.
+Lewis Benson: This is normally what you'll see, as your first line of code whenever you're writing a new application, it's just a traditional thing that developers do. So anytime you learn a new language, you just want to output a Hello World. And let me go to the browser and give us a refresh. And there's our hello world coming up.
+Lewis Benson: Okay, so currently just a review. We got our boilerplate, many different terms for this, sorry about that. The boilerplate code is here. and I added in the header and the H1,
+Lewis Benson: Alright, so next, I'm going to put in another element. And this one's just going to be the P element and this is the one we seen on the MDM documentation. So I'm just going to type the letter P and I got my image abbreviation. Come up. I'll click on that and then I can type in some text. I'll say this is a
+Lewis Benson: paragraph element. And then we'll see that change on our site here. So we have our Hello World as a heading 1 however, this is a paragraph element notice. There's a big difference in size and The font weights referring to, this is bold. This is not bold and that's because I used a heading element. The browser will give you build in styling whenever you're working with HTML, certain elements will come pre-styled on The heading element is all of those have pre-styled content whenever you use those and then the paragraph element, it has a certain font size set to it as well, but it's going to be like this default if I weren't to put in a paragraph element, I'm actually going to delete the P here.
+Lewis Benson: And press Save. And there's no difference. And now, I'm actually going to inspect my page. And open up the body. And see this right here is just in quotation marks. There's no actual element assigned to it. so, Why would we bother with a paragraph element? Then if I can just write text if I put another line here, this is also a paragraph.
+Lewis Benson: And when I save my Formatters, actually putting it on two lines. So I'm going to put it back on one line. And we don't have that line break there. I'm going to go back into VS code. it's on two lines but if I go back into my browser, it's all on one line. And that's because the browser doesn't know what to do with this, it just sees text, it doesn't care about the empty space as you put in it doesn't care about the tabs, all that cares is you said there's text so it puts it there. That's where you need to use your paragraph elements and the paragraph elements. Tell the browser kind of a little bit more information, what to do with it, how to lay it out. So I'm going to put the P tag back in. Press enter p. And if I press enter, again, I get some empty space here. I'm actually just going to highlight this and drag it up into there. So, I'm just clicking and dragging.
+Lewis Benson: And when I let it go, it puts it right in the middle of our P tag. And I'm gonna do that again here.
+Lewis Benson: And now we have these two paragraph elements. On separate lines. Skip, Hannah your question.
+Hannah Richards: Yeah, I don't know if I might have spaced out or I'm not sure, but I think I might have caught the end of when you were talking about the Umar name viewport content, when you started, inserting all of that. What exactly is that for? Just the sizing of the title
+00:45:00
+Lewis Benson: So the metadata is used by the browser just for information about your website. In general, for example, Meta character Set 8 is telling it the characters that you're going to allow on your keyboard. So if you were using a Russian language, you would use a different character set. But if I were to switch this to something else, the English characters might not show up. This is just generic information that the browser wants to know about your page.
+Hannah Richards: Okay, so this would be like something we would include in pretty much all of our code.
+Lewis Benson: Yeah, and I'll actually show you one more time here, too. Let me delete all this. I'm actually gonna cut it. and if I push exclamation point and hit this and then abbreviation here, it'll automatically create that for you.
+Hannah Richards: cuz I heard you say that but I didn't realize it populated. All of that, okay. Thank you.
+Lewis Benson: Yeah, so it'll create the essential metadata. There is more that you can optionally put in here if you have more use cases for it. some of it's for search engine optimization. You'll have different data for screen readers. You could say you could have languages set up for English screen readers, And you can have put all of that information within your metadata and that's a little bit out of scope of what we're going to be doing. I was just trying to give just a rough idea of what some of the stuff is. You don't necessarily need to know what it does. Just know that it's there. And then just included on all your page.
+Hannah Richards: I remember hearing that part. And what?
+Lewis Benson: And then the title the more important thing because this is what's going into your browser tab?
+Hannah Richards: And…
+Lewis Benson: so, if I look at my browser tab now,…
+Hannah Richards: what was the shortcut again?
+Hannah Richards: I'm sorry.
+Lewis Benson: It's just an exclamation point.
+Hannah Richards: But how do we get to it? We just press the estimation and it auto populate.
+Lewis Benson: Yeah, so if I hit shift one, that gives me an explanation point. and…
+Hannah Richards: Okay.
+Lewis Benson: then it says, Emma abbreviation. I click that. And that's our boilerplate. That's how we'll start every document when we're creating HTML.
+Hannah Richards: Okay. Thank you.
+Lewis Benson: Yeah, thank you for asking that question. All right, I'm going to put back in what I had. So we have our header now with our H1. Yes. Ryan
+Ryan Arnold: 
+Ryan Arnold: I just had a quick question about the formatting. so in one of the day zero or…
+Lewis Benson: Mm-hmm
+Ryan Arnold: week, zero tasks that we had to do was install a formatter For a Visual Studio code. Whenever I save it…
+Lewis Benson: Yes.
+Ryan Arnold: because all, when I write the code, it looks like how you have with the paragraph elements. It'll be the close bracket on a separate line. The formatter puts it all on the same line. Is that generally considered, neat handwriting versus sloppy handwriting among if somebody was to go back and read my code, should it all be on the same line or
+Lewis Benson: so, kind of like how my H1 is all in one line, you mean, It doesn't really matter as far as that goes.
+Ryan Arnold: yeah.
+Ryan Arnold: Okay.
+Lewis Benson: One thing though to keep in mind is if you're working with other developers and you're using different Formatters or your formatter settings or set differently. And let's say yours is going all one line and…
+Ryan Arnold: 
+Lewis Benson: mine's on separate lines. If I open up the same document as you, and this is another kind of out of the scope thing, but I'll just, give you this information because it is useful. Let's say you decided to change this text right here, you change this This is a paragraph element to This is text.
+Lewis Benson: And then I come into here and you made this change and then I press save. mine's actually going on one line, too, but if my formatter was doing this, It's actually changing the same line that you changed, and it could cause issues down the road, because we now just change the same line of code.
+Ryan Arnold: Okay, so it's always long as everybody's using the same format style then that's really what matters. Okay.
+Lewis Benson: And it's a kind of a preference thing between you and who you're working with or…
+Ryan Arnold: Okay.
+Lewis Benson: just if you prefer it on one line. And I believe the word wrap is set to 80 characters by default. So if you get a whole lot of text, if I just copy and paste this a few times. And then hit Save. It won't let it go more than 80 characters around. Maybe you're on a smaller screen and this will wrap sooner that won't actually affect it and I'll show you what happens. If I do that, that go really big.
+Lewis Benson: And that is a really good question. I'm glad you asked that. If I could get this to drag.
+00:50:00
+Lewis Benson: So, if I drip this down, it doesn't look like it wants to. Wrap that it's actually giving me a scroll bar here. It doesn't normally You might have different results if you were to collapse your down, but what it'll do is 14, it'll show line 14 all the way down here. I'm not sure why mine was.
+Ryan Arnold: Okay.
+Lewis Benson: Giving me a scroll bar. I just must be my settings. Yeah, you can play with that and see what I mean? Where you're line numbers will start to spread out that doesn't actually affect anything. As long as the line, this line is the same, On each of ours, that's what matters as far as formatting goes.
+Ryan Arnold: Okay, thank you.
+Lewis Benson: Yep.
+Lewis Benson: okay, so we went over the header The H1 and the paragraph elements. I'm gonna put in another heading element and this is going to be the H2 so I put in H2 just plain text, no brackets or anything and I see my image abbreviation come up. And when I click it, I get my autocomplete. and I'm going to type in the same text here, And switch to the browser to see the results.
+Lewis Benson: And I got a refresh because I was changing all that, and you can see that the heading 2 is smaller than the heading one. So this is again, I was talking about the pre. -Formatted or the pre-styled text, This is going to have the bold still because it's an H1, but it does have smaller text. So keep that in mind whenever you're using these elements that some of them will affect the way your pages laid out.
+Lewis Benson: Do we have any questions about any of that so far? But all the styling.
+Lewis Benson: All right, Cool.
+Lewis Benson: Was everyone able to get the live server to install on their VS code?
+Lewis Benson: I did see a thumbs down.
+Lewis Benson: yes, Omar
+Lewis Benson: Are you just? Hitting the thumbs up.
+Lewis Benson: Okay, does anyone want to share their screens and show? What they've made in the HTML? Does anyone have any issues that we could? Troubleshoot real quick. We have a few minutes for that.
+Lewis Benson: one of the best ways to learn is to actually fix some of these little bugs and stuff we'd run into
+Lewis Benson: And we'll continue on with some more of these.
+Lewis Benson: Somebody have a question.
+Hannah Richards: I was going to ask so just for clarification. So after every element that we introduced body Pierre paragraph, whatever, we're gonna open and close it with the same elements. So, For the body paragraph, we're gonna open it with body and end it with that. In the same thing for pretty much all the other elements as well.
+Lewis Benson: For most of them. It'll always be the same or it'll be none of them, and I'll show you a quick example of if I just type img this is an image element And it actually will autocomplete src and alt on these but notice there's no closing tag at the end of this. So there are some elements that don't use closing tags and…
+Hannah Richards: Mm-hmm
+Lewis Benson: that's just because there's no text to put inside them and I couldn't nest another element inside of an image. If you think about that, it actually doesn't make any sense. You can't put a container inside of content.
+Hannah Richards: Right. Okay.
+Lewis Benson: And it in an image is considered content.
+Hannah Richards: I get.
+Lewis Benson: I could type some random text in here and we should see a broken image somewhere here.
+Lewis Benson: It's actually not showing because it doesn't have the URL.
+00:55:00
+Lewis Benson: so that's where you would put your URL to the image and if I actually were to go to Mozilla here. I can inspect.
+Lewis Benson: And we can take their image URL.
+Lewis Benson: They're using this never want, I can't still there, there's some websites out there where you can get images If you wanted to play around with us, and I'll show you one quickly. unsplash as a popular source, if you just want to play with the image element,
+Lewis Benson: you can open up an image. You click on it. And hit Copy image address. And you can do this with me at any image you find on the Internet.
+Lewis Benson: And then after you copy the image address, you can put that inside of the SRC. Save it and you should Let me scroll back to the left so we can see where we're at. So you see that's a really long address. That's okay that if I go back to my page tab and there's that image showing up on my page, it's huge, but there it is.
+Lewis Benson: And that's what I mean I couldn't put something inside of this image just because the image is my content. So that's why they use a self closing element for an image. And then if this link were to break for some reason, maybe unsplash takes this image down, they don't want to use it anymore. The ALT would be alternative text, that would describe the pictures, you would say. I think that was an underwater picture.
+Lewis Benson: You just say something like underwater scene, that's Just some sort of brief description of the image.
+Lewis Benson: Does that make sense on the self-closing versus how we have the p element with the closing element in the back?
+Hannah Richards: It does, yes. Thank you.
+Lewis Benson: Cool.
+Lewis Benson: All right, so we've hit about one hour of class. So let's go ahead and take a up. You have a question.
+Elgin Sharper: Yes, after you finish your VS coding? How do you view that page?
+Lewis Benson: 
+Lewis Benson: First you'll have to go to your extensions on the left here. And when you click on Extensions,…
+Elgin Sharper: Okay, okay.
+Lewis Benson: this is kind of like an App Store for VS code. You'll type Live Server. Or the space in between. And it should be your top result. It has this little icon here. You'll want to install that.
+Elgin Sharper: Gotcha. Thank you.
+Lewis Benson: And then once that's installed on the bottom, You'll see for mine. It says Port 550 for Once you go live, it should change that to Port. 550
+Elgin Sharper: Alright.
+Lewis Benson: But yeah, let's take a 10 minute break. so, we've been going on for about an hour. I'm going to open up a timer.
+Lewis Benson: And when we come back from the break, we can start going over. Some more of these elements, I can break down the anatomy a little bit further and show you the attributes. And then we'll actually go into our assignment and the assignment is going to be done in class. I'll break us into small groups, that way there won't be technically any homework, unless you don't get your assignment finished during class. Then you can submit that at the end of class.
+Lewis Benson: All right, I'll see you in 10 minutes.
+01:05:00
+TRACY JOINER: Hello.
+Ryan Arnold: Think he may be afk because we're on 10 minute break.
+TRACY JOINER: I'm sorry, I'm gonna have to check out on you, I'm throwing up all afternoon. I'm sorry.
+TRACY JOINER: I just came concentrate up to sick at my stomach right now.
+Ryan Arnold: I can let him know when he comes back. He's afk right now.
+TRACY JOINER: Please let them know.
+Ryan Arnold: I believe.
+TRACY JOINER: I'm sorry. I have to catch up during the day tomorrow.
+Ryan Arnold: No problem.
+TRACY JOINER: Okay, thank you.
+Lewis Benson: I can get a thumbs up that Krystal.
+Krystal Jefferson: I got pushed the wrong button.
+Lewis Benson: okay.
+Ryan Arnold: Tracy while you were away from your keyboard. Tracy said she has to go she's not feeling well.
+Lewis Benson: Okay, that's fine. This is all recorded so she'll be able to review it. Get caught up. I'll send her a message on slack with the thank you for letting me know.
+Ryan Arnold: The problem.
+Lewis Benson: Okay, so let's do a quick review of what we talked about. so, we talked about, The anatomy a little bit of what an element looks like. but we didn't really discuss on the anatomy or the building blocks of HTML, all that and depth, And that's something I did want to touch on a little bit. So, I did say that, you hit the exclamation point and then you hit the tab and I'll actually create another file. Here you hit. This little looks like a page with a plus. You can hit new file. And I'm going to call this Demo.html. I'll just remember you only have one Index.html and you only need one Index.html and then the rest of your HTML files can be named something more related to their content.
+01:10:00
+Lewis Benson: So with demo I'm going to press Exclamation Point. I get my MN abbreviation. And then I get all of my boilerplate code. and so, the building blocks of HTML each element here is considered a building block, our doctype Again, this is what the browser looks for. It tells the browser the type and version of the HTML document in this case, it's Doctype HTML. So the browser knows it's using HTML5, all you really need to know that it needs to go at the top of every page. And then we have our root of our document. The root is the HTML. And this has an attribute called Lang, which is telling the browser that this HTML is going to be in English.
+Lewis Benson: And we have our head. Which contains all of the metadata. This is where all of the stuff goes that you won't be able to see on your page, including your title. This is also where you would link in CSS. We'll get into CSS next week. And any other metadata that your browser might need to know about for search engines and stuff like that. Nothing that will really touch on this week though. I'm just be aware that it can have a lot more stuff than just these three things. And then the body is the content of your page. This is everything that the user sees whoever's looking your web page. This is the stuff they're gonna see on the page. It goes into the body.
+Lewis Benson: And then we have our closing tag for each one of these. And can somebody tell me what HTML stands for.
+Krystal Jefferson: Hypertex. Marco Language.
+Lewis Benson: Yes, So the hypertext markup language and this is Basically, just telling the browser how to lay everything out. So you'll notice this one. Here has a lot of different elements called section. But when I was looking at Google,
+Lewis Benson: let me go back to the home page. We see a lot of elements called Div. so, what would the difference you think be between a div and a section? Anyway, we'll take a shot at that.
+Iris Coats: Like a division or a divider.
+Lewis Benson: So Div is a divider or division. In a section. Is basically what it sounds like. It's just a section of the page. So, if you look each one of these sections takes up a big block. If I scroll up, you can see more of that one. So the div is a divider in the section is also a divider. But what makes a section different is if I look up here, There's an element called article. and I'm going to put these into my VS code here in a minute, but we have article and then this one has a header So at the top of the article, there's a header and then we have a div and then we have all these different sections. So what this is doing is it's actually describing the content.
+Lewis Benson: It's telling the browser. this is going to be the article. This is the main thing that the user is going to be reading on the page. This isn't the Navigation links, this isn't the navbar at the top. This is the article. This is everything that they're going to want to read. and that's important because whenever you're building your web pages, you got to think about accessibility and that's a growing concept in the development world is accessibility And what I mean by that is there are some users that are on the Internet that have no ability to see their screens. So they're using olds, that will actually read the content of the page to them. So, when they come to a page like this, The screen reader will actually start with the article. It'll read the article first. And then it will read the heading and then it can start reading each section of the page based on these different elements.
+01:15:00
+Lewis Benson: So you could put all of these inside of divs and that would work, it would still look the exact same. It wouldn't actually affect anything at all, except it would affect screen readers wouldn't know where the article starts. It wouldn't know where each section begins. Because if you're using a screen reader, you can say Next section and it will actually skip to the next section of the article. There's a little bit of control on that and it's also good for search engine optimization because the search engines when you're looking for something in particular, it'll look at the article and it will look at the heading on the article and then it will scan each section for subheadings. And if I open this up, I'm sure I'll see here's an H2 and then this one's gonna have an H2 and then this one's gonna have an H2. Each one of these has a heading. This one has an H3 which means this is a subsection. So, each one of these is laid out in a way that
+Lewis Benson: Screen reader or search engine could find all the content on the page. And so if I go into my HTML here and I create an article This is where I would have the main content for whatever page this is and this was just called demo. I don't really have much of an idea for a web page. Is anyone want me to make anything a particular? Let's do basketball. So if we do basketball, I would have a heading at the top. So we're gonna make a header This will be the title of our article. So, I'll put an H1 for our title. And what was called basketball? And then for my title up here, this is what showing up on our tab I'm actually going to put my heading the same as my title.
+Lewis Benson: And I just copied double click Paste in that you can see a little shortcut. So we have an article now We have a header, which we've seen. The articles new. And then within the article, we can have a section. so, the first section could be Popular players. So I'll just put a P tag and just say This is where.
+Lewis Benson: Something like that. So now we have our first section with a short paragraph. Not nothing too interesting at the moment. It's just for this demo. And then, let's just look at the browser and make sure that all of this is actually appearing because you don't want to do too much work and then realize nothing's working. So let me go to my page and we can see that we're looking at the wrong thing. We have our Hello World. Can someone tell me how to view? What I just worked on. Does anyone know?
+Lewis Benson: if I go back to my VS code, And we look at my files on the left. We can see my index which is what the browser is going to look for. And it is loading all of this currently, then we have demo. so, what I need to do is I need to go to actually the demo So, if I go back to my browser, Me minimize that. And then my URL. Remember the root is your index or the home page is your index or how you want to look at that. I put slash demo.html
+Lewis Benson: and now we can see the basketball page. So, we have two different pages. One of them is our homepage which is index, and the other one is demo.html. So, we have our heading and we have our paragraph. So I'm going to give this an inspect, so we can see that. And then this shows our body. So I open up the body, we have our article, we collapse that. So it's just the article. And then we have our header, and that has our h1 in it. And if everybody, as I highlight over these, you can see it highlighting each piece of content. And then I highlight over the section and notice, it's also highlighting the paragraph. It's not just putting one line at the top there.
+Lewis Benson: And then we have our paragraph. So, if I add another section,
+01:20:00
+Lewis Benson: and I hit my M at abbreviation to AutoComplete that, it creates my angle, brackets, my opening tag I'm going to put another P element in here. and we'll say this is where information on recent games, go.
+Lewis Benson: So now we have two sections to our web page. And I'm going to go back to the browser to see that live. And now we can see, we have two sections within here. And this is starting to look similar to what Mozilla did. so if I collapse some of these sections, a little bit, they have their article here and then they have a header and then they start having all of their different sections for the pages. You go down.
+Lewis Benson: Does anyone have any questions?
+Lewis Benson: So, I mentioned earlier about the Div. So what is a div then if it's just a division it doesn't really describe the content, it just says Divide. So if I were to Put a div right here.
+Lewis Benson: and then put
+Lewis Benson: You could put whatever you want inside of a div, this isn't going to look any different on our page. so, if I go to the basketball page again, And I put that inside of a section. We have a paragraph. We have a div, and you can see they're both on their own line. And that's because these are both block elements. This one here. You see that a little bit of extra highlighting that's because I use the paragraph element. This one doesn't have a paragraph element. It just has plain text inside of the div. So this div has zero description of what this is so screen, readers or anything like that. It wouldn't understand what this content is. It just knows that it's separate from the content above it. It's just a generic divider. That's not a bad thing. These are actually used quite often for laying out pages.
+Lewis Benson: Because you could have a section where maybe you wanted all of these to be laid out horizontally across the page. You could put each paragraph element inside of a div. On their own line. And then you could tell your CSS to lay it out that way and we'll get more into that next week. so theyre using a div is very common practice. In fact you can see here on the Google homepage they laid out their entire page with a dove But they still have the body. But there's not really any reason to have an article or sections or anything like that because you can clearly see what's here. There's this input box here where you can type in your search and all that. So, just keep that in mind whenever you are building a web page, you want to be as semantic as possible. And that's what whenever we talk about paragraph Section elements, even the header elements.
+Lewis Benson: These are all considered semantic elements because they describe their content. and then a div is just that a generic divider and they do have their use But we want to try to use as many semantic elements as we can when we're designing our pages.
+Lewis Benson: Do I have any questions? Anybody.
+Lewis Benson: Okay, so no question,…
+Elgin Sharper: Yes, yes.
+Lewis Benson: yeah, go ahead.
+Elgin Sharper: Trying to. Take my go live. Hannah. Trouble adding at you, How you put the demo into the Explorer on the left?
+Lewis Benson: Okay, let me back up a little bit here. Just so, we can make sure that everyone is caught up. I'm gonna minimize everything. So I have this folder on my desktop called Demo, The first thing I did was created that folder. And if I open it up,…
+Elgin Sharper: Okay.
+Lewis Benson: can see my demo and index.htmls are in there. and then when I go into my VS code, if you go to file,
+Lewis Benson: And then you go to Open folder.
+Lewis Benson: And on my desktop, there's that folder called Demo. So if I Hit Select Folder, you'll see The folder name opened right underneath the word Explorer there. and this is, Kind of a normal workflow that you'll do. So that only the files that you're working with are showing, if you opened up vs code without opening up the folder, you're currently building in, you're gonna have everything that's on your computer and you might have seen that when I first opened up my VS code, it had so many different files listed over here. That was basically my entire computers were the files. Were you able to? Get the folder to open.
+01:25:00
+Elgin Sharper: When I open it. It just say no items. Research. I select the folder.
+Lewis Benson: And then you hit open Folder. Of my go to.
+Elgin Sharper: But the changes to, you see?
+Lewis Benson: Demo. Select Folder.
+Elgin Sharper: Okay, I got it.
+Lewis Benson: All And then within there, there's this little button right here that allows you to create new files. So, if you hit new file, then you can create your Index.html. I'll just create one called New file Dot HTML because I can't create two with the same name.
+Lewis Benson: Within that new file, that's where we can use That I mentioned the exclamation point. So, if you hit Shift, one creates an explanation point, you get this little pop-up, you just either hit Tab or click on emit abbreviation. And that's where you get your boilerplate code.
+Lewis Benson: And if anyone else is having any issues, let me know. Because this is a good review to go over some of the stuff again. Don't be afraid to reach out if you're stuck on anything at all. Your Hannah.
+Hannah Richards: I am not doing right, but when I put in the shortcut, it's not populating green. it's red. And then when I try to input the actual assignment for today, nothing is I guess being processed.
+Lewis Benson: When you say red, do you mean the elements are red?
+Hannah Richards: Yes.
+Lewis Benson: Okay, so that's just the coloring. You may have a different theme running. So, I'll actually show this real quick if you search for themes, you can change the colors of everything on your page this way. So if you have just different colored elements, but you still see that you have a doctype HTML head and all that. Then you're still good.
+Lewis Benson: Does yours have these same elements right here?
+Hannah Richards: yes, I have those elements but it's just like when I actually tried to run a code, nothing is happening. So I didn't know if maybe it was an error or something. Or maybe it's just being.
+Lewis Benson: Do you have live server?
+Hannah Richards: Yes.
+Lewis Benson: Okay, and did you hit the go live button? I'll actually close mine.
+Hannah Richards: Yes, I did. And It didn't do anything. that's,
+Lewis Benson: Does it show Five zero zero at the bottom?
+Hannah Richards: No, it was not showing that it had.
+Lewis Benson: Does it say go live? Still?
+Hannah Richards: No, let me see I tried to delete it to see if that would help, but it didn't.
+Hannah Richards: Because we populate when something is actually in. The body, right?
+Lewis Benson: yeah, so you can actually Just Hello World. like that inside the body and…
+Hannah Richards: Okay.
+Lewis Benson: you should see that on your page, one thing you might want to do if you go to file, And then scroll down to autosave, make sure that autosave is checked. What this will do is as you're typing, it'll automatically update your live server so you don't have to manually save the page each time. It. Thank you.
+Hannah Richards: Goes that's what it was. Okay.
+Lewis Benson: Yeah, and you can actually tell I'm actually gonna turn it off for a second to show you what this looks like. I have pressed the space, you see there's a white circle up here just above my mouse. That's telling me that the document isn't saved currently. So if you see that white circle that means that you need to save in order to see your changes. And I also have this one right here, telling me that I have an unsafe file. So if I go to file Autosave, hit that, then it turns into an X and then that little one notification from the Explorer is gone as well.
+01:30:00
+Hannah Richards: so you have up each You autosave that I don't have to but that's for each document.
+Lewis Benson: Autosave is for VS code in general, so it'll be across all of the files.
+Hannah Richards: Okay.
+Lewis Benson: Elgin. We still having trouble with five server.
+Elgin Sharper: I got it now. I'm good.
+Lewis Benson: Okay, Yes, nice stuff or Omar.
+shaista umar: Yeah, it's Omar and Sharper you're sitting together because we are sharing the laptop. about the computer though. So the thing is that can you please explain…
+Lewis Benson: You're full.
+shaista umar: how to go to the live server? I just installed the thing.
+shaista umar: On VS code, but I wrote Hello World but how to check in a way to check it.
+Lewis Benson: okay, so if your page looks like mine right now where you have the body with the Hello World, maybe some elements in it, Then you go to the bottom right of the page, and you should go live at the bottom.
+shaista umar: Okay, let me do it. Go live. Okay.
+Lewis Benson: And when you click that sometimes it'll automatically open a browser tab. Sometimes it usually will if it does not open a new tab, then you'll have me.
+shaista umar: Says Windows Defender,…
+Elgin Sharper: Right.
+shaista umar: Firewall as blacks blocked some features of this app. So I'll access pin code. Hold on a second. Okay. Yeah. So a cab is open and it says Hello World on the page.
+Lewis Benson: Okay, and you did create a new folder whenever you started. Okay.
+shaista umar: Yes. Yes. The one showed on the desktop demo folder and within demo folder, I added demo or HTML and Indexed or HTML.
+Lewis Benson: Okay, so just something to keep in mind, if you actually show you this real quick, if I create a folder. I go to my demo folder and then inside of here, I create another folder. I'll call this one Demo 2. So, I now have a nested folder here and I'm going to go back into my VS code. And you can see that I have this folder right here, demo too. So I'm going to create another file and this one called Index.html, And I'm going to create my boilerplate.
+shaista umar: Okay.
+Lewis Benson: I'll put. Hello, World 2 in here. When I go to my browser,
+Lewis Benson: And if I just get rid of all this, so I'm back on my index. It's showing the first page. So, what you want to do is each project you work on. You want to create a separate folder for it. Because it doesn't know which one to go into.
+Lewis Benson: It doesn't.
+shaista umar: okay, got
+Lewis Benson: Yeah, so whenever you create another project, you're going to want to create this folder. Outside of the one you're currently working. And if you end up nesting a folder like that, your live server won't know where to go and you can tell it where to go
+Lewis Benson: It's a little weird. You can say go just slash demo too,…
+shaista umar: Crafty.
+Lewis Benson: and then it gives me the Hello World too, so it can be done. But it also mess up your live server. So it's better practice just to not nest folders like this.
+shaista umar: Yeah, I got it so just keep our lives easy right now.
+Lewis Benson: Yeah, And something else I wanted to show you too. Whenever you're laying out for this is kind of a down the road thing. But you might run into this earlier on. If you have multiple folder if I create two folders here, These folders are inside of each other and it put them on the same line. This is just a weird behavior of VS code. So I hit the arrow to collapse it and whatnot and it looks like one folder here. It has Slash the second folder name. What it's showing me is the demo 3 is currently underlined If I click on Demo 2, then Demo 2 is underlined. And then when I create new files, if demo 2's underlined, I create a new file to go into demo, to do my three, we're going to demo three. It's just a really weird behavior of vs code. Just something to keep in mind and you're creating folders and messing around with that. And if I create a file now, just do another index.
+Lewis Benson: And it still has that weird collapse thing. But if I put this inside of
+Lewis Benson: it's no longer collapsed like that. So VS code can get kind of confusing when you're messing with the Explorer and you're creating multiple files and multiple folders. There actually is a setting to make it so it doesn't do that.
+01:35:00
+Lewis Benson: But I usually just put files in my folder so that it doesn't sit on one line. I'm just going to delete these. I just wanted to show that.
+Lewis Benson: And I can actually delete demo, too, as well.
+Lewis Benson: Do we have any other questions? Anybody else having any issues with their VS code live server or anything like that? Is everyone been able to make these elements?
+Elgin Sharper: Yeah. I try,…
+Lewis Benson: What you got?
+Elgin Sharper: I tried doing the picture with the unsplash, but it just shows red in the VS code, but it doesn't show on My page.
+Lewis Benson: And did you have your Equals and then the URL to the image.
+Elgin Sharper: I have img Src. so, take the img out,
+Lewis Benson: It should be kind of laid out how it is on my page on my screen right…
+Elgin Sharper: Okay. Let me.
+Lewis Benson: where, This can be on the same line. But there just needs to be a space in between image and…
+Elgin Sharper: Okay.
+Lewis Benson: rc. I have it on two lines just so it's easier to read the extra space won't really affect anything. It could be how you grabbed the image on splash. If I go back into my browser,
+Elgin Sharper: Okay.
+Lewis Benson: I'll just quickly find an image. If I right click on this image, you hit Copy image address, that's the link you would want to use.
+Elgin Sharper: I'll be late. You need to drifting us, that's what I did.
+Lewis Benson: and then, inside of This src, I'm just going to delete that whole line, put it back in. So it's Src So, you'll have your src equals with empty quotes. Those In between the two quotes, you just paste the link right there.
+Elgin Sharper: He?
+Lewis Benson: and then you make sure you save it, if it didn't auto save,
+Lewis Benson: If you're still having issues with that, we'll come back to you in a second. I want to answer some of these other questions before we move on. Gregory. You have a question?
+Elgin Sharper: Okay, okay.
+Lewis Benson: You're currently muted, if you're
+Gregory Robertson Jr: I want you to click the
+Lewis Benson: okay. Krystal.
+Krystal Jefferson: Okay. We're.
+Krystal Jefferson: Still kind of lost but I think I may be getting it home. Where you have meta. trying to, I guess, I'm not sure if I'm stuck there or I am.
+Lewis Benson: Okay, so I'll go over that part again. That's no problem. So let me just delete all this. So, your normal workflow will be to press the exclamation point. whenever you make a new file and you want to make sure you have nothing in here whenever you do this, otherwise it'll put it beside it and then when you hit exclamation point You'll see this emit abbreviation come up.
+Krystal Jefferson: Okay, I think I got it.
+Lewis Benson: Okay, and then it'll just automatically fill the required metadata.
+Krystal Jefferson: Okay, I think I got it because I think I said the deleted everything and start over. I think that's where I Hung up it.
+Lewis Benson: Yeah. So as far as what the metadata means It's not something we ever really mess with.
+Krystal Jefferson: 
+Lewis Benson: We just kind of put it in here and then move on. we never modified or anything like that. And it just works. I do know that if I've actually worked with some developers that deleted. they're just like, we don't need that, it's just extra space on our page. And it continued,…
+01:40:00
+Krystal Jefferson: 
+Lewis Benson: the work for the most part. And then when we tried to do some special things with styling, it didn't know what the screen size. We were using was so none of the styles were working.
+Krystal Jefferson: 
+Lewis Benson: As I we were trying to make it work on mobile and on desktop, and it didn't know because we didn't have this viewport thing in there so it didn't know what to do.
+Lewis Benson: So it can break it, technically, if you don't put it in, but if you just do the Exclamation Point, tab or explanation, point, click the Emmet thing. You'll never have to worry about it. Just set it and forget it. If you want to know more about it,…
+Krystal Jefferson: All right.
+Lewis Benson: MDM will tell you everything you want to know. But it's a,…
+Krystal Jefferson: Okay.
+Lewis Benson: it's a pretty depth read and it's a rabbit hole that maybe you don't want to go down just today. Because a lot of the concepts that will cover are things that we haven't gone over yet as far as …
+Krystal Jefferson: I,
+Lewis Benson: how a lot of the stuff works. So it's one of those things where you kind of have to learn the stuff in a certain order, will probably touch more on metadata whenever we start going over search engine optimization. And accessibility and things like that a little bit more.
+Krystal Jefferson: I think I got it now.
+Lewis Benson: Yeah, so once you have your boilerplate in just change your title to be the title of whatever you want your page to be.
+Krystal Jefferson: Okay.
+Lewis Benson: And then, this will affect The Browser tab itself.
+Krystal Jefferson: Okay.
+Lewis Benson: So this one says my page because my index.html my title is my page.
+Krystal Jefferson: Okay.
+Lewis Benson: And we have any other questions.
+Iris Coats: Just one when you're going to check your debugging and all that, back and find some back and forth. How do you go? And look at the screen. You're looking at now from your code to that screen.
+Lewis Benson: So mine's opened in my Google Chrome. and so, when I switch between them every time I go to VS code, I go to My bar at the bottom here and I click on VS code and then to get back to my browser, I can just minimize vs code because the last thing I was looking at was my browser, it automatically takes me to My browser. If I were to minimize my browser, it wouldn't take me back to the S code though because VS code is currently already minimized. this stays full screen in the background.
+Iris Coats: Right.
+Lewis Benson: So when I want to go back to VS code, I click down here, I'm back in VS code and then I can minimize to get back to the browser.
+Iris Coats: Okay.
+Lewis Benson: Another way you could do it, depending on how many you monitors, you're using. And how many tabs you have open. You could hold down your ALT key. And press Tab and you'll get an option of all of your different windows. You currently have open. And then you can either select VS code or you could select your browser that way. So if I hold all and I keep holding all after I press Tab. I could click on which one I want. So I'm still holding my alt key. I click on my browser, it takes me there. I hold all I press Tab. I release tab. And then I can click on vs code.
+Iris Coats: Wow.
+Lewis Benson: So, I don't know if that way is helpful for you. It might be helpful for somebody to switch between The different ways.
+Lewis Benson: I usually just use the minimize though. I just minimize vs code and then open vs code. Another thing you can do is if you have a larger screen as put them side by side,
+Lewis Benson: if you make this window narrow and then you could open your browser up to the right of it and have both of them. At the same time I see a lot of people work like that too so that they can see their changes happening live while they're working.
+Iris Coats: Right.
+Lewis Benson: Okay, so was everybody able to get their page to show content on live?
+Lewis Benson: alright, so there's issues there. if anyone does have any questions at any point, maybe after class, or for somebody, who's not able to currently follow along, For any reason, then you can always reach out to the TAs or myself after class and we'll be able to answer your questions. If you're really stuck, you can even screen share with us and one-on-one. You can call us through slack and screen share. And we'll be able to actually walk you through anything that you're having trouble with. But don't be afraid to ask these questions during class because somebody else might also have the same question. For example, the live Server thing. A couple of you were having a hard time getting that to work. So I was able to help two of you at once there.
+01:45:00
+Lewis Benson: Yeah, so we got the interactive session. I want to go over our Google classroom a little bit then and we'll talk about our assignment that we're going to be going over today. And I'll show you some of the expectations for that and how you would submit that and how we're going to work on it. Since the class is fairly small, I think we could just do that right here. I was gonna use the breakout rooms but there's only And of us total. So I'm sharing the screen and then TAs. So we'll just do that as a class. We'll just kind of work on that assignment. Let me. yeah, Hannah yet a question.
+Hannah Richards: I think this is relating to the excitement. How do we zip a file? Is that just saving it?
+Lewis Benson: Okay, I'll show that real quick. To zip a file. So, I have my Demo folder here on my desktop. And this might be slightly different on Mac, but it's gonna be very, very similar. You'll right click on the file. And you should see something that looks like this compressed to zip or push to Something that talks about the zip. And you'll click on that. And it looks like the same folder, but this one has a zipper, you probably can't see that.
+Lewis Benson: Unless I could zoom in somehow which I can on my desktop but there's a zipper down the middle of my folder now. So it's telling me that it's a zip full file. Instead of A folder. And then you can just take this zip folder and upload it to the submission and I'll show you how to actually do that in a second here. Let me find my correct browser again.
+Hannah Richards: Okay, so is this compressing it? That's what it is. Okay.
+Lewis Benson: Compressing. Yes, that's it. Might be the word Max using is compressed.
+Lewis Benson: so, here is The Google classroom does everyone able to get into Google classroom. does anyone stole I'm stuck with that All right, So there's this clash work tab here. If we look in class work, You'll see the assignments that we have, and then we have this Chrome Dev tools and we have this VS Code badge. On this content was mostly covered in the orientation. I believe Robert wanted some of the might have been one or two screenshots that he wanted you to kind of do a little bit of research and find the answers for Dev the VS code. When I did submit a tutorial that goes through, How to basically do this entire badge, how to open the terminal and all that.
+Lewis Benson: And that video is located here. I want to the Stream tab. So this is showing the announcements. so here is the video if you need to reference that to get through the VS code installation, it'll show you even how to submit So if I go back into class work, I'm going to open up. The Day One Introduction. To vs code. So here's the instructions. So we're going to be creating a new folder called Day One Assignment. And within that folder, we're going to create a new file called Index.html. And it goes through all of the different.
+Lewis Benson: Building Blocks of HTML Here. It shows you that it wants to have the DOC type at the top. It wants to have the head the body, and if you remember that shortcut, the exclamation point and then click the Emmett, most of this will be completed for you without you having to do much. The title. This tag should have the content, my personal introduction. Within the title. So I'll highlight that there so you can see that. Let me zoom in a little bit, this is probably hard to read for you.
+Lewis Benson: So, within the title will put My personal introduction, and then we'll have a body section. And within the body, we're going to have An H2. A paragraph and then you can see the content for each of these requirements here. and then this one here, saying to use this block quote element, we haven't talked about the block quote element I will show you the documentation again and show you how to find what you need to know about that. And then, conclude with an H2 within the block or followed by the block quote. And you're going to be using Live Server Extension, to preview this page in your browser to make sure everything's looking good. You want to do that before you submit? that way, if something looks weird, if it's not displaying any content, then you're going to want to know that ahead of time before submitting it. We don't want to take points off because it
+01:50:00
+Lewis Benson: there was something wrong with your HTML page that were like, maybe you misspelled Index.html. And it wasn't displaying anything on your page. When you open up it on Live Server. that would be a good indicator. That there's a problem. So make sure you're using the live extension to get a preview of all your work. and then, once you're done with everything, That's where you'll zip the folder or compress the folder.
+Lewis Benson: I can't see it in here right now because I'm on the instructor preview. But normally at the top, right corner of this page you should see something where you can submit it. There should be your work card and this plus ad or create button that'll be right here in this area. Does everyone see that?
+Lewis Benson: When you're looking in the instructions for the assignment, And then when you click on that button, you should have the option to attach a file. And you will find just drag your Zip folder from your desktop directly into where it says to attach a file.
+Lewis Benson: And if anyone has any runs into any hiccups with that, just let us know and we can help you get that submitted. We'll be here in class still while we're working on this. I imagine. you should be able to get to the point where we could submit this today.
+Lewis Benson: So there is a rubric here that goes into how this is being graded. So, I'm going to open up the rubric. So in order to obtain full points, we need to have all of the necessary elements. The doctype HTML, head and body. If you're missing. one or two of the required, you will only get three points for that section there. So let's just gives you an idea of what we look for when we're grading these assignments. So, it's not very strict on the grading, which means you can actually go further with this assignment. If you're feeling really comfortable with the H2 in the paragraph. Feel free to explore on MDM and find more elements and add more content to this page. That's absolutely fine. Just as long as you have at least the minimum of what's required here. and then,
+Lewis Benson: The Personal content. We want to make sure that you're not just putting generic text in there. You're not just putting in gibberish or just random characters and stuff like that. Actually use real content such as your name and introduction in a quote. And then we want to include this block quote tag. So I didn't show that in the VS code but I will show you how to find elements using MDM. Let me get to a Google tab here real quick. I'm going to close a few of these tabs.
+Lewis Benson: And I'm going to go to DM, I just Google search for I can do it here or I can do it here And now we have ndm web. Docs is the top result. I'm going to click on that.
+Lewis Benson: And I'm just gonna search for HTML. Elements.
+Lewis Benson: So, This gives me some information here. We can see that the HTML element is the main route. That's good And then this gives you all kinds of different information about these different elements.
+Lewis Benson: The sectioning root is the body. And if I scroll through here, eventually, you could find a block quote, Here's the block quote. And then this tells us that it's an enclosed text and an extended quotation. Usually, it rendered visually by indentation. A URL for the source of the quotation. Maybe using the site ribute. While a text resident representation sarcastic, right now of the source can be given using the site element.
+Lewis Benson: so, that's a lot of information, a lot of terminology and a of there's even some Acronyms in there. But basically with this saying, is the block quotes just used for a quote That's kind of the general idea here. So if there's something you're trying to do in particular, you want to reference this documentation to find out, which elements should be used for which things. So you might be thinking, I want to put something at the bottom of my page. Is there an element for that? And you could always come here and just, look at these different elements to see what would work. So, in that case, you would want to use a footer, So we can look at the footer and it says this represents. A footer for the nearest ancestor. So that again, there's a lot of complicated terminology here.
+01:55:00
+Lewis Benson: But it also gives you cool These little Sample pieces of code that you can reference. So we can see this one has an article. It has some content within that article, and then at the bottom of the article, we got a footer. So the documentation is a big part of all this being able to find what you're looking for and it's okay. If you can't find it at first, the more you use it, the better you get out of it. It's one of those things you just have to keep practicing to find what you're looking for on here. But the block quote.
+Lewis Benson: I can't see it over here. I'm just going to search for it. Block. Quote, quotation element.
+Lewis Benson: And then here it has an example. Of what that would look like. so we can see the block quote has this site attribute and they have the source where the quote came from, this is an optional attribute, you don't have to put that in if you don't want to But if you do know the source, you can go ahead and include that. And then we have our paragraph element in here, which actually has the quote And then they included a footer. And within that footer, they have a nested site element. This formatting is kind of bad. but this is pretty.
+Lewis Benson: pretty much what you'll see whenever you come to the documentation as these little code snippets here that give you an idea of what you're going to be using it for
+Lewis Benson: So I'm going to go back into the assignment, so that's where you would find the information about that to include on your page that you're going to be making.
+Lewis Benson: Okay, so I'm going to close out of the rubric.
+Lewis Benson: And once you're done with all of that, then you'll submit that using that your work card at the top right where the Add button is does anyone have any questions about adding it to a zip file uploading it or anything pertaining to this assignment?
+Lewis Benson: Okay, are there any questions that are unrelated to the assignment? Anyone having any trouble with any terms that you want me to explain?
+Lewis Benson: Okay, so if there's no questions, then we'll take a 10 minute break. Grab some water, make sure you're hydrating and after 10 minutes, then we'll begin working on the assignment and this is going to be kind of a work at your own pace thing, and feel free to collaborate with each other. You can talk to each other while we're working on this, and then I'll be here to answer any questions. But I won't be doing any actual live lecture during the work. We'll call them workshops during these workshops, as we're working on the assignment, but if you do have any questions, I will be here to answer them. And then during that, I'm also going to stop the recording. Just for the assignment.
+Lewis Benson: Okay, so let me start the timer. For the break.
+Lewis Benson: Alright, and I will see you in 10 minutes.
+02:05:00
+Lewis Benson: Hey, welcome back everybody.
+Lewis Benson: So at this time, the last hour is our workshop time. This is where you work on. Your assignment. And I would prefer if you have questions to answer for each other, If the answer is kind of outside the scope of what you've learned, The TAs can help answer questions as well. But for the most part, I'd like us to collaborate and work together because whenever we work as partners, it's actually sometimes easier to understand it from different viewpoints. so, Here's our assignment and there's also a quiz for today. it's just a short five question quiz and it just covers what we want In class. And I want to show that real quick.
+02:10:00
+Lewis Benson: Under Classwork. It'll be Day. One introduction to Basics Quiz. So, whenever you do these quizzes, You'll click on this external link. It'll actually When you finish the quiz, it'll take you to your results page. And when you get to the results, I can actually show that real quick. I'm just going to click random ones. Here, don't click the same ones. I'm clicking because they're probably not, right? I'm just literally clicking random ones. And then you hit view score and it shows your score at the top of the page. So what you want to do is you want to take this link, the URL up here, you can see your total points. And you can retake this if you need to just go back into it again. And when you go to,
+Lewis Benson: The Submission Page, You'll actually submit that link as the submission. It'll have that same ad or create and you'll just click on the Link button and you'll paste in that link. And again that's the one that shows your total points and I believe this is also emailed to you whenever you take the quiz. So if you close this out or something, you can always go into your email and get back to this page to get your link.
+Lewis Benson: Yes, Umar
+shaista umar: But for subting the Submit tab under the document is not gonna work. You don't want us to submit with the cap. Which is a document.
+Lewis Benson: You would when you submit within the z inside of here, it's sent to our Google docs, it's not sent to the Google classroom, they're not linked together.
+shaista umar: I see. I got it. Okay, okay.
+Lewis Benson: Yeah, so it's not able to live update the scores. In order to do that, you'd have to be on the same domain as everybody instructors. So, you'd have to have a codex email.
+Lewis Benson: Otherwise, we can't sync it up. So just submit this link that when it says zero out of five, one out of five, you can get up to five out of five just keep retaking the quiz. And if you don't get a question right, you can review it. If you're not sure about one of these questions, this is all open book. Just look it up. if you don't know the dock type, I like that. Go to MDM. And paste in Doctype and see what you get.
+Lewis Benson: And you'll get some information about. That should get you to the right answer. And you can always use the process of elimination Here, we didn't talk about CSS, Really, we didn't talk about JavaScript, And we didn't talk about encoding. So that one kind of narrows it down. I don't want to give all the answers here, but
+Lewis Benson: So just work through this quiz, work through that assignment and you can work together on the assignment but do your own quizzes. Yeah. Elgin
+Elgin Sharper: Yeah, can you show one more time? how do we share it?
+Lewis Benson: yes, so when you finish the quiz, you'll get to a page, it'll look just like this but it'll have the wrong ones with an X there And you'll see at the top right here, it'll say the score, you received, it'll say, five out of five, four out of five. You just take this URL. And you copy that URL. And when you go back into the instructions on the top, right? That's where your submission is, I don't have it on the instructor view. and I don't have a way to switch it to Student View, unfortunately, but you'll see with that. It says your work right here in the corner. And you'll see a plus Create button. When you click that, you'll see an option to submit that link.
+Elgin Sharper: Okay, thank you.
+Lewis Benson: Yep.
+Lewis Benson: Okay, so if there's no other questions at the moment, I will let you all start working on that and I'll be here if you need me. Yeah. Hannah
+Hannah Richards: I do have a question. I finished the assignment. I haven't done a quiz yet for today, but for the DS code homework prior to today, I'm on the last assignment where it's talking about code formatting. I don't know if it's just because I'm not watching the video at the moment or if I missed it. But is there.
+02:15:00
+Hannah Richards: The keywords, I can't find the keyboard shortcut to I guess reformatting the code in general.
+Lewis Benson: Okay, did you install Prettier? Okay. And…
+Hannah Richards: Yes.
+Lewis Benson: then did you go into the settings for prettier?
+Lewis Benson: I'll actually show that real quick. So, if I go to this gear will here at the bottom. And I go to settings.
+Lewis Benson: I can type in formatter.
+Lewis Benson: And the option here is by default, set to None. And I'll come down here and find prettier And then I like to use format on paste and format on Save that way, It automatically formats while I'm working. So these are two checkboxes. I like to have Enabled. And also changing these right here is one of the tasks for the vs code badge. So when you get to this point, you can take a screenshot of this and put that In your submission. But once these three are set, Let me get back into a file. We'll go to the Index.html, and I'm actually gonna break the formatting here a little bit.
+Lewis Benson: Just to make this clear and I'm going to right click. And if I look at Format document, for me, it says, Shift + Alt + F You might have something different there. If you're on a Mac,
+Lewis Benson: If I click that it puts everything back the way it's supposed to look.
+Hannah Richards: Yep, it's pretty much the same.
+Lewis Benson: Gregory what's your question?
+Gregory Robertson Jr: Okay, so I did assignment and everything and I need on figure out how to go to a website to check it will put on a website. What? Yes.
+Lewis Benson: On the Live server. Did you install the Live Server extension and vs code?
+Gregory Robertson Jr: I did.
+Lewis Benson: And did you see the Go Live button on the bottom, right?
+Gregory Robertson Jr: Yeah, I got it. So it's easy, open, a photo workspace.
+Lewis Benson: What in the instructions you see that?
+Gregory Robertson Jr: I see. Go to fell open.
+Gregory Robertson Jr: Icing and go to open photo. And
+Lewis Benson: I see. you mean in the workspace as in Having this folder open here.
+Gregory Robertson Jr: not they say down about a home, go live when I click it you like the arrow pop up.
+Lewis Benson: Do you have an index.html?
+Gregory Robertson Jr: I do.
+Lewis Benson: And you have just that one folder opened, and you're Explorer. Or do you have other files in there?
+Gregory Robertson Jr: Just that one for.
+Lewis Benson: Would you want to go live and show me what you see? Me. Stop presenting.
+Lewis Benson: and for anyone who already submitted One assignment and One quiz. If you haven't done the VS code in Dev tools, you can work on that during this plan too.
+Gregory Robertson Jr: I don't go live presentation now.
+Lewis Benson: And then select There's three tabs. It'll say Window Entire Screen. And I Believe application, Make sure you click on entire screen. That way I can see your menus when you right click.
+Gregory Robertson Jr: I, See, my screen.
+Lewis Benson: Not yet. That you probably have to confirm it.
+Lewis Benson: There goes.
+Gregory Robertson Jr: Alright, so when I click the go live, this purple.
+Lewis Benson: Go to File and…
+Gregory Robertson Jr: Okay.
+Lewis Benson: Open folder.
+Gregory Robertson Jr: Not doing here on obvious code.
+Lewis Benson: On vs code.
+Gregory Robertson Jr: You say open folder?
+Lewis Benson: Yes.
+Lewis Benson: And then click that open folder. And is this where you're working? You can hit On the bottom, right?
+02:20:00
+Lewis Benson: And your Explorer should show that file now.
+Lewis Benson: If you press, is this a Mac? I believe you're on a Chromebook,…
+Gregory Robertson Jr: I'm gonna chrome.
+Lewis Benson: try Control B, and that should open up the Explorer.
+Lewis Benson: You're an extensions, you'll have to click on the file thing at the top left there, underneath the word file. I mean, looks like a piece of paper with That one there.
+Lewis Benson: I'll click it again.
+Lewis Benson: Okay, so it loading.
+Lewis Benson: There's your index.html.
+Lewis Benson: So, if you hit Go Live Now, which I don't see that option.
+Gregory Robertson Jr: You don't see no more.
+Lewis Benson: Check your extensions. Make sure it's still there.
+Lewis Benson: You want to type in Live Server? To make sure we get the right one. Hope it came up now. It was just still loading.
+Gregory Robertson Jr: there guys.
+Lewis Benson: All Yeah, you should have some results now. It might take it, a moment to open the browser. It seems like it's running at full resources at the moment.
+Gregory Robertson Jr: I very well, thank you.
+Lewis Benson: All right, thanks.
+Lewis Benson: I see your message there in the Iris. Where you having trouble with something.
+Iris Coats: I'm not sure where I'm at. I mean I understand the concept is just getting it out of my head and putting it on the screen. That I'm have in trouble with.
+Lewis Benson: Did you want some guidance with anything? Is there anything in particular?
+Iris Coats: 
+Lewis Benson: You're getting kind of stuck on or hung up on?
+Iris Coats: Yeah.
+Iris Coats: Just trying to put in words. where I'm getting stuck? That's my problem here.
+Lewis Benson: Do you want to present your screen? And then I can walk you through any, okay?
+Iris Coats: Yeah, cuz I'm have an issues.
+Iris Coats: What do I need to do?
+Lewis Benson: So, at the bottom of the Google meet, you should see a Present Now button.
+Lewis Benson: It's a up arrow inside of square and…
+Iris Coats: Yeah.
+Lewis Benson: then when you'll get a little pop-up, click on the entire screen tab and not pop up. Then you'll click on your monitor. And then you'll hit the present now or go. I forget what it says.
+Iris Coats: Okay.
+Iris Coats: What I'm running into and I've restarted it a few times. Is discontinuing it, because you wanted that. Each tag.
+Lewis Benson: So currently UIC, you have the boiler plate set up in there.
+Iris Coats: Yeah.
+Lewis Benson: All right, so if you wanted to create a H1, did you see how I did that shortcut?
+Iris Coats: but the H1
+Lewis Benson: So, if you don't put the angle bracket in first, if you just type H1 without the angle bracket, it'll actually do the whole thing. so, if you want to backspace that three times,…
+Iris Coats: Okay.
+Lewis Benson: and then just type H1 Without the angle bracket. Then you can click on that. Yeah, and that gives you the whole thing. And then you can do the same thing for every element. There is as long as you type in the proper element name, you can autocomplete the element.
+02:25:00
+Iris Coats: All right.
+Iris Coats: I'll see you tomorrow morning to backspace which is better, the backspace or the enter.
+Iris Coats: Now.
+Lewis Benson: Do you mean to not be on multiple lines like that? there's a few ways to do it,…
+Iris Coats: Yeah.
+Lewis Benson: you could press Control Z, if you wanted to just undo,
+Iris Coats: yeah, okay.
+Iris Coats: and then,
+Iris Coats: how on page?
+Iris Coats: So really what I'm gonna have to do is play with this and try to figure out Where I'm going wrong.
+Iris Coats: She's right there. I know I'm forgetting something.
+Lewis Benson: Yeah, so currently the texture writing is outside of the body and it's not and contained with inside of a heading element or anything like that, you want to make sure all of your content is encapsulated within the body.
+Lewis Benson: So here's a little trick. You can do see how your body closing tag is online 10, but your paragraph element is online If you hold down the ALT key and…
+Iris Coats: Yeah.
+Lewis Benson: press up, it'll move it up a line.
+Lewis Benson: So, you can move things around in your code holding all, and using the arrow keys.
+Iris Coats: Okay.
+Iris Coats: Okay.
+Iris Coats: All I'll play with it for a little while and see what I can figure out.
+Lewis Benson: That you install printer yet as an extension too.
+Iris Coats: Which one?
+Lewis Benson: The extension called prettier.
+Iris Coats: Prettier no.
+Lewis Benson: Okay, so that'll help a little bit too with making sure your indentation and all that stuff lines up correctly. if you have a lot of words on one line, it'll wrap it down to make everything more readable. One. And I have a video on.
+Iris Coats: Okay.
+Lewis Benson: The VS code badge, that it goes over how to install that, and how to configure the settings so that it works properly. So, if you get some time to watch that,…
+Iris Coats: Okay.
+Lewis Benson: then You can finish the VS code badge assignment as well as get prettier working and make things a little easier for you.
+Lewis Benson: Yeah, what's your question Krystal?
+Krystal Jefferson: Whenever we had elements does it, it seems like I always have to click on. Go live or it doesn't automatically go to. I'm not sure what I'm doing wrong or
+Lewis Benson: You want to present?
+Krystal Jefferson: I'm My webcam website.
+Lewis Benson: Okay.
+Krystal Jefferson: So I'm using my amusing, two different actually.
+Lewis Benson: I got you.
+Krystal Jefferson: 
+02:30:00
+Lewis Benson: I can present and then just kind of walk through the flow of it and maybe that'll help.
+Krystal Jefferson: Okay.
+Lewis Benson: Okay, so I'm actually gonna stop. My live session. And I'm gonna delete these two extra files so that I'll have anything conflicting with those. So, I just have this index.html.
+Lewis Benson: So you said you out of add an element, so I'm going to add an element in here. I'm actually going to add an H3. And I'm going to say this is a heading 3. Okay, so I got my new element, I want to preview it. So I'm going to look at my Go live button and since it doesn't say Stop It says Go live. I know when I click on this, it's gonna open a new tab in my browser. So I click it and it switches to port 5500. And it actually opened on my other monitor. And there's the page being displayed. as you're not popping up in a browser perhaps.
+Krystal Jefferson: It is. But it's not. In order.
+Lewis Benson: It's not updating.
+Krystal Jefferson: Yeah, no.
+Lewis Benson: okay, so something else too is make sure you have this Autosave checked Under file. That'll help with the live update.
+Krystal Jefferson: Okay, I got it and
+Lewis Benson: Yeah, so if you don't have this if I had another heading here This is a heading for you can see I have a white circle where the Closed Tab button is. And I also have a notification over here, telling me that my file is not saved. and when I look at the browser, it only has heading three So if I hit control s that saved it, the white circle The notification went away. I look on the browser and there's this as a heading for. So if I just put on autosave, Then I don't have to worry about. Saving every time I make a change now it'll just automatically. So if I hit a single let like a space, it saves New Tab, I can do an H5. This is a heading five. And there's no white circle, no notification. So I'll switch over to the browser. And you see this is a heading five.
+Krystal Jefferson: Okay.
+Lewis Benson: and also notice that Are all of my headers here inside of this header element.
+Lewis Benson: That way anytime you have headings, it's not a bad idea to keep them inside of some sort of. Header Element That way. Everything's organized for accessibility reasons, screen readers will look for these header elements to know where to announce, this is the heading on section 3 and then it will actually say the heading.
+Krystal Jefferson: How did you?
+Krystal Jefferson: So you put the head of first and then, because Okay, I think I'm
+Iris Coats: Sorry.
+Lewis Benson: I could also put A section here. And then this section could also have a header. So it's not like you only have one header on your page. You can have multiple headers. So it can get a little complicated looking.
+Krystal Jefferson: okay.
+Lewis Benson: But So this body has a header and then this section has a header and then I could put an H5 in here or an H3.
+Krystal Jefferson: I'm really good with you.
+Lewis Benson: I don't, That might be a bit much. But the header just announces that part of the file is a header. And maybe I could find an example on a website that's already fully built. I believe that Nola website had multiple
+Lewis Benson: so, this section here, this is a header And we have this H1 header in there. And then, when I scroll down, we have an H3 header down here.
+Lewis Benson: And this would be inside of a header element, as well. So it's just a way to organize your page, every time you have a heading, you can put it inside of a header element. just a container.
+Krystal Jefferson: Okay.
+Lewis Benson: It's not a requirement. It's just An optional thing that a lot of developers do and they may not have put it within that element, too. That mean, double check.
+Lewis Benson: If you do. Have to get.
+02:35:00
+Lewis Benson: yes, they have an article. But for the most part, they're just putting their stuff in divs. this whole website might actually be generated through some sort of script so they might not actually have people writing this code. Something like Wix or Dreamweaver? WordPress, those type of sites you just drag and drop your stuff onto the page and it creates it for you. But they're not very customizable.
+Krystal Jefferson: Okay, I also have one more question about the block quote, I have everything else. I'm just
+Krystal Jefferson: just had a question about the block quote.
+Lewis Benson: Okay.
+Krystal Jefferson: So okay, let me go back to it.
+Krystal Jefferson: Okay, so I think I get it now. So just add the block quote, right under the let's see. Let me go back to the silent.
+Krystal Jefferson: Okay, I think I got it now.
+Lewis Benson: F and keep in mind everyone here, you can help each other with this talk to each other and collaborate too.
+Hannah Richards: I'm doing the browser tools assignment and now if anybody else want it, Or was doing it.
+Hannah Richards: and for these assignments, when it wants you to write your statement or whatever with it is, it really just like reiterating The function of what you wanted. So for example, on the browser tools assignment the skill is to inspect HTML elements and view CSS styles. So then Am I just reiterating that?
+Lewis Benson: You mean we're for the description of the screenshot. the text next to it.
+Hannah Richards: For yes. Yes.
+Lewis Benson: Yeah so you'll just say what's going on in the screenshot for example Off the top of my head, I'm thinking of the terminal in the VS code assignment. Whenever you put the screenshot in you would just say This is a screenshot of my terminal opened in vs code.
+Hannah Richards: Yeah, that's what I did. I said it wasn't working though because of the
+Lewis Benson: Having the Z shell versus the bash. Yeah.
+Hannah Richards: Ar. Yes. Yes.
+Hannah Richards: I don't know if I Share my screen. So This.
+Lewis Benson: Yeah, let me stop presenting so it'll give you that option.
+Hannah Richards: Is the story.
+Ryan Arnold: It's my mind working.
+Lewis Benson: I hear you.
+Ryan Arnold: I was just gonna ask, once we finish and turn an assignments, would you rather we hang out and help others who are working on the assignments or
+Lewis Benson: If it's optional, if you've finished everything you can stay and help if you want. I'm not opposed though to you heading off if you got everything completed.
+Ryan Arnold: Okay.
+Ryan Arnold: Did anybody need any help with anything?
+02:40:00
+Hannah Richards: I'm still trying to figure out how to share my screen. Is it present?
+Lewis Benson: Yes, it has a square with an up arrow present. Now,
+Hannah Richards: Okay.
+Lewis Benson: And then you'll hit entire screen. And then you'll click on your monitor and then click the Go Live button.
+Hannah Richards: 
+Lewis Benson: You have a question Gregory.
+Gregory Robertson Jr: Yeah. Can someone show me how to turn these in?
+Lewis Benson: Did you have a zip already?
+Gregory Robertson Jr: See how to get it.
+Hannah Richards: if then, I will cut the quick in
+Hannah Richards: Quit the browser. So I guess I'll have to rejoin in order to do this.
+Lewis Benson: Okay.
+Gregory Robertson Jr: Otherwise it.
+Lewis Benson: Do you have the folder on your desktop?
+Gregory Robertson Jr: Yeah, the
+Lewis Benson: You just right, click on it. And you should see compressed to zip or add to zip.
+Lewis Benson: It could just say compress depending on Which operating system you're on.
+Gregory Robertson Jr: 
+Gregory Robertson Jr: I did. Thank.
+Lewis Benson: Actually going to stop that recording. it's gonna be a little bit longer to process now that I left it, go for an extra 45 minutes,
+Ryan Arnold: These recordings will be available in the Google classroom, if we need to refer back to stuff,
+Lewis Benson: Yeah, and I should have mentioned this earlier. I made a syllabus. It's Accessible, if you look at The top.
+Lewis Benson: What do you call it announcement on the Google Classroom? That's the first URL with another announcement. It has a syllabus. I'm going to be paste posting the links in there. And I'm going to be posting them in the slack.
+Ryan Arnold: Okay.
+Lewis Benson: You'll have access to them. throughout past the week one through the syllabus, if you lose your slack or something like that, Okay, yep.
+Ryan Arnold: Thank you.
+Iris Coats: Lewis. what am I looking for to do my quote? The block.
+Lewis Benson: The block quote.
+Iris Coats: Yeah.
+Lewis Benson: yeah, the block quote element is a parent element Where you would. It's kind of like a section or a div. it's just a wrapper that says,…
+Iris Coats: Yeah.
+Lewis Benson: anything within this area is going to be a quote, So you can make a block quote element and then within that, you can create a paragraph Nested inside of the block element.
+02:45:00
+Lewis Benson: Similar to what I showed you with the header and the H1 nested inside of the header. You can nest a paragraph inside of the block, quote.
+shaista umar: Lewis have a good question Omar here. So when we're done with our assignment and we save our folder and send it to you. So be able to open the page which we are creating on your end as well.
+Lewis Benson: Do you mean view the code on my end?
+shaista umar: you'll be able to view the code or you'll be able to view the page as well, which we see in the Live view.
+Lewis Benson: Yeah, I can download that and open it in my VS code and hit Live View.
+shaista umar: I see. So you downloaded and then it runs on your computer, too. Okay.
+Lewis Benson: Yes.
+shaista umar: Okay. Thank you.
+Lewis Benson: I could also just put it into. Have you heard of replit as anyone talked about replete? If you guys yet? I think it was briefly mentioned in orientation.
+Lewis Benson: I'm actually just show you that real quick, just in case you're interested. It's just another way to develop alternative to VS code.
+Lewis Benson: Just using your browser. And that's another way that we can view the assignments.
+Lewis Benson: So, I just want to replant.com, I already have an account. And this is something you could look at whenever you have some free time, too. Because replitz commonly used by potential employers to conduct technical interviews. They'll send you a replit link and you'll come here and you'll do whatever coding tasks. They ask you to do on this website. So I'm just gonna hit Create Replica. And HTML. CSS JS. Is the option. I'm gonna select for the template. And then it gives you a random title name. I'll just keep that the same. And hit So whenever I create a new replete, this basically just gives me a fake browser on the right and it creates all my boilerplate code on the left for me.
+Lewis Benson: And I don't have any VS code or anything like that and then you can see, I have an indexed on the left. I also have this script.js and a styles.css.
+Iris Coats: 
+Lewis Benson: These are.
+Lewis Benson: Something we'll get into a little bit later. But you can see that they're imported into here. As well in the boilerplate. But yeah, this is another way we can view your work, is just copy your code out of that zip file and just paste it right here and it will pop up on the right. And for the developer tools and replete if you're interested, it's this little wrench here. It opens up And they look a little bit different because this isn't Google Devtools.
+Lewis Benson: It's a replitz and little browser. But it is something to kind of cool to play around with. We might do. I'll have to look ahead to see if it's been set up yet. I know they were working on this where we could use this for working on assignments together and we can all come in here and write code on one file at the same time. So we could each write like a little bio.
+Lewis Benson: Have to see if they have that implemented into the curriculum yet but It's a pretty neat little site. I see Ryan, put your hand up. Krystal got your hand up, too.
+Ryan Arnold: Krystal had her end up first. I'll let her go.
+Lewis Benson: Yep.
+Krystal Jefferson: Just a quick question. Do we have to put a paragraph element inside of a blog quote, or we just can Do it,
+Lewis Benson: You could omit the paragraph element but it is better. Practice to use one.
+Krystal Jefferson: Okay.
+Krystal Jefferson: Okay, I got it.
+Lewis Benson: Yeah rep. What's great Hannah? This is a really great way to share code to.
+Lewis Benson: And like I said, I've actually done several technical interviews through Replett, where the company sent me a whole bunch of code, and they told me just to fix all the bugs in it and that was like my technical interview and when I was done, I submitted the link back to him. So, it's very commonly used in the industry.
+02:50:00
+Lewis Benson: And what was the other? Somebody else had to hand up there. Ryan. I think it was
+Ryan Arnold: Yeah, I just had a quick question about something that I noticed during the lecture on your What color theme are you using? Because the green text makes it really easily readable for me, and the default text color on my VS code It's all blue, but it looks like the same shade of blue and it makes it harder to read for me.
+Lewis Benson: that is a good question. It looks like I'm using Github dark.
+Ryan Arnold: Github dark. Okay. Thank you.
+Lewis Benson: Yeah, and there's so many different themes here. I sometimes switch it up, just to look at something different. I spend so much time in VS code Or if I have more than one vs code open, I'll have one on a different theme than my other one so that I don't get them mixed up.
+Lewis Benson: But yeah, if you'd like to the Github dark theme, I think that's an extension.
+Iris Coats: No, really, no.
+Ryan Arnold: Yeah, I just installed it.
+Lewis Benson: It doesn't seem that I have it installed here. Does Github theme.
+Ryan Arnold: Yeah when you click the little cogwheel down at the bottom left of VS code for anybody that's interested you can click on Themes and Color theme and it'll actually let you browse extra color themes and you can search for it by name if the name of it and it'll just find it and you can click on it and it'll install it for you.
+Lewis Benson: That's good information.
+Lewis Benson: Yeah, that's takes me here.
+Lewis Benson: Yeah teams themes are cool to play with. If you want to match my color themes, I'm glad you brought that up. Something I wanted to mention earlier was the themes.
+Lewis Benson: Those, I don't want to bombard you with too much information, especially stuff, that's not relevant to the stuff. Yes, Umar
+shaista umar: And so, I have a question because I'm not sure if you guys presented that thing in the orientation, it's towards the end of the course. I believe that we'll have an opportunity for the internship. if that's so that insurance internship is included in the course time or it's gonna be after the course is done,
+Lewis Benson: I'm not familiar with so that they have a lot of, different marketing things they're using where they can. I know there was some interviews that they were setting up with Amazon at the end. I didn't hear about the internships. I would have to ask fail, the CEO, He's the one who handles a lot of that type of stuff. did he bring up internships with you at all? When you talk to him?
+shaista umar: Yes, there was some discussion about it but that's what I'm trying to just clarify this thing that he mentioned something.
+Lewis Benson: Yeah, he doesn't passed any of that down to the instructors. I could reach out to him…
+shaista umar: Okay. Yeah.
+Lewis Benson: if you want me to. Or you could.
+shaista umar: Whenever No rush. Of course yes. Just wanted a clear mind about it.
+Lewis Benson: Yeah.
+shaista umar: Okay thank you so much.
+Lewis Benson: Yeah, no problem. Yeah, I'll look into that for you.
+Lewis Benson: and I'm actually gonna stop sharing in case somebody else wants to, Take the presentation or at any time. Iris. Do you have a question?
+Iris Coats: Yeah, I had it and then I broke it.
+Lewis Benson: You broke it. All right.
+Iris Coats: And I can't find where I broke it. So just Let me find the scary. Yeah, scare the screen.
+Lewis Benson: Okay.
+Lewis Benson: Yeah, what's your question Omar?
+shaista umar: Yeah, you'll be like over that. I Thank you so much.
+Lewis Benson: No no. I like questions.
+shaista umar: So my question is, I want you to take a look at the chord which I just wrote If that's possible Can I share my screen? Be with you? how it's gonna work?
+Lewis Benson: let me hope Iris. Your issue is the name of your file isn't Index.html. It's home.html. And your browsers looking for Index.html.
+02:55:00
+Iris Coats: thank you.
+Iris Coats: Got you see, thanks.
+Lewis Benson: So yeah, at the bottom you can hit present. What's your question Krystal?
+Krystal Jefferson: And I think I did this right in order to zip the file.
+shaista umar: Presentation.
+Krystal Jefferson: You right-click correct? And then you go It has seven zip. I believe That's it.
+Lewis Benson: Yeah, you can zip it with sevensup.
+Krystal Jefferson: okay, that's all I have on here. That's all it says. And I think I Chose ad today, one assignment.
+Lewis Benson: Okay, and then it did the little progress bar and whenever you confirmed that, The Add to.
+Krystal Jefferson: Let's see.
+Lewis Benson: It should have created a second file.
+Krystal Jefferson: It did it's like a folder with the number seven on it.
+Lewis Benson: Yeah, that's a zip file.
+Krystal Jefferson: Okay. So I did it right.
+Lewis Benson: Yeah, yours looks a little different because you're using seven zip.
+Lewis Benson: Do you see the present button? No more.
+shaista umar: This presentation now. Okay?
+Lewis Benson: Yep, and then you'll hit entire screen. It's a third tab. You'll click your monitor and then you can hit the present button.
+shaista umar: Entire screen, there is a
+Lewis Benson: it's a tab but it's not clear that it's a tab. It's just some text, it says entire Yeah.
+shaista umar: guys, we know on top of it. Okay, I see that entire okay, then you're just click on share, okay.
+Lewis Benson: You might have to select the monitor. Even if you only have one monitor, you still have to select.
+shaista umar: Yeah, I see. Okay, okay, thank you. Yeah, let me show it now.
+Lewis Benson: Okay.
+Lewis Benson: I can see it.
+shaista umar: Okay, so It's right here. Can you see?
+Lewis Benson: Yes.
+shaista umar: So you think that's all supposed to be?
+Lewis Benson: the only thing that I would change would be putting your heading one and heading two. Inside of a header. So that they're nested inside of a header.
+shaista umar: This age one you say this one.
+Lewis Benson: Mm- Yes.
+shaista umar: I highlighting so,
+Lewis Benson: And the H2 directly underneath it.
+shaista umar: Okay, what do you want me to do?
+Lewis Benson: So I would start online eight, make a new line after the body.
+shaista umar: Okay, after the body. with the this.
+Lewis Benson: And then type the word header.
+shaista umar: Better. Okay. So, that's
+Lewis Benson: And then press Enter.
+shaista umar: Again, enter. Okay. …
+Lewis Benson: Inside of the header so that it Yep.
+shaista umar: I see. Okay, enter so.
+Lewis Benson: And then what your cursor?
+shaista umar: Each one is to go within this thing.
+Lewis Benson: Yeah, and if you put your cursor online 11 you can hold ALT and press down and it will just move it down.
+shaista umar: Line 11.
+Lewis Benson: And then hold all and press down.
+shaista umar: down,
+Lewis Benson: don't drag down, just on your keyboard. Hold the ALT key and press the down arrow.
+shaista umar: Okay, okay, all key. no. Okay.
+Lewis Benson: Yeah, and you don't have to highlight it, you just have to have your cursor on that line and then
+shaista umar: yes, moving. Okay, so you want me to take it work right here.
+Lewis Benson: get right there and then when you save it, should format if you have your prettier configured
+shaista umar: Okay..
+Lewis Benson: and I see you don't have your autosave turned on to
+shaista umar: I just did controller. So yeah, I was thinking so if you go here, And then to settings.
+Lewis Benson: Autosave is in file.
+shaista umar: Auto sales turned on, okay.
+Lewis Benson: It is turned on, it's just didn't work.
+shaista umar: I think maybe I did this. I think on focus. I just do offer or off after delay. What studying should I pick from here?
+Lewis Benson: I would turn it I see on focus change. I try turning it off. I've Never.
+shaista umar: It was off by default when I open it. So I don't know.
+Lewis Benson: Yeah, I think that's what you want to be, is off.
+03:00:00
+shaista umar: Okay, so let's just close it. Not.
+Lewis Benson: And then make out change and see if it autosaves.
+shaista umar: Make a change. You
+Lewis Benson: even just an empty space after somewhere, it'll
+shaista umar: okay. Sure.
+Lewis Benson: it didn't auto save, is it? If you hit file, does it, she'll show it as checked?
+shaista umar: File. it's not check that.
+Lewis Benson: Yeah.
+shaista umar: That's so now, I think you should do it. no. it's
+Lewis Benson: yeah, it's working now
+shaista umar: And this looks fine now.
+Lewis Benson: I think that's everything up,…
+shaista umar: it's
+Lewis Benson: the double check, the assignment requirements to make sure it's all there.
+shaista umar: so online services head, right online is it says body and on but in body. I added the header, right? So it's supposed to be here.
+Lewis Benson: Yes.
+Lewis Benson: Yeah, that's a good place for it at the top of the body, that makes sense.
+shaista umar: and this head I live is called head or I mean sorry it's called element or tag this thing.
+Lewis Benson: So, just the line, seven itself is a tag line.
+shaista umar: Is attack.
+Lewis Benson: Three is a tag but Three, two line. Seven is an element. yeah, the elements made up of
+shaista umar: I see. Okay, so let's throw line, Seven has to be there, right? Because it's about had whatever it is.
+Lewis Benson: yes.
+Lewis Benson: Yeah, so the head is metadata your title. It's the stuff that doesn't show up on your page. And then a header is a different element.
+shaista umar: 
+Lewis Benson: It's for headings. It's for the top of your page.
+shaista umar: Always. Yes. Yeah. I was mixing up head and header. I thought it was the same thing but it's not. Okay, thank you so much.
+Lewis Benson: Yeah, nothing really common like I've seen, experienced developers. Mix them up before.
+shaista umar: Okay, so on after this, it says Zip the day One assignment folder in the car label, Your work ad create with the drop down so that I just need to send it to you guys. Now if I'm done here,
+Lewis Benson: Yeah, and one thing you might add to as a paragraph element within your block quote, just so that it's not just random text inside of an element. Because a block quote, just kind of represents a section.
+shaista umar: Okay, right here.
+Lewis Benson: Yeah, if you put all that text inside of a paragraph element, it's kind of a little bit more semantic, it makes a little more. You can more clear.
+shaista umar: Or can I just do it on the start with p parrot? But paragraph.
+Lewis Benson: Yep.
+Lewis Benson: It's just a P. Yeah.
+shaista umar: they just with these records, right?
+Lewis Benson: Yeah, so if you just type the letter P by itself delete that one and retype it you'll get the emet shortcut. Yeah.
+shaista umar: And this whole thing is gonna be inside Which versus blinking.
+Lewis Benson: Yes. Yep.
+shaista umar: Okay, let me just
+Lewis Benson: And you can either drag it in, cut it in, there's lots of ways to move it.
+shaista umar: yeah, it's from just going to cut and paste.
+Lewis Benson: Yep, that'll work.
+Lewis Benson: Yeah, that makes a little bit more clear on what that text is.
+shaista umar: Okay.
+Lewis Benson: And also being in a paragraph element. What was that? I'm sorry.
+shaista umar: Thank you here. I just Remove the spaces with the backspace, so it went up a little bit. Is it good like that?
+Lewis Benson: Yeah, you can do that as long as you're Formatters, okay, with it.
+shaista umar: Because previously I hit Enter it came on the next line, it just took it back, hey that's about it.
+Lewis Benson: The formatter did that. Okay. Yeah,…
+shaista umar: No, no I'm doing it. Don't take it with
+Lewis Benson: you can either have it all on one line, or you can put the opening block quote on its own line and the closing block quote on its own line. Similar to what you did with the header.
+shaista umar: Okay. This, I believe. Okay. And line.
+Lewis Benson: Yes.
+shaista umar: 18 and 19 they say as is
+Lewis Benson: And also,…
+shaista umar: okay.
+Lewis Benson: there's a way on the left where it says the line numbers you can collapse the elements. If you have a lot of elements on your page, and it's getting really messy. You can actually similar to what you're doing. Yeah.
+shaista umar: hannah this that's cool. Okay, I see that. So yeah.
+Lewis Benson: Yeah, it's just
+shaista umar: So wherever we need to work, we can only open that and the rest stays class. Okay. Okay.
+03:05:00
+Lewis Benson: Exactly, yes. If you have a lot of content, you can do that.
+shaista umar: Yeah, makes sense.
+Lewis Benson: You keep things easier.
+shaista umar: So I think now I'm just gonna just compress it as a zip file and…
+Lewis Benson: Yeah, sounds good.
+shaista umar: then send it to you guys, Okay, so I'm gonna just stop sharing my screen.
+Lewis Benson: And we are actually past the class time so if everyone is or whoever's complete it could head out. If you want to stick around I could stay here to help with anyone who has any questions. For probably another half hour.
+shaista umar: If I cast recorded, and I feel,
+Lewis Benson: Yes, Iris.
+Iris Coats: I know you explain this, but I had to miss it for split second, but to say that to get the zipped and sent to you, I mean, I've got it saved, but the zipping it and sending it to, wherever needs to go. Because it's not like I can just share it.
+Lewis Benson: Right, so going to go to the Classroom.duggle.com. And you see where the instructions are in there on the assignment.
+Iris Coats: I just classroom.
+Iris Coats: Uh-huh.
+Lewis Benson: so, on the right side, It popped up for you.
+Iris Coats: Yeah.
+Iris Coats: so, I just think the link or the file
+Lewis Benson: You're going to want to attach the ZIP file.
+Iris Coats: Okay.
+Lewis Benson: What's your question, Hannah?
+Hannah Richards: I know it's because I didn't do my research but I was doing the browser tools assignment and was stuck at Editing. And
+Hannah Richards: Or making live changes to the HTML and CSS.
+Lewis Benson: are you able to present or was at you? That was On two different machines. Okay.
+Hannah Richards: Though me, I can try again. I don't get into anything else.
+Lewis Benson: Were you able to upload that Iris?
+Lewis Benson: For attach that.
+Iris Coats: Yes.
+Lewis Benson: Very good. Nice.
+Hannah Richards: Okay, is it sharing it? Okay. so,…
+Lewis Benson: It is.
+Hannah Richards: I guess I could play this.
+Hannah Richards: so, you actually see So this is opening the Chrome Deaf tools. Use My mouse
+Hannah Richards: That's the right click.
+Hannah Richards: inspecting acml elements and uncss styles, is that just like, Going in and looking at HTML and seeing where CSS is being used.
+Lewis Benson: If you open up your browser, I can actually point that out to you.
+Hannah Richards: Can you see my it wasn't sharing the screen.
+Lewis Benson: I'm seeing the …
+Hannah Richards: Okay, Okay.
+Lewis Benson: I'm seeing the slide show.
+Hannah Richards: Yeah, actually the browser, I'm sorry. but,
+Lewis Benson: you could try to if you open up the developer tools, I'm not sure if I'll be able to see them since you're not sharing the whole screen. It might show me.
+Lewis Benson: Is your developer tools open right now.
+Hannah Richards: I just exited out of it. trying to make sure Can you see A Web page.
+Lewis Benson: I can only see the browser, you'll have to probably share your screen and make sure you click entire screen instead of just that window.
+Hannah Richards: Okay.
+Hannah Richards: Okay.
+Lewis Benson: So when you hit present now you'll be offered three choices. It's not really clear that they're different choices, it's near the top of the share options.
+Hannah Richards: okay, I just saw a whole bunch of times and I'm like, which one Okay,…
+Lewis Benson: Yeah, you'll see one entire screen and…
+Hannah Richards: entire screen. Okay.
+Lewis Benson: then you'll click on your screen and then you'll click on the Share button. Area. Now I can see everything.
+Hannah Richards: Gotcha.
+Lewis Benson: All right, so if you go back to that, New site or whatever. That was you run. And then open up your inspect.
+Hannah Richards: Okay.
+03:10:00
+Lewis Benson: All right, do you see on the bottom? It says Styles. So that's currently selected.
+Hannah Richards: Yes.
+Lewis Benson: So everything under that is CSS. That's what?
+Hannah Richards: Okay.
+Lewis Benson: Yes, that's Looks like,
+Hannah Richards: Okay, right. Okay.
+Lewis Benson: and what CSS does is what gives the page Different font sizes. it gives it background color. It's what lays everything out.
+Lewis Benson: If you were to think about it in the form of an English description, you can think of HTML as a noun. It's like the structure of your page CSS would be like the adverbs. It's what describes the page. And then you could think of JavaScript to be like your verbs, that's what makes the page interactive.
+Hannah Richards: We only create that.
+Lewis Benson: So CSS is It's what gives it font sizes. It's what makes it have some sort of decent look to it rather than just plain text on a page.
+Hannah Richards: okay, so you said,
+Hannah Richards: cuz that analogy will help, I feel
+Lewis Benson: All right. Yeah. HTML would be your nouns. It's the skeleton, the structure. It's what holds everything together. And css is the adverbs.
+Hannah Richards: It's the And so,…
+Lewis Benson: Or sorry, adjectives. Sorry. Yeah, I'm not good at English apparently.
+Hannah Richards: let's see.
+Hannah Richards: Meaning, I'm just going along with it. The description,…
+Lewis Benson: Yeah. Yeah,…
+Hannah Richards: I got you,…
+Lewis Benson: and then JavaScript would be your verbs.
+Hannah Richards: I understood
+Lewis Benson: the hand come up.
+Lewis Benson: Yes, shine as a shanesta.
+shaista umar: It's called Shaista.
+Lewis Benson: Shaista Umar.
+Lewis Benson: Yeah, I keep looking at the first name.
+shaista umar: Chase the animal. Yeah.
+shaista umar: I have a good question that I zip my folder, right? And then I found there was a typo in my coding so I corrected that the question is that correction is gonna reflect in the zip folder automatically or do I have to zip the folder again?
+Lewis Benson: automatically does it order? Yeah, you could either extract and then edit and then zip.
+shaista umar: Or make a new zip folder, maybe.
+Lewis Benson: It probably easiest to make a new one. Just delete that want to make a new one. Yeah. yeah,…
+shaista umar: Okay, I'll do. Thank you so much.
+Lewis Benson: I was trying to think of if there was an easier way but there's not
+Hannah Richards: Okay. how do I Sorry.
+Lewis Benson: you're good.
+Hannah Richards: How do I actually edit?
+Lewis Benson: How do you edit it? do you see the Selector tool on the top left of your console? It looks like an arrow. When you click that, it'll turn blue. The one to the right of that is the mobile view. If you click that, it'll give you a little bit more room to look at it.
+Lewis Benson: And then if you scroll down, let's find a headline. You can do the big headline if you want. your selector tool can just deselected,
+Lewis Benson: And then whatever you pick something you want to edit and just click on it.
+Lewis Benson: okay, on the right, you see the H1 If you double click,…
+Hannah Richards: 
+Lewis Benson: you can edit that.
+Hannah Richards: I was just trying to click on the code, like let me in.
+Lewis Benson: And you can also right click and hit edit I believe.
+Hannah Richards: But I didn't know where to go to even look for. I was like, trying to Just searching through.
+Lewis Benson: Yeah, and this is just a way to you'll do this. Sometimes if you're just trying to make quick changes to see what something's going to look like with different content. You can go into here and make those changes temporarily and then if you like how it looks, you put it into your VS code.
+Lewis Benson: It's sometimes a little quicker to change things within the console.'m just because you don't have to tab back and forth between vs code and this
+Lewis Benson: Or if you're having, tons of files and
+Lewis Benson: you can't find the content within your files. It's quicker that way, just to test it.
+Hannah Richards: Okay,
+03:15:00
+Hannah Richards: So, I should just okay and list the files that make up a website.
+Hannah Richards: okay, so I guess this really is just research. Or watching the video.
+Lewis Benson: I'm not everything in here. Is going to be in the video.
+Hannah Richards: Okay. then.
+Lewis Benson: Some of those were making live changes in there. You didn't actually change any of your CSS. You just change the text if you wanted to teach.
+Hannah Richards: what is this CSS?
+Lewis Benson: If you go back into the inspect and look down, you see where all the underneath styles? That's css down there.
+Hannah Richards: you mean the fonts or anything like that?
+Lewis Benson: yeah, so one you could do right now would be change the the color Of the current element. So if you go up to the top again, Of the styles or just reselect it. It should take you back to the top. See how you get that school bar on the bottom,…
+Hannah Richards: AR.
+Lewis Benson: Where it says Styles.
+Lewis Benson: Take that all the way to the top that scroll bar.
+Lewis Benson: And then where it says Element dot style.
+Lewis Benson: Yep, type in color.
+Hannah Richards: then I can shoot.
+Lewis Benson: then do the colon like it's showing
+Lewis Benson: and now you can put a different color in there.
+Hannah Richards: Wow.
+Lewis Benson: And these are just the named colors. You can actually use RGB or hex colors as well like the codes. If you look up colors on Google a color palette, you can pick whatever color you want. And just put in that code.
+Hannah Richards: So what's the difference between doing this? This would just be on my computer versus publishing it or actually editing the website.
+Lewis Benson: Yeah, this is just on your computer and this is a way just to test things out to see how things would look quickly without having to write within UBS code.
+Hannah Richards: Mmm.
+Lewis Benson: You could also clone a Web page, this way, you could actually copy the entire content out of there. Put it in your VS code and rebuild the whole web page as your own.
+Hannah Richards: for any website? Basically.
+Lewis Benson: Yeah, you could do that for any website. There are some websites where it might not work as well. There's some more advanced websites out there that don't show all of their content. At all times. So you have to hit menus and stuff to see things and then they don't exist until you hit those menus. And that's JavaScript at work.
+Hannah Richards: because the job is constantly changing or all of them are
+Lewis Benson: JavaScript. Here's an example of it right now on your page. You see those three lines? Right next to the Donate button.
+Hannah Richards: yes.
+Lewis Benson: If you click on that. It opens menu up. That's JavaScript that did that. So this content didn't exist until you clicked on them three lines, but JavaScript make it exist basically. It also said, fade to background on the content behind it.
+Hannah Richards: So Java would be clicking into links.
+Lewis Benson: No, JavaScript is making the webpage in our and Java and JavaScript are two different things. By the way, Java is a compiled application language for building.
+Hannah Richards: Okay.
+Lewis Benson: Things on Windows or Android devices. And JavaScript is used by the browser.
+Lewis Benson: And we're going to be learning JavaScript. We won't even touch Java at all their apples and oranges. They're completely different. JavaScript was originally called, and this is just a little history for you JavaScript was originally named Ecmascript. And they renamed it to JavaScript to try to get people that were Java developers to learn JavaScript.
+Hannah Richards: So, Preposterous. That's hilarious.
+Lewis Benson: But it has nothing to do with Java. It's just Yeah,…
+Hannah Richards: My goodness.
+Lewis Benson: they just renamed it to that, to try to steal people from Java. They're like, we want you to work with JavaScript not Java. So we're going to call our language JavaScript. Yeah, but it was actually called Ecmascript originally.
+Hannah Richards: A bunch of haters.
+Hannah Richards: So, to make life changes, And I hope that now. Locate and list the files that make up a website.
+03:20:00
+Hannah Richards: Yay.
+Lewis Benson: So something that might help you too,…
+Hannah Richards: Actually.
+Lewis Benson: is have you looked into Google Bard or Chat GPT or anything like that?
+Hannah Richards: Yes, I do actually use chat to BT unfamiliar with it.
+Lewis Benson: It's pretty good at explaining stuff like that. So if you're confused you can ask at this kind of questions and…
+Hannah Richards: Okay.
+Lewis Benson: it can help you get through it. I wouldn't recommend using it to generate code unless you understand…
+Hannah Richards: Yeah. Right.
+Lewis Benson: what it's generating.
+Hannah Richards: I need to definitely understand the language before I get to. Channel. Meet.
+Lewis Benson: Yeah, there's nothing wrong Also using it to help you. if you get a bug and you can't figure out what's wrong, you can just paste it and…
+Hannah Richards: Mmm.
+Lewis Benson: say what's Logan that can help you.
+Hannah Richards: Okay.
+Lewis Benson: Yeah, I'm a pretty big advocate of using AI and workflows. It's saves a lot of time.
+Hannah Richards: It definitely does.
+Lewis Benson: All Does anyone have any other questions before I head off?
+Lewis Benson: All right, so I will see everyone. Same time tomorrow. You guys have a good one.
+Lewis Benson: You're welcome.
+shaista umar: Thank you so much you as well. Have a good one.
+Lewis Benson: but,
+Meeting ended after 03:27:03 👋

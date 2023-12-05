@@ -1,0 +1,407 @@
+﻿nia-amar-wfe (2023-11-03 19:31 GMT-4) - Transcript
+Attendees
+Chantrice L, Daniel Perez, Gregory Robertson Jr, Iris Coats, Justice Miller, Krystal Jefferson, Lewis Benson, Lewis Benson's Presentation, Umar Z
+Transcript
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.
+Lewis Benson: Open up my presentation.
+Lewis Benson: Okay, so day five is Going to be kind of a build out of an application using bootstrap. This will go over everything. We've covered in bootstrap that way. We have a good understanding of how all this works and how it all comes together. We're also going to go into building with a template. That way we can customize our bootstrap a little further without having to fight all the different styles and all of the issues. We are running into with that important keyword Styles not applying properly and just kind of fighting with it. So there is a good solution for that and we're going to get into that today. To get started. I'm actually going to open up. My vs code.
+Lewis Benson: And we're going to go to the new day.
+Lewis Benson: All So this project is going to have two pages. I'm going to build out a portfolio. It's one of my favorite things to build out just because they typically are designed to show off your skills. So it's a good opportunity to just use as much functionality as you can Implement all the bells and whistles. You can so it's a great project to So this will have an index.html. I'm also going to create an html because anytime I have a portfolio. I like to have an about me page. I also like to typically have a separate page for each project. I'm showcasing. I'm not going to do that for the build out just because of the time constraints but just something to keep in mind. If you ever want to build a professional web development portfolio.
+Lewis Benson: You're going to include all of your projects within that site. So if you say build a landing page, maybe you want to build a duplicate Of the McDonald's website or any website out there. Just whatever their professional landing page looks like you can showcase those in your portfolio. And then you include a page that talks all about that project. It'll have maybe some code Snippets whatever Technologies you used in just all the basic information that they would need to know about it. So if you used bootstrap, you could talk about that. You could also talk about things something a lot of people like to see is what you learned while you were creating these projects and it doesn't matter what you're building or how long you've been doing it. You're always going to learn something when you try something new.
+Lewis Benson: So that's a really good thing to include a lot of employers. They want to see that you have a drive to learn. They don't really care about how much more as are you willing to learn the tools that they have at their company. You might get hired not using anything you've learned up to this point. You might say get hired as a Java developer a C++ developer and they'll say I see that you have a really good mindset for learning technology. So come on a board and we'll teach you how to use these Technologies while you're here. So that is something that you could run into so showing that you like to learn is a very good thing to showcase. with that out of the way, let me get the template started for index.html.
+Lewis Benson: I'm gonna put my name here. Because that's typically what I do when I build a portfolio have my name in the title. And for the second part of this I like to use this it's called a pipe operator for the second half of this. I usually put the current page. I'm on so I could also put home here. and then about page I could say
+Lewis Benson: that didn't work out. Let's try that again.
+Lewis Benson: I could say about that. So it's kind of signaling to the user which page you're on that way. All right, we need to get our bootstrap in but I'm not going to use the traditional bootstrap the way we've been doing it. I'm going to bring in a template. So let me find my browser tabs. So I do still need the JavaScript this part won't change the part that does change is the CSS. So I'm just going to drop my JavaScript in here. And then I'm going to collapse that down so it's not taking up a bunch of space. what I'm going to use is it's called boot Swatch.
+Lewis Benson: And this is a great tool for getting themes on your bootstrap. And I have a lot of different previews here that you can look through. So this is still bootstrap class names because you can see they have the styling completely different for these this one here is using more rounded edges on their buttons. They have squared ones on this one. There's just all kinds of different ones. And again, this is called boots watch.com where you get these from.
+00:05:00
+Lewis Benson: And there's quite a few on here to choose And they do have a premium tier if you wanted to sign up on them and there's a lot of different premium templates out there you can get and this isn't the only website available as well. This is just the easiest one to out of the box because you don't really have to know where to go or anything. It's all right here on their landing page. So I'm going to use this Darkly theme you can use whichever one you want for your site if you're going to be following along. And what I'm going to do is I'm going to click this Arrow. And I could use the men.css unless the machine readable one. I'm going to grab the human readable one just for this demonstration. Just so if we need to go in and look at some of the styles to see how this works. We have the ability to do that. If I were doing this for a production of website, I definitely want to use the minimized version because it performs better.
+Lewis Benson: But for development, I'm going to use the bootstrap.css instead of the bootstrop.n.css. So with that downloaded, let me open up my vs code. and I'm just going to drag and drop that right into my I need to get this. There we go.
+Lewis Benson: We'll just drag that right in there. and then I need to import that in and we can see we have a one more comment here that we normally don't see if you were to use the Code and bring this in from regular bootstrap. We can see that it says the website that it came from and it's also says it's licensed under MIT. When you see MIT license, this means that it is available for public use, it was developed for educational purposes and you can use this free and clear without having to worry about lawsuits or anything like that. And same with bootstrap. It's also licensed under MIT so you don't have to worry about copywriting or anything. Okay, so let me import this into both of these.
+Lewis Benson: And this is going to be our normal Justice style. I need our normal link. But instead of doing Styles don't CSS. I'm going to do bootstrap about CSS. And I'm also going to place this in my about page.
+Lewis Benson: And I'm going to actually work about page first. I'm just because it's going to be a little bit shorter on the content. So we have our Link in.
+Lewis Benson: yes, Omar.
+Umar Z: Peter Lewis, can you please show it again? Also your the down download it file is in bootstrap.css folder. I miss.
+Lewis Benson: So I hit this download and I downloaded bootstrap.css. And I dragged it out of here. This is in my downloads folder on my computer. If I open up my folder here, it just be this bootstrap right here on top. And then I can just drag that directly into my vs code so that it's right here. So it's a drag and drop from wherever you download it to.
+Umar Z: So when I downloaded it and I clicked on it. It asked me to and I chose open it with CSS and I think it came into my CSS and it's like a lot of words there. So
+Lewis Benson: you open the file?
+Umar Z: Yeah, I think I did something wrong. Just
+Lewis Benson: did you click on the word download or did you click on the drop menu?
+Umar Z: Yeah, I clicked on the word download I think.
+Lewis Benson: Okay, that'll download the minified version. If you look at the bottom left of my browser right now, there's this little link that pops up on that actually tells you what happens whenever you click on a link and it's showing bootstrap.n.css. It's okay. If you have the minified version you can still use that if You'll just have to link it in as bootstrap.n.css. But if I click on this what I'll need to do to bring that in here's my bootstrap.n.css inside of my downloads folder. I'm going to open up my vs. Code beside it. so I have the window on one side and my vs code on the other and then I can just drag this bootstrap into my vs code that way it's in the same folder. If where your folder is located you could also do it this way. Where you Take your downloads. and you open up your project folder
+00:10:00
+Lewis Benson: and you can drag and drop it from your downloads into your project folder this way as well. So I'm on.
+Umar Z: Let me try to drag and drop directly into the VSS Honda.
+Lewis Benson: Okay.
+Lewis Benson: And you want to make sure you drag and drop it into this Explorer. If you drag and drop it onto a tab, it'll actually just open the file up in vs code instead of importing it into your folder.
+Umar Z: So what it shows on my vs score it says the way shows in yours a hashtag bootstrap dot men dot CSS for that's what I see in my vs4 as well. So am I good?
+Lewis Benson: Yeah, you're good. Just when you import it, make sure you do the dot men since you have the menified version of it.
+Lewis Benson: Yeah, no problem. I'll leave this one as men and I'll leave the other one as the regular. I'm just to show you there's no difference. This one has the script. Let me put that in the other file as well. Because we want to make this with as much functionality as we can. We're going to go as fancy as we can for the amount of time we have. so I want to grab a nav bar. Let me open up my bootstrap docs. Once you're done in here. Once you have this downloaded you no longer need anything from this site. If you click on preview though, you can see what all of their stuff looks like. So here's the different themes using their different colors. They're primary is this bluish color secondaries this darker color. just that might be dark. They don't have the code to show you. It's just a preview of it, but you can click on this little code thing here and see it this way.
+Lewis Benson: So that's pretty cool. I can actually hit copy code up here at the top and take whichever one I want.
+Lewis Benson: But I'm just going to use the bootstrap docs as we have been doing.
+Lewis Benson: And we need a nav. And this is going to be under components.
+Lewis Benson: Now and tabs, navbar. There we go.
+Lewis Benson: Okay, I'm just gonna grab this top one. It has a lot of extra stuff in it. We can remove that. as we don't need all of it. We don't need the form. Because we're not going to be doing any searching. We don't have any capability to set up a search. unless we were to set this to work with some Google somehow which you can do that, but it's not very good. We don't need this disabled button. So remove this Li.
+Lewis Benson: We have this drop-down menu. I could include this but I could have all of my projects in here. So you could click each one that could be an option if you're interested in building this out completely so that it's usable in the future as So maybe you want As a projects drop-down menu and you just list all of your projects in here. I'm not going to use that. So that means I also don't need the drop-down i. Here's a normal nav item. I'll keep that here's a nav item. I also keep that.
+Lewis Benson: Let's see how this looks on the page. Let me go live.
+Lewis Benson: Okay, there it is. Let's make this a little bit more customized. So for the brand, I'm just going to say my portfolio.
+Lewis Benson: I'm going to change the background color on this. I'm going to use the BG dark.
+Lewis Benson: And I want to use navbar dark. This dark. Should give me a lighter text whenever I plug this in. automatically
+Lewis Benson: and I want to keep them expand LG. This will be used for if I'm less than a large screen. It'll then change this into the hamburger menu. We can see the hamburger menu is located here. That's that little three lines button that shows up on a smaller screen size. One thing to keep in mind. I mentioned this a few times is whenever you're building something always have Mobile in mind as you're building. So as I Collapse this down we want to make sure this is always going to look good on a mobile screen size mobile first is a great design philosophy. It's something that you could definitely work on doing is whenever you're building any sites at all. Make sure that your screen stick you just have your browser sitting like this. As you're building. And then you can put your vs code beside it.
+00:15:00
+Lewis Benson: And then as you're building you can watch these previews. So if I wanted to see my home change. we have A home, so we also need. contact
+Lewis Benson: and about
+Lewis Benson: We have to just keep in mind our current page and which ones active. So make sure you're not changing. The wrong links whenever we get to the other pages, so we're not currently on the home page. We're currently about page. Something I can do as well is make this contact into a modal. Or I'll create a section. That will have a contact area at the bottom of the page. That way we can use the bootstrap forms. And this will link it to there so I can do. hashtag
+Lewis Benson: contact and this is going to be an ID that I'm going to place on that bottom section for the contact. Does anyone have any questions about that?
+Lewis Benson: Yes, Omar.
+Umar Z: Yeah, if you don't mind, you please do a quick recap while I was trying to figure out my bootstraps? Yes. I mean, I think I'm kind of lost here.
+Lewis Benson: Yeah, so I just brought in a nav from the documentation. Where's my opening tag? There we go, and I changed these two properties. So I added the navbar dark and I changed the background color to BG dark. I changed my brand to my
+Umar Z: I'm sorry also, can you please tell me how you brought it from the documentation I missed that.
+Lewis Benson: yeah, so I went into the bootstrap docs and this is the navbar part of the documentation and their components and I just grabbed the very first one I seen it's this big one that has all of these different things on it. And I removed the search button this disabled button and this drop-down menu, but I did mention that if you want to keep the drop-down menu for your projects, you can do that. And then you can include all of your projects inside of this menu.
+Lewis Benson: Whenever we have the finalized one that I'll have buttons that would say to show more. So if you want to build up some pages you can place them into a modal and I'll show you the modal near the end as well if we have time to get to that. If not, here's The documentation for it. You'll have to include this little bit of JavaScript to make it work. Once you do have it work. This will pop up whenever you open it. Right. Here's a demo of it. So this is what a modal looks like.
+Lewis Benson: So if you wanted to you could have all of your information about your different sites inside of this modal. And then whenever you're done, you just close it. So in that case you wouldn't want to save changes button on it. You'd have to take that part out. But yeah so far all I did was just brought in this first nav bar. And then change the background color on it.
+Lewis Benson: Okay, so we are all caught up. I'm going to move on About Me section So I'm actually gonna put a comment in here.
+Lewis Benson: Just to keep just organized so we know what sections where. And within here I'm also going to have a main. I'm going to wrap everything into this Main. So all my sections will be in here. So I need to actually put my comment inside of domain.
+Lewis Benson: And then we'll have a section. And whenever I start a new section like this, I want to put it in a container.
+Lewis Benson: And I'm gonna give it some padding. Just so that we have. quick review on PT anyone know what PT is
+00:20:00
+Lewis Benson: and remember the PT Or class name.
+Umar Z: it's getting
+Lewis Benson: Yep, padding top. So I just added a little bit of padding to the top of my container. just so everything's not pushed up against the top of it. This is and before I was using margin top the push them apart this way, they're not pushed apart, but the content isn't pushed up. So it's the same thing but a different approach if that makes sense. We'll have a deal with a card class on it.
+Lewis Benson: and I'm going to use
+Lewis Benson: I'm going to use an ID to select this and this is going to be about card Because I want to put a little bit of custom styles on this. So I'm going to create a CSS file. You could also do this internal if you wanted to since this style. I'm adding is specific to this file, but I do want to show adding styles through CSS as well during the demo here. So I'm going to select that ID. How do I select an idea again in CSS?
+Iris Coats: dot i d name
+Lewis Benson: That would be a class.
+Umar Z: right as
+Iris Coats: Hashtag.
+Lewis Benson: Yes. Yep the hashtag.
+Iris Coats: Thank you.
+Lewis Benson: And as that's an easy one to mix up just remember ID number so it has the number symbol and then a class has class period and that uses the DOT. a little Way to little memory aid there for so I want to put a Max width on this or just a width because you remember whenever we're doing our cards. They're always taking up the full width of the screen, but we don't want to card to be taking up the full width. So I'm gonna put with And I'm going to use my rims.
+Lewis Benson: And I'm also going to put margin Auto because this is a block element. And I gave it a smaller width than the full length of the screen. Margin Auto will automatically Center this on the screen. We don't see any results yet other than we can see that there's a line there. So let's put some content in this. I keep going to the wrong page.
+Lewis Benson: inside of this card I'm going to put an image.
+Lewis Benson: and for my image, I need to get that URL for The random ones I can never remember it off the top of my head.
+Lewis Benson: Just one second life find that.
+Lewis Benson: There we go. And I actually found. A way to make this work a little better Omar ar yesterday. We were having some issues with the sizing if you do a number here. 600 by 400 you can actually hard set the pixels. So that it is exactly. The size you need it to be that way. You're not fighting with the image. This is all having different heights all having different widths. It'll come in with the right sizing this way. And I'm actually going to look into this for later lectures. There might be a way to send these images through an API so that every image you ever get from any designer. It's just automatically sized. However, you need them. And there's probably something out there for that. Yes, Omar.
+Umar Z: So by defining 600 by 400 values did that means every random image which it's gonna be 600 by 400 or it's gonna scale it down to this value. Even if it's a bigger image.
+Lewis Benson: I don't know. I have no way to test that. I assumed that it's scaling it down. And perhaps cropping it a little bit but I have no idea. I don't know enough about the unsplash API to know how that works.
+Umar Z: But that makes sense as long as 600 by 400 that's satisfies over our requirement. Okay. Thank you.
+Lewis Benson: It Yeah, no problem. Yeah, then whenever you're using your own images, that's where I was saying, there might be another website we can upload them to and then we grab them through a link like this and set our pixel sizes on it. So it automatically scales or you just use some sort of editing software to make that work for you.
+Lewis Benson: The editing software is always been my solution. I was just set my pixels before I put my images on but there are times where you need your images. to be set At a certain size. So I use this image top all this does is moves the image to the top of the card. So it's flowing around the top of the card. So we have this rounded edges at the top. but the bottom still has the square edges that way it looks like it's half of the card is the image.
+00:25:00
+Lewis Benson: So we're still inside of the card. So we need a card body. So I'm gonna create a div. Would be nice if they had semantic elements for this. Maybe one day they will.
+Lewis Benson: so our card body I'm going to put and since we don't have a heading yet. And this H1 is going to be. a project
+Lewis Benson: one second here.
+Lewis Benson: Sorry about that. I had the wrong notes open. This is actually going to be card. I need another container here for the card title.
+Lewis Benson: So actually just put that on the H1. That'll work the same so card title.
+Lewis Benson: And this is where you would put your name, so I'm going to place my name here.
+Lewis Benson: Okay, and I used an H1 just because I don't have any other headings that are above the H1. This is the most parent heading. So hopefully that makes sense.
+Lewis Benson: And then after the heading I want to put a paragraph element and if you remember from Or little typography. We went over there's this thing called card text.
+Lewis Benson: And we'll just put in here.
+Lewis Benson: I'm gonna just grab this out of my notes. I didn't write this but it sounds cool. Just a space coder trying to make it off this desolate planet.
+Lewis Benson: Okay, so that will be the card about me. There's not very much text in here not very much information. This could be like this piece right here. if you're familiar with LinkedIn your headline goes right underneath your profile name, and it usually will have something like
+Lewis Benson: you put JavaScript all stack.
+Lewis Benson: problem solving
+Lewis Benson: coding ninja is something I've seen before.
+Lewis Benson: It's usually something to grab the attention something unique. So there we have our little headline underneath of that and our card. And again, this looks good on mobile. Let me open this up and see what it looks like on a full scribe. So this is a big image. So we may want to reduce the size of that a little bit. It looks bigger than 18 REM for sure. Let me see if this actually took when I moved it over.
+Lewis Benson: About card was the ID. And do I import my Styles? I did not import my styles.
+Lewis Benson: There we go.
+Lewis Benson: So there's some clouds that are supposed to represent a person. Let's go to refresh we get a there we go.
+Lewis Benson: So that looks pretty Good enough for about page anyway so that is the con or the card where is my
+Lewis Benson: The bottom of this app. There we go.
+Lewis Benson: All So next will be I'm gonna create the form is going to be the contact me thing. And again This contact link is going to be linked to this section. So we'll say section.
+Lewis Benson: And we need to put an ID on this because we want to link. And the ID is going to be contact.
+Lewis Benson: And all this does is make it so whenever I click on contact it will scroll down to that section. I don't currently have enough content to make the scroll work. But if I add more to this card or I put something up above then that'll actually scroll me down to it. so in the section We're going to put an H2.
+00:30:00
+Lewis Benson: And let me give this a class. So we can add some content. Somebody want to tell me about 4 does.
+Lewis Benson: Yep, margin bottom. I could have put margin top on my form. But I chose to use margin bottom on the H2. Again, there's more than one way to do this stuff. One way isn't more correct than the other as long as it looks good, then it's right.
+Lewis Benson: So in my form I'm going to use a class form group and I'm creating a wrapper for this form. That way. I can put my components stacked on top of each other that way. So we'll get a little bit of review on how to do forms now. So we have label.
+Lewis Benson: I'm going to put name in here. Can anyone tell me what the four attribute does on the label? Say I want to remember?
+Lewis Benson: That was a long time ago if you don't that's perfectly fine.
+Umar Z: What attribute sorry?
+Lewis Benson: What the four attribute does on a label does anyone remember?
+Lewis Benson: Yeah, that's perfectly fine. So whenever you have a form. You'll have an ID on it. And this is saying this label is for this ID? So now this label is not wired up to this element. So if I click on the word name. It actually focuses the form itself. So I don't have to click on the form. I can click on the label. They're wired together. It also allows screen readers to find the form without having to just say text name. And put text, whatever it is because you might not be in the correct order. Sometimes you'll place these for layout purposes in one way you want to make sure that they're wired up though correctly. So using the four attribute works. You can also Nest the label around the input like that.
+Lewis Benson: And that'll give you the same results as Is having your input inside of it. I like the look of it better. With having them on separate lines.
+Lewis Benson: And if the functionality is the same, so it doesn't matter. I just think it's cleaner to have them both on one line rather than nesting them inside each other. But whatever your preferences do that.
+Lewis Benson: Okay, so we have our
+Lewis Benson: name so you would type in your name. So we'll create another form group.
+Lewis Benson: And place each of these inside of a div. If we have a name then we also need an email and then we want to put in a message. That message will be a text area. Okay, so a div. I'll just duplicate this. And then we'll change name to email. We'll change the 4 and ID email synthetical e and the type will be email.
+Lewis Benson: So that we get that nice. Look on there using that. And I'm going to keep using these classes called form control. Let me show that real quick in case you're not familiar with it.
+Lewis Benson: We'll just do a quick search for it. So I don't want to dig through the sidebar.
+Lewis Benson: So here's the form control class.
+Lewis Benson: Form text should be explicitly associated with the form control.
+Lewis Benson: For controls are styled with a mix of SAS and CSS variables allowing them to adapt color and modes and support for any customization method. So whenever you have a input just make sure you just throw the form control class on it. It just kind of makes everything work the Styles it the way it's supposed to and it makes your Aria associate with that.
+Lewis Benson: Okay, so let's go back to the code.
+00:35:00
+Lewis Benson: And we can see that's going quite a ways across the screen. We'll have to adjust that.
+Lewis Benson: So we have our email and then the last thing we want to put is an actual message. So for the message, I'll do the same thing. I just did and I'll duplicate my form group. And instead of email. This will be a message.
+Lewis Benson: the ID will be message. and the type this actually isn't going to be an input. This is going to be a text area.
+Lewis Benson: and the text area is not a self closer. So I'm going to remove that and put it back in. So we get our closing element here. I'm not going to put any content inside of it because it'll actually print that out and I can see I have some stuff in here already.
+Lewis Benson: It's interesting Let me refresh we go. That's because I don't have my closing tag in there. So I just threw the rest of my page in there. Type we don't need to type on it.
+Lewis Benson: We have to correct ID one thing you can add on this is something an attribute called Rose. And you can tell it how many rows that you want to be. This is basically the way you can size it. So we can make it a little bit smaller that way.
+Lewis Benson: And then you can also put a placeholder on this. If you want you don't have to. And you would just have your message.
+Lewis Benson: I'm not sure what happened there.
+Lewis Benson: I got a refresh.
+Lewis Benson: I placeholder seems to be broken.
+Lewis Benson: I spell it wrong.
+Lewis Benson: No typically gives you some great out text. Let me put it on the input. Yeah, so it should look like that but inside of my text area, I'm not sure what's going on with that. I'll leave it there. I'll come back to it and see if I can figure it out probably missing a quote or something here or something to type. placeholder, I'll see a typo so I'll just come back to that in a minute.
+Lewis Benson: You see it Omar.
+Umar Z: Yeah, I think various online 70 72 where it says rows after three. I think the core is missing. ever
+Lewis Benson: That's it. Thank you. So we got our little gray text there. Cool, we have our closing div.
+Lewis Benson: And there's one more thing. We need to put in. Does anyone know what it is?
+Lewis Benson: one more piece to a forum that every form should have a submit button So this will get a class of BTN. This is our painted primer to call it. It just kind of gives it the shape of a button. I want to write towards submit here so we can see it happening live.
+Lewis Benson: if I highlight that I can't get the borders show up, but it's there. And then we can do and now you can see primary color from when we were using the new theme that's no longer that blue from bootstrap. It's a different color now. So our theme is working. And there's our contact area. This goes way too wide we can fix that by setting either a grid row on this. or using the w on the form I'll just use the w. And tell it to do. 25 That doesn't look good on mobile though. So we'll go 50.
+Lewis Benson: I'll do 25. But I'll also set this for MD.
+Lewis Benson: Maybe LG. I got this backwards again.
+Lewis Benson: I do this every time 25. and then w m d -
+00:40:00
+Lewis Benson: 100 there we go.
+Lewis Benson: Short I did wrong here.
+Lewis Benson: I have to look at the docs. I keep getting confused. I apologize about that. Where's my with that?
+Lewis Benson: So the issue is my breakpoints. I'll have to search for breakpoints.
+Lewis Benson: Should be under layout.
+Lewis Benson: Let's see if I have it set to medium. That would be greater equal to.
+Lewis Benson: Large would be these are all greater equal to where's the percentage is that I had a nice table I found before. Here's the actual code. so max width
+Lewis Benson: I have this as WSM. When I get to a small screen size.
+Lewis Benson: I'm just going to have to come back to this at the end. I have more time to mess with it. I'll have it at 50% for now. And I should be able to. M Dash Auto it
+Lewis Benson: so that looks pretty decent and the contact me looks a little weird. I think I should have that centered. I believe it's called text Center. Where's that H there Justice?
+Lewis Benson: I do need to look at this breakpoints again and make sure that I can get those to work and I'm going to change this to a m y for then remember m y what that's used for.
+Lewis Benson: the up and down. So they'll be margin top and margin bottom. So that's a pretty decent looking about page. So now we can start on the home page and the homepage is selected right there. So I want to fix that real quick. So my active should be about
+Lewis Benson: and my Aria current should be when you make sure these are on the correct pages. So we're about page. Let me click on the home page now.
+Lewis Benson: And what to set up the link to that to work?
+Lewis Benson: Getting lost in my code. index.html home and our homepage is empty. So what I'm going to do is I'm going to start with the nav. I'm just going to copy my entire nav over to the home page. This will give us We'll make sure everything's looking good. Does anyone have any questions about page at all anything on there? Before we get too far ahead here.
+Lewis Benson: Maybe link that up.
+Lewis Benson: And we'll change this.
+Lewis Benson: to be on the home page And the Aria current on the home page, so everyone understand what I'm doing here with the Aria home or the Aria current and the active.
+Lewis Benson: That's another homepage is lit up. And when I click on about page is lit up. The Aria current is for your screen readers and your SEO. Okay, and then I think I'm going to do contact as a modal. it'll still scroll down. I'll come up with something for a modal. And maybe I could add a little more margin here. I'm not gonna worry about it. We're gonna move on to The home page I can find tune everything at the end if we have time. so index.html we're going to start off with a introduction section So this will have a main. And then we'll have a section.
+00:45:00
+Lewis Benson: And I want this section to have an ID. about and a class of container and I'm also just going to throw some margin top on it. So we can go to the way from the navbar. We see me about page was. Kind of cramped up there.
+Lewis Benson: what I want to do is change this link about So it takes us down to the section instead to that other wait. No, I don't want to do that. I'm sorry.
+Lewis Benson: I was just thinking of the contact there and how that takes us down. I could come up with something to navigate about from the bottom.
+Lewis Benson: Yeah, I think I will do that whenever we get down there. I'll do that in the footer. All right, so
+Lewis Benson: For this section. I mentioned a Jumbotron before this is a deprecated thing, but I like to have on pages and I'll show you if it has one here.
+Lewis Benson: This is what they look like. It's just some big text and then some small text. It's kind of just to grab the attention. This one has what's called a call to action button on it as well. So this is what I'm going to build is something like this for the top of the page. Just something to grab the attention of the user. so Since I can't do the Jumbotron class anymore. I have to kind of do this. With the other properties, I'm going to give this a background of dark. for this it's like a card text is going to be light and freezing a dark background and I want to put a lot of padding on this you can see how much padding is around this. We want to make sure that it's very open. And then I'm gonna put round at anyone rounded three does.
+Lewis Benson: then remember that one from the borders
+Umar Z: Around the four years. It's around the Border or the corn.
+Lewis Benson: exactly So I'm adding an H1 here. Would you consider this best practice to have this H1 here?
+Lewis Benson: Anybody at all?
+Iris Coats: I won't seem like the best practice.
+Lewis Benson: What's that?
+Iris Coats: Sorry,…
+Lewis Benson: I'm sorry. I didn't hear you there.
+Iris Coats: I misunderstood never mind.
+Lewis Benson: Yeah, so I have an H1 in about page. so is it okay for me to have another H1 on my index.html
+Justice Miller: Would it be okay if they're on different pages?
+Lewis Benson: Yep, it's perfectly fine if they're on different pages. there is some people that'll tell you otherwise, but most of the developers I talked to say that as long as they're on different pages. It doesn't hurt the search engines. It'll actually indexed as Pages separately. So if anything, it's helpful more than it hurts.
+Lewis Benson: Okay, so there is a topography class. I want to show you that's called lead. This is used to just make the text pop out a little bit more. Here's how you just apply it. You just put it on your paragraph and then you can't really see a difference here because they only gave one line of text, but it just makes it stand out. It's deleting text. That makes sense. I'm going to use that for my Jumbotron which they would bring that class back. I love that class. lead a passionate
+Lewis Benson: web developer the Keen Eye for design people. Love to hear that. Even if it's not entirely true for me. I'm going to use a HTML class. This is called the horizontal rule. It's an element. And the reason I'm using this is just because it makes a horizontal line. I see a lot of people use CSS solutions for this now using sudo elements. I don't think it really matters if you use CSS or HTML for this as long as you can get the results you're looking for and I'll show you what that looks like. Justice line right here
+00:50:00
+Lewis Benson: I prefer the HTML solution rather than the Was CSS whenever you inspect it says either before or whenever you're using the pseudo elements.
+Lewis Benson: And then we need some text in here. I specialize and creating beautiful. and functional websites using modern web Technologies
+Lewis Benson: So you can see this lead text now is slightly larger than this text here. And this is basically what the Jumbotron was. It's just a way to have something pop out on the page. I said John Doe I should just put my name in here. since I did that on the other page
+Lewis Benson: So this is the completed about section. You could always add more content in here. If you feel that that would be useful for you. If you want to go into more depth and bring this text down a little further. I wouldn't probably put more than 500 to 1,000 words and something like this though. You don't want to bore somebody with text. the main goal is to get them to see your projects and show them what you can do. Let me put a comment up here. Just so we are tracking what this is. I'm true reduction. section and I'll have another comment for our skills. section
+Lewis Benson: We want to keep things modular. We want to make sure that everything is easily readable and navigatable we can see this section here is sectioned off really well. So it's really easy to find it. If you're looking to add more to it or nav is pretty easy to find I can add some space in here. Just so it's got that. To make it more readable. You don't have to add the extra space if you don't like extra space.
+Lewis Benson: So now we're gonna do another section. And it's going to have the ID skills. I'm using a hashtag for the shortcut. And I'm also going to put the period and we're gonna make this a container.
+Lewis Benson: I'll also put what was it I used yeah, my five.
+Lewis Benson: So I gave us both classes at the same time. You can change them together like that. What heading should I use for my skills?
+Lewis Benson: Which heading element?
+Lewis Benson: Does anyone remember the next heading?
+Lewis Benson: So I want to put an H2 and next because I already have an H1.
+Lewis Benson: And then this H2.
+Lewis Benson: I'm just going to give it some margin bottom.
+Lewis Benson: So that I can push the rest of the content away from the skills heading.
+Lewis Benson: And I'm starting my grid system here. So if I wanted to have three items in my skills, what should I do for my columns?
+Lewis Benson: I'll do MD as well. What number should I place if I want to have three columns? Yep and again, that's because there are 12 total columns available in a container. So four times three will give me 12 of The Columns of space used up. So this is going to be a card and what I'm going to do is I'm just going to display a card that has the skill that I want to demonstrate so using this cards are really powerful for this. We put This wraps the entire card. And then we're going to put a card body next.
+Lewis Benson: And then what goes next does anyone know? They don't remember from our products pages.
+Lewis Benson: It'd be the card title.
+00:55:00
+Lewis Benson: and then inside the card titles where I can put my H3
+Lewis Benson: And I'm actually going to give this a class. of card title And remove the div card title. That way we're the same as our card about page. So this would be card title.
+Lewis Benson: And one of the skills we can say is development
+Lewis Benson: development
+Lewis Benson: and add extra letters to that.
+Lewis Benson: And what are some front end development skills? We can say HTML CSS JavaScript and bootstrap. And this is card text since this is a paragraph element. So I'll do HTML CSS. JavaScript
+Lewis Benson: and boot strap
+Lewis Benson: and we can see that card over here now and it does look similar to the Jumbotron I might subdue the text as I like that. Text light I'm going to put that on there.
+Lewis Benson: It's not.
+Lewis Benson: It's not inheriting it. Let me bring it down lower.
+Lewis Benson: There we go. Sometimes whenever you're trying to apply certain things like font colors and stuff. They don't inherit. So you want to make sure that those are getting down there as far as they need to go.
+Lewis Benson: Okay, so don't look quite right with that padding. I think I'll put P5 on the card.
+Lewis Benson: part 3 that looks better.
+Lewis Benson: Then you have any questions about that.
+Lewis Benson: Okay, so the next two skills, they're going to be the exact same way. so this is the heading for the skill. So this is the actual card directly under it.
+Lewis Benson: Or it would be the column on the row. There we go. So this div is closed here. So we'll separate that out. And then I'm going to put a comment here and say hard top and if I want I can also do that at the bottom and say card.
+Lewis Benson: bottom that way whenever we're looking at our code we can easily find these and then you could also place a row here a comment here saying
+Lewis Benson: layout the card side by side that way you can easily find that. And then we just grab our card top on our card bottom. And drop it into more times. And there's our three cards and I'm going to change some of the content for this just so it's not. We're also going to do back-end development. And that's coming up soon. So it might as well put it in here so for back-end development, I'll do node.js. No, JS is Javascript. It's just interpreted differently. And that'll make more sense. Once we actually start using it. Basically JavaScript is read by the browser by default node.js is not so that's the only difference. because it's backend, we don't really need it to be read by a browser. We need to be read by. our computer
+Lewis Benson: UI slash ux design. So anyone at UI ux design us. So everyone heard that term before?
+Lewis Benson: So UI stands for user interface. And ux is the user experience probably should be UE, but they use Put Adobe XD is awesome.
+Lewis Benson: So these are all different sizes. We can adjust The padding on this heading let me see what happens when I Collapse it down.
+Lewis Benson: So that looks really good on mobile. We start getting a little bit larger and we start getting into this weird stuff here. So we could also set the row height.
+01:00:00
+Lewis Benson: And then tell these cards to be a hundred percent of their height.
+Lewis Benson: So if I use I can put an ID on this.
+Lewis Benson: I have an ID up here that I can use. since this is a child we can do this. We'll go into styles. And we'll grab. skills with a direct child of
+Lewis Benson: give that has a class. of row
+Lewis Benson: This is the attribute selector. so I can say if the element has a class of row then it will actually select that and you can see the selector above in the little snippet here. It's saying whatever element this is with an ID of skills. That has a direct child of div that has a class of row. This is what we're selecting and we got some really good specificity there. So this is a more advanced selector. If you want to use that little game of the CSS Diner game, it actually goes into this selector as well near the end. So it's pretty handy as you can see here. I'm using it. I could also use first child select the first div. This will work. So we want to give this a height. Of I'm gonna go with 300 pixels. Just picking a random number.
+Lewis Benson: and then we want to put let's make sure it actually worked first.
+Lewis Benson: I'm gonna place this on the bottom now.
+Lewis Benson: Okay, let's select one.
+Lewis Benson: skills
+Lewis Benson: row
+Lewis Benson: I don't see that height being applied. So maybe I didn't get it. We give it a background color and make sure my selectors working.
+Lewis Benson: So I don't see it applying. So it probably isn't selected properly. So, let's see what I did wrong here.
+Lewis Benson: And this is good whenever this type of thing happens, especially in lecture because you get to see a lot of these things will run into and how to solve them. One thing I can do is right click on this and go to Copy selector and we can see if we can get the selector this way. We'll go to CSS. And paste it in. So it's saying grab the direct child of div. Let's take a look at our code. And see if that would be feasible.
+Lewis Benson: Maybe the attribute selectors just off a little bit So there's one child it only has one child of div, so that would work. Just to be certain. I'm also going to give it another class.
+Lewis Benson: And we can call row height
+Lewis Benson: and then we can reuse this later if we need it. So if we have more cards and we want to give them a row height we'll have this available.
+Lewis Benson: And we can do that.
+Lewis Benson: I still don't see that being applied. Let's double check that. It's
+Lewis Benson: I bet you I forgot to let me undo.
+Lewis Benson: I bet you I forgot to import. I did.
+Lewis Benson: This is the worst type of bug to ever get. You could spend so much time trying to figure this out.
+Lewis Benson: I literally can't spell Styles. There we go.
+Lewis Benson: All right. Let's see if it's working now.
+Lewis Benson: I'm gonna change the height to 180 I think I'm just looking at this style here. It looks like it's gonna be a lot closer, but it still doesn't look like I have my et stylecss and if I just remove this Okay, it's working. so it doesn't like my attribute selector
+01:05:00
+Lewis Benson: and it might be because I added an extra.
+Lewis Benson: It's one of you that just does work. I think it's because I added an extra class to it now.
+Lewis Benson: It's in the index.
+Lewis Benson: Here we go. So we're back to the original. I have my div with my attribute selector of row. We have our background color showing through there. So we know that's working.
+Lewis Benson: That's 300 pixels again. I said 180 I think would look better.
+Lewis Benson: So there's 180 and then on my cards. I want to place. the height to 100% so H 100.
+Lewis Benson: Let's open that would stretch that.
+Lewis Benson: I might have to give it more padding to make this work. We can do py. 3
+Lewis Benson: this height should work.
+Lewis Benson: I might have to do it manually.
+Lewis Benson: so this one was probably stretching. But this container here for some reason didn't want to just inherit the size. So I had to add that extra piece in there. So I should be able to go back and do the h100 a little bit more debugging for you. Hopefully that made sense how I solved that.
+Lewis Benson: Yep, that works. So I had to put the h100 on both of these just because for some reason this one didn't inherit the height from this one. So I'm looking at the row. This is the parent that I want to adjust my height to I told this one to be a hundred percent of that it probably did but my card itself. This is what actually has the Border in the background color and all that. Didn't stretch it to a hundred percent as well. For some reason. It's just like I'm just gonna be as big as I need to be. But that's solved now. So I'll just grab these two. And I can just paste them down below.
+Lewis Benson: And paste them down below. And then I can Center all the text on that. Since we are in Flex containers I can use.
+Lewis Benson: align items Center I might have to do deflex.
+Lewis Benson: And with deflex I would need.
+Lewis Benson: This to be on the parent container actually.
+Lewis Benson: And then align self Center.
+Lewis Benson: that ain't gonna work because There's another container here. So the deflex needs to move back down. apologize. I didn't see that.
+Lewis Benson: Whenever you're using flexbox the items you're trying to manipulate need to be. within the parent of what you're working on so I still put that wrong spot. Deflex goes here, because I'm kind of move the H3 and the P tag. so d class is B Flex.
+Lewis Benson: There we go. Now it's working. I also need to set this to be a column so it'd be deflects same remember how to do a column with the bootstrap Flex
+Lewis Benson: Kind of like this on this.
+Lewis Benson: Leave it some utilities. Did anyone remember it?
+01:10:00
+Lewis Benson: So here's setting Flex. And then we have Flex column.
+Lewis Benson: Flex column And everything's back on top of each other now, we can do justify content.
+Lewis Benson: Why is it justify content instead of align content now?
+Daniel Perez: because the flex column
+Lewis Benson: exactly justify content Center
+Lewis Benson: I might have to put an h100 on this as well. There we go.
+Lewis Benson: And then I can do that to the rest of those as well.
+Lewis Benson: Can actually just grab this entire class.
+Lewis Benson: And put it right on this div.
+Lewis Benson: And then I'm going to remove that blue background. We no longer need that. And that doesn't look too bad right there. Does anyone have any questions to how we got to this point?
+Lewis Benson: All right, so we're about 15 minutes past our hour mark. I want to take our 10 minute break. When we get back from the break. I'm going to laying out the form. I can finish this now. I want to give more time today for the workshop. So we'll just have one break today instead of two. And then we'll go right into Workshop after I finish laying out the rest of this here. just bear with me here for Maybe 10 more minutes. If that's okay with everybody.
+Lewis Benson: like I said, we'll do the break now and then we'll just lay out the rest and we'll go right into Workshop if that makes sense. So is everyone okay with that?
+Lewis Benson: already Cool, so, let me start with 10 minute timer. And I will see everyone in 10 minutes.
+Lewis Benson: Yes Gregory.
+Gregory Robertson Jr: I can't even in this code. S I think
+Lewis Benson: Absolutely. I leave that on the index code for you.
+Lewis Benson: There are certain spot you want to have it on.
+Gregory Robertson Jr: scroll down a little more All right, there's good.
+Lewis Benson: already
+01:20:00
+Lewis Benson: Hey, welcome back. I'm just a reminder. If you could turn on your webcams, that would be helpful.
+Lewis Benson: For this last section. I just want to add one more section before we do the forms. I'm going to do a two column The card is going to have an image at the top. And it's going to have the project and I'll give it a button. Which will be actually an anchor tag and you can use that button to view the project details if we were to add that as a modal.
+Lewis Benson: All right, so to create our new section, we're going to follow the same. Pattern that we have been I'm going to say section. hashtag projects container dot m y Dash 5. This is what we did on every single section so far and this is going to autofill our class container and autofill our class ny5 and it's gonna automatically apply the ID projects using the Emmett shortcut. So there's the section. next we're going to start our First we need to put our heading on it. how much forgot about the heading. So we'll see where we left off. We have an H2 here. This is So our section heading as an H2, so I'm going to continue using H2S for the section headings as long as I don't.
+Lewis Benson: Go back to H1 or I don't try to put an H2 underneath of an H3. That would mean. I have an H3 here. I can't put an H2 right underneath of it that doesn't make sense. But if I'm not nested inside of the same container, I can bring the H2 back out and reuse it.
+Lewis Benson: So hopefully that makes sense. Why. And I'm going to give this a class of mb-4 like we've been doing and this is going to say projects.
+01:25:00
+Lewis Benson: Okay, so we're going to start right away with the row. This is going to work the same as the row above the only thing is my selector is actually going to grab this row. Because when I do div row. That's the same selector section.
+Lewis Benson: With a class of row, so I'll actually have to amend my selector above for that and that would have been a bug that would have been difficult to track down because I'm selecting div as above you can see that has the same name when I highlight and go up to it. So what I'm going to do here is just give this an ID. and this is going to be skills Road
+Lewis Benson: I'm actually going to use an underscore here. There's something called block ement. modules And it's also known as be em, styling or style guide and it actually should have two underscores for this. So you put your parent container in first skills, and then you put your next container in row. And then if we had something special we wanted to give this one a different background color song we put in two hyphens and we could say BG dark. And this would be the flag on that. This isn't a topic that I'm going to cover fully. I just wanted to introduce it here and show you that you might see this where you have these double underscores and this would be your block. This is your element. And then this is the flag on that element. I'm not going to go that far with it. I'll just do the skills underscore Row for the ID. Just to show you what that looks like and this is typically done in a class and I'm not an ID.
+Lewis Benson: But let me go ahead and select that.
+Lewis Benson: And that would be underscore But then I call that. I already forgot I do this all the time row. Thank you.
+Lewis Benson: I'll just put my height in there. And delete that that would have been fine because I used this ID selector. I just realized I was thinking I just selected section. this and that's why that would have been the same because I used the ID skills. My original selector was actually fine. I'll keep the new one just to show that so I didn't even have a bug that I thought I did. I overthought That'll happen. okay, so back to the two cards we have the row. So now let's start the actual columns. So I'll give it the column First Call. And I want to do since I'm only doing two columns. What number should I use for two columns?
+Lewis Benson: six, absolutely and then after I get my columns, I want to put in my card class.
+Lewis Benson: And within my card, I want to give it a card body. Before I do my cardboard, I'm gonna put my image in. Because I don't want the image to get pushed down at all by the cardbody. So put the image here and then I'll have the card body underneath of it.
+Lewis Benson: and then inside of the card body we'll have a
+Lewis Benson: Give a card title because it's next.
+Lewis Benson: And it's really good that if you practice this whenever you come up with a little layout like this to build your cards, I just practice building these out or copy and paste from the docs. Maybe create a template somewhere in your files that if you need cards, you can just copy and paste out of your own code Snippets if you just get the practice in building these over and over and over again so that you remember the order put and how many levels of nesting you need to put in. Alright, so our title and I do this every time I need to make this and actually an H. Which I use H2. So this would be an H3.
+Lewis Benson: not the NH3 and this would be project one is what I'll call it. It's a generic name. It's just symbolizes our project.
+Lewis Benson: And then my next card will have project too. So for our SRC. I'm going to use the
+Lewis Benson: the fancy little link again. It gives us a random. image we'll do 600 by 400. I have Tech here. I'm going to put business
+01:30:00
+Lewis Benson: just to see if we can get something new. and project one screenshot something like that.
+Lewis Benson: And I need some sort of text under my title. To describe it. So this would be a paragraph.
+Lewis Benson: And I'm going to give it the class card text.
+Lewis Benson: Oops, this isn't CSS. Sorry.
+Lewis Benson: Okay, and this card has supporting text below as a natural? lead and to additional content
+Lewis Benson: I'm sure why that was multiline, but there we go.
+Lewis Benson: Okay, so that's one card down. We also want to put our Lincoln actually forgot about that. It was an anchor tag. This would open a modal eventually if I get time to do that, I keep saying that but hopefully we can add a little more MTN Dash primary so notice this isn't a button. It's an anchor tag, but I gave it the class of BTN and I don't even have my sample up Here is a button that has no content. So let me put view project.
+Lewis Benson: And that looks just like a button it even has the hover effect on everything and that's because the class BTN gives it all of those button Cloud Styles and then BTM primary gives it everything else that it needs for to look like a button. So again, I mentioned this back in week one. You should only put buttons inside of forms. Otherwise use an anchor tag or use a div and style it to look like a button and it's just because buttons are associated with submissions. Anchor tags are submitted with links if that makes sense. So hopefully that's something you'll remember in the future. it's a really weird. concept to think about because this does look like a button so you would think it would be a button, but you should only put those for best practice inside of forms So this is the top of our card.
+Lewis Benson: And the bottom of the card will be at the bottom of this closing tag. So I click on the opening tag and I can see the closing tag down here.
+Lewis Benson: And I just want to section that off so that I'm very clear on where the card ends. And I'm just going to to the bottom of the card. paste a new one in and then I'm going to change this from business to Hotel I guess maybe a Villa Hotel website And this would be project two.
+Lewis Benson: and project 2 screenshot and I think that is it for this section. See what it looks like. They're currently stacked because I'm in that Let me go to a larger screen size.
+Lewis Benson: And they're still stacked. Let's see what happened here. I could try the image fluid to see if that'll fix that.
+Lewis Benson: I need to put card image top on this I had this before. This gives it that rounded look on the top. I'll do that to both of them.
+Lewis Benson: But I may have to put the fluid on this. I think they're actually getting smaller now. No, they're not. I fluid
+Lewis Benson: and let's do that to the second one.
+Lewis Benson: They're still huge. I didn't put a width on my card. Is what it is. So if I want to Max width on my card, I shouldn't actually have to because I have my lum Let me see Here's my row. My container is set.
+Lewis Benson: Let's put a container fluid on this just to see if that solves a
+Lewis Benson: With the md6, I would expect these to be side by side. We also have some weird Behavior there too that I need to solve. Where our content doesn't fit the page, so it's spilling over top of other content. That is definitely not ideal.
+01:35:00
+Lewis Benson: I might have a typo in here. Make sure this is on both images.
+Lewis Benson: refresh Okay.
+Lewis Benson: That doesn't make sense that I would have to.
+Lewis Benson: Let's be w100.
+Lewis Benson: Let me give us an inspect and see what we got.
+Lewis Benson: this section here was A plan one being one of the quicker sections. So of course it gives me issues. Every time I deal with images, they're always a pain.
+Lewis Benson: Okay, so we have our row
+Lewis Benson: and we have our two columns.
+Lewis Benson: I see the bug. Does anyone see what I did here?
+Lewis Benson: plus equals
+Lewis Benson: And then because I copied and pasted of course, it's on both cards like that.
+Lewis Benson: copying and pasting bugs. our cards are side by side. Let's shrink it down and we still have this spill over problem that is definitely an issue that we need to fix. This has to do with the content spilling out. So let me do an inspect and see what we can do to solve this. There's a flaw with our layout here. Where it's not stretching the height. So this section? We even have margin on it too, which is surprising that it spills out. So maybe this one's spilling down. Maybe that's the issue.
+Lewis Benson: Where's my section? Artists. Yeah, Let me collapse in the section here so the sections Are in the correct locations, it's the content. It's in the wrong locations.
+Lewis Benson: So it looks like the top one isn't growing with the content
+Lewis Benson: so let me look at my section. See what I can do about that height issue.
+Lewis Benson: Analysis about section. I need my skills section.
+Lewis Benson: your skills so far. I've identified the problem that everyone see how I identified. What's going on with this or does anyone have a question about what's Happening Here?
+Lewis Benson: I haven't got to the solution part yet. But what I do see is this section here if I go to the top of this. All of its content all these skills are not contained within that section. So if I look at Let me find. it's the projects here?
+Lewis Benson: Where did that go? about here's my skills. So this is my skills section. This is all the larger the It's only taking up a hundred and eighty pixels. So that's why
+Lewis Benson: So I see what's happening here. Does anyone know what I did that made this happen to anyone catch it? 180 pixel height on this skills But all the contents overflowing it right now.
+Lewis Benson: The problem is raped.
+01:40:00
+Lewis Benson: I told the skills row to no longer be any higher than 180 pixels, but my content is taller than 180 pixels. So that's something that I'll have to remove. So that it can actually push this content down. Let me see what this looks like now. We're back to this problem. I'll probably have to change the height of the cards themselves rather than the parent container. In order to solve that so I'm actually going to put that back. and I'm going to change this to Skills card, I'm going to make it a class.
+Lewis Benson: And then I'll put that class on. each of those cards
+Lewis Benson: this might look still a little bit weird on smaller screen sizes. I'm in the wrong. Section here, I think.
+Lewis Benson: Here we go skills. I'll remove this ID. We no longer need it. Here's my card.
+Lewis Benson: And we are going to have taller cards. That should be fine.
+Lewis Benson: top of the card skills card Off of the card.
+Lewis Benson: scales card
+Lewis Benson: and I remember this h100 I think that's affecting it.
+Lewis Benson: Because that would have the tag on it There we go. And now let's see what this looks like on mobile.
+Lewis Benson: So I think that's okay. You could always put Dynamic content in here, too. If you needed to or you could even change the width on smaller screen sizes. using your bootstrap utility We currently are column md4. So if I were to say Where's my? be this one here. I think I could do something like w. MD 25
+Lewis Benson: I think I just did it backwards again.
+Lewis Benson: But yeah, there would have to be a way to adjust the width on these in order to make that work out for My preferred solution would just be using a media query and say if I'm less than this pixel size then set my width to whatever pixel sizes but if you're comfortable with the bootstrap grid system and the breakpoints it is very powerful. It has a lot of stuff already built in These cards here kind of close together. So if we wanted to we could also add some. i m y on those I'll do 5
+Lewis Benson: top of card and that's hot. How does anyone have any questions?
+Lewis Benson: I didn't even push them apart.
+Lewis Benson: I don't want to take up too much more time with this but For what it is. It doesn't look bad for a quick layout. One thing I am going to do. I did I did put in the wrong spot. Let me undo that one thing. I do want to add real quick is the contact information just because we about page. We should have it on this one as well. So all we have to do is highlight it and copy and paste it. Because it'll be the exact same.
+Lewis Benson: And there's our contact. you just put in your name what will happen if you actually put a message in here and send it. Is it just going to refresh the page?
+Lewis Benson: It won't actually send it anywhere. If we were to deploy there are some places we can deploy this web page too. That would actually handle this and send emails out. You could actually set it up to email Very easily it's just one attribute on your HTML. And then when you use your GitHub to deploy it and it's just all wired up. You don't have to know back-end code. It'll just do it. So it's pretty cool. We'll get into that. I'm not sure exactly when I think we five. Is when we start on deployment, so we'll get into that as any questions about this layout I need to fix that car. That's gonna bug me.
+01:45:00
+Lewis Benson: my skills so today's assignment is to build basically a page like this. You're just gonna go through it doesn't have to be a portfolio. If you don't want to do a portfolio, but you just need to practice building actual sites. so here we have a contact page. We have a home page. We have all these different cards. We have a layout going on and everything looks fairly decent other than this one part here that I can't seem to find right now.
+Lewis Benson: It's in there somewhere. I worry about it once we get started with the actual assignment. But yeah, that's today's assignment. Let me bring up the actual rubric and all that so I can just kind of read that too that we have our For more reading of the assignment. There's no confusion on this. day, five week three instructions
+Lewis Benson: All right, so we'll be bringing up. Ensure you have the documentation open when you're working on this. You could build it says could so you don't have to use an expanded portfolio or you could do something that you enjoy Review a site of products. It's up to Try to use as much bootstrap components and utilities as you can. And we introduced some I didn't get into the modal. But if you want to work on that one. Go ahead and Implement that. And then the other ones that use external Javascript there was the bat or what was it the tool tip and the pop-up or pop over whatever it's called. You can Implement them if you want, but they're not required.
+Lewis Benson: Of mixing as many of the HTML elements you can maybe throw a table in there if you want to do your skills in a table and be kind of a unique way to do that. And you'll have your Styles dot CSS. You might need that as you seen I had to modify a width on some things. You could also do it in line if you prefer just as long as you have. What does say to it you need that there? So make sure you just include an empty file if you don't Use your boot Swatch and bootstrap select. I haven't shown this one. I've actually not even explored this one. I'll just open it up real quick. bootstrap select we can't use this one. unfortunately So just boot Swatch.
+Lewis Benson: when we get into node, you'll be able to use this then this is one bootstrap selectors made for a JavaScript framework. So we can't use job bootstrap select unfortunately, but we do have boot Swatch and try to utilize the extension. And customize your site with that. So what I mean is use whatever theme you want to use you don't have to use the same one I did. Not pick whatever looks good to you and maybe you want to continue using this. You can try this more fun out or quartz is pretty neat. Here's a hand drawn one. This could be a really cool looking one when you're doing some sort of design layout. So there's that to keep in mind. and then we'll just get into the
+Lewis Benson: rubric quickly and basically just use as many of the components as you can the same as yesterday. This is actually almost exactly the same as yesterday's. And then site is populated with content either manually created from information or images local site of URLs or site content as appropriate for the outline of the assignment. And that's it so you can get started on that. I do want to show one more thing. It's kind of on the side where you're working. It's something that could be helpful to some of you. It's on W3 schools also has a really lot of good study guides here. So if you ever want to come back and brush up on your HTML. you could actually hit this learn HTML.
+Lewis Benson: And then there's a quiz on here. Where's it at start the exercise? And you can do these little quizzes. So they have these attributes. So if you wanted to add a tool tip, then you'd have to add the title attribute. And then hit submit. So here's something interesting. You can use to study up on this stuff. I do come back here occasionally myself just to brush up on a lot of these different skills. They have CSS JavaScript python. We're not going to do python in this course, but if you want to mess with that go for it SQL we will be doing later. So there's a lot of good stuff here, but they have this bootstrap here. So if you click on Learn bootstrap 5 they actually have templates in here. that you can use I see if I can find them. I believe they're on the left here.
+01:50:00
+Lewis Benson: bs5 basic template
+Lewis Benson: and what this has is basically a pre-built page that you can use in populate with your own content. So if this is interesting to you, this isn't the only one to have you either they have a lot of templates on here. I'm just not 100% sure where they're all at. This is just one of them right now. But here is one you can grab. If we hit try it yourself, here's all the code for it.
+Lewis Benson: And it has a navbar this is something I haven't introduced but you have this very up here. It's kind of like a hero now very lots of different links So if this is interesting to you, at it again. I do have other ones on here. Just can't remember where there are.
+Lewis Benson: Do as much code on your own as you can though, too at the same time. They have a lot of the documentation listed here, but they don't have everything. I have looked on here before. They also have a list if you forget what a class. Does you can search for them on here. I believe it's just called all classes.
+Lewis Benson: We go back a page. We'll
+Lewis Benson: this is for learning.
+Lewis Benson: Maybe if I just search for it.
+Lewis Benson: You might actually be under four.
+Lewis Benson: Here we go. This is the list of all the classes I was talking about.
+Lewis Benson: And let's see the bs4 templates. So this is the older version of bootstrap. You can still use this if you download the bootstrap file for the older version not all the classes are the same. I know that they somewhere on this page is a list of templates. you have to dig around in here to find it. It's a good resource. So if anyone's interested in that. I don't want to hold you up on your assignment. So make sure everyone's working on that. If you finished today's assignment, then make sure you are catching up on some of the previous assignments if you haven't done those yet. Also, don't forget about the vs code and chrome devtools assignments that were our pre-work. Those should be completed prior to finishing front end level one. So if you haven't done those yet grab them screenshots and plug those in there, too.
+Lewis Benson: I believe there was still a couple that donated to get those in. Is anyone have any questions anyone having any issues with their bootstrap? Need any help with any other components or anything?
+Lewis Benson: Okay, I'm going to stop recording now.
+Meeting ended after 01:54:10 👋

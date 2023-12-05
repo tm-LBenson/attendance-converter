@@ -1,0 +1,527 @@
+﻿nia-amar-wfe (2023-10-20 19:32 GMT-4) - Transcript
+Attendees
+• M a t c h a M o c h i i •, Chantrice L, Daniel Perez, Dianca Griffin, Elgin Sharper, Iris Coats, Justice Miller, Krystal Jefferson, Lewis Benson, Lewis Benson's Presentation, Ryan Arnold, shaista umar, TRACY JOINER, Umar Z
+Transcript
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.
+Lewis Benson: Okay, so welcome to day five. This will be the final of HTML day. We're not going to stop using HTML, It's just the final day of diving, only into HTML. We're going to start expanding into other topics from here.
+Lewis Benson: So this one is going to be covering. A few new. Elements. Today we're going to be going over. The figure fig caption detail summary. We did talk on the time, element a little bit. I'll touch on that one more time today. And we're also going to go into the forms in the second hour. We'll discuss how to use HTML forms. Those are used for
+Lewis Benson: user input and being able to submit things.
+Lewis Benson: Let me get the presentation going.
+Lewis Benson: so, I'm going to create a new folder again today.
+Lewis Benson: And open vs code.
+Lewis Benson: Print Folder.
+Lewis Benson: Okay, so I got the folder open just quick review. What do I name my HTML file?
+Daniel Perez: Index.
+Lewis Benson: Index. And why do I name it index?
+Daniel Perez: because the first one,
+Lewis Benson: It is the first one. What if I named it? Something different?
+Ryan Arnold: That can be really confusing later on.
+Lewis Benson: It could also the browser won't see it whenever I go live. I'll have to actually Go to the URL that has that file.
+Lewis Benson: And I miss the
+Lewis Benson: autocomplete there. So before we start diving into these new elements, I would like to open up the floor for any questions or any lingering. Doubts about Is there anything that anyone's maybe confused about?
+Iris Coats: I'm not really that confused. I get my work done and then I go back in and review it and kind of Touch it up and make it a little prettier. I just want to have all the basics in there first, so I don't side track myself.
+Lewis Benson: And that's a good approach. Absolutely. I'm sticking with the fundamentals is definitely going to be a way to be successful. Krystal, you had a hand up.
+Krystal Jefferson: I did have one. Question when you're creating a paragraph?
+Krystal Jefferson: It kind of runs across the page. I'm trying to see.
+Krystal Jefferson: I think I kind of got hung up on the margins when we were discussing that.
+Lewis Benson: So when you say run across the page, do you mean on the live server or…
+Krystal Jefferson: Yes. Yeah.
+Lewis Benson: in your VS code on the live server? So you don't want it to go as far as what you're saying. I can show you a trick for that real quick. So, if I make a paragraph element, And I'm going to do lorem.
+Lewis Benson: Times, we'll do times eight. So that's a lot of different text in there. I did format. So it's not that long inside of here. Let's see what that looks like on live.
+Lewis Benson: So we see this goes the whole way across the browser, space on the right, I got no empty space on the left and that might be a little tedious to read as well. Especially if this was an article and you're trying to read it, you wouldn't want to look like that. and what you could do then is add a style to this the style attribute And you could say, width. And you could set a maximum width on this. You could do Max, width. Let me use that property instead Max idth. And we'll give it a max width of 700 pixels. And let's see what we're kind of result we get on that. So that's a little bit nicer is this kind of what you were looking for this kind of solution?
+00:05:00
+Krystal Jefferson: Yes.
+Lewis Benson: Yeah, so a max width or just a width and if I change this to just width, you won't see any difference. But what the max width does. Is I'll show you the difference here if I keep it on width. And I inspect my tools, And I open up this mobile view here. This is right next to the or. It's in between selector and elements, I'm going to click on that. And this allows me to change my screen sizes. Now, So, I'm going to grab this little bar here. I'm going to drag this in. And you can see that. It's shrinking. My font size.
+Lewis Benson: And at some point it gets to a point where I have to scroll left and right now. I know it's really hard to see right there. But I set the width and it doesn't change.
+Krystal Jefferson: Okay.
+Lewis Benson: So, if I set this to Max width,
+Lewis Benson: and I shrink this down, you can see that. It's actually shrinking the text down now. For whatever device size I'm on. So, that's the difference between max width and width. This is more of a responsive or fluid. But if you didn't want, you were text to do this behavior, maybe this is in an image, and you want all the text on one line, and you'd rather score left and right, then. In that case, you're gonna want to set a hard width on that. If you don't want the hard wit, then you want to be more dynamic, then you can use Max width to solve that
+Krystal Jefferson: 
+Lewis Benson: Does anyone else have any questions about anything like that?
+Lewis Benson: Okay, so I'll remove this paragraph element.
+Lewis Benson: Okay, so I'm going to start on. We'll use the figure ement This would be the next element we learn. So let me get Correct Browser. Tab open This is from yesterday. We can continue to use this page, but I'm going to hit MBN from here.
+Lewis Benson: so, from Ndm, We're going to look at figure.
+Lewis Benson: So here's a nice little sample of what this could look like. Let's see, what kind of CSS they added to that. So they do have a little bit of styling going on here. But what the figure does is it gives you an element to put a little bit of text with the picture so that you can have this little cap at the top wherever you want to put Depending how you style it.
+Lewis Benson: So I'm going to go ahead and put this in.
+Lewis Benson: And we'll put it right here in the body right in the middle. And it has a figure. It has an image and I click somewhere. And it had a fig caption. This was the element that goes with the figure and this is where you put that text. So I'm going to reference that documentation again. And let's take a look at this. So notice they don't have a paragraph element inside of the fig caption, they just type directly in it. So we'll follow that. And I'm actually gonna steal their image as well since it's right here. Just hit copy image address.
+Lewis Benson: And I'm going to paste that into the Src. And we'll give that an ALT text.
+Lewis Benson: Can someone tell me what the alt text is used for?
+Ryan Arnold: For, if the
+Iris Coats: Alternative.
+Lewis Benson: A screen readers is a big part of it. whenever they Screen Reader sees the image,…
+Ryan Arnold: for if
+Lewis Benson: It'll read the Alt text. What else could they be used for though?
+Ryan Arnold: For if the image doesn't load properly, it gives a description of what the image is.
+Lewis Benson: So, let's I still alive, I am.
+Lewis Benson: Let's go to our localhost. Oops. 5500. Local host is the same as the 127.0. 0.1. This is kind of like a placeholder for that. So, have we have our image. And I'm going to break the image just to show that just remove the E from examples here. That's no longer a valid link. And we can see the ALT text right there next to that little broken image symbol. I'll zoom in on that. And it's got the same text just because I have the same text as my fig caption so you can see. This is an elephant at night. And as I highlighted highlights, the matching text. So that's why we see that twice.
+00:10:00
+Lewis Benson: Does anyone have any questions about how that worked?
+Lewis Benson: Okay, so yeah, that's pretty straightforward. And now that I have that there, I'm actually going to add another attribute to The title attribute because someone tell me what the title attributes used for.
+Lewis Benson: Does anyone remember?
+Iris Coats: Doesn't it out of title to your whatever you're doing?
+Lewis Benson: The title attribute. You might be thinking of the title element.
+Iris Coats: No. Yeah.
+Lewis Benson: So the title attribute, you can put this inside of any element. This is considered a global attribute. So, I could actually put another title on my body.
+Lewis Benson: And I'm just gonna say, welcome to my page. And let me go to my preview. And if I just leave my mouse sit here. I guess I got to be on the body.
+Lewis Benson: There's the elephant at night.
+Lewis Benson: and the other one doesn't seem to be coming up with me, inspect turn off that.
+Lewis Benson: So, the body's right Welcome to my page. There we go.
+Lewis Benson: And then an elephant at night. and then if I get out of there, I got
+Lewis Benson: I guess I got to be right in the right spot to get the welcome to my page. Because this is a block element and it's taking up the whole body right now.
+Lewis Benson: Let Fix that broken image.
+Lewis Benson: So there's the elephant and then over here, I should get the welcome to my page. That makes it a little easier To show that. Does anyone have any questions about that title attribute?
+Lewis Benson: And again that's a global attribute so it can be used on any elements. As opposed to. The image element has an attribute specific to the image. This is the src and all these attributes are not global. I couldn't put an ALT on my body. I can only have that on the image. So that's the difference between the global Attribute versus the non global attribute.
+Lewis Benson: Okay, so that is the figure. And the fig caption. and these could be placed within a expand this out a little bit, if I create a main I could put it inside of the main.
+Lewis Benson: format that And I can also put this inside of an article.
+Lewis Benson: so it's a little bit more semantic. And then within the article, I'll put a header at the top of the article. This is going to be an H2. And it's going to be the title of the article. In this case,
+Lewis Benson: Story about Elephants.
+Lewis Benson: And then inside of my body, I'm gonna put another H1. And this could be.
+Lewis Benson: Welcome to my blog.
+Lewis Benson: And I could wrap this in a header element as well. I'm just choosing to have it as a standalone H1.
+Lewis Benson: Yes, Elgin. You had a question.
+Elgin Sharper: Yes, when I did my title Welcome to my page. It's just showing on my page as that is not popping up with the Mouse.
+00:15:00
+Lewis Benson: Okay, did you put the title attribute inside of the body?
+Elgin Sharper: no, it's not inside about. Okay, okay.
+Lewis Benson: Yeah, In all attributes are placed inside of the opening and closing tag. And you can put this on Any element you want. I could put one on my H1.
+Elgin Sharper: I see how it changed now. Yeah.
+Lewis Benson: and then, if I hover on that, This is my H1. If I go above Somewhere. Outside of it, it's gonna be hard because it's a block element. We go over here. Welcome to my page. And we have this, welcome to my page here as well because this is inside of the body. but it's not inside of The fig caption, These are block elements. So if I bring up my little Selector Tool Here. I can actually see the elements so you can see exactly where that 2 lives. This is where the fig caption lives. There's our article. And the h1's way up here. Can even tell me what this orange line is above my mouse right there.
+Lewis Benson: That's like a peach color, I guess.
+Iris Coats: I like the padding.
+Lewis Benson: It's not padding, but you're close.
+Lewis Benson: That would be margin up there. If we look down at the box model, we can see I have eight pixels of margin. On all sides and when I put my mouse on it, you can actually see that peach color highlight there. And this is on the body specifically, it's showing it highlight. If I click on the H1, I have 21.4 pixels of margin. and if I put my mouse on that margin, it shows where that's located at
+Lewis Benson: Someone tell me what is margin what's it used for?
+Lewis Benson: Yeah, it's a separator and what it separates specifically are ement I'm specifically sibling elements. so, if we look at this main and these are siblings so if I move this quickly, you can see how the margin is bumped right up against the main
+Lewis Benson: I don't know if that's too clear, but the main has no margin and the H1 has the margin and our bumper it up against each other. So if I were to add more margin to my H1, let me select that. We'll come down here to the box model and I can actually edit my box model and I'm going to make this 200 pixels of margin.
+Lewis Benson: And now, if I highlight that, you can see that it pushed everything down because Main is a sibling to H1. And it's bordering that so it considers that up against it and it gets pushed down by it.
+Lewis Benson: And this is interesting that you can actually come in here and see this with your Dev tools. So things are exactly lined up the way you want them to Take a look at your box model and start selecting elements and see what it looks like. For example, my main has no margin It has only content in the middle. So, if I put a little bit of margin at the top of this, we'll put 50 pixels. Now, we can see that that's showing up there now. So, because these are bordering Notice that margin is actually overlapping a little bit.
+Lewis Benson: And that's one of the behaviors of margin. I can't push on itself that pushes on the elements. Okay, so let me get back on.
+Lewis Benson: The VS code. So we have some semantic elements in here. We have an h1 at the top. We have showing the main content of the page. We have an article Within the article, we have a figure and a fig caption. So under this figure I'm actually going to create a section.
+Lewis Benson: We'll create a couple of these, just because whenever you create pages, you're probably going to have more than one section to an article. So, I'm just going to go ahead and do that ahead of time. So I'm going to keep pressing that opens up. So here, I'm going to create a paragraph. And I'm just going to put some Lauren in Warm times two format and then scroll back to the right. So now we have our paragraph inside there. And maybe we want to add a button that gives some information about this section, something like a details. so, I want to show you the details element now,
+00:20:00
+Lewis Benson: So looking at the documentation here, the detail element creates a disclosure widget. Basically, what this does is it has that little triangle. And when it's facing to the right, it's closed when it faces down, it's open. And it allows you to hide text behind a small area. So, if you don't want to have A whole lot of text showing at all times. You can hide it with a details element. You may also hear this referred to as an accordion and this doesn't behave. Exactly like an accordion though because accordions only open straight down. They don't go over and down. So this is a little bit different.
+Lewis Benson: Alright, so let's implement this. And looking at the code snippet, here we can see that it has two parts. It has the details element and it has a summary element nested within it. And then it has the text. That's actually hidden underneath the summary. So, let me go ahead and plug that in.
+Lewis Benson: They use the word detail so I'll use the word details. Maybe I'll make this something else, just a little more clear information.
+Lewis Benson: Okay, so let's see what that looks like.
+Lewis Benson: And there's has the border on it. The triangle is the main part of the functionality for this. So when I hit the triangle it opens and closes there, If I were to place this in a border, And why that style to it. That'll give it that similar look to what you've seen. So, we'll do style. I'll do this with an ID. And we'll give it an ID of
+Lewis Benson: information. And I'll come up to the top and to my head. And I'm going to use the style element.
+Lewis Benson: I'm just so we can review on what this looks like. And again the style element is in the head the header Don't confuse the head with the header, they're two separate things, whenever you have a head element on your document by default. The style on, this is set to display none. So, if you were to put any content in here, it wouldn't show up.
+Lewis Benson: We're gonna select this ID called Information. Someone, tell me how to select an ID.
+Daniel Perez: To the hashtag.
+Lewis Benson: Hashtag. #Information. I noticed I didn't put a space. It's all up against each other. And then what do I put after this to add some styles?
+Ryan Arnold: You need your brackets first.
+Lewis Benson: Yep, the brackets. that's what I was looking for and to add the properties called border and there's All these different borders, you can see here. The The. Border top left.
+Lewis Benson: Width, right and style. These can all be rolled into one property and there's actually a shortcut. So, instead of applying all of these at once, or all of these separately, we can just say border and we're going to say that it's one pixel thick, it's a solid border. And the color is going to be black. So we get to knock all those out in One property rather than doing three separate ones. So, let's take a look at that. That's going the whole way across and that's because this is a block element. if I switch that to an inline block element, And do display. Inline block.
+00:25:00
+Lewis Benson: And we'll take a look at that. And I keep losing my browser there and then that's a little bit smaller and it pops open the same. Does anyone know how we can make a little bit of space between the letters and the border?
+Lewis Benson: So, we're going to add padding. We'll just do four pixels.
+Lewis Benson: And we'll look at that. And there goes, I had to refresh it. if I click that it's a little bit more like the one we've seen on the page there. And I'm just gonna add one more little thing to this just because it's kind of cool. It's called border radius. We can give this some curved edges and we'll just say four pixels for that. And that gives it a little bit more rounded.,
+Lewis Benson: Does anyone have any questions about that? Yes, album.
+Elgin Sharper: Yes, I have a question. I want. Once I got to I started with the border and nothing started working after that. I,
+Lewis Benson: Okay, did you put the ID on the details?
+Elgin Sharper: I see the details. I did not.
+Lewis Benson: And did you select an ID called Information? Okay, so you'll need to actually add the id attribute to the details element.
+Elgin Sharper: Yes, I did that for.
+Lewis Benson: And place that ID name right there so that I can actually apply this styles.
+Lewis Benson: And did you need me to show this again? So you can reference the
+Lewis Benson: the style I put on that.
+Elgin Sharper: Yes, ID.
+Elgin Sharper: I did take information.
+Lewis Benson: So it's that little hashtag. I think it's actually called an octothorpe.
+Elgin Sharper: Yeah, I have that point. I needed the The idea at the bottom s***.
+Lewis Benson: Yeah, that goes on details. It's an attribute on details.
+Elgin Sharper: Okay.
+Elgin Sharper: Okay.
+Lewis Benson: Yep, no problem.
+Lewis Benson: So yours is now working. Cool.
+Elgin Sharper: Yes.
+Elgin Sharper: So, How do I change it? It says details on the box, but how do I change that? It doesn't say information.
+Lewis Benson: Inside of the summary element, I wrote the word information.
+Elgin Sharper: Scenar. Okay.
+Lewis Benson: All right, Cool.
+Lewis Benson: So does anyone have any questions about how this element works? what you would use it for?
+Lewis Benson: It's a pretty cool element. There's some other ones too that we'll get into especially when we start the bootstrap week. Where you could just click in the middle. And it just drops it straight down and it has a little bit cleaner. And it animates it. so there's something to look forward to.
+Lewis Benson: all right, so let me zoom out a little bit. Let's see what we're actually looking at here.
+Lewis Benson: Okay, so next one. I'm going to touch back on the nav element again.
+Lewis Benson: And someone gave me a quick refresher on the nav element.
+Krystal Jefferson: I may be saying this wrong, but it's
+Krystal Jefferson: You create links to go back and forth to different pages. I don't know if I'm saying, all right.
+Lewis Benson: Yeah, here on the right track. It's kind of in the element name. Here it's used for navigation and you definitely want to have links in it. if I'm gonna have multiple links, What element would I use to have multiple links?
+00:30:00
+Daniel Perez: You will.
+Lewis Benson: A ul. And the reason I'm using the UL instead of the OL is just because links aren't typically in any sort of specific order. So what is use it on ordered list? And then we'll put an li because when you're using an A UL, your UL has to have an LI to indicate the list item. And then within that list item, I'll place an anchor tag. And this one, I'm just going to set to Google.com for now.
+Lewis Benson: And I just wanted to go over this again, because the whole navigation thing can be confusing.
+Lewis Benson: I'll put these on one line just so I don't know if that's more clear or not but We'll try Another anchor tag. And this one can go. yes Krystal. We got a question.
+Krystal Jefferson: So you use the UL if it's multiple links.
+Lewis Benson: Anytime you have a list of anything you're going to want to use either UL or an OL.
+Krystal Jefferson: Okay.
+Lewis Benson: It could be a of links. It could be a list of pictures, it could be a list of cards. Anything that's essentially a list. So you got to kind of think of the abstract of what it list is. And decide whether or not that it makes sense to use that element. so if you had a real estate site, yes, Omar
+Umar Z: So another question which is relevant there is that if we don't have a list. So then we just put a nav and under the NAV we just use anchor tag and put the link there. That's it.
+Lewis Benson: Yeah, so if you only have one link, you could just put a nav and an anchor tag. And you don't need a NAV necessarily for every anchor tag as well. You could put an anchor tag in the middle of a paragraph. You could say that, this is my blog and I'll check out my Friends blog. And in the middle of that, you could have the friend, be a the word friend via link to their blog. And in that case, you wouldn't want to now development because now that elements are actually block elements. So they'll break that paragraph. But if you do make a navigation area side navigation, navbar at the top, anything like that. Then you're going to want to have that inside of a UL. Unless it's just a single link. Maybe you just have a single length that takes you to a signup page. And that case you wouldn't need a UL.
+Umar Z: so, a link with the anchor tag is gonna work even without the nav.
+Lewis Benson: Yes, let me show you an example be a good spot. So we have this elephant here, let me go to
+Lewis Benson: Wikipedia.
+Lewis Benson: And I'm going to search for an elephant.
+Lewis Benson: So, I'm going to take this link. And I'm going to embed it right here. So I'm gonna put an anchor tag in the middle of my fig caption. I'm going to put the word elephant right there. And then I'm going to put the link to the elephant there.
+Lewis Benson: And I know this is a little bit weird to look out because it breaks up my text, but let me show you what that looks like on the page.
+Lewis Benson: So, here is the fig caption and it says an elephant at night and the word elephant is an anchor tag. And I can click on that and it takes me to the Wikipedia page showing me what an elephant looks just more information about it.
+Lewis Benson: So, in this case, I don't need a navigation just because It's a standalone link in the middle of a paragraph and that's why they also make anchor tags inline elements so that they don't break this into multiple lines so that you can use it in a context like this. You could also say something like This is my friend's blog and you could have the word friend be a link to their page. And what I was saying a little bit ago about the lists, I was giving an example. So if you have a real estate page and that page has 30 cards, each one of those displaying a picture of a house, the price of the house and maybe a button that says View more. That would be a list even though it might not look like it.
+00:35:00
+Lewis Benson: Or if you're searching for a hotel and it has to all the different choices that you can pick from on their page. Each one of those choices will be a list item. And whether or not that is a ordered list or not would depend on what you're actually looking for. So if you're saying sort by distance and maybe in that case you want an ordered list so they put them in an order. But if you just want in general, maybe a hotel room and I have five available and they'll put them in an unordered list. So hopefully that makes sense. You got to kind of think of the abstract of what a list is.
+Lewis Benson: So with the
+Lewis Benson: Navigation here. I'm going to put another website in here. and I'll just do facebook.com and I'll make sure I put this notice that I'm inside of the anchor tag and not outside over here. If I were to write, Facebook here. It wouldn't be a link and I'll just show that real quick. See how that's not a link because it's in the wrong spot.
+Lewis Benson: And then I'll move it over here. I'm not nested inside of the anchor tag. Then we can see that. That's a link.
+Lewis Benson: Yeah, and that's a really common bug. That's why I keep showing this one because It'll happen. More than you like and that's one of the reasons too. I like to put my anchor tag on its own line like that. So it's a little bit easier to avoid that mistake. And you notice when I hit format it didn't move this one down but it didn't move this one up. So it kind of lets you pick on how you want to do it.
+Lewis Benson: And something else I can do here. Is actually put in. A logo as a list item.
+Lewis Benson: And let me go to. I keep doing that.
+Lewis Benson: In the end. They have a logo here. Let's see what this looks like. So there's an SVG does anyone know what an SVG is?
+Lewis Benson: Anyone heard it up before?
+Lewis Benson: So it stands for scalable vector graphics. And also what I'm doing right here is I'm right clicking on this element. And I'm going to copy element, and it grabs everything that's nested inside of here.
+Lewis Benson: And we can see there's a lot of numbers in here. We have these path ement The SVG element allows you to draw using math. and so actually this logo isn't an image, it's actually drawn out using Scalable in a vector, just means a line and it has all these different numbers in here that symbolize the direction, the lines going to travel and I could not translate this And I don't even know where to begin, but what I do know is it's going to use math and say, Okay, I'm gonna draw a line diagonal, It's going to be blue, it's going to be this thick. Let me zoom in on that.
+Lewis Benson: And it's gonna be this thick. It's gonna go at this angle and it's gonna stop here, and I'm gonna draw a line straight down, and it's gonna be that thick and it's gonna stop here and then that's how it draws out this logo. It actually uses all these numbers to figure out how to draw the letters and it's the same thing for these letters here. so, where that's useful is These can scale infinitely. You could zoom in on this forever and you'll never see the pixels. It'll always Draw new lines to help you with the size, you could stretch this out and put it on a billboard and it won't lose any quality. It won't lose any of its pixels or anything like that, it'll just grow the lines bigger because it has the formula over here to know how to do that. so, I copied that
+Lewis Benson: And I'm gonna drop it in here. This is gonna look really, really complicated and messy. I'm just kind of ignore all this complicated mess for now. Especially when I format it.
+Lewis Benson: Luckily, that's all one line. It's actually nice. I'm a normal thing. my word wrap will put the stuff on. one big block of text, kind of like when I do lower mepsum, but that's okay. That it's stretched. I'll just ignore that. So, I have this SVG in here, I'm gonna leave their little title. I don't think that should be there. That's the title element. So I'm going to delete that.
+00:40:00
+Lewis Benson: And let's see if this shows up.
+Lewis Benson: It's huge. And then, like I said before, notice it didn't lose any of its quality.
+Lewis Benson: But there's the logo. And I believe, I can actually change the size of this. There should be.
+Lewis Benson: An option Review box, or change this to 50. 50, I don't know. That's gonna do to it all that. Made it even bigger, but there's an example of what I was talking about where it doesn't lose its quality. It doesn't get jagged edges, you don't see each individual square as it grows.
+Lewis Benson: what I can do though, is Actually put a style on this lie. And width. 200 px. And hopefully that shrinks it down. There we go. That's more manageable.
+Lewis Benson: There is a way to edit the View box and change the size and here somewhere, but I'm not that familiar with modifying Svgs by hand. That's normally done with another type of software. And if you're using Svgs you would typically draw that and something like Adobe Illustrator. And then you would export that as an SVG file and you'll see Inside of the SVG file. This isn't something you would code out by hand. This is all machine generated. How does anyone have any questions about that?
+Lewis Benson: Okay, so we have this logo and you don't have to follow along with the SVG part. I just wanted to show you how you could lay out a So that it actually be kind of a nav bar. Instead of this vertical thing we've been seeing. Does anyone remember how to get rid of these bullet points?
+Lewis Benson: It was an HTML attribute.
+Iris Coats: There would be a Willis.
+Lewis Benson: If I use an OL, it'll give me numbers instead. I believe it was. List style.
+Lewis Benson: And based on this autocomplete, I can see That was correct. If you can't remember an attribute but that it exists What would you do then?
+Lewis Benson: that looks like Those are gone. If you can't remember one just go to the documentation. So in this case, I'll search for UL. And I'll scroll down to attributes. and we can see,
+Lewis Benson: The different attributes And then here's our list style type.
+Lewis Benson: Let's see as an example of that being used. they don't have an example being used, but you could also search just a Google search And you might even find some other solutions and it actually says right here, if not present and no CSS. That means you can use CSS to remove these. And it's also warning us that this attribute has been deprecated. That you should use the CSS list style type instead. I just put it in for the simplicity because you still see it out there. But just to get more with the correct one. I'm actually gonna put this on a CSS so we're not using deprecated stuff. So let me copy that.
+Lewis Benson: And we have our List Style. None. Let's do this style.
+Lewis Benson: So, I actually did use the CSS. I didn't even think of, to do that with the HTML attribute but I used the CSS anyway. Because I put style equals here.
+Lewis Benson: Okay, so let's take a look.
+00:45:00
+Lewis Benson: The next thing we want to do is make these horizontal. so that they're laid out and more of a navbar pattern and this is something you'll see quite a bit with the nav. I'm going to do. Display. I'm sorry, I'm gonna put an ID on this Id equals. Navigation.
+Lewis Benson: Sorry about that. All right, so we have our ID attribute on the IDs called, navigation. So I'm going to go up to my style and I'm going to select that ID. So let me make some empty space in here. I'm going to use Octothorpe. #Whatever, you call it? Navigation.
+Lewis Benson: Put in my code block early, brackets.
+Lewis Benson: Okay, so we have it I'm going to do This is my preferred way to do. Now, bars is with flexbox We could also use float, we could use just setting it to inline and then moving things apart. I find this way is the easiest He said it to display flex which it doesn't look like it applied. I must have put this in a wrong spot. I did there should actually be on the UL. Not about that. It probably did what I told it to do. But it only works when you have multiple children. Which your list multiple children has multiple allies? So move that down to the UL and I used control X to cut that and then control V to paste.
+Lewis Benson: Okay, so let's take a look at that and now they're horizontal. And you can see there's no space in between them. And that's something we can easily fix with. A property called Gap. So, I'll put Gap. And we'll do 20 pixels.
+Lewis Benson: And now they're spaced out a little bit, but you would want your logo on the left and your links on the right. And this is where the div comes in. Now, we've been using all these semantic elements the whole time. So you wouldn't have seen use too much. This is a case where div. We need a generic container to separate these two links from this logo. Let me collapse this SVG down because it's messy looking
+Lewis Benson: So, we want to separate these two links and I'm going to format these the same way, because that's Hurting my eyes a little bit. We have these two links and I keep calling these links. We want to separate these two allies from this ally. And this is where we're going to use a div. So I'm gonna put some space in between them so you can see how this works. So now I have them separated, with white space, but that doesn't actually do anything. Someone put a div here. and then I'm going to place these inside of that, div And format. So now they're in their own container. And this one is sitting by itself. Does everyone see how I did that?
+Lewis Benson: So, when I look at the page now, You're not going to see any differences yet. I guess you do because these are now on top of each other. But as far as the space goes left and right, there's no differences there yet and we'll fix this being on top of each other in just a second. But we want to do now, is we actually want to push these apart? And with flexbox, there is a property. Called justify content. And what this is, it's similar to the justify content. That you see in Microsoft Word except it has a few other things that it can do. It can take two elements and it can just put space between the space between property. So when I look at this, now we have our links on the right and our logo on the left.
+Lewis Benson: So everyone see that. But we don't have these horizontal yet. Can someone tell me how to make these horizontal?
+Umar Z: Of first thing, I want to know how did it go all the way towards right corner?
+Lewis Benson: Because I told it to put space between on this ID. So if I look at where this ID is located, it is on this ul. So when I look at the UL, Let me collapse, you elements. So we can see do you see how many children that are in the URL right now?
+Lewis Benson: So we have two children. So whenever you justify content space between it takes all of the empty space and it puts it between all of the children. So, in this case, because there was only two children, it'll push this ally all the way to the left and it pushes this div all the way to the right.
+00:50:00
+Lewis Benson: Yeah, that was a really good question. And let me show you two what happens when I move this right here. It's moving it with it.
+Lewis Benson: Yeah, so it's taking all of the available space and it's just forcing these apart. If I add a third element here, a third child, I was Another li in here. And just put the word test in the middle of it. And you can see that's in the middle now. Because what it's doing is, it's taking the space and it's putting it between this one and then it's taking the space and putting it between this one. And that's why I wrapped these inside of a container so that they would be forced to the Otherwise we'd have Google in the middle, and we'd have Facebook on the right.
+Lewis Benson: Because it's based on how many children have we only want to have two children. And this is a really good use case for a div. It's a generic container. It doesn't have any meaning other than it allows you to combine things together, put them in a box and helps you with your layout. And we'll dive a little deeper into flexbox next week too. it's a really good way to lay things out. Also, grid is another good one to have. Okay, so can someone tell me how I can make these go horizontal?
+Daniel Perez: Okay, would you put space between in the div would that work?
+Lewis Benson: Not space between, but you're on the right track. It's actually this property here, display Flex. so, what I can do, Is put a comma and just put the word div right here. And that will actually use the space between as well. Let me see what that looks like. This might not be the best approach. It gives it that 20 pixel spacing. It looks okay to me.
+Lewis Benson: so, when I put the comma Div On this navigation here. Let me actually undo that But it'll select this div element. And it will just apply all of these styles to it. So that was kind of Another thing I could do is I could select the div separately and I'm going to do this by class name just to remind you what this looks like. So I'll put a class on it, the class attribute going on to the div. And we're going to call this class. Links. Just because that kind of makes sense that name. And then does anyone remember how to select with a class?
+Lewis Benson: It's a dot. When we have a class period and you have an ID number, that's how you can. Remember the difference between the two so, we put the dot, Links. We'll put our curly, brackets. And I'm going to put display flex.
+Lewis Benson: And we'll put Gap. 20 pixels. And again, This is repeated code now because these two properties are already right here. So my first solution of using the comma was definitely the better approach. But I just wanted to break this down and show you. And also remind you how to do the class selection. And where you can use a class.
+Lewis Benson: And there it We have a little nap bar, and I'm actually just going to put it background color on that. So that it's clear what it looks like. So, if we go to navigation,
+Lewis Benson: I believe it's navigation. Give this a background color. And we'll give it a black background color of brown. Just so we can get a
+Lewis Benson: that went down here on information. I put that in the wrong spot completely. Navigation, information. Here we go.
+Lewis Benson: And then we get this extra margin in here. this is margin that I didn't put on here if I look at my box model. I can remove that but it doesn't actually remove it permanently.
+Lewis Benson: And I believe it's also on that element.
+Lewis Benson: Body.
+00:55:00
+Lewis Benson: There it is. This one also has a little bit of marching so we'd have to remove that margin there. And it looks like there's something else that has some on it. That's messing us up.
+Lewis Benson: Could be that G. But whatever it is, there's actually a solution for that and I'm going to show this real quick just because this is something that can be helpful to you. It's called a reset. And we'll get into this more. Let's see if it's actually in the end.
+Lewis Benson: It is not.
+Lewis Benson: So there's these different ones here. That can reset all of the styles on the browser and get rid of all that. And I just want to show you that this exists for now, I'm not actually going to implement it yet. We're gonna go into this next week on how to implement a reset. But now that you see it exists, if you wanted to look ahead this weekend, this is something you can read about. This is actually a blog post here, I believe. And it talks about that and how it works. And all it does is it takes all of the browsers default styles and it just resets them back to nothing. It gets rid of all that extra margin, you can see it's margin, zero boarding borders, here, it just gets rid of everything.
+Lewis Benson: So that you don't run into this type of issue here, we have empty space around your elements. It gives you a more clean format. So if you want to look at that this weekend, before we get into CSS, feel free to do that. But that's kind of outside of the scope of today's HTML. But I just want to show you that that does exist and I could help you if you're working on something like this.
+Lewis Benson: Anyone have any questions?
+Lewis Benson: All right, and before we do our 10 minute break, I just want to do a quick review. Of. The.
+Lewis Benson: Sorry, let's try and fall out there. The quick review of the time element. Let me bring that up on MDN.
+Lewis Benson: MDM. Does anyone remember the time element?
+Krystal Jefferson: I do.
+Lewis Benson: So if you're going to put a date on your page somewhere it could be the published If it's an article, it could be the Last time something was updated. Anything like that. Anytime you have a time a date stamp you should use the time element.
+Lewis Benson: That's another thing that's good for screen, readers and especially good for Search Engine Optimization. This is huge this element it's very important for that and what this does it allows search engines to actually see machine readable dates. For example, here we have Date time. Equals 2018, seven, seven. And then we can see over here. It just says July 7. It doesn't have the year, so if you didn't have this time stamp it placed inside, this attribute, a search engine wouldn't know what year that this date was referring to, and it might just skip over these results, completely and not return them to whoever is looking for your page in particular, We can also see to have the time down here.
+Lewis Benson: And it does the same thing. A search engine, might see this whole line of text where it says the concert starts at 2000 and you'll be able to enjoy the band for at least and then they have this extra bit here. That shows how long the duration is. We can see, it has Pt 2h30m and that gives them that two hour, 30 minutes thing. But a search engine might see this. All was one block of text and not actually read that deep into the text to see what it's talking about. But when you start putting actual time and using this time element in a search engine can find this information and use it more effectively than without it. does that make sense? Is there any questions about the prime element at all?
+Lewis Benson: And then here's some example of valid information you can put in here so you can do the week. Here's valid times you can put in. Local Global time. So this is one, you'll see quite a bit With JavaScript as well.
+01:00:00
+Lewis Benson: And then a duration. There, we have PT 4h said be four hours, 18 minutes, and three seconds. For a duration.
+Lewis Benson: So I think we're pretty good on that. But since we went over that the other day, as well, I'm not gonna put that into my demo. I'm just gonna start our 10 minute break and then when we get back, we'll start going into the HTML forms are very heavily used, so this is probably going to be one of the more important topics you might not use the Figure Fig caption and every project, but you'll probably use some sort of form element at some point and your project. So, I'm just gonna go ahead and start the timer.
+Lewis Benson: And I'll see you in 10 minutes.
+01:10:00
+Lewis Benson: Hey, welcome back everybody.
+Lewis Benson: That are beautiful Page.
+Lewis Benson: Create a new document for this next part, we're gonna be going into HTML forms, ar the question.
+Umar Z: Yeah, I have a quick question before we start, when you were inserting Mdn logo in it, you copied the whole code of that, which I would describes the size of the logo and also the color. But when we inserted the logo in our document, it does not reflect the color in our document.
+Lewis Benson: yeah, so something I saw when I was actually show you in a code here, something I saw word that logo. Have a collapsed here somewhere.
+Lewis Benson: It has this ID on it called, MDM Docs logo. So, I think this might be worth the actual colors are coming from is through CSS styling.
+Lewis Benson: with this id, I can inspect and try to confirm that. It's also possible that there's more than one piece to this.
+Lewis Benson: this one here.
+Lewis Benson: So yeah, you can see the CSS here? If I uncheck that, they're using CSS to give it to color.
+Umar Z: For my understanding, so what is happening here, they are giving it CSS to define the color and in our document because using CSS, that's what you mean.
+Lewis Benson: Yeah, so if we wanted to we could put this class name. I think this has a here, class equals logo - m so, if I give this a class of logodesh M, Let me see that actually just copied over already. Yeah, it did. so class logo.m and then if I go up here to my styles, I do. Class Logo - m. And let's see what they use. They used fill and then they placed a color and I'm just put blue. And we'll look at that and I don't have those results. Let me refresh just make sure. there it is. So now I have that dark blue there. just to recap what I did there, I looked at the class that they currently had on their element For this one it was Logo M.
+Lewis Benson: And if I take this class as well, and I move it up here with this one. So these are both being styled. And we have the fill property and I just gave it a color.
+Lewis Benson: And then I'll look at the results. That's the wrong browser.
+Lewis Benson: And it wasn't the correct one for that underline, but it did get me the letter M If I inspect this a little closer, might be able to find the path for that. That's the text.
+Lewis Benson: Not a hundred percent sure where the underlines coming from. It must be sorry. Here this
+Lewis Benson: So, if I were to add a style in here, Feel blue. And that's also colored blue. Does that make sense? What I'm doing here with the CSS?
+01:15:00
+Lewis Benson: With the style element. I mean,
+Umar Z: Yeah, I'm trying to understand but still a little confused with the CSS.
+Lewis Benson: Yeah, so I've tried to run through this again, where it makes sense when I copied all of that code all that SVG. I see that they had a class on these path elements, and remember the class as a way. It's kind of like an ID. But you can use it on multiple pieces. So, in this path within the attributes, I see this class Logo Dash M. So I selected this one. This is the capital letter M, This is the path they use to create it.
+Lewis Benson: So we selected this path here logo - m. And I used the dot logo dash M to select it. Let me put that up on the same one. And then I use the Fill property in the blue. And it turned the letter M blue.
+Lewis Benson: Might be able to do something like where I would. If I remove that, I might be able to say fill equals blue. I'm not 100% sure if that works. I feel like I've seen that before and it does let me refresh to make sure. So that's another option you can do. As you can put your color here. Notice I don't have a color picker. If you need to color picker, you can create a random element up here. You could say Something we're not using would be. I can't even think of anything right now. We'll just do title can't style your title. And then we'll say color blue. And I'm just showing you an example how to get to a color picker and then when you click on this, you can select whatever color you want. I like to switch these to hex especially for this type of thing because it's easier to type in
+Lewis Benson: and then I can copy that hex code. And then, if I come down to where it says, fill I can replace the fill with that hex code. so I just kind of use my VS code to create a color picker for me by putting in a random selector. that I'm not actually using our code block, the word color, and then I able to get my color picker up, you could all use a Google Color picker to do the same thing. I'll show that real quick. Let's go to color picker. And here it is. So, you can pick whatever color you want. and then down here, you have the different types. It actually gives me the hex as the main one. So if I just click the Copy button here, I have it. And then I can go in here and replace that hex with the one off. Google
+Lewis Benson: that was the wrong spot. We get on to the fill. Where did that go? it Replace it there. because I know now that the fill attribute works. I can also put that on this path which is that underline And say Fill it with that color. I'll remove that class. And they should both be the same. Now, when I look at the demo, And there it is.
+Lewis Benson: So, two options there, they use CSS or you can use the Fill attribute on that path. and I just vaguely remember seeing that before so that's Kind of lucky there.
+Lewis Benson: I mean look at the path element.
+Lewis Benson: So if we look at these attributes here, we can get An idea of some other things we can do with this. Here we have feel Phil opacity. So if you want to make it kind of you can use fill opacity I don't know what all these do. I'm not very good with design and a Photoshop and stuff like that. I know that's what some of the stuff for Mask. Stroke would be like an outline. Shape rendering. I'm not sure what that means.
+Lewis Benson: This is interesting. This might be to make it into a pointer. Cursor. Attribute specifies. Yeah.
+Lewis Benson: So if I did that, I'll put it on the SVG itself.
+Lewis Benson: Cursor, equals pointer.
+Lewis Benson: And then, when I hover that, And it doesn't do anything. That's a CSS property though. You can use as cursor pointer if you want to give it to that hand when I hover over this link,
+01:20:00
+Lewis Benson: Or maybe I spelled that wrong. I did.
+Lewis Benson: Here we go.
+Lewis Benson: So now I got the hand whenever I point over it, so the mdn is great. you'll never memorize everything on this site. There's so many different properties elements. There are hundreds and hundreds of elements that I've never even seen before. That doesn't mean they're not useful, you just have to keep on digging through documentation and figure out what's going to work for I'm sure that I showed you during this week, are the main ones that you will be using in the industry. But that doesn't mean it's the only one you'll run into.
+Lewis Benson: Okay, so let's get started on this forms demo and I'll call this form Dot HTML. Can someone tell me what a form is? What do you think a form is?
+Lewis Benson: Yeah, Yeah, essentially it's any way to get user input. So, I'm going to start with the form element. And we get this action attribute to just kind of pops up. Let me actually show you the audio complete with this. we have four month post I click Get it also adds this method attribute this isn't something we're going to be messing with Not until we start getting into full stack. I believe it'll be a while before we mess with the get request and post request. I will show you that you may see this. typically, this means You are retrieving information. And typically this means you are sending information but it's not something we're going to be using for a while. So just leave these off. The action.
+Lewis Benson: Let me just bring up the documentation on this. So, I have some formal writing behind what I'm saying.
+Lewis Benson: So, here's an example of a form. And you can put in your email address. Just drop mine in there and press Subscribe and it submits the form, and this one doesn't actually do anything. It doesn't send it anywhere. What usually happens when you click the Submit button, is it refreshes your page as it's sending That way, if you were to retrieve data back, it could update with whatever was sent back. Okay, so Here are our There's a lot of Reforms. There are a ton. so, This attribute has been deprecated, so we don't worry about that one, but we do have type equals file. Except character set auto capitalize.
+Lewis Benson: Most of these, you probably won't need things like auto capitalized. This would be done with JavaScript. You wouldn't do this with your HTML. But it does exist. So if you're working on some older code base, that's using something like Auto Capitalize. And you can't find where that's happening at, maybe check the HTML attributes. If you're trying to debug that, So, here's where we talk about action.
+Lewis Benson: The URL that processes the form submission. So basically, what this means is where is the data being sent to
+Lewis Benson: So, maybe you have A web server, that's receiving your forms, and whatever it receives, it'll then send you an email with that form information. And this is kind of how Google forms work similar to those quizzes, whenever you submit the form, you receive an email from that, and they're just using a basic action attribute to do that. It'll send it to an email server. The server looks at the data does to the data, whatever it needs to do, in that case, it grades the form, or a great stick quiz. And then it sends you back your score. So, just remember action, we don't always need that whenever we're manipulating a form unless we're going to be sending the data somewhere. And then here we have the method again.
+01:25:00
+Lewis Benson: We'll go into target a little bit, I'll come back to that.
+Lewis Benson: Okay, so let's actually build one out a little bit. So we have the form and this is similar to a table whenever you create a form, you're going to have a container that contains all of the elements that are specific to the form.
+Lewis Benson: So hopefully, that makes sense. all right, so Once you have your form container bill or your form element, next thing you want to do is start putting in the actual form stuff. So I'm going to start with the most basic one and that's going to be the input. So let me put in an input. And we get a variety of here. These will all do different things. Depending on what you pick, I'm just going to go with the basic for now and it automatically defaults to type text. So this is on Form.html. So I'm gonna index. Let me create a link to that real quick. We have a few links in here already.
+Lewis Benson: So, I would put another Li here. And it an anchor tag. And this is going to go to Form.html.
+Lewis Benson: Just to add that to our navigation. So, when I switch to the Form demo. So, there it is and I type in I can press enter. It'll submit And that's about Not all that. Interesting. Notice I put a question mark up here. This is known as a query. You don't have to know that right now. But you can see that it did change my URL a little bit when I submitted. And this is all it does, I type in some stuff and it refreshes and there's There's no way to know what this form is used for. It's just a random input box. So, let's add the label.
+Lewis Benson: So way this works on the wrong page, the way this works is your input gets an attribute called for Ryan. You had a question.
+Ryan Arnold: Hi, I have to dip out early today, I just wanted to let you know so I didn't just disappear and also to ask What time because you said the assignments were due on Saturday What time tomorrow? Are they due that way I can, watch the video, go back and watch the videos and get everything turned in on time.
+Lewis Benson: And they're not going to close out or anything so it's not a big deal if you submit them on Sunday, but what will happen is if you submit the assignments late is you'll be notified through your email that the assignments weren't turned in on time, and the TAs will see a lot of red pop up on their end, but you won't be penalized for submitting assignments late. Once you resubmit them all that goes away,…
+Ryan Arnold: Okay.
+Lewis Benson: just not a big deal. But thing that you brought that up, one thing I want to mention I've had a couple students reach out to me about maybe being behind on a couple of assignments, utilize your TAs to help you get caught up and If you're doing tutoring, this doesn't have to mean that you don't understand what's going on. You might understand perfectly what's happening. But you keep finding yourself going down rabbit holes and you're not able to complete your assignments on time. not happens. I advise that you set up an appointment with a TA. If there's a tutoring link in the syllabus, if you need that, you can message me and I can send that to you as well. And I think it's also in the October 2 Core Cohort, chat channel. Set up an appointment and he can help you guide you through your assignment. So that you're not going down rabbit holes and maybe streamline that process a little bit. If you're following behind,
+Ryan Arnold: Okay, thank you very much.
+Lewis Benson: Yeah, no problem. But yeah, I encourage everyone to use the tutoring as much as you can. it doesn't cost anything and the TAs are here to help you. And maybe there's something, you think, you understand that you're not a hundred percent like sure on they can help. give you the answer on that as well.
+TRACY JOINER: All the available on the weekend.
+Lewis Benson: You'll have to check their calendar, they base the time on their schedule. So whenever they're open,…
+TRACY JOINER: You can.
+Lewis Benson: they'll set up the days on there.
+Lewis Benson: And you can always reach out to me on slack too if no TAs are available and you're only available on a weekend, I can usually make myself available if you need that.
+Lewis Benson: Okay, so here is our input element. Just kind of recap what we did so far. All I did was autocomplete the input element and I placed it inside of this form element. Now, I'm gonna add another attribute to this. That doesn't come with it automatically and I'll show you why it doesn't come with it, automatically in a minute. But for now, I'm gonna include it. And this is a very important attribute. This is called the four attribute. And this is what binds the input element to the label. So we're going to call this one first. Name. And an above this, I'm going to put a label.
+01:30:00
+Lewis Benson: I did this backwards, sorry, this is name.
+Lewis Benson: and this is for, First name. Sorry about that. So the label gets the four attribute and the input gets the name. Attribute. I misspoke there but ago and I apologize for that. And something I also like to do is anytime I have an input. I also want to put an ID on it so that it's easier to select and I always make this the same as my name and this isn't necessarily requirement. It's just something that I find easier to work with if it has the same name as the ID, And that's something. I won't be able to demonstrate why that's easier yet until we get into JavaScript. But it is a good practice to just give it the same ID as the name. Okay, so our label doesn't have any content So let's add some content.
+Lewis Benson: And I'll just I'll put a colon and a space. The space doesn't actually do anything. I'll remove that. I've been working with Python too much. All right, so now we have this first name here and if I click on the word first or name by click on this text, it selects the form. So, let me actually back up here for a second, and I'm going to remove the name. Attribute.
+Lewis Benson: And if I click on this except the ID as well, I'll delete both of them. And refresh just to make sure. if I click on that it doesn't select the input element. So this is not wired up to this form here. And the reason this is so important, is because if you're user is using a screen reader, And they're using voice controls to navigate your form. They won't be able to even know what's going on. It could read all of the text and then it could start going into the forms. They might go into the wrong order, they might put their first name or their last name goes because the browser has no idea what this label was actually used for. So if I open up form, we can see labels here, inputs there, the recite each other, but that doesn't mean anything. Maybe this is a label for another form.
+Lewis Benson: The only way to know for sure is to use. The name and ID. and this for, ribute. So that these are wired together. And I'm going to show you another example where it works the same way but it doesn't use the attributes and then you can decide on which way you like better. And that way is I'm going to create the label. That again. And this one's going to be the last name so I'm going to remove this 4 attribute.
+Lewis Benson: And I'm going to open this up. And then I'm going to put my input element inside of the label.
+Lewis Benson: And then in the label, I'm going to put last name.
+Lewis Benson: All right, so you can see the difference here. This one, I don't have the input element nested inside of the label and it says, First name, I'm using the four, attribute, the ID, in the name. It's still a good idea to have the ID.
+Lewis Benson: At minimum.
+Lewis Benson: So we can see the difference between these two, but they'll function exactly the same. So if I look at this and I click on last name, it selects it and it knows which one it is because it's nested inside of it. And as far as search engine optimization and screen readers, go even performance wise, there's no difference between the two so that just comes down to your preference if you prefer to use the four attribute and tie these side by side, or if you prefer to nest these it comes down to your preference. Some people prefer this way because everything's on their own lines. It doesn't have nested data, it's a little bit easier to read. And others prefer this way because it's very clear where this input element is being used. so,
+Lewis Benson: does anyone have any questions?
+01:35:00
+Lewis Benson: Okay, so no questions yet.
+Lewis Benson: So, I'm going to show you the text area element. Let's bring up the documentation on that.
+Lewis Benson: Text area element. So here's an example of what one looks like. And type in error, press the Enter key and it makes a new line.
+Lewis Benson: And here's some of the attributes we see on here. We have rows, five columns, 33. This is kind of like setting the dimensions on the text area. And then they have some Stored inside of there. If I refresh this You can see that that text is showing up right there inside of that element. And then we have our label and they're using the four. And they're using the idea Or in this case, yeah, they're using both. So let me duplicate what they did. Label. We'll call this story. It doesn't have to be called story. It's just kind of a coincidence that we both chose that name. And for the label, we're going to say Tell your story.
+Lewis Benson: And then I'm going to make a new line and I'm going to put in the text area. So it gives us all these attributes by default that's really helpful. So story is the name. The ID is story. And keep in mind, if you have a form that takes in say an address, your ID has to be unique. So you don't want to use the same ID on two different input elements. I'm just kind of revisiting that topic there and then we have columns, 30 and rows 10. I'll leave that the same for now. And we can put a little bit of text in here. Put the word sample text, to put the three dots. And let's take a look at that.
+Lewis Benson: I gotta Notice so sample, text, is it? So if I can delete that and type in here, If I press enter, it makes a new line. We'll get that empty, space out of there. And it doesn't submit anything when I press enter. And then notice the label here, I mean, unselect, if I click on that, it's still selects that. But there's another cool little feature about a text area, and that's these line dray here at the bottom. You can actually grab this and change the size of it. This can be disabled using CSS and it might even be an attribute to disables it. I haven't looked to see if it exists.
+Lewis Benson: They're probably as one.
+Lewis Benson: I don't see one right now. I have a wrap. Attribute, it's useful. Here it is, it says to do it in CSS, so it's resized none. And that turns that off if you don't like The functionality of that. It's not a bad thing to have on your form. If you want to make this very large, if you're going to write something really large, it can make it a little bit easier Format it and then you can shrink it back down before you submit it, if you want. Does anyone have any questions about the text area at all?
+Lewis Benson: Any questions about the label? Or.
+Umar Z: Okay, so I have a question about this box. So let's suppose we are writing in the box and we keep writing and it keeps expanding yourself or you just stays the same size and we have to expand it manually. If need
+Lewis Benson: So if I just do that, it gives me. Scroll bars.
+Umar Z: Let's go over, okay.
+Lewis Benson: Yeah, and it's wrapping the text. So if I just hold down the letter, F it just keeps wrapping And that's actually behavior that you can change. With the attributes right here. Rap Indicates how the control wrap or the value perform submission. so,
+Lewis Benson: If you set this, I actually have to refresh my memory here on how this works. The hard rap, the browser automatically inserts line breaks, and it will insert it with the line breaks. And then with the soft wrap, when it goes to a multiple lines when it doesn't submit the line break. So if you're extending the size, it's going to change how the wrap is behaving. So that's changing, it's currently set to a soft wrap. If I had to set the hard route, and that would be wrap equals hard. What would happen is when I submit this form, it's going to submit All Five lines of text as separate lines for the submission. So it is one thing to kind of keep in mind.
+01:40:00
+Lewis Benson: Anyone else have any questions about that?
+Lewis Benson: It's something interesting too. You can actually turn these scroll bars off and still keep the Using CSS as well. Just something to keep in mind if you wanted to play around with that.
+Lewis Benson: 
+Lewis Benson: Again, I just want to stress the importance of this label here. This label. Is very important. I've seen some developers do this before and this is really bad practice or they'll put an input element that, it'll be text and they'll use the placeholder as they're label, and it will say, Enter your email.
+Lewis Benson: And if I take a look at what this looks like, you can see that it has this gray text. It says Enter your email but it doesn't have a label what this is for, it's very clear what this form is going to be used for but screen readers, don't read Search engines, don't read placeholder text, so this is just going to be an empty form to those. It has no accessibility and it has no search engine optimization at all. So keep that in mind, the placeholders nice because you can put an example of what your format, where you want to look like. you could do something like,
+Lewis Benson: Email at example.com. then it gives you the kind of the format what you're looking for whenever you're creating these forms. So placeholder, it's used quite a bit but don't replace the label with a placeholder. The label is very, very important element.
+Lewis Benson: Any questions about that?
+Lewis Benson: Okay, so there's one. More element. I want to cover right now. And this one is the one that kind of caps, it all off. Because it allows you to submit. Your form. And that is the button element, I'm just going to write the word submit in here. or I'll put down so clear that this can be whatever you want it to be. And then there we have a button. And if I press the button, notice that it actually submitted. If you look at the top here at our query string, it says our first name was equal to and that's empty and our story was equal to
+Lewis Benson: and It has the empty spaces, sample, text and then it has the three dots being displayed a symbols with this percent zero A And then it has some more empty spaces again. And I don't see the email, that's because I don't have a label. That's another thing about the label is if you look at my query string, it doesn't Include this last input element because I never put a label on it. So let me go ahead and push the label on
+Lewis Benson: and this will be four. Email. And we'll get that nice multi-line. Formatting going on because I got so many attributes if I press it down again we can see email was added because we have the label And now let's put some content in here. Put in my name.
+Lewis Benson: done. And we can see all that information is populated inside of the URL.
+Lewis Benson: and then just kind of a high level overview. Of what this is, the question Mark is indicating that there's going to be a query string. And we'll go more into deeper and more depth of this. When we start talking about APIs and working with servers, The next part is a key value pair. We have the key which is the first name. It separated with an equal sign and then the value was the name and then instead of using a semicolon, we're using an ampersand to separate each key, value pair and you don't have to memorize all this right now. Just keep in mind, From a high level perspective. That all the information in our form is stored inside of our URL. So hopefully, that makes sense.
+01:45:00
+Lewis Benson: That's kind of a little bit of a tangent error. I just wanted you to notice this so that whenever you're working with your forms, you can see if you have a problem. For example, I was missing that label if my label wasn't wired up correctly, I want to make sure I see that Populating in my URL. And then if you see the Ampersands in there, you'll have kind of an idea of what you're looking at.
+Lewis Benson: and then, Something interesting too. So you seen how I made this button something I see sometimes you'll see somebody use input. and then for type, they'll put submit Let's see what this looks like.
+Lewis Benson: And that looks exactly the same and what happens if I press submit? And it submits it. the difference here is, With the button, you get a little bit more control over the styles and it has some different attributes to it. Other than that, there's not that big of a difference.
+Lewis Benson: Whenever you're reading the code though, this is the biggest difference. If you were just kind of scanning this file, you might not notice this input element as the submit button, so if I were to delete this button, And you're just kind of looking through here. You might not notice that there's a way to submit it because this is an input element and not a button element. So you want to make sure that you're using something that's more clear to other developers or for your future self. And that's where I like to use the button personally, but this is an option. There is some use cases for this, where you can vert. Your elements into other elements using JavaScript and Again, that's something we'll get down into later. I'm just by changing the attribute values, But here you'd have to change the entire element if you wanted to do that.
+TRACY JOINER: Are we going to be using any texts recognition OCR programs?
+Lewis Benson: I don't believe they're in the first four levels at all. So now there's no object recognition or…
+TRACY JOINER: Okay.
+Lewis Benson: anything like that. If that's a referring to.
+TRACY JOINER: Not yet. Okay. Thank you.
+Lewis Benson: Is there something you wanted to use that for what? just,
+Lewis Benson: Okay.
+TRACY JOINER: Word that way. And that was 10 years ago that we were going towards that way. And all electronic
+Lewis Benson: Yeah. Or as front end development goes, I rarely have used any sort of object recognition software at all.
+TRACY JOINER: mmm.
+Lewis Benson: I used it for backend development where I would grab data and then object recognition to pull the data off of a screenshot and then use that to populate a database table but I've never used it on Web development.
+TRACY JOINER: Okay.
+Lewis Benson: There might be some use cases for it though. That could be a path. You might want to look at if you're really familiar with that type of technology in those tools. There's probably ways to implement that with this. It's not something I've ever explored though.
+Lewis Benson: so yeah, that's the difference between the button and the submit There's a lot of attributes and there's a lot more stuff to the forms.
+Lewis Benson: Let me show you some of these different type attributes here. So I'm going to add another label here. And this one's going to be. And we're going to do name, password. So, let's take a look at this now.
+Lewis Benson: just a text. For now and I'm going to type my password in here. My password is pas, s w 0 r d. Wouldn't recommend ever using this as an actual password because it's not secure at all? But you can see if I have this as a password, you wouldn't want that to be visible to the users. So you can actually change this to type password. And when I type now, it gives me those dots. So it's kind of hidden from the user.
+01:50:00
+Lewis Benson: But let's take a look at the documentation and we'll actually view some of these attributes. There's just so many things you can do with an input element. so, these are
+Lewis Benson: that we have the checkbox.
+Lewis Benson: And second. I'm not sure was this not in my notes.
+Lewis Benson: Yeah, so the text box, the checkbox. It gives you that little check mark. When you click on it, you can get a color picker. And let me just use this here. Type. Checkbox. We'll go back into the demo and we can see that checkbox shows up, and that's what we're actually changing. Here is the type, So when it says that and then there was a color picker I seen in there what was the name of that after it just color so we'll change just to type color. This one's pretty neat. You can open this up and you can pick your RGB colors.
+Lewis Benson: there's your hex so you could build your own little color picker. If you don't want to use Google's, you could have one set up locally this way. and if you don't want to use the VS code one, Could make your own set of little developer tools. You can work with
+Lewis Benson: Let's see what else we have. We have date time, it brings up to calendar, and you can actually go in and pick a date off the calendar. That all works out of the box. Date time, local.
+Lewis Benson: This is for local time versus Zulu time. Or I forget that there's another name for it. It's the Global Time Zone. So, if you're in central time, I believe it's minus four. So you would add four hours to your current time and that's your global time zone. So we'll set it to your local time.
+Lewis Benson: Email. So, I'm going to share this to This is an interesting.
+Lewis Benson: We already have a type email. So let me actually show you what this looks like when I Put in. This gibberish and I'll hit submit. And it doesn't have a problem with that. There is some building validation with attributes.
+Lewis Benson: I'm actually surprised that that didn't try to validate already.
+Lewis Benson: because I set the type to text. There we go. Sorry about that. Delete this one so I don't get confused Put in that gibberish at submit. And there we get this validation that comes up. And it says, Please indicate. And @ sign in the email address. So this is built in Some other validation we We can do this on our first name. This is another attribute. It's called required. So you just write the word required and it sets it as true by default.
+Lewis Benson: so if you have that, and I hit submit It says. I'm getting that Complete thing pop up there. But it says, Please fill out this section here. Let me put it on the last name too. I'll remove it off the first name. I'll put it on the last name. I wait only pops up on the last name. And that's still in the way.
+Lewis Benson: That's my Google Chrome doing that. I'm sorry. I can't show the But if you just want to try that out, you'll see what I mean. Just put the required attribute on the input form itself. And if you try to submit the form with nothing in it, it gives you that error and with your email when you have it set to type email. It gives you that validation to say is this a valid email address, It's not perfect because as long as you have the @ sign and something after the outside, it'll let you submit it. So, you don't necessarily have to have a valid email. There are some better ways to do that more, robust ways to do that. I should say or verbose. Okay, so let's continue to look at some of these attributes. We have hidden which just makes it go away. Here. We have an image input.
+01:55:00
+Lewis Benson: This would allow you to upload an image. There's just so many of these number. This one's used for inputting only numbers. If you try to put letters in there, it won't let you type demonstrate that one quickly.
+Lewis Benson: This one will work for that. Type number.
+Lewis Benson: And this is just one of those things where so I can't type any letters. I'm pressing that I click on that doesn't do anything. But I can put in numbers now and then it allows you to increment and decrement with these little arrows. But yeah, the input anytime you're using some sort of input for user. Instead of just using the Let me set that back to text instead of just using default type text. Make sure you check the documentation and look through these to see if there's something that makes more sense. Here, we have the radio selectors. We have a slider. And you can set these to be. Values with numbers assigned to it. So if you're here it could be a sign to three and if you're here, could be a sign to five.
+Lewis Benson: And that's used with the Min and Max.
+Lewis Benson: We have a reset. So if I set the type reset, I'll just reset all the elements or all the form. So just delete everything, out of them.
+Lewis Benson: This one is for a telephone number. Yeah, there's just so many here. And then here is the attributes.
+Lewis Benson: So if you have your set to type image, there's an all attribute for that.
+Lewis Benson: Yeah, this is just something that as you're using forms, there's no way you're going to memorize all these today. As you're using forms, just keep referencing the documentation on these. And you can see what is used how it's used. And if you have any questions about it, I'd be happy to answer. If there's any specific attribute or
+Lewis Benson: Type. Value that you want to put in.
+Lewis Benson: Does anyone have any questions at all about? Any of these forms? How they work?
+Lewis Benson: I know this is quite a bit of information here, but again, we could have went over forms for a week just because there's many different elements and so many ways to use them. But I did go over all the major stuff. There is some things that I didn't go over such as the radio. Let me scroll up back up to that, sorry for the fast scrolling here.
+Lewis Benson: the radio, it gets an extra Piece to it, where you have options set in here.
+Lewis Benson: So that you can pick which one you Also notice this has another element called a field set and a legend. These are other elements that are used for search engine optimization and screen readers. I didn't go over these just because there's so much to this topic that I won't be able to cover all of the elements but just know that they are here. The field set is another container within your form that allows you to group them together and I'll just show that one real quick because that's the main one for screen readers. because all these are related, this is all one piece that I would just put a field set here. And I would just wrap all of this within that field set to indicate.
+Lewis Benson: That this is all part of that. And then, if you had another form or another input area, or I should say another field set, you could do that inside of here and you could have a second form within your form So hopefully, that makes sense.
+Lewis Benson: An example for that might be if you have a form or then at the bottom, you have a way to add a comment. To that form. Where you could put post a note on it. That's where you would have two field And two sets of forms within the one form element.
+02:00:00
+Lewis Benson: So does anyone have any questions comments any concerns about this at all?
+Lewis Benson: Okay,
+TRACY JOINER: Are y'all gonna have any remedial classes for those of us who are older? Yeah. Okay.
+Lewis Benson: Remedial classes, we do have the TAs. you can schedule an appointment at any time. Yeah, and…
+TRACY JOINER: Okay.
+Lewis Benson: if this seems a little bit overwhelming, I totally get it. there's a lot of nested stuff going on here. This is hard to Pond of new attributes.
+TRACY JOINER: Yeah.
+Lewis Benson: And I went over this really fast, but the nice thing is you don't have to memorize it all. You just work through piece by piece and the more you use it, the more it'll make sense. Forms or…
+TRACY JOINER: That's how it usually goes.
+Lewis Benson: And forms are something that you're going to be using forever. Especially when you start using even front-end frameworks, you'll see this quite a bit the same pattern where it's like, Okay, then Let me put my input in first Last name ever, how you want to lay it out? And once you have all of your
+Lewis Benson: labels and inputs at the bottom, you put your button. So don't think of this as one whole piece. Let me delete that extra field set. Don't think of this as one whole piece. Think of it is a bunch of small pieces that add up to something larger so I'm actually cut this out for a moment. Just to show you we start off with justice container called a form. and then, I have the field set here, just to show you for the Search engine optimization and Screen Readers. We can group it all up in a field set. and then we have label a label on a text area, A label and an input and a submission button. So it's just a bunch of small pieces that all add up into one big piece.
+Lewis Benson: And as you're designing things, you're gonna know what data you need. So if you were making a sign up page for somebody, you're going to say, I need your last name, I need to email their telephone, their email, whatever it is, you're doing you'll know how to do it just because you'll know what information you need. so, if you need a large text area, because you need to get a description from somebody, to use the text area. If you just need a single string of text such as their first name, that's where you would use this input or up here for the other version of how that looks. So, again, it's just One small piece of the puzzle.
+Lewis Benson: And you have mdn at your fingertips if you can't remember one of the types you can't remember an attribute, you're just one short Google away from finding that information. And that's a normal part of the workflow. I don't know any developers that don't use Mdn Google some sort of AI generating question answering tool to figure out what they're working on because nobody has all this memorized
+Lewis Benson: Okay, so let's hit the assignment real quick. And then we'll take our 10 minute break.
+Lewis Benson: so, today's assignment We have our quiz and then here it is.
+TRACY JOINER: Me.
+Lewis Benson: I see what happened here. This was the way we used to open VS code.
+Lewis Benson: So that's why that has that Dot.
+TRACY JOINER: How are you open the VS code now because I was Click on a.
+Lewis Benson: I just got to start and…
+TRACY JOINER: Uh-huh. And justice could be as cold and…
+Lewis Benson: click and click vs code. Yeah. Yeah,…
+TRACY JOINER: start, okay?
+Lewis Benson: this just needs updated. It's just showing the old way. So I used to do it through A terminal. Where we would type in code space period. And then that brings up vs code that way,…
+TRACY JOINER: Yep.
+Lewis Benson: but you don't have that installed. So that wouldn't work for you.
+Lewis Benson: So yeah, just old instructions. Here we go. Day five.
+Lewis Benson: So, inside the folder, you're gonna create an index file. And As far as the HTML pages You want to generate different pages for your website. So for example, you can create a movies Books HTML and display Your favorite movies. Set up your index similar to your previous assignments this week. That means using the boilerplate code, all the different elements we've covered. We're not too picky on. If you leave one of them out, just make sure you're putting things in the correct places. And what I mean by that is don't put your main inside of a NAV or your main inside of a footer because that just doesn't really make sense. You wouldn't have your main content in the footer of your page. So, make sure you're doing things semantically.
+02:05:00
+Lewis Benson: And you're organizing the structure of your page, the way that we've been doing it all week.
+Lewis Benson: This portion of the lab, this is where you're gonna get to experiment with what you learned in the HTML. So you're gonna be creating Building a large page with multiple elements and don't worry about what it looks like with all the different elements. And what I mean by that is if you look at my form demo here, this is a mess. It doesn't have to be pretty. I just want you to Lay it out, the best you can.
+Lewis Benson: And uses many of the elements you learned this week. So, we'll include a list, a table, put in the forms and just kind of experiment with some of the attributes and see how this stuff responds. And let's see the rubric for today.
+TRACY JOINER: Did I see a cheat sheet somewhere with that kind of stuff in the background and one of the slides somewhere? Yeah, that had the Different coats and…
+Lewis Benson: A cheat sheet.
+TRACY JOINER: things on it. I think.
+Lewis Benson: I'm not sure…
+Lewis Benson: what you might.
+TRACY JOINER: Seem like I saw something like that.
+TRACY JOINER: Someone like a template. that this is what eighty belongs. This is, what belongs is, what? Step one, step two, step three, kind of deal.
+Lewis Benson: When I was switching between screens.
+Lewis Benson: Also this rubric here.
+TRACY JOINER: Y'all haven't yeah, maybe so
+Lewis Benson: 
+Lewis Benson: It doesn't have everything step by step in this week's rubric. It doesn't have every element.
+TRACY JOINER: no.
+Lewis Benson: This is kind of like, Up to your discretion on. How much you want to implement? we're very lenient on this one. But it's gonna be graded on effort. So we want to see. And if you want me to make notes for you to show you Some of the ones you can include, it doesn't have to be all of them. You could use yesterday's assignment as a template to get started If you have yesterday's assignment plus the forms, then you've hit every single element that we've pretty much covered through the start of this week. Okay.
+Lewis Benson: Yeah, and I'm not even worried. If you have that many this is more of an experimentation thing. We're, again,…
+TRACY JOINER: Yeah.
+Lewis Benson: we're pretty lenient on this assignment. I just want you to be comfortable using and MDM to find these elements. If you can't remember one. And just try to lay out the page, the best you can.
+Lewis Benson: But definitely include as many as you can. If you include everything from yesterday, then you're definitely be good to go on that and this will be graded on case basis. So if you Have a style element and it has one style in it. Good to go. If you have a table with one cell there You have the table. he doesn't have to be a crazy. And professional looking layout, it can be a mess looking as long as you have all of the elements and they're in the right places. So hopefully, that makes sense. And then make this a multi-page. Web app. So you're gonna have I believe A at least two pages and link them together using the anchor tags. Put that inside of a NAV.
+Lewis Benson: you can do the side navigation, you can try out that navbar If you want to, But yeah this is a good time just to experiment and try to learn new stuff and then ask questions If you're trying something new and it's not working, Just ask the question, I can help you with that because that's the best way to learn is basically by failing. If you try to build something and it doesn't work, that's a really good learning opportunity for you. So go ahead and take your 10 minute break. I'll get the timer started. And we'll have. About. 40 minutes left, I think for that time. So I'll see you in 10 and then you can get started on the assignment.
+02:10:00
+Iris Coats: Even here.
+TRACY JOINER: take this and this
+TRACY JOINER: bad.
+TRACY JOINER: Here. The real boobies, right? That's where I'm at.
+TRACY JOINER: Yeah, that's word trip. Is this one?
+02:15:00
+TRACY JOINER: Can't do without me for right now.
+02:20:00
+Lewis Benson: So we can get started on our assignment now.
+Lewis Benson: Does anyone have any questions about the assignment criteria? I know. It's pretty open-ended. This is mainly.
+Lewis Benson: Your time to experiment with this stuff and just try out new things. Build out the form, refresh yourself on the Unordered list ordered list. Look up some new attributes and try them out. And just kind of experiment with the HTML.
+TRACY JOINER: H.
+02:25:00
+Lewis Benson: Is there anybody here? That's still waiting to get a computer.
+Lewis Benson: You're still waiting justice. Is there anybody else?
+Justice Miller: Yep.
+Umar Z: Yeah, I'm also waiting.
+Lewis Benson: Okay.
+Lewis Benson: So You haven't been able to the follow along, just yet then
+Justice Miller: I have a friend who has a desktop computer that I've been using for a class
+Lewis Benson: Okay.
+Lewis Benson: I'm gonna reach out to Phil today and see if he has any information about that.
+Lewis Benson: yes, Omar
+Umar Z: Yeah, I have a good question. It's not related to us to what we're learning today. It's about that if I buy HDMI cable and connect my TV screen with my laptop, so whatever you able to split. This presentation on the TV screen and open the VS code on My computer screen. Can I do that?
+Lewis Benson: I think I understand what you're saying. one of my monitors is a TV screen. It's a 14 inch TV that you would use in a camper. so, you can put Applications on multiple monitors. And then A different monitor whenever you're presenting. I think that's the question you're asking, right?
+Umar Z: Yeah, yeah. So what I want to do until I see my and up top. So what I can do, I can. Yeah, there your lecture can be a viewed on the TV and I can do my practice with you while you're doing it on my computer screen on my VS code. So the lecture is going on TV screen and…
+Lewis Benson: Okay. Yeah,…
+Umar Z: via score is on my laptop screen.
+Lewis Benson: absolutely. I actually have my lecture notes open on one screen and I have my VS code open on another screen so it's similar to how I actually present to
+Umar Z: Okay, so all I need for now is just a HDMI cable, I think, right? And I just need to go to settings and split the screen which screen is gonna be on TV screen and which screen is gonna be the VS code will be open on my laptop and the lecture will be on my TV screen and just have to set it in the settings, right?
+Lewis Benson: Sometimes you can do it on your keyboard. you said it's a laptop.
+Umar Z: Yes, a laptop. Yes.
+Lewis Benson: So if you hold down the function key, I believe it's on your F keys. At the top of the keyboard, there should be a a rectangle that looks kind of like a computer screen with a line through it.
+02:30:00
+Umar Z: Hold.
+Lewis Benson: I might have to see if I can bring up an image of it.
+Umar Z: There's always a shows like a projector. It's a f7 key, it looks like a projector or something like it is a bit.
+Lewis Benson: That might be a.
+Lewis Benson: So that's all you'd have to press and then what you want to do is actually set it to extend. There's a keyboard shortcut. It's Windows P, but I don't think that's the same on every computer.
+Umar Z: Okay, no problem, first thing I need to get the cable, maybe then I can just Google it or I can look over the YouTube video about it. There must be a lot of videos about
+Lewis Benson: Want to do is set it to extend. That's the setting you're looking for. It might even set up by default as soon as you plug it in. Some laptops. When you plug them in, it'll actually pop a menu up on the bottom right or bottom left. I forget which side. And it'll actually ask you if you want to extend your desktop or if you want to duplicate your desktop or neither. And you want to extend it.
+Umar Z: Okay. I
+Lewis Benson: Yeah, yeah, when it's extended that means you can move your mouse between the two screens. you slide your mouth to the left and it goes to the left monitor, slide your mouth. So, right in your back on the right monitor, then you can drag your VS code between the two monitors. I'm the same.
+Umar Z: Yeah, exactly. I wanted to do,…
+Umar Z: you got my point.
+Lewis Benson: Say Yeah,…
+Lewis Benson: I can move this around right here I can actually drag this right off onto my other monitor. So, as it's leaving the screen, it's going to my other monitor.
+Umar Z: I see. Yeah, that's exactly. I was trying to do. Thank you so much.
+Lewis Benson: Yeah, no problem.
+Umar Z: Lewis today, I'll have to leave because I have to go somewhere. So I'm just gonna leave and I'll do the assignment later on. But,
+Lewis Benson: Okay, that's fine. Already. And thank you for letting me know.
+Umar Z: No problem. You have a good one. Thank you.
+Lewis Benson: You too.
+Lewis Benson: Better stop that recording.
+02:50:00
+Lewis Benson: We're just a few minutes left here. Does anyone have any questions?
+Lewis Benson: I see the quiz for today was restricted access. So I opened that up. So you'll be able to access that now, for those who were requesting the access
+02:55:00
+Krystal Jefferson: How many times we're able to take those?
+Lewis Benson: You could take it as many times as you you can keep on trying until you get the perfect score if you want.
+Lewis Benson: If you submit it with the lower score, then you can resubmit it later. But I would advise just retaking it until you get the score you're looking for.
+Krystal Jefferson: Okay.
+Lewis Benson: The class is more about just learning the concepts. Then, the grades themselves, we use the grading just for the concepts. But we're not too concerned about whether or not you get a perfect score on a quiz as long as you understand.
+Lewis Benson: How the elements work and that sort of thing.
+Lewis Benson: H.
+Lewis Benson: Does anyone have any questions before I head off for the night?
+Iris Coats: And no I think I'm good. Have a great weekend.
+03:00:00
+Lewis Benson: Yes, you guys have a great weekend and then Monday, we'll get to start with the CSS.
+Lewis Benson: And nice thing about Monday it'll be kind of a slower day. I know we're going into some new concepts. But there's gonna be a lot of overlap with what we've already been doing. So don't feel like you're gonna be overwhelmed with a whole lot of new stuff right at once. CSS is going to be diving into basically the stuff we've been doing inside that style element.
+TRACY JOINER: Okay, you have a good weekend.
+Lewis Benson: Have a good one.
+Meeting ended after 03:00:51 👋

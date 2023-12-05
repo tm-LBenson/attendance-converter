@@ -1,0 +1,349 @@
+﻿nia-amar-wfe (2023-11-09 19:30 GMT-5) - Transcript
+Attendees
+Brian Kimbrow, Chantrice L, Daniel Perez, Elgin Sharper, Gregory Robertson Jr, Iris Coats, Justice Miller, Krystal Jefferson, Lewis Benson, Lewis Benson's Presentation, Reece Renninger, Umar Z
+Transcript
+This editable transcript was computer generated and might contain errors. People can also change the text after it was created.
+Lewis Benson: And welcome to day four. We're going to be talking about JavaScript objects.
+Lewis Benson: More specifically it'll be object literals. So we've seen string literals so far. We've seen array literals. And today we'll be diving into object literals. So they do have a similar use as arrays. We'll get into that right after we start our code challenge here. Does anyone want to volunteer to get started on this?
+Lewis Benson: Just kind of get warmed up for the day get our minds flowing on this little bit of code here.
+Gregory Robertson Jr: I'm sorry. What was the question you guys will open up on vehicle?
+Lewis Benson: Yeah, so just to kind of do this code review. I just want to run through this file and as we'll go around the class and just explain each by line kind of what's going on here.
+Lewis Benson: And what is this about 15 minutes, but I will call on if we don't have any volunteers right off the bat. I want everyone to try this just because it's good practice. I get you on that mindset of using the correct vocabulary. And it helps you think a little bit gets our mind working before we get started in class. So looking at my list Iris, you're here first. You want to explain line one for me.
+Iris Coats: Putting you strict in there at the beginning make sure that you stay with the updated JavaScript instead of using any of the outdated stuff. That might be in there.
+Lewis Benson: exactly perfect explanation
+Lewis Benson: Yeah, and we can also just say just avoids bugs as to that's his biggest use case, but that's exactly how it works. It's using the updated JavaScript syntax. And it avoids bugs a lot of it's to deal with variable declarations, but there's a few more nuances to once we dive a little bit deeper into this. Gregory, do you want to go into line three and tell me what's going on here?
+Gregory Robertson Jr: Open facebook.com.
+Gregory Robertson Jr: For those record in the middle. the song too
+Lewis Benson: Yeah, so your mic broke up there was for a second you said this is the function. What was it?
+Gregory Robertson Jr: and that's the engine. To be there's the perimeter. I forgot what you call the home some too. I forgot what you called it.
+Lewis Benson: This would be your function name.
+Gregory Robertson Jr: What functioning right?
+Lewis Benson: Yeah, and then this function keyword is indicating that we're doing a function declaration. So yeah, that was good. So we have our function keyword for our declaration. We have our function name and we have two parameters and B. Being declared here. To somebody want to tell me what these curly brackets are.
+Lewis Benson: ar your next on the List here.
+Lewis Benson: How to what? I'm sorry
+Lewis Benson: It's not for execution of the function. It's to declare the scope of the function.
+Lewis Benson: Yeah, it's a container for all of the code that the function will execute whenever it is invoked. So next we have Daniel. Do you want to tell me what's going on online for Daniel?
+Daniel Perez: it's like
+Lewis Benson: a line four Yep.
+Daniel Perez: and four I know It's a variable declaration with the constant. And it's declared thumb.
+Lewis Benson: Yep.
+Daniel Perez: the constant I think it's a string combination concatenation. I'm not sure.
+Lewis Benson: So these are actually going to be the data type number. So this won't be concatenation. But yeah pretty that was good. So with this part right here though. This won't be concatenation. This will actually be actual addition. If you were to yeah,…
+Daniel Perez: addition
+Lewis Benson: so if you were to actually pass strings in here, this would do concatenation. That wouldn't be what we expected this function to be used for and the only reason I'm saying this is because as I look ahead we have a division function divide to multiply two. These are all math related functions.
+00:05:00
+Lewis Benson: So we would actually in a real scenario. We want to actually include some sort of logic to check and make sure these are numbers being passed in and that's something we'll get into later. But yes, and B is being added together. We're assuming these are numbers being passed in. And this value is going to be assigned to the variable sum and this is a constant as you said. Perfect. Next we have Krystal this one. Here's a little trick here. But you want to give it a shot Krystal tell me what's going on online five.
+Krystal Jefferson: 
+Lewis Benson: here online
+Krystal Jefferson: looks like addition. the Sun
+Lewis Benson: So it's line five right here. Yeah, so this is the line that we're going to be going over.
+Krystal Jefferson: it looks like it may be addition or not. Exactly. Sure.
+Lewis Benson: Do you remember what this word is used for?
+Krystal Jefferson: Const it's It doesn't change if you attempt to change you'll get an error. I don't know.
+Lewis Benson: right Sorry, this is what we call a constant variable declaration. Do you remember what these are for? These square brackets here.
+Krystal Jefferson: do it's actually on the tip of my tongue, but I can't.
+Lewis Benson: That's Yeah, and this one has a lot going on in it. So that's okay. If you don't fully see it all just yet, but I'll go through it real quick. So this is assigning a constant variable called result and it's being assigned to an array. This array has two items within the array or they're also called elements. the first element is a template literal And this string contains the two parameters A and B. So whenever you would see this string it is going to read the sum of a number and a different number is and that's the first element. It's going to stop right there. The second part of this is the reason the result of adding A and B together and this variable is called sum. So this is actually going to be a plus b and if we wanted to we could actually remove this entire variable if I comment this out.
+Lewis Benson: I could just do a plus b. And this would actually give me the same result. I just wanted to show again that anything you're storing in a variable and using within an expression. You can also just plug it straight in without the variable if you wanted to skip that step we're going to keep the variable for readability just so we know that a plus b is a sum and we're going to put the sum within this array.
+Lewis Benson: we have one more line here that I want to cover chantrice. Am I saying that correctly?
+Lewis Benson: Or Line 6. Do you want to explain line six?
+Lewis Benson: And it seems like you're not able to talk right now so we can come back if you want to try this in a bit. Does anyone want to try online 6 and you volunteers to explain what line six is?
+Lewis Benson: yes, Iris
+Iris Coats: That means when the result is calculated, it returns right back to the original problem, doesn't it?
+Lewis Benson: Yeah, it goes to the function cation. yeah, so this is being returned to the function invocation,…
+Iris Coats: There we go.
+Lewis Benson: which if I scroll to the bottom we can see This first log contains a function invocation and for the arguments we're putting in five and seven. So this will be B and whenever this function executes it's going to assign a to 5 b to 7. It's going to add them together and that value will be assigned to sum the sum is going to be placed inside of this array. The string will be calculated out and the entire result will be returned and console.log. Whenever this is ran. And also to note this is stopping the execution of the function. So if I were to try to write one more line in here
+00:10:00
+Lewis Benson: this line of code cannot run because the return keyword ends it says this function is no longer executing. We were returning to the invocation. We're done. So when I look at my tools, it says unreachable code detected because it knows that within return keyboard is red. This code is no longer running. It is going to just move on to the second console.log here instead because this line is now done. We got about five minutes left. So I'm going to go through the rest of these. And it'll just get you more familiar with the terminology as I explain each line. And this is how you would explain each line if you were doing a code review at a development job.
+Lewis Benson: So line 9 we're declaring a function called divide 2. It takes in two parameters and B. These two parameters are being divided on line 10 is divided by B. And that's being assigned to This constant variable called division is being placed within an array. And this array has two The first element is a template literal. It is calculating A and B and the expression blocks.
+Lewis Benson: And it is also just returning at the result of dividing A and B. And this entire thing is being returned in one line notice that online five. We're assigning it to a variable online six. We're returning the variable on line 11, we're skipping the variable and we're just returning the array directly. This is still an array literal the same as this is but we're just not putting it in a variable because this is ending the function and we don't have access to variables outside of a function. For example, I could not access result on this line because of no longer within the scope of the function. This will actually say this is an undefined variable if I try to run this.
+Lewis Benson: so we't access these variables. So we don't need these variables necessarily if it's clear what's happening? You can just return it directly enough perfectly acceptable. So in this case, we're returning this array with the two elements online 14, we're declaring another function and within this function declaration. We have two parameters and B again and we are multiplying a times B and assigning That to a constant variable called Product. We are returning array literal again. And the second element of the array literal is the product from the previous variable and we also have a template literal again like the previous functions. And now we have a function called calculate area of rectangle. You may remember this from the assignment. This was one of the functions that you need to create for your assignment and it has two parameters length and width
+Lewis Benson: the length and width are being multiplied together and that value is being stored in a variable called area and that's a constant variable. And now we are returning an array literal and within that array literal. We have two ement The second element is the area variable from above you can see the comma here. This one laid it out a little bit differently. I'll just show you if I wanted to add another item in here.
+Lewis Benson: We have the second item here and the third item here. Sometimes your formatter will actually make a multiline piece and that's perfectly fine as Now we have the convert Fahrenheit to Celsius function. We've seen this yesterday as well and I believe this was also part of your assignment. So here's another little bit of review for you. And the convert Fahrenheit to Celsius function takes in one parameter. That is a temperature in Fahrenheit. And it will do the calculation listed here. And this is a little bit more complicated because of the Extra parentheses we have to play so that it does the math and the correct order. You could also do this another way. Where you would instead of having this in parentheses? You could put this into a variable. and say
+Lewis Benson: subtract 32 equals
+00:15:00
+Lewis Benson: and now this part will happen first. And then I can place this here and we can get the same result that way. And then we could also take this Celsius.
+Lewis Benson: Part here and we could divide this up into more variables if you wanted to I'm not going to keep refactoring this but I just wanted to show you that you can manipulate the order that things are happening by changing it through variables and using variables to make it happen first rather than using parentheses in the same line. So this could have more readability to other people may find this more confusing because there's more code so you use whatever works best for you to understand what's happening. Next we have the Celsius again. We're doing this calculation and then we're returning the original parameter from the function. with this string template literal and we are also doing this Celsius and we're using a
+Lewis Benson: method we haven't seen before this is called to fixed what this does is it takes a floating Point number such as thirty five point one one one and it just rounds it to two decimal places. And then we're concatenating in the rest of the string right here.
+Lewis Benson: And then finally we have this great function. This is also something that was similar to the assignment. It takes any name as a parameter. And it's returning an array still and the array is just kind of splitting this text up. This is also a template literal here, even though it doesn't have a variable in it. We can use the string template or we could place and regular coats like this and have the same result. There's more than one way to dec The string template literal is nice though whenever you're just trying to plug in variables. And that's when we could probably have got away with using concatenation since it's only one character and there's no space. And then finally at the bottom, we have all of our console outputs for all of the returned values coming from each function.
+Lewis Benson: And I'm going to run this real quick just so we can see these outputs here. I have to remove the air here in a second for a second.
+Lewis Benson: And we'll get this up on the browser here.
+Lewis Benson: To another refresh that is why there we go. So here is all of our results from all of the functions running. We have the array showing the sum of 5 and 7 is 12 the division of 10 and 2. in 5 the product of three and four is twelve the area of the triangle with the length of 5 and with 10 is 50. 68 degrees Fahrenheit is equal to 20 degrees Celsius and we can see it only has two decimal places here because it rounded that off. And then we have the greeting. Hello, Are there any questions at all about this code review? Is there any confusion what questions do you have?
+Lewis Benson: Okay, if there's no questions, I'm going to move on to today's lecture of object literals. So I'm going to start with a new file. We'll do those script.js. And I'm going to put my U strict at the top.
+Lewis Benson: And I'm going to link this and before I do I'm just going to throw a console.log in here and get my Proof of Life. What this will do is tell me that my file was correctly linked and we know that everything's working and we can be confident that as a writing code. If I don't see an output we know the issue isn't with the link of the file. It's just kind of that piece of Mind before we get started. So I'm going to change this over to script
+Lewis Benson: and let's see if everything's wired up correctly there. We got a proof of life in the console. Get a little bit more zoom on the console so we can see our outputs today. Okay, so I personally believe objects are probably one of the most important data structures and JavaScript I use these more than any other. Data structure. I manipulate objects and pretty much every single project that I ever make. And whatever you start learning about object oriented programming. You'll learn that. These are a style that you can use to design your entire application around. So what is an object then objects basically represent a real thing or a person or basically anything in the real world, for example?
+00:20:00
+Lewis Benson: You have a pen if you can write with that pen. The pen has a length the pen has a color and those are properties of the pen. So maybe the pin is it has black ink, so I'm actually going to create a very new variable here to represent our object literal. And it's going to be a pen. And this pen is going to be represented digitally just because I'm writing it in code. But if I had a real pen, it could contain these properties and the syntax is to use curly brackets for an object. If you have an array, you're using square brackets, this is an array literal. And if you have a string.
+Lewis Benson: You're going to Quotes like this and then each of these can get a semicolon because these are all statements. I don't want to do the format just yet because it'll change these to the other type of quotes. So these are the different type of literals that we can do the different type of data structures. The string is also a primitive data structure remember, but it can be used in a similar manner as the array. But instead of storing multiple items it would just store characters. So you can kind of think of the string as a container for characters if you want and now we have our array this is a list and we can have multiple items that are in an order.
+Lewis Benson: that. So this is just a list of items and now for the object so the object gets properties, so I'm going to put in a property and I'll show you what this looks like and these are key value Pairs and you may remember me mentioning key value pairs from CSS. So we have a property name and a value so the color of my pen. is going to be black this is one property on my object. And what I like to do is put my opening curly bracket on the same line as the equal sign and my closing curly bracket on its own line so that I can have all of my properties listed on their own lines. This is my own personal styling that I like to use and I believe prettier will kind of do the same thing for the most part. So then you separate each property with a comma just like an array. But again, this is the key and this is the value. So this is all one property right here.
+Lewis Benson: So another thing. A pen can have is a length. And we'll give this one three point two. inches and this will be a string.
+Lewis Benson: And another property is refillable and now this one's going to be a Boolean property because I started with an is just to kind of represent that idea still and I'm going to say Sorry, I want to say false because it's a bullion. It is not refillable. You can use any data type in an object that you can use in an array. So that would be all of the different data types. You can have an undefined you can have a null but you still have to have a key now think of each of these Keys as a variable so I could also do let color Black I could say let length. equal 3.2 inches
+Lewis Benson: and I could say let is refillable equal false This is very similar. The difference is I don't have anything to describing what these variables represent I could put a code comment here and say it's a pen. But what if I have a hundred different products that are all pens I want to wait to tie all of these objects together so that they're all in one category so I could have a pen selling company. I could be a salespeople or sales person of pens and have 50 different types of pens. I could have gel pens I could have those fancy ones that you see on CEOs desks that I don't know why they spend so much money on you can have any sort of pen that you're selling and each one of those would have its own variable then and
+Lewis Benson: You'd have to have some sort of identifier that would tie it to that exact product. But when you're using an object, we could say. The CEO can so now this object has some sort of reference to it that you can access and then we can see each of the properties that are on that. Something else you can do with objects. is you can put functions inside of your object and you would just say
+00:25:00
+Lewis Benson: I want to say writing is the name of my function. And whenever I call the function, I'm just going to put the word function here. I'm going to put some curly brackets. And I'm going to put in some console.log and say the pen is writing now. I don't want you to worry too much about how to do these function declarations inside of our pen. But remember from when I showed you.
+Lewis Benson: Function Expressions, you can do this plants. writing equals function
+Lewis Benson: log the pen is writing. So this is kind of a little bit of review. And again I said don't to worry about learning function Expressions yet that we're going to use the regular functions. I just wanted to show you that b You can put a function expression as a property and we call these methods you've heard me mention methods before for example. log is a method
+Lewis Benson: And the reason it is a method is because console is an object that contains properties and we access properties with a DOT. So the DOT log is actually a function on the console object and almost everything you see in JavaScript is objects. And that's one of the things that you'll hear a lot of developers joke about what's the data type. It's just an object. If you're not sure to say object and you're probably right. For example, an array is considered type object whenever you look at Strings their Primitives, but they have a prototype which is an object. So they're not really objects, but they have objects. It's one of those things. That's why I say it's one of the most important data types. On JavaScript is the object. So
+Lewis Benson: I'm going to delete this method for now. We'll get into Methods at a later date. I just want to show you how to use these properties. I'm actually going to change the object I'm going to go with kind of a superhero theme today because that's how most of my demo code is going to be set up. So I'm gonna say equals an object literal. So this is how we start every object declaration whenever we're doing object literals. So we'll say a variable name equals curly brackets now, we need to give it some properties. So same name. Batman City Gotham and is vigilante
+Lewis Benson: true and now I'm going to log the superhero so we can see what the output of the superhero looks like.
+Lewis Benson: And this is what it looks like in the console. We see these curly brackets here. We see Batman city is vigilanti true, and we can open this up just with an array and we can view these different data types. One thing to note is even though I put it in. Name city as vigilante. We see here city is vigilante name. It's in a different order. And that's a very important distinction with objects. You might not remember this later and you'll run into some issues with this whenever we get into loops and I'll bring it back up again and remind you whenever It happens to me. Sometimes I forget that these are not iterable meaning they don't have a specific order. What they do have is keys that you can access these specifically.
+Lewis Benson: So in my console here, I'm just going to access super hero dot name. And now I'm using this dot notation to access the properties similar to when we did console.log string dot splice anything dot anything is a property on the object. I'm not going to put curly brackets here or sorry parentheses here because this is not a function. This is a property just like if I were to do dot length remember the dot length on a string is a property. So now I just access two properties at once here. I access the name property, which is a string and then the dot length property within that string which is a number.
+Lewis Benson: That doesn't work. I clear So I just clicked on that little button there to clear this out. So let's grab some other properties on super hero so superhero. Dot City that gives us our string Gotham and we can do superhero. Dot is vigilante. And we get true. So this is the main way you're going to access properties the objects now remember with arrays if I say const my array equals. And I'll put some strings in here. Hi.
+00:30:00
+Lewis Benson: And goodbye. If I want to access any of these properties within the array I can say my array at zero I get high my array at one I get hello in my area too. I get goodbye. I'm gonna try that with superhero. And we're going to see. A bit of an issue with that and I'm going to say zero. And we get undefined. Anyone want to take a guess why this is undefined.
+Lewis Benson: So it's as I said earlier. The superhero bject any object for that matter. It doesn't put these in a specific order. So it doesn't know what the zero index is. And again, if I open this up, there's no numbers on the left here when I open up my array. I have to console.log my array. Whoops.
+Lewis Benson: I said my array. And I open this up we can see we have a zero High one. Hello. Two. Goodbye. If you notice these look a lot like key value pairs on an object right here. so if I go back into superhero. And I opened this up. We can see we have Sorry, we have a key colon value here. We have a key colon value. So what I can do is hero hero superhero. I could put in my square brackets and instead of putting in that number. I'm going to put in City. I forgot to put the quotes.
+Lewis Benson: And we get Gotham. So you could pass in a string that represents the key and get the same result that way. This can be very useful. If you have a dynamic program that you don't know what your properties are going to be called. Sometimes you're generating these objects or code. And you have to access them through their key, but you're not able to use the dot notation because of how you're iterating over them. So this is another alternative way to access your properties and it looks a little weird. It's not the most common way to access some typically you'll use the dot notation. I'd say about a quarter of the time I'm using square bracket notation to access my objects, but it's often enough that I want to mention it and I will mention it again because again, it is something I do quite a bit. Just not all the time. So superhero I can grab is.
+Lewis Benson: vigilante and we see true. So this is how you access your property names. Does anyone have any questions about anything I've shown so far. is anything perhaps unclear Any of the concepts I've gone over you want me to kind of go over them again refresh you on Anything at all?
+Lewis Benson: Again being this is the most important data structure that I am covering. I would really like it. If you do have a question to make sure it gets asked and answered.
+Gregory Robertson Jr: Refresh where you went over again. superhero part putting in their own thing and console.
+Lewis Benson: Which part?
+Lewis Benson: Yeah, so I was accessing each of these properties in the console. So I'll show that one more time here. So what I do is I type in superhero and I can access the properties with either a DOT or square brackets. I'm going to show you the DOT first. So you type in the name of the object dot the property name. So if I want to access the name. It Returns the string Batman and if we look at my object here that I'm console.logging we can see the name has a key of name and a value of Batman. So this property right here name is not something that we can access and use directly. It's only used to get whatever it's assigned to go into here and highlight it so this name right here think of this as a variable name. Just like up here how I have let color I could say let name.
+00:35:00
+Lewis Benson: And we'll change this to Batman. It's the exact same concept. I can't just use the word name for anything. I can't print out the word name because it is container name. It's not my actual value of that variable. So in this case the variable is And the property is called Batman. So think of a property as a variable they're basically the same thing. A property is a variable that lives inside of an object. That's how I want you to look at that. And we remove the pen stuff. So the superhero we have the name. We have the city and we is vigilante. So I'm going to say superhero dot City and I can get the string City. It's the same as accessing the variable if I were to declare this is a variable except it's tying it to a specific object. And finally if I want to get superhero. Dot is vigilante
+Lewis Benson: I see true because I'm accessing that variable through the object and to use the correct terminology. I'm accessing the property on the object. And the other way to do it and if you don't want to use the dot notation is you type in the name of the key as a string inside of your super hero square brackets. I put in my string. And I can type in name. And I receive Batman. and if I type in super
+Lewis Benson: hero square brackets City
+Lewis Benson: There we go. I get Gotham. and then I can say
+Lewis Benson: super zero square brackets is vigilante
+Lewis Benson: and the reason this is an auto completing because I didn't put my quotes here The console doesn't let me just do that. There we go. And I get true. Does that answer your question does that clear up how to access these properties with their used for?
+Gregory Robertson Jr: Answer my question. Thank
+Lewis Benson: What's that?
+Lewis Benson: You said that did into your question? Okay. Yep.
+Gregory Robertson Jr: as thank
+Lewis Benson: You're welcome. And I just closed my vs code and reopen that.
+Lewis Benson: or
+Lewis Benson: there we go. Okay, and I'll show it again just to see how the methods work because we did go over the functions. I just want to make it clear that you will see functions on your objects, and these are called Methods.
+Lewis Benson: So we have the object. This one's name will be Superman.
+Lewis Benson: And we're just going to greet or give Superman a greeting and to do that. We'll declare a new property called greet. And assign it to a function. Expression notice I didn't put The function name is over here this time. So it's a little bit different syntax when you're inside of an object. But other than that, this all does work the same and we can just say console.log.
+Lewis Benson: Hello, I am. And I'm going to show you something too.
+Lewis Benson: Whenever you want to access. Another property within a function inside of an object. We use something called contextual it's just the word this. And then So This is actually representing the word hero. So if I were to create a second object that has similar properties such as Batman whenever I use the word this inside of that object, it knows that it's referring to Hero dot name. So I could do hero dot name. I get the exact same result, but that's best practice. Whenever you're inside of that object that specific object used this keyword and it'll make sense later why we use this I do want you to use it now instead of saying the variable name dot name.
+00:40:00
+Lewis Benson: But keep in mind because we're accessing a property on an object. I can't just pass in name here. I have to pass in. Preferably this dot name because this is the better practice to use. Does anyone have any questions about what I just showed here?
+Lewis Benson: Let me show you how this works. I'll go to the console and just right here console.log. And we'll say hero We'll do this one first.
+Lewis Benson: Let me refresh because I got that weird error thing popping up I restarted my vs code, so I'm not live anymore.
+Lewis Benson: So we see Superman whenever I did hero dot name. And I'm going to home at this one out so that it's not making noise, and I'm also going to add. Flag here so that we can see exactly.
+Lewis Benson: Line 19. I'll just put
+Lewis Benson: so online 19 we should see hero dot name. And here line 19 we get Superman. And now I'm going to invoke this function called greet that is living within my object. console.log it'll be hero dot greet. because And to use the correct terminology, this is A method is a function that lives in an object. I don't know why they have to have two names, but they do. And we'll put our line 21 here.
+Lewis Benson: I'll just so we don't know where that's coming from. And so this is how I'm accessing this function. This is the technically variable name. This is the function declaration.
+Lewis Benson: So hopefully everyone. Sees that there. And everything is separated by a colon.
+Lewis Benson: And we got undefined what I do wrong here.
+Lewis Benson: hero.greet
+Lewis Benson: Okay, that's unexpected.
+Lewis Benson: function parameters object
+Lewis Benson: don't see a bug there.
+Lewis Benson: I'm just doing another refresh and see if I can.
+Lewis Benson: Find 21.
+Lewis Benson: Hero talkery. I'm not sure what happened there. Let me just remove this part here. We'll simplify this down a little bit. right
+Lewis Benson: still getting undefined
+Lewis Benson: Let me try it in here.
+Lewis Benson: interesting
+Lewis Benson: I'm not sure why it doesn't work in my environment, but it's working in the browser.
+Lewis Benson: But this is how you do the methods. There must be some sort of bug going here. Maybe it's my I don't see.
+Lewis Benson: I was odd.
+Lewis Benson: Anyways, we can see it worked in the browser. I'm going to look into finding out why it's not working within my vs code and sending it to the browser like it should be.
+Lewis Benson: I have no idea what would happen there to cause that. I've never seen that happen before.
+Lewis Benson: Yeah, so this is a method to access a used Dot. And you put in the parentheses like you normal would and just to show you if I type in. A console.log and I'm just going to put in here console. Let's take a look at that. So this is an object. Filled with methods each of these little F. Here is a function. So there's a lot of stuff within the console object that comes with JavaScript.
+00:45:00
+Lewis Benson: Here is our console.log. We can open that up and we can actually see. the arguments we can see some of the code of this.
+Lewis Benson: We ever is a a memory property. Yeah, there's lots of different. functions built into the console object
+Lewis Benson: So does anyone have any other questions so far?
+Lewis Benson: Okay, let's talk about how to to an object now with
+Lewis Benson: Raise we would use the unshift method and that would actually push items our ject. With an object. It's a little bit different if we want to put an item. What we can do. is say
+Lewis Benson: aro Dot
+Lewis Benson: City equals and then put a string the What was his City metropolitan Metro something. Or is it CityVille? I can't remember what Superman city was. I'll just put CityVille.
+Lewis Benson: And then we can act as this.
+Elgin Sharper: small, Smallville
+Lewis Benson: That's where we'll have that work. Are not born that's where he grew up. And then we can look at our hero object. And we can see that we have the new property on there. So it's kind of like when you declare or reassign a variable we put in the name of the object dot the new property name so we can see city does not exist on our hero object. And then we just assign that to a string or whatever data type you need to use at the time you could also assign this to an array. You could assign it to a function as well. So if you remember for
+Lewis Benson: when we Create this function. We do it like this and I mentioned before about the function Expressions. It's the same concept here. We just say hero dot I can make an introduction function and reduce equals function.
+Lewis Benson: put in our curly brackets console.log
+Lewis Benson: I am and then we could put in.
+Lewis Benson: This and again I'm not using hero dot name because this is part of the same hero object. So I'm able to use this dot name inside of this function, even though this function is outside of the scope of the original object declaration. So that's one of those things where you might forget that and just put in the hero.mame. You'll get the same results. I always use Contextual this because that's better practice. and this is giving
+Lewis Benson: his name we can't use a comma Here we can.
+Lewis Benson: known as
+Lewis Benson: I'd have to put another string here.
+Lewis Benson: That'll work. So this is going to add that function to the hero object. I go into here and I say hero dot introduce. We can see the actual declaration, but I didn't invoke the function. So remember you got to put in your parentheses to invoke it. And we get the actual function running it that way. So we added in a method to our object and we also added in that other property. What was it? City
+Lewis Benson: and we can access those through dot notation or through square bracket notation.
+Lewis Benson: Anyone have any questions so far?
+Lewis Benson: So I know I've gone over quite a bit so far. So if you do have some confusion about especially these functions that are being attached to the object. Don't worry too much about that just yet methods will start to make more sense as we actually get some real use cases for them and start to use them. They will be used pretty much on a daily basis. Perhaps not ones we wrote but ones that will be using. For example your array.pop push those are both array methods.
+00:50:00
+Lewis Benson: Okay, so I'm going to just kind of go over these again and I'll just do kind of a little bit of a quiz type thing or you just shout out the answer if you know it or raise your hand ever how you want to handle this, but I'm just going to put in some console.logs and you just tell me what the output is gonna be. So we'll do console.log. and I'm going to say superhero
+Lewis Benson: superhero dot name and somebody want to tell me what this output is going to be.
+Lewis Benson: Yes Gry. Exactly. It'll be Batman that is a string.
+Gregory Robertson Jr: Batman
+Lewis Benson: So let's take a look. And there's our output there. So starting off. pretty easy We haven't gone over comparison operators yet, but I'm going to throw one in here. just To kind of mix it up a little bit. so we'll say
+Lewis Benson: in order to do that. I need to have something to compare.
+Lewis Benson: Okay, one second. I'll change it up a little bit. We'll do super. hero And I'm going to put in is vigilante like this. Somebody want to tell me what the error or so the output is here.
+Lewis Benson: It won't be true. I almost gave it away. It's actually an error. I'm going to get a reference error.
+Lewis Benson: vigilante is not defined. That's because I don't have this in quotes.
+Lewis Benson: And now it'll be true. So kind of a trick question there.
+Lewis Benson: Okay, so we'll do another one. if I do hero Dot
+Lewis Benson: friend equals lowest console.log
+Lewis Benson: Friend, what's my output here?
+Iris Coats: Lewis
+Lewis Benson: It's an error because I didn't put hero in front of it. I just have a friend. So this is another reference there. And he's the reason I did this again is because these are the common bugs you're gonna run into. You'll make the same mistake a hundred times a thousand times. So I just want to show it now so that whenever you see reference there. Trend is not defined you yeah, I got to put in hero friend.
+Lewis Benson: I hope I spelled Lois right look at that a couple out there, too.
+Lewis Benson: Hey, how can I add in a method to the Batman ject? the superhero object
+Lewis Benson: Let's make a method that agree similar to the hero one
+Lewis Benson: How would I write that out?
+Lewis Benson: So if we want to Gregory.
+Gregory Robertson Jr: You're doing with the console.low and then parentheses with the hello.
+Gregory Robertson Jr: to come
+Lewis Benson: Also, I won't use console.log to because I'm actually declaring the method doesn't exist yet. But if I wanted to declare a method online 29 to add a Greek method to my superhero object. There's a couple of approaches to this. the easiest way would be to do super hero
+00:55:00
+Lewis Benson: I can't spell super today superhero dot whatever my method name is. So I could use greet. I'm gonna do say So that we can see that you can call these whatever you want.
+Lewis Benson: And then I'm going to use the assignment operator. To assign this to a function, but before I do this, I want to show you something. We can actually do this we can use our classic function. Great.
+Lewis Benson: console.log
+Lewis Benson: And what we can do is actually assign this to that function like this. So what I'm doing is I'm not invoking the Greek function here. I'm just passing reference to the function name. I don't have the parentheses here. So I'm not calling the I'm referencing the Greek function. So if you remember whenever I do a console.log of Greek. We can see that the function is here. So this is reference to a function declaration whenever I just put in the name. So when superhero say hello equals greet. I'm actually creating a method from a already created function this way.
+Lewis Benson: So it's kind of a cool way to do it. Superhero dot say hello. I'm going to call this in my browser since for some reason my console.log wasn't working for my methods. So we'll do super hero.
+Lewis Benson: And remember we have to invoke it if I don't invoke it we get the Declaration. It's showing us the code for it doesn't actually call the function. I put in the parentheses it calls the function and we see So that's how you declare methods. There's many more ways to do it. We could also use square bracket notation to get the same result. It's not all that common to use square brackets for declarations as it is for accessing. So I'm just going to show the dot notation. So we don't dive into too much stuff in one go here. Does anyone have any questions about how objects work?
+Lewis Benson: Maybe a question about their use cases or anything like that.
+Lewis Benson: these are the most common thing you'll see throughout JavaScript is objects and learning to read them. It can get a little weird because if you look here we have a set of curly brackets and these are encapsulating all of this code and then we have another set of curly brackets here and then we have some more code inside of that. So this can get nested and nested and nested until it gets really hard to read and understand what's going on similar to when we had our HTML and we had with another Dave, 20 divs in and everything's just sliding over to the right the same thing will happen in here. If I were to put another function inside of here.
+Lewis Benson: I can do something like this. And then I could put another function inside of here. They wouldn't have the same name. But as you can see it starts to Nest it in and you can see how we get that same little look that we got in HTML, so Keep in mind these can get messy looking whenever you have a nested things inside of each other and learning how to read that. Nested data is a skill that you'll have to develop. And with that I want to show one more East to this. You can actually have an object inside of an object. So if we had a utility belt.
+Lewis Benson: This utility belt is an object that has a whole bunch of properties. as you might guess we could have a
+Lewis Benson: grapple and this would be a
+Lewis Benson: grappling hook here's to reach I surfaces. Something like that. we could have all kinds of tools or we could just say
+Lewis Benson: toll one
+Lewis Benson: is a grapple? to make it a little bit simple or
+Lewis Benson: and then we could do toll two although if I was doing something like this, I'd probably use an array because these names aren't very useful. But you can Nest objects inside of your objects. So that is one thing to keep in mind and I'll show you how to access this utility belt. Let me go into the browser. And we'll say superhero. I'm just gonna bring the superhero up first so we can see the whole object. And here's the utility belt so it'll be like this superhero Dot.
+01:00:00
+Lewis Benson: utility belt Dot Hole one. And we send So whenever you have a nested object, you just keep chaining together all these dots and you'll get to the item that you're looking for within that object. And then if we wanted to take it a step further, we could also index or slice the string that's being returned so I could say slice. Zero comma three and we get the first three characters of that. So this can get a little weird to look at whenever you start getting all these different dots I would advise assigning these to variables and then performing your actions instead of chaining five things together because this isn't very readable. But I just wanted to show you you can do that if you needed to get in there that deep. Are there any questions about objects at this time? Are there any questions about methods?
+Lewis Benson: how to assign values to an object how to retrieve values from an object or how to invoke your methods Any questions at all?
+Lewis Benson: Okay, I'm going to start a 10 minute break if we have no questions. And when we come back, we can practice a bit more creating objects create a few more just to kind of show the syntax of it. And then once we get to hang of building objects and accessing values within objects. We'll start our assignment. Let me start the timer.
+Lewis Benson: And I will see you in 10.
+01:10:00
+Lewis Benson: Hey, welcome back.
+Lewis Benson: So next we are going to start on.
+Lewis Benson: Some more practice not really going to go into any new Concepts at this point. I just want to make sure everyone has a concrete understanding of objects because again, they are a very important topic. So we're going to practice building objects accessing properties and just making sure that we have that muscle memory on how to do this task here. So I'm going to create a new file for this. And I want to keep this superhero theme going so I'm gonna call this hero.js.
+Lewis Benson: And we're going to use strict at the top as we do. I'm going to keep to the best practices and I'm going to import that in.
+Lewis Benson: zero.js
+Lewis Benson: Okay, so we're just going to go through and build.
+Lewis Benson: Do five different objects? And we'll practice accessing the different properties on them and then I'll build a function at the end which will display all of the data relating to these objects so we can see what that process would look like. That's kind of a realistic type of thing that you might have to do sometime. So to start off with an object literal again, we're going to put in. A variable name and we'll start with Superman just to show you that objects are related to their.
+Lewis Benson: To their actual item here. So in this case Superman is going to have properties. Even a name.
+Lewis Benson: Somehow we're going to different line there. His name is Clark and I had to look up a lot of this data while we were on the break because I can never remember half of this stuff.
+Lewis Benson: And this is Superman. He has hours. So this will be an array. I just wanted to make sure we can get a few different data types in here. He has super strength.
+Lewis Benson: of light
+Lewis Benson: and X-ray vision
+Lewis Benson: X -ray vision Okay, so we have two strings and an array inside of our object. Let's also add a city. And I look this up. It's Metropolis.
+01:15:00
+Lewis Benson: Make sure we put that in a string. And put our commas in if you don't have the commas it gets mad at you. It wants to know what the next item is. If you don't have a comma it thinks you're still talking about the first line here, so For example, if I didn't have a comma here I could do something like that length. on this so it doesn't know that this is a complete line until you have the comma. It's kind of like a semicolon whenever you're declaring a variable, but it ends the statement for your object property. And I also just want to Nest an object in here so we can practice asset accessing nested objects. So we'll put base. And we'll give it a location.
+Lewis Benson: of Fortress of Solitude
+Lewis Benson: and description is Arctic headquarters
+Lewis Benson: this comma here is called a trailing comma we have one here and one here. We don't have any more items within our object. If I remove this it won't throw an error. But prettier we'll just put it right back again some people. Say that you shouldn't put the trailing comma others say to put it on whoever you're working with. Make sure you just do what they're doing and you may have to modify your prettier settings if you actually go into the settings. and search prettier
+Lewis Benson: I can just search trailing comma And it will search prettier for me. And here we can set prettier Trail and comma we can set this to none if we want all trailing commas wherever possible so make sure you are doing whatever it is. That the best practices where you're working I usually just leave the trail and commas just because if I want to add another item, I already have a comma I don't think about There any questions about that? It's just an extra little thing again. These just want to show you these are optional these two commas here. They won't throw an error. Okay, so let's add in Batman. And we were working with him. So it should be fresh in our mind. Name is Bruce Wayne.
+Lewis Benson: And we put a comma and then we're going to put his alias. Colon, that is comma Powers, this is the array so we can have a list of different powers. intellect
+Lewis Benson: detective skills and martial arts Not to mention his wealth.
+Lewis Benson: City Is Gotham?
+Lewis Benson: Don't forget the trail and comma and then our nested object will do the base here as well. and his location is Batcave
+Lewis Benson: the description of the Batcave is underground headquarters
+Lewis Benson: to you aren't you quarters? under waiting manner
+Lewis Benson: and I'll just do three because this is kind of time consuming. We'll throw in the Green Lantern for good measure. Keep it DC.
+Lewis Benson: rules name is how Jordan comma once I get these and we can practice accessing the different properties and I'm actually going to throw these all into a array So that we can access each one through an array indexing as well. So we get a little bit of practice with that.
+Lewis Benson: And our powers are power ring.
+Lewis Benson: Yes flight.
+Lewis Benson: energy constructs
+01:20:00
+Lewis Benson: We're missing a comma. I knew that because I have this expected here and The lender error is showing that I'm missing a comma so I want to make sure we include that. and base
+Lewis Benson: just to follow the trend. We'll put the location and description here.
+Lewis Benson: And the description. forgot my comma
+Lewis Benson: that's a common one that I do all the time.
+Lewis Benson: Okay, so we have what I'm going to do is place these three objects in an array, so we'll do const. Heroes equals an array and the first object is Superman. The third object is Lantern I'm going to log. Heroes and we'll just take a look at those and the console make sure everything's working. Everything's wired up correctly. There we go.
+Lewis Benson: So we have our three objects in the array This is something common you'll see coming from apis. you'll have an array of objects and you'll have to go through and navigate these data structures and try to find the data you're looking for this could be like weather data movie data, whatever it is you're accessing. This could be coming from a database. I'm retrieving all of this data in order to display it on your web page. So if I wanted to access Superman's location for his base and somebody tell me how I would do that.
+Lewis Benson: Didn't want to take a guess at that.
+Lewis Benson: Yes Gregory.
+Gregory Robertson Jr: when you do superman.location
+Lewis Benson: Superman thought location
+Lewis Benson: So we're missing a property here. So we're seeing an undefined right there. if we look up at the Superman object see how we're nested inside of another object there.
+Lewis Benson: So we actually have to get this object first.
+Lewis Benson: So, it's Superman top base. And this gives us another object. And then we do superman.base dot location.
+Lewis Benson: You have any questions about that how I got the location like that?
+Gregory Robertson Jr: I got it.
+Lewis Benson: Okay, cool, and I'll show that again in code. I'm just in case anybody else missed that. So Superman we access the variable name for Superman dot property name is base dot location because location is nested inside of base and base is nested inside of Superman. So as we're accessing it, it's superman.location. And that's how we get to the location. So let's go to the next object. And let's access the detective skills powers on Batman. Can somebody tell me how to do that?
+Lewis Benson: So I'm gonna take a shot at that one.
+Justice Miller: Is it a Batman? die
+Justice Miller: powers
+Lewis Benson: Okay.
+Justice Miller: and Dot zero or dot intellect.
+Lewis Benson: We're good. We're going for detective skills. So
+Justice Miller: I think this skills. I'm sorry, or is it detective skills are one?
+Lewis Benson: It'd be one. If I put dot one. It throws an error because it's a number.
+Lewis Benson: do you remember how to access items out of an array?
+Justice Miller: Is it open parentheses zero? comma one
+Lewis Benson: It's not parentheses. It's actually square brackets. And then whatever number you see here, so we have zero one two. It would be yeah…
+Justice Miller: two one
+Lewis Benson: if you want and then we get detective skills. So it's sort of like how we did. Whenever we were accessing the property with square brackets. so if I wanted to grab Batman's name Let me close some of these this is getting a little messy. So here's Batman and I just want to get his name, which is here. What I can do is put in square brackets. I could put in a string and say And we get Bruce Wayne, so it's similar to that but I can't put the one inside of a string whenever you're accessing an array. You actually have to use the number.
+01:25:00
+Lewis Benson: Let's do Green Lantern now and we'll grab the city that Green Lantern is protecting. Somebody walked me through the Green Lantern City.
+Lewis Benson: And let's use the square brackets for this one.
+Umar Z: Okay, can I do? So it's gonna be Green Lantern. then a square bird brackets And we're gonna provide.
+Lewis Benson: Yeah.
+Lewis Benson: Yep.
+Umar Z: base
+Umar Z: Because cities under the base, okay.
+Lewis Benson: so City is actually not nested in base. it's showing these properties in order that whatever order it wants to me collapse all these so if we look at Right, that's fat, For your ntern. So here's the Green Lantern object. We have an alias property a base property a city property a name property and…
+Umar Z: You won't see okay.
+Lewis Benson: a powers property.
+Umar Z: So then we do just go directly you Siri then.
+Lewis Benson: Yeah, it's just directly to City. So when you're reading these inside of the dev tools, you have to look at the direction that the arrows pointing.
+Umar Z: Yeah,…
+Umar Z: It was closed. I'm
+Lewis Benson: Yeah. Yeah,…
+Lewis Benson: it was closed and even when it's open the indentation changes a little bit. And also we have this prototype here. You can think of the Prototype as a boundary line or…
+Umar Z: Mm- okay.
+Lewis Benson: whatever. Yeah, whenever you're dealing with objects. And if you're curious what this prototype is, it's an object that gets created every time you create an object or any complex data structure and it's where all of your methods lie. So for example slice method on your arrays is inside of the Prototype. This one has two string value of these are just where those methods live so you can access those methods using dot notation. If I actually bring up mdn for this.
+Lewis Benson: let's go to object dot prototype Dot so all of these properties over here that has dot prototype or the objects that live on the Prototype. There's quite a few of them here. So we have the value of and it shows you how to use them. And this is where it's getting that information from. So if you remember before anytime, we're accessing a method or a property on an object. This first part is referring to the object name dot value of. Luckily JavaScript and made it so you don't have to include dot prototype every time you're accessing a method. So you just do object dot value of you can skip this part if you included it'll still work like they did here. But you don't have to do that. And they're also showing here where you can add.
+Lewis Benson: A prototype function our method we're not going to get into that today. But that is something that can be done. You can put functions directly on your prototype. That just makes it so you can access them across all of your objects. But again, we're not going to get into that today. So there's lots of different methods on the object. I don't think there's any here that we can use yet.
+Lewis Benson: Maybe has property.
+Lewis Benson: It returns a bullion. Or maybe it has returns true if the specified object has the indicated property on its own property. If the property is inherited or does not exist or returns false, we'll get into inheritance later. But basically this would say if our object has a property then it will return true or false. So what that would mean is? if I type in Batman dot has an property and I pass in name
+01:30:00
+Lewis Benson: we see true. Because this has a It has a city property. If we type in belt we get false, there is no belt property on the object. So this is what this method does. I'm just kind of a little bonus point there. And this is coming from the objects prototype. It has several methods that you can use as we learn them. Does anyone have any questions so far about accessing property names?
+Lewis Benson: Okay, so let's create a function. that will grab all of the information. We need to know about our heroes and display that to us. Let me open up my vs code.
+Lewis Benson: And we're in the correct file. So what I'm going to do is first I'm going to start off by declaring a function. So we want to tell me how to declare a function again. Just a quick review on this and it's just Not a method on there any of our objects just a regular function from yesterday's lecture.
+Daniel Perez: I will start with function.
+Lewis Benson: yep function keyword And we need to give it a name and what this is going to be doing is displaying the values of the hero information so I can say Hero information could be a good function name here. So how do we continue on with this?
+Gregory Robertson Jr: with the breaker openings
+Daniel Perez: early brackets
+Lewis Benson: Yeah parentheses exactly. So after the parentheses, we put our code block. And we have our basic function created. It doesn't do anything yet doesn't return any information.
+Lewis Benson: We're going to have a parameter.
+Lewis Benson: I'm going to call this incoming hero. So basically whenever I invoke this function, I'm going to pass in one of our heroes so I could pass in Green Lantern and an incoming hero will be Green Lantern. I could invoke it as Batman and then incoming hero will be Batman or I could invoke it with And incoming hero is Superman with that in mind. I can access any of the properties on any of these functions anytime I call this function. So let's go ahead and build one out. And also going to do is return strings. I'm just gonna return anything. I'm just going to the properties that we want to see And where you string template literal? And we can start with the heroes name is.
+Lewis Benson: this is where it gets interesting. I could type in Batman dot name.
+Lewis Benson: but if I do then this function only works with Batman and then it should probably be called displayed Batman information at that point and It's not very useful. where it becomes powerful is whenever we use the parameter in coming hero. dot name because Whenever I Call Batman, it is Superman whenever I call it with Superman whatever I pass into my function during its invocation. That is the object that is being called here. So I'm accessing a property through this function and I just wanted to show that ar's bles again. They're temporary variables. you don't actually have to declare them as a variable, but they are variables. So this variable is getting assigned to Batman when I invoke this as Batman. And let's do another console.log.
+Lewis Benson: we'll do the heroes.
+Lewis Benson: alias is
+Lewis Benson: and we'll put in our dollar sign curly brackets and it will be incoming hero. Dot Alias again, this is incoming hero is our parameter, whatever object I pass it'll be that object. So this is basically saying it's any of these objects. It's not just It's any of them. And hopefully that makes log
+01:35:00
+Lewis Benson: Yes, I'm already a question.
+Umar Z: no, I just wanted to know that there are two typos in the Or they're gonna give you an error later on one. Wedding and what is online Isn't here 20021-21 description.
+Lewis Benson: 22
+Lewis Benson: Yeah.
+Umar Z: It's not going to bring the values.
+Lewis Benson: You're right.
+Lewis Benson: Thank you.
+Umar Z: and then line 32 planet
+Lewis Benson: Yeah, this one wouldn't throw an air but that is a good.
+Umar Z: Yeah, this one wouldn't yes.
+Umar Z: Yes. You're right.
+Lewis Benson: Yeah, and…
+Lewis Benson: there was another one up here online 10 as well. the scripture was also spelled wrong.
+Umar Z: He was here fine.
+Lewis Benson: Yeah, everything else if I double click on these, it'll actually highlight all the words that are spelled the same so I can check that all my properties are correct this way. And since everything is highlighting I can see that they're all correct.
+Lewis Benson: Okay.
+Iris Coats: line 41 and 42 Heroes
+Iris Coats: no, you got that.
+Lewis Benson: okay. so yeah, let's do the powers. are we'll do.
+Lewis Benson: So can someone tell me how it access each of the powers for this string?
+Lewis Benson: What would I put inside of these dollar sign curly brackets?
+Lewis Benson: in order to access each power here
+Iris Coats: Wouldn't it?
+Umar Z: fall this
+Iris Coats: If you want all three of them wouldn't it be powers quotes
+Lewis Benson: So if I did powers.
+Iris Coats: generalized
+Lewis Benson: If I did Powers by itself like this. Powers is undefined right now because it's not a global variable.
+Iris Coats: Yeah.
+Lewis Benson: If I did incoming hero dot Powers there wouldn't be a space between each power and I'll show you what that looks like real quick. This is going to throw an error here, but I think I can still access my objects.
+Lewis Benson: So there's that Arrow talking about but I should be able to still see Batman. dot powers
+Lewis Benson: okay, so I need to fix that error first just console that or comment that out for the moment. And now I can do Batman dot powers. So this is what I see here is the array. If I did something like alert.
+Lewis Benson: Batman dot powers We can see here. There's no space in between each one of these it just clumps them all together because it doesn't know that there should be a space there. So they're just calm us separated values. So you could do it that way. If you're not worried about what the output looks like, but I want to have this output have a space in between each one. So, how can I each element of the array individually
+Umar Z: So these are strings right? So why don't we just index them? Can we do that?
+Lewis Benson: We can index them. It's actually coming from the array so we can index the array. What would I type in to do that?
+Meeting ended after 01:38:58 👋
